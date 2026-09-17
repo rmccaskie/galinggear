@@ -59,7 +59,7 @@ async function readInput(request: Request): Promise<{ name: string; email: strin
   }
 }
 
-export const POST: APIRoute = async ({ request, locals }) => {
+export const POST: APIRoute = async ({ request }) => {
   const html = wantsHtml(request)
 
   let input: { name: string; email: string }
@@ -83,7 +83,7 @@ export const POST: APIRoute = async ({ request, locals }) => {
   const email = input.email.trim().toLowerCase()
 
   try {
-    const supabase = createSupabaseClient(locals.runtime?.env)
+    const supabase = createSupabaseClient()
     const { error } = await supabase.from('subscribers').insert({ name, email })
 
     if (error) {

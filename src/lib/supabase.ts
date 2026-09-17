@@ -1,4 +1,5 @@
 import { createClient, type SupabaseClient } from '@supabase/supabase-js'
+import { env } from 'cloudflare:workers'
 
 /**
  * Supabase anon client factory.
@@ -7,21 +8,18 @@ import { createClient, type SupabaseClient } from '@supabase/supabase-js'
  * insert-only policy, so no server secret (service-role key) is needed or
  * present. See supabase/migrations/0001_subscribers.sql.
  *
+ * Environment variables are read from the Cloudflare Workers runtime via
+ * `import { env } from 'cloudflare:workers'` (the only supported method
+ * since @astrojs/cloudflare v14 — `Astro.locals.runtime` was removed).
+ *
  * Startup guard: if either variable is missing we throw with the *name* of the
  * missing variable, never a generic message — a missing configuration value
  * should be obvious the moment it is read.
  */
 
-type SupabaseEnv = {
-  SUPABASE_URL?: string
-  SUPABASE_ANON_KEY?: string
-}
-
-function resolve(runtimeEnv?: SupabaseEnv): { url: string; anonKey: string } {
-  // On Cloudflare Pages, secrets arrive on the runtime env at request time.
-  // At build time (and in dev) they come from import.meta.env / .env.
-  const url = runtimeEnv?.SUPABASE_URL ?? import.meta.env.SUPABASE_URL
-  const anonKey = runtimeEnv?.SUPABASE_ANON_KEY ?? import.meta.env.SUPABASE_ANON_KEY
+function resolve(): { url: string; anonKey: string } {
+  const url = (env as Record<string, unknown>).SUPABASE_URL as string | undefined
+  const anonKey = (env as Record<string, unknown>).SUPABASE_ANON_KEY as string | undefined
 
   if (!url) {
     throw new Error('Missing required environment variable: SUPABASE_URL')
@@ -32,8 +30,8 @@ function resolve(runtimeEnv?: SupabaseEnv): { url: string; anonKey: string } {
   return { url, anonKey }
 }
 
-export function createSupabaseClient(runtimeEnv?: SupabaseEnv): SupabaseClient {
-  const { url, anonKey } = resolve(runtimeEnv)
+export function createSupabaseClient(): SupabaseClient {
+  const { url, anonKey } = resolve()
   return createClient(url, anonKey, {
     auth: { persistSession: false, autoRefreshToken: false },
   })
