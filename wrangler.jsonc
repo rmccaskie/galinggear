@@ -1,0 +1,21 @@
+{
+  // Root Wrangler config — the source of truth for the deployed Worker.
+  //
+  // WHY THIS FILE EXISTS: Cloudflare's `wrangler deploy` treats its config as
+  // authoritative and REMOVES any variables not listed here. When these values
+  // were only set in the dashboard, every git deployment wiped them and the
+  // subscribe API 500'd. Committing them here means every deployment sets them.
+  //
+  // Safe to commit: SUPABASE_ANON_KEY is the public/anon (publishable) key.
+  // Row Level Security limits the anon role to INSERT-only on `subscribers`
+  // (see supabase/migrations/0001_subscribers.sql). No privileged key is here.
+  "name": "galinggear",
+  "compatibility_date": "2026-09-16",
+  // Belt-and-braces: keep any vars already set on the Worker that aren't listed
+  // here, so a stray dashboard entry is never silently removed.
+  "keep_vars": true,
+  "vars": {
+    "SUPABASE_URL": "https://tqvrdyurmhfmedcqgbxs.supabase.co",
+    "SUPABASE_ANON_KEY": "sb_publishable_sMoNzxbGmzqO2zzauQS2fQ_1kdp60Sd"
+  }
+}
