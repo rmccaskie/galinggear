@@ -16,6 +16,6 @@
   "keep_vars": true,
   "vars": {
     "SUPABASE_URL": "https://tqvrdyurmhfmedcqgbxs.supabase.co",
-    "SUPABASE_ANON_KEY": "sb_publishable_sMoNzxbGmzqO2zzauQS2fQ_1kdp60Sd"
+    "SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRxdnJkeXVybWhmbWVkY3FnYnhzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODk2MzU1NTQsImV4cCI6MjEwNTIxMTU1NH0.trjm2MV3xunHt3hw_DFafeVEOPqqPoSafXM-fMpMr5Y"
   }
 }

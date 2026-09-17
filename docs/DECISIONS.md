@@ -75,3 +75,20 @@ subscribers (id uuid, name text, email text UNIQUE, created_at timestamptz)
 **Decision:** All user-visible text, documentation, and code comments use British English spelling.
 
 **Rationale:** Galing Gear is a Philippine publication. British English is the dominant standard in Philippine formal writing. Consistent spelling across all copy reduces cognitive load for editors.
+
+
+---
+
+## ADR-008 — Supabase env vars committed in `wrangler.jsonc` `[SETTLED]`
+
+**Decision:** `SUPABASE_URL` and `SUPABASE_ANON_KEY` live in the committed root `wrangler.jsonc` `vars` block, not only in the Cloudflare dashboard.
+
+**Rationale:** Cloudflare's `wrangler deploy` treats its config as the source of truth and **removes** any variables not listed in it. When these values were set only in the dashboard, every git-triggered deployment wiped them and the subscribe API returned 500. The anon (publishable) key is RLS-protected — the `anon` role can only INSERT into `subscribers` (see `supabase/migrations/0001_subscribers.sql`) — so committing it is safe. The `@astrojs/cloudflare` adapter merges the root config into the generated `dist/server/wrangler.json` at build time. `keep_vars: true` is also set as a safety net.
+
+---
+
+## ADR-009 — `createRequire(import.meta.url)` build-time shim `[SETTLED]`
+
+**Decision:** A small Vite `renderChunk` plugin in `astro.config.mjs` rewrites `createRequire(import.meta.url)` → `createRequire("file:///noop.js")` in the build output.
+
+**Rationale:** The content-layer `glob()` loader (`src/content.config.ts`) transitively bundles `fdir`, which calls `createRequire(import.meta.url)` at module top level. In the Cloudflare Workers runtime `import.meta.url` is `undefined`, so simply *loading* a server-rendered chunk (e.g. `/subscribe`) threw a `TypeError` — every SSR page 500'd, while static pages (prerendered in Node) and the API route (which does not render page content) were unaffected. The `require` is never actually invoked at runtime, so giving it a harmless literal base URL lets the module evaluate. Verified with `wrangler dev`: `/subscribe` returns 200 and renders the success/error banner.
