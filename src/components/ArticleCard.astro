@@ -1,0 +1,117 @@
+---
+import { SCENARIO_LABELS } from '../lib/scenarios'
+import type { Scenario } from '../lib/scenarios'
+
+interface Props {
+  title: string
+  description: string
+  scenario: Scenario
+  publishedAt: string
+  slug: string
+  featured?: boolean
+}
+
+const { title, description, scenario, publishedAt, slug, featured = false } = Astro.props
+
+const published = new Date(publishedAt)
+const publishedLabel = Number.isNaN(published.valueOf())
+  ? publishedAt
+  : published.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })
+---
+
+<article class:list={['card', { featured }]}>
+  <a class="scenario mono" href={`/${scenario}/`}>{SCENARIO_LABELS[scenario]}</a>
+  <h3 class="title">
+    <a href={`/articles/${slug}/`}>{title}</a>
+  </h3>
+  <p class="description">{description}</p>
+  <div class="foot">
+    <time class="mono" datetime={publishedAt}>{publishedLabel}</time>
+    <a class="read" href={`/articles/${slug}/`}>Read the recommendation →</a>
+  </div>
+</article>
+
+<style>
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    padding: var(--space-lg);
+    background-color: var(--surface);
+    border: 1px solid var(--hairline);
+    border-radius: var(--radius-lg);
+    block-size: 100%;
+  }
+
+  .scenario {
+    align-self: start;
+    font-size: var(--text-label);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent-text);
+    text-decoration: none;
+  }
+
+  .scenario:hover {
+    text-decoration: underline;
+  }
+
+  .title {
+    font-size: var(--text-h2);
+    line-height: 1.15;
+  }
+
+  .title a {
+    color: var(--main-text);
+    text-decoration: none;
+  }
+
+  .title a:hover {
+    color: var(--accent-text);
+  }
+
+  .description {
+    color: var(--muted-text);
+    max-inline-size: var(--measure);
+  }
+
+  .foot {
+    margin-block-start: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm) var(--space-lg);
+    align-items: baseline;
+    justify-content: space-between;
+    padding-block-start: var(--space-sm);
+  }
+
+  .foot time {
+    font-size: var(--text-label);
+    color: var(--muted-text);
+  }
+
+  .read {
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .read:hover {
+    text-decoration: underline;
+  }
+
+  .featured {
+    gap: var(--space-md);
+    padding: var(--space-xl);
+    border-color: var(--accent-text);
+  }
+
+  .featured .title {
+    font-size: var(--text-h1);
+  }
+
+  @media (max-width: 48rem) {
+    .featured {
+      grid-column: 1 / -1;
+    }
+  }
+</style>

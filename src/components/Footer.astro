@@ -1,0 +1,105 @@
+---
+import { SCENARIOS, SCENARIO_LABELS } from '../lib/scenarios'
+import SubscribeForm from './SubscribeForm.astro'
+---
+
+<footer class="site-footer">
+  <div class="wrap grid">
+    <div class="about">
+      <p class="logo">Galing Gear</p>
+      <p class="mission">
+        Gear we've tested. Chosen for Philippine weather. We help Filipino families stay safe —
+        one honest recommendation at a time.
+      </p>
+    </div>
+
+    <nav class="foot-nav" aria-label="Scenarios">
+      <p class="heading mono">Scenarios</p>
+      <ul role="list">
+        {
+          SCENARIOS.map((scenario) => (
+            <li>
+              <a href={`/${scenario}/`}>{SCENARIO_LABELS[scenario]}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+
+    <div class="foot-subscribe">
+      <p class="heading mono">Subscribe to Galing Gear</p>
+      <SubscribeForm idPrefix="footer" compact />
+    </div>
+  </div>
+
+  <div class="wrap legal">
+    <p>© 2026 Galing Gear. No affiliation with any supplier.</p>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    margin-block-start: var(--space-4xl);
+    background-color: var(--surface);
+    border-block-start: 1px solid var(--hairline);
+    padding-block: var(--space-3xl) var(--space-lg);
+  }
+
+  .grid {
+    display: grid;
+    gap: var(--space-2xl);
+  }
+
+  .logo {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--text-h2);
+  }
+
+  .mission {
+    color: var(--muted-text);
+    max-inline-size: var(--measure-narrow, 54ch);
+    margin-block-start: var(--space-sm);
+  }
+
+  .heading {
+    font-size: var(--text-label);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted-text);
+    margin-block-end: var(--space-md);
+  }
+
+  .foot-nav ul {
+    display: grid;
+    gap: var(--space-xs);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .foot-nav a {
+    color: var(--main-text);
+    text-decoration: none;
+  }
+
+  .foot-nav a:hover {
+    color: var(--accent-text);
+    text-decoration: underline;
+  }
+
+  .legal {
+    margin-block-start: var(--space-2xl);
+    padding-block-start: var(--space-lg);
+    border-block-start: 1px solid var(--hairline);
+    color: var(--muted-text);
+    font-size: var(--text-label);
+  }
+
+  @media (min-width: 60rem) {
+    .grid {
+      grid-template-columns: 1.5fr 1fr 1.5fr;
+      gap: var(--space-3xl);
+    }
+  }
+</style>

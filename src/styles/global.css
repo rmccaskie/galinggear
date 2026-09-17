@@ -1,0 +1,208 @@
+/* ===================================================================
+   GALING GEAR · GLOBAL STYLESHEET
+   Plain CSS. Logical properties only — never "left" or "right".
+   =================================================================== */
+
+/* Google Fonts: Fraunces, Inter, JetBrains Mono */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Inter:wght@400;500&family=JetBrains+Mono:wght@500&display=swap');
+
+@import './tokens.css';
+
+/* ---- reset ---- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+  padding: 0;
+}
+
+img,
+picture,
+svg {
+  max-inline-size: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+/* ---- base typography ---- */
+body {
+  margin: 0;
+  background-color: var(--page-background);
+  color: var(--main-text);
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  min-block-size: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  line-height: 1.12;
+  text-wrap: balance;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: var(--text-h1);
+}
+
+h2 {
+  font-size: var(--text-h2);
+}
+
+p {
+  text-wrap: pretty;
+}
+
+a {
+  color: var(--accent-text);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+.mono {
+  font-family: var(--font-mono);
+  font-feature-settings: 'tnum';
+}
+
+/* ---- focus ring: visible on every interactive element ---- */
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* ---- reduced motion: everything off ---- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---- shared layout helpers (logical properties throughout) ---- */
+.wrap {
+  inline-size: min(100% - (2 * var(--space-lg)), 72rem);
+  margin-inline: auto;
+}
+
+.prose {
+  max-inline-size: var(--measure);
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  inset-block-start: var(--space-xs);
+  inset-inline-start: var(--space-xs);
+  z-index: 100;
+  padding: var(--space-xs) var(--space-md);
+  background-color: var(--surface);
+  color: var(--main-text);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-md);
+  transform: translateY(-200%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+/* ---- buttons ---- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  font-family: var(--font-body);
+  font-weight: 500;
+  line-height: 1;
+  padding-block: var(--space-sm);
+  padding-inline: var(--space-lg);
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: background-color 120ms ease, border-color 120ms ease;
+}
+
+.btn-primary {
+  background-color: var(--accent-fill);
+  color: var(--on-accent-fill);
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: color-mix(in oklab, var(--accent-fill) 88%, black);
+}
+
+.btn-ghost {
+  background-color: transparent;
+  color: var(--accent-text);
+  border-color: var(--hairline);
+}
+
+.btn-ghost:hover {
+  border-color: var(--accent-text);
+}
+
+.btn-block {
+  inline-size: 100%;
+}

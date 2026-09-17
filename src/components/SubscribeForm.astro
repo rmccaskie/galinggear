@@ -1,0 +1,252 @@
+---
+import { FIELD_RULES } from '../lib/validation'
+import { SUBSCRIBE_COPY } from '../lib/strings'
+
+interface Props {
+  idPrefix?: string
+  compact?: boolean
+}
+
+const { idPrefix = 'subscribe', compact = false } = Astro.props
+const nameId = `${idPrefix}-name`
+const emailId = `${idPrefix}-email`
+const nameErrId = `${idPrefix}-name-error`
+const emailErrId = `${idPrefix}-email-error`
+const statusId = `${idPrefix}-status`
+---
+
+<form
+  class:list={['subscribe-form', { compact }]}
+  method="post"
+  action="/api/subscribe"
+  data-subscribe-form
+  novalidate
+>
+  <div class="field">
+    <label for={nameId}>Your name</label>
+    <input
+      id={nameId}
+      name="name"
+      type="text"
+      autocomplete="given-name"
+      maxlength={FIELD_RULES.name.max}
+      required
+      aria-describedby={nameErrId}
+      data-field="name"
+    />
+    <p class="err-msg" id={nameErrId} data-error-for="name" hidden></p>
+  </div>
+
+  <div class="field">
+    <label for={emailId}>Email address</label>
+    <input
+      id={emailId}
+      name="email"
+      type="email"
+      autocomplete="email"
+      inputmode="email"
+      required
+      aria-describedby={emailErrId}
+      data-field="email"
+    />
+    <p class="err-msg" id={emailErrId} data-error-for="email" hidden></p>
+  </div>
+
+  <p class="supporting">{SUBSCRIBE_COPY.supporting}</p>
+
+  <button type="submit" class="btn btn-primary btn-block">{SUBSCRIBE_COPY.submit}</button>
+
+  <p class="form-status" id={statusId} role="status" aria-live="polite"></p>
+</form>
+
+<style>
+  .subscribe-form {
+    display: grid;
+    gap: var(--space-md);
+    max-inline-size: 30rem;
+  }
+
+  .field {
+    display: grid;
+    gap: var(--space-2xs);
+  }
+
+  .field label {
+    font-family: var(--font-mono);
+    font-size: var(--text-label);
+    letter-spacing: 0.04em;
+    color: var(--muted-text);
+  }
+
+  .field input {
+    inline-size: 100%;
+    padding-block: var(--space-sm);
+    padding-inline: var(--space-md);
+    background-color: var(--surface);
+    color: var(--main-text);
+    border: 1px solid var(--hairline);
+    border-radius: var(--radius-md);
+  }
+
+  .field input[aria-invalid='true'] {
+    border-color: var(--status-error);
+  }
+
+  .err-msg {
+    color: var(--status-error);
+    font-size: var(--text-label);
+    line-height: 1.4;
+  }
+
+  .supporting {
+    color: var(--muted-text);
+    font-size: var(--text-label);
+  }
+
+  .form-status {
+    font-size: var(--text-label);
+    line-height: 1.5;
+    min-block-size: 1.5em;
+  }
+
+  .form-status[data-state='success'] {
+    color: var(--status-success);
+    font-weight: 500;
+  }
+
+  .form-status[data-state='error'] {
+    color: var(--status-error);
+  }
+
+  .compact {
+    gap: var(--space-sm);
+  }
+</style>
+
+<script>
+  import { validateName, validateEmail, type ValidationCode } from '../lib/validation'
+  import { messageForCode, fieldForCode, SUBSCRIBE_COPY } from '../lib/strings'
+
+  type FieldName = 'name' | 'email'
+
+  const validators: Record<FieldName, (v: string) => ValidationCode | null> = {
+    name: validateName,
+    email: validateEmail,
+  }
+
+  function setup(form: HTMLFormElement) {
+    const inputs = form.querySelectorAll<HTMLInputElement>('input[data-field]')
+    const status = form.querySelector<HTMLElement>('.form-status')
+
+    function errorEl(field: FieldName): HTMLElement | null {
+      return form.querySelector<HTMLElement>(`[data-error-for="${field}"]`)
+    }
+
+    function inputEl(field: FieldName): HTMLInputElement | null {
+      return form.querySelector<HTMLInputElement>(`input[data-field="${field}"]`)
+    }
+
+    function showFieldError(field: FieldName, code: string | null) {
+      const el = errorEl(field)
+      const input = inputEl(field)
+      if (!el || !input) return
+      if (code) {
+        el.textContent = messageForCode(code)
+        el.hidden = false
+        input.setAttribute('aria-invalid', 'true')
+      } else {
+        el.textContent = ''
+        el.hidden = true
+        input.removeAttribute('aria-invalid')
+      }
+    }
+
+    function setStatus(text: string, state: '' | 'success' | 'error') {
+      if (!status) return
+      status.textContent = text
+      if (state) status.dataset.state = state
+      else delete status.dataset.state
+    }
+
+    inputs.forEach((input) => {
+      const field = input.dataset.field as FieldName
+      // Validate on blur.
+      input.addEventListener('blur', () => {
+        showFieldError(field, validators[field](input.value))
+      })
+      // Clear error on keystroke.
+      input.addEventListener('input', () => {
+        showFieldError(field, null)
+        setStatus('', '')
+      })
+    })
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault()
+
+      // Re-validate everything on submit; show all errors at once.
+      const values = {
+        name: inputEl('name')?.value ?? '',
+        email: inputEl('email')?.value ?? '',
+      }
+      const nameCode = validateName(values.name)
+      const emailCode = validateEmail(values.email)
+      showFieldError('name', nameCode)
+      showFieldError('email', emailCode)
+      if (nameCode || emailCode) {
+        const first = nameCode ? inputEl('name') : inputEl('email')
+        first?.focus()
+        return
+      }
+
+      setStatus('Sending…', '')
+      const submitButton = form.querySelector<HTMLButtonElement>('button[type="submit"]')
+      if (submitButton) submitButton.disabled = true
+
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          headers: { 'content-type': 'application/json', accept: 'application/json' },
+          body: JSON.stringify(values),
+        })
+
+        if (response.ok) {
+          form.reset()
+          setStatus(SUBSCRIBE_COPY.success, 'success')
+          inputs.forEach((i) => i.removeAttribute('aria-invalid'))
+          return
+        }
+
+        const data = (await response.json().catch(() => ({}))) as {
+          code?: string
+          errors?: Record<string, string>
+        }
+
+        if (data.errors) {
+          Object.entries(data.errors).forEach(([field, code]) => {
+            showFieldError(field as FieldName, code)
+          })
+          setStatus('', '')
+        } else if (data.code) {
+          const field = fieldForCode(data.code)
+          if (field) {
+            showFieldError(field, data.code)
+            setStatus('', '')
+          } else {
+            setStatus(messageForCode(data.code), 'error')
+          }
+        } else {
+          setStatus(messageForCode('server_error'), 'error')
+        }
+      } catch {
+        setStatus(messageForCode('server_error'), 'error')
+      } finally {
+        if (submitButton) submitButton.disabled = false
+      }
+    })
+  }
+
+  document
+    .querySelectorAll<HTMLFormElement>('form[data-subscribe-form]')
+    .forEach((form) => setup(form))
+</script>
