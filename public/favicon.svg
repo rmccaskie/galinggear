@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Galing Gear">
+  <rect width="64" height="64" rx="12" fill="#0F5C63" />
+  <text x="50%" y="52%" dominant-baseline="central" text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="30" fill="#F4F1EA">GG</text>
+  <circle cx="32" cy="54" r="3" fill="#E2620E" />
+</svg>
