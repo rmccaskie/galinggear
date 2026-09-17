@@ -63,7 +63,7 @@ The enum is defined in `src/content.config.ts`. Do not add or remove scenarios w
 
 ## Supabase
 
-- Use the **anon client** only (`PUBLIC_SUPABASE_URL` + `PUBLIC_SUPABASE_ANON_KEY`).
+- Use the **anon client** only (`SUPABASE_URL` + `SUPABASE_ANON_KEY`).
 - RLS is enabled on the `subscribers` table. Anon users have INSERT only — no SELECT, UPDATE, or DELETE.
 - **Never log field values.** Log event types and timestamps only.
 - Do not expose a service-role key anywhere in this codebase.

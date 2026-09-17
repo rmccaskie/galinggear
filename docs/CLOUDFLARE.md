@@ -33,10 +33,10 @@ Add these in **Settings → Environment variables** for the **Production** envir
 
 | Variable | Where to find the value |
 |---|---|
-| `PUBLIC_SUPABASE_URL` | Supabase project → Settings → API → Project URL |
-| `PUBLIC_SUPABASE_ANON_KEY` | Supabase project → Settings → API → `anon` `public` key |
+| `SUPABASE_URL` | Supabase project → Settings → API → Project URL |
+| `SUPABASE_ANON_KEY` | Supabase project → Settings → API → `anon` `public` key |
 
-> **Note:** Both variables are prefixed `PUBLIC_` because Astro exposes them to the client bundle. The Supabase anon key is safe to expose: RLS restricts anon access to INSERT only on the `subscribers` table.
+> **Note:** These variables are server-only (no `PUBLIC_` prefix) because the subscribe endpoint is a server-side API route. The anon key is safe for server use with RLS: it grants INSERT-only access to the `subscribers` table.
 
 ---
 
@@ -85,6 +85,6 @@ By default, Cloudflare Pages builds every branch push and creates a preview URL.
 | Problem | Fix |
 |---|---|
 | Build fails with "Cannot find module" | Check Node.js version is set to 20 |
-| Subscribe form returns 500 | Verify `PUBLIC_SUPABASE_URL` and `PUBLIC_SUPABASE_ANON_KEY` are set in environment variables |
+| Subscribe form returns 500 | Verify `SUPABASE_URL` and `SUPABASE_ANON_KEY` are set in environment variables |
 | Custom domain shows "Invalid SSL" | Wait up to 24 hours for DNS propagation; Cloudflare usually resolves this automatically |
 | `galinggear.ph` not resolving | `.ph` domains may need additional nameserver verification; contact your registrar if the domain was recently transferred |

@@ -39,11 +39,11 @@ This means:
 
 ## Environment variables
 
-The site reads two `PUBLIC_*` variables. Set them in Cloudflare Pages (see `docs/CLOUDFLARE.md`):
+The site reads two server-side environment variables. Set them in Cloudflare Pages (see `docs/CLOUDFLARE.md`):
 
 ```
-PUBLIC_SUPABASE_URL=https://your-project.supabase.co
-PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+SUPABASE_URL=https://your-project.supabase.co
+SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 ```
 
 Find these in Supabase → Settings → API.
