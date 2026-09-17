@@ -1,0 +1,153 @@
+---
+import { getCollection } from 'astro:content'
+import BaseLayout from '../layouts/BaseLayout.astro'
+import ScenarioNav from '../components/ScenarioNav.astro'
+import ArticleCard from '../components/ArticleCard.astro'
+import SubscribeForm from '../components/SubscribeForm.astro'
+
+const articles = (await getCollection('articles')).sort(
+  (a, b) => new Date(b.data.publishedAt).valueOf() - new Date(a.data.publishedAt).valueOf()
+)
+
+const featured = articles.find((a) => a.data.featured) ?? articles[0]
+const recent = articles.filter((a) => a.id !== featured?.id).slice(0, 6)
+---
+
+<BaseLayout
+  title="Galing Gear"
+  description="Curated prepper and survivalist gear for Filipino families. Gear we've tested. Chosen for Philippine weather."
+>
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow mono">Practical gear for Filipino families</p>
+      <h1>Gear we've tested. Chosen for Philippine weather.</h1>
+      <p class="lede">
+        No fear-mongering, no wall of tacticool kit. Just honest recommendations we've lived with
+        through typhoon season, brownouts and the odd earthquake drill.
+      </p>
+      <a class="btn btn-primary" href="/subscribe/">Join the list</a>
+    </div>
+  </section>
+
+  <section class="wrap section">
+    <ScenarioNav />
+  </section>
+
+  {
+    featured && (
+      <section class="wrap section">
+        <h2 class="section-title">Editor's pick</h2>
+        <ArticleCard
+          title={featured.data.title}
+          description={featured.data.description}
+          scenario={featured.data.scenario}
+          publishedAt={featured.data.publishedAt}
+          slug={featured.id}
+          featured
+        />
+      </section>
+    )
+  }
+
+  <section class="wrap section">
+    <h2 class="section-title">Recently tested</h2>
+    {
+      recent.length > 0 ? (
+        <div class="grid">
+          {recent.map((article) => (
+            <ArticleCard
+              title={article.data.title}
+              description={article.data.description}
+              scenario={article.data.scenario}
+              publishedAt={article.data.publishedAt}
+              slug={article.id}
+            />
+          ))}
+        </div>
+      ) : (
+        <p class="empty">Nothing tested yet. Check back soon.</p>
+      )
+    }
+  </section>
+
+  <section class="wrap section callout">
+    <div class="callout-inner">
+      <h2>One good recommendation a week</h2>
+      <p>
+        We test gear in real Philippine conditions and write up the honest verdict. Join the list
+        and we'll send the best of it your way.
+      </p>
+      <SubscribeForm idPrefix="home" />
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero {
+    padding-block: var(--space-3xl) var(--space-2xl);
+  }
+
+  .eyebrow {
+    font-size: var(--text-label);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent-text);
+    margin-block-end: var(--space-sm);
+  }
+
+  .hero h1 {
+    font-size: var(--text-display);
+    max-inline-size: 18ch;
+  }
+
+  .lede {
+    margin-block: var(--space-lg);
+    max-inline-size: var(--measure);
+    color: var(--muted-text);
+    font-size: var(--text-h2);
+    line-height: 1.4;
+    font-family: var(--font-display);
+    font-weight: 400;
+  }
+
+  .section {
+    padding-block: var(--space-xl);
+  }
+
+  .section-title {
+    font-size: var(--text-h2);
+    margin-block-end: var(--space-lg);
+  }
+
+  .grid {
+    display: grid;
+    gap: var(--space-lg);
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+  }
+
+  .empty {
+    color: var(--muted-text);
+  }
+
+  .callout {
+    padding-block: var(--space-3xl);
+  }
+
+  .callout-inner {
+    background-color: var(--surface-sunken);
+    border: 1px solid var(--hairline);
+    border-radius: var(--radius-lg);
+    padding: var(--space-2xl);
+    display: grid;
+    gap: var(--space-md);
+  }
+
+  .callout-inner h2 {
+    font-size: var(--text-h1);
+  }
+
+  .callout-inner p {
+    color: var(--muted-text);
+    max-inline-size: var(--measure);
+  }
+</style>

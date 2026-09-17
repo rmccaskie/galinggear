@@ -1,0 +1,110 @@
+---
+import { getCollection } from 'astro:content'
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import ScenarioNav from '../../components/ScenarioNav.astro'
+import ArticleCard from '../../components/ArticleCard.astro'
+import { SCENARIOS, SCENARIO_LABELS, SCENARIO_BLURBS } from '../../lib/scenarios'
+import type { Scenario } from '../../lib/scenarios'
+
+export async function getStaticPaths() {
+  const articles = await getCollection('articles')
+  return SCENARIOS.map((scenario) => ({
+    params: { scenario },
+    props: {
+      scenario,
+      articles: articles
+        .filter((a) => a.data.scenario === scenario)
+        .sort(
+          (a, b) =>
+            new Date(b.data.publishedAt).valueOf() - new Date(a.data.publishedAt).valueOf()
+        ),
+    },
+  }))
+}
+
+interface Props {
+  scenario: Scenario
+  articles: Awaited<ReturnType<typeof getCollection<'articles'>>>
+}
+
+const { scenario, articles } = Astro.props
+const label = SCENARIO_LABELS[scenario]
+const blurb = SCENARIO_BLURBS[scenario]
+---
+
+<BaseLayout title={label} description={`${label}: ${blurb}`}>
+  <section class="wrap head">
+    <p class="eyebrow mono">Scenario</p>
+    <h1>{label}</h1>
+    <p class="blurb">{blurb}</p>
+  </section>
+
+  <section class="wrap section">
+    <ScenarioNav active={scenario} />
+  </section>
+
+  <section class="wrap section">
+    {
+      articles.length > 0 ? (
+        <div class="grid">
+          {articles.map((article) => (
+            <ArticleCard
+              title={article.data.title}
+              description={article.data.description}
+              scenario={article.data.scenario}
+              publishedAt={article.data.publishedAt}
+              slug={article.id}
+              featured={article.data.featured}
+            />
+          ))}
+        </div>
+      ) : (
+        <p class="empty">Nothing tested yet in this category. Check back soon.</p>
+      )
+    }
+  </section>
+</BaseLayout>
+
+<style>
+  .head {
+    padding-block: var(--space-3xl) var(--space-md);
+  }
+
+  .eyebrow {
+    font-size: var(--text-label);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent-text);
+    margin-block-end: var(--space-sm);
+  }
+
+  .head h1 {
+    font-size: var(--text-display);
+  }
+
+  .blurb {
+    margin-block-start: var(--space-md);
+    max-inline-size: var(--measure);
+    color: var(--muted-text);
+    font-size: var(--text-h2);
+    font-family: var(--font-display);
+    font-weight: 400;
+    line-height: 1.4;
+  }
+
+  .section {
+    padding-block: var(--space-lg);
+  }
+
+  .grid {
+    display: grid;
+    gap: var(--space-lg);
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+  }
+
+  .empty {
+    color: var(--muted-text);
+    font-size: var(--text-h2);
+    font-family: var(--font-display);
+  }
+</style>
