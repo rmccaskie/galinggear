@@ -83,6 +83,13 @@ const publishedLabel = Number.isNaN(published.valueOf())
 
   .card.has-thumb.featured .thumb {
     aspect-ratio: 21 / 9;
+    max-block-size: 30rem;
+  }
+
+  /* Editor's pick: scale the image to fit (letterboxed on the sunken surface),
+     matching the article-page hero treatment, rather than cropping to fill. */
+  .card.has-thumb.featured .thumb img {
+    object-fit: contain;
   }
 
   .card:hover .thumb img {
