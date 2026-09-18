@@ -427,3 +427,147 @@ img.gg-zoomable {
 .gg-lb-next[hidden] {
   display: none;
 }
+
+/* ===================================================================
+   ARTICLE VIDEO · click-to-play YouTube thumbnail + lightbox player
+   Shared "gg-" contract: identical HTML is produced by the admin
+   editor (see galinggear-admin lib/gg-html.ts videoHtml) and rendered
+   here. Logical properties only.
+   =================================================================== */
+
+/* ---- inline thumbnail ---- */
+.gg-video {
+  margin-block: var(--space-lg);
+  margin-inline: auto;
+}
+
+.gg-video--small {
+  max-inline-size: 22rem;
+}
+
+.gg-video--medium {
+  max-inline-size: 34rem;
+}
+
+.gg-video--full {
+  max-inline-size: var(--measure);
+}
+
+.gg-video-play {
+  display: block;
+  position: relative;
+  inline-size: 100%;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.gg-video-thumb {
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-md);
+  background-color: var(--surface-sunken);
+}
+
+/* Play badge, centred over the thumbnail */
+.gg-video-icon {
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-start: 50%;
+  transform: translate(-50%, -50%);
+  inline-size: 4.5rem;
+  block-size: 4.5rem;
+  border-radius: var(--radius-pill);
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: background-color 120ms ease, transform 120ms ease;
+}
+
+.gg-video-icon::after {
+  content: '';
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-start: 54%;
+  transform: translate(-50%, -50%);
+  inline-size: 0;
+  block-size: 0;
+  border-style: solid;
+  border-width: 0.85rem 0 0.85rem 1.4rem;
+  border-color: transparent transparent transparent #fff;
+}
+
+.gg-video-play:hover .gg-video-icon,
+.gg-video-play:focus-visible .gg-video-icon {
+  background-color: var(--accent-fill);
+  transform: translate(-50%, -50%) scale(1.06);
+}
+
+.gg-video figcaption {
+  margin-block-start: var(--space-xs);
+  font-family: var(--font-body);
+  font-size: var(--text-label);
+  line-height: 1.4;
+  color: var(--muted-text);
+}
+
+/* ---- video lightbox overlay ---- */
+.gg-video-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-lg);
+  background-color: rgba(0, 0, 0, 0.92);
+}
+
+.gg-video-lightbox[hidden] {
+  display: none;
+}
+
+.gg-vlb-frame {
+  position: relative;
+  inline-size: min(100%, 64rem);
+  aspect-ratio: 16 / 9;
+  max-block-size: 80vh;
+}
+
+.gg-vlb-frame iframe {
+  position: absolute;
+  inset: 0;
+  inline-size: 100%;
+  block-size: 100%;
+  border: 0;
+  border-radius: var(--radius-md);
+}
+
+.gg-vlb-close {
+  position: fixed;
+  inset-block-start: var(--space-md);
+  inset-inline-end: var(--space-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: 3rem;
+  block-size: 3rem;
+  padding: 0;
+  border: none;
+  border-radius: var(--radius-pill);
+  background-color: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  font-size: 1.75rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 120ms ease;
+}
+
+.gg-vlb-close:hover {
+  background-color: rgba(255, 255, 255, 0.28);
+}

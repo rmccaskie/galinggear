@@ -4,6 +4,7 @@ import SEO from '../components/SEO.astro'
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
 import Lightbox from '../components/Lightbox.astro'
+import VideoLightbox from '../components/VideoLightbox.astro'
 
 interface Props {
   title: string
@@ -47,5 +48,6 @@ const { title, description, image, type } = Astro.props
     </main>
     <Footer />
     <Lightbox />
+    <VideoLightbox />
   </body>
 </html>
