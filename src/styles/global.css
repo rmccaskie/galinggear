@@ -206,3 +206,198 @@ a:hover {
 .btn-block {
   inline-size: 100%;
 }
+
+/* ===================================================================
+   ARTICLE IMAGES · figures, galleries, hero, lightbox
+   Shared "gg-" contract: identical HTML is produced by the admin
+   editor and rendered here. Logical properties only.
+   =================================================================== */
+
+/* ---- single figure ---- */
+.gg-figure {
+  margin-block: var(--space-lg);
+}
+
+.gg-figure img {
+  inline-size: 100%;
+  block-size: auto;
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-md);
+  background-color: var(--surface-sunken);
+}
+
+.gg-figure figcaption {
+  margin-block-start: var(--space-xs);
+  font-family: var(--font-body);
+  font-size: var(--text-label);
+  line-height: 1.4;
+  color: var(--muted-text);
+}
+
+img.gg-zoomable {
+  cursor: zoom-in;
+}
+
+/* ---- inline gallery ---- */
+.gg-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md);
+  margin-block: var(--space-lg);
+}
+
+.gg-gallery[data-count='1'] {
+  grid-template-columns: 1fr;
+}
+
+.gg-gallery .gg-figure {
+  margin-block: 0;
+}
+
+.gg-gallery .gg-figure img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+@media (max-width: 40rem) {
+  .gg-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---- hero: single banner ---- */
+.gg-hero-single {
+  margin-block: var(--space-md) var(--space-xl);
+}
+
+.gg-hero-single img {
+  inline-size: 100%;
+  max-block-size: 30rem;
+  object-fit: cover;
+}
+
+/* ---- hero: swipeable carousel ---- */
+.gg-hero-carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 88%;
+  gap: var(--space-md);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  margin-block: var(--space-md) var(--space-xl);
+  padding-block-end: var(--space-xs);
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+
+.gg-hero-carousel .gg-hero-slide {
+  margin-block: 0;
+  scroll-snap-align: center;
+}
+
+.gg-hero-carousel .gg-hero-slide img {
+  inline-size: 100%;
+  max-block-size: 30rem;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+@media (min-width: 48rem) {
+  .gg-hero-carousel {
+    grid-auto-columns: 70%;
+  }
+}
+
+/* ---- lightbox overlay ---- */
+.gg-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-lg);
+  background-color: rgba(0, 0, 0, 0.92);
+}
+
+.gg-lightbox[hidden] {
+  display: none;
+}
+
+.gg-lb-figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  max-inline-size: min(100%, 64rem);
+  max-block-size: 100%;
+}
+
+.gg-lb-img {
+  max-inline-size: 100%;
+  max-block-size: 80vh;
+  object-fit: contain;
+  border-radius: var(--radius-md);
+}
+
+.gg-lb-cap {
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: var(--text-label);
+  line-height: 1.4;
+  text-align: center;
+  max-inline-size: 60ch;
+}
+
+.gg-lb-cap[hidden] {
+  display: none;
+}
+
+.gg-lb-close,
+.gg-lb-prev,
+.gg-lb-next {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: 3rem;
+  block-size: 3rem;
+  padding: 0;
+  border: none;
+  border-radius: var(--radius-pill);
+  background-color: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  font-size: 1.75rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 120ms ease;
+}
+
+.gg-lb-close:hover,
+.gg-lb-prev:hover,
+.gg-lb-next:hover {
+  background-color: rgba(255, 255, 255, 0.28);
+}
+
+.gg-lb-close {
+  inset-block-start: var(--space-md);
+  inset-inline-end: var(--space-md);
+}
+
+.gg-lb-prev {
+  inset-inline-start: var(--space-md);
+  inset-block-start: 50%;
+  transform: translateY(-50%);
+}
+
+.gg-lb-next {
+  inset-inline-end: var(--space-md);
+  inset-block-start: 50%;
+  transform: translateY(-50%);
+}
+
+.gg-lb-prev[hidden],
+.gg-lb-next[hidden] {
+  display: none;
+}

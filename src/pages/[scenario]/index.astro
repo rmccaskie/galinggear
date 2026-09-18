@@ -54,6 +54,7 @@ const blurb = SCENARIO_BLURBS[scenario]
               scenario={article.data.scenario}
               publishedAt={article.data.publishedAt}
               slug={article.id}
+              heroImage={article.data.heroImage ?? article.data.heroGallery?.[0]?.src}
               featured={article.data.featured}
             />
           ))}

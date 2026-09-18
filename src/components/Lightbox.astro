@@ -1,0 +1,116 @@
+---
+// Mobile-friendly image lightbox. Attaches to any <img class="gg-zoomable">.
+// Images inside a .gg-gallery or .gg-hero-carousel form a browsable group
+// (prev / next / swipe); standalone figures open on their own.
+---
+
+<div
+  id="gg-lightbox"
+  class="gg-lightbox"
+  hidden
+  role="dialog"
+  aria-modal="true"
+  aria-label="Image viewer"
+>
+  <button class="gg-lb-close" type="button" aria-label="Close">&times;</button>
+  <button class="gg-lb-prev" type="button" aria-label="Previous image">&lsaquo;</button>
+  <figure class="gg-lb-figure">
+    <img class="gg-lb-img" src="" alt="" />
+    <figcaption class="gg-lb-cap" hidden></figcaption>
+  </figure>
+  <button class="gg-lb-next" type="button" aria-label="Next image">&rsaquo;</button>
+</div>
+
+<script is:inline>
+  ;(() => {
+    const lb = document.getElementById('gg-lightbox')
+    if (!lb) return
+    const imgEl = lb.querySelector('.gg-lb-img')
+    const capEl = lb.querySelector('.gg-lb-cap')
+    const btnClose = lb.querySelector('.gg-lb-close')
+    const btnPrev = lb.querySelector('.gg-lb-prev')
+    const btnNext = lb.querySelector('.gg-lb-next')
+    let group = []
+    let index = 0
+
+    function dataFor(img) {
+      const fig = img.closest('figure')
+      const cap = fig ? fig.querySelector('figcaption') : null
+      return {
+        src: img.currentSrc || img.src,
+        alt: img.alt || '',
+        caption: cap ? cap.textContent.trim() : '',
+      }
+    }
+
+    function show(i) {
+      if (!group.length) return
+      index = (i + group.length) % group.length
+      const d = dataFor(group[index])
+      imgEl.src = d.src
+      imgEl.alt = d.alt
+      capEl.textContent = d.caption
+      capEl.hidden = !d.caption
+      const many = group.length > 1
+      btnPrev.hidden = !many
+      btnNext.hidden = !many
+    }
+
+    function open(img) {
+      const container = img.closest('.gg-gallery, .gg-hero-carousel')
+      group = container
+        ? Array.from(container.querySelectorAll('img.gg-zoomable'))
+        : [img]
+      const start = group.indexOf(img)
+      show(start < 0 ? 0 : start)
+      lb.hidden = false
+      document.body.style.overflow = 'hidden'
+    }
+
+    function close() {
+      lb.hidden = true
+      document.body.style.overflow = ''
+      imgEl.src = ''
+    }
+
+    document.addEventListener('click', (e) => {
+      const t = e.target
+      if (!t || !t.closest) return
+      const img = t.closest('img.gg-zoomable')
+      if (img) {
+        e.preventDefault()
+        open(img)
+      }
+    })
+
+    btnClose.addEventListener('click', close)
+    btnPrev.addEventListener('click', () => show(index - 1))
+    btnNext.addEventListener('click', () => show(index + 1))
+    lb.addEventListener('click', (e) => {
+      if (e.target === lb) close()
+    })
+    document.addEventListener('keydown', (e) => {
+      if (lb.hidden) return
+      if (e.key === 'Escape') close()
+      else if (e.key === 'ArrowLeft') show(index - 1)
+      else if (e.key === 'ArrowRight') show(index + 1)
+    })
+
+    let startX = 0
+    lb.addEventListener(
+      'touchstart',
+      (e) => {
+        startX = e.changedTouches[0].clientX
+      },
+      { passive: true }
+    )
+    lb.addEventListener(
+      'touchend',
+      (e) => {
+        const dx = e.changedTouches[0].clientX - startX
+        if (Math.abs(dx) > 40 && group.length > 1) show(index + (dx > 0 ? -1 : 1))
+      },
+      { passive: true }
+    )
+  })()
+</script>

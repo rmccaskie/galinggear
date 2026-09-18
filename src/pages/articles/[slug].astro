@@ -28,7 +28,9 @@ interface Props {
 
 const { article, related } = Astro.props
 const { Content } = await render(article)
-const { title, description, scenario, publishedAt, updatedAt, editorNote } = article.data
+const { title, description, scenario, publishedAt, updatedAt, editorNote, heroImage, heroGallery } =
+  article.data
+const hasHeroGallery = Array.isArray(heroGallery) && heroGallery.length > 0
 
 function fmt(date: string) {
   const d = new Date(date)
@@ -51,6 +53,27 @@ function fmt(date: string) {
       {editorNote && <p class="editor-note">{editorNote}</p>}
     </header>
 
+    {
+      hasHeroGallery ? (
+        <div class="wrap">
+          <div class="gg-hero-carousel" data-count={heroGallery!.length}>
+            {heroGallery!.map((img) => (
+              <figure class="gg-figure gg-hero-slide">
+                <img class="gg-zoomable" src={img.src} alt={img.alt ?? ''} loading="lazy" />
+                {img.caption && <figcaption>{img.caption}</figcaption>}
+              </figure>
+            ))}
+          </div>
+        </div>
+      ) : heroImage ? (
+        <div class="wrap">
+          <figure class="gg-figure gg-hero-single">
+            <img class="gg-zoomable" src={heroImage} alt={title} />
+          </figure>
+        </div>
+      ) : null
+    }
+
     <div class="wrap">
       <div class="prose body">
         <Content />
@@ -70,6 +93,7 @@ function fmt(date: string) {
               scenario={a.data.scenario}
               publishedAt={a.data.publishedAt}
               slug={a.id}
+              heroImage={a.data.heroImage ?? a.data.heroGallery?.[0]?.src}
             />
           ))}
         </div>

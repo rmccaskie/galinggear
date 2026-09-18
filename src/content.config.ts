@@ -23,6 +23,15 @@ const articles = defineCollection({
     updatedAt: z.string().optional(),
     featured: z.boolean().default(false),
     heroImage: z.string().optional(),
+    heroGallery: z
+      .array(
+        z.object({
+          src: z.string(),
+          alt: z.string().optional(),
+          caption: z.string().optional(),
+        })
+      )
+      .optional(),
     editorNote: z.string().optional(),
   }),
 })

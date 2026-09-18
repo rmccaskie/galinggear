@@ -9,9 +9,10 @@ interface Props {
   publishedAt: string
   slug: string
   featured?: boolean
+  heroImage?: string
 }
 
-const { title, description, scenario, publishedAt, slug, featured = false } = Astro.props
+const { title, description, scenario, publishedAt, slug, featured = false, heroImage } = Astro.props
 
 const published = new Date(publishedAt)
 const publishedLabel = Number.isNaN(published.valueOf())
@@ -19,7 +20,14 @@ const publishedLabel = Number.isNaN(published.valueOf())
   : published.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })
 ---
 
-<article class:list={['card', { featured }]}>
+<article class:list={['card', { featured, 'has-thumb': heroImage }]}>
+  {
+    heroImage && (
+      <a class="thumb" href={`/articles/${slug}/`} aria-hidden="true" tabindex="-1">
+        <img src={heroImage} alt="" loading="lazy" />
+      </a>
+    )
+  }
   <a class="scenario mono" href={`/${scenario}/`}>{SCENARIO_LABELS[scenario]}</a>
   <h3 class="title">
     <a href={`/articles/${slug}/`}>{title}</a>
@@ -41,6 +49,35 @@ const publishedLabel = Number.isNaN(published.valueOf())
     border: 1px solid var(--hairline);
     border-radius: var(--radius-lg);
     block-size: 100%;
+  }
+
+  .card.has-thumb {
+    padding-block-start: 0;
+    overflow: hidden;
+  }
+
+  .thumb {
+    display: block;
+    margin-inline: calc(-1 * var(--space-lg));
+    margin-block-end: var(--space-xs);
+    aspect-ratio: 16 / 9;
+    background-color: var(--surface-sunken);
+    overflow: hidden;
+  }
+
+  .thumb img {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+    transition: transform 200ms ease;
+  }
+
+  .card.has-thumb.featured .thumb {
+    aspect-ratio: 21 / 9;
+  }
+
+  .card:hover .thumb img {
+    transform: scale(1.03);
   }
 
   .scenario {
