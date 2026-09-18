@@ -1,6 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Galing Gear">
-  <rect width="64" height="64" rx="12" fill="#0F5C63" />
-  <text x="50%" y="52%" dominant-baseline="central" text-anchor="middle"
-        font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="30" fill="#F4F1EA">GG</text>
-  <circle cx="32" cy="54" r="3" fill="#E2620E" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+<rect width="64" height="64" rx="12.16" ry="12.16" fill="#0F5C63"/><path d="M 25.65 12.46 L 26.10 6.43 L 37.90 6.43 L 38.35 12.46 L 41.33 13.69 L 45.91 9.75 L 54.25 18.09 L 50.31 22.67 L 51.54 25.65 L 57.57 26.10 L 57.57 37.90 L 51.54 38.35 L 50.31 41.33 L 54.25 45.91 L 45.91 54.25 L 41.33 50.31 L 38.35 51.54 L 37.90 57.57 L 26.10 57.57 L 25.65 51.54 L 22.67 50.31 L 18.09 54.25 L 9.75 45.91 L 13.69 41.33 L 12.46 38.35 L 6.43 37.90 L 6.43 26.10 L 12.46 25.65 L 13.69 22.67 L 9.75 18.09 L 18.09 9.75 L 22.67 13.69 Z" fill="#ffffff" stroke="#ffffff" stroke-width="2.89" stroke-linejoin="round"/><circle cx="32.0" cy="32.0" r="14.43" fill="#0F5C63"/><path d="M 35.06 20.19 L 25.88 34.19 L 31.13 34.19 L 28.50 43.81 L 38.56 28.94 L 33.31 28.94 Z" fill="#ffffff"/>
 </svg>

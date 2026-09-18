@@ -11,7 +11,7 @@ const { title, description, image, type = 'website' } = Astro.props
 const siteName = 'Galing Gear'
 const fullTitle = title === siteName ? title : `${title} · ${siteName}`
 const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString()
-const ogImage = image ? new URL(image, Astro.site ?? Astro.url).toString() : undefined
+const ogImage = new URL(image ?? '/brand/og-image.png', Astro.site ?? Astro.url).toString()
 ---
 
 <title>{fullTitle}</title>
@@ -23,9 +23,9 @@ const ogImage = image ? new URL(image, Astro.site ?? Astro.url).toString() : und
 <meta property="og:title" content={fullTitle} />
 <meta property="og:description" content={description} />
 <meta property="og:url" content={canonical} />
-{ogImage && <meta property="og:image" content={ogImage} />}
+<meta property="og:image" content={ogImage} />
 
-<meta name="twitter:card" content={ogImage ? 'summary_large_image' : 'summary'} />
+<meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content={fullTitle} />
 <meta name="twitter:description" content={description} />
-{ogImage && <meta name="twitter:image" content={ogImage} />}
+<meta name="twitter:image" content={ogImage} />

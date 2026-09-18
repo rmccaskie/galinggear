@@ -4,8 +4,9 @@ import { SCENARIOS, SCENARIO_LABELS } from '../lib/scenarios'
 
 <header class="site-header">
   <div class="bar wrap">
-    <a class="brand" href="/">
-      <span class="logo">Galing Gear</span>
+    <a class="brand" href="/" aria-label="Galing Gear — home">
+      <img class="brand-logo brand-logo--light" src="/brand/logo-on-light.svg?v=2" alt="Galing Gear" width="200" height="52" />
+      <img class="brand-logo brand-logo--dark" src="/brand/logo-on-dark.svg?v=2" alt="Galing Gear" width="200" height="52" />
       <span class="tagline">Gear we've tested. Chosen for Philippine weather.</span>
     </a>
 
@@ -112,11 +113,23 @@ import { SCENARIOS, SCENARIO_LABELS } from '../lib/scenarios'
     gap: var(--space-3xs);
   }
 
-  .logo {
-    font-family: var(--font-display);
-    font-weight: 700;
-    font-size: var(--text-h2);
-    line-height: 1;
+  .brand-logo {
+    display: block;
+    block-size: 2.6rem;
+    inline-size: auto;
+  }
+
+  /* Show the correct lockup for the active theme. */
+  .brand-logo--dark {
+    display: none;
+  }
+
+  :global([data-theme='dark']) .brand-logo--light {
+    display: none;
+  }
+
+  :global([data-theme='dark']) .brand-logo--dark {
+    display: block;
   }
 
   .tagline {
