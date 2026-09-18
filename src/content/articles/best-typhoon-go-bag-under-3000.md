@@ -25,6 +25,17 @@ For under **₱3,000** you can put together a go-bag that actually holds up: cle
 
 ## What goes in the bag, and why
 
+
+
+<div class="gg-gallery" data-count="6">
+  <figure class="gg-figure"><img class="gg-zoomable" src="https://images.galinggear.com/articles/1789694710640-z3kxxv.png" alt="" loading="lazy" /></figure>
+  <figure class="gg-figure"><img class="gg-zoomable" src="https://images.galinggear.com/articles/1789694711381-2rd8gg.png" alt="" loading="lazy" /></figure>
+  <figure class="gg-figure"><img class="gg-zoomable" src="https://images.galinggear.com/articles/1789694712124-tyh70u.png" alt="" loading="lazy" /></figure>
+  <figure class="gg-figure"><img class="gg-zoomable" src="https://images.galinggear.com/articles/1789694712985-ed8zad.png" alt="" loading="lazy" /></figure>
+  <figure class="gg-figure"><img class="gg-zoomable" src="https://images.galinggear.com/articles/1789694713772-b4fsby.png" alt="" loading="lazy" /></figure>
+  <figure class="gg-figure"><img class="gg-zoomable" src="https://images.galinggear.com/articles/1789694714599-2ush2l.png" alt="" loading="lazy" /></figure>
+</div>
+
 **Water — Sawyer Squeeze (around ₱1,400).** The single most important thing in the bag. When the mains go cloudy after a storm, this filter turns questionable tap or rainwater into something I will give my children without a second thought. It is small, it never needs batteries, and it keeps working long after a sachet of tablets would have run out.
 
 **Light and charge — Goal Zero Flip 36 (around ₱900).** A power bank that charges a phone and doubles as a torch on the darker nights. Three days of brownout is a long time to be cut off; this keeps one phone alive so we can reach family and read the PAGASA updates.
