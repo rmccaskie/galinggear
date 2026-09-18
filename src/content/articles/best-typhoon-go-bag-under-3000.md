@@ -7,6 +7,11 @@ scenario: typhoon-season
 publishedAt: '2026-07-14'
 featured: true
 updatedAt: '2026-09-18'
+heroGallery:
+  - src: 'https://images.galinggear.com/articles/1789694485062-mhy3dk.png'
+    caption: Caption 1
+  - src: 'https://images.galinggear.com/articles/1789694485783-cxqcb4.png'
+    caption: Caption 2
 editorNote: >-
   Prices checked September 2026. We buy our own gear and take nothing from
   suppliers.
@@ -15,6 +20,10 @@ editorNote: >-
 I have packed and repacked this cool bag more times than I can count. I tested this kit in three consecutive typhoon seasons in Quezon City — the year Ulysses put water up to our gate, and the two quieter years after it — and this is the version I have settled on. One bag, by the door, that any adult in the house can grab on the way out.
 
 ## Editor's verdict
+
+
+
+<figure class="gg-figure"><img class="gg-zoomable" src="https://images.galinggear.com/articles/1789694505291-gfqyki.png" alt="" loading="lazy" /><figcaption>Static caption for this image</figcaption></figure>
 
 For under **₱3,000** you can put together a go-bag that actually holds up: clean water, three days of light and charge, a way to hear what is happening, and a blade that will not let you down. Nothing here is showy. Everything here has earned its place by working when the power was off and the rain would not stop.
 
