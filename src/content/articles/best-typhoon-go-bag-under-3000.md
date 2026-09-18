@@ -13,6 +13,14 @@ editorNote: >-
   suppliers.
 ---
 
+<div class="gg-gallery" data-count="5">
+  <figure class="gg-figure"><img class="gg-zoomable" src="https://images.galinggear.com/articles/1789693193567-jg0k9o.png" alt="" loading="lazy" /></figure>
+  <figure class="gg-figure"><img class="gg-zoomable" src="https://images.galinggear.com/articles/1789693194028-n1rukw.png" alt="" loading="lazy" /></figure>
+  <figure class="gg-figure"><img class="gg-zoomable" src="https://images.galinggear.com/articles/1789693194452-dbv8iy.png" alt="" loading="lazy" /></figure>
+  <figure class="gg-figure"><img class="gg-zoomable" src="https://images.galinggear.com/articles/1789693194844-3cm3m3.png" alt="" loading="lazy" /></figure>
+  <figure class="gg-figure"><img class="gg-zoomable" src="https://images.galinggear.com/articles/1789693195319-w2x4uz.png" alt="" loading="lazy" /></figure>
+</div>
+
 <figure class="gg-figure"><img class="gg-zoomable" src="https://images.galinggear.com/articles/1789693154581-1llc89.png" alt="" loading="lazy" /></figure>
 
 I have packed and repacked this cool bag more times than I can count. I tested this kit in three consecutive typhoon seasons in Quezon City — the year Ulysses put water up to our gate, and the two quieter years after it — and this is the version I have settled on. One bag, by the door, that any adult in the house can grab on the way out.
