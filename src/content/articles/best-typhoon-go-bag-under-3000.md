@@ -13,6 +13,8 @@ editorNote: >-
   suppliers.
 ---
 
+<figure class="gg-figure"><img class="gg-zoomable" src="https://images.galinggear.com/articles/1789693154581-1llc89.png" alt="" loading="lazy" /></figure>
+
 I have packed and repacked this cool bag more times than I can count. I tested this kit in three consecutive typhoon seasons in Quezon City — the year Ulysses put water up to our gate, and the two quieter years after it — and this is the version I have settled on. One bag, by the door, that any adult in the house can grab on the way out.
 
 ## Editor's verdict
