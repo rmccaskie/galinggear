@@ -7,7 +7,8 @@ scenario: go-bag
 publishedAt: '2026-09-18'
 featured: true
 status: active
-heroImage: 'https://images.galinggear.com/articles/sourced-1789732771029-poctpo.jpg'
+updatedAt: '2026-09-18'
+heroImage: 'https://images.galinggear.com/articles/sourced-1789732904716-zy86mq.jpg'
 editorNote: We buy our own gear. Prices checked March 2026.
 ---
 
