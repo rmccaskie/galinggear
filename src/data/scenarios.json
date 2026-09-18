@@ -1,20 +1,128 @@
 [
-  { "slug": "typhoon-season", "label": "Typhoon Season", "blurb": "Kit that holds up when the rain comes sideways and the power goes.", "isPrimary": true, "sortOrder": 0 },
-  { "slug": "flood-ready", "label": "Flood Ready", "blurb": "Gear and know-how for when the water rises faster than the warnings.", "isPrimary": true, "sortOrder": 1 },
-  { "slug": "earthquake-ready", "label": "Earthquake Ready", "blurb": "What to have within reach before the ground moves.", "isPrimary": true, "sortOrder": 2 },
-  { "slug": "power-outage", "label": "Power Outage", "blurb": "Light, charge and comfort for a brownout that overstays its welcome.", "isPrimary": true, "sortOrder": 3 },
-  { "slug": "clean-water", "label": "Clean Water", "blurb": "Filters, purifiers and storage for the days the tap stops being trustworthy.", "isPrimary": true, "sortOrder": 4 },
-  { "slug": "go-bag", "label": "Go-Bag", "blurb": "The one bag by the door, packed and ready to grab.", "isPrimary": true, "sortOrder": 5 },
-  { "slug": "ashfall-volcano", "label": "Ashfall & Volcano", "blurb": "Masks, goggles and shelter tweaks for when the sky turns grey.", "isPrimary": false, "sortOrder": 6 },
-  { "slug": "pantry-food", "label": "Pantry & Food", "blurb": "Long-shelf food, cooking without gas, and keeping the household fed through a crisis.", "isPrimary": false, "sortOrder": 7 },
-  { "slug": "fire-safety", "label": "Fire Safety", "blurb": "Extinguishers, escape plans and the small habits that prevent the big disaster.", "isPrimary": false, "sortOrder": 8 },
-  { "slug": "stay-connected", "label": "Stay Connected", "blurb": "Radios, mesh networks and backup SIMs for when the cell towers go quiet.", "isPrimary": false, "sortOrder": 9 },
-  { "slug": "stranded-kit", "label": "Stranded Kit", "blurb": "The essentials for your car, your commute or an unexpected night away from home.", "isPrimary": false, "sortOrder": 10 },
-  { "slug": "heat-wave", "label": "Heat Wave", "blurb": "Cooling gear, hydration hacks and heat-illness know-how for Philippine summers.", "isPrimary": false, "sortOrder": 11 },
-  { "slug": "first-aid", "label": "First Aid", "blurb": "The kit and the know-how for the small emergencies and the serious ones.", "isPrimary": false, "sortOrder": 12 },
-  { "slug": "off-grid", "label": "Off Grid", "blurb": "Water, power and light for the days the grid cannot reach you.", "isPrimary": false, "sortOrder": 13 },
-  { "slug": "edc", "label": "EDC", "blurb": "The few things worth carrying every single day.", "isPrimary": false, "sortOrder": 14 },
-  { "slug": "kids-lolas", "label": "Kids & Lolas", "blurb": "Prep that accounts for the ones who cannot prep for themselves.", "isPrimary": false, "sortOrder": 15 },
-  { "slug": "pets", "label": "Pets", "blurb": "Carriers, food stash and evac plans so the animals come with you.", "isPrimary": false, "sortOrder": 16 },
-  { "slug": "documents-cash", "label": "Documents & Cash", "blurb": "Copies, waterproofing and enough cash for the first 72 hours without a bank.", "isPrimary": false, "sortOrder": 17 }
+  {
+    "slug": "typhoon-season",
+    "label": "Typhoon Season",
+    "blurb": "Kit that holds up when the rain comes sideways and the power goes.",
+    "isPrimary": true,
+    "sortOrder": 0
+  },
+  {
+    "slug": "flood-ready",
+    "label": "Flood Ready",
+    "blurb": "Gear and know-how for when the water rises faster than the warnings.",
+    "isPrimary": true,
+    "sortOrder": 1
+  },
+  {
+    "slug": "earthquake-ready",
+    "label": "Earthquake Ready",
+    "blurb": "What to have within reach before the ground moves.",
+    "isPrimary": true,
+    "sortOrder": 2
+  },
+  {
+    "slug": "power-outage",
+    "label": "Power Outage",
+    "blurb": "Light, charge and comfort for a brownout that overstays its welcome.",
+    "isPrimary": true,
+    "sortOrder": 3
+  },
+  {
+    "slug": "clean-water",
+    "label": "Clean Water",
+    "blurb": "Filters, purifiers and storage for the days the tap stops being trustworthy.",
+    "isPrimary": true,
+    "sortOrder": 4
+  },
+  {
+    "slug": "go-bag",
+    "label": "Go-Bag",
+    "blurb": "The one bag by the door, packed and ready to grab.",
+    "isPrimary": true,
+    "sortOrder": 5
+  },
+  {
+    "slug": "first-aid",
+    "label": "First Aid",
+    "blurb": "The kit and the know-how for the small emergencies and the serious ones.",
+    "isPrimary": false,
+    "sortOrder": 6
+  },
+  {
+    "slug": "stay-connected",
+    "label": "Stay Connected",
+    "blurb": "Radios, mesh networks and backup SIMs for when the cell towers go quiet.",
+    "isPrimary": false,
+    "sortOrder": 7
+  },
+  {
+    "slug": "fire-safety",
+    "label": "Fire Safety",
+    "blurb": "Extinguishers, escape plans and the small habits that prevent the big disaster.",
+    "isPrimary": false,
+    "sortOrder": 8
+  },
+  {
+    "slug": "stranded-kit",
+    "label": "Stranded Kit",
+    "blurb": "The essentials for your car, your commute or an unexpected night away from home.",
+    "isPrimary": false,
+    "sortOrder": 9
+  },
+  {
+    "slug": "heat-wave",
+    "label": "Heat Wave",
+    "blurb": "Cooling gear, hydration hacks and heat-illness know-how for Philippine summers.",
+    "isPrimary": false,
+    "sortOrder": 10
+  },
+  {
+    "slug": "pantry-food",
+    "label": "Pantry & Food",
+    "blurb": "Long-shelf food, cooking without gas, and keeping the household fed through a crisis.",
+    "isPrimary": false,
+    "sortOrder": 11
+  },
+  {
+    "slug": "off-grid",
+    "label": "Off Grid",
+    "blurb": "Water, power and light for the days the grid cannot reach you.",
+    "isPrimary": false,
+    "sortOrder": 12
+  },
+  {
+    "slug": "ashfall-volcano",
+    "label": "Ashfall & Volcano",
+    "blurb": "Masks, goggles and shelter tweaks for when the sky turns grey.",
+    "isPrimary": false,
+    "sortOrder": 13
+  },
+  {
+    "slug": "edc",
+    "label": "EDC",
+    "blurb": "The few things worth carrying every single day.",
+    "isPrimary": false,
+    "sortOrder": 14
+  },
+  {
+    "slug": "kids-lolas",
+    "label": "Kids & Lolas",
+    "blurb": "Prep that accounts for the ones who cannot prep for themselves.",
+    "isPrimary": false,
+    "sortOrder": 15
+  },
+  {
+    "slug": "pets",
+    "label": "Pets",
+    "blurb": "Carriers, food stash and evac plans so the animals come with you.",
+    "isPrimary": false,
+    "sortOrder": 16
+  },
+  {
+    "slug": "documents-cash",
+    "label": "Documents & Cash",
+    "blurb": "Copies, waterproofing and enough cash for the first 72 hours without a bank.",
+    "isPrimary": false,
+    "sortOrder": 17
+  }
 ]
