@@ -8,7 +8,7 @@ publishedAt: '2026-07-14'
 featured: false
 status: active
 updatedAt: '2026-09-18'
-heroImage: 'https://images.galinggear.com/articles/1789697832205-ihjs8s.jpg'
+heroImage: 'https://images.galinggear.com/articles/sourced-1789733600467-jelpg0.jpg'
 editorNote: >-
   Prices checked September 2026. We buy our own gear and take nothing from
   suppliers.
