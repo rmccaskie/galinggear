@@ -1,13 +1,13 @@
 ---
 title: 'The best typhoon go-bag for under ₱3,000'
 description: >-
-  A grab-and-go kit that has carried my family through three typhoon seasons in
-  Quezon City — light, honest, and under budget.
+  A grab-and-go kit that has carried my family through three typhoon seasons —
+  light, honest, and under budget.
 scenario: typhoon-season
 publishedAt: '2026-07-14'
 featured: true
 updatedAt: '2026-09-18'
-heroImage: 'https://images.galinggear.com/articles/1789694681234-8yml2n.png'
+heroImage: 'https://images.galinggear.com/articles/1789696394799-ejykr4.png'
 editorNote: >-
   Prices checked September 2026. We buy our own gear and take nothing from
   suppliers.
