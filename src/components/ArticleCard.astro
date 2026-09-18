@@ -10,9 +10,10 @@ interface Props {
   slug: string
   featured?: boolean
   heroImage?: string
+  status?: 'active' | 'archived'
 }
 
-const { title, description, scenario, publishedAt, slug, featured = false, heroImage } = Astro.props
+const { title, description, scenario, publishedAt, slug, featured = false, heroImage, status } = Astro.props
 
 const published = new Date(publishedAt)
 const publishedLabel = Number.isNaN(published.valueOf())
@@ -28,7 +29,14 @@ const publishedLabel = Number.isNaN(published.valueOf())
       </a>
     )
   }
-  <a class="scenario mono" href={`/${scenario}/`}>{SCENARIO_LABELS[scenario]}</a>
+  <div class="meta-row">
+    <a class="scenario mono" href={`/${scenario}/`}>{SCENARIO_LABELS[scenario]}</a>
+    {status && (
+      <span class:list={['status-pill', 'mono', status === 'archived' ? 'is-archived' : 'is-active']}>
+        {status === 'archived' ? 'Archived' : 'Current'}
+      </span>
+    )}
+  </div>
   <h3 class="title">
     <a href={`/articles/${slug}/`}>{title}</a>
   </h3>
@@ -78,6 +86,31 @@ const publishedLabel = Number.isNaN(published.valueOf())
 
   .card:hover .thumb img {
     transform: scale(1.03);
+  }
+
+  .meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-sm);
+  }
+
+  .status-pill {
+    font-size: var(--text-label);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 0 var(--space-xs);
+    border-radius: var(--radius-pill);
+    border: 1px solid currentColor;
+    line-height: 1.6;
+  }
+
+  .status-pill.is-active {
+    color: var(--status-success);
+  }
+
+  .status-pill.is-archived {
+    color: var(--status-caution);
   }
 
   .scenario {

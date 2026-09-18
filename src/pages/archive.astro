@@ -1,0 +1,234 @@
+---
+import { getCollection } from 'astro:content'
+import BaseLayout from '../layouts/BaseLayout.astro'
+import { SCENARIO_LABELS } from '../lib/scenarios'
+
+const articles = (await getCollection('articles')).sort(
+  (a, b) => new Date(b.data.publishedAt).valueOf() - new Date(a.data.publishedAt).valueOf()
+)
+
+function fmt(date: string) {
+  const d = new Date(date)
+  return Number.isNaN(d.valueOf())
+    ? date
+    : d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })
+}
+
+function yearOf(date: string) {
+  const d = new Date(date)
+  return Number.isNaN(d.valueOf()) ? 'Undated' : String(d.getFullYear())
+}
+
+// Group chronologically by year, preserving the descending sort.
+const groups: { year: string; items: typeof articles }[] = []
+for (const article of articles) {
+  const year = yearOf(article.data.publishedAt)
+  const last = groups[groups.length - 1]
+  if (last && last.year === year) {
+    last.items.push(article)
+  } else {
+    groups.push({ year, items: [article] })
+  }
+}
+
+const activeCount = articles.filter((a) => a.data.status !== 'archived').length
+const archivedCount = articles.length - activeCount
+---
+
+<BaseLayout
+  title="Archive"
+  description="Every Galing Gear recommendation, from the newest to the very first — a chronological timeline you can browse back through."
+>
+  <section class="wrap head">
+    <p class="eyebrow mono">The full timeline</p>
+    <h1>Archive</h1>
+    <p class="blurb">
+      Every article we&apos;ve published, newest first. Current recommendations are marked
+      <span class="status-pill mono is-active">Current</span>; older ones we&apos;ve retired from the
+      main listings are marked <span class="status-pill mono is-archived">Archived</span> and kept
+      here for reference.
+    </p>
+    <p class="counts mono">{activeCount} current &middot; {archivedCount} archived</p>
+  </section>
+
+  <section class="wrap section">
+    {
+      groups.length > 0 ? (
+        groups.map((group) => (
+          <div class="year-group">
+            <h2 class="year mono">{group.year}</h2>
+            <ul class="timeline" role="list">
+              {group.items.map((article) => (
+                <li class:list={['entry', { archived: article.data.status === 'archived' }]}>
+                  <time class="date mono" datetime={article.data.publishedAt}>
+                    {fmt(article.data.publishedAt)}
+                  </time>
+                  <div class="entry-main">
+                    <h3 class="entry-title">
+                      <a href={`/articles/${article.id}/`}>{article.data.title}</a>
+                    </h3>
+                    <div class="entry-meta">
+                      <span class="scenario mono">{SCENARIO_LABELS[article.data.scenario]}</span>
+                      <span
+                        class:list={[
+                          'status-pill',
+                          'mono',
+                          article.data.status === 'archived' ? 'is-archived' : 'is-active',
+                        ]}
+                      >
+                        {article.data.status === 'archived' ? 'Archived' : 'Current'}
+                      </span>
+                    </div>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))
+      ) : (
+        <p class="empty">Nothing published yet. Check back soon.</p>
+      )
+    }
+  </section>
+</BaseLayout>
+
+<style>
+  .head {
+    padding-block: var(--space-3xl) var(--space-md);
+  }
+
+  .eyebrow {
+    font-size: var(--text-label);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent-text);
+    margin-block-end: var(--space-sm);
+  }
+
+  .head h1 {
+    font-size: var(--text-display);
+  }
+
+  .blurb {
+    margin-block-start: var(--space-md);
+    max-inline-size: var(--measure);
+    color: var(--muted-text);
+    font-size: var(--text-h2);
+    font-family: var(--font-display);
+    font-weight: 400;
+    line-height: 1.4;
+  }
+
+  .counts {
+    margin-block-start: var(--space-md);
+    font-size: var(--text-label);
+    color: var(--muted-text);
+  }
+
+  .section {
+    padding-block: var(--space-lg) var(--space-3xl);
+  }
+
+  .year-group + .year-group {
+    margin-block-start: var(--space-2xl);
+  }
+
+  .year {
+    font-size: var(--text-h2);
+    color: var(--muted-text);
+    padding-block-end: var(--space-sm);
+    border-block-end: 1px solid var(--hairline);
+    margin-block-end: var(--space-md);
+  }
+
+  .timeline {
+    display: grid;
+    gap: var(--space-xs);
+  }
+
+  .entry {
+    display: grid;
+    grid-template-columns: 12rem 1fr;
+    gap: var(--space-md);
+    align-items: baseline;
+    padding-block: var(--space-sm);
+    border-block-end: 1px solid var(--hairline);
+  }
+
+  .entry:last-child {
+    border-block-end: none;
+  }
+
+  .date {
+    font-size: var(--text-label);
+    color: var(--muted-text);
+    white-space: nowrap;
+  }
+
+  .entry-title {
+    font-size: var(--text-h2);
+    line-height: 1.2;
+    font-family: var(--font-display);
+    font-weight: 600;
+  }
+
+  .entry-title a {
+    color: var(--main-text);
+    text-decoration: none;
+  }
+
+  .entry-title a:hover {
+    color: var(--accent-text);
+    text-decoration: underline;
+  }
+
+  .entry.archived .entry-title a {
+    color: var(--muted-text);
+  }
+
+  .entry-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-block-start: var(--space-2xs);
+  }
+
+  .scenario {
+    font-size: var(--text-label);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent-text);
+  }
+
+  .status-pill {
+    font-size: var(--text-label);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 0 var(--space-xs);
+    border-radius: var(--radius-pill);
+    border: 1px solid currentColor;
+    line-height: 1.6;
+  }
+
+  .status-pill.is-active {
+    color: var(--status-success);
+  }
+
+  .status-pill.is-archived {
+    color: var(--status-caution);
+  }
+
+  .empty {
+    color: var(--muted-text);
+    font-size: var(--text-h2);
+    font-family: var(--font-display);
+  }
+
+  @media (max-width: 40rem) {
+    .entry {
+      grid-template-columns: 1fr;
+      gap: var(--space-2xs);
+    }
+  }
+</style>

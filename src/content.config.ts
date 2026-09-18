@@ -22,6 +22,7 @@ const articles = defineCollection({
     publishedAt: z.string(), // ISO date string
     updatedAt: z.string().optional(),
     featured: z.boolean().default(false),
+    status: z.enum(['active', 'archived']).default('active'),
     heroImage: z.string().optional(),
     heroGallery: z
       .array(

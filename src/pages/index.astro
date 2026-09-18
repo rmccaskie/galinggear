@@ -5,9 +5,11 @@ import ScenarioNav from '../components/ScenarioNav.astro'
 import ArticleCard from '../components/ArticleCard.astro'
 import SubscribeForm from '../components/SubscribeForm.astro'
 
-const articles = (await getCollection('articles')).sort(
-  (a, b) => new Date(b.data.publishedAt).valueOf() - new Date(a.data.publishedAt).valueOf()
-)
+const articles = (await getCollection('articles'))
+  .filter((a) => a.data.status !== 'archived')
+  .sort(
+    (a, b) => new Date(b.data.publishedAt).valueOf() - new Date(a.data.publishedAt).valueOf()
+  )
 
 const featured = articles.find((a) => a.data.featured) ?? articles[0]
 const recent = articles.filter((a) => a.id !== featured?.id).slice(0, 6)

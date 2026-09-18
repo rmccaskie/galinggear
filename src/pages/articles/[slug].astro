@@ -28,8 +28,9 @@ interface Props {
 
 const { article, related } = Astro.props
 const { Content } = await render(article)
-const { title, description, scenario, publishedAt, updatedAt, editorNote, heroImage, heroGallery } =
+const { title, description, scenario, publishedAt, updatedAt, editorNote, heroImage, heroGallery, status } =
   article.data
+const isArchived = status === 'archived'
 const hasHeroGallery = Array.isArray(heroGallery) && heroGallery.length > 0
 
 function fmt(date: string) {
@@ -50,6 +51,17 @@ function fmt(date: string) {
         <time datetime={publishedAt}>Published {fmt(publishedAt)}</time>
         {updatedAt && <time datetime={updatedAt}>Updated {fmt(updatedAt)}</time>}
       </div>
+      {
+        isArchived ? (
+          <p class="art-status is-archived">
+            <span class="dot" /> Archived — kept for reference, may be out of date.
+          </p>
+        ) : (
+          <p class="art-status is-active">
+            <span class="dot" /> Current
+          </p>
+        )
+      }
       {editorNote && <p class="editor-note">{editorNote}</p>}
     </header>
 
@@ -146,6 +158,43 @@ function fmt(date: string) {
     margin-block-start: var(--space-lg);
     font-size: var(--text-label);
     color: var(--muted-text);
+  }
+
+  .art-status {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2xs);
+    margin-block-start: var(--space-md);
+    padding: var(--space-3xs) var(--space-sm);
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--hairline);
+    font-size: var(--text-label);
+    letter-spacing: 0.02em;
+  }
+
+  .art-status .dot {
+    inline-size: 0.5rem;
+    block-size: 0.5rem;
+    border-radius: var(--radius-pill);
+    flex-shrink: 0;
+  }
+
+  .art-status.is-active {
+    color: var(--status-success);
+  }
+
+  .art-status.is-active .dot {
+    background-color: var(--status-success);
+  }
+
+  .art-status.is-archived {
+    color: var(--status-caution);
+    background-color: var(--surface-sunken);
+    border-color: var(--status-caution);
+  }
+
+  .art-status.is-archived .dot {
+    background-color: var(--status-caution);
   }
 
   .editor-note {
