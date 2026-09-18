@@ -81,13 +81,23 @@ const publishedLabel = Number.isNaN(published.valueOf())
     transition: transform 200ms ease;
   }
 
-  .card.has-thumb.featured .thumb {
-    aspect-ratio: 21 / 9;
-    max-block-size: 30rem;
+  /* Editor's pick: restore top breathing room so the image panel sits inside a
+     frame instead of being flush against the top edge of the card. */
+  .card.has-thumb.featured {
+    padding-block-start: var(--space-xl);
   }
 
-  /* Editor's pick: scale the image to fit (letterboxed on the sunken surface),
-     matching the article-page hero treatment, rather than cropping to fill. */
+  /* The image sits in a neat, evenly-padded rounded panel: even whitespace all
+     round (top and sides), scaled to fit rather than cropped, matching the
+     article-page hero treatment. */
+  .card.has-thumb.featured .thumb {
+    aspect-ratio: 16 / 9;
+    max-block-size: 30rem;
+    margin-inline: 0;
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+  }
+
   .card.has-thumb.featured .thumb img {
     object-fit: contain;
   }
