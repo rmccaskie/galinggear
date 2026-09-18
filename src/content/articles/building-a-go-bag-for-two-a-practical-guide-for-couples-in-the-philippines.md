@@ -8,7 +8,7 @@ publishedAt: '2026-09-18'
 featured: true
 status: active
 updatedAt: '2026-09-18'
-heroImage: 'https://images.galinggear.com/articles/sourced-1789732904716-zy86mq.jpg'
+heroImage: 'https://images.galinggear.com/articles/sourced-1789739329727-pi2kl4.jpg'
 editorNote: We buy our own gear. Prices checked March 2026.
 ---
 
