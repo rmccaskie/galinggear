@@ -8,6 +8,20 @@ scenario: stay-connected
 publishedAt: '2026-09-18'
 featured: true
 status: active
+updatedAt: '2026-09-18'
+heroGallery:
+  - src: 'https://images.galinggear.com/articles/sourced-1789740693292-bjtkz0.jpg'
+    alt: 'Starlink Mini review: internet when the towers and the power go down'
+  - src: 'https://images.galinggear.com/articles/sourced-1789740693545-fe3n2n.jpg'
+    alt: 'Starlink Mini review: internet when the towers and the power go down'
+  - src: 'https://images.galinggear.com/articles/sourced-1789740696644-1whjha.jpg'
+    alt: 'Starlink Mini review: internet when the towers and the power go down'
+  - src: 'https://images.galinggear.com/articles/sourced-1789740699825-i97h8f.webp'
+    alt: 'Starlink Mini review: internet when the towers and the power go down'
+  - src: 'https://images.galinggear.com/articles/sourced-1789740704904-c3kx95.jpg'
+    alt: 'Starlink Mini review: internet when the towers and the power go down'
+  - src: 'https://images.galinggear.com/articles/sourced-1789740707068-ovf35d.jpg'
+    alt: 'Starlink Mini review: internet when the towers and the power go down'
 editorNote: We buy our own gear. Prices checked Sept 2026.
 ---
 
