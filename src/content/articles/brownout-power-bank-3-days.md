@@ -7,7 +7,7 @@ scenario: power-outage
 publishedAt: '2026-08-11'
 featured: false
 updatedAt: '2026-09-18'
-heroImage: 'https://images.galinggear.com/articles/1789690339676-1ys6ul.png'
+heroImage: 'https://images.galinggear.com/articles/1789690890058-99110z.png'
 editorNote: We buy our own gear. Prices checked September 2026.
 ---
 
