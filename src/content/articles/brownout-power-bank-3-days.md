@@ -3,9 +3,10 @@ title: The power bank that got us through a three-day brownout
 description: >-
   How the Goal Zero Flip 36 keeps one phone alive and one light on when the
   power is gone for days, not hours.
-scenario: power-outage
+scenario: typhoon-season
 publishedAt: '2026-08-11'
 featured: false
+status: active
 updatedAt: '2026-09-18'
 editorNote: We buy our own gear. Prices checked September 2026.
 ---
