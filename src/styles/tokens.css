@@ -58,12 +58,13 @@
   --measure-narrow: 54ch;
 
   /* ---- job names — light (default) ---- */
-  --page-background: var(--clay-50);
+  --page-background: #E5F0F0;          /* Sea Glass */
   --surface: #FFFFFF;
-  --surface-sunken: #EAE7DF;
-  --main-text: var(--clay-900);
-  --muted-text: #5B5850;
-  --hairline: #D4D0C8;
+  --surface-sunken: #DCEAE8;           /* cool teal-tint */
+  --main-text: #1C201F;
+  --muted-text: #54635F;
+  --hairline: #D3E2E0;
+  --card-shadow: 0 6px 18px rgba(15, 92, 99, .10);
   --accent-text: var(--teal-800);
   --accent-fill: var(--orange-600);
   --on-accent-fill: #FFFFFF;
@@ -87,6 +88,7 @@
     --accent-text: var(--teal-200);
     --accent-fill: var(--orange-600);
     --on-accent-fill: #FFFFFF;
+    --card-shadow: 0 4px 12px rgba(0, 0, 0, .25);
     --focus-ring: var(--blue-200);
     --status-error: var(--red-200);
     --status-caution: var(--amber-300);
@@ -104,6 +106,7 @@
   --accent-text: var(--teal-200);
   --accent-fill: var(--orange-600);
   --on-accent-fill: #FFFFFF;
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, .25);
   --focus-ring: var(--blue-200);
   --status-error: var(--red-200);
   --status-caution: var(--amber-300);

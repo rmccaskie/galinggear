@@ -139,8 +139,9 @@ const recent = articles.filter((a) => a.id !== featured?.id).slice(0, 6)
 
   .callout-inner {
     background-color: var(--surface-sunken);
-    border: 1px solid var(--hairline);
+    border: none;
     border-radius: var(--radius-lg);
+    box-shadow: var(--card-shadow);
     padding: var(--space-2xl);
     display: grid;
     gap: var(--space-md);
