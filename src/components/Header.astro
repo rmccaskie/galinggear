@@ -1,7 +1,10 @@
 ---
+import { getCollection } from 'astro:content'
 import { SCENARIO_LABELS, getNavScenarios } from '../lib/scenarios'
 
 const { primary, secondary } = await getNavScenarios()
+const allArticles = await getCollection('articles')
+const hasArchived = allArticles.some((a) => a.data.status === 'archived')
 ---
 
 <header class="site-header">
@@ -72,9 +75,11 @@ const { primary, secondary } = await getNavScenarios()
           </li>
         )
       }
-      <li>
-        <a href="/archive/">Archive</a>
-      </li>
+      {hasArchived && (
+        <li>
+          <a href="/archive/">Archive</a>
+        </li>
+      )}
     </ul>
   </nav>
 
@@ -118,10 +123,14 @@ const { primary, secondary } = await getNavScenarios()
           </li>
         ))
       }
-      <li class="drawer-divider" aria-hidden="true"></li>
-      <li>
-        <a href="/archive/">Archive</a>
-      </li>
+      {hasArchived && (
+        <Fragment>
+          <li class="drawer-divider" aria-hidden="true"></li>
+          <li>
+            <a href="/archive/">Archive</a>
+          </li>
+        </Fragment>
+      )}
       <li>
         <a class="drawer-subscribe" href="/subscribe/">Subscribe</a>
       </li>
