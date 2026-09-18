@@ -8,13 +8,21 @@ publishedAt: '2026-08-11'
 featured: true
 status: active
 updatedAt: '2026-09-18'
-heroImage: 'https://images.galinggear.com/articles/sourced-1789738316710-vumyy5.jpg'
+heroImage: 'https://images.galinggear.com/articles/sourced-1789738557267-pwld7b.png'
+heroGallery:
+  - src: 'https://images.galinggear.com/articles/sourced-1789738665622-q8v1al.png'
+    alt: The power bank that got us through a three-day brownout
+  - src: 'https://images.galinggear.com/articles/sourced-1789738666879-dw3hhn.jpg'
+    alt: The power bank that got us through a three-day brownout
+  - src: 'https://images.galinggear.com/articles/sourced-1789738671847-43yx3v.png'
+    alt: The power bank that got us through a three-day brownout
 editorNote: We buy our own gear. Prices checked September 2026.
 ---
 
 A brownout that lasts an afternoon is an inconvenience. One that lasts three days is something else — it is the slow realisation that the fridge is warming, the phones are dying, and the only news you have is what a neighbour shouts over the fence. We have had a few of those now, and the small item that quietly earned its keep every time was the **Goal Zero Flip 36**.
 
 ## Editor's verdict
+
 
 For around **₱900**, the Flip 36 is not the biggest power bank you can buy, and that is exactly the point. It is small enough to always be charged and in the bag, and it holds enough to keep one phone useful across a long outage if you are disciplined about it. Pair it with a habit of topping it up whenever the power is on, and it will be ready when the power is not.
 
@@ -23,6 +31,17 @@ For around **₱900**, the Flip 36 is not the biggest power bank you can buy, an
 The Flip 36 holds about 3,350mAh — roughly a single full phone charge, or a couple of careful partial ones. On its own that does not sound like three days. The trick is how you use it: phone on aeroplane mode, screen dim, checked twice a day for messages and the PAGASA feed, then switched off again. Rationed like that, one charge stretches a long way.
 
 What I like is the folding USB plug built into the body. There is no cable to lose — when the power flickers back on, even for twenty minutes, you fold out the prong and push it straight into any socket to refill. During our last long outage the electricity returned in short, unpredictable bursts, and being able to grab those bursts without hunting for a cable is what kept us connected.
+
+
+<div class="gg-gallery" data-count="6">
+  <figure class="gg-figure"><img class="gg-zoomable" src="https://images.galinggear.com/articles/sourced-1789738626275-kyiykn.png" alt="The power bank that got us through a three-day brownout" loading="lazy" /></figure>
+  <figure class="gg-figure"><img class="gg-zoomable" src="https://images.galinggear.com/articles/sourced-1789738628439-p21d2x.jpg" alt="The power bank that got us through a three-day brownout" loading="lazy" /></figure>
+  <figure class="gg-figure"><img class="gg-zoomable" src="https://images.galinggear.com/articles/sourced-1789738628639-7psxrd.webp" alt="The power bank that got us through a three-day brownout" loading="lazy" /></figure>
+  <figure class="gg-figure"><img class="gg-zoomable" src="https://images.galinggear.com/articles/sourced-1789738629693-52on4u.png" alt="The power bank that got us through a three-day brownout" loading="lazy" /></figure>
+  <figure class="gg-figure"><img class="gg-zoomable" src="https://images.galinggear.com/articles/sourced-1789738630415-9yyhvi.jpg" alt="The power bank that got us through a three-day brownout" loading="lazy" /></figure>
+  <figure class="gg-figure"><img class="gg-zoomable" src="https://images.galinggear.com/articles/sourced-1789738631740-ejo150.jpg" alt="The power bank that got us through a three-day brownout" loading="lazy" /></figure>
+</div>
+
 
 It is honest about what it is: a pocket top-up, not a house battery. For a family that means deciding early which single phone is the "comms phone" and keeping that one alive, rather than letting four handsets all die at once.
 
