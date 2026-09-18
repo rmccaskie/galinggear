@@ -7,7 +7,7 @@ description: >-
 scenario: stay-connected
 publishedAt: '2026-09-18'
 featured: true
-status: archived
+status: active
 editorNote: We buy our own gear. Prices checked Sept 2026.
 ---
 
