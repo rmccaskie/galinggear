@@ -134,7 +134,33 @@ a:hover {
 }
 
 .prose {
+  /* Fill the content shell; individual children set their own measure below so
+     that galleries/hero-width media can break out while text stays readable. */
+  max-inline-size: 100%;
+}
+
+/* Text flow and single figures stay at the comfortable reading measure. */
+.prose > p,
+.prose > h1,
+.prose > h2,
+.prose > h3,
+.prose > h4,
+.prose > h5,
+.prose > h6,
+.prose > ul,
+.prose > ol,
+.prose > dl,
+.prose > blockquote,
+.prose > pre,
+.prose > hr,
+.prose > table,
+.prose > .gg-figure {
   max-inline-size: var(--measure);
+}
+
+/* Inline galleries break out to the full content width, matching the hero. */
+.prose > .gg-gallery {
+  max-inline-size: 100%;
 }
 
 .visually-hidden {

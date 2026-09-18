@@ -103,6 +103,12 @@ function fmt(date: string) {
 </BaseLayout>
 
 <style>
+  /* Long-form articles use a slightly wider reading measure than the rest of
+     the site. Scoped to the article so other pages are unaffected. */
+  article {
+    --measure: 74ch;
+  }
+
   .art-head {
     padding-block: var(--space-3xl) var(--space-lg);
   }
