@@ -7,12 +7,7 @@ import { SCENARIOS, SCENARIO_LABELS, SCENARIO_BLURBS } from '../lib/scenarios'
 const all = await getCollection('articles')
 type Article = (typeof all)[number]
 
-function fmt(date: string) {
-  const d = new Date(date)
-  return Number.isNaN(d.valueOf())
-    ? date
-    : d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })
-}
+const archivedAll = all.filter((a) => a.data.status === 'archived')
 
 function byDateDesc(a: Article, b: Article) {
   return new Date(b.data.publishedAt).valueOf() - new Date(a.data.publishedAt).valueOf()
@@ -22,103 +17,191 @@ function heroOf(article: Article) {
   return article.data.heroImage ?? article.data.heroGallery?.[0]?.src
 }
 
-// Group by category, in the canonical scenario order, newest first within each.
+function monthKey(dateStr: string) {
+  const d = new Date(dateStr)
+  if (Number.isNaN(d.valueOf())) return '0000-00'
+  return `${d.getUTCFullYear()}-${String(d.getUTCMonth() + 1).padStart(2, '0')}`
+}
+
+function monthLabel(dateStr: string) {
+  const d = new Date(dateStr)
+  if (Number.isNaN(d.valueOf())) return 'Undated'
+  return d.toLocaleDateString('en-GB', { month: 'long', year: 'numeric', timeZone: 'UTC' })
+}
+
+// Build the per-category structure: archived articles only, grouped by month (newest first).
 const categories = SCENARIOS.map((scenario) => {
-  const items = all.filter((a) => a.data.scenario === scenario).sort(byDateDesc)
+  const items = archivedAll.filter((a) => a.data.scenario === scenario).sort(byDateDesc)
+
+  const monthMap = new Map<string, { key: string; label: string; items: Article[] }>()
+  for (const article of items) {
+    const key = monthKey(article.data.publishedAt)
+    if (!monthMap.has(key)) {
+      monthMap.set(key, { key, label: monthLabel(article.data.publishedAt), items: [] })
+    }
+    monthMap.get(key)!.items.push(article)
+  }
+  const months = Array.from(monthMap.values()).sort((a, b) => (a.key < b.key ? 1 : -1))
+
   return {
     scenario,
     label: SCENARIO_LABELS[scenario],
     blurb: SCENARIO_BLURBS[scenario],
-    current: items.filter((a) => a.data.status !== 'archived'),
-    archived: items.filter((a) => a.data.status === 'archived'),
-    total: items.length,
+    months,
+    count: items.length,
   }
-}).filter((c) => c.total > 0)
+})
 
-const totalActive = all.filter((a) => a.data.status !== 'archived').length
-const totalArchived = all.length - totalActive
+const totalArchived = archivedAll.length
+const withArchived = categories.filter((c) => c.count > 0)
+const defaultScenario = (withArchived[0] ?? categories[0]).scenario
 ---
 
 <BaseLayout
   title="Archive"
-  description="Every Galing Gear recommendation, grouped by category — with older, archived articles kept here so you can always browse back through them."
+  description="Older Galing Gear articles we've retired from the main listings, kept here so you can always browse back through them — pick a category, then a month."
 >
   <section class="wrap head">
-    <p class="eyebrow mono">The full archive</p>
+    <p class="eyebrow mono">The archive</p>
     <h1>Archive</h1>
     <p class="blurb">
-      Everything we&apos;ve published, grouped by category. Current picks are marked
-      <span class="status-pill mono is-active">Current</span>; older ones we&apos;ve retired from the
-      main listings are marked <span class="status-pill mono is-archived">Archived</span> and kept
-      here so you can always browse back through them.
+      Articles we&apos;ve retired from the main listings live on here. Choose a category, then open a
+      month to browse the pieces we archived back then.
     </p>
     <p class="counts mono">
-      {totalActive} current &middot; {totalArchived} archived &middot; {categories.length} categories
+      {totalArchived} archived {totalArchived === 1 ? 'article' : 'articles'} &middot; {withArchived.length}
+      {withArchived.length === 1 ? 'category' : 'categories'}
     </p>
   </section>
 
-  <section class="wrap section">
-    {
-      categories.length > 0 ? (
-        categories.map((cat) => (
-          <section class="category" id={cat.scenario}>
-            <div class="cat-head">
-              <div class="cat-head-main">
+  {
+    totalArchived > 0 ? (
+      <div id="archive-root" data-default={defaultScenario}>
+        <nav class="wrap section-nav" aria-label="Archive categories">
+          <ul class="cat-nav" role="list">
+            {categories.map((cat) => (
+              <li>
+                <a
+                  class="cat-pill mono"
+                  href={`#cat-${cat.scenario}`}
+                  data-scenario={cat.scenario}
+                  aria-current={cat.scenario === defaultScenario ? 'true' : undefined}
+                >
+                  {cat.label}
+                  <span class="pill-count">{cat.count}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        <section class="wrap section">
+          {categories.map((cat) => (
+            <section
+              class:list={['category', { 'is-selected': cat.scenario === defaultScenario }]}
+              id={`cat-${cat.scenario}`}
+              data-scenario={cat.scenario}
+            >
+              <div class="cat-head">
                 <h2 class="cat-title">
                   <a href={`/${cat.scenario}/`}>{cat.label}</a>
                 </h2>
                 <p class="cat-blurb">{cat.blurb}</p>
-              </div>
-              <p class="cat-counts mono">
-                {cat.current.length} current{cat.archived.length > 0 ? ` · ${cat.archived.length} archived` : ''}
-              </p>
-            </div>
-
-            {cat.current.length > 0 && (
-              <ul class="current-list" role="list">
-                {cat.current.map((article) => (
-                  <li class="current-entry">
-                    <time class="date mono" datetime={article.data.publishedAt}>
-                      {fmt(article.data.publishedAt)}
-                    </time>
-                    <a class="current-title" href={`/articles/${article.id}/`}>
-                      {article.data.title}
-                    </a>
-                    <span class="status-pill mono is-active">Current</span>
-                  </li>
-                ))}
-              </ul>
-            )}
-
-            {cat.archived.length > 0 && (
-              <div class="archived-block">
-                <p class="archived-heading mono">
-                  <span class="status-pill mono is-archived">Archived</span>
-                  Older {cat.label} articles, kept for reference
+                <p class="cat-counts mono">
+                  {cat.count} archived {cat.count === 1 ? 'article' : 'articles'}
+                  {cat.months.length > 0 &&
+                    ` · ${cat.months.length} ${cat.months.length === 1 ? 'month' : 'months'}`}
                 </p>
-                <div class="archived-grid">
-                  {cat.archived.map((article) => (
-                    <ArticleCard
-                      title={article.data.title}
-                      description={article.data.description}
-                      scenario={article.data.scenario}
-                      publishedAt={article.data.publishedAt}
-                      slug={article.id}
-                      heroImage={heroOf(article)}
-                      status="archived"
-                    />
-                  ))}
-                </div>
               </div>
-            )}
-          </section>
-        ))
-      ) : (
-        <p class="empty">Nothing published yet. Check back soon.</p>
-      )
-    }
-  </section>
+
+              {cat.months.length > 0 ? (
+                <ul class="month-list" role="list">
+                  {cat.months.map((month, i) => (
+                    <li>
+                      <details class="month" open={i === 0}>
+                        <summary>
+                          <span class="month-label">{month.label}</span>
+                          <span class="month-count mono">
+                            {month.items.length} {month.items.length === 1 ? 'article' : 'articles'}
+                          </span>
+                          <span class="month-chevron" aria-hidden="true" />
+                        </summary>
+                        <div class="archived-grid">
+                          {month.items.map((article) => (
+                            <ArticleCard
+                              title={article.data.title}
+                              description={article.data.description}
+                              scenario={article.data.scenario}
+                              publishedAt={article.data.publishedAt}
+                              slug={article.id}
+                              heroImage={heroOf(article)}
+                              status="archived"
+                            />
+                          ))}
+                        </div>
+                      </details>
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p class="empty-cat">Nothing archived in {cat.label} yet.</p>
+              )}
+            </section>
+          ))}
+        </section>
+      </div>
+    ) : (
+      <section class="wrap section">
+        <p class="empty">Nothing has been archived yet. When we retire an article it will appear here.</p>
+      </section>
+    )
+  }
 </BaseLayout>
+
+<script is:inline>
+  ;(function () {
+    const root = document.getElementById('archive-root')
+    if (!root) return
+
+    const pills = Array.from(root.querySelectorAll('.cat-pill'))
+    const cats = Array.from(root.querySelectorAll('.category'))
+    const known = new Set(cats.map((c) => c.getAttribute('data-scenario')))
+
+    function select(scenario) {
+      cats.forEach((c) => {
+        c.classList.toggle('is-selected', c.getAttribute('data-scenario') === scenario)
+      })
+      pills.forEach((p) => {
+        if (p.getAttribute('data-scenario') === scenario) {
+          p.setAttribute('aria-current', 'true')
+        } else {
+          p.removeAttribute('aria-current')
+        }
+      })
+    }
+
+    root.setAttribute('data-enhanced', '')
+
+    const fromHash = (location.hash || '').replace(/^#cat-/, '')
+    const initial = known.has(fromHash) ? fromHash : root.dataset.default
+    if (initial) select(initial)
+
+    pills.forEach((p) => {
+      p.addEventListener('click', (e) => {
+        const scenario = p.getAttribute('data-scenario')
+        if (!scenario) return
+        e.preventDefault()
+        select(scenario)
+        history.replaceState(null, '', `#cat-${scenario}`)
+      })
+    })
+
+    window.addEventListener('hashchange', () => {
+      const s = (location.hash || '').replace(/^#cat-/, '')
+      if (known.has(s)) select(s)
+    })
+  })()
+</script>
 
 <style>
   .head {
@@ -153,25 +236,83 @@ const totalArchived = all.length - totalActive
     color: var(--muted-text);
   }
 
+  .section-nav {
+    padding-block: var(--space-lg) 0;
+  }
+
+  .cat-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+  }
+
+  .cat-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2xs);
+    font-size: var(--text-label);
+    line-height: 1;
+    padding: var(--space-xs) var(--space-sm);
+    border: 1px solid var(--hairline);
+    border-radius: var(--radius-pill);
+    background: var(--surface);
+    color: var(--accent-text);
+    text-decoration: none;
+    transition: border-color 0.15s ease, background 0.15s ease, color 0.15s ease;
+  }
+
+  .cat-pill:hover {
+    border-color: var(--accent-text);
+  }
+
+  .cat-pill[aria-current='true'] {
+    background: var(--accent-text);
+    border-color: var(--accent-text);
+    color: var(--surface);
+  }
+
+  .pill-count {
+    font-size: 0.72em;
+    padding: 0 var(--space-2xs);
+    min-inline-size: 1.4em;
+    text-align: center;
+    border-radius: var(--radius-pill);
+    background: var(--surface-sunken);
+    color: var(--muted-text);
+  }
+
+  .cat-pill[aria-current='true'] .pill-count {
+    background: rgba(255, 255, 255, 0.22);
+    color: var(--surface);
+  }
+
   .section {
     padding-block: var(--space-lg) var(--space-3xl);
   }
 
+  /* Progressive enhancement: with JS, show only the selected category. */
+  #archive-root[data-enhanced] .category {
+    display: none;
+  }
+
+  #archive-root[data-enhanced] .category.is-selected {
+    display: block;
+  }
+
+  /* No-JS fallback: all categories stacked with dividers between them. */
   .category + .category {
     margin-block-start: var(--space-3xl);
     padding-block-start: var(--space-2xl);
     border-block-start: 1px solid var(--hairline);
   }
 
-  .cat-head {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-sm) var(--space-lg);
-    align-items: baseline;
-    justify-content: space-between;
+  #archive-root[data-enhanced] .category + .category {
+    margin-block-start: 0;
+    padding-block-start: 0;
+    border-block-start: none;
   }
 
-  .cat-head-main {
+  .cat-head {
     max-inline-size: var(--measure);
   }
 
@@ -195,101 +336,89 @@ const totalArchived = all.length - totalActive
   }
 
   .cat-counts {
+    margin-block-start: var(--space-xs);
     font-size: var(--text-label);
     color: var(--muted-text);
-    white-space: nowrap;
   }
 
-  .current-list {
+  .month-list {
     display: grid;
-    gap: var(--space-2xs);
+    gap: var(--space-sm);
     margin-block-start: var(--space-lg);
   }
 
-  .current-entry {
-    display: grid;
-    grid-template-columns: 10rem 1fr auto;
-    gap: var(--space-md);
-    align-items: baseline;
-    padding-block: var(--space-sm);
-    border-block-end: 1px solid var(--hairline);
+  .month {
+    border: 1px solid var(--hairline);
+    border-radius: var(--radius-md);
+    background: var(--surface);
+    overflow: hidden;
   }
 
-  .current-entry:last-child {
-    border-block-end: none;
-  }
-
-  .date {
-    font-size: var(--text-label);
-    color: var(--muted-text);
-    white-space: nowrap;
-  }
-
-  .current-title {
-    font-size: var(--text-h2);
-    line-height: 1.2;
-    font-family: var(--font-display);
-    font-weight: 600;
-    color: var(--main-text);
-    text-decoration: none;
-  }
-
-  .current-title:hover {
-    color: var(--accent-text);
-    text-decoration: underline;
-  }
-
-  .archived-block {
-    margin-block-start: var(--space-xl);
-  }
-
-  .archived-heading {
+  .month summary {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     gap: var(--space-sm);
+    padding: var(--space-md) var(--space-lg);
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .month summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .month-label {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: var(--text-h2);
+    line-height: 1.2;
+  }
+
+  .month-count {
     font-size: var(--text-label);
     color: var(--muted-text);
-    margin-block-end: var(--space-md);
+    padding: 0 var(--space-xs);
+    border-radius: var(--radius-pill);
+    background: var(--surface-sunken);
+  }
+
+  .month-chevron {
+    margin-inline-start: auto;
+    inline-size: 0.6rem;
+    block-size: 0.6rem;
+    border-right: 2px solid var(--muted-text);
+    border-bottom: 2px solid var(--muted-text);
+    transform: rotate(45deg);
+    transition: transform 0.2s ease;
+  }
+
+  .month[open] .month-chevron {
+    transform: rotate(-135deg);
   }
 
   .archived-grid {
     display: grid;
     gap: var(--space-lg);
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr));
+    padding: 0 var(--space-lg) var(--space-lg);
   }
 
-  .status-pill {
-    font-size: var(--text-label);
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    padding: 0 var(--space-xs);
-    border-radius: var(--radius-pill);
-    border: 1px solid currentColor;
-    line-height: 1.6;
-  }
-
-  .status-pill.is-active {
-    color: var(--status-success);
-  }
-
-  .status-pill.is-archived {
-    color: var(--status-caution);
-  }
-
+  .empty-cat,
   .empty {
     color: var(--muted-text);
     font-size: var(--text-h2);
     font-family: var(--font-display);
+    margin-block-start: var(--space-md);
   }
 
   @media (max-width: 40rem) {
-    .current-entry {
-      grid-template-columns: 1fr auto;
+    .month summary {
+      flex-wrap: wrap;
+      gap: var(--space-2xs) var(--space-sm);
     }
 
-    .current-entry .date {
-      grid-column: 1 / -1;
+    .month-chevron {
+      margin-inline-start: auto;
     }
   }
 </style>

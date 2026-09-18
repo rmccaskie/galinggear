@@ -18,6 +18,9 @@ export async function getStaticPaths() {
           (a, b) =>
             new Date(b.data.publishedAt).valueOf() - new Date(a.data.publishedAt).valueOf()
         ),
+      archivedCount: articles.filter(
+        (a) => a.data.scenario === scenario && a.data.status === 'archived'
+      ).length,
     },
   }))
 }
@@ -25,9 +28,10 @@ export async function getStaticPaths() {
 interface Props {
   scenario: Scenario
   articles: Awaited<ReturnType<typeof getCollection<'articles'>>>
+  archivedCount: number
 }
 
-const { scenario, articles } = Astro.props
+const { scenario, articles, archivedCount } = Astro.props
 const label = SCENARIO_LABELS[scenario]
 const blurb = SCENARIO_BLURBS[scenario]
 ---
@@ -64,6 +68,21 @@ const blurb = SCENARIO_BLURBS[scenario]
       )
     }
   </section>
+
+  {
+    archivedCount > 0 && (
+      <section class="wrap section archive-cta">
+        <a class="archive-link" href={`/archive#cat-${scenario}`}>
+          Browse archived {label} articles
+          <span aria-hidden="true">&rarr;</span>
+        </a>
+        <p class="archive-note">
+          {archivedCount} older {archivedCount === 1 ? 'article we’ve' : 'articles we’ve'} retired
+          from this list, kept for reference.
+        </p>
+      </section>
+    )
+  }
 </BaseLayout>
 
 <style>
@@ -107,5 +126,40 @@ const blurb = SCENARIO_BLURBS[scenario]
     color: var(--muted-text);
     font-size: var(--text-h2);
     font-family: var(--font-display);
+  }
+
+  .archive-cta {
+    margin-block-start: var(--space-lg);
+    padding-block-start: var(--space-xl);
+    border-block-start: 1px solid var(--hairline);
+  }
+
+  .archive-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2xs);
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: var(--text-h2);
+    color: var(--accent-text);
+    text-decoration: none;
+  }
+
+  .archive-link:hover {
+    text-decoration: underline;
+  }
+
+  .archive-link span {
+    transition: transform 0.15s ease;
+  }
+
+  .archive-link:hover span {
+    transform: translateX(0.2rem);
+  }
+
+  .archive-note {
+    margin-block-start: var(--space-2xs);
+    color: var(--muted-text);
+    font-size: var(--text-label);
   }
 </style>
