@@ -7,11 +7,7 @@ scenario: typhoon-season
 publishedAt: '2026-07-14'
 featured: true
 updatedAt: '2026-09-18'
-heroGallery:
-  - src: 'https://images.galinggear.com/articles/1789694485062-mhy3dk.png'
-    caption: Caption 1
-  - src: 'https://images.galinggear.com/articles/1789694485783-cxqcb4.png'
-    caption: Caption 2
+heroImage: 'https://images.galinggear.com/articles/1789694681234-8yml2n.png'
 editorNote: >-
   Prices checked September 2026. We buy our own gear and take nothing from
   suppliers.
