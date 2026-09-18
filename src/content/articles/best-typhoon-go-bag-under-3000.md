@@ -40,7 +40,8 @@ For under **₱3,000** you can put together a go-bag that actually holds up: cle
 **Light and charge — Goal Zero Flip 36 (around ₱900).** A power bank that charges a phone and doubles as a torch on the darker nights. Three days of brownout is a long time to be cut off; this keeps one phone alive so we can reach family and read the PAGASA updates.
 
 
-<figure class="gg-video gg-video--medium"><button class="gg-video-play" type="button" data-video-id="C-31AX2TZ9Y" data-video-title="Watch this" aria-label="Play video: Watch this"><img class="gg-video-thumb" src="https://i.ytimg.com/vi/C-31AX2TZ9Y/hqdefault.jpg" alt="Watch this" loading="lazy" /><span class="gg-video-icon" aria-hidden="true"></span></button></figure>
+
+<figure class="gg-video gg-video--small"><button class="gg-video-play" type="button" data-video-id="C-31AX2TZ9Y" aria-label="Play video"><img class="gg-video-thumb" src="https://i.ytimg.com/vi/C-31AX2TZ9Y/hqdefault.jpg" alt="Video thumbnail" loading="lazy" /><span class="gg-video-icon" aria-hidden="true"></span></button><figcaption>Check out the kit contents</figcaption></figure>
 
 
 **Information — Baofeng UV-5R (around ₱600 secondhand).** When the cell towers are congested or down, a radio is how you still hear something. It takes practice and it is not a toy, but it has pulled in local nets during a storm when nothing else worked.
