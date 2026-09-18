@@ -8,7 +8,8 @@ scenario: edc
 publishedAt: '2026-09-18'
 featured: false
 status: active
-heroImage: 'https://images.galinggear.com/articles/sourced-1789734369341-ucl4d2.jpg'
+updatedAt: '2026-09-18'
+heroImage: 'https://images.galinggear.com/articles/sourced-1789737595761-t0j1lc.jpg'
 editorNote: >-
   I have 3 of these, purchased a few years ago. Easy to charge, easy to carry
   and super easy to wear.
