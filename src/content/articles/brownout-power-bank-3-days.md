@@ -1,9 +1,14 @@
 ---
-title: "The power bank that got us through a three-day brownout"
-description: "How the Goal Zero Flip 36 keeps one phone alive and one light on when the power is gone for days, not hours."
-scenario: "power-outage"
-publishedAt: "2026-08-11"
-editorNote: "We buy our own gear. Prices checked September 2026."
+title: The power bank that got us through a three-day brownout
+description: >-
+  How the Goal Zero Flip 36 keeps one phone alive and one light on when the
+  power is gone for days, not hours.
+scenario: power-outage
+publishedAt: '2026-08-11'
+featured: false
+updatedAt: '2026-09-18'
+heroImage: 'https://images.galinggear.com/articles/1789690339676-1ys6ul.png'
+editorNote: We buy our own gear. Prices checked September 2026.
 ---
 
 A brownout that lasts an afternoon is an inconvenience. One that lasts three days is something else — it is the slow realisation that the fridge is warming, the phones are dying, and the only news you have is what a neighbour shouts over the fence. We have had a few of those now, and the small item that quietly earned its keep every time was the **Goal Zero Flip 36**.
