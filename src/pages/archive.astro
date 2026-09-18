@@ -1,11 +1,11 @@
 ---
 import { getCollection } from 'astro:content'
 import BaseLayout from '../layouts/BaseLayout.astro'
-import { SCENARIO_LABELS } from '../lib/scenarios'
+import ArticleCard from '../components/ArticleCard.astro'
+import { SCENARIOS, SCENARIO_LABELS, SCENARIO_BLURBS } from '../lib/scenarios'
 
-const articles = (await getCollection('articles')).sort(
-  (a, b) => new Date(b.data.publishedAt).valueOf() - new Date(a.data.publishedAt).valueOf()
-)
+const all = await getCollection('articles')
+type Article = (typeof all)[number]
 
 function fmt(date: string) {
   const d = new Date(date)
@@ -14,76 +14,104 @@ function fmt(date: string) {
     : d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })
 }
 
-function yearOf(date: string) {
-  const d = new Date(date)
-  return Number.isNaN(d.valueOf()) ? 'Undated' : String(d.getFullYear())
+function byDateDesc(a: Article, b: Article) {
+  return new Date(b.data.publishedAt).valueOf() - new Date(a.data.publishedAt).valueOf()
 }
 
-// Group chronologically by year, preserving the descending sort.
-const groups: { year: string; items: typeof articles }[] = []
-for (const article of articles) {
-  const year = yearOf(article.data.publishedAt)
-  const last = groups[groups.length - 1]
-  if (last && last.year === year) {
-    last.items.push(article)
-  } else {
-    groups.push({ year, items: [article] })
+function heroOf(article: Article) {
+  return article.data.heroImage ?? article.data.heroGallery?.[0]?.src
+}
+
+// Group by category, in the canonical scenario order, newest first within each.
+const categories = SCENARIOS.map((scenario) => {
+  const items = all.filter((a) => a.data.scenario === scenario).sort(byDateDesc)
+  return {
+    scenario,
+    label: SCENARIO_LABELS[scenario],
+    blurb: SCENARIO_BLURBS[scenario],
+    current: items.filter((a) => a.data.status !== 'archived'),
+    archived: items.filter((a) => a.data.status === 'archived'),
+    total: items.length,
   }
-}
+}).filter((c) => c.total > 0)
 
-const activeCount = articles.filter((a) => a.data.status !== 'archived').length
-const archivedCount = articles.length - activeCount
+const totalActive = all.filter((a) => a.data.status !== 'archived').length
+const totalArchived = all.length - totalActive
 ---
 
 <BaseLayout
   title="Archive"
-  description="Every Galing Gear recommendation, from the newest to the very first — a chronological timeline you can browse back through."
+  description="Every Galing Gear recommendation, grouped by category — with older, archived articles kept here so you can always browse back through them."
 >
   <section class="wrap head">
-    <p class="eyebrow mono">The full timeline</p>
+    <p class="eyebrow mono">The full archive</p>
     <h1>Archive</h1>
     <p class="blurb">
-      Every article we&apos;ve published, newest first. Current recommendations are marked
+      Everything we&apos;ve published, grouped by category. Current picks are marked
       <span class="status-pill mono is-active">Current</span>; older ones we&apos;ve retired from the
       main listings are marked <span class="status-pill mono is-archived">Archived</span> and kept
-      here for reference.
+      here so you can always browse back through them.
     </p>
-    <p class="counts mono">{activeCount} current &middot; {archivedCount} archived</p>
+    <p class="counts mono">
+      {totalActive} current &middot; {totalArchived} archived &middot; {categories.length} categories
+    </p>
   </section>
 
   <section class="wrap section">
     {
-      groups.length > 0 ? (
-        groups.map((group) => (
-          <div class="year-group">
-            <h2 class="year mono">{group.year}</h2>
-            <ul class="timeline" role="list">
-              {group.items.map((article) => (
-                <li class:list={['entry', { archived: article.data.status === 'archived' }]}>
-                  <time class="date mono" datetime={article.data.publishedAt}>
-                    {fmt(article.data.publishedAt)}
-                  </time>
-                  <div class="entry-main">
-                    <h3 class="entry-title">
-                      <a href={`/articles/${article.id}/`}>{article.data.title}</a>
-                    </h3>
-                    <div class="entry-meta">
-                      <span class="scenario mono">{SCENARIO_LABELS[article.data.scenario]}</span>
-                      <span
-                        class:list={[
-                          'status-pill',
-                          'mono',
-                          article.data.status === 'archived' ? 'is-archived' : 'is-active',
-                        ]}
-                      >
-                        {article.data.status === 'archived' ? 'Archived' : 'Current'}
-                      </span>
-                    </div>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div>
+      categories.length > 0 ? (
+        categories.map((cat) => (
+          <section class="category" id={cat.scenario}>
+            <div class="cat-head">
+              <div class="cat-head-main">
+                <h2 class="cat-title">
+                  <a href={`/${cat.scenario}/`}>{cat.label}</a>
+                </h2>
+                <p class="cat-blurb">{cat.blurb}</p>
+              </div>
+              <p class="cat-counts mono">
+                {cat.current.length} current{cat.archived.length > 0 ? ` · ${cat.archived.length} archived` : ''}
+              </p>
+            </div>
+
+            {cat.current.length > 0 && (
+              <ul class="current-list" role="list">
+                {cat.current.map((article) => (
+                  <li class="current-entry">
+                    <time class="date mono" datetime={article.data.publishedAt}>
+                      {fmt(article.data.publishedAt)}
+                    </time>
+                    <a class="current-title" href={`/articles/${article.id}/`}>
+                      {article.data.title}
+                    </a>
+                    <span class="status-pill mono is-active">Current</span>
+                  </li>
+                ))}
+              </ul>
+            )}
+
+            {cat.archived.length > 0 && (
+              <div class="archived-block">
+                <p class="archived-heading mono">
+                  <span class="status-pill mono is-archived">Archived</span>
+                  Older {cat.label} articles, kept for reference
+                </p>
+                <div class="archived-grid">
+                  {cat.archived.map((article) => (
+                    <ArticleCard
+                      title={article.data.title}
+                      description={article.data.description}
+                      scenario={article.data.scenario}
+                      publishedAt={article.data.publishedAt}
+                      slug={article.id}
+                      heroImage={heroOf(article)}
+                      status="archived"
+                    />
+                  ))}
+                </div>
+              </div>
+            )}
+          </section>
         ))
       ) : (
         <p class="empty">Nothing published yet. Check back soon.</p>
@@ -129,33 +157,65 @@ const archivedCount = articles.length - activeCount
     padding-block: var(--space-lg) var(--space-3xl);
   }
 
-  .year-group + .year-group {
-    margin-block-start: var(--space-2xl);
+  .category + .category {
+    margin-block-start: var(--space-3xl);
+    padding-block-start: var(--space-2xl);
+    border-block-start: 1px solid var(--hairline);
   }
 
-  .year {
-    font-size: var(--text-h2);
+  .cat-head {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm) var(--space-lg);
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .cat-head-main {
+    max-inline-size: var(--measure);
+  }
+
+  .cat-title {
+    font-size: var(--text-h1);
+  }
+
+  .cat-title a {
+    color: var(--main-text);
+    text-decoration: none;
+  }
+
+  .cat-title a:hover {
+    color: var(--accent-text);
+    text-decoration: underline;
+  }
+
+  .cat-blurb {
+    margin-block-start: var(--space-2xs);
     color: var(--muted-text);
-    padding-block-end: var(--space-sm);
-    border-block-end: 1px solid var(--hairline);
-    margin-block-end: var(--space-md);
   }
 
-  .timeline {
-    display: grid;
-    gap: var(--space-xs);
+  .cat-counts {
+    font-size: var(--text-label);
+    color: var(--muted-text);
+    white-space: nowrap;
   }
 
-  .entry {
+  .current-list {
     display: grid;
-    grid-template-columns: 12rem 1fr;
+    gap: var(--space-2xs);
+    margin-block-start: var(--space-lg);
+  }
+
+  .current-entry {
+    display: grid;
+    grid-template-columns: 10rem 1fr auto;
     gap: var(--space-md);
     align-items: baseline;
     padding-block: var(--space-sm);
     border-block-end: 1px solid var(--hairline);
   }
 
-  .entry:last-child {
+  .current-entry:last-child {
     border-block-end: none;
   }
 
@@ -165,40 +225,38 @@ const archivedCount = articles.length - activeCount
     white-space: nowrap;
   }
 
-  .entry-title {
+  .current-title {
     font-size: var(--text-h2);
     line-height: 1.2;
     font-family: var(--font-display);
     font-weight: 600;
-  }
-
-  .entry-title a {
     color: var(--main-text);
     text-decoration: none;
   }
 
-  .entry-title a:hover {
+  .current-title:hover {
     color: var(--accent-text);
     text-decoration: underline;
   }
 
-  .entry.archived .entry-title a {
-    color: var(--muted-text);
+  .archived-block {
+    margin-block-start: var(--space-xl);
   }
 
-  .entry-meta {
+  .archived-heading {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: var(--space-sm);
-    margin-block-start: var(--space-2xs);
+    font-size: var(--text-label);
+    color: var(--muted-text);
+    margin-block-end: var(--space-md);
   }
 
-  .scenario {
-    font-size: var(--text-label);
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--accent-text);
+  .archived-grid {
+    display: grid;
+    gap: var(--space-lg);
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr));
   }
 
   .status-pill {
@@ -226,9 +284,12 @@ const archivedCount = articles.length - activeCount
   }
 
   @media (max-width: 40rem) {
-    .entry {
-      grid-template-columns: 1fr;
-      gap: var(--space-2xs);
+    .current-entry {
+      grid-template-columns: 1fr auto;
+    }
+
+    .current-entry .date {
+      grid-column: 1 / -1;
     }
   }
 </style>
