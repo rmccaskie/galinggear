@@ -1,9 +1,14 @@
 ---
-title: "The water filter I trust when the taps run cloudy"
-description: "Why the Sawyer Squeeze is the first thing I pack every rainy season — and how I actually use it at home."
-scenario: "typhoon-season"
-publishedAt: "2026-06-30"
-editorNote: "We buy our own gear. Prices checked September 2026."
+title: The water filter I trust when the taps run cloudy
+description: >-
+  Why the Sawyer Squeeze is the first thing I pack every rainy season — and how
+  I actually use it at home.
+scenario: typhoon-season
+publishedAt: '2026-06-30'
+featured: false
+updatedAt: '2026-09-18'
+heroImage: 'https://images.galinggear.com/articles/1789690910917-20cpkv.png'
+editorNote: We buy our own gear. Prices checked September 2026.
 ---
 
 Every rainy season the same thing happens in our part of Quezon City: a big storm passes, and for a day or two the tap water comes through cloudy, sometimes with a smell. The utility usually sorts it out, and usually it is fine. But "usually" is not a word I want to gamble my children's stomachs on. So the first thing I pack every year is a **Sawyer Squeeze**, and it has never once let me down.
