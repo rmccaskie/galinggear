@@ -16,6 +16,10 @@ editorNote: We buy our own gear. Prices checked March 2026.
 
 A go bag is what you grab when staying is no longer the better option. Not the drum of rice in the kitchen, not the shelf of tinned goods — those are for sheltering in place. The go bag is for the morning the barangay sound system starts calling for evacuation, or the water in the street reaches the second step, or the ground shakes hard enough that you would rather sleep outside than under your own ceiling.
 
+
+<figure class="gg-figure"><img class="gg-zoomable" src="https://images.galinggear.com/articles/sourced-1789733807706-3zv0id.jpg" alt="Building a go bag for two: a practical guide for couples in the Philippines" loading="lazy" /></figure>
+
+
 For a couple with no kids and no pets, this is genuinely easier than it is for most households. You have two adults who can both carry a load, both make decisions, and both move at the same speed. That is a real advantage and you should use it — not by packing more, but by packing smarter and splitting it properly.
 
 The Philippine version of this problem has its own shape. It is wet. Twenty or so tropical cyclones cross the country in a year, and the ones that hurt are rarely the ones with the strongest winds — they are the ones that sit over a catchment and rain for eighteen hours. Power goes before water does. In condominiums and walk-ups, the lift goes first, and a high floor becomes a staircase. In low-lying barangays, the road out closes before the water reaches your door. So the bag has to survive rain, be carried down stairs, and be ready before the situation is obvious.
