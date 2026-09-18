@@ -7,7 +7,7 @@ description: >-
 scenario: edc
 publishedAt: '2026-09-18'
 featured: false
-status: active
+status: archived
 heroImage: 'https://images.galinggear.com/articles/sourced-1789734369341-ucl4d2.jpg'
 editorNote: >-
   I have 3 of these, purchased a few years ago. Easy to charge, easy to carry
