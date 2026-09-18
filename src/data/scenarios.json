@@ -14,9 +14,9 @@
     "sortOrder": 1
   },
   {
-    "slug": "earthquake-ready",
-    "label": "Earthquake Ready",
-    "blurb": "What to have within reach before the ground moves.",
+    "slug": "stay-connected",
+    "label": "Stay Connected",
+    "blurb": "Radios, mesh networks and backup SIMs for when the cell towers go quiet.",
     "isPrimary": true,
     "sortOrder": 2
   },
@@ -56,37 +56,37 @@
     "sortOrder": 7
   },
   {
-    "slug": "stay-connected",
-    "label": "Stay Connected",
-    "blurb": "Radios, mesh networks and backup SIMs for when the cell towers go quiet.",
-    "isPrimary": false,
-    "sortOrder": 8
-  },
-  {
     "slug": "fire-safety",
     "label": "Fire Safety",
     "blurb": "Extinguishers, escape plans and the small habits that prevent the big disaster.",
     "isPrimary": false,
-    "sortOrder": 9
+    "sortOrder": 8
   },
   {
     "slug": "stranded-kit",
     "label": "Stranded Kit",
     "blurb": "The essentials for your car, your commute or an unexpected night away from home.",
     "isPrimary": false,
-    "sortOrder": 10
+    "sortOrder": 9
   },
   {
     "slug": "heat-wave",
     "label": "Heat Wave",
     "blurb": "Cooling gear, hydration hacks and heat-illness know-how for Philippine summers.",
     "isPrimary": false,
-    "sortOrder": 11
+    "sortOrder": 10
   },
   {
     "slug": "pantry-food",
     "label": "Pantry & Food",
     "blurb": "Long-shelf food, cooking without gas, and keeping the household fed through a crisis.",
+    "isPrimary": false,
+    "sortOrder": 11
+  },
+  {
+    "slug": "earthquake-ready",
+    "label": "Earthquake Ready",
+    "blurb": "What to have within reach before the ground moves.",
     "isPrimary": false,
     "sortOrder": 12
   },
