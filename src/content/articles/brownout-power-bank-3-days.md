@@ -8,6 +8,7 @@ publishedAt: '2026-08-11'
 featured: true
 status: active
 updatedAt: '2026-09-18'
+heroImage: 'https://images.galinggear.com/articles/1789715117371-ts7thj.png'
 editorNote: We buy our own gear. Prices checked September 2026.
 ---
 
