@@ -37,20 +37,33 @@ export function scenarioBlurb(scenario: string): string {
   return SCENARIO_BLURBS[scenario] ?? ''
 }
 
+const MAX_INLINE = 6
+
 /**
  * Content-gated navigation lists. A scenario only appears in the nav once it has
  * at least one active (non-archived) article. Empty scenarios still generate a
  * static listing page but are not linked from the nav until they have content.
- * Returns slugs, split by the admin primary/secondary classification and kept
- * in the admin sort order.
+ *
+ * After content-gating, if fewer than 6 scenarios remain in the inline (primary)
+ * bar, secondary scenarios are promoted (in their admin sort order) to fill the
+ * bar up to 6. Any remaining secondaries stay in the "More" dropdown.
  */
 export async function getNavScenarios(): Promise<{ primary: string[]; secondary: string[] }> {
   const articles = await getCollection('articles')
   const activeSlugs = new Set(
     articles.filter((a) => a.data.status !== 'archived').map((a) => a.data.scenario)
   )
+
+  const visiblePrimary = PRIMARY_SCENARIOS.filter((slug) => activeSlugs.has(slug))
+  const visibleSecondary = SECONDARY_SCENARIOS.filter((slug) => activeSlugs.has(slug))
+
+  // Top up the inline bar to MAX_INLINE by promoting from secondary
+  const gap = Math.max(0, MAX_INLINE - visiblePrimary.length)
+  const promoted = visibleSecondary.slice(0, gap)
+  const remaining = visibleSecondary.slice(gap)
+
   return {
-    primary: PRIMARY_SCENARIOS.filter((slug) => activeSlugs.has(slug)),
-    secondary: SECONDARY_SCENARIOS.filter((slug) => activeSlugs.has(slug)),
+    primary: [...visiblePrimary, ...promoted],
+    secondary: remaining,
   }
 }
