@@ -23,9 +23,6 @@ I have packed and repacked this bag more times than I can count. I tested this k
 For under **₱3,000** you can put together a go-bag that actually holds up: clean water, three days of light and charge, a way to hear what is happening, and a blade that will not let you down. Nothing here is showy. Everything here has earned its place by working when the power was off and the rain would not stop.
 
 ## What goes in the bag, and why
-
-
-
 <div class="gg-gallery" data-count="6">
   <figure class="gg-figure"><img class="gg-zoomable" src="https://images.galinggear.com/articles/1789694710640-z3kxxv.png" alt="" loading="lazy" /></figure>
   <figure class="gg-figure"><img class="gg-zoomable" src="https://images.galinggear.com/articles/1789694711381-2rd8gg.png" alt="" loading="lazy" /></figure>
@@ -38,6 +35,8 @@ For under **₱3,000** you can put together a go-bag that actually holds up: cle
 **Water — Sawyer Squeeze (around ₱1,400).** The single most important thing in the bag. When the mains go cloudy after a storm, this filter turns questionable tap or rainwater into something I will give my children without a second thought. It is small, it never needs batteries, and it keeps working long after a sachet of tablets would have run out.
 
 **Light and charge — Goal Zero Flip 36 (around ₱900).** A power bank that charges a phone and doubles as a torch on the darker nights. Three days of brownout is a long time to be cut off; this keeps one phone alive so we can reach family and read the PAGASA updates.
+
+<figure class="gg-video gg-video--large"><button class="gg-video-play" type="button" data-video-id="C-31AX2TZ9Y" aria-label="Play video"><img class="gg-video-thumb" src="https://i.ytimg.com/vi/C-31AX2TZ9Y/hqdefault.jpg" alt="Video thumbnail" loading="lazy" /><span class="gg-video-icon" aria-hidden="true"></span></button><figcaption>Check out the kit contents</figcaption></figure>
 
 **Information — Baofeng UV-5R (around ₱600 secondhand).** When the cell towers are congested or down, a radio is how you still hear something. It takes practice and it is not a toy, but it has pulled in local nets during a storm when nothing else worked.
 
