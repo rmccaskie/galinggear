@@ -5,7 +5,7 @@ description: >-
   power is gone for days, not hours.
 scenario: typhoon-season
 publishedAt: '2026-08-11'
-featured: false
+featured: true
 status: active
 updatedAt: '2026-09-18'
 editorNote: We buy our own gear. Prices checked September 2026.
