@@ -6,7 +6,7 @@ description: >-
 scenario: flood-ready
 publishedAt: '2026-07-14'
 featured: false
-status: active
+status: archived
 updatedAt: '2026-09-18'
 heroImage: 'https://images.galinggear.com/articles/sourced-1789733600467-jelpg0.jpg'
 editorNote: >-
