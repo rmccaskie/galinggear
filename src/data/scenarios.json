@@ -49,44 +49,44 @@
     "sortOrder": 6
   },
   {
+    "slug": "off-grid",
+    "label": "Off Grid",
+    "blurb": "Water, power and light for the days the grid cannot reach you.",
+    "isPrimary": false,
+    "sortOrder": 7
+  },
+  {
     "slug": "stay-connected",
     "label": "Stay Connected",
     "blurb": "Radios, mesh networks and backup SIMs for when the cell towers go quiet.",
     "isPrimary": false,
-    "sortOrder": 7
+    "sortOrder": 8
   },
   {
     "slug": "fire-safety",
     "label": "Fire Safety",
     "blurb": "Extinguishers, escape plans and the small habits that prevent the big disaster.",
     "isPrimary": false,
-    "sortOrder": 8
+    "sortOrder": 9
   },
   {
     "slug": "stranded-kit",
     "label": "Stranded Kit",
     "blurb": "The essentials for your car, your commute or an unexpected night away from home.",
     "isPrimary": false,
-    "sortOrder": 9
+    "sortOrder": 10
   },
   {
     "slug": "heat-wave",
     "label": "Heat Wave",
     "blurb": "Cooling gear, hydration hacks and heat-illness know-how for Philippine summers.",
     "isPrimary": false,
-    "sortOrder": 10
+    "sortOrder": 11
   },
   {
     "slug": "pantry-food",
     "label": "Pantry & Food",
     "blurb": "Long-shelf food, cooking without gas, and keeping the household fed through a crisis.",
-    "isPrimary": false,
-    "sortOrder": 11
-  },
-  {
-    "slug": "off-grid",
-    "label": "Off Grid",
-    "blurb": "Water, power and light for the days the grid cannot reach you.",
     "isPrimary": false,
     "sortOrder": 12
   },
