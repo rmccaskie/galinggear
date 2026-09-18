@@ -5,7 +5,7 @@ description: >-
   I actually use it at home.
 scenario: typhoon-season
 publishedAt: '2026-06-30'
-featured: false
+featured: true
 updatedAt: '2026-09-18'
 editorNote: We buy our own gear. Prices checked September 2026.
 ---
