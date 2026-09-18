@@ -1,5 +1,7 @@
 ---
-import { SCENARIOS, SCENARIO_LABELS } from '../lib/scenarios'
+import { SCENARIO_LABELS, getNavScenarios } from '../lib/scenarios'
+
+const { primary, secondary } = await getNavScenarios()
 ---
 
 <header class="site-header">
@@ -39,11 +41,36 @@ import { SCENARIOS, SCENARIO_LABELS } from '../lib/scenarios'
   <nav class="desktop-nav wrap" aria-label="Scenarios">
     <ul role="list">
       {
-        SCENARIOS.map((scenario) => (
+        primary.map((scenario) => (
           <li>
             <a href={`/${scenario}/`}>{SCENARIO_LABELS[scenario]}</a>
           </li>
         ))
+      }
+      {
+        secondary.length > 0 && (
+          <li class="nav-more" data-nav-more>
+            <button
+              type="button"
+              class="nav-more-toggle"
+              aria-expanded="false"
+              aria-haspopup="true"
+              data-nav-more-toggle
+            >
+              More
+              <span class="nav-more-caret" aria-hidden="true">▾</span>
+            </button>
+            <div class="nav-more-menu" data-nav-more-menu hidden>
+              <ul role="list">
+                {secondary.map((scenario) => (
+                  <li>
+                    <a href={`/${scenario}/`}>{SCENARIO_LABELS[scenario]}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </li>
+        )
       }
       <li>
         <a href="/archive/">Archive</a>
@@ -73,12 +100,25 @@ import { SCENARIOS, SCENARIO_LABELS } from '../lib/scenarios'
     </div>
     <ul role="list">
       {
-        SCENARIOS.map((scenario) => (
+        primary.map((scenario) => (
           <li>
             <a href={`/${scenario}/`}>{SCENARIO_LABELS[scenario]}</a>
           </li>
         ))
       }
+      {
+        secondary.length > 0 && (
+          <li class="drawer-divider" aria-hidden="true" />
+        )
+      }
+      {
+        secondary.map((scenario) => (
+          <li>
+            <a href={`/${scenario}/`}>{SCENARIO_LABELS[scenario]}</a>
+          </li>
+        ))
+      }
+      <li class="drawer-divider" aria-hidden="true"></li>
       <li>
         <a href="/archive/">Archive</a>
       </li>
@@ -191,6 +231,78 @@ import { SCENARIOS, SCENARIO_LABELS } from '../lib/scenarios'
     color: var(--accent-text);
   }
 
+  /* Desktop "More" dropdown */
+  .nav-more {
+    position: relative;
+  }
+
+  .nav-more-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-3xs);
+    font-family: var(--font-mono);
+    font-size: var(--text-label);
+    letter-spacing: 0.02em;
+    color: var(--muted-text);
+    background: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .nav-more-toggle:hover {
+    color: var(--accent-text);
+  }
+
+  .nav-more-caret {
+    font-size: 0.7em;
+    transition: transform 120ms ease;
+  }
+
+  .nav-more-toggle[aria-expanded='true'] .nav-more-caret {
+    transform: rotate(180deg);
+  }
+
+  .nav-more-menu {
+    position: absolute;
+    inset-block-start: calc(100% + var(--space-2xs));
+    inset-inline-start: 0;
+    z-index: 25;
+    min-inline-size: 13rem;
+    max-block-size: min(60vh, 26rem);
+    overflow-y: auto;
+    padding: var(--space-2xs);
+    background-color: var(--surface);
+    border: 1px solid var(--hairline);
+    border-radius: var(--radius-md);
+    box-shadow: var(--card-shadow);
+  }
+
+  .nav-more-menu ul {
+    display: grid;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-more-menu a {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: var(--text-label);
+    letter-spacing: 0.02em;
+    color: var(--main-text);
+    text-decoration: none;
+    padding-block: var(--space-xs);
+    padding-inline: var(--space-sm);
+    border-radius: var(--radius-sm);
+    white-space: nowrap;
+  }
+
+  .nav-more-menu a:hover {
+    background-color: var(--surface-sunken);
+    color: var(--accent-text);
+  }
+
   /* Drawer */
   .drawer-overlay {
     position: fixed;
@@ -246,6 +358,12 @@ import { SCENARIOS, SCENARIO_LABELS } from '../lib/scenarios'
 
   .drawer a:hover {
     border-color: var(--hairline);
+  }
+
+  .drawer-divider {
+    block-size: 1px;
+    background-color: var(--hairline);
+    margin-block: var(--space-xs);
   }
 
   .drawer-subscribe {
@@ -356,4 +474,39 @@ import { SCENARIOS, SCENARIO_LABELS } from '../lib/scenarios'
   menuToggle?.addEventListener('click', openDrawer)
   closeButton?.addEventListener('click', closeDrawer)
   overlay?.addEventListener('click', closeDrawer)
+
+  // ---- desktop "More" scenarios dropdown ----
+  const navMore = document.querySelector<HTMLElement>('[data-nav-more]')
+  if (navMore) {
+    const moreToggle = navMore.querySelector<HTMLButtonElement>('[data-nav-more-toggle]')
+    const moreMenu = navMore.querySelector<HTMLElement>('[data-nav-more-menu]')
+    if (moreToggle && moreMenu) {
+      const openMore = () => {
+        moreMenu.hidden = false
+        moreToggle.setAttribute('aria-expanded', 'true')
+        document.addEventListener('click', onMoreDocClick)
+        document.addEventListener('keydown', onMoreKey)
+      }
+      const closeMore = () => {
+        moreMenu.hidden = true
+        moreToggle.setAttribute('aria-expanded', 'false')
+        document.removeEventListener('click', onMoreDocClick)
+        document.removeEventListener('keydown', onMoreKey)
+      }
+      function onMoreDocClick(e: MouseEvent) {
+        if (!navMore!.contains(e.target as Node)) closeMore()
+      }
+      function onMoreKey(e: KeyboardEvent) {
+        if (e.key === 'Escape') {
+          closeMore()
+          moreToggle!.focus()
+        }
+      }
+      moreToggle.addEventListener('click', (e) => {
+        e.stopPropagation()
+        if (moreMenu.hidden) openMore()
+        else closeMore()
+      })
+    }
+  }
 </script>

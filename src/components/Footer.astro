@@ -1,6 +1,9 @@
 ---
-import { SCENARIOS, SCENARIO_LABELS } from '../lib/scenarios'
+import { SCENARIO_LABELS, getNavScenarios } from '../lib/scenarios'
 import SubscribeForm from './SubscribeForm.astro'
+
+const { primary, secondary } = await getNavScenarios()
+const footerScenarios = [...primary, ...secondary]
 ---
 
 <footer class="site-footer">
@@ -17,7 +20,7 @@ import SubscribeForm from './SubscribeForm.astro'
       <p class="heading mono">Scenarios</p>
       <ul role="list">
         {
-          SCENARIOS.map((scenario) => (
+          footerScenarios.map((scenario) => (
             <li>
               <a href={`/${scenario}/`}>{SCENARIO_LABELS[scenario]}</a>
             </li>

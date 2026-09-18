@@ -1,18 +1,25 @@
 ---
-import { SCENARIOS, SCENARIO_LABELS } from '../lib/scenarios'
-import type { Scenario } from '../lib/scenarios'
+import { SCENARIO_LABELS, getNavScenarios } from '../lib/scenarios'
 
 interface Props {
-  active?: Scenario
+  active?: string
 }
 
 const { active } = Astro.props
+const { primary, secondary } = await getNavScenarios()
+// If the active scenario is a secondary one, surface it inline too so the
+// current page always shows an active pill without opening the dropdown.
+const inline =
+  active && secondary.includes(active) && !primary.includes(active)
+    ? [...primary, active]
+    : primary
+const dropdown = secondary.filter((s) => s !== active)
 ---
 
 <nav class="scenario-nav" aria-label="Scenarios">
   <ul role="list">
     {
-      SCENARIOS.map((scenario) => (
+      inline.map((scenario) => (
         <li>
           <a
             href={`/${scenario}/`}
@@ -23,6 +30,33 @@ const { active } = Astro.props
           </a>
         </li>
       ))
+    }
+    {
+      dropdown.length > 0 && (
+        <li class="more" data-more>
+          <button
+            type="button"
+            class="pill more-toggle"
+            aria-expanded="false"
+            aria-haspopup="true"
+            data-more-toggle
+          >
+            More
+            <span class="more-caret" aria-hidden="true">▾</span>
+          </button>
+          <div class="more-menu" data-more-menu hidden>
+            <ul role="list">
+              {dropdown.map((scenario) => (
+                <li>
+                  <a href={`/${scenario}/`} aria-current={scenario === active ? 'page' : undefined}>
+                    {SCENARIO_LABELS[scenario]}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </li>
+      )
     }
   </ul>
 </nav>
@@ -38,7 +72,9 @@ const { active } = Astro.props
   }
 
   .pill {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2xs);
     font-family: var(--font-mono);
     font-size: var(--text-label);
     letter-spacing: 0.02em;
@@ -50,6 +86,7 @@ const { active } = Astro.props
     border-radius: var(--radius-pill);
     background-color: var(--surface);
     white-space: nowrap;
+    cursor: pointer;
     transition: border-color 120ms ease, background-color 120ms ease;
   }
 
@@ -62,4 +99,99 @@ const { active } = Astro.props
     color: var(--surface);
     border-color: var(--accent-text);
   }
+
+  .more {
+    position: relative;
+  }
+
+  .more-caret {
+    font-size: 0.7em;
+    transition: transform 120ms ease;
+  }
+
+  .more-toggle[aria-expanded='true'] .more-caret {
+    transform: rotate(180deg);
+  }
+
+  .more-menu {
+    position: absolute;
+    inset-block-start: calc(100% + var(--space-2xs));
+    inset-inline-start: 0;
+    z-index: 25;
+    min-inline-size: 13rem;
+    max-block-size: min(60vh, 24rem);
+    overflow-y: auto;
+    padding: var(--space-2xs);
+    background-color: var(--surface);
+    border: 1px solid var(--hairline);
+    border-radius: var(--radius-md);
+    box-shadow: var(--card-shadow);
+  }
+
+  .more-menu ul {
+    display: grid;
+    gap: 0;
+    padding: 0;
+  }
+
+  .more-menu a {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: var(--text-label);
+    letter-spacing: 0.02em;
+    color: var(--main-text);
+    text-decoration: none;
+    padding-block: var(--space-xs);
+    padding-inline: var(--space-sm);
+    border-radius: var(--radius-sm);
+    white-space: nowrap;
+  }
+
+  .more-menu a:hover {
+    background-color: var(--surface-sunken);
+    color: var(--accent-text);
+  }
+
+  .more-menu a[aria-current='page'] {
+    color: var(--accent-text);
+    font-weight: 600;
+  }
 </style>
+
+<script>
+  // Dropdown behaviour for every "More" pill on the page (scenario nav can
+  // appear more than once). Close on click-away and Escape.
+  document.querySelectorAll<HTMLElement>('[data-more]').forEach((root) => {
+    const toggle = root.querySelector<HTMLButtonElement>('[data-more-toggle]')
+    const menu = root.querySelector<HTMLElement>('[data-more-menu]')
+    if (!toggle || !menu) return
+
+    function open() {
+      menu.hidden = false
+      toggle.setAttribute('aria-expanded', 'true')
+      document.addEventListener('click', onDocClick)
+      document.addEventListener('keydown', onKey)
+    }
+    function close() {
+      menu.hidden = true
+      toggle.setAttribute('aria-expanded', 'false')
+      document.removeEventListener('click', onDocClick)
+      document.removeEventListener('keydown', onKey)
+    }
+    function onDocClick(e: MouseEvent) {
+      if (!root.contains(e.target as Node)) close()
+    }
+    function onKey(e: KeyboardEvent) {
+      if (e.key === 'Escape') {
+        close()
+        toggle.focus()
+      }
+    }
+
+    toggle.addEventListener('click', (e) => {
+      e.stopPropagation()
+      if (menu.hidden) open()
+      else close()
+    })
+  })
+</script>

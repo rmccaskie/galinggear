@@ -1,24 +1,20 @@
 import { defineCollection, z } from 'astro:content'
 import { glob } from 'astro/loaders'
+import scenariosData from './data/scenarios.json'
 
-export const SCENARIOS = [
-  'typhoon-season',
-  'earthquake-ready',
-  'power-outage',
-  'go-bag',
-  'off-grid',
-  'first-aid',
-  'edc',
-] as const
+// The scenario list is admin-managed: it is committed to src/data/scenarios.json
+// by the CMS and read here at build time. Slug alone drives the route (/{slug}/).
+export const SCENARIOS = (scenariosData as { slug: string }[]).map((s) => s.slug)
 
-export type Scenario = (typeof SCENARIOS)[number]
+export type Scenario = string
 
 const articles = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/articles' }),
   schema: z.object({
     title: z.string(),
     description: z.string(),
-    scenario: z.enum(SCENARIOS),
+    // Validate against the admin-managed slug list (non-empty tuple at runtime).
+    scenario: z.enum(SCENARIOS as [string, ...string[]]),
     publishedAt: z.string(), // ISO date string
     updatedAt: z.string().optional(),
     featured: z.boolean().default(false),

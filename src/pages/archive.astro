@@ -79,7 +79,7 @@ const defaultScenario = (withArchived[0] ?? categories[0]).scenario
       <div id="archive-root" data-default={defaultScenario}>
         <nav class="wrap section-nav" aria-label="Archive categories">
           <ul class="cat-nav" role="list">
-            {categories.map((cat) => (
+            {withArchived.map((cat) => (
               <li>
                 <a
                   class="cat-pill mono"
@@ -96,7 +96,7 @@ const defaultScenario = (withArchived[0] ?? categories[0]).scenario
         </nav>
 
         <section class="wrap section">
-          {categories.map((cat) => (
+          {withArchived.map((cat) => (
             <section
               class:list={['category', { 'is-selected': cat.scenario === defaultScenario }]}
               id={`cat-${cat.scenario}`}
