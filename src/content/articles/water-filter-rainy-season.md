@@ -3,7 +3,7 @@ title: The water filter I trust when the taps run cloudy
 description: >-
   Why the Sawyer Squeeze is the first thing I pack every rainy season — and how
   I actually use it at home.
-scenario: typhoon-season
+scenario: first-aid
 publishedAt: '2026-06-30'
 featured: false
 status: active
