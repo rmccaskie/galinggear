@@ -1,9 +1,9 @@
 ---
-title: 'The best typhoon go-bag for under ₱3,000'
+title: 'The best flood ready go-bag for under ₱3,000'
 description: >-
-  A grab-and-go kit that has carried my family through three typhoon seasons —
+  A grab-and-go kit that has carried my family through three typhoon floods—
   light, honest, and under budget.
-scenario: typhoon-season
+scenario: flood-ready
 publishedAt: '2026-07-14'
 featured: false
 status: active
