@@ -5,7 +5,7 @@ description: >-
   light, honest, and under budget.
 scenario: typhoon-season
 publishedAt: '2026-07-14'
-featured: true
+featured: false
 status: active
 updatedAt: '2026-09-18'
 heroImage: 'https://images.galinggear.com/articles/1789697832205-ihjs8s.jpg'
