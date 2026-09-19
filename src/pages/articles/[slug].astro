@@ -11,7 +11,12 @@ export async function getStaticPaths() {
     props: {
       article,
       related: articles
-        .filter((a) => a.data.scenario === article.data.scenario && a.id !== article.id)
+        .filter(
+          (a) =>
+            a.data.scenario === article.data.scenario &&
+            a.id !== article.id &&
+            a.data.status !== 'archived'
+        )
         .sort(
           (a, b) =>
             new Date(b.data.publishedAt).valueOf() - new Date(a.data.publishedAt).valueOf()
