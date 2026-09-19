@@ -31,7 +31,7 @@ It is not a bug-out bag, and it isn't a survival kit for the wilderness. It's tw
 
 Never drive, walk, ride, or swim through floodwater. Not once, not slowly, not because the van in front made it.
 
-The water hides everything: an open manhole, a washed-out shoulder, a downed line, a canal with no kerb to tell you where the road ends. It's also moving. Commonly cited figures put it at about 15 centimetres of moving water to take an adult off their feet, and around 30 centimetres to start floating a typical sedan — and once a car floats, it steers nothing and goes where the water goes. Most vehicles on our roads are not built to wade. They stall, they take water through the intake, and then you are standing on the roof of an expensive problem.
+The water hides everything: an open manhole, a washed-out shoulder, a downed line, a canal with no kerb to tell you where the road ends. It's also moving. Commonly cited figures put it at about 15 centimeters of moving water to take an adult off their feet, and around 30 centimeters to start floating a typical sedan — and once a car floats, it steers nothing and goes where the water goes. Most vehicles on our roads are not built to wade. They stall, they take water through the intake, and then you are standing on the roof of an expensive problem.
 
 In search-and-rescue, the jobs that ended badly almost never started with someone doing something reckless. They started with someone deciding the water looked shallower than it was, usually because another vehicle had just gone through. That's the whole mechanism. It looks survivable right up to the moment it isn't.
 
@@ -39,9 +39,9 @@ So be clear with yourself about what this kit is. It buys you the patience to tu
 
 ## What you need
 
-One bag per car, not one per person. A 30–40 litre duffel or an old rucksack is perfect — the point of a bag rather than loose items rolling round the boot is that if you ever have to leave the vehicle and walk to a barangay hall or evacuation centre, you can pick up everything in one movement.
+One bag per car, not one per person. A 30–40 liter duffel or an old rucksack is perfect — the point of a bag rather than loose items rolling round the boot is that if you ever have to leave the vehicle and walk to a barangay hall or evacuation center, you can pick up everything in one movement.
 
-**Water.** Two litres per person per day, plus a couple of 6-litre jugs in the boot as the pool you draw from. A six-litre jug runs about ₱60–₱100. Water is heavy and boring and it's the thing you'll be glad of first.
+**Water.** Two liters per person per day, plus a couple of 6-litre jugs in the boot as the pool you draw from. A six-liter jug runs about ₱60–₱100. Water is heavy and boring and it's the thing you'll be glad of first.
 
 **Food that needs no cooking.** Crackers, peanuts, dried mangoes, tuna and corned beef with pull-tab lids, biscuits the kids actually eat. Skip instant noodles — hot water is exactly what you won't have. A small jar of instant coffee and a few sachets does more for morale than it has any right to.
 
@@ -59,7 +59,7 @@ One bag per car, not one per person. A 30–40 litre duffel or an old rucksack i
 
 **Cash in small notes.** ₱2,000–₱3,000 in twenties, fifties and hundreds, plus coins. During an outage the card terminals are down and nobody in a flooded town has change for your ₱1,000.
 
-**Documents.** Photos of your OR/CR, licence, IDs and insurance on your phone, and paper copies in a zip-lock bag in the bag itself.
+**Documents.** Photos of your OR/CR, license, IDs and insurance on your phone, and paper copies in a zip-lock bag in the bag itself.
 
 **Car-specific items.** Jumper cables or a jump starter, a tyre gauge and a small inflator, a basic tool roll, gaffer tape, spare fuses, your early warning device, and a hi-vis vest. A seatbelt cutter and window breaker belongs in the cabin, within reach of the driver's seat — a tool in the boot is a tool you don't have.
 
@@ -73,7 +73,7 @@ One bag per car, not one per person. A 30–40 litre duffel or an old rucksack i
 
 **4. Run the half-tank rule.** On a long trip, refuel at half a tank, not at the warning light. Fuel is what lets you run the aircon in bursts, charge phones, and — more importantly — backtrack 40 kilometres to a town with dry ground.
 
-**5. Note your bail-out points as you drive.** Petrol stations, malls, town centres on higher ground. You're building a mental list of places you could stop, so that when you need one you're not improvising.
+**5. Note your bail-out points as you drive.** Petrol stations, malls, town centers on higher ground. You're building a mental list of places you could stop, so that when you need one you're not improvising.
 
 **6. When you meet water, stop and turn around.** Don't join the queue at the edge to see what happens. Reverse out, go back to the last dry, high, well-lit place you passed, and park there. Not under big trees, not beside a river or creek, not in a basement car park, not at the low end of a car park.
 
@@ -117,7 +117,7 @@ One bag per car, not one per person. A 30–40 litre duffel or an old rucksack i
 
 **Thinking the bag is permission.** This is the one that actually hurts people. A well-stocked car makes you feel prepared, and feeling prepared makes crossing look reasonable. It isn't. The bag exists so that turning back costs you nothing but time.
 
-## How to practise safely
+## How to practice safely
 
 You don't need a drill ground for this. You need one uncomfortable evening.
 
