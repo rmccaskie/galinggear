@@ -7,7 +7,7 @@ description: >-
 scenario: flood-ready
 publishedAt: '2026-09-19'
 featured: true
-status: active
+status: archived
 updatedAt: '2026-09-19'
 heroImage: 'https://images.galinggear.com/articles/generated-1789781733133-eduj74.png'
 railItems:
