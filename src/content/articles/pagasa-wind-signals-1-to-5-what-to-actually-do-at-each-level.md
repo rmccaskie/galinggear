@@ -6,8 +6,9 @@ description: >-
   and lead time, not rain — here is what I actually do at each level.
 scenario: typhoon-season
 publishedAt: '2026-09-19'
-featured: false
+featured: true
 status: active
+updatedAt: '2026-09-19'
 heroImage: 'https://images.galinggear.com/articles/generated-1789820419923-hox5ga.png'
 railItems:
   - type: image
@@ -29,7 +30,7 @@ The first typhoon season after you move to Metro Manila or Cebu is confusing in 
 
 So here is the thing nobody says out loud early enough: **the wind signal is about wind, and about how much time you have left.** That is all it is. It is not a rating of how bad the storm will be for you. It is not a flood warning. It does not tell you whether your street will be knee-deep by Thursday morning.
 
-PAGASA raises a Tropical Cyclone Wind Signal over an area when winds of a certain strength are *expected within a certain number of hours*. Signal No. 1 comes with roughly a day and a half of warning. By Signal No. 4 or 5 you are looking at about twelve hours. The number going up means two things at once: stronger wind, and less time.
+<a href="https://www.pagasa.dost.gov.ph/" target="_blank" rel="noopener noreferrer">PAGASA</a> raises a Tropical Cyclone Wind Signal over an area when winds of a certain strength are *expected within a certain number of hours*. Signal No. 1 comes with roughly a day and a half of warning. By Signal No. 4 or 5 you are looking at about twelve hours. The number going up means two things at once: stronger wind, and less time.
 
 That is genuinely useful. But the storms that have hurt people in this country most were not always high-signal storms. The 2009 flood that put Marikina under water came from a cyclone that was never especially windy over Metro Manila. It just rained an absurd amount in a short time. Every wet season since, I have watched the habagat — the southwest monsoon, pulled in and fed by a storm sitting hundreds of kilometres away — flood low-lying barangays while no signal was raised over the city at all.
 
