@@ -8,11 +8,17 @@ scenario: edc
 publishedAt: '2026-09-18'
 featured: true
 status: active
-updatedAt: '2026-09-18'
+updatedAt: '2026-09-19'
 heroImage: 'https://images.galinggear.com/articles/sourced-1789737595761-t0j1lc.jpg'
 editorNote: >-
   I have 3 of these, purchased a few years ago. Easy to charge, easy to carry
   and super easy to wear.
+railItems:
+  - type: image
+    assetId: 12aa7a33-a16a-4e19-81af-aee597f80894
+    anchor: overview
+    label: Light when you need it.
+    image: 'https://images.galinggear.com/staging/generated-1789819604956-huo9e9.png'
 ---
 
 ## Overview
