@@ -341,7 +341,7 @@ function fmt(date: string) {
   }
 
   .body {
-    padding-block: var(--space-lg) var(--space-2xl);
+    padding-block: 0 var(--space-2xl);
   }
 
   .section {
@@ -364,6 +364,12 @@ function fmt(date: string) {
     font-size: var(--text-h1);
     margin-block: var(--space-2xl) var(--space-sm);
     text-wrap: balance;
+  }
+
+  /* The first section heading should sit level with the top of the side rail,
+     not be pushed down by its own top margin. */
+  .body > :first-child {
+    margin-block-start: 0;
   }
 
   .body h3 {
