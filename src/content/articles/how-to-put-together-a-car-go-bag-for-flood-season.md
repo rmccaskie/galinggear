@@ -8,8 +8,8 @@ scenario: flood-ready
 publishedAt: '2026-09-19'
 featured: true
 status: active
+updatedAt: '2026-09-19'
 heroImage: 'https://images.galinggear.com/articles/generated-1789781733133-eduj74.png'
-editorNote: We buy our own gear. Prices checked October 2025.
 ---
 
 ## What you'll be able to do — and why it matters
@@ -81,6 +81,10 @@ One bag per car, not one per person. A 30–40 litre duffel or an old rucksack i
 **With children or older parents.** Double the comfort items and halve your tolerance for waiting it out in a bad spot. Medicines, nappies, and familiar snacks matter more than anything technical. A car park with a working toilet and light beats a lay-by with a better view of the road.
 
 **Metro Manila versus provincial roads.** In the city you're rarely far from a mall, a hospital, or a barangay hall, so the bag is mostly about the hours you'll spend stationary. On a provincial highway — Cagayan Valley, Bicol, the Pampanga plains — the gap between towns is real, and so is the gap between petrol stations. Pack more water for the provinces.
+
+
+<figure class="gg-figure"><img class="gg-zoomable" src="https://images.galinggear.com/articles/generated-1789786427336-b43ukh.png" alt="" loading="lazy" /><figcaption>Don't let this be you!</figcaption></figure>
+
 
 **Habagat versus a named typhoon.** A named storm gives you notice, and the honest answer is usually to cancel the trip. The southwest monsoon is sneakier: no storm on the map, and a barangay underwater by mid-afternoon. Most of the times I've been stuck, there was no storm name involved at all.
 
