@@ -5,7 +5,7 @@ description: >-
   the honest weight of it all. No kids, no pets, no wishful thinking.
 scenario: go-bag
 publishedAt: '2026-09-18'
-featured: false
+featured: true
 status: active
 updatedAt: '2026-09-18'
 heroImage: 'https://images.galinggear.com/articles/sourced-1789739329727-pi2kl4.jpg'
