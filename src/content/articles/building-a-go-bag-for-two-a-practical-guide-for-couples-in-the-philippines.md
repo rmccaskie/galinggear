@@ -10,6 +10,16 @@ status: active
 updatedAt: '2026-09-19'
 heroImage: 'https://images.galinggear.com/library/1789804308800-7solth.png'
 editorNote: We buy our own gear. Prices checked March 2026.
+railItems:
+  - type: article
+    assetId: 823b432c-568e-42ea-91ed-483dd6c5e1da
+    anchor: what-actually-matters
+    label: Before You Buy
+    title: Starlink Mini is the easy part. Power is the real problem
+    slug: starlink-mini-review-internet-when-the-towers-and-the-power-go-down
+    description: >-
+      A small dish can outlast the local lines, but only if your batteries and
+      solar are sized for it — the numbers and trade-offs, set out plainly.
 ---
 
 ## The situation
