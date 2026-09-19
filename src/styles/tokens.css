@@ -57,6 +57,12 @@
   --measure: 66ch;
   --measure-narrow: 54ch;
 
+  /* ---- hero aspect ratio ----
+     Single source of truth for hero framing. Heroes are generated/sourced at
+     3:2 and the banner fills to this shape (object-fit: cover), so there is
+     never any letterboxing. Change this one value to re-shape every hero. */
+  --hero-ratio: 3 / 2;
+
   /* ---- job names — light (default) ---- */
   --page-background: #E5F0F0;          /* Sea Glass */
   --surface: #FFFFFF;

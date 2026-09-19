@@ -298,8 +298,9 @@ img.gg-zoomable {
 
 .gg-hero-single img {
   inline-size: 100%;
-  max-block-size: 30rem;
-  object-fit: contain;
+  block-size: auto;
+  aspect-ratio: var(--hero-ratio);
+  object-fit: cover;
 }
 
 /* ---- hero: swipeable carousel ---- */
@@ -323,9 +324,9 @@ img.gg-zoomable {
 
 .gg-hero-carousel .gg-hero-slide img {
   inline-size: 100%;
-  max-block-size: 30rem;
-  aspect-ratio: 16 / 9;
-  object-fit: contain;
+  block-size: auto;
+  aspect-ratio: var(--hero-ratio);
+  object-fit: cover;
 }
 
 @media (min-width: 48rem) {
