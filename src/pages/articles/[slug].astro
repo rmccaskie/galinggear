@@ -19,8 +19,8 @@ export async function getStaticPaths() {
           return {
             ...item,
             resolved: {
-              title: target.data.title,
-              description: target.data.description,
+              title: item.title ?? target.data.title,
+              description: item.description ?? target.data.description,
               scenario: target.data.scenario,
               publishedAt: target.data.publishedAt,
               slug: target.id,

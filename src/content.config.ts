@@ -52,6 +52,10 @@ const articles = defineCollection({
           caption: z.string().optional(),
           // article (reference by slug; resolved at build time)
           slug: z.string().optional(),
+          // article override copy (optional): AI-written headline (title, above)
+          // + teaser (description) shown on the card, over the target article's
+          // own hero. When absent the card falls back to the target's own copy.
+          description: z.string().optional(),
         })
       )
       .optional(),
