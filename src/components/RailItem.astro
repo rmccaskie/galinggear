@@ -39,7 +39,7 @@ const { item } = Astro.props as { item: RailItemData }
 const DEFAULT_LABEL: Record<RailItemData['type'], string> = {
   product: 'Our pick',
   image: 'Illustration',
-  article: 'Read first',
+  article: 'Suggested reading',
   ad: 'Sponsored',
 }
 const label = item.label ?? DEFAULT_LABEL[item.type]

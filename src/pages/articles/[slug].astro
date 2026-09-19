@@ -173,7 +173,10 @@ function fmt(date: string) {
           sections.map((section) => {
             const rail = railFor(section.id)
             return (
-              <div class:list={['section-block', rail ? 'has-rail' : 'full']}>
+              <div
+                class:list={['section-block', rail ? 'has-rail' : 'full']}
+                data-rail-type={rail?.type}
+              >
                 <div class="sec-head" set:html={section.headingHtml} />
                 {rail && <RailItem item={rail} />}
                 <div class="sec-body" set:html={section.bodyHtml} />
@@ -491,6 +494,25 @@ function fmt(date: string) {
       inline-size: 100%;
       max-inline-size: none;
       margin-inline-start: 0;
+    }
+
+    /* Article-type rail cards read as article content when they sit between the
+       heading and the body. On mobile only, stack the section as a flex column
+       and push the article card BELOW the body so it clearly reads as a
+       "Suggested reading" aside rather than part of the piece. Desktop (float)
+       and the other card types are untouched. */
+    .section-block.has-rail[data-rail-type='article'] {
+      display: flex;
+      flex-direction: column;
+    }
+    .section-block.has-rail[data-rail-type='article'] .sec-head {
+      order: 1;
+    }
+    .section-block.has-rail[data-rail-type='article'] .sec-body {
+      order: 2;
+    }
+    .section-block.has-rail[data-rail-type='article'] :global(.rail) {
+      order: 3;
     }
   }
 
