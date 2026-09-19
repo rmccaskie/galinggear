@@ -119,21 +119,24 @@ function fmt(date: string) {
 
   {
     related.length > 0 && (
-      <section class="wrap section">
-        <h2 class="section-title">More in {SCENARIO_LABELS[scenario]}</h2>
+      <Fragment>
+        <hr class="art-end" aria-hidden="true" />
+        <section class="wrap section">
+          <h2 class="section-title">More in {SCENARIO_LABELS[scenario]}</h2>
         <div class="grid">
-          {related.map((a) => (
-            <ArticleCard
-              title={a.data.title}
-              description={a.data.description}
-              scenario={a.data.scenario}
-              publishedAt={a.data.publishedAt}
-              slug={a.id}
-              heroImage={a.data.heroImage ?? a.data.heroGallery?.[0]?.src}
-            />
-          ))}
-        </div>
-      </section>
+            {related.map((a) => (
+              <ArticleCard
+                title={a.data.title}
+                description={a.data.description}
+                scenario={a.data.scenario}
+                publishedAt={a.data.publishedAt}
+                slug={a.id}
+                heroImage={a.data.heroImage ?? a.data.heroGallery?.[0]?.src}
+              />
+            ))}
+          </div>
+        </section>
+      </Fragment>
     )
   }
 </BaseLayout>
@@ -342,6 +345,16 @@ function fmt(date: string) {
 
   .body {
     padding-block: 0 var(--space-2xl);
+  }
+
+  /* Definitive end-of-article break: a strong rule that separates the article
+     body from the "More in …" links that follow. */
+  .art-end {
+    inline-size: min(100% - (2 * var(--space-lg)), 72rem);
+    margin-inline: auto;
+    margin-block: var(--space-2xl) 0;
+    border: 0;
+    border-block-start: 3px solid var(--main-text);
   }
 
   .section {
