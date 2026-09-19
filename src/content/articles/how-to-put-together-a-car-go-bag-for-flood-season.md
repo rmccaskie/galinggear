@@ -10,6 +10,42 @@ featured: true
 status: active
 updatedAt: '2026-09-19'
 heroImage: 'https://images.galinggear.com/articles/generated-1789781733133-eduj74.png'
+railItems:
+  - type: image
+    assetId: f0691992-c490-442f-b27c-d71bc64cf9d3
+    anchor: the-rule-the-bag-does-not-change
+    label: Don't get caught out
+    image: 'https://images.galinggear.com/staging/1789809668891-roxlfa.png'
+    alt: Flooded highway
+  - type: image
+    assetId: 78d637f8-a667-4b9f-bf47-d759cf879d62
+    anchor: what-you-need
+    label: Packed and waiting
+    image: 'https://images.galinggear.com/library/generated-1789813011557-ayr0ms.png'
+    alt: >-
+      Open car boot with a dry bag, water bottles, torch, first-aid pouch and
+      poncho on a wet street.
+    caption: >-
+      A car go-bag packed for waiting out floodwater, not for driving through
+      it.
+  - type: article
+    assetId: 1659c975-3f01-4692-aff3-7a1410a4d411
+    anchor: variations-and-conditions
+    label: Before The Signal
+    title: 'Two people, one plan: what most couples get wrong'
+    slug: building-a-go-bag-for-two-a-practical-guide-for-couples-in-the-philippines
+    description: >-
+      Packing two separate bags is easy; packing so either one works alone is
+      harder, and it is usually the thing nobody rehearses.
+  - type: article
+    assetId: 5d56a974-bbeb-447f-a883-2d8f12c56beb
+    anchor: the-method
+    label: Field Guide
+    title: Splitting the load without splitting the kit
+    slug: building-a-go-bag-for-two-a-practical-guide-for-couples-in-the-philippines
+    description: >-
+      How to divide water, documents, power and first aid across two bags so you
+      are still functional if one bag is lost, soaked or left behind.
 ---
 
 ## What you'll be able to do — and why it matters
