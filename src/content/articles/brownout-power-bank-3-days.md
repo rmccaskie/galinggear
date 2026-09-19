@@ -6,7 +6,7 @@ description: >-
 scenario: typhoon-season
 publishedAt: '2026-08-11'
 featured: false
-status: active
+status: archived
 updatedAt: '2026-09-19'
 heroImage: 'https://images.galinggear.com/articles/generated-1789792169262-etekpu.png'
 editorNote: We buy our own gear. Prices checked September 2026.
