@@ -7,9 +7,16 @@ scenario: go-bag
 publishedAt: '2026-09-18'
 featured: true
 status: active
-updatedAt: '2026-09-18'
+updatedAt: '2026-09-19'
 heroImage: 'https://images.galinggear.com/articles/sourced-1789739329727-pi2kl4.jpg'
 editorNote: We buy our own gear. Prices checked March 2026.
+railItems:
+  - type: image
+    anchor: the-situation
+    label: Nice Torch
+    image: 'https://images.galinggear.com/staging/sourced-1789797235456-hd44uj.jpg'
+    alt: qwqwe
+    caption: qweqweqweqwe
 ---
 
 ## The situation
