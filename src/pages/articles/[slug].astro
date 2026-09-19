@@ -175,8 +175,8 @@ function fmt(date: string) {
             return (
               <div class:list={['section-block', rail ? 'has-rail' : 'full']}>
                 <div class="sec-head" set:html={section.headingHtml} />
-                <div class="sec-body" set:html={section.bodyHtml} />
                 {rail && <RailItem item={rail} />}
+                <div class="sec-body" set:html={section.bodyHtml} />
               </div>
             )
           })
@@ -456,9 +456,10 @@ function fmt(date: string) {
   }
 
   /* Per-section layout: each ## section is its own block. Full width by
-     default, or two-column (text left, rail card right) when a rail item is
-     bound to the section's anchor. The heading spans the full width above the
-     split so it always reads as the section's title, not the text column's. */
+     default. When a rail item is bound to the section's anchor the card floats
+     to the right and the section's body text wraps around it, then reclaims the
+     full width once it runs past the bottom of the card. The heading stays a
+     full-width block above the text so it always reads as the section title. */
   .section-block {
     margin-block-start: var(--space-2xl);
   }
@@ -467,30 +468,29 @@ function fmt(date: string) {
     margin-block-start: 0;
   }
 
+  /* Establish a block formatting context so the section fully contains its
+     floated card (no float bleeding into the next section). */
   .section-block.has-rail {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 360px;
-    gap: var(--space-xl) var(--space-2xl);
-    align-items: start;
-  }
-
-  .section-block.has-rail .sec-head {
-    grid-column: 1 / -1;
-  }
-
-  .section-block.has-rail .sec-body {
-    grid-column: 1;
+    display: flow-root;
   }
 
   .section-block.has-rail :global(.rail) {
-    grid-column: 2;
+    float: inline-end;
+    inline-size: 360px;
+    max-inline-size: 42%;
+    margin-inline-start: var(--space-2xl);
+    margin-block-end: var(--space-lg);
   }
 
-  /* Below this width the 1fr/360 split gets too cramped for the text column,
-     so the section stacks (card drops below the text — see RailItem). */
+  /* Below this width a floated card leaves the text column too cramped, so the
+     card stops floating and drops to full width (see RailItem's own mobile
+     rules, which also drop its left divider). */
   @media (max-width: 800px) {
-    .section-block.has-rail {
-      display: block;
+    .section-block.has-rail :global(.rail) {
+      float: none;
+      inline-size: 100%;
+      max-inline-size: none;
+      margin-inline-start: 0;
     }
   }
 
