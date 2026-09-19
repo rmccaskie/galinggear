@@ -12,17 +12,13 @@ const articles = (await getCollection('articles'))
     (a, b) => new Date(b.data.publishedAt).valueOf() - new Date(a.data.publishedAt).valueOf()
   )
 
-// Featured articles: every article flagged `featured`, ordered by the editor's
-// chosen order in src/data/featured.json (dragged in the CMS). Any flagged
-// article not present in that list falls to the end, newest-first (the array is
-// already sorted by publishedAt desc, so that ordering is preserved).
-const rank = (slug: string) => {
-  const i = (featuredOrder as string[]).indexOf(slug)
-  return i === -1 ? Number.MAX_SAFE_INTEGER : i
-}
-const featuredArticles = articles
-  .filter((a) => a.data.featured)
-  .sort((a, b) => rank(a.id) - rank(b.id))
+// Featured articles — single source of truth: featured.json controls both
+// membership and display order. The per-article `featured` frontmatter flag
+// is no longer consulted here.
+const bySlug = new Map(articles.map((a) => [a.id, a]))
+const featuredArticles = (featuredOrder as string[])
+  .map((slug) => bySlug.get(slug))
+  .filter((a): a is NonNullable<typeof a> => a != null)
 
 const featured = featuredArticles[0] ?? articles[0]
 const alsoFeatured = featuredArticles.slice(1)
