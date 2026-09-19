@@ -264,7 +264,9 @@ a:hover {
   color: var(--muted-text);
 }
 
-img.gg-zoomable {
+/* Only gallery images are zoomable/clickable; heroes and standalone inline
+   images are intentionally inert. */
+.gg-gallery img.gg-zoomable {
   cursor: zoom-in;
 }
 

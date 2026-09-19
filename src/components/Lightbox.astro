@@ -1,7 +1,8 @@
 ---
-// Mobile-friendly image lightbox. Attaches to any <img class="gg-zoomable">.
-// Images inside a .gg-gallery or .gg-hero-carousel form a browsable group
-// (prev / next / swipe); standalone figures open on their own.
+// Mobile-friendly image lightbox. Attaches ONLY to gallery images
+// (<img class="gg-zoomable"> inside a .gg-gallery). Hero images and
+// standalone inline (non-gallery) figures are intentionally not clickable
+// and do not open the lightbox.
 ---
 
 <div
@@ -57,7 +58,7 @@
     }
 
     function open(img) {
-      const container = img.closest('.gg-gallery, .gg-hero-carousel')
+      const container = img.closest('.gg-gallery')
       group = container
         ? Array.from(container.querySelectorAll('img.gg-zoomable'))
         : [img]
@@ -79,7 +80,9 @@
       const t = e.target
       if (!t || !t.closest) return
       const img = t.closest('img.gg-zoomable')
-      if (img) {
+      // Only gallery images are clickable. Heroes and standalone inline
+      // images must not open the lightbox.
+      if (img && img.closest('.gg-gallery')) {
         e.preventDefault()
         open(img)
       }
