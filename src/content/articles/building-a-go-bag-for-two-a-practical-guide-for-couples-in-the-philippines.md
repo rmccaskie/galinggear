@@ -12,7 +12,7 @@ heroImage: 'https://images.galinggear.com/articles/sourced-1789739329727-pi2kl4.
 editorNote: We buy our own gear. Prices checked March 2026.
 railItems:
   - type: image
-    anchor: the-situation
+    anchor: what-actually-matters
     label: Nice Torch
     image: 'https://images.galinggear.com/staging/sourced-1789797235456-hd44uj.jpg'
     alt: qwqwe
