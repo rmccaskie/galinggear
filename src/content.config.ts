@@ -30,6 +30,31 @@ const articles = defineCollection({
       )
       .optional(),
     editorNote: z.string().optional(),
+    // Per-section rail items: each card binds to a section via `anchor` (the
+    // section heading's slug). Rendered beside that section on desktop; stacked
+    // below it on mobile. Sections without a matching item stay full width.
+    railItems: z
+      .array(
+        z.object({
+          type: z.enum(['product', 'image', 'article', 'ad']),
+          anchor: z.string().optional(),
+          label: z.string().optional(),
+          // product / ad
+          kicker: z.string().optional(),
+          title: z.string().optional(),
+          spec: z.string().optional(),
+          price: z.string().optional(),
+          href: z.string().optional(),
+          cta: z.string().optional(),
+          // image / product / ad
+          image: z.string().optional(),
+          alt: z.string().optional(),
+          caption: z.string().optional(),
+          // article (reference by slug; resolved at build time)
+          slug: z.string().optional(),
+        })
+      )
+      .optional(),
   }),
 })
 

@@ -1,0 +1,240 @@
+---
+import ArticleCard from './ArticleCard.astro'
+import type { Scenario } from '../lib/scenarios'
+
+// A single per-section rail card. Four types:
+//  - product : photo, spec, price, buy link
+//  - image   : supporting photo + caption
+//  - ad      : clearly-flagged sponsored panel (visually quieter)
+//  - article : reuses the homepage ArticleCard from a resolved slug reference
+export interface ResolvedArticle {
+  title: string
+  description: string
+  scenario: Scenario
+  publishedAt: string
+  slug: string
+  heroImage?: string
+  status?: 'active' | 'archived'
+}
+
+export interface RailItemData {
+  type: 'product' | 'image' | 'article' | 'ad'
+  anchor?: string
+  label?: string
+  kicker?: string
+  title?: string
+  spec?: string
+  price?: string
+  href?: string
+  cta?: string
+  image?: string
+  alt?: string
+  caption?: string
+  slug?: string
+  resolved?: ResolvedArticle | null
+}
+
+const { item } = Astro.props as { item: RailItemData }
+
+const DEFAULT_LABEL: Record<RailItemData['type'], string> = {
+  product: 'Our pick',
+  image: 'Illustration',
+  article: 'Read first',
+  ad: 'Sponsored',
+}
+const label = item.label ?? DEFAULT_LABEL[item.type]
+---
+
+<aside class="rail">
+  <p class="rail__label mono">{label}</p>
+
+  {
+    item.type === 'product' && (
+      <div class="rail-card rail-card--product">
+        {item.image && (
+          <img class="rail-card__img" src={item.image} alt={item.alt ?? ''} loading="lazy" />
+        )}
+        <div class="rail-card__pad">
+          {item.kicker && <p class="rail-card__kicker mono">{item.kicker}</p>}
+          {item.title && <h4 class="rail-card__title">{item.title}</h4>}
+          {item.spec && <p class="rail-card__spec">{item.spec}</p>}
+          {item.price && <p class="rail-card__price mono">{item.price}</p>}
+          {item.href && (
+            <a class="rail-card__btn" href={item.href} target="_blank" rel="noopener">
+              {item.cta ?? 'Where to buy →'}
+            </a>
+          )}
+        </div>
+      </div>
+    )
+  }
+
+  {
+    item.type === 'image' && (
+      <figure class="rail-card rail-card--image">
+        {item.image && (
+          <img class="rail-card__img" src={item.image} alt={item.alt ?? ''} loading="lazy" />
+        )}
+        {item.caption && <figcaption class="rail-card__cap mono">{item.caption}</figcaption>}
+      </figure>
+    )
+  }
+
+  {
+    item.type === 'ad' && (
+      <div class="rail-card rail-card--ad">
+        <p class="rail-card__adflag mono">Advertisement</p>
+        {item.image && (
+          <img class="rail-card__img" src={item.image} alt={item.alt ?? ''} loading="lazy" />
+        )}
+        <div class="rail-card__pad">
+          {item.title && <h4 class="rail-card__title">{item.title}</h4>}
+          {item.spec && <p class="rail-card__spec">{item.spec}</p>}
+          {item.href && (
+            <a class="rail-card__btn rail-card__btn--ad" href={item.href} target="_blank" rel="noopener">
+              {item.cta ?? 'Learn more'}
+            </a>
+          )}
+        </div>
+      </div>
+    )
+  }
+
+  {
+    item.type === 'article' && item.resolved && (
+      <ArticleCard
+        title={item.resolved.title}
+        description={item.resolved.description}
+        scenario={item.resolved.scenario}
+        publishedAt={item.resolved.publishedAt}
+        slug={item.resolved.slug}
+        heroImage={item.resolved.heroImage}
+        status={item.resolved.status}
+      />
+    )
+  }
+</aside>
+
+<style>
+  .rail {
+    border-inline-start: 1px solid var(--hairline);
+    padding-inline-start: var(--space-xl);
+  }
+
+  .rail__label {
+    font-size: var(--text-label);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted-text);
+    margin: 0 0 var(--space-sm);
+  }
+
+  .rail-card {
+    background-color: var(--surface);
+    border-radius: var(--radius-md);
+    box-shadow: var(--card-shadow);
+    overflow: hidden;
+  }
+
+  .rail-card__img {
+    display: block;
+    inline-size: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    background-color: var(--surface-sunken);
+  }
+
+  .rail-card__pad {
+    padding: var(--space-md) var(--space-md) var(--space-lg);
+  }
+
+  .rail-card__kicker {
+    font-size: 0.7rem;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--accent-text);
+    margin: 0 0 var(--space-2xs);
+  }
+
+  .rail-card__title {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1.15rem;
+    line-height: 1.2;
+    margin: 0 0 var(--space-xs);
+  }
+
+  .rail-card__spec {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--muted-text);
+    margin: 0 0 var(--space-md);
+  }
+
+  .rail-card__price {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--main-text);
+    margin: 0 0 var(--space-md);
+  }
+
+  .rail-card__btn {
+    display: inline-block;
+    background-color: var(--accent-fill);
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    padding: var(--space-2xs) var(--space-md);
+    border-radius: var(--radius-pill);
+  }
+
+  .rail-card__btn:hover {
+    filter: brightness(0.95);
+  }
+
+  /* Image card: figure with a mono caption. */
+  .rail-card--image {
+    margin: 0;
+  }
+
+  .rail-card__cap {
+    font-size: 0.72rem;
+    letter-spacing: 0.01em;
+    text-transform: none;
+    color: var(--muted-text);
+    line-height: 1.45;
+    padding: var(--space-sm) var(--space-md) var(--space-md);
+  }
+
+  /* Ad card: muted panel, hairline border, no shadow — visually quieter than an
+     editorial card so it never reads as an editorial recommendation. */
+  .rail-card--ad {
+    background-color: var(--surface-sunken);
+    border: 1px solid var(--hairline);
+    box-shadow: none;
+  }
+
+  .rail-card__adflag {
+    font-size: 0.66rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted-text);
+    padding: var(--space-sm) var(--space-md) 0;
+    margin: 0;
+  }
+
+  .rail-card--ad .rail-card__btn--ad {
+    background-color: var(--accent-text);
+  }
+
+  /* When the section stacks (mobile / narrow), the rail card sits below the
+     text at full width — drop the side border and add a top gap instead. */
+  @media (max-width: 800px) {
+    .rail {
+      border-inline-start: 0;
+      padding-inline-start: 0;
+      margin-block-start: var(--space-lg);
+    }
+  }
+</style>
