@@ -85,13 +85,14 @@ const publishedLabel = Number.isNaN(published.valueOf())
      edge-to-edge, cropped to cover, matching the article-page hero treatment.
      Uses the shared --hero-ratio token so it re-shapes with the heroes. */
   .card.has-thumb.featured {
-    padding-block-start: 0;
+    padding-block-start: var(--space-lg);
   }
 
   .card.has-thumb.featured .thumb {
     aspect-ratio: var(--hero-ratio);
-    margin-inline: calc(-1 * var(--space-lg));
-    border-radius: 0;
+    margin-inline: 0;
+    border-radius: var(--radius-md);
+    overflow: hidden;
   }
 
   .card.has-thumb.featured .thumb img {
