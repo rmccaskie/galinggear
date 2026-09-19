@@ -10,13 +10,6 @@ status: active
 updatedAt: '2026-09-19'
 heroImage: 'https://images.galinggear.com/library/1789804308800-7solth.png'
 editorNote: We buy our own gear. Prices checked March 2026.
-railItems:
-  - type: image
-    assetId: f0691992-c490-442f-b27c-d71bc64cf9d3
-    anchor: the-gear-that-helps
-    label: Don't get caught out
-    image: 'https://images.galinggear.com/staging/1789809668891-roxlfa.png'
-    alt: Flooded highway
 ---
 
 ## The situation
