@@ -11,7 +11,9 @@ const { title, description, image, type = 'website' } = Astro.props
 const siteName = 'Galing Gear'
 const fullTitle = title === siteName ? title : `${title} · ${siteName}`
 const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString()
-const ogImage = new URL(image ?? '/brand/og-image.png', Astro.site ?? Astro.url).toString()
+const ogImage = image
+  ? new URL(image, Astro.site ?? Astro.url).toString()
+  : 'https://images.galinggear.com/brand/og-image.png?v=1'
 ---
 
 <title>{fullTitle}</title>
