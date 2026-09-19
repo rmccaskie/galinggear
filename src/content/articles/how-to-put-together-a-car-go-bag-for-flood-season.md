@@ -112,10 +112,6 @@ One bag per car, not one per person. A 30–40 liter duffel or an old rucksack i
 
 ## Variations and conditions
 
-
-<figure class="gg-figure"><img class="gg-zoomable" src="https://images.galinggear.com/articles/1789794308057-ehjqtl.png" alt="" loading="lazy" /></figure>
-
-
 **At night.** Everything is harder and the water reads shallower than it is. Streetlights are usually out in the exact places that have flooded. My own rule is simple: after dark, I don't attempt any crossing at all, even one I've seen in daylight. Stop earlier in the evening than feels necessary.
 
 **With children or older parents.** Double the comfort items and halve your tolerance for waiting it out in a bad spot. Medicines, nappies, and familiar snacks matter more than anything technical. A car park with a working toilet and light beats a lay-by with a better view of the road.
