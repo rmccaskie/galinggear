@@ -1,43 +1,84 @@
-# Astro Starter Kit: Minimal
+# Galing Gear — Main Site
 
-```sh
-npm create astro@latest -- --template minimal
+Curated prepper and survivalist gear for Filipino families.  
+Live at **[galinggear.com](https://galinggear.com)**.
+
+Built with **Astro** and deployed to **Cloudflare Workers** via
+`@astrojs/cloudflare`.
+
+---
+
+## Local development
+
+```bash
+git clone https://github.com/rmccaskie/galinggear.git
+cd galinggear
+npm install
+npm run dev          # http://localhost:4321
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+`npm run build && npm run preview` for a production build preview.
 
-## 🚀 Project Structure
+---
 
-Inside of your Astro project, you'll see the following folders and files:
+## Deploying (git push → auto-rebuild)
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+The repo is connected to **Cloudflare Workers Builds**. A push to `main` triggers
+a rebuild only if it touches files in the watch-paths include list.
+
+### Watch-paths behaviour
+
+Content paths (`src/content/articles/*.md`, `src/data/*.json`) are **excluded**
+from the watch-paths — commits touching only those files do NOT trigger a build.
+The CMS writes content changes with these paths and then, on "Publish to live
+site", commits to `.deploy-trigger` (which IS in the include list) to fire a
+single rebuild that picks up everything.
+
+Layout, component, config and style changes (`src/pages/**`, `src/components/**`,
+`src/layouts/**`, `src/styles/**`, `astro.config.*`, `wrangler.jsonc`) DO trigger
+a build on push.
+
+---
+
+## Project structure
+
+```
+src/
+  content/
+    articles/          Markdown articles (frontmatter + body)
+    config.ts          Astro content-collection schema
+  data/
+    featured.json      Ordered list of featured article slugs (single source of truth)
+    scenarios.json     Scenario definitions (category, sort order, primary flag)
+  components/          Astro components (ArticleCard, Header, Footer, etc.)
+  layouts/
+    BaseLayout.astro   Shared page shell (head, header, footer)
+  pages/
+    index.astro        Landing page (hero + featured + recent)
+    articles/[slug].astro   Article detail page
+    archive.astro      Archive listing
+    [scenario].astro   Scenario landing pages
+  styles/
+    global.css         Global styles
+    tokens.css         Design tokens (colours, spacing, type scale)
+public/                Static assets (favicon, manifest)
+astro.config.ts        Astro config (Cloudflare adapter, sitemap)
+wrangler.jsonc         Cloudflare Worker config
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Content model
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- **Articles**: Markdown in `src/content/articles/`. Frontmatter fields include
+  `title`, `scenario`, `publishedAt`, `status` (active/archived), `featured`,
+  `heroImage`, `heroGallery`, `tldr`, etc.
+- **Featured list**: `src/data/featured.json` — an ordered array of slugs.
+  Membership AND display order on the landing page are derived from this file
+  (the per-article `featured` frontmatter flag is no longer consulted).
+- **Scenarios**: `src/data/scenarios.json` — category definitions shown in the
+  scenario-nav bar and used to filter articles.
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Notes
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- The `[CF-Pages-Skip]` marker in CMS commit messages is a legacy artefact.
+  Build gating is handled entirely by the watch-paths config.
+- The CMS lives in a separate repo: `rmccaskie/galinggear-admin`.
