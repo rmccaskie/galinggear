@@ -78,6 +78,9 @@ const publishedLabel = Number.isNaN(published.valueOf())
     inline-size: 100%;
     block-size: 100%;
     object-fit: cover;
+    /* Anchor the crop to the top so a hero's headline / top content is never
+       clipped (e.g. tall infographics). Only the bottom is trimmed to fit. */
+    object-position: top center;
     transition: transform 200ms ease;
   }
 
