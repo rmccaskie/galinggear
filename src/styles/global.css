@@ -18,6 +18,10 @@
 html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
+  /* Smooth in-page jumps (disabled for reduced-motion below), and keep anchored
+     sections clear of the sticky site header. */
+  scroll-behavior: smooth;
+  scroll-padding-block-start: 5.5rem;
 }
 
 body,
