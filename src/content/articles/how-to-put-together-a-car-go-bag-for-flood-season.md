@@ -10,6 +10,13 @@ featured: true
 status: active
 updatedAt: '2026-09-19'
 heroImage: 'https://images.galinggear.com/articles/generated-1789781733133-eduj74.png'
+railItems:
+  - type: image
+    assetId: f0691992-c490-442f-b27c-d71bc64cf9d3
+    anchor: what-you-need
+    image: 'https://images.galinggear.com/library/1789804308800-7solth.png'
+    alt: Flooded highway
+    caption: Don't get caught out
 ---
 
 ## What you'll be able to do — and why it matters
