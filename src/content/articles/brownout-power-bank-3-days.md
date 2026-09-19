@@ -7,15 +7,8 @@ scenario: typhoon-season
 publishedAt: '2026-08-11'
 featured: false
 status: active
-updatedAt: '2026-09-18'
-heroImage: 'https://images.galinggear.com/articles/sourced-1789738557267-pwld7b.png'
-heroGallery:
-  - src: 'https://images.galinggear.com/articles/sourced-1789738665622-q8v1al.png'
-    alt: The power bank that got us through a three-day brownout
-  - src: 'https://images.galinggear.com/articles/sourced-1789738666879-dw3hhn.jpg'
-    alt: The power bank that got us through a three-day brownout
-  - src: 'https://images.galinggear.com/articles/sourced-1789738671847-43yx3v.png'
-    alt: The power bank that got us through a three-day brownout
+updatedAt: '2026-09-19'
+heroImage: 'https://images.galinggear.com/articles/generated-1789792169262-etekpu.png'
 editorNote: We buy our own gear. Prices checked September 2026.
 ---
 
