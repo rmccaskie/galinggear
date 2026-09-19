@@ -14,9 +14,9 @@ railItems:
   - type: image
     assetId: f0691992-c490-442f-b27c-d71bc64cf9d3
     anchor: what-you-need
+    label: Don't get caught out
     image: 'https://images.galinggear.com/library/1789804308800-7solth.png'
     alt: Flooded highway
-    caption: Don't get caught out
 ---
 
 ## What you'll be able to do — and why it matters
