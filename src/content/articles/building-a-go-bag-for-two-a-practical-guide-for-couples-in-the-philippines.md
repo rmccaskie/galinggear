@@ -15,11 +15,11 @@ railItems:
     assetId: 823b432c-568e-42ea-91ed-483dd6c5e1da
     anchor: what-actually-matters
     label: Before You Buy
-    title: Starlink Mini is the easy part. Power is the real problem
+    title: The dish is the easy part — power is the real problem
     slug: starlink-mini-review-internet-when-the-towers-and-the-power-go-down
     description: >-
-      A small dish can outlast the local lines, but only if your batteries and
-      solar are sized for it — the numbers and trade-offs, set out plainly.
+      A small terminal can keep a household online through an outage, but only
+      if you have sorted storage and charging first. Here is the full picture.
 ---
 
 ## The situation
