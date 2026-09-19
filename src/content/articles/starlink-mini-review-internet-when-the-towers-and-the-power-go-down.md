@@ -9,6 +9,7 @@ publishedAt: '2026-09-18'
 featured: true
 status: active
 updatedAt: '2026-09-19'
+heroImage: 'https://images.galinggear.com/library/sourced-1789817538199-3tlzjx.jpg'
 editorNote: We buy our own gear. Prices checked Sept 2026.
 railItems:
   - type: image
