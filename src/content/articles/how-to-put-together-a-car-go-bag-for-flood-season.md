@@ -10,27 +10,6 @@ featured: true
 status: active
 updatedAt: '2026-09-19'
 heroImage: 'https://images.galinggear.com/articles/generated-1789781733133-eduj74.png'
-railItems:
-  - type: article
-    assetId: 1659c975-3f01-4692-aff3-7a1410a4d411
-    anchor: what-youll-be-able-to-do--and-why-it-matters
-    label: Before The Signal
-    title: 'Two people, one plan: what most couples get wrong'
-    slug: building-a-go-bag-for-two-a-practical-guide-for-couples-in-the-philippines
-    description: >-
-      Packing two separate bags is easy; packing so either one works alone is
-      harder, and it is usually the thing nobody rehearses.
-  - type: image
-    assetId: ef436491-564b-4f31-b78f-e590e2b14c34
-    anchor: the-method
-    label: Packing together
-    image: 'https://images.galinggear.com/library/generated-1789813245184-t6qxbl.png'
-    alt: >-
-      A Filipino couple kneeling on an apartment floor beside two open go bags
-      with clothing, water bottles, torch and first-aid pouch laid out.
-    caption: >-
-      Two bags, one shared plan: laying everything out on the floor before it
-      goes back in.
 ---
 
 ## What you'll be able to do — and why it matters
