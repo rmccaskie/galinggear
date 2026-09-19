@@ -94,29 +94,23 @@ function fmt(date: string) {
       ) : null
     }
 
-    {
-      toc.length > 1 && (
-        <nav class="wrap art-toc" aria-label="On this page">
-          <div class="art-toc__head">
+    <div class:list={['wrap', 'art-layout', { 'has-toc': toc.length > 1 }]}>
+      {
+        toc.length > 1 && (
+          <nav class="art-toc" aria-label="On this page">
             <p class="art-toc__label mono">On this page</p>
-            <p class="art-toc__hint">
-              {toc.length} sections in this guide
-            </p>
-          </div>
-          <ol class="art-toc__list" role="list">
-            {toc.map((h) => (
-              <li>
-                <a class="art-toc__link" href={`#${h.slug}`} data-toc-link={h.slug}>
-                  {h.text}
-                </a>
-              </li>
-            ))}
-          </ol>
-        </nav>
-      )
-    }
-
-    <div class="wrap">
+            <ol class="art-toc__list" role="list">
+              {toc.map((h) => (
+                <li>
+                  <a class="art-toc__link" href={`#${h.slug}`} data-toc-link={h.slug}>
+                    {h.text}
+                  </a>
+                </li>
+              ))}
+            </ol>
+          </nav>
+        )
+      }
       <div class="prose body">
         <Content />
       </div>
@@ -238,23 +232,23 @@ function fmt(date: string) {
     font-size: var(--text-label);
   }
 
-  /* Section submenu ("On this page") — magazine split, full content width */
-  .art-toc {
-    margin-block: var(--space-lg);
-    padding: var(--space-lg) var(--space-xl);
-    border: 1px solid var(--hairline);
-    border-radius: var(--radius-md);
-    background-color: var(--surface);
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 2.4fr);
-    gap: var(--space-xl);
-    align-items: start;
+  /* Section submenu ("On this page") — sticky side rail (Option A).
+     The rail column defaults to `stretch` so its grid cell is as tall as the
+     prose, letting `position: sticky` travel the full length of the article. */
+  .art-layout {
+    padding-block-start: var(--space-lg);
   }
 
-  .art-toc__head {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-xs);
+  .art-layout.has-toc {
+    display: grid;
+    grid-template-columns: 250px minmax(0, 1fr);
+    gap: var(--space-2xl);
+  }
+
+  .art-toc {
+    position: sticky;
+    inset-block-start: 10rem;
+    align-self: start;
   }
 
   .art-toc__label {
@@ -262,31 +256,20 @@ function fmt(date: string) {
     text-transform: uppercase;
     letter-spacing: 0.06em;
     color: var(--muted-text);
-    margin: 0;
-  }
-
-  .art-toc__hint {
-    font-family: var(--font-display);
-    font-size: 1.35rem;
-    line-height: 1.2;
-    font-weight: 600;
-    color: var(--main-text);
-    margin: 0;
+    margin: 0 0 var(--space-sm);
   }
 
   .art-toc__list {
     list-style: none;
     margin: 0;
-    padding-inline-start: var(--space-xl);
-    border-inline-start: 1px solid var(--hairline);
-    columns: 2;
-    column-gap: var(--space-xl);
+    padding: 0;
     counter-reset: toc;
+    display: grid;
+    gap: var(--space-3xs);
   }
 
   .art-toc__list li {
     counter-increment: toc;
-    break-inside: avoid;
   }
 
   .art-toc__link {
@@ -294,14 +277,16 @@ function fmt(date: string) {
     gap: var(--space-sm);
     text-decoration: none;
     color: var(--accent-text);
-    padding-block: var(--space-2xs);
+    padding: var(--space-2xs) var(--space-sm);
+    border-inline-start: 2px solid transparent;
+    border-radius: var(--radius-md);
     line-height: 1.4;
   }
 
   .art-toc__link::before {
     content: counter(toc, decimal-leading-zero);
     font-family: var(--font-mono);
-    font-size: 0.76rem;
+    font-size: 0.72rem;
     color: var(--muted-text);
     padding-block-start: 0.2rem;
   }
@@ -313,17 +298,44 @@ function fmt(date: string) {
   .art-toc__link[aria-current='true'] {
     color: var(--main-text);
     font-weight: 600;
+    border-inline-start-color: var(--accent-text);
+    background-color: var(--surface-sunken);
   }
 
-  @media (max-width: 640px) {
+  /* On narrower screens a side rail has nowhere to live, so it falls back to a
+     static full-width card above the prose (the previous magazine style). */
+  @media (max-width: 900px) {
+    .art-layout.has-toc {
+      display: block;
+    }
+
     .art-toc {
-      grid-template-columns: 1fr;
-      gap: var(--space-md);
+      position: static;
+      margin-block-end: var(--space-xl);
+      padding: var(--space-lg) var(--space-xl);
+      border: 1px solid var(--hairline);
+      border-radius: var(--radius-md);
+      background-color: var(--surface);
     }
 
     .art-toc__list {
-      padding-inline-start: 0;
+      display: block;
+      columns: 2;
+      column-gap: var(--space-xl);
+    }
+
+    .art-toc__list li {
+      break-inside: avoid;
+    }
+
+    .art-toc__link,
+    .art-toc__link[aria-current='true'] {
       border-inline-start: 0;
+    }
+  }
+
+  @media (max-width: 560px) {
+    .art-toc__list {
       columns: 1;
     }
   }
