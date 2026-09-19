@@ -12,7 +12,7 @@ heroImage: 'https://images.galinggear.com/articles/sourced-1789739329727-pi2kl4.
 editorNote: We buy our own gear. Prices checked March 2026.
 railItems:
   - type: image
-    anchor: what-actually-matters
+    anchor: the-situation
     label: Nice Torch
     image: 'https://images.galinggear.com/staging/sourced-1789797235456-hd44uj.jpg'
     alt: qwqwe
@@ -23,9 +23,7 @@ railItems:
 
 A go bag is what you grab when staying is no longer the better option. Not the drum of rice in the kitchen, not the shelf of tinned goods — those are for sheltering in place. The go bag is for the morning the barangay sound system starts calling for evacuation, or the water in the street reaches the second step, or the ground shakes hard enough that you would rather sleep outside than under your own ceiling.
 
-
 <figure class="gg-figure"><img class="gg-zoomable" src="https://images.galinggear.com/articles/sourced-1789733807706-3zv0id.jpg" alt="Building a go bag for two: a practical guide for couples in the Philippines" loading="lazy" /></figure>
-
 
 For a couple with no kids and no pets, this is genuinely easier than it is for most households. You have two adults who can both carry a load, both make decisions, and both move at the same speed. That is a real advantage and you should use it — not by packing more, but by packing smarter and splitting it properly.
 
