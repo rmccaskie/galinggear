@@ -113,13 +113,13 @@ In search-and-rescue, the operations that went badly were almost never the ones 
 
 Nothing exotic. The things that quietly earn their keep every season:
 
-- **A torch each, plus a lantern.** One shared torch turns a household into a queue. See our [power outage](/scenarios/power-outage) notes.
-- **A power bank you have actually tested.** Honest about what it is: a pocket top-up, not a house battery. More in [stay connected](/scenarios/stay-connected).
+- **A torch each, plus a lantern.** One shared torch turns a household into a queue. See our [power outage](/power-outage) notes.
+- **A power bank you have actually tested.** Honest about what it is: a pocket top-up, not a house battery. More in [stay connected](/stay-connected).
 - **A small battery or crank radio.** Around ₱800 to ₱1,500 for something decent. When the towers are congested, this still works.
-- **Water storage and a way to make water safe.** Containers first, filter second. See [clean water](/scenarios/clean-water).
-- **A dry bag for documents.** Cheap, ₱300 to ₱600, and the one thing you will be glad of if water gets in. See [flood ready](/scenarios/flood-ready).
-- **A packed go-bag** you can carry one-handed while holding a child's hand. Weight discipline matters more than features. See [go bag](/scenarios/go-bag).
-- **A small stove and fuel** if your kitchen is electric or your gas runs out. Covered under [off grid](/scenarios/off-grid).
+- **Water storage and a way to make water safe.** Containers first, filter second. See [clean water](/clean-water).
+- **A dry bag for documents.** Cheap, ₱300 to ₱600, and the one thing you will be glad of if water gets in. See [flood ready](/flood-ready).
+- **A packed go-bag** you can carry one-handed while holding a child's hand. Weight discipline matters more than features. See [go bag](/go-bag).
+- **A small stove and fuel** if your kitchen is electric or your gas runs out. Covered under [off grid](/off-grid).
 
 We buy our own gear. Nothing here was sent to us.
 
