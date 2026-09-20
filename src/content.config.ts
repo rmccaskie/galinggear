@@ -19,6 +19,8 @@ const articles = defineCollection({
     updatedAt: z.string().optional(),
     featured: z.boolean().default(false),
     status: z.enum(['active', 'archived']).default('active'),
+    // review | guide — drives the type-aware card link ("Read the review/guide").
+    articleType: z.enum(['review', 'guide']).optional(),
     heroImage: z.string().optional(),
     heroGallery: z
       .array(

@@ -135,6 +135,7 @@ const defaultScenario = (withArchived[0] ?? categories[0]).scenario
                               publishedAt={article.data.publishedAt}
                               slug={article.id}
                               heroImage={heroOf(article)}
+                              articleType={article.data.articleType}
                               status="archived"
                             />
                           ))}

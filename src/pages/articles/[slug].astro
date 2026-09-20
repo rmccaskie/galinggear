@@ -203,6 +203,7 @@ function fmt(date: string) {
                 publishedAt={a.data.publishedAt}
                 slug={a.id}
                 heroImage={a.data.heroImage ?? a.data.heroGallery?.[0]?.src}
+                articleType={a.data.articleType}
               />
             ))}
           </div>

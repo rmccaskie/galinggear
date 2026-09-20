@@ -5,6 +5,7 @@ description: >-
   road ahead — and a clear rule about why the bag is for waiting, not for
   driving through water.
 scenario: flood-ready
+articleType: guide
 publishedAt: '2026-09-19'
 featured: true
 status: archived

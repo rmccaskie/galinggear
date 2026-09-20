@@ -7,6 +7,7 @@ description: >-
   whose parents or grandparents live alone back home — what you can actually
   arrange from a distance, and how to talk about evacuation without nagging.
 scenario: typhoon-season
+articleType: guide
 publishedAt: '2026-09-19'
 featured: false
 status: active

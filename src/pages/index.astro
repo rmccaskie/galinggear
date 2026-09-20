@@ -30,15 +30,16 @@ const recent = articles
 
 <BaseLayout
   title="Galing Gear"
-  description="Curated prepper and survivalist gear for Filipino families. Gear we've tested. Chosen for Philippine weather."
+  description="Preparedness and gear for Filipino families. Practical guides for typhoons, floods, earthquakes and brownouts — plus the gear, bags and gadgets that make the difference."
 >
   <section class="hero">
     <div class="wrap">
-      <p class="eyebrow mono">Practical gear for Filipino families</p>
-      <h1>Gear we've tested. Chosen for Philippine weather.</h1>
+      <p class="eyebrow mono">Preparedness and gear for Filipino families</p>
+      <h1>Beat the storm with the right gear and know-how.</h1>
       <p class="lede">
-        No fear-mongering, no wall of tacticool kit. Just honest recommendations we've lived with
-        through typhoon season, brownouts and the odd earthquake drill.
+        Typhoons, floods, earthquakes, brownouts — practical guides to get your family ready, plus
+        the gear, bags and gadgets that actually make the difference when it counts. Everything you
+        need, nothing you don't.
       </p>
       <a class="btn btn-primary" href="/subscribe/">Join the list</a>
     </div>
@@ -59,6 +60,7 @@ const recent = articles
           publishedAt={featured.data.publishedAt}
           slug={featured.id}
           heroImage={featured.data.heroImage ?? featured.data.heroGallery?.[0]?.src}
+          articleType={featured.data.articleType}
           featured
         />
       </section>
@@ -78,6 +80,7 @@ const recent = articles
               publishedAt={article.data.publishedAt}
               slug={article.id}
               heroImage={article.data.heroImage ?? article.data.heroGallery?.[0]?.src}
+              articleType={article.data.articleType}
             />
           ))}
         </div>
@@ -86,7 +89,7 @@ const recent = articles
   }
 
   <section class="wrap section">
-    <h2 class="section-title">Recent Articles and gear we have tested</h2>
+    <h2 class="section-title">Latest guides, gear and gadgets</h2>
     {
       recent.length > 0 ? (
         <div class="grid">
@@ -98,6 +101,7 @@ const recent = articles
               publishedAt={article.data.publishedAt}
               slug={article.id}
               heroImage={article.data.heroImage ?? article.data.heroGallery?.[0]?.src}
+              articleType={article.data.articleType}
             />
           ))}
         </div>
@@ -109,10 +113,11 @@ const recent = articles
 
   <section class="wrap section callout">
     <div class="callout-inner">
-      <h2>One good recommendation a week</h2>
+      <h2>The right gear makes the difference</h2>
       <p>
-        We test gear in real Philippine conditions and write up the honest verdict. Join the list
-        and we'll send the best of it your way.
+        When the storm hits, good gear is what keeps your family safe, dry and powered — so we test
+        it in real Philippine conditions and tell you honestly what earns its place. Join the list
+        for the guides and the gear worth owning.
       </p>
       <SubscribeForm idPrefix="home" />
     </div>

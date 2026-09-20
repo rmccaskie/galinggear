@@ -5,6 +5,7 @@ description: >-
   during brownouts and wet-season nights. Honest limits: the battery is sealed
   in, and it is rain-proof rather than waterproof.
 scenario: edc
+articleType: review
 publishedAt: '2026-09-18'
 featured: true
 status: active

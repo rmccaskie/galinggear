@@ -11,9 +11,17 @@ interface Props {
   featured?: boolean
   heroImage?: string
   status?: 'active' | 'archived'
+  articleType?: 'review' | 'guide'
 }
 
-const { title, description, scenario, publishedAt, slug, featured = false, heroImage, status } = Astro.props
+const { title, description, scenario, publishedAt, slug, featured = false, heroImage, status, articleType } = Astro.props
+
+const readLabel =
+  articleType === 'review'
+    ? 'Read the review →'
+    : articleType === 'guide'
+      ? 'Read the guide →'
+      : 'Read more →'
 
 const published = new Date(publishedAt)
 const publishedLabel = Number.isNaN(published.valueOf())
@@ -43,7 +51,7 @@ const publishedLabel = Number.isNaN(published.valueOf())
   <p class="description">{description}</p>
   <div class="foot">
     <time class="mono" datetime={publishedAt}>{publishedLabel}</time>
-    <a class="read" href={`/articles/${slug}/`}>Read the recommendation →</a>
+    <a class="read" href={`/articles/${slug}/`}>{readLabel}</a>
   </div>
 </article>
 

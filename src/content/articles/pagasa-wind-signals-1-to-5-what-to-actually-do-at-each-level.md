@@ -5,6 +5,7 @@ description: >-
   written for people who only half-follow the bulletins. Signals are about wind
   and lead time, not rain — here is what I actually do at each level.
 scenario: typhoon-season
+articleType: guide
 publishedAt: '2026-09-19'
 featured: true
 status: active

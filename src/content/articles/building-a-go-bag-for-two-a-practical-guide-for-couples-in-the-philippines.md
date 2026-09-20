@@ -4,6 +4,7 @@ description: >-
   How my wife and I pack for the first 72 hours — two bags, one shared plan, and
   the honest weight of it all. No kids, no pets, no wishful thinking.
 scenario: go-bag
+articleType: guide
 publishedAt: '2026-09-18'
 featured: true
 status: active

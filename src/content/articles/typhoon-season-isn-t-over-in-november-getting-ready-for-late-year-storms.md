@@ -4,6 +4,7 @@ description: >-
   Two of the worst storms in recent memory hit in November. Here's why late-year
   typhoons still matter, and what to keep ready through the Christmas rush.
 scenario: typhoon-season
+articleType: guide
 publishedAt: '2026-09-20'
 featured: false
 status: active

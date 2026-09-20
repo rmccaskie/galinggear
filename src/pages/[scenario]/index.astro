@@ -59,12 +59,13 @@ const blurb = SCENARIO_BLURBS[scenario]
               publishedAt={article.data.publishedAt}
               slug={article.id}
               heroImage={article.data.heroImage ?? article.data.heroGallery?.[0]?.src}
+              articleType={article.data.articleType}
               featured={article.data.featured}
             />
           ))}
         </div>
       ) : (
-        <p class="empty">Nothing tested yet in this category. Check back soon.</p>
+        <p class="empty">Nothing here yet. Check back soon.</p>
       )
     }
   </section>

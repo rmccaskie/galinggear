@@ -15,14 +15,14 @@ const recent = articles.slice(0, 3)
 
 <BaseLayout
   title="Page not found"
-  description="We couldn't find that page — but there's plenty of tested gear and preparedness guides waiting for you. Pick a category or browse the latest."
+  description="We couldn't find that page — but there's plenty of preparedness guides and gear waiting for you. Pick a category or browse the latest."
 >
   <section class="wrap head">
     <p class="eyebrow mono">Error 404</p>
     <h1>We couldn't find that page.</h1>
     <p class="blurb">
       Sorry about that — the page you were after has either moved, been retired, or never
-      existed. No harm done. Everything we've tested is still here; let's get you back to
+      existed. No harm done. All our guides and gear are still here; let's get you back to
       something useful.
     </p>
     <div class="actions">
@@ -39,7 +39,7 @@ const recent = articles.slice(0, 3)
   {
     recent.length > 0 && (
       <section class="wrap section">
-        <h2 class="section-title">Recently tested</h2>
+        <h2 class="section-title">Latest guides, gear and gadgets</h2>
         <div class="grid">
           {recent.map((article) => (
             <ArticleCard
@@ -49,6 +49,7 @@ const recent = articles.slice(0, 3)
               publishedAt={article.data.publishedAt}
               slug={article.id}
               heroImage={article.data.heroImage ?? article.data.heroGallery?.[0]?.src}
+              articleType={article.data.articleType}
             />
           ))}
         </div>

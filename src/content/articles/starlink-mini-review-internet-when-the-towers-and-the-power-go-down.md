@@ -5,6 +5,7 @@ description: >-
   provided you have solved the power problem first. Honest notes from a
   Philippine wet season.
 scenario: stay-connected
+articleType: review
 publishedAt: '2026-09-18'
 featured: true
 status: active

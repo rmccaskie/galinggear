@@ -39,7 +39,7 @@ export function fieldForCode(code: string): FieldName | null {
 }
 
 export const SUBSCRIBE_COPY = {
-  supporting: 'Gear recommendations, once a week. No spam. Unsubscribe any time.',
+  supporting: 'Preparedness guides and the gear that makes the difference — often and regular. No spam. Unsubscribe any time.',
   success: "You're on the list. We'll be in touch.",
   submit: 'Join the list',
 } as const

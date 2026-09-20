@@ -5,6 +5,7 @@ description: >-
   balcony, drains, leaking sliding doors, water storage and the questions to ask
   your building admin. No drilling, no boarding up, no new gear.
 scenario: typhoon-season
+articleType: guide
 publishedAt: '2026-09-19'
 featured: false
 status: active

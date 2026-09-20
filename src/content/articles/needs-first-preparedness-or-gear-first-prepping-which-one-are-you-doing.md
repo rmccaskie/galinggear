@@ -5,6 +5,7 @@ description: >-
   problem; the other is collecting a hobby. Here is how to tell which one you
   are, and how to shift the order without giving up the fun.
 scenario: typhoon-season
+articleType: guide
 publishedAt: '2026-09-19'
 featured: true
 status: active
