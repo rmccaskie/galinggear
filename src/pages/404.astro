@@ -1,0 +1,108 @@
+---
+import { getCollection } from 'astro:content'
+import BaseLayout from '../layouts/BaseLayout.astro'
+import ScenarioNav from '../components/ScenarioNav.astro'
+import ArticleCard from '../components/ArticleCard.astro'
+
+const articles = (await getCollection('articles'))
+  .filter((a) => a.data.status !== 'archived')
+  .sort(
+    (a, b) => new Date(b.data.publishedAt).valueOf() - new Date(a.data.publishedAt).valueOf()
+  )
+
+const recent = articles.slice(0, 3)
+---
+
+<BaseLayout
+  title="Page not found"
+  description="We couldn't find that page — but there's plenty of tested gear and preparedness guides waiting for you. Pick a category or browse the latest."
+>
+  <section class="wrap head">
+    <p class="eyebrow mono">Error 404</p>
+    <h1>We couldn't find that page.</h1>
+    <p class="blurb">
+      Sorry about that — the page you were after has either moved, been retired, or never
+      existed. No harm done. Everything we've tested is still here; let's get you back to
+      something useful.
+    </p>
+    <div class="actions">
+      <a class="btn btn-primary" href="/">Back to home</a>
+      <a class="btn btn-ghost" href="/archive/">Browse the archive</a>
+    </div>
+  </section>
+
+  <section class="wrap section">
+    <h2 class="section-title">Browse by category</h2>
+    <ScenarioNav />
+  </section>
+
+  {
+    recent.length > 0 && (
+      <section class="wrap section">
+        <h2 class="section-title">Recently tested</h2>
+        <div class="grid">
+          {recent.map((article) => (
+            <ArticleCard
+              title={article.data.title}
+              description={article.data.description}
+              scenario={article.data.scenario}
+              publishedAt={article.data.publishedAt}
+              slug={article.id}
+              heroImage={article.data.heroImage ?? article.data.heroGallery?.[0]?.src}
+            />
+          ))}
+        </div>
+      </section>
+    )
+  }
+</BaseLayout>
+
+<style>
+  .head {
+    padding-block: var(--space-3xl) var(--space-xl);
+  }
+
+  .eyebrow {
+    font-size: var(--text-label);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent-text);
+    margin-block-end: var(--space-sm);
+  }
+
+  .head h1 {
+    font-size: var(--text-display);
+    max-inline-size: 18ch;
+  }
+
+  .blurb {
+    margin-block: var(--space-lg);
+    max-inline-size: var(--measure);
+    color: var(--muted-text);
+    font-size: var(--text-h2);
+    line-height: 1.4;
+    font-family: var(--font-display);
+    font-weight: 400;
+  }
+
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+  }
+
+  .section {
+    padding-block: var(--space-xl);
+  }
+
+  .section-title {
+    font-size: var(--text-h2);
+    margin-block-end: var(--space-lg);
+  }
+
+  .grid {
+    display: grid;
+    gap: var(--space-lg);
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+  }
+</style>
