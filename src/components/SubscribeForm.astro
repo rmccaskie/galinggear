@@ -9,7 +9,11 @@ interface Props {
   strings?: Record<CatalogueKey, string>
 }
 
-const { idPrefix = 'subscribe', compact = false, strings } = Astro.props
+const { idPrefix = 'subscribe', compact = false, locale, strings } = Astro.props
+// No-JS redirect target: return to the subscribe page of the current locale so
+// the confirmation/error banner shows in the right language. Whitelisted in
+// the API route to prevent open redirects.
+const subscribeNext = locale === 'en' ? '/en/subscribe' : '/subscribe'
 const nameId = `${idPrefix}-name`
 const emailId = `${idPrefix}-email`
 const nameErrId = `${idPrefix}-name-error`
@@ -40,6 +44,7 @@ const clientStrings = strings ? JSON.stringify({
   novalidate
   {...(clientStrings ? { 'data-strings': clientStrings } : {})}
 >
+  <input type="hidden" name="next" value={subscribeNext} />
   <div class="field">
     <label for={nameId}>{strings?.['form.name_label'] ?? 'Your name'}</label>
     <input

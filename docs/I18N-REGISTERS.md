@@ -39,11 +39,11 @@ progresses. Source of truth: `/home/ubuntu/output/galinggear-i18n-plan.md`.
 | Review gate armed in code (chrome) | ✅ `catalogues/taglish.ts` + `isReviewed()` |
 | Language switcher (signed-out, endonyms) | ✅ `LocaleSwitcher.astro` in Header + mobile drawer |
 | `<html lang>` dynamic per locale | ✅ `BaseLayout.astro` (derives from `HTML_LANG[locale]`) |
-| `og:locale`, translation suppression | ⚠ NOT BUILT |
-| URL prefix routing + `hreflang` + canonicals | ⚠ NOT BUILT |
+| `og:locale`, translation suppression | ✅ `SEO.astro` (`og:locale` + `og:locale:alternate` per locale) |
+| URL prefix routing + `hreflang` + canonicals | ✅ `/en/` page tree + `hreflang` (fil/en/x-default) + canonical in `SEO.astro` |
 | Named reviewer + cadence (chrome) | ⚠ NOT BUILT |
 | Style guide (safeguard 1) | ✅ `docs/TAGLISH-STYLE-GUIDE.md` |
-| Edge locale resolver (Cloudflare Function) | ⚠ NOT BUILT |
+| Edge locale resolver (Cloudflare Function) | ◐ Resolver logic built (`resolveLocale()` in `i18n.ts`); edge auto-redirect **deferred to phase 2** — see ADR-010 |
 | Chrome catalogue wired to all components | ✅ Header, Footer, SubscribeForm, ArticleCard, RailItem, ScenarioNav |
 | Chrome catalogue wired to all pages | ✅ index, subscribe, 404, archive, [scenario], articles/[slug] |
 | Client-side strings via data-strings | ✅ SubscribeForm (error/success messages) |

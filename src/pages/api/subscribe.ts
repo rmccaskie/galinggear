@@ -27,12 +27,19 @@ function wantsHtml(request: Request): boolean {
   return (request.headers.get('accept') ?? '').includes('text/html')
 }
 
-function redirectResult(status: 'success' | 'error', code?: string): Response {
+// Whitelist of valid no-JS redirect targets — one per locale. Guards against
+// open-redirect via a forged `next` field.
+const SUBSCRIBE_PATHS = new Set(['/subscribe', '/en/subscribe'])
+function safeNext(next: string | undefined): string {
+  return next && SUBSCRIBE_PATHS.has(next) ? next : '/subscribe'
+}
+
+function redirectResult(status: 'success' | 'error', code: string | undefined, next?: string): Response {
   const params = new URLSearchParams({ status })
   if (code) params.set('code', code)
   return new Response(null, {
     status: 303,
-    headers: { Location: `/subscribe?${params.toString()}` },
+    headers: { Location: `${safeNext(next)}?${params.toString()}` },
   })
 }
 
@@ -43,26 +50,28 @@ function json(body: unknown, status: number): Response {
   })
 }
 
-async function readInput(request: Request): Promise<{ name: string; email: string }> {
+async function readInput(request: Request): Promise<{ name: string; email: string; next?: string }> {
   const contentType = request.headers.get('content-type') ?? ''
   if (contentType.includes('application/json')) {
     const data = (await request.json().catch(() => ({}))) as Record<string, unknown>
     return {
       name: typeof data.name === 'string' ? data.name : '',
       email: typeof data.email === 'string' ? data.email : '',
+      next: typeof data.next === 'string' ? data.next : undefined,
     }
   }
   const form = await request.formData()
   return {
     name: String(form.get('name') ?? ''),
     email: String(form.get('email') ?? ''),
+    next: form.get('next') ? String(form.get('next')) : undefined,
   }
 }
 
 export const POST: APIRoute = async ({ request }) => {
   const html = wantsHtml(request)
 
-  let input: { name: string; email: string }
+  let input: { name: string; email: string; next?: string }
   try {
     input = await readInput(request)
   } catch {
@@ -75,7 +84,7 @@ export const POST: APIRoute = async ({ request }) => {
   if (errorCodes.length > 0) {
     logEvent('subscribe_validation_failed')
     return html
-      ? redirectResult('error', errorCodes[0])
+      ? redirectResult('error', errorCodes[0], input.next)
       : json({ ok: false, errors }, 400)
   }
 
@@ -90,20 +99,20 @@ export const POST: APIRoute = async ({ request }) => {
       // Unique-violation -> already subscribed.
       if (error.code === '23505') {
         logEvent('subscribe_duplicate')
-        return html ? redirectResult('error', 'already_subscribed') : json({ ok: false, code: 'already_subscribed' }, 409)
+        return html ? redirectResult('error', 'already_subscribed', input.next) : json({ ok: false, code: 'already_subscribed' }, 409)
       }
       // Any other failure returns the same generic response, regardless of cause.
       logEvent('subscribe_insert_error')
-      return html ? redirectResult('error', 'server_error') : json({ ok: false, code: 'server_error' }, 500)
+      return html ? redirectResult('error', 'server_error', input.next) : json({ ok: false, code: 'server_error' }, 500)
     }
   } catch {
     // Includes the startup guard (missing env). Same generic response.
     logEvent('subscribe_exception')
-    return html ? redirectResult('error', 'server_error') : json({ ok: false, code: 'server_error' }, 500)
+    return html ? redirectResult('error', 'server_error', input.next) : json({ ok: false, code: 'server_error' }, 500)
   }
 
   logEvent('subscribe_success')
-  return html ? redirectResult('success') : json({ ok: true }, 200)
+  return html ? redirectResult('success', undefined, input.next) : json({ ok: true }, 200)
 }
 
 // Anything that is not a POST gets 405.

@@ -92,3 +92,16 @@ subscribers (id uuid, name text, email text UNIQUE, created_at timestamptz)
 **Decision:** A small Vite `renderChunk` plugin in `astro.config.mjs` rewrites `createRequire(import.meta.url)` → `createRequire("file:///noop.js")` in the build output.
 
 **Rationale:** The content-layer `glob()` loader (`src/content.config.ts`) transitively bundles `fdir`, which calls `createRequire(import.meta.url)` at module top level. In the Cloudflare Workers runtime `import.meta.url` is `undefined`, so simply *loading* a server-rendered chunk (e.g. `/subscribe`) threw a `TypeError` — every SSR page 500'd, while static pages (prerendered in Node) and the API route (which does not render page content) were unaffected. The `require` is never actually invoked at runtime, so giving it a harmless literal base URL lets the module evaluate. Verified with `wrangler dev`: `/subscribe` returns 200 and renders the success/error banner.
+
+---
+
+## ADR-010 — Edge first-visit locale auto-redirect deferred to phase 2 `[SETTLED]`
+
+**Decision:** The public site ships **without** an edge Cloudflare Function that auto-redirects first-time visitors to their preferred locale. Locale selection is served two ways instead: (1) explicit URL — bare tree = Taglish, `/en/` = English; (2) the in-page `LocaleSwitcher`, which persists choice in the `__Host-gg-locale` cookie. The **resolver logic** required by §7.1 of the governing standard is fully built as a pure, unit-usable function — `resolveLocale()` in `src/lib/i18n.ts` (precedence: URL → cookie → account → `cf-ipcountry` → `Accept-Language` → default) — and is ready to wire into an on-demand entry when phase 2 lands.
+
+**Rationale:**
+- The `@astrojs/cloudflare` worker serves prerendered pages **before** Astro middleware runs (`matchStaticAsset()` short-circuits in the generated `dist/server/entry.mjs`), so Astro middleware cannot perform a per-request redirect for the static pages that make up the whole site.
+- The only in-adapter way to run redirect logic per request is to make the entry route(s) on-demand (`export const prerender = false`). Doing that to the home page — the highest-traffic page — trades away static-edge caching for SSR on every hit, and the response would vary by cookie/geo (hard to cache), a real performance regression.
+- The audience is overwhelmingly Philippine-geo. `localeForCountry('PH')` resolves to **Taglish**, which is already the default served on bare URLs — so an auto-redirect would leave the vast majority exactly where they already land. The beneficiaries are the English-preferring minority (diaspora), who are one click away via the switcher, and whose choice then persists in the cookie.
+
+**Upgrade path (phase 2):** add an on-demand `/` gate (or a dedicated `/go` entry) that calls `resolveLocale()` with `Astro.request.cf.country`, the `__Host-gg-locale` cookie and `Accept-Language`, and 302s to the resolved locale root; keep the current static home as the Taglish render target. No resolver code needs to change.
