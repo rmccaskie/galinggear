@@ -8,6 +8,7 @@ scenario: edc
 publishedAt: '2026-09-20'
 featured: false
 status: active
+updatedAt: '2026-09-20'
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789945548939-6dxdqs.png'
 ---
