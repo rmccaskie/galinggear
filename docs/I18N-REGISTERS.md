@@ -37,12 +37,12 @@ progresses. Source of truth: `/home/ubuntu/output/galinggear-i18n-plan.md`.
 | AI Taglish generation pipeline + glossary/style guide | ⚠ NOT BUILT |
 | Empty=fallback behaviour + fallback-path tests | ⚠ NOT BUILT |
 | Review gate armed in code (chrome) | ✅ `catalogues/taglish.ts` + `isReviewed()` |
-| Language switcher (signed-out, endonyms) | ⚠ NOT BUILT |
+| Language switcher (signed-out, endonyms) | ✅ `LocaleSwitcher.astro` in Header + mobile drawer |
 | `<html lang>` dynamic per locale | ✅ `BaseLayout.astro` (derives from `HTML_LANG[locale]`) |
 | `og:locale`, translation suppression | ⚠ NOT BUILT |
 | URL prefix routing + `hreflang` + canonicals | ⚠ NOT BUILT |
 | Named reviewer + cadence (chrome) | ⚠ NOT BUILT |
-| Style guide (safeguard 1) | ⚠ NOT BUILT |
+| Style guide (safeguard 1) | ✅ `docs/TAGLISH-STYLE-GUIDE.md` |
 | Edge locale resolver (Cloudflare Function) | ⚠ NOT BUILT |
 | Chrome catalogue wired to all components | ✅ Header, Footer, SubscribeForm, ArticleCard, RailItem, ScenarioNav |
 | Chrome catalogue wired to all pages | ✅ index, subscribe, 404, archive, [scenario], articles/[slug] |
