@@ -11,8 +11,8 @@
  * (D-review-chrome).
  */
 export const TAGLISH_REVIEW = {
-  reviewer: null as string | null,
-  date: null as string | null,
+  reviewer: 'Robert McCaskie' as string | null,
+  date: '2026-09-21' as string | null,
 }
 
 /**
