@@ -34,13 +34,15 @@ export interface RailItemData {
   resolved?: ResolvedArticle | null
 }
 
-const { item } = Astro.props as { item: RailItemData }
+import type { CatalogueKey } from '../lib/catalogue'
+
+const { item, strings } = Astro.props as { item: RailItemData; strings?: Record<CatalogueKey, string> }
 
 const DEFAULT_LABEL: Record<RailItemData['type'], string> = {
-  product: 'Our pick',
-  image: 'Illustration',
-  article: 'Suggested reading',
-  ad: 'Sponsored',
+  product: strings?.['rail.label_product'] ?? 'Our pick',
+  image: strings?.['rail.label_image'] ?? 'Illustration',
+  article: strings?.['rail.label_article'] ?? 'Suggested reading',
+  ad: strings?.['rail.label_ad'] ?? 'Sponsored',
 }
 const label = item.label ?? DEFAULT_LABEL[item.type]
 ---
@@ -61,7 +63,7 @@ const label = item.label ?? DEFAULT_LABEL[item.type]
           {item.price && <p class="rail-card__price mono">{item.price}</p>}
           {item.href && (
             <a class="rail-card__btn" href={item.href} target="_blank" rel="noopener">
-              {item.cta ?? 'Where to buy →'}
+              {item.cta ?? (strings?.['rail.cta_buy'] ?? 'Where to buy →')}
             </a>
           )}
         </div>
@@ -83,7 +85,7 @@ const label = item.label ?? DEFAULT_LABEL[item.type]
   {
     item.type === 'ad' && (
       <div class="rail-card rail-card--ad">
-        <p class="rail-card__adflag mono">Advertisement</p>
+        <p class="rail-card__adflag mono">{strings?.['rail.ad_flag'] ?? 'Advertisement'}</p>
         {item.image && (
           <img class="rail-card__img" src={item.image} alt={item.alt ?? ''} loading="lazy" />
         )}
@@ -92,7 +94,7 @@ const label = item.label ?? DEFAULT_LABEL[item.type]
           {item.spec && <p class="rail-card__spec">{item.spec}</p>}
           {item.href && (
             <a class="rail-card__btn rail-card__btn--ad" href={item.href} target="_blank" rel="noopener">
-              {item.cta ?? 'Learn more'}
+              {item.cta ?? (strings?.['rail.cta_ad'] ?? 'Learn more')}
             </a>
           )}
         </div>

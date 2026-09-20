@@ -5,6 +5,8 @@ import ArticleCard from '../../components/ArticleCard.astro'
 import RailItem from '../../components/RailItem.astro'
 import type { RailItemData } from '../../components/RailItem.astro'
 import { SCENARIO_LABELS } from '../../lib/scenarios'
+import { type Locale, DEFAULT_LOCALE } from '../../lib/i18n'
+import { resolvedCatalogue, fmt } from '../../lib/catalogue'
 
 export async function getStaticPaths() {
   const articles = await getCollection('articles')
@@ -61,6 +63,8 @@ interface Props {
 }
 
 const { article, related, railItems } = Astro.props
+const locale = (Astro.currentLocale ?? DEFAULT_LOCALE) as Locale
+const strings = resolvedCatalogue(locale)
 const { headings } = await render(article)
 // Section submenu ("On this page"): derived from the article's own ## headings.
 // Astro auto-assigns each heading a slug id, so the anchors already exist.
@@ -92,7 +96,7 @@ const { title, description, scenario, publishedAt, updatedAt, editorNote, heroIm
 const isArchived = status === 'archived'
 const hasHeroGallery = Array.isArray(heroGallery) && heroGallery.length > 0
 
-function fmt(date: string) {
+function fmtDate(date: string) {
   const d = new Date(date)
   return Number.isNaN(d.valueOf())
     ? date
@@ -100,24 +104,24 @@ function fmt(date: string) {
 }
 ---
 
-<BaseLayout title={title} description={description} type="article">
+<BaseLayout title={title} description={description} type="article" locale={locale}>
   <article>
     <header class="wrap art-head">
       <a class="scenario mono" href={`/${scenario}/`}>{SCENARIO_LABELS[scenario]}</a>
       <h1>{title}</h1>
       <p class="description">{description}</p>
       <div class="dates mono">
-        <time datetime={publishedAt}>Published {fmt(publishedAt)}</time>
-        {updatedAt && <time datetime={updatedAt}>Updated {fmt(updatedAt)}</time>}
+        <time datetime={publishedAt}>{strings['article.published']} {fmtDate(publishedAt)}</time>
+        {updatedAt && <time datetime={updatedAt}>{strings['article.updated']} {fmtDate(updatedAt)}</time>}
       </div>
       {
         isArchived ? (
           <p class="art-status is-archived">
-            <span class="dot" /> Archived — kept for reference, may be out of date.
+            <span class="dot" /> {strings['article.status_archived']}
           </p>
         ) : (
           <p class="art-status is-active">
-            <span class="dot" /> Current
+            <span class="dot" /> {strings['article.status_current']}
           </p>
         )
       }
@@ -148,10 +152,10 @@ function fmt(date: string) {
     <div class:list={['wrap', 'art-layout', { 'has-toc': toc.length > 1 }]}>
       {
         toc.length > 1 && (
-          <nav class="art-toc" aria-label="On this page">
+          <nav class="art-toc" aria-label={strings['article.toc_label']}>
             <details class="art-toc__box" open>
               <summary class="art-toc__label mono">
-                <span>On this page</span>
+                <span>{strings['article.toc_label']}</span>
                 <span class="art-toc__chev" aria-hidden="true">▾</span>
               </summary>
               <ol class="art-toc__list" role="list">
@@ -193,7 +197,7 @@ function fmt(date: string) {
       <Fragment>
         <hr class="art-end" aria-hidden="true" />
         <section class="wrap section">
-          <h2 class="section-title">More in {SCENARIO_LABELS[scenario]}</h2>
+          <h2 class="section-title">{fmt(strings, 'article.more_in', { scenario: SCENARIO_LABELS[scenario] })}</h2>
         <div class="grid">
             {related.map((a) => (
               <ArticleCard

@@ -5,19 +5,25 @@ import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
 import Lightbox from '../components/Lightbox.astro'
 import VideoLightbox from '../components/VideoLightbox.astro'
+import { type Locale, DEFAULT_LOCALE, HTML_LANG } from '../lib/i18n'
+import { resolvedCatalogue, type CatalogueKey } from '../lib/catalogue'
 
 interface Props {
   title: string
   description: string
   image?: string
   type?: 'website' | 'article'
+  locale?: Locale
 }
 
+const locale: Locale = (Astro.props.locale ?? Astro.currentLocale ?? DEFAULT_LOCALE) as Locale
 const { title, description, image, type } = Astro.props
+const strings = resolvedCatalogue(locale)
+const htmlLang = HTML_LANG[locale]
 ---
 
 <!doctype html>
-<html lang="en-GB">
+<html lang={htmlLang}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -47,12 +53,12 @@ const { title, description, image, type } = Astro.props
     <SEO title={title} description={description} image={image} type={type} />
   </head>
   <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <Header />
+    <a class="skip-link" href="#main">{strings['nav.skip_to_content']}</a>
+    <Header locale={locale} strings={strings} />
     <main id="main">
       <slot />
     </main>
-    <Footer />
+    <Footer locale={locale} strings={strings} />
     <Lightbox />
     <VideoLightbox />
   </body>

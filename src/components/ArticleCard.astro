@@ -1,6 +1,7 @@
 ---
 import { SCENARIO_LABELS } from '../lib/scenarios'
 import type { Scenario } from '../lib/scenarios'
+import type { CatalogueKey } from '../lib/catalogue'
 
 interface Props {
   title: string
@@ -12,16 +13,17 @@ interface Props {
   heroImage?: string
   status?: 'active' | 'archived'
   articleType?: 'review' | 'guide'
+  strings?: Record<CatalogueKey, string>
 }
 
-const { title, description, scenario, publishedAt, slug, featured = false, heroImage, status, articleType } = Astro.props
+const { title, description, scenario, publishedAt, slug, featured = false, heroImage, status, articleType, strings } = Astro.props
 
 const readLabel =
   articleType === 'review'
-    ? 'Read the review →'
+    ? (strings?.['card.read_review'] ?? 'Read the review →')
     : articleType === 'guide'
-      ? 'Read the guide →'
-      : 'Read more →'
+      ? (strings?.['card.read_guide'] ?? 'Read the guide →')
+      : (strings?.['card.read_more'] ?? 'Read more →')
 
 const published = new Date(publishedAt)
 const publishedLabel = Number.isNaN(published.valueOf())
@@ -41,7 +43,7 @@ const publishedLabel = Number.isNaN(published.valueOf())
     <a class="scenario mono" href={`/${scenario}/`}>{SCENARIO_LABELS[scenario]}</a>
     {status && (
       <span class:list={['status-pill', 'mono', status === 'archived' ? 'is-archived' : 'is-active']}>
-        {status === 'archived' ? 'Archived' : 'Current'}
+        {status === 'archived' ? (strings?.['card.status_archived'] ?? 'Archived') : (strings?.['card.status_current'] ?? 'Current')}
       </span>
     )}
   </div>

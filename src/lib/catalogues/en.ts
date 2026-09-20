@@ -123,6 +123,13 @@ export const enCatalogue = {
   '404.browse_by_category': 'Browse by category',
   '404.latest': 'Latest guides, gear and gadgets',
 
+  // ── scenario page ──────────────────────────────────────────────────────
+  'scenario.eyebrow': 'Scenario',
+  'scenario.empty': 'Nothing here yet. Check back soon.',
+  'scenario.archive_link': 'Browse archived {label} articles',
+  'scenario.archive_note':
+    '{count} older {countNoun} we\'ve retired from this list, kept for reference.',
+
   // ── plurals (used by interpolation helper) ────────────────────────────
   'plural.article': 'article',
   'plural.articles': 'articles',

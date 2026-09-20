@@ -5,6 +5,8 @@ import ScenarioNav from '../../components/ScenarioNav.astro'
 import ArticleCard from '../../components/ArticleCard.astro'
 import { SCENARIOS, SCENARIO_LABELS, SCENARIO_BLURBS } from '../../lib/scenarios'
 import type { Scenario } from '../../lib/scenarios'
+import { type Locale, DEFAULT_LOCALE } from '../../lib/i18n'
+import { resolvedCatalogue, fmt, plural } from '../../lib/catalogue'
 
 export async function getStaticPaths() {
   const articles = await getCollection('articles')
@@ -34,17 +36,19 @@ interface Props {
 const { scenario, articles, archivedCount } = Astro.props
 const label = SCENARIO_LABELS[scenario]
 const blurb = SCENARIO_BLURBS[scenario]
+const locale = (Astro.currentLocale ?? DEFAULT_LOCALE) as Locale
+const strings = resolvedCatalogue(locale)
 ---
 
-<BaseLayout title={label} description={`${label}: ${blurb}`}>
+<BaseLayout title={label} description={`${label}: ${blurb}`} locale={locale}>
   <section class="wrap head">
-    <p class="eyebrow mono">Scenario</p>
+    <p class="eyebrow mono">{strings['scenario.eyebrow']}</p>
     <h1>{label}</h1>
     <p class="blurb">{blurb}</p>
   </section>
 
   <section class="wrap section">
-    <ScenarioNav active={scenario} />
+    <ScenarioNav active={scenario} strings={strings} />
   </section>
 
   <section class="wrap section">
@@ -65,7 +69,7 @@ const blurb = SCENARIO_BLURBS[scenario]
           ))}
         </div>
       ) : (
-        <p class="empty">Nothing here yet. Check back soon.</p>
+        <p class="empty">{strings['scenario.empty']}</p>
       )
     }
   </section>
@@ -74,12 +78,14 @@ const blurb = SCENARIO_BLURBS[scenario]
     archivedCount > 0 && (
       <section class="wrap section archive-cta">
         <a class="archive-link" href={`/archive#cat-${scenario}`}>
-          Browse archived {label} articles
+          {fmt(strings, 'scenario.archive_link', { label })}
           <span aria-hidden="true">&rarr;</span>
         </a>
         <p class="archive-note">
-          {archivedCount} older {archivedCount === 1 ? 'article we’ve' : 'articles we’ve'} retired
-          from this list, kept for reference.
+          {fmt(strings, 'scenario.archive_note', {
+            count: String(archivedCount),
+            countNoun: plural(strings, 'article', archivedCount),
+          })}
         </p>
       </section>
     )

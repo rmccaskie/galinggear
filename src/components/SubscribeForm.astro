@@ -1,18 +1,35 @@
 ---
 import { FIELD_RULES } from '../lib/validation'
-import { SUBSCRIBE_COPY } from '../lib/strings'
+import type { CatalogueKey } from '../lib/catalogue'
 
 interface Props {
   idPrefix?: string
   compact?: boolean
+  locale?: string
+  strings?: Record<CatalogueKey, string>
 }
 
-const { idPrefix = 'subscribe', compact = false } = Astro.props
+const { idPrefix = 'subscribe', compact = false, strings } = Astro.props
 const nameId = `${idPrefix}-name`
 const emailId = `${idPrefix}-email`
 const nameErrId = `${idPrefix}-name-error`
 const emailErrId = `${idPrefix}-email-error`
 const statusId = `${idPrefix}-status`
+
+/* Client-side strings serialised as JSON so the <script> can read them
+   without importing the catalogue (which is server-only). */
+const clientStrings = strings ? JSON.stringify({
+  sending:            strings['form.sending'],
+  success:            strings['form.success'],
+  name_required:      strings['form.err.name_required'],
+  name_too_long:      strings['form.err.name_too_long'],
+  email_required:     strings['form.err.email_required'],
+  email_invalid:      strings['form.err.email_invalid'],
+  already_subscribed: strings['form.err.already_subscribed'],
+  invalid_request:    strings['form.err.invalid_request'],
+  method_not_allowed: strings['form.err.method_not_allowed'],
+  server_error:       strings['form.err.server_error'],
+}) : undefined
 ---
 
 <form
@@ -21,9 +38,10 @@ const statusId = `${idPrefix}-status`
   action="/api/subscribe"
   data-subscribe-form
   novalidate
+  {...(clientStrings ? { 'data-strings': clientStrings } : {})}
 >
   <div class="field">
-    <label for={nameId}>Your name</label>
+    <label for={nameId}>{strings?.['form.name_label'] ?? 'Your name'}</label>
     <input
       id={nameId}
       name="name"
@@ -38,7 +56,7 @@ const statusId = `${idPrefix}-status`
   </div>
 
   <div class="field">
-    <label for={emailId}>Email address</label>
+    <label for={emailId}>{strings?.['form.email_label'] ?? 'Email address'}</label>
     <input
       id={emailId}
       name="email"
@@ -52,9 +70,9 @@ const statusId = `${idPrefix}-status`
     <p class="err-msg" id={emailErrId} data-error-for="email" hidden></p>
   </div>
 
-  <p class="supporting">{SUBSCRIBE_COPY.supporting}</p>
+  <p class="supporting">{strings?.['form.supporting'] ?? 'Preparedness guides and the gear that makes the difference — often and regular. No spam. Unsubscribe any time.'}</p>
 
-  <button type="submit" class="btn btn-primary btn-block">{SUBSCRIBE_COPY.submit}</button>
+  <button type="submit" class="btn btn-primary btn-block">{strings?.['form.submit'] ?? 'Join the list'}</button>
 
   <p class="form-status" id={statusId} role="status" aria-live="polite"></p>
 </form>
@@ -125,9 +143,19 @@ const statusId = `${idPrefix}-status`
 
 <script>
   import { validateName, validateEmail, type ValidationCode } from '../lib/validation'
-  import { messageForCode, fieldForCode, SUBSCRIBE_COPY } from '../lib/strings'
+  import {
+    messageForCode as _msgFallback,
+    fieldForCode,
+    SUBSCRIBE_COPY,
+  } from '../lib/strings'
 
   type FieldName = 'name' | 'email'
+
+  interface FormStrings {
+    sending: string
+    success: string
+    [code: string]: string
+  }
 
   const validators: Record<FieldName, (v: string) => ValidationCode | null> = {
     name: validateName,
@@ -137,6 +165,19 @@ const statusId = `${idPrefix}-status`
   function setup(form: HTMLFormElement) {
     const inputs = form.querySelectorAll<HTMLInputElement>('input[data-field]')
     const status = form.querySelector<HTMLElement>('.form-status')
+
+    /* Parse locale strings from data-strings if present; fall back to
+       the English-only strings.ts import for backwards compatibility. */
+    const raw = form.dataset.strings
+    const i18n: FormStrings | null = raw ? JSON.parse(raw) : null
+
+    function messageForCode(code: string): string {
+      if (i18n && code in i18n) return i18n[code]
+      return _msgFallback(code)
+    }
+
+    const sendingText = i18n?.sending ?? 'Sending…'
+    const successText = i18n?.success ?? SUBSCRIBE_COPY.success
 
     function errorEl(field: FieldName): HTMLElement | null {
       return form.querySelector<HTMLElement>(`[data-error-for="${field}"]`)
@@ -170,11 +211,9 @@ const statusId = `${idPrefix}-status`
 
     inputs.forEach((input) => {
       const field = input.dataset.field as FieldName
-      // Validate on blur.
       input.addEventListener('blur', () => {
         showFieldError(field, validators[field](input.value))
       })
-      // Clear error on keystroke.
       input.addEventListener('input', () => {
         showFieldError(field, null)
         setStatus('', '')
@@ -184,7 +223,6 @@ const statusId = `${idPrefix}-status`
     form.addEventListener('submit', async (event) => {
       event.preventDefault()
 
-      // Re-validate everything on submit; show all errors at once.
       const values = {
         name: inputEl('name')?.value ?? '',
         email: inputEl('email')?.value ?? '',
@@ -199,7 +237,7 @@ const statusId = `${idPrefix}-status`
         return
       }
 
-      setStatus('Sending…', '')
+      setStatus(sendingText, '')
       const submitButton = form.querySelector<HTMLButtonElement>('button[type="submit"]')
       if (submitButton) submitButton.disabled = true
 
@@ -212,7 +250,7 @@ const statusId = `${idPrefix}-status`
 
         if (response.ok) {
           form.reset()
-          setStatus(SUBSCRIBE_COPY.success, 'success')
+          setStatus(successText, 'success')
           inputs.forEach((i) => i.removeAttribute('aria-invalid'))
           return
         }

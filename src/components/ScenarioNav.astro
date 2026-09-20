@@ -1,11 +1,13 @@
 ---
 import { SCENARIO_LABELS, getNavScenarios } from '../lib/scenarios'
+import type { CatalogueKey } from '../lib/catalogue'
 
 interface Props {
   active?: string
+  strings?: Record<CatalogueKey, string>
 }
 
-const { active } = Astro.props
+const { active, strings } = Astro.props
 const { primary, secondary } = await getNavScenarios()
 // If the active scenario is a secondary one, surface it inline too so the
 // current page always shows an active pill without opening the dropdown.
@@ -41,7 +43,7 @@ const dropdown = secondary.filter((s) => s !== active)
             aria-haspopup="true"
             data-more-toggle
           >
-            More
+            {strings?.['nav.more'] ?? 'More'}
             <span class="more-caret" aria-hidden="true">▾</span>
           </button>
           <div class="more-menu" data-more-menu hidden>

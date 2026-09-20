@@ -1,6 +1,13 @@
 ---
 import { SCENARIO_LABELS, getNavScenarios } from '../lib/scenarios'
 import SubscribeForm from './SubscribeForm.astro'
+import type { CatalogueKey } from '../lib/catalogue'
+
+interface Props {
+  locale: string
+  strings: Record<CatalogueKey, string>
+}
+const { locale, strings } = Astro.props
 
 const { primary, secondary } = await getNavScenarios()
 const footerScenarios = [...primary, ...secondary]
@@ -9,15 +16,12 @@ const footerScenarios = [...primary, ...secondary]
 <footer class="site-footer">
   <div class="wrap grid">
     <div class="about">
-      <p class="logo">Galing Gear</p>
-      <p class="mission">
-        For the storms, the quakes, and the gear that beats them. We help Filipino families get
-        ready — for everyone under the roof.
-      </p>
+      <p class="logo">{strings['brand.name']}</p>
+      <p class="mission">{strings['brand.mission']}</p>
     </div>
 
     <nav class="foot-nav" aria-label="Scenarios">
-      <p class="heading mono">Scenarios</p>
+      <p class="heading mono">{strings['footer.scenarios_heading']}</p>
       <ul role="list">
         {
           footerScenarios.map((scenario) => (
@@ -30,13 +34,13 @@ const footerScenarios = [...primary, ...secondary]
     </nav>
 
     <div class="foot-subscribe">
-      <p class="heading mono">Subscribe to Galing Gear</p>
-      <SubscribeForm idPrefix="footer" compact />
+      <p class="heading mono">{strings['footer.subscribe_heading']}</p>
+      <SubscribeForm idPrefix="footer" compact locale={locale} strings={strings} />
     </div>
   </div>
 
   <div class="wrap legal">
-    <p>© 2026 Galing Gear. No affiliation with any supplier.</p>
+    <p>{strings['brand.legal']}</p>
   </div>
 </footer>
 

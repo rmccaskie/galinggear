@@ -3,6 +3,11 @@ import { getCollection } from 'astro:content'
 import BaseLayout from '../layouts/BaseLayout.astro'
 import ArticleCard from '../components/ArticleCard.astro'
 import { SCENARIOS, SCENARIO_LABELS, SCENARIO_BLURBS } from '../lib/scenarios'
+import { type Locale, DEFAULT_LOCALE } from '../lib/i18n'
+import { resolvedCatalogue, fmt, plural } from '../lib/catalogue'
+
+const locale = (Astro.currentLocale ?? DEFAULT_LOCALE) as Locale
+const strings = resolvedCatalogue(locale)
 
 const all = await getCollection('articles')
 type Article = (typeof all)[number]
@@ -58,19 +63,21 @@ const defaultScenario = (withArchived[0] ?? categories[0]).scenario
 ---
 
 <BaseLayout
-  title="Archive"
+  title={strings['archive.h1']}
   description="Older Galing Gear articles we've retired from the main listings, kept here so you can always browse back through them — pick a category, then a month."
+  locale={locale}
 >
   <section class="wrap head">
-    <p class="eyebrow mono">The archive</p>
-    <h1>Archive</h1>
-    <p class="blurb">
-      Articles we&apos;ve retired from the main listings live on here. Choose a category, then open a
-      month to browse the pieces we archived back then.
-    </p>
+    <p class="eyebrow mono">{strings['archive.eyebrow']}</p>
+    <h1>{strings['archive.h1']}</h1>
+    <p class="blurb">{strings['archive.blurb']}</p>
     <p class="counts mono">
-      {totalArchived} archived {totalArchived === 1 ? 'article' : 'articles'} &middot; {withArchived.length}
-      {withArchived.length === 1 ? 'category' : 'categories'}
+      {fmt(strings, 'archive.counts', {
+        total: String(totalArchived),
+        totalNoun: plural(strings, 'article', totalArchived),
+        cats: String(withArchived.length),
+        catsNoun: plural(strings, 'category', withArchived.length),
+      })}
     </p>
   </section>
 
@@ -108,9 +115,17 @@ const defaultScenario = (withArchived[0] ?? categories[0]).scenario
                 </h2>
                 <p class="cat-blurb">{cat.blurb}</p>
                 <p class="cat-counts mono">
-                  {cat.count} archived {cat.count === 1 ? 'article' : 'articles'}
-                  {cat.months.length > 0 &&
-                    ` · ${cat.months.length} ${cat.months.length === 1 ? 'month' : 'months'}`}
+                  {cat.months.length > 0
+                    ? fmt(strings, 'archive.cat_counts_months', {
+                        count: String(cat.count),
+                        countNoun: plural(strings, 'article', cat.count),
+                        months: String(cat.months.length),
+                        monthsNoun: plural(strings, 'month', cat.months.length),
+                      })
+                    : fmt(strings, 'archive.cat_counts', {
+                        count: String(cat.count),
+                        countNoun: plural(strings, 'article', cat.count),
+                      })}
                 </p>
               </div>
 
@@ -122,7 +137,7 @@ const defaultScenario = (withArchived[0] ?? categories[0]).scenario
                         <summary>
                           <span class="month-label">{month.label}</span>
                           <span class="month-count mono">
-                            {month.items.length} {month.items.length === 1 ? 'article' : 'articles'}
+                            {month.items.length} {plural(strings, 'article', month.items.length)}
                           </span>
                           <span class="month-chevron" aria-hidden="true" />
                         </summary>
@@ -145,7 +160,7 @@ const defaultScenario = (withArchived[0] ?? categories[0]).scenario
                   ))}
                 </ul>
               ) : (
-                <p class="empty-cat">Nothing archived in {cat.label} yet.</p>
+                <p class="empty-cat">{fmt(strings, 'archive.empty_cat', { category: cat.label })}</p>
               )}
             </section>
           ))}
@@ -153,7 +168,7 @@ const defaultScenario = (withArchived[0] ?? categories[0]).scenario
       </div>
     ) : (
       <section class="wrap section">
-        <p class="empty">Nothing has been archived yet. When we retire an article it will appear here.</p>
+        <p class="empty">{strings['archive.empty']}</p>
       </section>
     )
   }

@@ -114,12 +114,29 @@ export function resolvedCatalogue(locale: Locale): Readonly<Record<CatalogueKey,
  * Taglish plurals handled by the caller (pick the right noun form before
  * interpolating). Keep it simple; if we ever need ICU, swap this out.
  */
+/**
+ * Interpolate `{placeholder}` tokens in a catalogue string.
+ *
+ * Two call forms:
+ *   fmt(templateString, values)           — pass the resolved string directly
+ *   fmt(catalogue, catalogueKey, values)  — looks up the key first
+ */
 export function fmt(
-  template: string,
-  values: Record<string, string | number>,
+  templateOrCatalogue: string | Record<string, string>,
+  keyOrValues: string | Record<string, string | number>,
+  maybeValues?: Record<string, string | number>,
 ): string {
-  return template.replace(/\{(\w+)\}/g, (match, key) => {
-    const v = values[key]
+  let template: string
+  let values: Record<string, string | number>
+  if (typeof templateOrCatalogue === 'string') {
+    template = templateOrCatalogue
+    values = keyOrValues as Record<string, string | number>
+  } else {
+    template = templateOrCatalogue[keyOrValues as string] ?? (keyOrValues as string)
+    values = maybeValues ?? {}
+  }
+  return template.replace(/\{(\w+)\}/g, (match, k) => {
+    const v = values[k]
     return v !== undefined ? String(v) : match
   })
 }
@@ -128,6 +145,25 @@ export function fmt(
  * Pick a singular/plural noun form. English-only for now; Taglish will use
  * the same rule (Taglish plurals follow English grammar for count nouns).
  */
-export function plural(count: number, singular: string, pluralForm: string): string {
-  return count === 1 ? singular : pluralForm
+/**
+ * Pick a singular/plural noun form.
+ *
+ * Two call forms:
+ *   plural(count, singular, pluralForm)       — direct strings
+ *   plural(catalogue, noun, count)            — looks up `plural.{noun}` / `plural.{noun}s`
+ */
+export function plural(
+  countOrCatalogue: number | Record<string, string>,
+  singularOrNoun: string,
+  pluralFormOrCount: string | number,
+): string {
+  if (typeof countOrCatalogue === 'number') {
+    return countOrCatalogue === 1 ? singularOrNoun : (pluralFormOrCount as string)
+  }
+  const cat = countOrCatalogue
+  const noun = singularOrNoun
+  const count = pluralFormOrCount as number
+  const sg = cat[`plural.${noun}` as keyof typeof cat] ?? noun
+  const pl = cat[`plural.${noun}s` as keyof typeof cat] ?? `${noun}s`
+  return count === 1 ? sg : pl
 }

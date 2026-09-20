@@ -5,6 +5,11 @@ import ScenarioNav from '../components/ScenarioNav.astro'
 import ArticleCard from '../components/ArticleCard.astro'
 import SubscribeForm from '../components/SubscribeForm.astro'
 import featuredOrder from '../data/featured.json'
+import { type Locale, DEFAULT_LOCALE } from '../lib/i18n'
+import { resolvedCatalogue } from '../lib/catalogue'
+
+const locale = (Astro.currentLocale ?? DEFAULT_LOCALE) as Locale
+const strings = resolvedCatalogue(locale)
 
 const articles = (await getCollection('articles'))
   .filter((a) => a.data.status !== 'archived')
@@ -29,30 +34,27 @@ const recent = articles
 ---
 
 <BaseLayout
-  title="Galing Gear"
+  title={strings['brand.name']}
   description="Preparedness and gear for Filipino families. Practical guides for typhoons, floods, earthquakes and brownouts — plus the gear, bags and gadgets that make the difference."
+  locale={locale}
 >
   <section class="hero">
     <div class="wrap">
-      <p class="eyebrow mono">Preparedness and gear for Filipino families</p>
-      <h1>Beat the storm with the right gear and know-how.</h1>
-      <p class="lede">
-        Typhoons, floods, earthquakes, brownouts — practical guides to get your family ready, plus
-        the gear, bags and gadgets that actually make the difference when it counts. Everything you
-        need, nothing you don't.
-      </p>
-      <a class="btn btn-primary" href="/subscribe/">Join the list</a>
+      <p class="eyebrow mono">{strings['home.eyebrow']}</p>
+      <h1>{strings['home.h1']}</h1>
+      <p class="lede">{strings['home.lede']}</p>
+      <a class="btn btn-primary" href="/subscribe/">{strings['home.cta']}</a>
     </div>
   </section>
 
   <section class="wrap section">
-    <ScenarioNav />
+    <ScenarioNav strings={strings} />
   </section>
 
   {
     featured && (
       <section class="wrap section">
-        <h2 class="section-title">Editor's pick</h2>
+        <h2 class="section-title">{strings['home.editors_pick']}</h2>
         <ArticleCard
           title={featured.data.title}
           description={featured.data.description}
@@ -70,7 +72,7 @@ const recent = articles
   {
     alsoFeatured.length > 0 && (
       <section class="wrap section">
-        <h2 class="section-title">Also featured</h2>
+        <h2 class="section-title">{strings['home.also_featured']}</h2>
         <div class="grid">
           {alsoFeatured.map((article) => (
             <ArticleCard
@@ -89,7 +91,7 @@ const recent = articles
   }
 
   <section class="wrap section">
-    <h2 class="section-title">Latest guides, gear and gadgets</h2>
+    <h2 class="section-title">{strings['home.latest']}</h2>
     {
       recent.length > 0 ? (
         <div class="grid">
@@ -106,20 +108,16 @@ const recent = articles
           ))}
         </div>
       ) : (
-        <p class="empty">Nothing new yet. Check back soon.</p>
+        <p class="empty">{strings['home.empty']}</p>
       )
     }
   </section>
 
   <section class="wrap section callout">
     <div class="callout-inner">
-      <h2>The right gear makes the difference</h2>
-      <p>
-        When the storm hits, good gear is what keeps your family safe, dry and powered — so we test
-        it in real Philippine conditions and tell you honestly what earns its place. Join the list
-        for the guides and the gear worth owning.
-      </p>
-      <SubscribeForm idPrefix="home" />
+      <h2>{strings['home.callout_h2']}</h2>
+      <p>{strings['home.callout_body']}</p>
+      <SubscribeForm idPrefix="home" locale={locale} strings={strings} />
     </div>
   </section>
 </BaseLayout>

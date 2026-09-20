@@ -1,7 +1,15 @@
 ---
 import { getCollection } from 'astro:content'
 import { SCENARIO_LABELS, getNavScenarios } from '../lib/scenarios'
+import type { Locale } from '../lib/i18n'
+import type { CatalogueKey } from '../lib/catalogue'
 
+interface Props {
+  locale: Locale
+  strings: Readonly<Record<CatalogueKey, string>>
+}
+
+const { locale, strings } = Astro.props
 const { primary, secondary } = await getNavScenarios()
 const allArticles = await getCollection('articles')
 const hasArchived = allArticles.some((a) => a.data.status === 'archived')
@@ -9,21 +17,21 @@ const hasArchived = allArticles.some((a) => a.data.status === 'archived')
 
 <header class="site-header">
   <div class="bar wrap">
-    <a class="brand" href="/" aria-label="Galing Gear — home">
-      <img class="brand-logo brand-logo--light" src="/brand/logo-on-light.svg?v=2" alt="Galing Gear" width="200" height="52" />
-      <img class="brand-logo brand-logo--dark" src="/brand/logo-on-dark.svg?v=2" alt="Galing Gear" width="200" height="52" />
-      <span class="tagline">For the storms, the quakes, and the gear that beats them.</span>
+    <a class="brand" href="/" aria-label={strings['nav.home_aria']}>
+      <img class="brand-logo brand-logo--light" src="/brand/logo-on-light.svg?v=2" alt={strings['brand.name']} width="200" height="52" />
+      <img class="brand-logo brand-logo--dark" src="/brand/logo-on-dark.svg?v=2" alt={strings['brand.name']} width="200" height="52" />
+      <span class="tagline">{strings['brand.tagline']}</span>
     </a>
 
     <div class="actions">
-      <a class="btn btn-primary subscribe-cta" href="/subscribe/">Subscribe</a>
+      <a class="btn btn-primary subscribe-cta" href="/subscribe/">{strings['nav.subscribe']}</a>
 
       <button
         type="button"
         class="icon-button theme-toggle"
         data-theme-toggle
         aria-pressed="false"
-        aria-label="Switch to dark theme"
+        aria-label={strings['theme.to_dark']}
       >
         <span class="theme-icon" aria-hidden="true">◑</span>
       </button>
@@ -34,7 +42,7 @@ const hasArchived = allArticles.some((a) => a.data.status === 'archived')
         data-menu-toggle
         aria-expanded="false"
         aria-controls="scenario-drawer"
-        aria-label="Open menu"
+        aria-label={strings['nav.open_menu']}
       >
         <span aria-hidden="true">☰</span>
       </button>
@@ -60,7 +68,7 @@ const hasArchived = allArticles.some((a) => a.data.status === 'archived')
               aria-haspopup="true"
               data-nav-more-toggle
             >
-              More
+              {strings['nav.more']}
               <span class="nav-more-caret" aria-hidden="true">▾</span>
             </button>
             <div class="nav-more-menu" data-nav-more-menu hidden>
@@ -77,7 +85,7 @@ const hasArchived = allArticles.some((a) => a.data.status === 'archived')
       }
       {hasArchived && (
         <li>
-          <a href="/archive/">Archive</a>
+          <a href="/archive/">{strings['nav.archive']}</a>
         </li>
       )}
     </ul>
@@ -93,12 +101,12 @@ const hasArchived = allArticles.some((a) => a.data.status === 'archived')
     hidden
   >
     <div class="drawer-head">
-      <span class="mono">Scenarios</span>
+      <span class="mono">{strings['nav.scenarios']}</span>
       <button
         type="button"
         class="icon-button"
         data-drawer-close
-        aria-label="Close menu"
+        aria-label={strings['nav.close_menu']}
       >
         <span aria-hidden="true">✕</span>
       </button>
@@ -127,12 +135,12 @@ const hasArchived = allArticles.some((a) => a.data.status === 'archived')
         <Fragment>
           <li class="drawer-divider" aria-hidden="true"></li>
           <li>
-            <a href="/archive/">Archive</a>
+            <a href="/archive/">{strings['nav.archive']}</a>
           </li>
         </Fragment>
       )}
       <li>
-        <a class="drawer-subscribe" href="/subscribe/">Subscribe</a>
+        <a class="drawer-subscribe" href="/subscribe/">{strings['nav.subscribe']}</a>
       </li>
     </ul>
   </nav>

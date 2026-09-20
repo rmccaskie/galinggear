@@ -3,6 +3,11 @@ import { getCollection } from 'astro:content'
 import BaseLayout from '../layouts/BaseLayout.astro'
 import ScenarioNav from '../components/ScenarioNav.astro'
 import ArticleCard from '../components/ArticleCard.astro'
+import { type Locale, DEFAULT_LOCALE } from '../lib/i18n'
+import { resolvedCatalogue } from '../lib/catalogue'
+
+const locale = (Astro.currentLocale ?? DEFAULT_LOCALE) as Locale
+const strings = resolvedCatalogue(locale)
 
 const articles = (await getCollection('articles'))
   .filter((a) => a.data.status !== 'archived')
@@ -14,32 +19,29 @@ const recent = articles.slice(0, 3)
 ---
 
 <BaseLayout
-  title="Page not found"
-  description="We couldn't find that page — but there's plenty of preparedness guides and gear waiting for you. Pick a category or browse the latest."
+  title={strings['404.h1']}
+  description={strings['404.blurb']}
+  locale={locale}
 >
   <section class="wrap head">
-    <p class="eyebrow mono">Error 404</p>
-    <h1>We couldn't find that page.</h1>
-    <p class="blurb">
-      Sorry about that — the page you were after has either moved, been retired, or never
-      existed. No harm done. All our guides and gear are still here; let's get you back to
-      something useful.
-    </p>
+    <p class="eyebrow mono">{strings['404.eyebrow']}</p>
+    <h1>{strings['404.h1']}</h1>
+    <p class="blurb">{strings['404.blurb']}</p>
     <div class="actions">
-      <a class="btn btn-primary" href="/">Back to home</a>
-      <a class="btn btn-ghost" href="/archive/">Browse the archive</a>
+      <a class="btn btn-primary" href="/">{strings['404.back_home']}</a>
+      <a class="btn btn-ghost" href="/archive/">{strings['404.browse_archive']}</a>
     </div>
   </section>
 
   <section class="wrap section">
-    <h2 class="section-title">Browse by category</h2>
-    <ScenarioNav />
+    <h2 class="section-title">{strings['404.browse_by_category']}</h2>
+    <ScenarioNav strings={strings} />
   </section>
 
   {
     recent.length > 0 && (
       <section class="wrap section">
-        <h2 class="section-title">Latest guides, gear and gadgets</h2>
+        <h2 class="section-title">{strings['404.latest']}</h2>
         <div class="grid">
           {recent.map((article) => (
             <ArticleCard
