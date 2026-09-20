@@ -5,11 +5,11 @@ description: >-
   road ahead — and a clear rule about why the bag is for waiting, not for
   driving through water.
 scenario: flood-ready
-articleType: guide
 publishedAt: '2026-09-19'
 featured: true
 status: archived
-updatedAt: '2026-09-19'
+updatedAt: '2026-09-20'
+articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789781733133-eduj74.png'
 railItems:
   - type: image
@@ -38,15 +38,6 @@ railItems:
     description: >-
       Packing two separate bags is easy; packing so either one works alone is
       harder, and it is usually the thing nobody rehearses.
-  - type: article
-    assetId: 5d56a974-bbeb-447f-a883-2d8f12c56beb
-    anchor: the-method
-    label: Field Guide
-    title: Splitting the load without splitting the kit
-    slug: building-a-go-bag-for-two-a-practical-guide-for-couples-in-the-philippines
-    description: >-
-      How to divide water, documents, power and first aid across two bags so you
-      are still functional if one bag is lost, soaked or left behind.
 ---
 
 ## What you'll be able to do — and why it matters
