@@ -7,6 +7,7 @@ import { SCENARIOS, SCENARIO_LABELS, SCENARIO_BLURBS } from '../../lib/scenarios
 import type { Scenario } from '../../lib/scenarios'
 import { type Locale, DEFAULT_LOCALE } from '../../lib/i18n'
 import { resolvedCatalogue, fmt, plural } from '../../lib/catalogue'
+import { getTaglishMap, localiseArticleData } from '../../lib/article-locale'
 
 export async function getStaticPaths() {
   const articles = await getCollection('articles')
@@ -38,6 +39,7 @@ const label = SCENARIO_LABELS[scenario]
 const blurb = SCENARIO_BLURBS[scenario]
 const locale = (Astro.currentLocale ?? DEFAULT_LOCALE) as Locale
 const strings = resolvedCatalogue(locale)
+const tlMap = await getTaglishMap()
 ---
 
 <BaseLayout title={label} description={`${label}: ${blurb}`} locale={locale}>
@@ -55,18 +57,21 @@ const strings = resolvedCatalogue(locale)
     {
       articles.length > 0 ? (
         <div class="grid">
-          {articles.map((article) => (
-            <ArticleCard
-              title={article.data.title}
-              description={article.data.description}
-              scenario={article.data.scenario}
-              publishedAt={article.data.publishedAt}
-              slug={article.id}
-              heroImage={article.data.heroImage ?? article.data.heroGallery?.[0]?.src}
-              articleType={article.data.articleType}
-              featured={article.data.featured}
-            />
-          ))}
+          {articles.map((a) => {
+            const d = localiseArticleData(a, locale, tlMap)
+            return (
+              <ArticleCard
+                title={d.title}
+                description={d.description}
+                scenario={d.scenario}
+                publishedAt={d.publishedAt}
+                slug={a.id}
+                heroImage={d.heroImage ?? d.heroGallery?.[0]?.src}
+                articleType={d.articleType}
+                featured={d.featured}
+              />
+            )
+          })}
         </div>
       ) : (
         <p class="empty">{strings['scenario.empty']}</p>

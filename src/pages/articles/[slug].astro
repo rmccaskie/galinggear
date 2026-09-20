@@ -7,6 +7,7 @@ import type { RailItemData } from '../../components/RailItem.astro'
 import { SCENARIO_LABELS } from '../../lib/scenarios'
 import { type Locale, DEFAULT_LOCALE } from '../../lib/i18n'
 import { resolvedCatalogue, fmt } from '../../lib/catalogue'
+import { getTaglishMap, localiseArticleData, getTaglishEntry } from '../../lib/article-locale'
 
 export async function getStaticPaths() {
   const articles = await getCollection('articles')
@@ -65,7 +66,15 @@ interface Props {
 const { article, related, railItems } = Astro.props
 const locale = (Astro.currentLocale ?? DEFAULT_LOCALE) as Locale
 const strings = resolvedCatalogue(locale)
-const { headings } = await render(article)
+
+// Locale-aware data: overlay Taglish title/description/rail items when available.
+const tlMap = await getTaglishMap()
+const locData = localiseArticleData(article, locale, tlMap)
+
+// Render the body in the resolved locale: Taglish body if it exists, else English.
+const tlEntry = locale !== 'en' ? getTaglishEntry(article.id, tlMap) : undefined
+const renderTarget = tlEntry ?? article
+const { headings } = await render(renderTarget)
 // Section submenu ("On this page"): derived from the article's own ## headings.
 // Astro auto-assigns each heading a slug id, so the anchors already exist.
 const toc = headings.filter((h) => h.depth === 2)
@@ -73,7 +82,7 @@ const toc = headings.filter((h) => h.depth === 2)
 // Per-section layout: split the rendered body HTML at each top-level <h2 id>.
 // Content before the first heading is an intro (full width). Each section then
 // renders full width, or two-column when a rail item is bound to its anchor.
-const bodyHtml = article.rendered?.html ?? ''
+const bodyHtml = renderTarget.rendered?.html ?? ''
 const sectionParts = bodyHtml.split(/(?=<h2[\s>])/i)
 let intro = ''
 const sections: { id: string; headingHtml: string; bodyHtml: string }[] = []
@@ -92,7 +101,7 @@ for (const part of sectionParts) {
 }
 const railFor = (id: string) => railItems.find((r) => r.anchor && r.anchor === id) ?? null
 const { title, description, scenario, publishedAt, updatedAt, editorNote, heroImage, heroGallery, status } =
-  article.data
+  locData
 const isArchived = status === 'archived'
 const hasHeroGallery = Array.isArray(heroGallery) && heroGallery.length > 0
 
@@ -199,17 +208,20 @@ function fmtDate(date: string) {
         <section class="wrap section">
           <h2 class="section-title">{fmt(strings, 'article.more_in', { scenario: SCENARIO_LABELS[scenario] })}</h2>
         <div class="grid">
-            {related.map((a) => (
-              <ArticleCard
-                title={a.data.title}
-                description={a.data.description}
-                scenario={a.data.scenario}
-                publishedAt={a.data.publishedAt}
-                slug={a.id}
-                heroImage={a.data.heroImage ?? a.data.heroGallery?.[0]?.src}
-                articleType={a.data.articleType}
-              />
-            ))}
+            {related.map((a) => {
+              const rd = localiseArticleData(a, locale, tlMap)
+              return (
+                <ArticleCard
+                  title={rd.title}
+                  description={rd.description}
+                  scenario={rd.scenario}
+                  publishedAt={rd.publishedAt}
+                  slug={a.id}
+                  heroImage={rd.heroImage ?? rd.heroGallery?.[0]?.src}
+                  articleType={rd.articleType}
+                />
+              )
+            })}
           </div>
         </section>
       </Fragment>

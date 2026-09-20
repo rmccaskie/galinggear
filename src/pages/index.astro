@@ -7,9 +7,11 @@ import SubscribeForm from '../components/SubscribeForm.astro'
 import featuredOrder from '../data/featured.json'
 import { type Locale, DEFAULT_LOCALE } from '../lib/i18n'
 import { resolvedCatalogue } from '../lib/catalogue'
+import { getTaglishMap, localiseArticleData } from '../lib/article-locale'
 
 const locale = (Astro.currentLocale ?? DEFAULT_LOCALE) as Locale
 const strings = resolvedCatalogue(locale)
+const tlMap = await getTaglishMap()
 
 const articles = (await getCollection('articles'))
   .filter((a) => a.data.status !== 'archived')
@@ -31,6 +33,9 @@ const featuredIds = new Set(featuredArticles.map((a) => a.id))
 const recent = articles
   .filter((a) => a.id !== featured?.id && !featuredIds.has(a.id))
   .slice(0, 6)
+
+/** Shorthand: locale-aware article data. */
+const loc = (a: typeof articles[number]) => localiseArticleData(a, locale, tlMap)
 ---
 
 <BaseLayout
@@ -56,13 +61,13 @@ const recent = articles
       <section class="wrap section">
         <h2 class="section-title">{strings['home.editors_pick']}</h2>
         <ArticleCard
-          title={featured.data.title}
-          description={featured.data.description}
-          scenario={featured.data.scenario}
-          publishedAt={featured.data.publishedAt}
+          title={loc(featured).title}
+          description={loc(featured).description}
+          scenario={loc(featured).scenario}
+          publishedAt={loc(featured).publishedAt}
           slug={featured.id}
-          heroImage={featured.data.heroImage ?? featured.data.heroGallery?.[0]?.src}
-          articleType={featured.data.articleType}
+          heroImage={loc(featured).heroImage ?? loc(featured).heroGallery?.[0]?.src}
+          articleType={loc(featured).articleType}
           featured
         />
       </section>
@@ -74,17 +79,20 @@ const recent = articles
       <section class="wrap section">
         <h2 class="section-title">{strings['home.also_featured']}</h2>
         <div class="grid">
-          {alsoFeatured.map((article) => (
-            <ArticleCard
-              title={article.data.title}
-              description={article.data.description}
-              scenario={article.data.scenario}
-              publishedAt={article.data.publishedAt}
-              slug={article.id}
-              heroImage={article.data.heroImage ?? article.data.heroGallery?.[0]?.src}
-              articleType={article.data.articleType}
-            />
-          ))}
+          {alsoFeatured.map((a) => {
+            const d = loc(a)
+            return (
+              <ArticleCard
+                title={d.title}
+                description={d.description}
+                scenario={d.scenario}
+                publishedAt={d.publishedAt}
+                slug={a.id}
+                heroImage={d.heroImage ?? d.heroGallery?.[0]?.src}
+                articleType={d.articleType}
+              />
+            )
+          })}
         </div>
       </section>
     )
@@ -95,17 +103,20 @@ const recent = articles
     {
       recent.length > 0 ? (
         <div class="grid">
-          {recent.map((article) => (
-            <ArticleCard
-              title={article.data.title}
-              description={article.data.description}
-              scenario={article.data.scenario}
-              publishedAt={article.data.publishedAt}
-              slug={article.id}
-              heroImage={article.data.heroImage ?? article.data.heroGallery?.[0]?.src}
-              articleType={article.data.articleType}
-            />
-          ))}
+          {recent.map((a) => {
+            const d = loc(a)
+            return (
+              <ArticleCard
+                title={d.title}
+                description={d.description}
+                scenario={d.scenario}
+                publishedAt={d.publishedAt}
+                slug={a.id}
+                heroImage={d.heroImage ?? d.heroGallery?.[0]?.src}
+                articleType={d.articleType}
+              />
+            )
+          })}
         </div>
       ) : (
         <p class="empty">{strings['home.empty']}</p>

@@ -64,4 +64,55 @@ const articles = defineCollection({
   }),
 })
 
-export const collections = { articles }
+/**
+ * Taglish article overrides — parallel collection.
+ *
+ * Each file mirrors a slug from the `articles` collection. Frontmatter carries
+ * only the fields that differ in Taglish (title, description, rail-item copy);
+ * the markdown body is the Taglish article body. A `sourceHash` tracks the
+ * English content the Taglish was generated from (drift detection).
+ *
+ * If no matching file exists here, the reader falls back to the English article
+ * for that slug — never blank, per §4/§6 of the i18n standard.
+ */
+const railItemTaglishSchema = z.object({
+  type: z.enum(['product', 'image', 'article', 'ad']),
+  anchor: z.string().optional(),
+  label: z.string().optional(),
+  kicker: z.string().optional(),
+  title: z.string().optional(),
+  spec: z.string().optional(),
+  price: z.string().optional(),
+  href: z.string().optional(),
+  cta: z.string().optional(),
+  image: z.string().optional(),
+  alt: z.string().optional(),
+  caption: z.string().optional(),
+  slug: z.string().optional(),
+  description: z.string().optional(),
+})
+
+const articlesTaglish = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/articles-taglish' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    // SHA-256 of the English (title+description+body) at generation time.
+    // When this differs from the live English hash → "Taglish needs refresh".
+    sourceHash: z.string().optional(),
+    // Rail items override — same shape, carries Taglish copy of each card.
+    railItems: z.array(railItemTaglishSchema).optional(),
+    // Hero gallery Taglish captions/alt (if applicable).
+    heroGallery: z
+      .array(
+        z.object({
+          src: z.string(),
+          alt: z.string().optional(),
+          caption: z.string().optional(),
+        })
+      )
+      .optional(),
+  }),
+})
+
+export const collections = { articles, 'articles-taglish': articlesTaglish }

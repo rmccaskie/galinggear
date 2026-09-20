@@ -5,9 +5,11 @@ import ScenarioNav from '../components/ScenarioNav.astro'
 import ArticleCard from '../components/ArticleCard.astro'
 import { type Locale, DEFAULT_LOCALE } from '../lib/i18n'
 import { resolvedCatalogue } from '../lib/catalogue'
+import { getTaglishMap, localiseArticleData } from '../lib/article-locale'
 
 const locale = (Astro.currentLocale ?? DEFAULT_LOCALE) as Locale
 const strings = resolvedCatalogue(locale)
+const tlMap = await getTaglishMap()
 
 const articles = (await getCollection('articles'))
   .filter((a) => a.data.status !== 'archived')
@@ -43,17 +45,20 @@ const recent = articles.slice(0, 3)
       <section class="wrap section">
         <h2 class="section-title">{strings['404.latest']}</h2>
         <div class="grid">
-          {recent.map((article) => (
-            <ArticleCard
-              title={article.data.title}
-              description={article.data.description}
-              scenario={article.data.scenario}
-              publishedAt={article.data.publishedAt}
-              slug={article.id}
-              heroImage={article.data.heroImage ?? article.data.heroGallery?.[0]?.src}
-              articleType={article.data.articleType}
-            />
-          ))}
+          {recent.map((a) => {
+            const d = localiseArticleData(a, locale, tlMap)
+            return (
+              <ArticleCard
+                title={d.title}
+                description={d.description}
+                scenario={d.scenario}
+                publishedAt={d.publishedAt}
+                slug={a.id}
+                heroImage={d.heroImage ?? d.heroGallery?.[0]?.src}
+                articleType={d.articleType}
+              />
+            )
+          })}
         </div>
       </section>
     )
