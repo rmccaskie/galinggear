@@ -33,9 +33,9 @@ progresses. Source of truth: `/home/ubuntu/output/galinggear-i18n-plan.md`.
 | Astro i18n config | ✅ `astro.config.mjs` |
 | Catalogue + namespace table | ✅ `src/lib/catalogue.ts` + `catalogues/en.ts` |
 | Formatting subset (interpolation, plurals) | ✅ `fmt()` + `plural()` in `catalogue.ts` |
-| Track 2 dual-copy storage + drift hash | ⚠ NOT BUILT |
-| AI Taglish generation pipeline + glossary/style guide | ⚠ NOT BUILT |
-| Empty=fallback behaviour + fallback-path tests | ⚠ NOT BUILT |
+| Track 2 dual-copy storage + drift hash | ✅ `articles-taglish` collection + `sourceHash` in frontmatter |
+| AI Taglish generation pipeline + glossary/style guide | ✅ `generate-taglish.ts` (admin) + publish-time generation |
+| Empty=fallback behaviour + fallback-path tests | ✅ `article-locale.ts` falls back to English when Taglish absent |
 | Review gate armed in code (chrome) | ✅ `catalogues/taglish.ts` + `isReviewed()` |
 | Language switcher (signed-out, endonyms) | ✅ `LocaleSwitcher.astro` in Header + mobile drawer |
 | `<html lang>` dynamic per locale | ✅ `BaseLayout.astro` (derives from `HTML_LANG[locale]`) |
