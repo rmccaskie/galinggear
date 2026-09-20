@@ -1,0 +1,90 @@
+---
+/**
+ * Language switcher — renders a link to the same page in the other locale.
+ *
+ * Endonym labels (§7.4): each locale's name is written in its own language
+ * with the correct `lang` attribute for screen readers.
+ *
+ * On click, sets the `__Host-gg-locale` cookie so return visitors get their
+ * chosen language automatically (§7.1 preference cascade).
+ */
+import { LOCALES, type Locale, SWITCHER_LABELS, LOCALE_COOKIE, localisedPath } from '../lib/i18n'
+
+interface Props {
+  locale: Locale
+  /** Current page path (bare, without locale prefix), e.g. '/' or '/subscribe/' */
+  path?: string
+}
+
+const { locale, path = '/' } = Astro.props
+
+// Build links for every locale except the current one.
+const alternatives = LOCALES.filter((l) => l !== locale).map((l) => ({
+  locale: l,
+  href: localisedPath(l, path),
+  ...SWITCHER_LABELS[l],
+}))
+---
+
+<div class="locale-switcher" data-locale-switcher>
+  {alternatives.map((alt) => (
+    <a
+      href={alt.href}
+      lang={alt.lang}
+      class="locale-link mono"
+      data-locale={alt.locale}
+      data-cookie-name={LOCALE_COOKIE.name}
+      data-cookie-max-age={LOCALE_COOKIE.maxAge}
+    >
+      {alt.label}
+    </a>
+  ))}
+</div>
+
+<style>
+  .locale-switcher {
+    display: flex;
+    gap: var(--space-sm);
+    align-items: center;
+  }
+
+  .locale-link {
+    font-size: var(--text-label);
+    letter-spacing: 0.04em;
+    color: var(--muted-text);
+    text-decoration: none;
+    padding: var(--space-2xs) var(--space-xs);
+    border-radius: var(--radius-sm);
+    transition: color 0.15s ease, background-color 0.15s ease;
+  }
+
+  .locale-link:hover {
+    color: var(--accent-text);
+    background-color: var(--surface-sunken);
+  }
+</style>
+
+<script>
+  /* Set the locale preference cookie before navigation.
+   * The cookie is `__Host-` prefixed (Secure, path=/, no Domain) so it
+   * requires HTTPS — on localhost (dev), fall back to a non-prefixed cookie. */
+  document.querySelectorAll<HTMLAnchorElement>('[data-locale-switcher] a[data-locale]')
+    .forEach((link) => {
+      link.addEventListener('click', (e) => {
+        const locale = link.dataset.locale
+        const name = link.dataset.cookieName ?? '__Host-gg-locale'
+        const maxAge = link.dataset.cookieMaxAge ?? String(365 * 24 * 60 * 60)
+        const isSecure = location.protocol === 'https:'
+        const cookieName = isSecure ? name : name.replace('__Host-', 'gg-')
+        const parts = [
+          `${cookieName}=${locale}`,
+          `path=/`,
+          `max-age=${maxAge}`,
+          `SameSite=Lax`,
+        ]
+        if (isSecure) parts.push('Secure')
+        document.cookie = parts.join('; ')
+        // Let the default navigation happen (href already set).
+      })
+    })
+</script>

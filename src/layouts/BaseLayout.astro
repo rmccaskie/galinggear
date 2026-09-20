@@ -5,7 +5,7 @@ import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
 import Lightbox from '../components/Lightbox.astro'
 import VideoLightbox from '../components/VideoLightbox.astro'
-import { type Locale, DEFAULT_LOCALE, HTML_LANG } from '../lib/i18n'
+import { type Locale, DEFAULT_LOCALE, HTML_LANG, URL_PREFIX } from '../lib/i18n'
 import { resolvedCatalogue, type CatalogueKey } from '../lib/catalogue'
 
 interface Props {
@@ -20,6 +20,12 @@ const locale: Locale = (Astro.props.locale ?? Astro.currentLocale ?? DEFAULT_LOC
 const { title, description, image, type } = Astro.props
 const strings = resolvedCatalogue(locale)
 const htmlLang = HTML_LANG[locale]
+
+// Strip the locale prefix from the current URL to get the bare path
+// (used by the language switcher to build the equivalent URL in each locale).
+const rawPath = Astro.url.pathname
+const prefix = URL_PREFIX[locale]
+const barePath = prefix && rawPath.startsWith(prefix) ? rawPath.slice(prefix.length) || '/' : rawPath
 ---
 
 <!doctype html>
@@ -54,7 +60,7 @@ const htmlLang = HTML_LANG[locale]
   </head>
   <body>
     <a class="skip-link" href="#main">{strings['nav.skip_to_content']}</a>
-    <Header locale={locale} strings={strings} />
+    <Header locale={locale} strings={strings} currentPath={barePath} />
     <main id="main">
       <slot />
     </main>

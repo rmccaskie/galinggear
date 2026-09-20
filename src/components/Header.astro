@@ -3,13 +3,16 @@ import { getCollection } from 'astro:content'
 import { SCENARIO_LABELS, getNavScenarios } from '../lib/scenarios'
 import type { Locale } from '../lib/i18n'
 import type { CatalogueKey } from '../lib/catalogue'
+import LocaleSwitcher from './LocaleSwitcher.astro'
 
 interface Props {
   locale: Locale
   strings: Readonly<Record<CatalogueKey, string>>
+  /** Bare path (no locale prefix) for the switcher, e.g. '/' or '/subscribe/' */
+  currentPath?: string
 }
 
-const { locale, strings } = Astro.props
+const { locale, strings, currentPath = '/' } = Astro.props
 const { primary, secondary } = await getNavScenarios()
 const allArticles = await getCollection('articles')
 const hasArchived = allArticles.some((a) => a.data.status === 'archived')
@@ -25,6 +28,8 @@ const hasArchived = allArticles.some((a) => a.data.status === 'archived')
 
     <div class="actions">
       <a class="btn btn-primary subscribe-cta" href="/subscribe/">{strings['nav.subscribe']}</a>
+
+      <LocaleSwitcher locale={locale} path={currentPath} />
 
       <button
         type="button"
@@ -141,6 +146,10 @@ const hasArchived = allArticles.some((a) => a.data.status === 'archived')
       )}
       <li>
         <a class="drawer-subscribe" href="/subscribe/">{strings['nav.subscribe']}</a>
+      </li>
+      <li class="drawer-divider" aria-hidden="true"></li>
+      <li class="drawer-locale">
+        <LocaleSwitcher locale={locale} path={currentPath} />
       </li>
     </ul>
   </nav>

@@ -38,9 +38,13 @@ progresses. Source of truth: `/home/ubuntu/output/galinggear-i18n-plan.md`.
 | Empty=fallback behaviour + fallback-path tests | ⚠ NOT BUILT |
 | Review gate armed in code (chrome) | ✅ `catalogues/taglish.ts` + `isReviewed()` |
 | Language switcher (signed-out, endonyms) | ⚠ NOT BUILT |
-| `<html lang>`, `og:locale`, translation suppression | ⚠ NOT BUILT |
+| `<html lang>` dynamic per locale | ✅ `BaseLayout.astro` (derives from `HTML_LANG[locale]`) |
+| `og:locale`, translation suppression | ⚠ NOT BUILT |
 | URL prefix routing + `hreflang` + canonicals | ⚠ NOT BUILT |
 | Named reviewer + cadence (chrome) | ⚠ NOT BUILT |
 | Style guide (safeguard 1) | ⚠ NOT BUILT |
 | Edge locale resolver (Cloudflare Function) | ⚠ NOT BUILT |
+| Chrome catalogue wired to all components | ✅ Header, Footer, SubscribeForm, ArticleCard, RailItem, ScenarioNav |
+| Chrome catalogue wired to all pages | ✅ index, subscribe, 404, archive, [scenario], articles/[slug] |
+| Client-side strings via data-strings | ✅ SubscribeForm (error/success messages) |
 | Admin English-only (unchanged) | ✅ already the case |
