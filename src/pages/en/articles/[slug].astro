@@ -1,0 +1,647 @@
+---
+import { getCollection, render, type CollectionEntry } from 'astro:content'
+import BaseLayout from '../../../layouts/BaseLayout.astro'
+import ArticleCard from '../../../components/ArticleCard.astro'
+import RailItem from '../../../components/RailItem.astro'
+import type { RailItemData } from '../../../components/RailItem.astro'
+import { SCENARIO_LABELS } from '../../../lib/scenarios'
+import { type Locale, DEFAULT_LOCALE } from '../../../lib/i18n'
+import { resolvedCatalogue, fmt } from '../../../lib/catalogue'
+import { getTaglishMap, localiseArticleData, getTaglishEntry } from '../../../lib/article-locale'
+
+export async function getStaticPaths() {
+  const articles = await getCollection('articles')
+  return articles.map((article) => {
+    // Resolve per-section rail items. Article-type cards reference another
+    // article by slug; drop them if the target no longer exists (unpublished).
+    const railItems = (article.data.railItems ?? [])
+      .map((item) => {
+        if (item.type === 'article') {
+          const target = articles.find((a) => a.id === item.slug)
+          if (!target) return null
+          return {
+            ...item,
+            resolved: {
+              title: item.title ?? target.data.title,
+              description: item.description ?? target.data.description,
+              scenario: target.data.scenario,
+              publishedAt: target.data.publishedAt,
+              slug: target.id,
+              heroImage: target.data.heroImage ?? target.data.heroGallery?.[0]?.src,
+              status: target.data.status,
+            },
+          }
+        }
+        return item
+      })
+      .filter((x) => x !== null)
+    return {
+      params: { slug: article.id },
+      props: {
+        article,
+        railItems,
+        related: articles
+          .filter(
+            (a) =>
+              a.data.scenario === article.data.scenario &&
+              a.id !== article.id &&
+              a.data.status !== 'archived'
+          )
+          .sort(
+            (a, b) =>
+              new Date(b.data.publishedAt).valueOf() - new Date(a.data.publishedAt).valueOf()
+          )
+          .slice(0, 3),
+      },
+    }
+  })
+}
+
+interface Props {
+  article: CollectionEntry<'articles'>
+  related: CollectionEntry<'articles'>[]
+  railItems: RailItemData[]
+}
+
+const { article, related, railItems } = Astro.props
+const locale = (Astro.currentLocale ?? DEFAULT_LOCALE) as Locale
+const strings = resolvedCatalogue(locale)
+
+// Locale-aware data: overlay Taglish title/description/rail items when available.
+const tlMap = await getTaglishMap()
+const locData = localiseArticleData(article, locale, tlMap)
+
+// Render the body in the resolved locale: Taglish body if it exists, else English.
+const tlEntry = locale !== 'en' ? getTaglishEntry(article.id, tlMap) : undefined
+const renderTarget = tlEntry ?? article
+const { headings } = await render(renderTarget)
+// Section submenu ("On this page"): derived from the article's own ## headings.
+// Astro auto-assigns each heading a slug id, so the anchors already exist.
+const toc = headings.filter((h) => h.depth === 2)
+
+// Per-section layout: split the rendered body HTML at each top-level <h2 id>.
+// Content before the first heading is an intro (full width). Each section then
+// renders full width, or two-column when a rail item is bound to its anchor.
+const bodyHtml = renderTarget.rendered?.html ?? ''
+const sectionParts = bodyHtml.split(/(?=<h2[\s>])/i)
+let intro = ''
+const sections: { id: string; headingHtml: string; bodyHtml: string }[] = []
+for (const part of sectionParts) {
+  if (/^<h2[\s>]/i.test(part)) {
+    const idMatch = part.match(/<h2[^>]*\sid="([^"]+)"/i)
+    const headMatch = part.match(/^(<h2[\s\S]*?<\/h2>)/i)
+    sections.push({
+      id: idMatch ? idMatch[1] : '',
+      headingHtml: headMatch ? headMatch[1] : part,
+      bodyHtml: headMatch ? part.slice(headMatch[1].length) : '',
+    })
+  } else {
+    intro += part
+  }
+}
+const railFor = (id: string) => railItems.find((r) => r.anchor && r.anchor === id) ?? null
+const { title, description, scenario, publishedAt, updatedAt, editorNote, heroImage, heroGallery, status } =
+  locData
+const isArchived = status === 'archived'
+const hasHeroGallery = Array.isArray(heroGallery) && heroGallery.length > 0
+
+function fmtDate(date: string) {
+  const d = new Date(date)
+  return Number.isNaN(d.valueOf())
+    ? date
+    : d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })
+}
+---
+
+<BaseLayout title={title} description={description} type="article" locale={locale}>
+  <article>
+    <header class="wrap art-head">
+      <a class="scenario mono" href={`/${scenario}/`}>{SCENARIO_LABELS[scenario]}</a>
+      <h1>{title}</h1>
+      <p class="description">{description}</p>
+      <div class="dates mono">
+        <time datetime={publishedAt}>{strings['article.published']} {fmtDate(publishedAt)}</time>
+        {updatedAt && <time datetime={updatedAt}>{strings['article.updated']} {fmtDate(updatedAt)}</time>}
+      </div>
+      {
+        isArchived ? (
+          <p class="art-status is-archived">
+            <span class="dot" /> {strings['article.status_archived']}
+          </p>
+        ) : (
+          <p class="art-status is-active">
+            <span class="dot" /> {strings['article.status_current']}
+          </p>
+        )
+      }
+      {editorNote && <p class="editor-note">{editorNote}</p>}
+    </header>
+
+    {
+      hasHeroGallery ? (
+        <div class="wrap">
+          <div class="gg-hero-carousel" data-count={heroGallery!.length}>
+            {heroGallery!.map((img) => (
+              <figure class="gg-figure gg-hero-slide">
+                <img class="gg-zoomable" src={img.src} alt={img.alt ?? ''} loading="lazy" />
+                {img.caption && <figcaption>{img.caption}</figcaption>}
+              </figure>
+            ))}
+          </div>
+        </div>
+      ) : heroImage ? (
+        <div class="wrap">
+          <figure class="gg-figure gg-hero-single">
+            <img class="gg-zoomable" src={heroImage} alt={title} />
+          </figure>
+        </div>
+      ) : null
+    }
+
+    <div class:list={['wrap', 'art-layout', { 'has-toc': toc.length > 1 }]}>
+      {
+        toc.length > 1 && (
+          <nav class="art-toc" aria-label={strings['article.toc_label']}>
+            <details class="art-toc__box" open>
+              <summary class="art-toc__label mono">
+                <span>{strings['article.toc_label']}</span>
+                <span class="art-toc__chev" aria-hidden="true">▾</span>
+              </summary>
+              <ol class="art-toc__list" role="list">
+                {toc.map((h) => (
+                  <li>
+                    <a class="art-toc__link" href={`#${h.slug}`} data-toc-link={h.slug}>
+                      {h.text}
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            </details>
+          </nav>
+        )
+      }
+      <div class="prose body">
+        {intro && <div class="section-block full" set:html={intro} />}
+        {
+          sections.map((section) => {
+            const rail = railFor(section.id)
+            return (
+              <div
+                class:list={['section-block', rail ? 'has-rail' : 'full']}
+                data-rail-type={rail?.type}
+              >
+                <div class="sec-head" set:html={section.headingHtml} />
+                {rail && <RailItem item={rail} />}
+                <div class="sec-body" set:html={section.bodyHtml} />
+              </div>
+            )
+          })
+        }
+      </div>
+    </div>
+  </article>
+
+  {
+    related.length > 0 && (
+      <Fragment>
+        <hr class="art-end" aria-hidden="true" />
+        <section class="wrap section">
+          <h2 class="section-title">{fmt(strings, 'article.more_in', { scenario: SCENARIO_LABELS[scenario] })}</h2>
+        <div class="grid">
+            {related.map((a) => {
+              const rd = localiseArticleData(a, locale, tlMap)
+              return (
+                <ArticleCard
+                  title={rd.title}
+                  description={rd.description}
+                  scenario={rd.scenario}
+                  publishedAt={rd.publishedAt}
+                  slug={a.id}
+                  heroImage={rd.heroImage ?? rd.heroGallery?.[0]?.src}
+                  articleType={rd.articleType}
+                />
+              )
+            })}
+          </div>
+        </section>
+      </Fragment>
+    )
+  }
+</BaseLayout>
+
+<style>
+  /* Long-form articles use a slightly wider reading measure than the rest of
+     the site. Scoped to the article so other pages are unaffected. */
+  article {
+    --measure: 74ch;
+  }
+
+  .art-head {
+    padding-block: var(--space-3xl) var(--space-lg);
+  }
+
+  .scenario {
+    display: inline-block;
+    font-size: var(--text-label);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--accent-text);
+    text-decoration: none;
+    margin-block-end: var(--space-md);
+  }
+
+  .art-head h1 {
+    font-size: var(--text-display);
+    max-inline-size: var(--measure);
+    text-wrap: balance;
+  }
+
+  .description {
+    margin-block-start: var(--space-md);
+    max-inline-size: var(--measure);
+    color: var(--muted-text);
+    font-size: var(--text-h2);
+    font-family: var(--font-display);
+    font-weight: 400;
+    line-height: 1.4;
+  }
+
+  .dates {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md) var(--space-lg);
+    margin-block-start: var(--space-lg);
+    font-size: var(--text-label);
+    color: var(--muted-text);
+  }
+
+  .art-status {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2xs);
+    margin-block-start: var(--space-md);
+    padding: var(--space-3xs) var(--space-sm);
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--hairline);
+    font-size: var(--text-label);
+    letter-spacing: 0.02em;
+  }
+
+  .art-status .dot {
+    inline-size: 0.5rem;
+    block-size: 0.5rem;
+    border-radius: var(--radius-pill);
+    flex-shrink: 0;
+  }
+
+  .art-status.is-active {
+    color: var(--status-success);
+  }
+
+  .art-status.is-active .dot {
+    background-color: var(--status-success);
+  }
+
+  .art-status.is-archived {
+    color: var(--status-caution);
+    background-color: var(--surface-sunken);
+    border-color: var(--status-caution);
+  }
+
+  .art-status.is-archived .dot {
+    background-color: var(--status-caution);
+  }
+
+  .editor-note {
+    margin-block-start: var(--space-lg);
+    padding: var(--space-md) var(--space-lg);
+    border-inline-start: 3px solid var(--accent-text);
+    background-color: var(--surface-sunken);
+    border-radius: var(--radius-md);
+    color: var(--muted-text);
+    max-inline-size: var(--measure);
+    font-size: var(--text-label);
+  }
+
+  /* Section submenu ("On this page") — sticky side rail (Option A).
+     The rail column defaults to `stretch` so its grid cell is as tall as the
+     prose, letting `position: sticky` travel the full length of the article. */
+  .art-layout {
+    padding-block-start: var(--space-lg);
+  }
+
+  .art-layout.has-toc {
+    display: grid;
+    grid-template-columns: 250px minmax(0, 1fr);
+    gap: var(--space-2xl);
+  }
+
+  .art-toc {
+    position: sticky;
+    inset-block-start: 10rem;
+    align-self: start;
+  }
+
+  .art-toc__label {
+    font-size: var(--text-label);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--muted-text);
+    margin: 0 0 var(--space-sm);
+  }
+
+  /* The submenu is a <details> so it can collapse on mobile. On desktop it is
+     always open and the summary is inert (no toggle, no chevron). */
+  .art-toc__box summary.art-toc__label {
+    display: block;
+    list-style: none;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  .art-toc__box summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .art-toc__chev {
+    display: none;
+  }
+
+  .art-toc__box:not([open]) .art-toc__list {
+    display: grid;
+  }
+
+  .art-toc__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: toc;
+    display: grid;
+    gap: var(--space-3xs);
+  }
+
+  .art-toc__list li {
+    counter-increment: toc;
+  }
+
+  .art-toc__link {
+    display: flex;
+    gap: var(--space-sm);
+    text-decoration: none;
+    color: var(--accent-text);
+    padding: var(--space-2xs) var(--space-sm);
+    border-inline-start: 2px solid transparent;
+    border-radius: var(--radius-md);
+    line-height: 1.4;
+  }
+
+  .art-toc__link::before {
+    content: counter(toc, decimal-leading-zero);
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--muted-text);
+    padding-block-start: 0.2rem;
+  }
+
+  .art-toc__link:hover {
+    text-decoration: underline;
+  }
+
+  .art-toc__link[aria-current='true'] {
+    color: var(--main-text);
+    font-weight: 600;
+    border-inline-start-color: var(--accent-text);
+    background-color: var(--surface-sunken);
+  }
+
+  /* On narrower screens a side rail has nowhere to live, so it falls back to a
+     static full-width card above the prose (the previous magazine style). */
+  @media (max-width: 900px) {
+    .art-layout.has-toc {
+      display: block;
+    }
+
+    .art-toc {
+      position: static;
+      margin-block-end: var(--space-xl);
+    }
+
+    /* Collapsible tap-to-open card (starts open). */
+    .art-toc__box {
+      border: 1px solid var(--hairline);
+      border-radius: var(--radius-md);
+      background-color: var(--surface);
+      overflow: hidden;
+    }
+
+    .art-toc__box summary.art-toc__label {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-md);
+      margin: 0;
+      padding: var(--space-md) var(--space-lg);
+      cursor: pointer;
+      pointer-events: auto;
+    }
+
+    .art-toc__chev {
+      display: inline-block;
+      transition: transform 0.2s ease;
+    }
+
+    .art-toc__box[open] .art-toc__chev {
+      transform: rotate(180deg);
+    }
+
+    .art-toc__list {
+      display: block;
+      padding: 0 var(--space-lg) var(--space-md);
+    }
+
+    .art-toc__link,
+    .art-toc__link[aria-current='true'] {
+      border-inline-start: 0;
+    }
+  }
+
+  @media (max-width: 560px) {
+    .art-toc__list {
+      columns: 1;
+    }
+  }
+
+  .body {
+    padding-block: 0 var(--space-2xl);
+  }
+
+  /* Per-section layout: each ## section is its own block. Full width by
+     default. When a rail item is bound to the section's anchor the card floats
+     to the right and the section's body text wraps around it, then reclaims the
+     full width once it runs past the bottom of the card. The heading stays a
+     full-width block above the text so it always reads as the section title. */
+  .section-block {
+    margin-block-start: var(--space-2xl);
+  }
+
+  .section-block:first-child {
+    margin-block-start: 0;
+  }
+
+  /* Establish a block formatting context so the section fully contains its
+     floated card (no float bleeding into the next section). */
+  .section-block.has-rail {
+    display: flow-root;
+  }
+
+  .section-block.has-rail :global(.rail) {
+    float: inline-end;
+    inline-size: 360px;
+    max-inline-size: 42%;
+    margin-inline-start: var(--space-2xl);
+    margin-block-end: var(--space-lg);
+  }
+
+  /* Below this width a floated card leaves the text column too cramped, so the
+     card stops floating and drops to full width (see RailItem's own mobile
+     rules, which also drop its left divider). */
+  @media (max-width: 800px) {
+    .section-block.has-rail :global(.rail) {
+      float: none;
+      inline-size: 100%;
+      max-inline-size: none;
+      margin-inline-start: 0;
+    }
+
+    /* Article-type rail cards read as article content when they sit between the
+       heading and the body. On mobile only, stack the section as a flex column
+       and push the article card BELOW the body so it clearly reads as a
+       "Suggested reading" aside rather than part of the piece. Desktop (float)
+       and the other card types are untouched. */
+    .section-block.has-rail[data-rail-type='article'] {
+      display: flex;
+      flex-direction: column;
+    }
+    .section-block.has-rail[data-rail-type='article'] .sec-head {
+      order: 1;
+    }
+    .section-block.has-rail[data-rail-type='article'] .sec-body {
+      order: 2;
+    }
+    .section-block.has-rail[data-rail-type='article'] :global(.rail) {
+      order: 3;
+    }
+  }
+
+  /* Definitive end-of-article break: a strong rule that separates the article
+     body from the "More in …" links that follow. */
+  .art-end {
+    inline-size: min(100% - (2 * var(--space-lg)), 72rem);
+    margin-inline: auto;
+    margin-block: var(--space-2xl) 0;
+    border: 0;
+    border-block-start: 3px solid var(--main-text);
+  }
+
+  .section {
+    padding-block: var(--space-xl);
+  }
+
+  .section-title {
+    margin-block-end: var(--space-lg);
+  }
+
+  .grid {
+    display: grid;
+    gap: var(--space-lg);
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+  }
+</style>
+
+<style is:global>
+  .body h2 {
+    font-size: var(--text-h1);
+    margin-block: var(--space-2xl) var(--space-sm);
+    text-wrap: balance;
+  }
+
+  /* The first section heading should sit level with the top of the side rail,
+     not be pushed down by its own top margin. */
+  .body > :first-child {
+    margin-block-start: 0;
+  }
+
+  /* Section content is injected via set:html (unscoped), so cap the reading
+     measure and reset the section heading's top margin with global selectors.
+     The section-block already provides the inter-section gap, so the injected
+     h2 must not add its own 3rem top margin on top of it. */
+  .body .sec-head h2 {
+    margin-block-start: 0;
+  }
+
+  /* Full-width sections keep the comfortable reading measure on their text.
+     Two-column (has-rail) sections are constrained by the grid instead. */
+  .body .section-block.full > * {
+    max-inline-size: var(--measure);
+  }
+
+  .body h3 {
+    font-size: var(--text-h2);
+    margin-block: var(--space-xl) var(--space-sm);
+    text-wrap: balance;
+  }
+
+  .body p {
+    margin-block-end: var(--space-md);
+    line-height: 1.7;
+  }
+
+  .body ul,
+  .body ol {
+    margin-block-end: var(--space-md);
+    padding-inline-start: var(--space-lg);
+  }
+
+  .body li {
+    margin-block-end: var(--space-2xs);
+  }
+
+  .body strong {
+    color: var(--main-text);
+  }
+
+  .body a {
+    color: var(--accent-text);
+  }
+</style>
+
+<script>
+  // Progressive enhancement for the "On this page" submenu: highlight the entry
+  // whose section is currently in view. Plain anchor links still work without JS.
+  const links = Array.from(
+    document.querySelectorAll<HTMLAnchorElement>('[data-toc-link]')
+  )
+  if (links.length > 0 && 'IntersectionObserver' in window) {
+    const targets = links
+      .map((l) => document.getElementById(l.dataset.tocLink ?? ''))
+      .filter((el): el is HTMLElement => el !== null)
+    let currentId: string | null = null
+    const setCurrent = (id: string) => {
+      if (id === currentId) return
+      currentId = id
+      links.forEach((l) =>
+        l.setAttribute('aria-current', l.dataset.tocLink === id ? 'true' : 'false')
+      )
+    }
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((e) => e.isIntersecting)
+          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)
+        if (visible[0]) setCurrent(visible[0].target.id)
+      },
+      { rootMargin: '-20% 0px -70% 0px', threshold: 0 }
+    )
+    targets.forEach((t) => observer.observe(t))
+  }
+</script>

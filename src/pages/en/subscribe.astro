@@ -1,0 +1,93 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import SubscribeForm from '../../components/SubscribeForm.astro'
+import { messageForCode } from '../../lib/strings'
+import { type Locale, DEFAULT_LOCALE } from '../../lib/i18n'
+import { resolvedCatalogue } from '../../lib/catalogue'
+
+// Server-rendered so the no-JS redirect from /api/subscribe can show its
+// confirmation or error message without any client script. See docs/DECISIONS.md.
+export const prerender = false
+
+const locale = (Astro.currentLocale ?? DEFAULT_LOCALE) as Locale
+const strings = resolvedCatalogue(locale)
+
+const status = Astro.url.searchParams.get('status')
+const code = Astro.url.searchParams.get('code')
+
+let banner: { state: 'success' | 'error'; message: string } | null = null
+if (status === 'success') {
+  banner = { state: 'success', message: strings['form.success'] }
+} else if (status === 'error' && code) {
+  banner = { state: 'error', message: messageForCode(code) }
+}
+---
+
+<BaseLayout
+  title={strings['nav.subscribe']}
+  description="Join the Galing Gear list: preparedness guides and the gear that makes the difference for Filipino families — often and regular."
+  locale={locale}
+>
+  <section class="wrap subscribe-page">
+    <p class="eyebrow mono">{strings['subscribe.eyebrow']}</p>
+    <h1>{strings['subscribe.h1']}</h1>
+    <p class="lede">{strings['subscribe.lede']}</p>
+
+    {
+      banner && (
+        <p class={`banner banner-${banner.state}`} role="status" aria-live="polite">
+          {banner.message}
+        </p>
+      )
+    }
+
+    <SubscribeForm idPrefix="page" locale={locale} strings={strings} />
+  </section>
+</BaseLayout>
+
+<style>
+  .subscribe-page {
+    padding-block: var(--space-3xl) var(--space-4xl);
+    display: grid;
+    gap: var(--space-md);
+  }
+
+  .eyebrow {
+    font-size: var(--text-label);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent-text);
+  }
+
+  .subscribe-page h1 {
+    font-size: var(--text-display);
+    max-inline-size: 16ch;
+  }
+
+  .lede {
+    max-inline-size: var(--measure);
+    color: var(--muted-text);
+    font-size: var(--text-h2);
+    font-family: var(--font-display);
+    font-weight: 400;
+    line-height: 1.4;
+    margin-block-end: var(--space-md);
+  }
+
+  .banner {
+    padding: var(--space-md) var(--space-lg);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--hairline);
+    max-inline-size: 30rem;
+  }
+
+  .banner-success {
+    color: var(--status-success);
+    border-color: var(--status-success);
+  }
+
+  .banner-error {
+    color: var(--status-error);
+    border-color: var(--status-error);
+  }
+</style>

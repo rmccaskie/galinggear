@@ -1,0 +1,446 @@
+---
+import { getCollection } from 'astro:content'
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import ArticleCard from '../../components/ArticleCard.astro'
+import { SCENARIOS, SCENARIO_LABELS, SCENARIO_BLURBS } from '../../lib/scenarios'
+import { type Locale, DEFAULT_LOCALE } from '../../lib/i18n'
+import { resolvedCatalogue, fmt, plural } from '../../lib/catalogue'
+import { getTaglishMap, localiseArticleData } from '../../lib/article-locale'
+
+const locale = (Astro.currentLocale ?? DEFAULT_LOCALE) as Locale
+const strings = resolvedCatalogue(locale)
+const tlMap = await getTaglishMap()
+
+const all = await getCollection('articles')
+type Article = (typeof all)[number]
+
+const archivedAll = all.filter((a) => a.data.status === 'archived')
+
+function byDateDesc(a: Article, b: Article) {
+  return new Date(b.data.publishedAt).valueOf() - new Date(a.data.publishedAt).valueOf()
+}
+
+function heroOf(article: Article) {
+  return article.data.heroImage ?? article.data.heroGallery?.[0]?.src
+}
+
+function monthKey(dateStr: string) {
+  const d = new Date(dateStr)
+  if (Number.isNaN(d.valueOf())) return '0000-00'
+  return `${d.getUTCFullYear()}-${String(d.getUTCMonth() + 1).padStart(2, '0')}`
+}
+
+function monthLabel(dateStr: string) {
+  const d = new Date(dateStr)
+  if (Number.isNaN(d.valueOf())) return 'Undated'
+  return d.toLocaleDateString('en-GB', { month: 'long', year: 'numeric', timeZone: 'UTC' })
+}
+
+// Build the per-category structure: archived articles only, grouped by month (newest first).
+const categories = SCENARIOS.map((scenario) => {
+  const items = archivedAll.filter((a) => a.data.scenario === scenario).sort(byDateDesc)
+
+  const monthMap = new Map<string, { key: string; label: string; items: Article[] }>()
+  for (const article of items) {
+    const key = monthKey(article.data.publishedAt)
+    if (!monthMap.has(key)) {
+      monthMap.set(key, { key, label: monthLabel(article.data.publishedAt), items: [] })
+    }
+    monthMap.get(key)!.items.push(article)
+  }
+  const months = Array.from(monthMap.values()).sort((a, b) => (a.key < b.key ? 1 : -1))
+
+  return {
+    scenario,
+    label: SCENARIO_LABELS[scenario],
+    blurb: SCENARIO_BLURBS[scenario],
+    months,
+    count: items.length,
+  }
+})
+
+const totalArchived = archivedAll.length
+const withArchived = categories.filter((c) => c.count > 0)
+const defaultScenario = (withArchived[0] ?? categories[0]).scenario
+---
+
+<BaseLayout
+  title={strings['archive.h1']}
+  description="Older Galing Gear articles we've retired from the main listings, kept here so you can always browse back through them — pick a category, then a month."
+  locale={locale}
+>
+  <section class="wrap head">
+    <p class="eyebrow mono">{strings['archive.eyebrow']}</p>
+    <h1>{strings['archive.h1']}</h1>
+    <p class="blurb">{strings['archive.blurb']}</p>
+    <p class="counts mono">
+      {fmt(strings, 'archive.counts', {
+        total: String(totalArchived),
+        totalNoun: plural(strings, 'article', totalArchived),
+        cats: String(withArchived.length),
+        catsNoun: plural(strings, 'category', withArchived.length),
+      })}
+    </p>
+  </section>
+
+  {
+    totalArchived > 0 ? (
+      <div id="archive-root" data-default={defaultScenario}>
+        <nav class="wrap section-nav" aria-label="Archive categories">
+          <ul class="cat-nav" role="list">
+            {withArchived.map((cat) => (
+              <li>
+                <a
+                  class="cat-pill mono"
+                  href={`#cat-${cat.scenario}`}
+                  data-scenario={cat.scenario}
+                  aria-current={cat.scenario === defaultScenario ? 'true' : undefined}
+                >
+                  {cat.label}
+                  <span class="pill-count">{cat.count}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        <section class="wrap section">
+          {withArchived.map((cat) => (
+            <section
+              class:list={['category', { 'is-selected': cat.scenario === defaultScenario }]}
+              id={`cat-${cat.scenario}`}
+              data-scenario={cat.scenario}
+            >
+              <div class="cat-head">
+                <h2 class="cat-title">
+                  <a href={`/${cat.scenario}/`}>{cat.label}</a>
+                </h2>
+                <p class="cat-blurb">{cat.blurb}</p>
+                <p class="cat-counts mono">
+                  {cat.months.length > 0
+                    ? fmt(strings, 'archive.cat_counts_months', {
+                        count: String(cat.count),
+                        countNoun: plural(strings, 'article', cat.count),
+                        months: String(cat.months.length),
+                        monthsNoun: plural(strings, 'month', cat.months.length),
+                      })
+                    : fmt(strings, 'archive.cat_counts', {
+                        count: String(cat.count),
+                        countNoun: plural(strings, 'article', cat.count),
+                      })}
+                </p>
+              </div>
+
+              {cat.months.length > 0 ? (
+                <ul class="month-list" role="list">
+                  {cat.months.map((month, i) => (
+                    <li>
+                      <details class="month" open={i === 0}>
+                        <summary>
+                          <span class="month-label">{month.label}</span>
+                          <span class="month-count mono">
+                            {month.items.length} {plural(strings, 'article', month.items.length)}
+                          </span>
+                          <span class="month-chevron" aria-hidden="true" />
+                        </summary>
+                        <div class="archived-grid">
+                          {month.items.map((article) => {
+                            const d = localiseArticleData(article, locale, tlMap)
+                            return (
+                              <ArticleCard
+                                title={d.title}
+                                description={d.description}
+                                scenario={d.scenario}
+                                publishedAt={d.publishedAt}
+                                slug={article.id}
+                                heroImage={d.heroImage ?? d.heroGallery?.[0]?.src}
+                                articleType={d.articleType}
+                                status="archived"
+                              />
+                            )
+                          })}
+                        </div>
+                      </details>
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p class="empty-cat">{fmt(strings, 'archive.empty_cat', { category: cat.label })}</p>
+              )}
+            </section>
+          ))}
+        </section>
+      </div>
+    ) : (
+      <section class="wrap section">
+        <p class="empty">{strings['archive.empty']}</p>
+      </section>
+    )
+  }
+</BaseLayout>
+
+<script is:inline>
+  ;(function () {
+    const root = document.getElementById('archive-root')
+    if (!root) return
+
+    const pills = Array.from(root.querySelectorAll('.cat-pill'))
+    const cats = Array.from(root.querySelectorAll('.category'))
+    const known = new Set(cats.map((c) => c.getAttribute('data-scenario')))
+
+    function select(scenario) {
+      cats.forEach((c) => {
+        c.classList.toggle('is-selected', c.getAttribute('data-scenario') === scenario)
+      })
+      pills.forEach((p) => {
+        if (p.getAttribute('data-scenario') === scenario) {
+          p.setAttribute('aria-current', 'true')
+        } else {
+          p.removeAttribute('aria-current')
+        }
+      })
+    }
+
+    root.setAttribute('data-enhanced', '')
+
+    const fromHash = (location.hash || '').replace(/^#cat-/, '')
+    const initial = known.has(fromHash) ? fromHash : root.dataset.default
+    if (initial) select(initial)
+
+    pills.forEach((p) => {
+      p.addEventListener('click', (e) => {
+        const scenario = p.getAttribute('data-scenario')
+        if (!scenario) return
+        e.preventDefault()
+        select(scenario)
+        history.replaceState(null, '', `#cat-${scenario}`)
+      })
+    })
+
+    window.addEventListener('hashchange', () => {
+      const s = (location.hash || '').replace(/^#cat-/, '')
+      if (known.has(s)) select(s)
+    })
+  })()
+</script>
+
+<style>
+  .head {
+    padding-block: var(--space-3xl) var(--space-md);
+  }
+
+  .eyebrow {
+    font-size: var(--text-label);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent-text);
+    margin-block-end: var(--space-sm);
+  }
+
+  .head h1 {
+    font-size: var(--text-display);
+  }
+
+  .blurb {
+    margin-block-start: var(--space-md);
+    max-inline-size: var(--measure);
+    color: var(--muted-text);
+    font-size: var(--text-h2);
+    font-family: var(--font-display);
+    font-weight: 400;
+    line-height: 1.4;
+  }
+
+  .counts {
+    margin-block-start: var(--space-md);
+    font-size: var(--text-label);
+    color: var(--muted-text);
+  }
+
+  .section-nav {
+    padding-block: var(--space-lg) 0;
+  }
+
+  .cat-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+  }
+
+  .cat-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2xs);
+    font-size: var(--text-label);
+    line-height: 1;
+    padding: var(--space-xs) var(--space-sm);
+    border: 1px solid var(--hairline);
+    border-radius: var(--radius-pill);
+    background: var(--surface);
+    color: var(--accent-text);
+    text-decoration: none;
+    transition: border-color 0.15s ease, background 0.15s ease, color 0.15s ease;
+  }
+
+  .cat-pill:hover {
+    border-color: var(--accent-text);
+  }
+
+  .cat-pill[aria-current='true'] {
+    background: var(--accent-text);
+    border-color: var(--accent-text);
+    color: var(--surface);
+  }
+
+  .pill-count {
+    font-size: 0.72em;
+    padding: 0 var(--space-2xs);
+    min-inline-size: 1.4em;
+    text-align: center;
+    border-radius: var(--radius-pill);
+    background: var(--surface-sunken);
+    color: var(--muted-text);
+  }
+
+  .cat-pill[aria-current='true'] .pill-count {
+    background: rgba(255, 255, 255, 0.22);
+    color: var(--surface);
+  }
+
+  .section {
+    padding-block: var(--space-lg) var(--space-3xl);
+  }
+
+  /* Progressive enhancement: with JS, show only the selected category. */
+  #archive-root[data-enhanced] .category {
+    display: none;
+  }
+
+  #archive-root[data-enhanced] .category.is-selected {
+    display: block;
+  }
+
+  /* No-JS fallback: all categories stacked with dividers between them. */
+  .category + .category {
+    margin-block-start: var(--space-3xl);
+    padding-block-start: var(--space-2xl);
+    border-block-start: 1px solid var(--hairline);
+  }
+
+  #archive-root[data-enhanced] .category + .category {
+    margin-block-start: 0;
+    padding-block-start: 0;
+    border-block-start: none;
+  }
+
+  .cat-head {
+    max-inline-size: var(--measure);
+  }
+
+  .cat-title {
+    font-size: var(--text-h1);
+  }
+
+  .cat-title a {
+    color: var(--main-text);
+    text-decoration: none;
+  }
+
+  .cat-title a:hover {
+    color: var(--accent-text);
+    text-decoration: underline;
+  }
+
+  .cat-blurb {
+    margin-block-start: var(--space-2xs);
+    color: var(--muted-text);
+  }
+
+  .cat-counts {
+    margin-block-start: var(--space-xs);
+    font-size: var(--text-label);
+    color: var(--muted-text);
+  }
+
+  .month-list {
+    display: grid;
+    gap: var(--space-sm);
+    margin-block-start: var(--space-lg);
+  }
+
+  .month {
+    border: none;
+    border-radius: var(--radius-md);
+    background: var(--surface);
+    box-shadow: var(--card-shadow);
+    overflow: hidden;
+  }
+
+  .month summary {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-md) var(--space-lg);
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .month summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .month-label {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: var(--text-h2);
+    line-height: 1.2;
+  }
+
+  .month-count {
+    font-size: var(--text-label);
+    color: var(--muted-text);
+    padding: 0 var(--space-xs);
+    border-radius: var(--radius-pill);
+    background: var(--surface-sunken);
+  }
+
+  .month-chevron {
+    margin-inline-start: auto;
+    inline-size: 0.6rem;
+    block-size: 0.6rem;
+    border-right: 2px solid var(--muted-text);
+    border-bottom: 2px solid var(--muted-text);
+    transform: rotate(45deg);
+    transition: transform 0.2s ease;
+  }
+
+  .month[open] .month-chevron {
+    transform: rotate(-135deg);
+  }
+
+  .archived-grid {
+    display: grid;
+    gap: var(--space-lg);
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr));
+    padding: 0 var(--space-lg) var(--space-lg);
+  }
+
+  .empty-cat,
+  .empty {
+    color: var(--muted-text);
+    font-size: var(--text-h2);
+    font-family: var(--font-display);
+    margin-block-start: var(--space-md);
+  }
+
+  @media (max-width: 40rem) {
+    .month summary {
+      flex-wrap: wrap;
+      gap: var(--space-2xs) var(--space-sm);
+    }
+
+    .month-chevron {
+      margin-inline-start: auto;
+    }
+  }
+</style>
