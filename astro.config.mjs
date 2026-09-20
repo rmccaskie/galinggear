@@ -33,4 +33,18 @@ export default defineConfig({
   site: 'https://galinggear.com',
   server: { allowedHosts: true },
   vite: { plugins: [shimCreateRequire()] },
+
+  // i18n — path-prefix routing.
+  // Bare tree = Taglish (default); /en/ = English.
+  // See docs/I18N-REGISTERS.md and src/lib/i18n.ts.
+  i18n: {
+    defaultLocale: 'taglish',
+    locales: ['taglish', 'en'],
+    routing: {
+      prefixDefaultLocale: false,
+      // Taglish → English fallback is handled at the content level in page
+      // code (not Astro’s routing fallback) because the default locale cannot
+      // be a fallback key. See src/lib/i18n.ts fallbackOrder().
+    },
+  },
 })
