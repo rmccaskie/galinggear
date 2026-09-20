@@ -10,8 +10,28 @@ scenario: pantry-food
 publishedAt: '2026-09-20'
 featured: false
 status: active
+updatedAt: '2026-09-20'
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789912348855-rnq7y7.png'
+railItems:
+  - type: article
+    assetId: 7705113e-5628-4280-afed-fe8f56e1c79e
+    anchor: variations--conditions
+    label: Read First
+    title: When the tap runs brown after a typhoon
+    slug: how-to-make-floodwater-safe-to-drink-pre-filter-treat-store
+    description: >-
+      Boiling alone will not fix silty floodwater, and chlorine tablets fail in
+      cloudy water — here is the order that actually works at home.
+  - type: article
+    assetId: 62b32520-4f82-4b3a-9548-9397ae38e798
+    anchor: the-method
+    label: When Evacuation Fails
+    title: 'Trapped at home as the water rises: what to do first'
+    slug: how-to-shelter-in-place-when-floodwater-has-you-trapped-at-home
+    description: >-
+      A calm, room-by-room plan for Filipino households who can no longer leave
+      — cutting power safely, protecting food and papers, and staying informed.
 ---
 
 ## What you'll be able to do — and why it matters
