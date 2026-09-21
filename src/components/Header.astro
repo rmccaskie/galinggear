@@ -1,6 +1,6 @@
 ---
 import { getCollection } from 'astro:content'
-import { SCENARIO_LABELS, getNavScenarios } from '../lib/scenarios'
+import { scenarioLabel, getNavScenarios } from '../lib/scenarios'
 import type { Locale } from '../lib/i18n'
 import type { CatalogueKey } from '../lib/catalogue'
 import LocaleSwitcher from './LocaleSwitcher.astro'
@@ -59,7 +59,7 @@ const hasArchived = allArticles.some((a) => a.data.status === 'archived')
       {
         primary.map((scenario) => (
           <li>
-            <a href={`/${scenario}/`}>{SCENARIO_LABELS[scenario]}</a>
+            <a href={`/${scenario}/`}>{scenarioLabel(scenario, locale)}</a>
           </li>
         ))
       }
@@ -80,7 +80,7 @@ const hasArchived = allArticles.some((a) => a.data.status === 'archived')
               <ul role="list">
                 {secondary.map((scenario) => (
                   <li>
-                    <a href={`/${scenario}/`}>{SCENARIO_LABELS[scenario]}</a>
+                    <a href={`/${scenario}/`}>{scenarioLabel(scenario, locale)}</a>
                   </li>
                 ))}
               </ul>
@@ -120,7 +120,7 @@ const hasArchived = allArticles.some((a) => a.data.status === 'archived')
       {
         primary.map((scenario) => (
           <li>
-            <a href={`/${scenario}/`}>{SCENARIO_LABELS[scenario]}</a>
+            <a href={`/${scenario}/`}>{scenarioLabel(scenario, locale)}</a>
           </li>
         ))
       }
@@ -132,7 +132,7 @@ const hasArchived = allArticles.some((a) => a.data.status === 'archived')
       {
         secondary.map((scenario) => (
           <li>
-            <a href={`/${scenario}/`}>{SCENARIO_LABELS[scenario]}</a>
+            <a href={`/${scenario}/`}>{scenarioLabel(scenario, locale)}</a>
           </li>
         ))
       }
