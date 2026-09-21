@@ -12,11 +12,12 @@ railItems:
     label: Packing together
     image: 'https://images.galinggear.com/library/generated-1789813245184-t6qxbl.png'
     alt: >-
-      A Filipino couple kneeling on an apartment floor beside two open go bags
-      with clothing, water bottles, torch and first-aid pouch laid out.
+      Isang Pilipinong couple na naka-kneel sa sahig ng apartment nila, katabi
+      ang dalawang bukas na go bag na may laman na damit, tubig, torch, at
+      first-aid pouch.
     caption: >-
-      Two bags, one shared plan: laying everything out on the floor before it
-      goes back in.
+      Dalawang bag, isang plano: inilatag muna lahat sa sahig bago ibalik sa
+      loob.
 ---
 
 ## Overview
