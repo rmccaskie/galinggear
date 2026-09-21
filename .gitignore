@@ -26,3 +26,7 @@ pnpm-debug.log*
 # Cloudflare / Wrangler
 .wrangler/
 .dev.vars
+
+# Auto-generated preview artifacts for content .md files — never commit
+src/content/**/*.docx
+src/content/**/*.pdf
