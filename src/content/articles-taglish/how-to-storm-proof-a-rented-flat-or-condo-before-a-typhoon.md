@@ -10,21 +10,22 @@ railItems:
     assetId: 70536d12-c832-4fc1-bda0-bcd9d230d4dc
     anchor: the-method-24-hours-out-to-the-first-strong-gusts
     label: Before The Bulletin
-    title: 'Signal No. 2 na, huli ka na para mag-prep'
+    title: Late na 'yung Signal No. 2 para magsimula ka mag-prep
     slug: pagasa-wind-signals-1-to-5-what-to-actually-do-at-each-level
     description: >-
-      Sa oras na ma-raise na ang signal sa probinsya mo, may pila na sa hardware
-      store — ito ang actual na lead time na binibigay sa'yo ng bawat level.
+      Sa oras na ma-raise 'yung signal sa province mo, naka-pila na 'yung mga
+      tao sa hardware store — ito 'yung actual lead time na binibigay sa 'yo ng
+      bawat level.
   - type: article
     assetId: 1659c975-3f01-4692-aff3-7a1410a4d411
     anchor: what-you-need
     label: Before The Signal
-    title: 'Dalawang tao, isang plano: ang madalas na mali ng mga couple'
+    title: 'Dalawang tao, isang plano: ''yung madalas na mali sa mga couples'
     slug: building-a-go-bag-for-two-a-practical-guide-for-couples-in-the-philippines
     description: >-
-      Madali lang mag-pack ng dalawang magkahiwalay na bag; ang mahirap, gawin
-      itong pwedeng gamitin ng isa kahit mag-isa — at ito nga 'yung karaniwang
-      'di na-rerehearse ng kahit sino.
+      Madali lang mag-pack ng dalawang hiwalay na bag; ang mahirap, gawin itong
+      pareho na kayang gamitin kahit isa lang sa inyo ang meron nito — at ito
+      'yung bagay na kadalasan 'di na-rerehearse.
 ---
 
 ## Ano ang magagawa mo — at bakit importante ito
