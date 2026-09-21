@@ -79,6 +79,24 @@ const { headings } = await render(renderTarget)
 // Astro auto-assigns each heading a slug id, so the anchors already exist.
 const toc = headings.filter((h) => h.depth === 2)
 
+// Anchor remap for non-English locales: the baked rail anchors are the ENGLISH
+// section slugs, but the Taglish body's headings auto-generate Tagalog slugs, so
+// the anchors never match the rendered <h2 id>. Pair the two heading lists by
+// order (both bodies mirror the same sections) to map each English anchor to the
+// matching Taglish section id, so rail cards bind to the right Taglish section.
+let anchorRemap: Map<string, string> | null = null
+if (locale !== 'en' && tlEntry) {
+  const { headings: enHeadings } = await render(article)
+  const enSlugs = enHeadings.filter((h) => h.depth === 2).map((h) => h.slug)
+  const tlSlugs = headings.filter((h) => h.depth === 2).map((h) => h.slug)
+  anchorRemap = new Map<string, string>()
+  for (let i = 0; i < Math.min(enSlugs.length, tlSlugs.length); i++) {
+    if (enSlugs[i]) anchorRemap.set(enSlugs[i], tlSlugs[i])
+  }
+}
+const remapAnchor = (anchor: string | undefined) =>
+  anchorRemap && anchor ? anchorRemap.get(anchor) ?? anchor : anchor
+
 // Per-section layout: split the rendered body HTML at each top-level <h2 id>.
 // Content before the first heading is an intro (full width). Each section then
 // renders full width, or two-column when a rail item is bound to its anchor.
@@ -114,6 +132,7 @@ const localeRailItems: RailItemData[] = ((locData.railItems ?? []) as RailItemDa
       const tlTarget = locale !== 'en' ? tlMap.get(target.id) : undefined
       return {
         ...item,
+        anchor: remapAnchor(item.anchor),
         resolved: {
           title: item.title ?? tlTarget?.data.title ?? target.data.title,
           description: item.description ?? tlTarget?.data.description ?? target.data.description,
@@ -125,7 +144,7 @@ const localeRailItems: RailItemData[] = ((locData.railItems ?? []) as RailItemDa
         },
       }
     }
-    return item
+    return { ...item, anchor: remapAnchor(item.anchor) }
   })
   .filter((x): x is RailItemData => x !== null)
 const railFor = (id: string) => localeRailItems.find((r) => r.anchor && r.anchor === id) ?? null
