@@ -1,13 +1,14 @@
 ---
 import { scenarioLabel, getNavScenarios } from '../lib/scenarios'
 import type { CatalogueKey } from '../lib/catalogue'
-import type { Locale } from '../lib/i18n'
+import { localisedPath, type Locale } from '../lib/i18n'
 
 interface Props {
   locale: Locale
   strings: Record<CatalogueKey, string>
 }
 const { locale, strings } = Astro.props
+const lp = (p: string) => localisedPath(locale, p)
 
 const { primary, secondary } = await getNavScenarios()
 const footerScenarios = [...primary, ...secondary]
@@ -28,7 +29,7 @@ const contactEmail = strings['footer.contact_email']
           {
             footerScenarios.map((scenario) => (
               <li>
-                <a href={`/${scenario}/`} class="pill">
+                <a href={lp(`/${scenario}/`)} class="pill">
                   {scenarioLabel(scenario, locale)}
                 </a>
               </li>

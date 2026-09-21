@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content'
 import BaseLayout from '../../layouts/BaseLayout.astro'
 import ArticleCard from '../../components/ArticleCard.astro'
 import { SCENARIOS, scenarioLabel, scenarioBlurb } from '../../lib/scenarios'
-import { type Locale, DEFAULT_LOCALE } from '../../lib/i18n'
+import { type Locale, DEFAULT_LOCALE, localisedPath } from '../../lib/i18n'
 import { resolvedCatalogue, fmt, plural } from '../../lib/catalogue'
 import { getTaglishMap, localiseArticleData } from '../../lib/article-locale'
 
@@ -113,7 +113,7 @@ const defaultScenario = (withArchived[0] ?? categories[0]).scenario
             >
               <div class="cat-head">
                 <h2 class="cat-title">
-                  <a href={`/${cat.scenario}/`}>{cat.label}</a>
+                  <a href={localisedPath(locale, `/${cat.scenario}/`)}>{cat.label}</a>
                 </h2>
                 <p class="cat-blurb">{cat.blurb}</p>
                 <p class="cat-counts mono">

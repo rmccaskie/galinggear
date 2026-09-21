@@ -5,7 +5,7 @@ import ScenarioNav from '../../components/ScenarioNav.astro'
 import ArticleCard from '../../components/ArticleCard.astro'
 import { SCENARIOS, scenarioLabel, scenarioBlurb } from '../../lib/scenarios'
 import type { Scenario } from '../../lib/scenarios'
-import { type Locale, DEFAULT_LOCALE } from '../../lib/i18n'
+import { type Locale, DEFAULT_LOCALE, localisedPath } from '../../lib/i18n'
 import { resolvedCatalogue, fmt, plural } from '../../lib/catalogue'
 import { getTaglishMap, localiseArticleData } from '../../lib/article-locale'
 
@@ -83,7 +83,7 @@ const tlMap = await getTaglishMap()
   {
     archivedCount > 0 && (
       <section class="wrap section archive-cta">
-        <a class="archive-link" href={`/archive#cat-${scenario}`}>
+        <a class="archive-link" href={localisedPath(locale, `/archive#cat-${scenario}`)}>
           {fmt(strings, 'scenario.archive_link', { label })}
           <span aria-hidden="true">&rarr;</span>
         </a>

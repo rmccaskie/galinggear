@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content'
 import { scenarioLabel, getNavScenarios } from '../lib/scenarios'
-import type { Locale } from '../lib/i18n'
+import { localisedPath, type Locale } from '../lib/i18n'
 import type { CatalogueKey } from '../lib/catalogue'
 import LocaleSwitcher from './LocaleSwitcher.astro'
 
@@ -13,6 +13,8 @@ interface Props {
 }
 
 const { locale, strings, currentPath = '/' } = Astro.props
+// Localise internal links so the active locale (e.g. /en) sticks across navigation.
+const lp = (p: string) => localisedPath(locale, p)
 const { primary, secondary } = await getNavScenarios()
 const allArticles = await getCollection('articles')
 const hasArchived = allArticles.some((a) => a.data.status === 'archived')
@@ -20,14 +22,14 @@ const hasArchived = allArticles.some((a) => a.data.status === 'archived')
 
 <header class="site-header">
   <div class="bar wrap">
-    <a class="brand" href="/" aria-label={strings['nav.home_aria']}>
+    <a class="brand" href={lp("/")} aria-label={strings['nav.home_aria']}>
       <img class="brand-logo brand-logo--light" src="/brand/logo-on-light.svg?v=2" alt={strings['brand.name']} width="200" height="52" />
       <img class="brand-logo brand-logo--dark" src="/brand/logo-on-dark.svg?v=2" alt={strings['brand.name']} width="200" height="52" />
       <span class="tagline">{strings['brand.tagline']}</span>
     </a>
 
     <div class="actions">
-      <a class="btn btn-primary subscribe-cta" href="/subscribe/">{strings['nav.subscribe']}</a>
+      <a class="btn btn-primary subscribe-cta" href={lp("/subscribe/")}>{strings['nav.subscribe']}</a>
 
       <span class="header-locale">
         <LocaleSwitcher locale={locale} path={currentPath} />
@@ -61,7 +63,7 @@ const hasArchived = allArticles.some((a) => a.data.status === 'archived')
       {
         primary.map((scenario) => (
           <li>
-            <a href={`/${scenario}/`}>{scenarioLabel(scenario, locale)}</a>
+            <a href={lp(`/${scenario}/`)}>{scenarioLabel(scenario, locale)}</a>
           </li>
         ))
       }
@@ -82,7 +84,7 @@ const hasArchived = allArticles.some((a) => a.data.status === 'archived')
               <ul role="list">
                 {secondary.map((scenario) => (
                   <li>
-                    <a href={`/${scenario}/`}>{scenarioLabel(scenario, locale)}</a>
+                    <a href={lp(`/${scenario}/`)}>{scenarioLabel(scenario, locale)}</a>
                   </li>
                 ))}
               </ul>
@@ -92,7 +94,7 @@ const hasArchived = allArticles.some((a) => a.data.status === 'archived')
       }
       {hasArchived && (
         <li>
-          <a href="/archive/">{strings['nav.archive']}</a>
+          <a href={lp("/archive/")}>{strings['nav.archive']}</a>
         </li>
       )}
     </ul>
@@ -122,7 +124,7 @@ const hasArchived = allArticles.some((a) => a.data.status === 'archived')
       {
         primary.map((scenario) => (
           <li>
-            <a href={`/${scenario}/`}>{scenarioLabel(scenario, locale)}</a>
+            <a href={lp(`/${scenario}/`)}>{scenarioLabel(scenario, locale)}</a>
           </li>
         ))
       }
@@ -134,7 +136,7 @@ const hasArchived = allArticles.some((a) => a.data.status === 'archived')
       {
         secondary.map((scenario) => (
           <li>
-            <a href={`/${scenario}/`}>{scenarioLabel(scenario, locale)}</a>
+            <a href={lp(`/${scenario}/`)}>{scenarioLabel(scenario, locale)}</a>
           </li>
         ))
       }
@@ -142,12 +144,12 @@ const hasArchived = allArticles.some((a) => a.data.status === 'archived')
         <Fragment>
           <li class="drawer-divider" aria-hidden="true"></li>
           <li>
-            <a href="/archive/">{strings['nav.archive']}</a>
+            <a href={lp("/archive/")}>{strings['nav.archive']}</a>
           </li>
         </Fragment>
       )}
       <li>
-        <a class="drawer-subscribe" href="/subscribe/">{strings['nav.subscribe']}</a>
+        <a class="drawer-subscribe" href={lp("/subscribe/")}>{strings['nav.subscribe']}</a>
       </li>
       <li class="drawer-divider" aria-hidden="true"></li>
       <li class="drawer-locale">

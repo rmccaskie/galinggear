@@ -2,7 +2,7 @@
 import { scenarioLabel } from '../lib/scenarios'
 import type { Scenario } from '../lib/scenarios'
 import type { CatalogueKey } from '../lib/catalogue'
-import type { Locale } from '../lib/i18n'
+import { localisedPath, DEFAULT_LOCALE, type Locale } from '../lib/i18n'
 
 interface Props {
   title: string
@@ -19,6 +19,7 @@ interface Props {
 }
 
 const { title, description, scenario, publishedAt, slug, featured = false, heroImage, status, articleType, locale, strings } = Astro.props
+const lp = (p: string) => localisedPath(locale ?? DEFAULT_LOCALE, p)
 
 const readLabel =
   articleType === 'review'
@@ -36,13 +37,13 @@ const publishedLabel = Number.isNaN(published.valueOf())
 <article class:list={['card', { featured, 'has-thumb': heroImage }]}>
   {
     heroImage && (
-      <a class="thumb" href={`/articles/${slug}/`} aria-hidden="true" tabindex="-1">
+      <a class="thumb" href={lp(`/articles/${slug}/`)} aria-hidden="true" tabindex="-1">
         <img src={heroImage} alt="" loading="lazy" />
       </a>
     )
   }
   <div class="meta-row">
-    <a class="scenario mono" href={`/${scenario}/`}>{scenarioLabel(scenario, locale)}</a>
+    <a class="scenario mono" href={lp(`/${scenario}/`)}>{scenarioLabel(scenario, locale)}</a>
     {status && (
       <span class:list={['status-pill', 'mono', status === 'archived' ? 'is-archived' : 'is-active']}>
         {status === 'archived' ? (strings?.['card.status_archived'] ?? 'Archived') : (strings?.['card.status_current'] ?? 'Current')}
@@ -50,12 +51,12 @@ const publishedLabel = Number.isNaN(published.valueOf())
     )}
   </div>
   <h3 class="title">
-    <a href={`/articles/${slug}/`}>{title}</a>
+    <a href={lp(`/articles/${slug}/`)}>{title}</a>
   </h3>
   <p class="description">{description}</p>
   <div class="foot">
     <time class="mono" datetime={publishedAt}>{publishedLabel}</time>
-    <a class="read" href={`/articles/${slug}/`}>{readLabel}</a>
+    <a class="read" href={lp(`/articles/${slug}/`)}>{readLabel}</a>
   </div>
 </article>
 

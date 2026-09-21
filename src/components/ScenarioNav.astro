@@ -1,7 +1,7 @@
 ---
 import { scenarioLabel, getNavScenarios } from '../lib/scenarios'
 import type { CatalogueKey } from '../lib/catalogue'
-import type { Locale } from '../lib/i18n'
+import { localisedPath, DEFAULT_LOCALE, type Locale } from '../lib/i18n'
 
 interface Props {
   active?: string
@@ -10,6 +10,7 @@ interface Props {
 }
 
 const { active, locale, strings } = Astro.props
+const lp = (p: string) => localisedPath(locale ?? DEFAULT_LOCALE, p)
 const { primary, secondary } = await getNavScenarios()
 // If the active scenario is a secondary one, surface it inline too so the
 // current page always shows an active pill without opening the dropdown.
@@ -26,7 +27,7 @@ const dropdown = secondary.filter((s) => s !== active)
       inline.map((scenario) => (
         <li>
           <a
-            href={`/${scenario}/`}
+            href={lp(`/${scenario}/`)}
             class="pill"
             aria-current={scenario === active ? 'page' : undefined}
           >
@@ -52,7 +53,7 @@ const dropdown = secondary.filter((s) => s !== active)
             <ul role="list">
               {dropdown.map((scenario) => (
                 <li>
-                  <a href={`/${scenario}/`} aria-current={scenario === active ? 'page' : undefined}>
+                  <a href={lp(`/${scenario}/`)} aria-current={scenario === active ? 'page' : undefined}>
                     {scenarioLabel(scenario, locale)}
                   </a>
                 </li>

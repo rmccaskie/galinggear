@@ -4,7 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro'
 import ArticleCard from '../ArticleCard.astro'
 import SubscribeForm from '../SubscribeForm.astro'
 import featuredOrder from '../../data/featured.json'
-import { type Locale, DEFAULT_LOCALE } from '../../lib/i18n'
+import { type Locale, DEFAULT_LOCALE, localisedPath } from '../../lib/i18n'
 import { resolvedCatalogue } from '../../lib/catalogue'
 import { getTaglishMap, localiseArticleData } from '../../lib/article-locale'
 
@@ -43,7 +43,7 @@ const loc = (a: typeof articles[number]) => localiseArticleData(a, locale, tlMap
       <p class="eyebrow mono">{strings['home.eyebrow']}</p>
       <h1>{strings['home.h1']}</h1>
       <p class="lede">{strings['home.lede']}</p>
-      <a class="btn btn-primary" href="/subscribe/">{strings['home.cta']}</a>
+      <a class="btn btn-primary" href={localisedPath(locale, "/subscribe/")}>{strings["home.cta"]}</a>
     </div>
   </section>
 

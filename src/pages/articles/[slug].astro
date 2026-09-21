@@ -5,7 +5,7 @@ import ArticleCard from '../../components/ArticleCard.astro'
 import RailItem from '../../components/RailItem.astro'
 import type { RailItemData } from '../../components/RailItem.astro'
 import { scenarioLabel } from '../../lib/scenarios'
-import { type Locale, DEFAULT_LOCALE } from '../../lib/i18n'
+import { type Locale, DEFAULT_LOCALE, localisedPath, URL_PREFIX } from '../../lib/i18n'
 import { resolvedCatalogue, fmt } from '../../lib/catalogue'
 import { getTaglishMap, localiseArticleData, getTaglishEntry } from '../../lib/article-locale'
 
@@ -100,7 +100,20 @@ const remapAnchor = (anchor: string | undefined) =>
 // Per-section layout: split the rendered body HTML at each top-level <h2 id>.
 // Content before the first heading is an intro (full width). Each section then
 // renders full width, or two-column when a rail item is bound to its anchor.
-const bodyHtml = renderTarget.rendered?.html ?? ''
+const rawBodyHtml = renderTarget.rendered?.html ?? ''
+// Localise internal links in the article body so they keep the active locale
+// prefix (e.g. /en). Skips external, protocol-relative, anchor, and already-
+// prefixed links. On the default (Taglish/bare) locale this is a no-op.
+const localiseBodyLinks = (html: string): string => {
+  const prefix = URL_PREFIX[locale]
+  if (!prefix) return html
+  return html.replace(/href="(\/[^"]*)"/g, (m, path) => {
+    if (path.startsWith('//')) return m
+    if (path === prefix || path.startsWith(prefix + '/')) return m
+    return `href="${prefix}${path}"`
+  })
+}
+const bodyHtml = localiseBodyLinks(rawBodyHtml)
 const sectionParts = bodyHtml.split(/(?=<h2[\s>])/i)
 let intro = ''
 const sections: { id: string; headingHtml: string; bodyHtml: string }[] = []
@@ -173,7 +186,7 @@ function fmtDate(date: string) {
 <BaseLayout title={title} description={description} type="article" locale={locale}>
   <article>
     <header class="wrap art-head">
-      <a class="scenario mono" href={`/${scenario}/`}>{scenarioLabel(scenario, locale)}</a>
+      <a class="scenario mono" href={localisedPath(locale, `/${scenario}/`)}>{scenarioLabel(scenario, locale)}</a>
       <h1>{title}</h1>
       <p class="description">{description}</p>
       <div class="dates mono">

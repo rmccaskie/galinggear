@@ -41,6 +41,8 @@ const barePath = prefix && rawPath.startsWith(prefix) ? rawPath.slice(prefix.len
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="theme-color" content="#0F5C63" />
     <meta name="generator" content={Astro.generator} />
+    <!-- Stop Chrome/Google offering to auto-translate the site (Taglish is intentional copy, not "untranslated" English). -->
+    <meta name="google" content="notranslate" />
 
     <!-- Apply theme before paint to avoid a flash. -->
     <script is:inline>
