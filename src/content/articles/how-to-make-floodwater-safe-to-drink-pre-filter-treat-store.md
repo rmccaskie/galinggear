@@ -9,6 +9,7 @@ scenario: clean-water
 publishedAt: '2026-09-20'
 featured: false
 status: active
+updatedAt: '2026-09-21'
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789898259348-8pf7ur.png'
 railItems:
@@ -21,6 +22,28 @@ railItems:
     description: >-
       Packing two separate bags is easy; packing so either one works alone is
       harder, and it is usually the thing nobody rehearses.
+  - type: image
+    assetId: 432cf5c5-5f0d-4e03-a9a6-012691d37cd9
+    anchor: the-method
+    label: Keeping it safe
+    image: 'https://images.galinggear.com/library/generated-1789898898912-e6ktsa.png'
+    alt: >-
+      Capped water containers and a steel jug stored in shade on a concrete
+      terrace
+    caption: >-
+      Store treated water capped, narrow-necked and out of sunlight — heat and
+      light shorten its life.
+  - type: article
+    assetId: 3606c02f-716d-47d0-8ca2-a6d146936c0f
+    anchor: variations--conditions
+    label: Know The Signs
+    title: The fever after a flood that should not wait until Monday
+    slug: >-
+      leptospirosis-after-the-flood-what-to-do-if-you-ve-already-waded-through-it
+    description: >-
+      Most post-flood fevers are harmless, but a few patterns warrant the
+      same-day trip to the clinic — learn to tell the difference before the next
+      habagat.
 ---
 
 ## What you'll be able to do — and why it matters
