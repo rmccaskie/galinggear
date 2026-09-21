@@ -223,9 +223,11 @@ const hasArchived = allArticles.some((a) => a.data.status === 'archived')
     display: none;
   }
 
-  /* Language switcher is in the drawer on phones; shown inline on desktop. */
+  /* The language switch is a single compact word, so it stays visible in the
+     top bar at every width (also present in the drawer). Only the bulky tagline
+     and subscribe CTA are hidden on phones. */
   .header-locale {
-    display: none;
+    display: inline-flex;
   }
 
   .icon-button {
@@ -428,10 +430,6 @@ const hasArchived = allArticles.some((a) => a.data.status === 'archived')
     }
 
     .subscribe-cta {
-      display: inline-flex;
-    }
-
-    .header-locale {
       display: inline-flex;
     }
   }
