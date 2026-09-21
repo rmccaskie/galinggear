@@ -9,30 +9,30 @@ railItems:
   - type: image
     assetId: f0691992-c490-442f-b27c-d71bc64cf9d3
     anchor: the-rule-the-bag-does-not-change
-    label: Don't get caught out
+    label: Wag hayaang mahuli ka sa gitna
     image: 'https://images.galinggear.com/staging/1789809668891-roxlfa.png'
     alt: Flooded highway
   - type: image
     assetId: 78d637f8-a667-4b9f-bf47-d759cf879d62
     anchor: what-you-need
-    label: Packed and waiting
+    label: 'Naka-pack na, tapos maghintay na lang'
     image: 'https://images.galinggear.com/library/generated-1789813011557-ayr0ms.png'
     alt: >-
       Open car boot with a dry bag, water bottles, torch, first-aid pouch and
       poncho on a wet street.
     caption: >-
-      Isang car go-bag na handa habang hinihintay lumubog ang floodwater — hindi
-      para tumawid dito.
+      Isang car go-bag na naka-pack para maghintay lang na bumaba ang
+      floodwater, hindi para magmaneho dumaan dito.
   - type: article
     assetId: 1659c975-3f01-4692-aff3-7a1410a4d411
     anchor: variations-and-conditions
     label: Field guide
-    title: 'Dalawang tao, isang plano: pag-pack ng go bag na talagang gumagana'
+    title: 'Two bags, one plan: isang go bag ng magkasintahan na talagang gumagana'
     slug: building-a-go-bag-for-two-a-practical-guide-for-couples-in-the-philippines
     description: >-
-      Ang totoong 72-hour setup ng isang couple — hati sa bigat, parehong logic,
-      walang guesswork kung kailangan na.
-railSourceHash: 216c34327b651c4f
+      Paano namin hinati ang gear at bigat para sa 72 hours nang hindi
+      nagdo-doble ang kit o nagtataka kung ano ang na-pack ng isa.
+railSourceHash: 4e3de99ccccbf6bd
 ---
 
 ## Ano'ng magagawa mo — at bakit importante 'to
