@@ -15,9 +15,8 @@ railItems:
     title: Signal No. 2 is already late to start prepping
     slug: pagasa-wind-signals-1-to-5-what-to-actually-do-at-each-level
     description: >-
-      Sa oras na ma-raise na 'yung signal sa probinsya n'yo, may pila na sa
-      hardware store — ito 'yung actual lead time na binibigay sa 'yo ng bawat
-      level.
+      Sa oras na ma-raise na ang signal sa probinsya mo, may pila na sa hardware
+      store — ito ang actual lead time na binibigay sa 'yo ng bawat level.
   - type: article
     assetId: 00bdca6a-d40c-4259-82b4-ededbe7f054c
     anchor: what-to-do-and-what-not-to
@@ -26,8 +25,7 @@ railItems:
     slug: how-to-storm-proof-a-rented-flat-or-condo-before-a-typhoon
     description: >-
       Genset runtime, water tank capacity, basement drainage, at lift protocol —
-      dito nakadepende kung mag-shelter in place ka na lang o mag-e-early
-      evacuate.
+      dito nakadepende kung mag-shelter in place ka o aalis nang maaga.
 ---
 
 ## The situation
