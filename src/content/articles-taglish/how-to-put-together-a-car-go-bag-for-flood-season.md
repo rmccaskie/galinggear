@@ -9,30 +9,31 @@ railItems:
   - type: image
     assetId: f0691992-c490-442f-b27c-d71bc64cf9d3
     anchor: the-rule-the-bag-does-not-change
-    label: Huwag hayaang maabutan ka
+    label: '''Wag hayaang maabutan ka'
     image: 'https://images.galinggear.com/staging/1789809668891-roxlfa.png'
     alt: Flooded highway
   - type: image
     assetId: 78d637f8-a667-4b9f-bf47-d759cf879d62
     anchor: what-you-need
-    label: Naka-pack at handa na
+    label: 'Nakapack na, tapos maghintay na lang'
     image: 'https://images.galinggear.com/library/generated-1789813011557-ayr0ms.png'
     alt: >-
       Open car boot with a dry bag, water bottles, torch, first-aid pouch and
       poncho on a wet street.
     caption: >-
-      Isang car go bag na naka-pack para sa paghihintay sa floodwater — hindi
-      para sa pagda-drive dito.
+      Isang car go-bag na nakapack para sa paghihintay sa floodwater, hindi para
+      sa pagdrive dito.
   - type: article
     assetId: 1659c975-3f01-4692-aff3-7a1410a4d411
     anchor: variations-and-conditions
     label: Before The Signal
-    title: 'Dalawang tao, isang plano: ang madalas na mali ng mga couple'
+    title: 'Dalawang tao, isang plano: ang madalas na mali ng mga couples'
     slug: building-a-go-bag-for-two-a-practical-guide-for-couples-in-the-philippines
     description: >-
-      Madali lang mag-pack ng dalawang magkahiwalay na bag; pero mas mahirap
-      'yung i-pack para gumana kahit sino man sa inyo nang mag-isa — at
-      karaniwan, ito 'yung hindi na-rerehearse ninuman.
+      Madali lang mag-pack ng dalawang magkahiwalay na bags; ang mahirap ay
+      gawin itong pareho—na kahit sino sa inyo ang gumamit, gumagana pa rin—at
+      ito nga 'yung bagay na halos walang nagre-rehearse.
+railSourceHash: 2e77a2530a78e833
 ---
 
 ## Ano'ng magagawa mo — at bakit importante 'to
