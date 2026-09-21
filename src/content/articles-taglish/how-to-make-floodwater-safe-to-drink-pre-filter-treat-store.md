@@ -36,9 +36,16 @@ railItems:
     slug: >-
       leptospirosis-after-the-flood-what-to-do-if-you-ve-already-waded-through-it
     description: >-
+<<<<<<< HEAD
       Karamihan ng lagnat pagkatapos ng baha ay walang malaking dahilan para
       mag-alala, pero may ilang pattern na kailangan mo nang puntahan sa clinic
       same-day — alamin ang difference bago sumapit ang susunod na habagat.
+=======
+      Most post-flood fevers are harmless, but a few patterns warrant the
+      same-day trip to the clinic — learn to tell the difference before the next
+      habagat.
+railSourceHash: d21501ea925e659d
+>>>>>>> 078f241993cde5868108dae2aaf517c88bbd79f5
 ---
 
 ## Ano ang magagawa mo — at bakit importante ito
