@@ -99,7 +99,36 @@ for (const part of sectionParts) {
     intro += part
   }
 }
-const railFor = (id: string) => railItems.find((r) => r.anchor && r.anchor === id) ?? null
+// Locale-aware rail cards: use the localised baked copy (Taglish when a Taglish
+// version exists, else English), and resolve article-type cards against the
+// target article in the SAME locale so a suggested-reading card shows the
+// target's Taglish title/description on the Taglish page. The card's own baked
+// title/description (an editor override) still wins when present, to keep parity
+// with what the English card shows.
+const allArticles = await getCollection('articles')
+const localeRailItems: RailItemData[] = ((locData.railItems ?? []) as RailItemData[])
+  .map((item) => {
+    if (item.type === 'article') {
+      const target = allArticles.find((a) => a.id === item.slug)
+      if (!target) return null
+      const tlTarget = locale !== 'en' ? tlMap.get(target.id) : undefined
+      return {
+        ...item,
+        resolved: {
+          title: item.title ?? tlTarget?.data.title ?? target.data.title,
+          description: item.description ?? tlTarget?.data.description ?? target.data.description,
+          scenario: target.data.scenario,
+          publishedAt: target.data.publishedAt,
+          slug: target.id,
+          heroImage: target.data.heroImage ?? target.data.heroGallery?.[0]?.src,
+          status: target.data.status,
+        },
+      }
+    }
+    return item
+  })
+  .filter((x): x is RailItemData => x !== null)
+const railFor = (id: string) => localeRailItems.find((r) => r.anchor && r.anchor === id) ?? null
 const { title, description, scenario, publishedAt, updatedAt, editorNote, heroImage, heroGallery, status } =
   locData
 const isArchived = status === 'archived'
