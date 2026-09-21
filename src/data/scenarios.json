@@ -3,6 +3,8 @@
     "slug": "typhoon-season",
     "label": "Typhoon Season",
     "blurb": "Kit that holds up when the rain comes sideways and the power goes.",
+    "labelTaglish": "Panahon ng Bagyo",
+    "blurbTaglish": "Kit na kakayanin ang ulang pahilis at ang pagkawala ng kuryente.",
     "isPrimary": true,
     "sortOrder": 0
   },
@@ -10,6 +12,8 @@
     "slug": "flood-ready",
     "label": "Flood Ready",
     "blurb": "Gear and know-how for when the water rises faster than the warnings.",
+    "labelTaglish": "Handa sa Baha",
+    "blurbTaglish": "Gear at diskarte para kapag mas mabilis tumaas ang tubig kaysa sa babala.",
     "isPrimary": true,
     "sortOrder": 1
   },
@@ -17,6 +21,8 @@
     "slug": "stay-connected",
     "label": "Stay Connected",
     "blurb": "Radios, mesh networks and backup SIMs for when the cell towers go quiet.",
+    "labelTaglish": "Manatiling Konektado",
+    "blurbTaglish": "Radyo, mesh network at backup SIM para kapag natahimik na ang cell tower.",
     "isPrimary": true,
     "sortOrder": 2
   },
@@ -24,6 +30,8 @@
     "slug": "power-outage",
     "label": "Power Outage",
     "blurb": "Light, charge and comfort for a brownout that overstays its welcome.",
+    "labelTaglish": "Brownout",
+    "blurbTaglish": "Ilaw, charge at ginhawa para sa brownout na tumagal nang sobra.",
     "isPrimary": true,
     "sortOrder": 3
   },
@@ -31,6 +39,8 @@
     "slug": "clean-water",
     "label": "Clean Water",
     "blurb": "Filters, purifiers and storage for the days the tap stops being trustworthy.",
+    "labelTaglish": "Malinis na Tubig",
+    "blurbTaglish": "Filter, purifier at imbakan para sa mga araw na hindi na mapagkakatiwalaan ang gripo.",
     "isPrimary": true,
     "sortOrder": 4
   },
@@ -38,6 +48,8 @@
     "slug": "go-bag",
     "label": "Go-Bag",
     "blurb": "The one bag by the door, packed and ready to grab.",
+    "labelTaglish": "Go-Bag",
+    "blurbTaglish": "Ang isang bag sa may pinto, nakaimpake at handang agawin.",
     "isPrimary": true,
     "sortOrder": 5
   },
@@ -45,6 +57,8 @@
     "slug": "first-aid",
     "label": "First Aid",
     "blurb": "The kit and the know-how for the small emergencies and the serious ones.",
+    "labelTaglish": "First Aid",
+    "blurbTaglish": "Ang kit at ang kaalaman para sa maliliit at malalalang emergency.",
     "isPrimary": false,
     "sortOrder": 6
   },
@@ -52,6 +66,8 @@
     "slug": "off-grid",
     "label": "Off Grid",
     "blurb": "Water, power and light for the days the grid cannot reach you.",
+    "labelTaglish": "Off-Grid",
+    "blurbTaglish": "Tubig, kuryente at ilaw para sa mga araw na hindi ka maabot ng grid.",
     "isPrimary": false,
     "sortOrder": 7
   },
@@ -59,6 +75,8 @@
     "slug": "fire-safety",
     "label": "Fire Safety",
     "blurb": "Extinguishers, escape plans and the small habits that prevent the big disaster.",
+    "labelTaglish": "Fire Safety",
+    "blurbTaglish": "Extinguisher, escape plan at maliliit na ugali na pumipigil sa malaking sakuna.",
     "isPrimary": false,
     "sortOrder": 8
   },
@@ -66,6 +84,8 @@
     "slug": "stranded-kit",
     "label": "Stranded Kit",
     "blurb": "The essentials for your car, your commute or an unexpected night away from home.",
+    "labelTaglish": "Stranded Kit",
+    "blurbTaglish": "Ang mga kailangan sa kotse, sa biyahe o sa hindi inaasahang gabi na malayo sa bahay.",
     "isPrimary": false,
     "sortOrder": 9
   },
@@ -73,6 +93,8 @@
     "slug": "heat-wave",
     "label": "Heat Wave",
     "blurb": "Cooling gear, hydration hacks and heat-illness know-how for Philippine summers.",
+    "labelTaglish": "Heat Wave",
+    "blurbTaglish": "Pampalamig na gear, hydration hacks at kaalaman sa heat illness para sa tag-init sa Pilipinas.",
     "isPrimary": false,
     "sortOrder": 10
   },
@@ -80,6 +102,8 @@
     "slug": "pantry-food",
     "label": "Pantry & Food",
     "blurb": "Long-shelf food, cooking without gas, and keeping the household fed through a crisis.",
+    "labelTaglish": "Pantry at Pagkain",
+    "blurbTaglish": "Pagkaing matagal ang shelf life, pagluluto nang walang gas, at pagpapakain sa pamilya sa gitna ng krisis.",
     "isPrimary": false,
     "sortOrder": 11
   },
@@ -87,6 +111,8 @@
     "slug": "earthquake-ready",
     "label": "Earthquake Ready",
     "blurb": "What to have within reach before the ground moves.",
+    "labelTaglish": "Handa sa Lindol",
+    "blurbTaglish": "Kung ano ang dapat abot-kamay bago gumalaw ang lupa.",
     "isPrimary": false,
     "sortOrder": 12
   },
@@ -94,6 +120,8 @@
     "slug": "ashfall-volcano",
     "label": "Ashfall & Volcano",
     "blurb": "Masks, goggles and shelter tweaks for when the sky turns grey.",
+    "labelTaglish": "Abo at Bulkan",
+    "blurbTaglish": "Mask, goggles at pag-aayos ng silungan para kapag naging abuhin ang langit.",
     "isPrimary": false,
     "sortOrder": 13
   },
@@ -101,6 +129,8 @@
     "slug": "edc",
     "label": "EDC",
     "blurb": "The few things worth carrying every single day.",
+    "labelTaglish": "EDC",
+    "blurbTaglish": "Ang ilang bagay na sulit dalhin araw-araw.",
     "isPrimary": false,
     "sortOrder": 14
   },
@@ -108,6 +138,8 @@
     "slug": "kids-lolas",
     "label": "Kids & Lolas",
     "blurb": "Prep that accounts for the ones who cannot prep for themselves.",
+    "labelTaglish": "Mga Bata at Lola",
+    "blurbTaglish": "Paghahandang isinasaalang-alang ang mga hindi kayang maghanda para sa sarili.",
     "isPrimary": false,
     "sortOrder": 15
   },
@@ -115,6 +147,8 @@
     "slug": "pets",
     "label": "Pets",
     "blurb": "Carriers, food stash and evac plans so the animals come with you.",
+    "labelTaglish": "Mga Alaga",
+    "blurbTaglish": "Carrier, imbak na pagkain at evac plan para kasama mo ang mga hayop.",
     "isPrimary": false,
     "sortOrder": 16
   },
@@ -122,6 +156,8 @@
     "slug": "documents-cash",
     "label": "Documents & Cash",
     "blurb": "Copies, waterproofing and enough cash for the first 72 hours without a bank.",
+    "labelTaglish": "Dokumento at Cash",
+    "blurbTaglish": "Mga kopya, waterproofing at sapat na cash para sa unang 72 oras na walang bangko.",
     "isPrimary": false,
     "sortOrder": 17
   }
