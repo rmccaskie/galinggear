@@ -10,35 +10,35 @@ railItems:
   - type: article
     assetId: 1659c975-3f01-4692-aff3-7a1410a4d411
     anchor: what-you-need
-    label: Read Next
-    title: 'Two people, one plan: packing a go bag as a couple'
+    label: Field Guide
+    title: 'Two people, one plan: pag-pack ng go bag bilang magpartner'
     slug: building-a-go-bag-for-two-a-practical-guide-for-couples-in-the-philippines
     description: >-
-      Paano hahatiin ang bigat, gear at mga desisyon para pareho gumana ang bags
-      niyo kapag dumating na talaga ang 72 hours.
+      Paano namin hinati ang bigat, gear, at desisyon sa pagitan ng dalawang bag
+      para wala sa amin ang maiiwan na nagtataka sa unang 72 hours.
   - type: image
     assetId: 432cf5c5-5f0d-4e03-a9a6-012691d37cd9
     anchor: the-method
     label: Keeping it safe
     image: 'https://images.galinggear.com/library/generated-1789898898912-e6ktsa.png'
     alt: >-
-      Capped water containers and a steel jug stored in shade on a concrete
-      terrace
+      Naka-cap na water containers at steel jug na naka-store sa lilim sa isang
+      concrete terrace
     caption: >-
-      I-store ang treated water na naka-cap, narrow-necked at layo sa sikat ng
-      araw — pinapaikli ng init at liwanag ang shelf life nito.
+      I-store ang treated water na naka-cap, narrow-necked, at 'di tinatamaan ng
+      sunlight — pinapaikli ng init at liwanag ang life nito.
   - type: article
     assetId: 3606c02f-716d-47d0-8ca2-a6d146936c0f
     anchor: variations--conditions
     label: Know The Signs
-    title: The fever after a flood that should not wait until Monday
+    title: Ang lagnat pagkatapos ng flood na hindi dapat ipagpaliban hanggang Monday
     slug: >-
       leptospirosis-after-the-flood-what-to-do-if-you-ve-already-waded-through-it
     description: >-
-      Karamihan sa lagnat pagkatapos ng baha ay harmless lang, pero may ilang
-      patterns na kailangan ng same-day trip sa clinic — alamin ang pagkakaiba
-      bago pa dumating ang susunod na habagat.
-railSourceHash: 39f13d36dde869dd
+      Karamihan sa post-flood fevers ay harmless, pero may ilang patterns na
+      kailangan ng same-day trip sa clinic — matutunan mong kilalanin ang
+      difference bago sumapit ang susunod na habagat.
+railSourceHash: 4e2a66c881fd5577
 ---
 
 ## Ano ang magagawa mo — at bakit importante ito
