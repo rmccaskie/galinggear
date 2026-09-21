@@ -43,6 +43,10 @@ export const taglishCatalogue: Record<string, string> = {
   // ── footer ──
   'footer.scenarios_heading': 'Mga Sitwasyon',
   'footer.subscribe_heading': 'Mag-subscribe sa Galing Gear',
+  'footer.about_heading': 'Tungkol sa Amin',
+  'footer.about_body':
+    'Ang Galing Gear ay isang independent na preparedness project na tumutulong sa mga pamilyang Pilipino na maging handa sa bagyo, baha, lindol at brownout — may malinaw at praktikal na mga gabay at tapat na gear picks.',
+  'footer.contact_label': 'I-email kami',
 
   // ── theme ──
   'theme.to_dark': 'Lumipat sa dark theme',

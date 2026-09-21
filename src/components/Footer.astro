@@ -1,6 +1,5 @@
 ---
 import { scenarioLabel, getNavScenarios } from '../lib/scenarios'
-import SubscribeForm from './SubscribeForm.astro'
 import type { CatalogueKey } from '../lib/catalogue'
 import type { Locale } from '../lib/i18n'
 
@@ -12,31 +11,41 @@ const { locale, strings } = Astro.props
 
 const { primary, secondary } = await getNavScenarios()
 const footerScenarios = [...primary, ...secondary]
+const contactEmail = strings['footer.contact_email']
 ---
 
 <footer class="site-footer">
   <div class="wrap grid">
+    {/* LEFT — brand statement + scenarios as pills */}
     <div class="about">
       <p class="logo">{strings['brand.name']}</p>
       <p class="mission">{strings['brand.mission']}</p>
+
+      <hr class="sep" />
+
+      <nav class="foot-scenarios" aria-label="Scenarios">
+        <ul role="list">
+          {
+            footerScenarios.map((scenario) => (
+              <li>
+                <a href={`/${scenario}/`} class="pill">
+                  {scenarioLabel(scenario, locale)}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
     </div>
 
-    <nav class="foot-nav" aria-label="Scenarios">
-      <p class="heading mono">{strings['footer.scenarios_heading']}</p>
-      <ul role="list">
-        {
-          footerScenarios.map((scenario) => (
-            <li>
-              <a href={`/${scenario}/`}>{scenarioLabel(scenario, locale)}</a>
-            </li>
-          ))
-        }
-      </ul>
-    </nav>
-
-    <div class="foot-subscribe">
-      <p class="heading mono">{strings['footer.subscribe_heading']}</p>
-      <SubscribeForm idPrefix="footer" compact locale={locale} strings={strings} />
+    {/* RIGHT — about the author + contact */}
+    <div class="foot-about">
+      <p class="heading mono">{strings['footer.about_heading']}</p>
+      <p class="about-body">{strings['footer.about_body']}</p>
+      <p class="contact">
+        <span class="contact-label">{strings['footer.contact_heading']}:</span>{' '}
+        <a href={`mailto:${contactEmail}`}>{strings['footer.contact_label']}</a>
+      </p>
     </div>
   </div>
 
@@ -70,6 +79,44 @@ const footerScenarios = [...primary, ...secondary]
     margin-block-start: var(--space-sm);
   }
 
+  .sep {
+    border: 0;
+    border-block-start: 1px solid var(--hairline);
+    margin-block: var(--space-lg);
+    max-inline-size: var(--measure-narrow, 54ch);
+    margin-inline: 0;
+  }
+
+  .foot-scenarios ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    font-family: var(--font-mono);
+    font-size: var(--text-label);
+    letter-spacing: 0.02em;
+    color: var(--accent-text);
+    text-decoration: none;
+    padding-block: var(--space-2xs);
+    padding-inline: var(--space-md);
+    border: 1px solid var(--hairline);
+    border-radius: var(--radius-pill);
+    background-color: var(--surface);
+    white-space: nowrap;
+    transition: border-color 120ms ease, background-color 120ms ease;
+  }
+
+  .pill:hover {
+    border-color: var(--accent-text);
+  }
+
   .heading {
     font-size: var(--text-label);
     text-transform: uppercase;
@@ -78,21 +125,29 @@ const footerScenarios = [...primary, ...secondary]
     margin-block-end: var(--space-md);
   }
 
-  .foot-nav ul {
-    display: grid;
-    gap: var(--space-xs);
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  .about-body {
+    color: var(--muted-text);
+    max-inline-size: var(--measure-narrow, 54ch);
   }
 
-  .foot-nav a {
-    color: var(--main-text);
+  .contact {
+    margin-block-start: var(--space-md);
+    color: var(--muted-text);
+    font-size: var(--text-label);
+  }
+
+  .contact-label {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-family: var(--font-mono);
+  }
+
+  .contact a {
+    color: var(--accent-text);
     text-decoration: none;
   }
 
-  .foot-nav a:hover {
-    color: var(--accent-text);
+  .contact a:hover {
     text-decoration: underline;
   }
 
@@ -106,8 +161,8 @@ const footerScenarios = [...primary, ...secondary]
 
   @media (min-width: 60rem) {
     .grid {
-      grid-template-columns: 1.5fr 1fr 1.5fr;
-      gap: var(--space-3xl);
+      grid-template-columns: 1.5fr 1fr;
+      gap: var(--space-4xl);
     }
   }
 </style>

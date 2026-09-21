@@ -28,6 +28,12 @@ export const enCatalogue = {
   // ── footer ────────────────────────────────────────────────────────────
   'footer.scenarios_heading': 'Scenarios',
   'footer.subscribe_heading': 'Subscribe to Galing Gear',
+  'footer.about_heading': 'About',
+  'footer.about_body':
+    'Galing Gear is an independent preparedness project helping Filipino families get ready for typhoons, floods, quakes and brownouts — with clear, practical guides and honest gear picks.',
+  'footer.contact_heading': 'Contact',
+  'footer.contact_label': 'Email us',
+  'footer.contact_email': 'hello@galinggear.com',
 
   // ── theme ─────────────────────────────────────────────────────────────
   'theme.to_dark': 'Switch to dark theme',
