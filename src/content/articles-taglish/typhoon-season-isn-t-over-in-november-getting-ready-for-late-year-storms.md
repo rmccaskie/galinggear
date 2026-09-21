@@ -12,7 +12,7 @@ railItems:
     assetId: 70536d12-c832-4fc1-bda0-bcd9d230d4dc
     anchor: what-to-do-and-what-not-to
     label: Before The Bulletin
-    title: Signal No. 2 is already late to start prepping
+    title: 'Signal No. 2 na, huli ka na para mag-prep'
     slug: pagasa-wind-signals-1-to-5-what-to-actually-do-at-each-level
     description: >-
       Sa oras na ma-raise na ang signal sa probinsya mo, may pila na sa hardware
@@ -20,8 +20,8 @@ railItems:
   - type: article
     assetId: 00bdca6a-d40c-4259-82b4-ededbe7f054c
     anchor: what-to-do-and-what-not-to
-    label: Ask The Admin
-    title: Five questions your building admin should answer before a typhoon
+    label: Tanong Sa Admin
+    title: 'Limang tanong na dapat masagot ng building admin mo bago dumating ang bagyo'
     slug: how-to-storm-proof-a-rented-flat-or-condo-before-a-typhoon
     description: >-
       Genset runtime, water tank capacity, basement drainage, at lift protocol —

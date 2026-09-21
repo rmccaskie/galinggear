@@ -10,12 +10,13 @@ railItems:
   - type: article
     assetId: 1659c975-3f01-4692-aff3-7a1410a4d411
     anchor: what-you-need
-    label: Before The Signal
-    title: 'Two people, one plan: what most couples get wrong'
+    label: Bago Mag-Signal
+    title: 'Dalawang tao, isang plano: ''yung madalas mali sa mga couple'
     slug: building-a-go-bag-for-two-a-practical-guide-for-couples-in-the-philippines
     description: >-
-      Packing two separate bags is easy; packing so either one works alone is
-      harder, and it is usually the thing nobody rehearses.
+      Madali lang mag-pack ng dalawang magkahiwalay na bag; ang mahirap ay ang
+      gawin itong pareho pang gumagana kahit sino sa inyo ang mag-isa lang, at
+      ito nga 'yung bagay na madalas walang nag-re-rehearse.
 ---
 
 ## Ano ang magagawa mo — at bakit importante ito
