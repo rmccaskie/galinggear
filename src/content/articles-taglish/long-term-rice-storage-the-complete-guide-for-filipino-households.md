@@ -11,30 +11,30 @@ railItems:
     assetId: bf314813-2456-45dc-8037-99d7ff27d00d
     anchor: the-three-storage-methods-at-a-glance
     label: Field guide
-    title: Paano mag-store ng isang sako ng bigas nang hindi kinakain ng bukbok
+    title: Paano mag-store ng isang sako ng bigas nang 'di ito kainin ng bukbok
     slug: bulk-rice-storage-in-25kg-food-safe-containers-the-complete-guide
     description: >-
       Step-by-step na paraan para ilipat ang 25kg na bigas sa isang food-grade
-      container, sealed at pest-proof, handang-handa sa Philippine-humidity.
+      container, sealed at pest-proof, ready na sa Philippine-humidity.
   - type: article
     assetId: 9fb8aad0-ab28-4bdf-b445-a5248ad19114
     anchor: the-three-storage-methods-at-a-glance
     label: Pantry Basics
-    title: Pag-store ng bigas sa airtight containers
+    title: Pag-iimbak ng bigas sa airtight containers
     slug: >-
       setting-up-the-everyday-airtight-rice-container-layer-in-a-filipino-kitchen
     description: >-
-      Field-tested na paraan para i-check ang seal, mag-treat ng pests, at
-      i-position ang container mo para tumagal ang bigas.
+      Isang field-tested na paraan para i-check ang seals, mag-treat ng pests,
+      at malaman kung saan best i-place ang rice container mo para tumagal ito.
   - type: article
     assetId: 0223bb8b-d749-495b-9c0f-feab9b619666
     anchor: the-three-storage-methods-at-a-glance
     label: Field Guide
-    title: 'Vacuum-Sealing ng Bigas: Gawin nang Tama'
+    title: 'Vacuum-Sealing ng Bigas: Gawin Nang Tama'
     slug: vacuum-sealing-rice-for-long-term-storage-the-complete-guide
     description: >-
-      Alamin kung ano talaga ang pino-protect ng vacuum-sealing sa bigas mo, ano
-      ang hindi nito kaya, at paano ito i-pack nang tama para sa go-bag o pantry
+      Ano talaga ang pinoprotektahan ng vacuum-sealing sa bigas mo, ano ang
+      hindi nito magagawa, at paano ito i-pack nang tama para sa go-bag o pantry
       mo.
   - type: image
     assetId: f54646fa-e80a-4fd8-b998-dc9258038b2b
@@ -45,8 +45,8 @@ railItems:
       Stacked airtight containers of rice on a raised pantry shelf in a Filipino
       home
     caption: >-
-      Ang airtight at elevated na storage ang bantay ng bigas ng pamilya laban
-      sa floodwater at pests.
+      Ang airtight at elevated na storage ang bumabantay sa rice stock ng
+      pamilya mula sa floodwater at pests.
   - type: image
     assetId: a2a2f9fb-7d02-4da7-817e-00be4124da5a
     anchor: what-actually-matters
@@ -56,8 +56,9 @@ railItems:
       A large food-safe plastic container filled with rice stored on a pallet in
       a Filipino pantry
     caption: >-
-      Ang paglayo ng bigas sa sahig at mahigpit na pagkaka-seal ay tumutulong
-      iwas moisture at pests.
+      Ang paglalagay ng bigas na nakataas sa sahig at nakasarado nang mahigpit
+      ay tumutulong para maiwasan ang moisture at pests.
+railSourceHash: cf9cc7f96fec7b3a
 ---
 
 ## Ang situation
