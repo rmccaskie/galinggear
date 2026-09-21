@@ -9,7 +9,7 @@ railItems:
   - type: image
     assetId: 12aa7a33-a16a-4e19-81af-aee597f80894
     anchor: overview
-    label: Light when you need it.
+    label: Ilaw kapag kailangan mo.
     image: 'https://images.galinggear.com/staging/generated-1789819604956-huo9e9.png'
 ---
 
