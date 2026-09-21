@@ -16,15 +16,9 @@ railItems:
     title: 'Signal No. 2 na, huli ka na para mag-prep'
     slug: pagasa-wind-signals-1-to-5-what-to-actually-do-at-each-level
     description: >-
-<<<<<<< HEAD
       Sa oras na ma-raise na ang signal sa probinsya mo, may pila na sa hardware
       store — ito ang actual na lead time na binibigay sa'yo ng bawat level.
-=======
-      By the time the signal is raised over your province, the queues at the
-      hardware store have formed — here is what each level actually buys you in
-      lead time.
 railSourceHash: d2e01c8c096339de
->>>>>>> 078f241993cde5868108dae2aaf517c88bbd79f5
 ---
 
 ## Ano ang magagawa mo — at bakit importante ito

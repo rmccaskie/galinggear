@@ -9,14 +9,15 @@ railItems:
   - type: image
     assetId: ef436491-564b-4f31-b78f-e590e2b14c34
     anchor: overview
-    label: Packing together
+    label: Sabay na nag-iimpake
     image: 'https://images.galinggear.com/library/generated-1789813245184-t6qxbl.png'
     alt: >-
-      A Filipino couple kneeling on an apartment floor beside two open go bags
-      with clothing, water bottles, torch and first-aid pouch laid out.
+      Isang Pilipinong mag-asawa na nakaluhod sa sahig ng apartment katabi ang
+      dalawang bukas na go bag na may nakalatag na damit, mga bote ng tubig,
+      torch at first-aid pouch.
     caption: >-
-      Two bags, one shared plan: laying everything out on the floor before it
-      goes back in.
+      Dalawang bag, isang shared na plano: inilalatag muna ang lahat sa sahig
+      bago ibalik sa loob.
 railSourceHash: a797e8767d57d84d
 ---
 
