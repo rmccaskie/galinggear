@@ -9,30 +9,30 @@ railItems:
   - type: image
     assetId: f0691992-c490-442f-b27c-d71bc64cf9d3
     anchor: the-rule-the-bag-does-not-change
-    label: Don't get caught out
+    label: Huwag ka pahuli
     image: 'https://images.galinggear.com/staging/1789809668891-roxlfa.png'
     alt: Flooded highway
   - type: image
     assetId: 78d637f8-a667-4b9f-bf47-d759cf879d62
     anchor: what-you-need
-    label: Packed and waiting
+    label: Naka-pack at nag-aabang
     image: 'https://images.galinggear.com/library/generated-1789813011557-ayr0ms.png'
     alt: >-
       Open car boot with a dry bag, water bottles, torch, first-aid pouch and
       poncho on a wet street.
     caption: >-
-      A car go-bag packed for waiting out floodwater, not for driving through
-      it.
+      Isang car go-bag na naka-pack para maghintay lang na humupa ang
+      floodwater, hindi para magmaneho dumaan sa flood.
   - type: article
     assetId: 1659c975-3f01-4692-aff3-7a1410a4d411
     anchor: variations-and-conditions
     label: Field Guide
-    title: 'Two people, one plan: packing a go bag as a couple'
+    title: 'Pag-pack para sa dalawa, hindi lang isa'
     slug: building-a-go-bag-for-two-a-practical-guide-for-couples-in-the-philippines
     description: >-
-      How we split weight, gear, and decisions between two bags so neither of us
-      is left guessing in the first 72 hours.
-railSourceHash: 4b1826aba0a5fdba
+      Isang tested go-bag split ng mag-asawa para sa unang 72 hours — ano ang
+      i-share, ano ang i-duplicate, at magkano ba talaga ang bigat nito.
+railSourceHash: 58c76c9b9c050b1c
 ---
 
 ## Ano'ng magagawa mo — at bakit importante 'to
