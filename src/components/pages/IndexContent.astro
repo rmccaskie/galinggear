@@ -1,7 +1,6 @@
 ---
 import { getCollection } from 'astro:content'
 import BaseLayout from '../../layouts/BaseLayout.astro'
-import ScenarioNav from '../ScenarioNav.astro'
 import ArticleCard from '../ArticleCard.astro'
 import SubscribeForm from '../SubscribeForm.astro'
 import featuredOrder from '../../data/featured.json'
@@ -46,10 +45,6 @@ const loc = (a: typeof articles[number]) => localiseArticleData(a, locale, tlMap
       <p class="lede">{strings['home.lede']}</p>
       <a class="btn btn-primary" href="/subscribe/">{strings['home.cta']}</a>
     </div>
-  </section>
-
-  <section class="wrap section">
-    <ScenarioNav locale={locale} strings={strings} />
   </section>
 
   {
