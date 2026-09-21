@@ -19,6 +19,7 @@ railItems:
       By the time the signal is raised over your province, the queues at the
       hardware store have formed — here is what each level actually buys you in
       lead time.
+railSourceHash: d2e01c8c096339de
 ---
 
 ## Ano ang magagawa mo — at bakit importante ito
