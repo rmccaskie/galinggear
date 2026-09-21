@@ -11,34 +11,34 @@ railItems:
     assetId: 1659c975-3f01-4692-aff3-7a1410a4d411
     anchor: what-you-need
     label: Field guide
-    title: 'Dalawang tao, iisang plano: pag-pack ng go bag na talagang gumagana'
+    title: 'Two bags, one plan: a couple''s go bag that actually works'
     slug: building-a-go-bag-for-two-a-practical-guide-for-couples-in-the-philippines
     description: >-
-      Ang totoong 72-hour setup ng isang couple — hati sa bigat, magkasundo sa
-      logic, walang guesswork kapag kailangan na.
+      How we split gear and weight for 72 hours without duplicating kit or
+      guessing what the other packed.
   - type: image
     assetId: 432cf5c5-5f0d-4e03-a9a6-012691d37cd9
     anchor: the-method
     label: Keeping it safe
     image: 'https://images.galinggear.com/library/generated-1789898898912-e6ktsa.png'
     alt: >-
-      Mga nakatakip na water container at steel jug na naka-store sa lilim sa
-      isang concrete terrace
+      Capped water containers and a steel jug stored in shade on a concrete
+      terrace
     caption: >-
-      I-store ang treated water na nakatakip, narrow-necked at walang tamang
-      sikat ng araw — pinapaikli ng init at liwanag ang lifespan nito.
+      Store treated water capped, narrow-necked and out of sunlight — heat and
+      light shorten its life.
   - type: article
     assetId: 3606c02f-716d-47d0-8ca2-a6d146936c0f
     anchor: variations--conditions
     label: Know The Signs
-    title: Ang lagnat pagkatapos ng baha na hindi dapat ipagpaliban hanggang Monday
+    title: The fever after a flood that should not wait until Monday
     slug: >-
       leptospirosis-after-the-flood-what-to-do-if-you-ve-already-waded-through-it
     description: >-
-      Karamihan sa post-flood fevers ay harmless lang, pero may ilang pattern na
-      kailangan ng same-day trip sa clinic — alamin ang pagkakaiba bago pa man
-      dumating ang susunod na habagat.
-railSourceHash: 1552974cd13d772d
+      Most post-flood fevers are harmless, but a few patterns warrant the
+      same-day trip to the clinic — learn to tell the difference before the next
+      habagat.
+railSourceHash: a2d50bda53daa474
 ---
 
 ## Ano ang magagawa mo — at bakit importante ito
