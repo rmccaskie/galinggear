@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content'
 import BaseLayout from '../../layouts/BaseLayout.astro'
 import ScenarioNav from '../../components/ScenarioNav.astro'
 import ArticleCard from '../../components/ArticleCard.astro'
-import { SCENARIOS, SCENARIO_LABELS, SCENARIO_BLURBS } from '../../lib/scenarios'
+import { SCENARIOS, scenarioLabel, scenarioBlurb } from '../../lib/scenarios'
 import type { Scenario } from '../../lib/scenarios'
 import { type Locale, DEFAULT_LOCALE } from '../../lib/i18n'
 import { resolvedCatalogue, fmt, plural } from '../../lib/catalogue'
@@ -35,9 +35,9 @@ interface Props {
 }
 
 const { scenario, articles, archivedCount } = Astro.props
-const label = SCENARIO_LABELS[scenario]
-const blurb = SCENARIO_BLURBS[scenario]
 const locale = (Astro.currentLocale ?? DEFAULT_LOCALE) as Locale
+const label = scenarioLabel(scenario, locale)
+const blurb = scenarioBlurb(scenario, locale)
 const strings = resolvedCatalogue(locale)
 const tlMap = await getTaglishMap()
 ---
@@ -50,7 +50,7 @@ const tlMap = await getTaglishMap()
   </section>
 
   <section class="wrap section">
-    <ScenarioNav active={scenario} strings={strings} />
+    <ScenarioNav active={scenario} locale={locale} strings={strings} />
   </section>
 
   <section class="wrap section">
@@ -69,6 +69,7 @@ const tlMap = await getTaglishMap()
                 heroImage={d.heroImage ?? d.heroGallery?.[0]?.src}
                 articleType={d.articleType}
                 featured={d.featured}
+                locale={locale}
               />
             )
           })}

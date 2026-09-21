@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content'
 import BaseLayout from '../../layouts/BaseLayout.astro'
 import ArticleCard from '../../components/ArticleCard.astro'
-import { SCENARIOS, SCENARIO_LABELS, SCENARIO_BLURBS } from '../../lib/scenarios'
+import { SCENARIOS, scenarioLabel, scenarioBlurb } from '../../lib/scenarios'
 import { type Locale, DEFAULT_LOCALE } from '../../lib/i18n'
 import { resolvedCatalogue, fmt, plural } from '../../lib/catalogue'
 import { getTaglishMap, localiseArticleData } from '../../lib/article-locale'
@@ -52,8 +52,8 @@ const categories = SCENARIOS.map((scenario) => {
 
   return {
     scenario,
-    label: SCENARIO_LABELS[scenario],
-    blurb: SCENARIO_BLURBS[scenario],
+    label: scenarioLabel(scenario, locale),
+    blurb: scenarioBlurb(scenario, locale),
     months,
     count: items.length,
   }
@@ -156,6 +156,7 @@ const defaultScenario = (withArchived[0] ?? categories[0]).scenario
                                 heroImage={d.heroImage ?? d.heroGallery?.[0]?.src}
                                 articleType={d.articleType}
                                 status="archived"
+                                locale={locale}
                               />
                             )
                           })}

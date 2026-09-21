@@ -1,7 +1,8 @@
 ---
-import { SCENARIO_LABELS } from '../lib/scenarios'
+import { scenarioLabel } from '../lib/scenarios'
 import type { Scenario } from '../lib/scenarios'
 import type { CatalogueKey } from '../lib/catalogue'
+import type { Locale } from '../lib/i18n'
 
 interface Props {
   title: string
@@ -13,10 +14,11 @@ interface Props {
   heroImage?: string
   status?: 'active' | 'archived'
   articleType?: 'review' | 'guide'
+  locale?: Locale
   strings?: Record<CatalogueKey, string>
 }
 
-const { title, description, scenario, publishedAt, slug, featured = false, heroImage, status, articleType, strings } = Astro.props
+const { title, description, scenario, publishedAt, slug, featured = false, heroImage, status, articleType, locale, strings } = Astro.props
 
 const readLabel =
   articleType === 'review'
@@ -40,7 +42,7 @@ const publishedLabel = Number.isNaN(published.valueOf())
     )
   }
   <div class="meta-row">
-    <a class="scenario mono" href={`/${scenario}/`}>{SCENARIO_LABELS[scenario]}</a>
+    <a class="scenario mono" href={`/${scenario}/`}>{scenarioLabel(scenario, locale)}</a>
     {status && (
       <span class:list={['status-pill', 'mono', status === 'archived' ? 'is-archived' : 'is-active']}>
         {status === 'archived' ? (strings?.['card.status_archived'] ?? 'Archived') : (strings?.['card.status_current'] ?? 'Current')}

@@ -4,7 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro'
 import ArticleCard from '../../components/ArticleCard.astro'
 import RailItem from '../../components/RailItem.astro'
 import type { RailItemData } from '../../components/RailItem.astro'
-import { SCENARIO_LABELS } from '../../lib/scenarios'
+import { scenarioLabel } from '../../lib/scenarios'
 import { type Locale, DEFAULT_LOCALE } from '../../lib/i18n'
 import { resolvedCatalogue, fmt } from '../../lib/catalogue'
 import { getTaglishMap, localiseArticleData, getTaglishEntry } from '../../lib/article-locale'
@@ -116,7 +116,7 @@ function fmtDate(date: string) {
 <BaseLayout title={title} description={description} type="article" locale={locale}>
   <article>
     <header class="wrap art-head">
-      <a class="scenario mono" href={`/${scenario}/`}>{SCENARIO_LABELS[scenario]}</a>
+      <a class="scenario mono" href={`/${scenario}/`}>{scenarioLabel(scenario, locale)}</a>
       <h1>{title}</h1>
       <p class="description">{description}</p>
       <div class="dates mono">
@@ -191,7 +191,7 @@ function fmtDate(date: string) {
                 data-rail-type={rail?.type}
               >
                 <div class="sec-head" set:html={section.headingHtml} />
-                {rail && <RailItem item={rail} />}
+                {rail && <RailItem item={rail} locale={locale} />}
                 <div class="sec-body" set:html={section.bodyHtml} />
               </div>
             )
@@ -206,7 +206,7 @@ function fmtDate(date: string) {
       <Fragment>
         <hr class="art-end" aria-hidden="true" />
         <section class="wrap section">
-          <h2 class="section-title">{fmt(strings, 'article.more_in', { scenario: SCENARIO_LABELS[scenario] })}</h2>
+          <h2 class="section-title">{fmt(strings, 'article.more_in', { scenario: scenarioLabel(scenario, locale) })}</h2>
         <div class="grid">
             {related.map((a) => {
               const rd = localiseArticleData(a, locale, tlMap)
@@ -219,6 +219,7 @@ function fmtDate(date: string) {
                   slug={a.id}
                   heroImage={rd.heroImage ?? rd.heroGallery?.[0]?.src}
                   articleType={rd.articleType}
+                  locale={locale}
                 />
               )
             })}

@@ -35,8 +35,9 @@ export interface RailItemData {
 }
 
 import type { CatalogueKey } from '../lib/catalogue'
+import type { Locale } from '../lib/i18n'
 
-const { item, strings } = Astro.props as { item: RailItemData; strings?: Record<CatalogueKey, string> }
+const { item, strings, locale } = Astro.props as { item: RailItemData; strings?: Record<CatalogueKey, string>; locale?: Locale }
 
 const DEFAULT_LABEL: Record<RailItemData['type'], string> = {
   product: strings?.['rail.label_product'] ?? 'Our pick',
@@ -112,6 +113,7 @@ const label = item.label ?? DEFAULT_LABEL[item.type]
         slug={item.resolved.slug}
         heroImage={item.resolved.heroImage}
         status={item.resolved.status}
+        locale={locale}
       />
     )
   }

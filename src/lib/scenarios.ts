@@ -1,10 +1,15 @@
 import { getCollection } from 'astro:content'
 import scenariosData from '../data/scenarios.json'
+import type { Locale } from './i18n'
 
 export interface ScenarioConfig {
   slug: string
   label: string
   blurb: string
+  /** Optional Taglish label, authored in the admin scenario tool. */
+  labelTaglish?: string
+  /** Optional Taglish blurb, authored in the admin scenario tool. */
+  blurbTaglish?: string
   isPrimary: boolean
   sortOrder: number
 }
@@ -29,11 +34,33 @@ export const SCENARIO_BLURBS: Record<string, string> = Object.fromEntries(
   ALL_SCENARIOS.map((s) => [s.slug, s.blurb])
 )
 
-export function scenarioLabel(scenario: string): string {
+// Taglish overlays — only slugs that actually carry a Taglish value appear here,
+// so a blank admin field cleanly falls back to the English wording below.
+export const SCENARIO_LABELS_TAGLISH: Record<string, string> = Object.fromEntries(
+  ALL_SCENARIOS.filter((s) => (s.labelTaglish ?? '').trim()).map((s) => [s.slug, s.labelTaglish!.trim()])
+)
+
+export const SCENARIO_BLURBS_TAGLISH: Record<string, string> = Object.fromEntries(
+  ALL_SCENARIOS.filter((s) => (s.blurbTaglish ?? '').trim()).map((s) => [s.slug, s.blurbTaglish!.trim()])
+)
+
+/**
+ * Resolve a scenario's display label for a locale. Scenario wording is managed
+ * in the admin scenario tool (keyed by the stable slug, so a rename/reword/
+ * reorder never breaks the mapping). On the Taglish tree the Taglish label is
+ * used when present, otherwise it falls back to the English label.
+ */
+export function scenarioLabel(scenario: string, locale?: Locale): string {
+  if (locale === 'taglish' && SCENARIO_LABELS_TAGLISH[scenario]) {
+    return SCENARIO_LABELS_TAGLISH[scenario]
+  }
   return SCENARIO_LABELS[scenario] ?? scenario
 }
 
-export function scenarioBlurb(scenario: string): string {
+export function scenarioBlurb(scenario: string, locale?: Locale): string {
+  if (locale === 'taglish' && SCENARIO_BLURBS_TAGLISH[scenario]) {
+    return SCENARIO_BLURBS_TAGLISH[scenario]
+  }
   return SCENARIO_BLURBS[scenario] ?? ''
 }
 

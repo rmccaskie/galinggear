@@ -1,10 +1,11 @@
 ---
-import { SCENARIO_LABELS, getNavScenarios } from '../lib/scenarios'
+import { scenarioLabel, getNavScenarios } from '../lib/scenarios'
 import SubscribeForm from './SubscribeForm.astro'
 import type { CatalogueKey } from '../lib/catalogue'
+import type { Locale } from '../lib/i18n'
 
 interface Props {
-  locale: string
+  locale: Locale
   strings: Record<CatalogueKey, string>
 }
 const { locale, strings } = Astro.props
@@ -26,7 +27,7 @@ const footerScenarios = [...primary, ...secondary]
         {
           footerScenarios.map((scenario) => (
             <li>
-              <a href={`/${scenario}/`}>{SCENARIO_LABELS[scenario]}</a>
+              <a href={`/${scenario}/`}>{scenarioLabel(scenario, locale)}</a>
             </li>
           ))
         }
