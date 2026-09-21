@@ -9,24 +9,24 @@ railItems:
   - type: article
     assetId: 62b32520-4f82-4b3a-9548-9397ae38e798
     anchor: what-to-do-and-what-not-to
-    label: Kapag Nabigo ang Evacuation
-    title: 'Na-trap sa bahay habang tumataas ang tubig: ano ang unang gagawin'
+    label: When Evacuation Fails
+    title: 'Trapped at home as the water rises: what to do first'
     slug: how-to-shelter-in-place-when-floodwater-has-you-trapped-at-home
     description: >-
-      Isang kalmado, room-by-room na plano para sa mga Filipino households na
-      'di na makaalis — paano safely mag-cut ng power, protektahan ang pagkain
-      at mga papeles, at mananatiling updated.
+      A calm, room-by-room plan for Filipino households who can no longer leave
+      — cutting power safely, protecting food and papers, and staying informed.
   - type: image
     assetId: a27a7d5c-9e83-4e9c-9a5a-df90db70e981
     anchor: the-gear-that-helps
-    label: Bago ang bagyo
+    label: Before the storm
     image: 'https://images.galinggear.com/library/generated-1789905824063-fs131e.png'
     alt: >-
-      Aspin dog na nakaupo sa tabi ng bukas na pet carrier at packed bag ng pet
-      supplies sa loob ng bahay bago ang bagyo
+      Aspin dog sitting beside an open pet carrier and a packed bag of pet
+      supplies indoors before a storm
     caption: >-
-      Isang pet go-bag na naka-pack at ang carrier na naiwang bukas at 'di
-      naka-latch, ready bago pa man lumakas ang hangin.
+      A pet go-bag packed and the carrier left open and unlatched, ready well
+      before the wind picks up.
+railSourceHash: 3c758fbd938e8d13
 ---
 
 ## The situation
