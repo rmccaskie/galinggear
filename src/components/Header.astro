@@ -29,7 +29,9 @@ const hasArchived = allArticles.some((a) => a.data.status === 'archived')
     <div class="actions">
       <a class="btn btn-primary subscribe-cta" href="/subscribe/">{strings['nav.subscribe']}</a>
 
-      <LocaleSwitcher locale={locale} path={currentPath} />
+      <span class="header-locale">
+        <LocaleSwitcher locale={locale} path={currentPath} />
+      </span>
 
       <button
         type="button"
@@ -201,6 +203,9 @@ const hasArchived = allArticles.some((a) => a.data.status === 'archived')
   .tagline {
     font-size: var(--text-label);
     color: var(--muted-text);
+    /* Hidden on phones: the full tagline is too long for a narrow top bar and
+       collapses into a tall column. Revealed at the desktop breakpoint. */
+    display: none;
   }
 
   .actions {
@@ -212,6 +217,15 @@ const hasArchived = allArticles.some((a) => a.data.status === 'archived')
   .subscribe-cta {
     padding-block: var(--space-xs);
     padding-inline: var(--space-md);
+    white-space: nowrap;
+    /* Hidden on phones (present in the drawer as a prominent accent button);
+       shown inline from the desktop breakpoint. */
+    display: none;
+  }
+
+  /* Language switcher is in the drawer on phones; shown inline on desktop. */
+  .header-locale {
+    display: none;
   }
 
   .icon-button {
@@ -407,6 +421,18 @@ const hasArchived = allArticles.some((a) => a.data.status === 'archived')
 
     .menu-toggle {
       display: none;
+    }
+
+    .tagline {
+      display: block;
+    }
+
+    .subscribe-cta {
+      display: inline-flex;
+    }
+
+    .header-locale {
+      display: inline-flex;
     }
   }
 </style>
