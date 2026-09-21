@@ -9,30 +9,30 @@ railItems:
   - type: image
     assetId: f0691992-c490-442f-b27c-d71bc64cf9d3
     anchor: the-rule-the-bag-does-not-change
-    label: Huwag ka padalos-dalos
+    label: Don't get caught out
     image: 'https://images.galinggear.com/staging/1789809668891-roxlfa.png'
     alt: Flooded highway
   - type: image
     assetId: 78d637f8-a667-4b9f-bf47-d759cf879d62
     anchor: what-you-need
-    label: Naka-pack at handa na
+    label: Packed and waiting
     image: 'https://images.galinggear.com/library/generated-1789813011557-ayr0ms.png'
     alt: >-
       Open car boot with a dry bag, water bottles, torch, first-aid pouch and
       poncho on a wet street.
     caption: >-
-      Isang car go-bag na naka-pack para maghintay lang na lumubog ang
-      floodwater, hindi para magmaneho dito.
+      A car go-bag packed for waiting out floodwater, not for driving through
+      it.
   - type: article
     assetId: 1659c975-3f01-4692-aff3-7a1410a4d411
     anchor: variations-and-conditions
-    label: Basahin Next
-    title: 'Dalawang tao, isang plano: pag-pack ng go bag bilang couple'
+    label: Field Guide
+    title: 'Two people, one plan: packing a go bag as a couple'
     slug: building-a-go-bag-for-two-a-practical-guide-for-couples-in-the-philippines
     description: >-
-      Paano hahatiin ang weight, gear at mga desisyon para pareho gumana ang
-      bags niyo kapag dumating na talaga ang 72 hours.
-railSourceHash: e4796ae615f92737
+      How we split weight, gear, and decisions between two bags so neither of us
+      is left guessing in the first 72 hours.
+railSourceHash: 4b1826aba0a5fdba
 ---
 
 ## Ano'ng magagawa mo — at bakit importante 'to
