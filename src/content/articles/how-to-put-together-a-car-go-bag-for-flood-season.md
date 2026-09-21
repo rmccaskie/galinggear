@@ -33,11 +33,11 @@ railItems:
     assetId: 1659c975-3f01-4692-aff3-7a1410a4d411
     anchor: variations-and-conditions
     label: Field Guide
-    title: 'Two people, one plan: packing a go bag as a couple'
+    title: 'Packing for two, not just one'
     slug: building-a-go-bag-for-two-a-practical-guide-for-couples-in-the-philippines
     description: >-
-      How we split weight, gear, and decisions between two bags so neither of us
-      is left guessing in the first 72 hours.
+      A couple's tested go-bag split for the first 72 hours — what to share,
+      what to duplicate, and what it actually weighs.
 ---
 
 ## What you'll be able to do — and why it matters
