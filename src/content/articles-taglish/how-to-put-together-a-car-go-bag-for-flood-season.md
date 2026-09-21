@@ -9,31 +9,30 @@ railItems:
   - type: image
     assetId: f0691992-c490-442f-b27c-d71bc64cf9d3
     anchor: the-rule-the-bag-does-not-change
-    label: '''Wag hayaang maabutan ka'
+    label: Huwag ka pahuli
     image: 'https://images.galinggear.com/staging/1789809668891-roxlfa.png'
-    alt: Binahang highway
+    alt: Flooded highway
   - type: image
     assetId: 78d637f8-a667-4b9f-bf47-d759cf879d62
     anchor: what-you-need
-    label: 'Nakapack na, tapos maghintay na lang'
+    label: Naka-pack at nag-aabang
     image: 'https://images.galinggear.com/library/generated-1789813011557-ayr0ms.png'
     alt: >-
-      Bukas na car boot na may dry bag, mga bote ng tubig, torch, first-aid
-      pouch at poncho sa basang kalsada.
+      Open car boot with a dry bag, water bottles, torch, first-aid pouch and
+      poncho on a wet street.
     caption: >-
-      Isang car go-bag na nakapack para sa paghihintay sa floodwater, hindi para
-      sa pagdrive dito.
+      Isang car go-bag na naka-pack para maghintay lang na humupa ang
+      floodwater, hindi para magmaneho dumaan sa flood.
   - type: article
     assetId: 1659c975-3f01-4692-aff3-7a1410a4d411
     anchor: variations-and-conditions
-    label: Before The Signal
-    title: 'Dalawang tao, isang plano: ang madalas na mali ng mga couples'
+    label: Field Guide
+    title: 'Pag-pack para sa dalawa, hindi lang isa'
     slug: building-a-go-bag-for-two-a-practical-guide-for-couples-in-the-philippines
     description: >-
-      Madali lang mag-pack ng dalawang magkahiwalay na bags; ang mahirap ay
-      gawin itong pareho—na kahit sino sa inyo ang gumamit, gumagana pa rin—at
-      ito nga 'yung bagay na halos walang nagre-rehearse.
-railSourceHash: 2e77a2530a78e833
+      Isang tested go-bag split ng mag-asawa para sa unang 72 hours — ano ang
+      i-share, ano ang i-duplicate, at magkano ba talaga ang bigat nito.
+railSourceHash: 58c76c9b9c050b1c
 ---
 
 ## Ano'ng magagawa mo — at bakit importante 'to

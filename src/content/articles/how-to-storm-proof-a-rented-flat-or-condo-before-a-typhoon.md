@@ -5,10 +5,11 @@ description: >-
   balcony, drains, leaking sliding doors, water storage and the questions to ask
   your building admin. No drilling, no boarding up, no new gear.
 scenario: typhoon-season
-articleType: guide
 publishedAt: '2026-09-19'
 featured: false
 status: active
+updatedAt: '2026-09-21'
+articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789821706265-lr5hg1.png'
 railItems:
   - type: article
@@ -21,15 +22,6 @@ railItems:
       By the time the signal is raised over your province, the queues at the
       hardware store have formed — here is what each level actually buys you in
       lead time.
-  - type: article
-    assetId: 1659c975-3f01-4692-aff3-7a1410a4d411
-    anchor: what-you-need
-    label: Before The Signal
-    title: 'Two people, one plan: what most couples get wrong'
-    slug: building-a-go-bag-for-two-a-practical-guide-for-couples-in-the-philippines
-    description: >-
-      Packing two separate bags is easy; packing so either one works alone is
-      harder, and it is usually the thing nobody rehearses.
 ---
 
 ## What you'll be able to do — and why it matters

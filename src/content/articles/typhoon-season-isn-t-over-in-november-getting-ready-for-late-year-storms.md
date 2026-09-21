@@ -4,10 +4,11 @@ description: >-
   Two of the worst storms in recent memory hit in November. Here's why late-year
   typhoons still matter, and what to keep ready through the Christmas rush.
 scenario: typhoon-season
-articleType: guide
 publishedAt: '2026-09-20'
 featured: false
 status: active
+updatedAt: '2026-09-21'
+articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789878465798-wfvj1g.png'
 railItems:
   - type: article
@@ -20,15 +21,6 @@ railItems:
       By the time the signal is raised over your province, the queues at the
       hardware store have formed — here is what each level actually buys you in
       lead time.
-  - type: article
-    assetId: 00bdca6a-d40c-4259-82b4-ededbe7f054c
-    anchor: what-to-do-and-what-not-to
-    label: Ask The Admin
-    title: Five questions your building admin should answer before a typhoon
-    slug: how-to-storm-proof-a-rented-flat-or-condo-before-a-typhoon
-    description: >-
-      Genset runtime, water tank capacity, basement drainage and lift protocol —
-      the answers decide whether you shelter in place or leave early.
 ---
 
 ## The situation
