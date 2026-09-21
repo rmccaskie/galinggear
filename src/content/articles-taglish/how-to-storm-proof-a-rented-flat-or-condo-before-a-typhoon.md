@@ -13,8 +13,9 @@ railItems:
     title: 'Signal No. 2 na, huli ka na para mag-prep'
     slug: pagasa-wind-signals-1-to-5-what-to-actually-do-at-each-level
     description: >-
-      Sa oras na ma-raise na ang signal sa probinsya mo, may pila na sa hardware
-      store — ito ang actual na lead time na binibigay sa'yo ng bawat level.
+      Sa oras na ma-raise na 'yung signal sa probinsya mo, may pila na sa
+      hardware store — ito 'yung actual lead time na binibigay sa'yo ng bawat
+      level.
   - type: article
     assetId: 1659c975-3f01-4692-aff3-7a1410a4d411
     anchor: what-you-need
@@ -23,8 +24,8 @@ railItems:
     slug: building-a-go-bag-for-two-a-practical-guide-for-couples-in-the-philippines
     description: >-
       Madali lang mag-pack ng dalawang magkahiwalay na bag; ang mahirap, gawin
-      itong pwedeng gamitin ng isa kahit mag-isa — at ito nga 'yung karaniwang
-      'di na-rerehearse ng kahit sino.
+      itong pwede ring gamitin kahit isa lang sa inyo ang meron nito — at 'yun
+      nga 'yung bagay na wala talagang nagre-rehearse.
 ---
 
 ## Ano ang magagawa mo — at bakit importante ito

@@ -12,32 +12,31 @@ railItems:
   - type: image
     assetId: 0a1ee05b-2a3e-4375-a763-a43f94de0879
     anchor: what-actually-matters
-    label: Kailan dapat magpatingin
+    label: Kailan dapat magpacheck-up
     image: 'https://images.galinggear.com/library/generated-1789901437581-2sglxx.png'
     alt: >-
-      Kamag-anak na sinusukat ang temperatura ng isang batang babae na
-      nagpapahinga sa bahay ilang araw pagkatapos ng baha
+      Relative checking the temperature of a young woman resting at home days
+      after a flood
     caption: >-
-      Kung fever, sakit ng ulo, o sakit ng betlog na nangyari sa loob ng
-      dalawang linggo pagkatapos lumusong sa baha, magpatingin sa doktor — 'wag
-      nang antayin pang gumaling mag-isa.
+      Kung may lagnat, sakit ng ulo, o sakit sa binti within two weeks after
+      mag-wade sa baha, magpatingin agad sa doctor — 'wag hintayin mawala 'yan.
   - type: article
     assetId: 3606c02f-716d-47d0-8ca2-a6d146936c0f
     anchor: a-calm-closing
-    label: Kilalanin Ang Mga Palatandaan
-    title: Ang lagnat pagkatapos ng baha na hindi dapat ipagpaliban hanggang Monday
+    label: Alamin Ang Mga Sintomas
+    title: '''Yung lagnat pagkatapos ng baha na ''di dapat i-hintay hanggang Monday'
     slug: >-
       leptospirosis-after-the-flood-what-to-do-if-you-ve-already-waded-through-it
     description: >-
-      Karamihan sa fever pagkatapos ng baha ay walang malubhang epekto, pero may
-      ilang pattern na kailangan mo nang dalhin sa clinic sa mismong araw —
-      alamin ang pagkakaiba bago pa dumating ang susunod na habagat.
+      Karamihan ng lagnat pagkatapos ng baha ay walang malaking dahilan para
+      mag-alala, pero may ilang pattern na kailangan mo nang puntahan sa clinic
+      same-day — alamin ang difference bago sumapit ang susunod na habagat.
   - type: image
     assetId: f0691992-c490-442f-b27c-d71bc64cf9d3
     anchor: the-situation
-    label: '''Wag hayaang mahuli ka'
+    label: '''Wag hayaang maabutan ka'
     image: 'https://images.galinggear.com/staging/1789809668891-roxlfa.png'
-    alt: Baradong highway dahil sa baha
+    alt: Flooded highway
 ---
 
 ## The situation

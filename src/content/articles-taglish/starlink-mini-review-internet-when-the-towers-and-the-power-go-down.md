@@ -9,15 +9,15 @@ railItems:
   - type: image
     assetId: ef436491-564b-4f31-b78f-e590e2b14c34
     anchor: overview
-    label: Magkasamang naghahanda
+    label: Packing together
     image: 'https://images.galinggear.com/library/generated-1789813245184-t6qxbl.png'
     alt: >-
-      Mag-asawang Pilipino na nakaluhod sa sahig ng apartment sa tabi ng
-      dalawang bukas na go bag na may damit, bote ng tubig, torch at first-aid
-      pouch na nakalatag.
+      Isang Pilipinong couple na naka-kneel sa sahig ng apartment nila, katabi
+      ang dalawang bukas na go bag na may laman na damit, tubig, torch, at
+      first-aid pouch.
     caption: >-
-      Dalawang bag, isang planong pareho nilang alam: inilatag muna ang lahat sa
-      sahig bago isara ulit.
+      Dalawang bag, isang plano: inilatag muna lahat sa sahig bago ibalik sa
+      loob.
 ---
 
 ## Overview

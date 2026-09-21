@@ -17,6 +17,28 @@ railItems:
       Madali lang mag-pack ng dalawang magkahiwalay na bag; ang mahirap ay ang
       gawin itong pareho pang gumagana kahit sino sa inyo ang mag-isa lang, at
       ito nga 'yung bagay na madalas walang nag-re-rehearse.
+  - type: image
+    assetId: 432cf5c5-5f0d-4e03-a9a6-012691d37cd9
+    anchor: the-method
+    label: Para manatiling ligtas
+    image: 'https://images.galinggear.com/library/generated-1789898898912-e6ktsa.png'
+    alt: >-
+      Mga naka-takip na water container at isang steel jug na naka-imbak sa lilim
+      sa isang concrete terrace
+    caption: >-
+      I-store ang treated water na nakatakip, makitid ang leeg, at wala sa sikat
+      ng araw — pinapaikli ng init at liwanag ang tagal nito.
+  - type: article
+    assetId: 3606c02f-716d-47d0-8ca2-a6d146936c0f
+    anchor: variations--conditions
+    label: Alamin Ang Mga Sintomas
+    title: '''Yung lagnat pagkatapos ng baha na ''di dapat i-hintay hanggang Monday'
+    slug: >-
+      leptospirosis-after-the-flood-what-to-do-if-you-ve-already-waded-through-it
+    description: >-
+      Karamihan ng lagnat pagkatapos ng baha ay walang malaking dahilan para
+      mag-alala, pero may ilang pattern na kailangan mo nang puntahan sa clinic
+      same-day — alamin ang difference bago sumapit ang susunod na habagat.
 ---
 
 ## Ano ang magagawa mo — at bakit importante ito
