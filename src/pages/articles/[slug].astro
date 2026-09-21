@@ -147,7 +147,16 @@ const localeRailItems: RailItemData[] = ((locData.railItems ?? []) as RailItemDa
     return { ...item, anchor: remapAnchor(item.anchor) }
   })
   .filter((x): x is RailItemData => x !== null)
-const railFor = (id: string) => localeRailItems.find((r) => r.anchor && r.anchor === id) ?? null
+// All rail cards bound to a given section id (a section may carry several).
+const railsFor = (id: string) => localeRailItems.filter((r) => r.anchor && r.anchor === id)
+// English fallback labels — must match the defaults RailItem itself renders when
+// no `strings` prop is passed, so a shared group label reads identically.
+const RAIL_DEFAULT_LABEL: Record<RailItemData['type'], string> = {
+  product: 'Our pick',
+  image: 'Illustration',
+  article: 'Suggested reading',
+  ad: 'Sponsored',
+}
 const { title, description, scenario, publishedAt, updatedAt, editorNote, heroImage, heroGallery, status } =
   locData
 const isArchived = status === 'archived'
@@ -232,15 +241,37 @@ function fmtDate(date: string) {
         {intro && <div class="section-block full" set:html={intro} />}
         {
           sections.map((section) => {
-            const rail = railFor(section.id)
+            const rails = railsFor(section.id)
+            // One card floats alongside the body (unchanged); two or more drop
+            // into a row underneath the body text.
+            const single = rails.length === 1 ? rails[0] : null
+            const group = rails.length > 1 ? rails : null
+            const effLabels = group
+              ? group.map((r) => r.label ?? RAIL_DEFAULT_LABEL[r.type])
+              : []
+            const groupLabel =
+              group && effLabels.every((l) => l === effLabels[0]) ? effLabels[0] : null
             return (
               <div
-                class:list={['section-block', rail ? 'has-rail' : 'full']}
-                data-rail-type={rail?.type}
+                class:list={[
+                  'section-block',
+                  single ? 'has-rail' : group ? 'has-rail-group' : 'full',
+                ]}
+                data-rail-type={single?.type}
               >
                 <div class="sec-head" set:html={section.headingHtml} />
-                {rail && <RailItem item={rail} locale={locale} />}
+                {single && <RailItem item={single} locale={locale} />}
                 <div class="sec-body" set:html={section.bodyHtml} />
+                {group && (
+                  <div class="rail-group">
+                    {groupLabel && <p class="rail-group__label mono">{groupLabel}</p>}
+                    <div class="rail-group__cards">
+                      {group.map((item) => (
+                        <RailItem item={item} locale={locale} hideLabel={groupLabel != null} />
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
             )
           })
@@ -582,6 +613,38 @@ function fmtDate(date: string) {
     }
   }
 
+  /* Multi-card sections: when a section carries two or more rail cards they
+     don't float — they drop into an equal-width row underneath the body text,
+     under a single shared label. */
+  .section-block.has-rail-group {
+    display: flow-root;
+  }
+
+  .section-block.has-rail-group .rail-group {
+    margin-block-start: var(--space-xl);
+  }
+
+  .section-block.has-rail-group .rail-group__label {
+    font-size: var(--text-label);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted-text);
+    margin: 0 0 var(--space-sm);
+  }
+
+  .section-block.has-rail-group .rail-group__cards {
+    display: grid;
+    gap: var(--space-lg);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  }
+
+  /* Inside a group the cards sit in their own columns, so drop RailItem's own
+     left divider and indent — the grid provides the separation. */
+  .section-block.has-rail-group :global(.rail) {
+    border-inline-start: 0;
+    padding-inline-start: 0;
+  }
+
   /* Definitive end-of-article break: a strong rule that separates the article
      body from the "More in …" links that follow. */
   .art-end {
@@ -631,6 +694,13 @@ function fmtDate(date: string) {
   /* Full-width sections keep the comfortable reading measure on their text.
      Two-column (has-rail) sections are constrained by the grid instead. */
   .body .section-block.full > * {
+    max-inline-size: var(--measure);
+  }
+
+  /* Multi-card sections keep the reading measure on their heading and body text;
+     the card row below spans the full content width. */
+  .body .section-block.has-rail-group > .sec-head,
+  .body .section-block.has-rail-group > .sec-body {
     max-inline-size: var(--measure);
   }
 
