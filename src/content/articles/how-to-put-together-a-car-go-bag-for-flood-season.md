@@ -8,7 +8,7 @@ scenario: flood-ready
 publishedAt: '2026-09-19'
 featured: true
 status: archived
-updatedAt: '2026-09-20'
+updatedAt: '2026-09-21'
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789781733133-eduj74.png'
 railItems:
@@ -32,12 +32,12 @@ railItems:
   - type: article
     assetId: 1659c975-3f01-4692-aff3-7a1410a4d411
     anchor: variations-and-conditions
-    label: Before The Signal
-    title: 'Two people, one plan: what most couples get wrong'
+    label: Field guide
+    title: 'Two people, one plan: packing a go bag that actually works'
     slug: building-a-go-bag-for-two-a-practical-guide-for-couples-in-the-philippines
     description: >-
-      Packing two separate bags is easy; packing so either one works alone is
-      harder, and it is usually the thing nobody rehearses.
+      A couple's real 72-hour setup — split weight, shared logic, no guesswork
+      when it matters.
 ---
 
 ## What you'll be able to do — and why it matters
