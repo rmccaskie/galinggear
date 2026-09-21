@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content'
 import BaseLayout from '../../layouts/BaseLayout.astro'
-import ScenarioNav from '../../components/ScenarioNav.astro'
+import scenarioOrder from '../../data/scenario-order.json'
 import ArticleCard from '../../components/ArticleCard.astro'
 import { SCENARIOS, scenarioLabel, scenarioBlurb } from '../../lib/scenarios'
 import type { Scenario } from '../../lib/scenarios'
@@ -15,12 +15,20 @@ export async function getStaticPaths() {
     params: { scenario },
     props: {
       scenario,
-      articles: articles
-        .filter((a) => a.data.scenario === scenario && a.data.status !== 'archived')
-        .sort(
-          (a, b) =>
-            new Date(b.data.publishedAt).valueOf() - new Date(a.data.publishedAt).valueOf()
-        ),
+      articles: (() => {
+        const order = (scenarioOrder as Record<string, string[]>)[scenario] ?? []
+        const rank = new Map(order.map((slug, i) => [slug, i]))
+        return articles
+          .filter((a) => a.data.scenario === scenario && a.data.status !== 'archived')
+          .sort((a, b) => {
+            const ra = rank.has(a.id) ? rank.get(a.id)! : Infinity
+            const rb = rank.has(b.id) ? rank.get(b.id)! : Infinity
+            if (ra !== rb) return ra - rb
+            return (
+              new Date(b.data.publishedAt).valueOf() - new Date(a.data.publishedAt).valueOf()
+            )
+          })
+      })(),
       archivedCount: articles.filter(
         (a) => a.data.scenario === scenario && a.data.status === 'archived'
       ).length,
@@ -47,10 +55,6 @@ const tlMap = await getTaglishMap()
     <p class="eyebrow mono">{strings['scenario.eyebrow']}</p>
     <h1>{label}</h1>
     <p class="blurb">{blurb}</p>
-  </section>
-
-  <section class="wrap section">
-    <ScenarioNav active={scenario} locale={locale} strings={strings} />
   </section>
 
   <section class="wrap section">

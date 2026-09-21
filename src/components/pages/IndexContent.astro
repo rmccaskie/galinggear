@@ -4,6 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro'
 import ArticleCard from '../ArticleCard.astro'
 import SubscribeForm from '../SubscribeForm.astro'
 import featuredOrder from '../../data/featured.json'
+import articleOrder from '../../data/article-order.json'
 import { type Locale, DEFAULT_LOCALE, localisedPath } from '../../lib/i18n'
 import { resolvedCatalogue } from '../../lib/catalogue'
 import { getTaglishMap, localiseArticleData } from '../../lib/article-locale'
@@ -26,8 +27,15 @@ const featuredArticles = (featuredOrder as string[])
 const featured = featuredArticles[0] ?? articles[0]
 const alsoFeatured = featuredArticles.slice(1)
 const featuredIds = new Set(featuredArticles.map((a) => a.id))
+const orderRank = new Map((articleOrder as string[]).map((slug, i) => [slug, i]))
 const recent = articles
   .filter((a) => a.id !== featured?.id && !featuredIds.has(a.id))
+  .sort((a, b) => {
+    const ra = orderRank.has(a.id) ? orderRank.get(a.id)! : Infinity
+    const rb = orderRank.has(b.id) ? orderRank.get(b.id)! : Infinity
+    if (ra !== rb) return ra - rb
+    return new Date(b.data.publishedAt).valueOf() - new Date(a.data.publishedAt).valueOf()
+  })
   .slice(0, 6)
 
 const loc = (a: typeof articles[number]) => localiseArticleData(a, locale, tlMap)
