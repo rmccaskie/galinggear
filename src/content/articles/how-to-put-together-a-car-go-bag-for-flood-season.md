@@ -32,12 +32,12 @@ railItems:
   - type: article
     assetId: 1659c975-3f01-4692-aff3-7a1410a4d411
     anchor: variations-and-conditions
-    label: Field guide
-    title: 'Two bags, one plan: a couple''s go bag that actually works'
+    label: Read Next
+    title: 'Two people, one plan: packing a go bag as a couple'
     slug: building-a-go-bag-for-two-a-practical-guide-for-couples-in-the-philippines
     description: >-
-      How we split gear and weight for 72 hours without duplicating kit or
-      guessing what the other packed.
+      How to split weight, gear and decisions so both bags work together when
+      the 72 hours actually come.
 ---
 
 ## What you'll be able to do — and why it matters
