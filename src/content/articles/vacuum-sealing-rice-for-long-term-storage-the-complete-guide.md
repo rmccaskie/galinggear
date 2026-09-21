@@ -4,10 +4,11 @@ description: >-
   A practical, step-by-step guide to vacuum-sealing rice into go-bag and
   pantry-ready packs — what it protects against, what it doesn't, and how to do
   it properly with gear you can buy locally.
-scenario: go-bag
+scenario: pantry-food
 publishedAt: '2026-09-21'
 featured: false
 status: active
+updatedAt: '2026-09-21'
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789968137516-vu5sdt.png'
 ---
