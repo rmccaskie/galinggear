@@ -9,14 +9,14 @@ railItems:
   - type: image
     assetId: 12aa7a33-a16a-4e19-81af-aee597f80894
     anchor: the-gear-that-helps
-    label: May ilaw ka pag kailangan mo.
+    label: May ilaw ka pag kailangan mo talaga.
     image: 'https://images.galinggear.com/staging/generated-1789819604956-huo9e9.png'
   - type: image
     assetId: f0691992-c490-442f-b27c-d71bc64cf9d3
     anchor: the-situation
-    label: '''Wag hayaang mahuli ka sa gitna'
+    label: Wag hayaang mahuli ka sa ganitong sitwasyon
     image: 'https://images.galinggear.com/staging/1789809668891-roxlfa.png'
-    alt: Baha sa highway
+    alt: Flooded highway
 ---
 
 ## The situation
