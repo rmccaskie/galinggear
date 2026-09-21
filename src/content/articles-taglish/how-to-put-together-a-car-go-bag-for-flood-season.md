@@ -15,14 +15,14 @@ railItems:
   - type: image
     assetId: 78d637f8-a667-4b9f-bf47-d759cf879d62
     anchor: what-you-need
-    label: Nakapack na at nakahanda
+    label: Naka-pack at handa na
     image: 'https://images.galinggear.com/library/generated-1789813011557-ayr0ms.png'
     alt: >-
       Open car boot with a dry bag, water bottles, torch, first-aid pouch and
       poncho on a wet street.
     caption: >-
-      Isang car go-bag na nakapack para sa paghihintay sa floodwater, hindi para
-      sa pagdaan dito.
+      Isang car go bag na naka-pack para sa paghihintay sa floodwater — hindi
+      para sa pagda-drive dito.
   - type: article
     assetId: 1659c975-3f01-4692-aff3-7a1410a4d411
     anchor: variations-and-conditions
@@ -30,9 +30,9 @@ railItems:
     title: 'Dalawang tao, isang plano: ang madalas na mali ng mga couple'
     slug: building-a-go-bag-for-two-a-practical-guide-for-couples-in-the-philippines
     description: >-
-      Madali lang mag-pack ng dalawang magkahiwalay na bag; ang mahirap ay ang
-      mag-pack para gumana kahit sino sa kanilang dalawa nang mag-isa, at ito
-      usually ang bagay na walang nagre-rehearse.
+      Madali lang mag-pack ng dalawang magkahiwalay na bag; pero mas mahirap
+      'yung i-pack para gumana kahit sino man sa inyo nang mag-isa — at
+      karaniwan, ito 'yung hindi na-rerehearse ninuman.
 ---
 
 ## Ano'ng magagawa mo — at bakit importante 'to
