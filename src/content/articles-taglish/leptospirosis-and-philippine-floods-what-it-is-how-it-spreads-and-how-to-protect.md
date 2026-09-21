@@ -12,31 +12,32 @@ railItems:
   - type: image
     assetId: 0a1ee05b-2a3e-4375-a763-a43f94de0879
     anchor: what-actually-matters
-    label: Kailan dapat magpacheck-up
+    label: Kailan dapat magpatingin
     image: 'https://images.galinggear.com/library/generated-1789901437581-2sglxx.png'
     alt: >-
-      Relative checking the temperature of a young woman resting at home days
-      after a flood
+      Kamag-anak na tini-check ang temperatura ng isang batang babae na
+      nagpapahinga sa bahay ilang araw pagkatapos ng baha
     caption: >-
-      Kung may lagnat, sakit ng ulo, o sakit sa binti within two weeks after
-      mag-wade sa baha, magpatingin agad sa doctor — 'wag hintayin mawala 'yan.
+      Kung may lagnat, sakit ng ulo, o sakit ng betis sa loob ng dalawang linggo
+      pagkatapos malubog sa baha, magpatingin sa doktor — huwag na hintayin pa.
   - type: article
     assetId: 3606c02f-716d-47d0-8ca2-a6d146936c0f
     anchor: a-calm-closing
     label: Alamin Ang Mga Sintomas
-    title: '''Yung lagnat pagkatapos ng baha na ''di dapat i-hintay hanggang Monday'
+    title: '''Yung lagnat pagkatapos ng baha na hindi dapat i-hintay hanggang Monday'
     slug: >-
       leptospirosis-after-the-flood-what-to-do-if-you-ve-already-waded-through-it
     description: >-
-      Karamihan ng lagnat pagkatapos ng baha ay walang malaking dahilan para
-      mag-alala, pero may ilang pattern na kailangan mo nang puntahan sa clinic
-      same-day — alamin ang difference bago sumapit ang susunod na habagat.
+      Karamihan sa lagnat pagkatapos ng baha ay wala namang malaking problema,
+      pero may ilang pattern na kailangan mong puntahan agad sa clinic — alamin
+      ang pagkakaiba bago sumapit ang susunod na habagat.
   - type: image
     assetId: f0691992-c490-442f-b27c-d71bc64cf9d3
     anchor: the-situation
-    label: '''Wag hayaang maabutan ka'
+    label: Huwag hayaang maabutan ka
     image: 'https://images.galinggear.com/staging/1789809668891-roxlfa.png'
-    alt: Flooded highway
+    alt: Baha sa highway
+railSourceHash: bc7535742dc26b0f
 ---
 
 ## The situation
