@@ -16,7 +16,7 @@ railItems:
     anchor: the-situation
     label: Wag hayaang mahuli ka sa ganitong sitwasyon
     image: 'https://images.galinggear.com/staging/1789809668891-roxlfa.png'
-    alt: Flooded highway
+    alt: Binahang highway
 ---
 
 ## The situation

@@ -11,15 +11,15 @@ railItems:
     anchor: the-rule-the-bag-does-not-change
     label: Huwag hayaang maabutan ka
     image: 'https://images.galinggear.com/staging/1789809668891-roxlfa.png'
-    alt: Flooded highway
+    alt: Binahang highway
   - type: image
     assetId: 78d637f8-a667-4b9f-bf47-d759cf879d62
     anchor: what-you-need
     label: Naka-pack at handa na
     image: 'https://images.galinggear.com/library/generated-1789813011557-ayr0ms.png'
     alt: >-
-      Open car boot with a dry bag, water bottles, torch, first-aid pouch and
-      poncho on a wet street.
+      Bukas na car boot na may dry bag, mga bote ng tubig, torch, first-aid
+      pouch at poncho sa basang kalsada.
     caption: >-
       Isang car go bag na naka-pack para sa paghihintay sa floodwater — hindi
       para sa pagda-drive dito.

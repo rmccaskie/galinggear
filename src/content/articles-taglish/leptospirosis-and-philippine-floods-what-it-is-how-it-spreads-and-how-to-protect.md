@@ -15,8 +15,8 @@ railItems:
     label: Kailan dapat magpacheck-up
     image: 'https://images.galinggear.com/library/generated-1789901437581-2sglxx.png'
     alt: >-
-      Relative checking the temperature of a young woman resting at home days
-      after a flood
+      Kamag-anak na kinukuha ang temperatura ng isang babaeng nagpapahinga sa
+      bahay ilang araw matapos ang baha
     caption: >-
       Kung may lagnat, sakit ng ulo, o sakit sa binti within two weeks after
       mag-wade sa baha, magpatingin agad sa doctor — 'wag hintayin mawala 'yan.
@@ -36,7 +36,7 @@ railItems:
     anchor: the-situation
     label: '''Wag hayaang maabutan ka'
     image: 'https://images.galinggear.com/staging/1789809668891-roxlfa.png'
-    alt: Flooded highway
+    alt: Binahang highway
 ---
 
 ## The situation
