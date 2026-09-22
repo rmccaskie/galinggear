@@ -10,6 +10,19 @@ featured: false
 status: active
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789992795148-icpck7.png'
+shareImage: 'https://images.galinggear.com/articles/generated-1789992795148-icpck7.png'
+social:
+  facebook: "\"Storm surge warning\" and \"flood warning\" are not the same thing — and mixing them up can be dangerous. Storm surge is seawater pushed inland by a typhoon, and it can rise fast even without rain in your area. If you're in a coastal barangay, know when the right move is to head to high ground, not just a higher floor. \U0001F30A Read the full guide here:\nhttps://galinggear.com/en/articles/storm-surge-vs-flooding-why-high-ground-beats-a-higher-floor/"
+  x: "Storm surge ≠ ordinary flooding. It's seawater, not rain — and it can rise faster than you think. Know when to go high ground, not just a higher floor. \U0001F30A https://galinggear.com/en/articles/storm-surge-vs-flooding-why-high-ground-beats-a-higher-floor/ #TyphoonPH #StormSurge"
+  instagram: "Coastal families take note: \"storm surge\" and \"flood\" are not the same warning, and treating them the same can cost precious time.\n\nStorm surge is seawater pushed inland by a typhoon's wind and pressure — it can rise fast, even before the rain starts. This guide breaks down how to tell it apart from ordinary flooding, how to read PAGASA's advisories, and why high ground beats a higher floor when the sea starts coming in. \U0001F30A\n\nLink in bio \U0001F517\n\n#TyphoonPrep #StormSurge #PAGASA #DisasterPreparedness #PhilippinesTyphoon #FloodSafety #EmergencyPreparedness #CoastalCommunities #TyphoonSeason #StaySafePH #GalingGear #PrepareThePhilippines"
+  facebookTl: "\"Storm surge warning\" and \"flood warning\" — pareho ba sila? Hindi pala! Storm surge ay dagat na sumasalakay papasok sa lupa dahil sa hangin at low pressure ng bagyo, kaya pwede itong tumaas nang mabilis kahit wala pang malakas na ulan. Alamin kung paano ito iba sa ordinaryong baha at kung bakit \"high ground\" ang tamang sagot, hindi \"higher floor\" \U0001F30A Basahin dito:\nhttps://galinggear.com/articles/storm-surge-vs-flooding-why-high-ground-beats-a-higher-floor/"
+  xTl: >-
+    Storm surge ≠ baha. Dagat 'yan na itinutulak ng hangin ng bagyo, pwedeng
+    bumilis ng biglaan. Alamin kung bakit "high ground," hindi "higher floor,"
+    ang dapat mong lakasan.
+    https://galinggear.com/articles/storm-surge-vs-flooding-why-high-ground-beats-a-higher-floor/
+    #StormSurge #TyphoonPH
+  instagramTl: "Bagyo season na naman, kaya important malaman: storm surge at flood, magkaiba pala 'to! \U0001F30A Ang storm surge ay dagat na itinutulak papasok ng hangin at low pressure ng bagyo — kayang tumaas kahit walang malakas na ulan pa. Ang tamang move dito ay pumunta sa high ground, hindi umakyat lang sa mas mataas na sahig ng bahay. Alamin kung paano basahin ang mga advisory ng PAGASA at kung paano protektahan ang pamilya mo bago pa dumating ang bagyo.\n\nLink in bio \U0001F517\n\n#StormSurge #TyphoonPH #BagyoPrep #DisasterPreparedness #FloodSafety #PAGASA #EmergencyPrepPH #GalingGear #TyphoonSeason #PinoyPrepared #SafetyFirst #ClimateResiliencePH"
 ---
 
 ## The situation
