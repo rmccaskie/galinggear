@@ -1,14 +1,13 @@
 ---
-title: 'PAGASA wind signals 1 to 5: what to actually do at each level'
+title: 'PAGASA signals explained: what to do at each level'
 description: >-
-  A plain-language walk-through of PAGASA's Tropical Cyclone Wind Signals,
-  written for people who only half-follow the bulletins. Signals are about wind
-  and lead time, not rain — here is what I actually do at each level.
+  PAGASA wind signals 1 to 5 explained simply: what each level means for lead
+  time, wind, and what to actually do before the next typhoon hits.
 scenario: typhoon-season
 publishedAt: '2026-09-19'
 featured: true
 status: active
-updatedAt: '2026-09-19'
+updatedAt: '2026-09-22'
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789820419923-hox5ga.png'
 railItems:
