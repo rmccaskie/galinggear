@@ -51,10 +51,18 @@ const ig = pick(social?.instagram, social?.instagramTl)
 
 const enc = encodeURIComponent
 const fbShare = `https://www.facebook.com/sharer/sharer.php?u=${enc(url)}`
-const xShare = `https://twitter.com/intent/tweet?${x ? `text=${enc(x)}&` : ''}url=${enc(url)}`
+// The baked copy already contains the article link, so passing url= as well
+// would put the URL in the tweet twice. Only add url= for legacy copy that has
+// no link of its own (or when there's no baked copy at all).
+const hasLink = (s: string) => /https?:\/\//.test(s)
+const xShare = x
+  ? `https://twitter.com/intent/tweet?text=${enc(x)}${hasLink(x) ? '' : `&url=${enc(url)}`}`
+  : `https://twitter.com/intent/tweet?url=${enc(url)}`
 
-// Facebook comments can't carry a link card, so its copy includes the URL.
-const fbCopy = fb ? `${fb}\n\n${url}` : ''
+// Facebook comments can't carry a link card, so the copy needs the URL inline.
+// The baked copy already ends with it, so only append the URL for legacy copy
+// that doesn't already contain a link — otherwise it would appear twice.
+const fbCopy = fb ? (hasLink(fb) ? fb : `${fb}\n\n${url}`) : ''
 const compact = variant === 'compact'
 ---
 
@@ -70,13 +78,13 @@ const compact = variant === 'compact'
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Share on Facebook"
-        title="Share on Facebook"
+        data-tip="Share this guide on Facebook"
       >
         <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06C2 17.09 5.66 21.25 10.44 22v-7.03H7.9v-2.9h2.54V9.85c0-2.52 1.5-3.91 3.78-3.91 1.1 0 2.24.2 2.24.2v2.47H15.2c-1.24 0-1.63.78-1.63 1.57v1.88h2.78l-.44 2.9h-2.34V22C18.34 21.25 22 17.09 22 12.06Z"/></svg>
         {!compact && <span>Share</span>}
       </a>
       {fbCopy && (
-        <button type="button" class="sb-btn sb-copy" data-gg-copy={fbCopy} aria-label="Copy Facebook post text">
+        <button type="button" class="sb-btn sb-copy" data-gg-copy={fbCopy} aria-label="Copy Facebook post text" data-tip="Copy the post text and link to paste into a Facebook post or comment">
           <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
           <span data-gg-label>{compact ? '' : 'Copy text'}</span>
         </button>
@@ -91,13 +99,13 @@ const compact = variant === 'compact'
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Share on X"
-        title="Share on X"
+        data-tip="Share this guide on X"
       >
         <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="currentColor"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.22-6.82-5.97 6.82H1.66l7.73-8.83L1.24 2.25h6.83l4.71 6.23 5.46-6.23Zm-1.16 17.52h1.83L7.01 4.13H5.05l12.03 15.64Z"/></svg>
         {!compact && <span>Share</span>}
       </a>
       {x && (
-        <button type="button" class="sb-btn sb-copy" data-gg-copy={x} aria-label="Copy X post text">
+        <button type="button" class="sb-btn sb-copy" data-gg-copy={x} aria-label="Copy X post text" data-tip="Copy the post text to paste into a new post on X">
           <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
           <span data-gg-label>{compact ? '' : 'Copy text'}</span>
         </button>
@@ -107,7 +115,7 @@ const compact = variant === 'compact'
     {/* Instagram — copy caption only (no web share intent) */}
     {ig && (
       <div class="sharebar__group">
-        <button type="button" class="sb-btn sb-ig" data-gg-copy={ig} aria-label="Copy Instagram caption" title="Copy Instagram caption">
+        <button type="button" class="sb-btn sb-ig" data-gg-copy={ig} aria-label="Copy Instagram caption" data-tip="Copy the caption to paste into your Instagram post">
           <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16Zm0 1.62c-3.15 0-3.5.01-4.74.07-.99.05-1.53.21-1.88.35-.47.18-.81.4-1.17.76-.36.36-.58.7-.76 1.17-.14.35-.3.89-.35 1.88-.06 1.24-.07 1.59-.07 4.74s.01 3.5.07 4.74c.05.99.21 1.53.35 1.88.18.47.4.81.76 1.17.36.36.7.58 1.17.76.35.14.89.3 1.88.35 1.24.06 1.59.07 4.74.07s3.5-.01 4.74-.07c.99-.05 1.53-.21 1.88-.35.47-.18.81-.4 1.17-.76.36-.36.58-.7.76-1.17.14-.35.3-.89.35-1.88.06-1.24.07-1.59.07-4.74s-.01-3.5-.07-4.74c-.05-.99-.21-1.53-.35-1.88a3.15 3.15 0 0 0-.76-1.17 3.15 3.15 0 0 0-1.17-.76c-.35-.14-.89-.3-1.88-.35-1.24-.06-1.59-.07-4.74-.07Zm0 2.76a5.3 5.3 0 1 1 0 10.6 5.3 5.3 0 0 1 0-10.6Zm0 8.74a3.44 3.44 0 1 0 0-6.88 3.44 3.44 0 0 0 0 6.88Zm6.74-8.94a1.24 1.24 0 1 1-2.48 0 1.24 1.24 0 0 1 2.48 0Z"/></svg>
         {!compact && <span data-gg-label>Copy caption</span>}
       </button>
@@ -145,6 +153,7 @@ const compact = variant === 'compact'
     display: flex;
     flex-direction: column;
     gap: var(--space-sm);
+    position: relative;
   }
 
   .sharebar__heading {
@@ -193,6 +202,39 @@ const compact = variant === 'compact'
     flex-shrink: 0;
   }
 
+  /* Discreet hover / focus tooltip describing what each button does. Anchored
+     to the whole bar and centred, so it never spills past a card with clipped
+     corners regardless of which icon is hovered. */
+  .sb-btn[data-tip]::after {
+    content: attr(data-tip);
+    position: absolute;
+    left: 50%;
+    bottom: calc(100% + 8px);
+    transform: translateX(-50%) translateY(4px);
+    z-index: 30;
+    inline-size: max-content;
+    max-inline-size: 15rem;
+    padding: var(--space-2xs) var(--space-xs);
+    border-radius: var(--radius-sm);
+    background-color: var(--main-text);
+    color: var(--surface);
+    font-size: var(--text-label);
+    font-weight: 500;
+    line-height: 1.35;
+    text-align: center;
+    white-space: normal;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: var(--card-shadow);
+    transition: opacity 150ms ease, transform 150ms ease;
+  }
+
+  .sb-btn[data-tip]:hover::after,
+  .sb-btn[data-tip]:focus-visible::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+
   /* The share link keeps a subtle right divider from its copy sibling. */
   .sharebar__group .sb-copy {
     border-inline-start: 1px solid var(--hairline);
@@ -208,9 +250,14 @@ const compact = variant === 'compact'
   .sb-x:hover { color: #000; }
   .sb-ig:hover { color: #c13584; }
 
-  /* Compact variant (article card): icon-only, tighter. */
+  /* Compact variant (article card): icon-only, tighter, one line. */
   .sharebar.compact .sharebar__row {
     gap: var(--space-xs);
+    flex-wrap: nowrap;
+  }
+
+  .sharebar.compact .sharebar__group {
+    flex: 0 0 auto;
   }
 
   .sharebar.compact .sb-btn {
