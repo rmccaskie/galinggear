@@ -1,13 +1,13 @@
 ---
-title: 'Surviving a Philippine heat wave without aircon: a household guide'
+title: 'Philippine heat wave guide: staying safe without aircon'
 description: >-
-  A calm, practical guide for Filipino households on reading the PAGASA heat
-  index, cooling down without aircon, protecting elderly and young family
-  members, and knowing when heat becomes a medical emergency.
+  No aircon during a Philippine heat wave? Learn to read PAGASA's heat index and
+  keep your family safe from heat exhaustion this summer.
 scenario: heat-wave
 publishedAt: '2026-09-20'
 featured: false
 status: active
+updatedAt: '2026-09-22'
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789902315922-4vmvp0.png'
 shareImage: 'https://images.galinggear.com/articles/generated-1789902315922-4vmvp0.png'
