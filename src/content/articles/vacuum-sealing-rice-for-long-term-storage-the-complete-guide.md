@@ -11,6 +11,19 @@ status: active
 updatedAt: '2026-09-21'
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789968137516-vu5sdt.png'
+shareImage: 'https://images.galinggear.com/articles/generated-1789968137516-vu5sdt.png'
+social:
+  facebook: "Rice doesn't just \"go bad\" — it fails because of moisture, oxygen, and pests. Vacuum sealing tackles the oxygen problem head-on, making it a smart move for go-bags, car kits, and emergency boxes where rice might sit untouched for a year or more. Our complete guide walks you through what it protects against, what it doesn't (hint: light is still a problem), and how to do it properly with gear you can find locally. \U0001F33E\nhttps://galinggear.com/en/articles/vacuum-sealing-rice-for-long-term-storage-the-complete-guide/"
+  x: >-
+    Vacuum-sealed rice can survive a year in a hot car trunk — but only if you
+    know its limits. Our full guide covers what it protects against (and what it
+    doesn't):
+    https://galinggear.com/en/articles/vacuum-sealing-rice-for-long-term-storage-the-complete-guide/
+    #EmergencyPrep #FoodStorage
+  instagram: "Rice in your go-bag needs to survive more than just time — it needs to survive neglect. Vacuum sealing is one of the best tools for that job, but it's not magic: it stops oxidation and pest activity, but it won't block light or make up for a bad bag material. Our complete guide breaks down exactly what vacuum sealing does and doesn't do, plus how to do it right with gear available locally. \U0001F33E\n\nLink in bio \U0001F517\n\n#EmergencyPreparedness #FilipinoHousehold #RiceStorage #GoBagEssentials #FoodStoragePH #DisasterPrep #PantryPrep #TyphoonReady #PrepperPH #SurvivalTips #EmergencyKit"
+  facebookTl: "Alam niyo ba na hindi lang basta paglagay sa vacuum bag ang kailangan para tumagal ang bigas niyo? May mga bagay na kayang i-protect ng vacuum sealing (oxidation, bagong insect activity, moisture) — pero may limitations din siya na dapat niyong malaman, lalo na kung nasa go-bag o car kit ang bigas niyo. Full step-by-step guide namin dito, kasama ang gear na pwede niyong bilhin locally. \U0001F33E\nhttps://galinggear.com/articles/vacuum-sealing-rice-for-long-term-storage-the-complete-guide/"
+  xTl: "Vacuum-sealed na ba yung bigas sa go-bag niyo? Alamin kung ano talaga ang na-a-address nito (at ano ang hindi) bago kayo umasa dito para sa emergency stash. \U0001F35A\nhttps://galinggear.com/articles/vacuum-sealing-rice-for-long-term-storage-the-complete-guide/ #EmergencyPrep #TatagPH"
+  instagramTl: "Rice weevils, moisture, staleness — kayang i-fight ng vacuum sealing pero hindi lahat. Kung may go-bag, car kit, o emergency box kayong sinesave-an ng bigas, dapat alam niyo ang buong picture: ano talaga ang na-p-protect, ano ang limitations, at paano gawin nang tama gamit ang gear na available dito sa Pinas. Step-by-step guide namin, sulit basahin bago kayo mag-stock ulit ng bigas para sa emergency. \U0001F33E\n\nLink in bio \U0001F517\n\n#EmergencyPrepPH #TatagPH #FoodStorage #RiceStorage #GoBagEssentials #PinoyPrepper #DisasterReady #PantryPrep #SurvivalTips #WalangPasok #ReadyPH #KalamidadHandaTayo"
 ---
 
 This is one part of a series on keeping rice safe for months or years in a Filipino household. If you are still deciding which storage method fits your situation, start with our hub guide: Long-term rice storage: the complete guide for Filipino households. This article goes deep on one method — vacuum sealing — and where it earns its place in a go-bag, car kit, or emergency box.
