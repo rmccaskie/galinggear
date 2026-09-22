@@ -9,6 +9,24 @@ featured: false
 status: active
 updatedAt: '2026-09-22'
 heroImage: 'https://images.galinggear.com/articles/generated-1790049046073-fwc8yl.png'
+shareImage: 'https://images.galinggear.com/articles/generated-1790049046073-fwc8yl.png'
+social:
+  facebook: "Most earthquake injuries indoors don't come from your house collapsing — they come from ordinary things falling: a fridge tipping, a TV coming off its bracket, an overhead cabinet emptying onto someone at the counter. The good news is that almost all of it is preventable with budget hardware you can find at your local hardware store or online. Our room-by-room guide shows you exactly where to start, even if you're renting. \U0001F3E0\nhttps://galinggear.com/en/articles/anchor-furniture-earthquake-ready/"
+  x: >-
+    Your bookshelf doesn't need to become a hazard when the shaking starts.
+    Room-by-room guide to anchoring furniture, fridges & TVs on a budget —
+    renter-friendly too.
+    https://galinggear.com/en/articles/anchor-furniture-earthquake-ready/
+    #EarthquakeReady #PHPrepared
+  instagram: "The structure of your house usually holds up longer than people expect during a strong earthquake. What actually hurts people indoors is more ordinary: a falling fridge, a TV off its bracket, an overhead cabinet dumping its contents. ⚠️\n\nThe fix doesn't need a full toolbox — just a few pieces of budget hardware (L-brackets, anti-tip straps, museum putty, cabinet latches) placed in the right spots. Our room-by-room guide walks you through anchoring furniture and appliances, renter-friendly tips included.\n\nLink in bio \U0001F517\n\n#EarthquakeReady #EarthquakePreparedness #PHPrepared #DisasterPreparedness #HomeSafety #WestValleyFault #EmergencyPrep #FilipinoHousehold #SafetyFirst #GalingGear #PreparednessTips #StaySafePH"
+  facebookTl: "Hindi naman kailangan i-retrofit ang buong bahay para maging mas ligtas kapag lumindol — minsan ang pagbibigkis lang ng ref, TV, at cabinets ang malaking difference. Room-by-room guide 'to na pwede mong sundin kahit renter ka lang, at budget-friendly pa ang hardware na kailangan. Check niyo 'to bago pa may kailangan pang biglain: \U0001F3E0\nhttps://galinggear.com/articles/anchor-furniture-earthquake-ready/"
+  xTl: >-
+    Yung ref o TV niyo, secure na ba kapag lumindol? Room-by-room guide para
+    i-anchor ang furniture gamit lang ang budget hardware. Kahit renter ka,
+    pwede 'to.
+    https://galinggear.com/articles/anchor-furniture-earthquake-ready/
+    #EarthquakeReady #PHPrep
+  instagramTl: "Real talk: sa mga lindol, hindi kadalasan ang building ang problema — yung mga bagay sa loob ng bahay na natutumba o nahuhulog ang mas madalas na sanhi ng injury. Ref na tumatagilid, TV na nahuhulog sa bracket, cabinet na basta bumubukas at nagbubuhos ng laman — lahat 'to preventable gamit ang simpleng hardware lang, kahit budget-conscious ka o umuupa lang ng unit. Sinulat namin 'tong room-by-room guide para malaman niyo exactly saan mag-uumpisa — mula sa mga anchor strap hanggang sa cabinet latches na pwede niyong hanapin sa mga lokal na hardware store o sa Shopee/Lazada.\n\nLink in bio \U0001F517\n\n#EarthquakeReady #PHPreparedness #GalingGear #LindolPrep #DisasterPreparedness #WestValleyFault #SafetyAtHome #FilipinoFamily #EmergencyPrep #BahayNaLigtas"
 ---
 
 ## What you'll be able to do — and why it matters
