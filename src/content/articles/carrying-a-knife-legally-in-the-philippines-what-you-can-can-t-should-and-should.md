@@ -1,15 +1,13 @@
 ---
-title: >-
-  Carrying a knife legally in the Philippines: what you can, can't, should and
-  shouldn't do
+title: Carrying a pocket knife legally in the Philippines
 description: >-
-  A plain-language look at where the legal lines actually sit for everyday
-  pocket knives and multitools in the Philippines — national rules, local
-  ordinances, and the situations that trip people up.
+  Carrying a pocket knife or multitool in the Philippines? Here's what national
+  law, local ordinances, and everyday situations actually allow.
 scenario: edc
 publishedAt: '2026-09-20'
 featured: false
 status: active
+updatedAt: '2026-09-22'
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789909337573-lmb5z2.png'
 shareImage: 'https://images.galinggear.com/articles/generated-1789909337573-lmb5z2.png'
