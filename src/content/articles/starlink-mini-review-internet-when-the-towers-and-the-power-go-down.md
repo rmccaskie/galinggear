@@ -1,14 +1,13 @@
 ---
-title: 'Starlink Mini review: internet when the towers and the power go down'
+title: 'Starlink Mini review: internet after towers lose power'
 description: >-
-  A small dish that keeps a household online when the local lines are cut —
-  provided you have solved the power problem first. Honest notes from a
-  Philippine wet season.
+  Starlink Mini review: keeps Pinoy homes online when typhoons knock out power
+  and cell towers. Honest specs, power needs, and setup notes for wet season.
 scenario: stay-connected
 publishedAt: '2026-09-18'
 featured: true
 status: active
-updatedAt: '2026-09-19'
+updatedAt: '2026-09-22'
 articleType: review
 heroImage: 'https://images.galinggear.com/library/sourced-1789817538199-3tlzjx.jpg'
 editorNote: We buy our own gear. Prices checked Sept 2026.
