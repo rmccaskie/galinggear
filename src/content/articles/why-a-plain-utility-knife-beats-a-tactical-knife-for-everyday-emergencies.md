@@ -10,6 +10,19 @@ featured: false
 status: active
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789909757006-d1mbdh.png'
+shareImage: 'https://images.galinggear.com/articles/generated-1789909757006-d1mbdh.png'
+social:
+  facebook: "That \"survival knife\" on Shopee with the serrated spine and spike tip looks impressive, but real emergencies call for cutting rope, tarp, and packing tape — not fighting anyone. A plain-edge, full-tang utility knife does that job better every time. \U0001F52A Here's why boring wins when it matters most:\nhttps://galinggear.com/en/articles/why-a-plain-utility-knife-beats-a-tactical-knife-for-everyday-emergencies/"
+  x: "Tactical-looking knife vs. plain utility knife: which one actually gets you through a typhoon? Spoiler — it's not the one with the spike tip. \U0001F52A\nhttps://galinggear.com/en/articles/why-a-plain-utility-knife-beats-a-tactical-knife-for-everyday-emergencies/\n#EmergencyPrep #EDC"
+  instagram: "A \"survival knife\" with finger holes and a glass-breaker looks serious — but during an actual typhoon or flood, you're cutting rope, tarp, and packing tape, not fighting anyone. We break down why a plain-edge, full-tang utility knife is the smarter pick for Filipino households, and what to actually look for when a knife has real work to do. \U0001F52A\n\nLink in bio \U0001F517\n\n#GalingGear #EmergencyPreparedness #EDC #EverydayCarry #PhilippinePrepper #TyphoonPrep #DisasterPreparedness #UtilityKnife #PracticalGear #FilipinoHousehold #PrepperPH #BeReady"
+  facebookTl: "Yung \"survival knife\" na may serrated edge, spike tip, tapos may glass breaker pa — mukhang cool sa Shopee pero sa totoong calamity, hindi mo yun gagamitin sa tao. Rope, tarp, packing tape, pagbukas ng canned goods — plain utility knife lang ang kailangan mo dito. Basahin kung ano talaga ang dapat hanapin sa knife mo para sa emergency prep. \U0001F52A\nhttps://galinggear.com/articles/why-a-plain-utility-knife-beats-a-tactical-knife-for-everyday-emergencies/"
+  xTl: >-
+    Serrated blade, spike tip, glass breaker — pang-display lang yan sa totoong
+    typhoon o flood. Rope at tarp ang kalaban mo, hindi tao. Bakit mas okay ang
+    plain utility knife:
+    https://galinggear.com/articles/why-a-plain-utility-knife-beats-a-tactical-knife-for-everyday-emergencies/
+    #EmergencyPrepPH #EDC
+  instagramTl: "Real talk: sa typhoon o flood, hindi mo kalaban ang ibang tao — kalaban mo ang tarp na hindi mahiwa, yung packing tape ng relief goods, at yung stuck na pinto pagkatapos ng bagyo. Kaya yung tactical knife na may spike tip at serrated edge? Cool sa Shopee, pero not really practical. Alamin kung ano talaga ang dapat priority mo sa pagpili ng knife para sa everyday emergencies — plain edge, matibay na tip, full tang. Simple pero gumagana. \U0001F52A\n\nLink in bio \U0001F517\n\n#GalingGear #EmergencyPrepPH #EDCPh #TyphoonReady #DisasterPrepPH #UtilityKnife #ParaSaPamilya #SakalamIdad #PinoyPrepper #SurvivalTipsPH #BagyoReady #EverydayCarry"
 ---
 
 ## The situation
