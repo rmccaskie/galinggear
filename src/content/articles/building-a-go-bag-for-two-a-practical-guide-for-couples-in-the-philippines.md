@@ -4,13 +4,26 @@ description: >-
   How my wife and I pack for the first 72 hours — two bags, one shared plan, and
   the honest weight of it all. No kids, no pets, no wishful thinking.
 scenario: go-bag
-articleType: guide
 publishedAt: '2026-09-18'
 featured: true
 status: active
 updatedAt: '2026-09-19'
+articleType: guide
 heroImage: 'https://images.galinggear.com/library/1789804308800-7solth.png'
 editorNote: We buy our own gear. Prices checked March 2026.
+shareImage: 'https://images.galinggear.com/library/1789804308800-7solth.png'
+social:
+  facebook: "Packing a go bag for two? Couples have a real advantage — same speed, same strength — but only if you split the load smart, not heavy. Our latest guide covers the honest weight ceiling, water-resistant packing layers, and the backups that actually matter when the barangay says it's time to go. \U0001F392\nhttps://galinggear.com/en/articles/building-a-go-bag-for-two-a-practical-guide-for-couples-in-the-philippines/"
+  x: >-
+    A go bag isn't a bigger version of your emergency stash — it's what you grab
+    when staying stops being an option. Here's how one couple packs for the
+    first 72 hours, no kids, no pets, no wishful thinking.
+    https://galinggear.com/en/articles/building-a-go-bag-for-two-a-practical-guide-for-couples-in-the-philippines/
+    #GoBagPH #TyphoonPrep
+  instagram: "Two adults, two bags, one shared plan. \U0001F392 If you're prepping as a couple, you've got a real advantage over most households — you just have to pack smart and split the load properly, not just pack more.\n\nIn this guide: the honest weight ceiling most couples can actually carry, why water resistance has to be built in layers (your bag WILL get wet), and the two things that fail first when disaster hits — light and water — and why you need backups for both.\n\nNo kids, no pets, no guesswork. Just what actually works for the first 72 hours.\n\nLink in bio \U0001F517\n\n#GoBagPH #EmergencyPreparedness #TyphoonReady #DisasterPrep #PhilippinesPrepared #EvacuationPlan #PrepperPH #FamilySafety #StaySafePH #ReadyPH #GalingGear #PracticalPrep"
+  facebookTl: "Kayo ba ni misis/mister, ready na ba kung biglang lumabas ang barangay sound system para mag-evacuate? \U0001F392 Sa bagong article namin, pinag-usapan namin kung paano mag-build ng go bag para sa dalawa — walang kids, walang pets, puro totoong usapan tungkol sa bigat, tubig-resistance, at redundancy na kailangan niyo. Dalawang bag lang pero iisang plano — check niyo 'to bago pa man kayo maabutan ng bagyo.\nhttps://galinggear.com/articles/building-a-go-bag-for-two-a-practical-guide-for-couples-in-the-philippines/"
+  xTl: "Go bag para sa dalawa: hindi porke't couple kayo, pwede na mag-alangan sa preparation. Totoong bigat, totoong plano, walang paldo-paldo. \U0001F392 https://galinggear.com/articles/building-a-go-bag-for-two-a-practical-guide-for-couples-in-the-philippines/ #GoBagPH #DisasterPrep"
+  instagramTl: "\"No kids, no pets, no wishful thinking\" — 'yan ang tagline ng bagong guide namin sa go bag para sa mag-asawa o partners na naghahanda para sa unang 72 hours ng emergency. \U0001F392\U0001F4A7\n\nAlam niyo ba na hindi porke't dalawa lang kayo, mas madali na agad ang prep? Totoo nga na mas mabilis kayo, pero kailangan pa ring tamaan ang bigat, water resistance, at redundancy sa flashlight at tubig. Sa article, pinaghati-hati namin kung ano dapat nasa bag ng bawat isa — practical, walang paldo-paldo, based sa totoong karanasan.\n\nBasahin niyo ang buong article para malaman kung paano magsimula ng sarili niyong go bag bilang couple. Link in bio \U0001F517\n\n#GoBagPH #DisasterPreparedness #EmergencyPrepPH #TyphoonReady #FloodSafetyPH #ParaSaPamilya #PinoyPrepper #SakalMagulo #ReadyNaBa #WalangPaldoPaldo #BagyoPrep #SafetyFirstPH"
 ---
 
 ## The situation
