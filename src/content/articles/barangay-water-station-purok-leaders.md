@@ -7,6 +7,7 @@ scenario: clean-water
 publishedAt: '2026-09-22'
 featured: false
 status: active
+updatedAt: '2026-09-22'
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1790050251734-ui5zc7.png'
 ---
