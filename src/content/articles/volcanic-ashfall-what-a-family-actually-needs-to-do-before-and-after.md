@@ -10,6 +10,19 @@ featured: false
 status: active
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789899693491-smcr0z.png'
+shareImage: 'https://images.galinggear.com/articles/generated-1789899693491-smcr0z.png'
+social:
+  facebook: "Ashfall doesn't come with wind or rising water, which is exactly why it catches families off guard — but it can quietly damage lungs, roofs, and water systems if you don't prepare. Our new guide covers how to seal your home, pick the right mask (not just any cloth mask), and know when it's time to actually leave, drawing on real lessons from Taal 2020 and Mayon's recurring activity. \U0001F30B\nhttps://galinggear.com/en/articles/volcanic-ashfall-what-a-family-actually-needs-to-do-before-and-after/"
+  x: >-
+    Ashfall looks calm but it's a real hazard — sharp ash particles, fouled
+    water, roofs that can't take wet ash. Here's what your family actually needs
+    to do, before and after.
+    https://galinggear.com/en/articles/volcanic-ashfall-what-a-family-actually-needs-to-do-before-and-after/
+    #AshfallPH #DisasterPrep
+  instagram: "Ashfall doesn't roar like a storm or rise like floodwater — it just quietly settles over everything, and that's exactly why families underestimate it. Volcanic ash is sharp, doesn't wash away easily, and gets into lungs, engines, and water tanks fast.\n\nOur new guide breaks down what actually matters: sealing your home, choosing a real N95 (not a cloth mask), knowing your roof's limits under wet ash, and when it's time to evacuate — all grounded in what really happened during Taal 2020 and what Mayon keeps teaching Bicol.\n\nLink in bio \U0001F517\n\n#AshfallPH #VolcanoPrep #TaalVolcano #MayonVolcano #DisasterPreparedness #EmergencyPrep #FilipinoFamily #StaySafePH #GalingGear #PhilippineDisasterPrep"
+  facebookTl: "Parang tahimik lang ang ashfall pero delikado pala 'yan kung hindi mo handa ang bahay niyo. Mula sa sealing ng windows, tamang mask (N95 talaga, hindi lang basta cloth mask), hanggang sa kung kailan dapat mag-evacuate — sinama namin lahat dito based sa nangyari sa Taal 2020 at sa laging routine ng mga Bicolano sa Mayon. \U0001F30B Basahin niyo bago kayo masilaw sa gray na araw.\nhttps://galinggear.com/articles/volcanic-ashfall-what-a-family-actually-needs-to-do-before-and-after/"
+  xTl: "Ashfall = quiet lang pero delikado. Sealing tips, tamang mask (hindi basta cloth!), at kung kailan mag-evacuate — based sa Taal at Mayon. \U0001F30B\nhttps://galinggear.com/articles/volcanic-ashfall-what-a-family-actually-needs-to-do-before-and-after/ #AshfallPH #DisasterPrepPH"
+  instagramTl: "Hindi umuulan ng malakas, walang malakas na hangin — pero pag ashfall, dahan-dahan lang pero delikado talaga kung hindi ka prepared. Alamin niyo kung paano protektahan ang paghinga niyo, ang tubig niyo, at kung kailan na dapat mag-evacuate. Based sa aktwal na nangyari sa Taal 2020 at sa mga leksyon na natutunan ng mga pamilya sa Bicol dahil sa Mayon. Wag hintayin na \"malinis lang naman ang hangin ngayon\" bago kumilos. \U0001F30B\n\nLink in bio \U0001F517\n\n#AshfallPH #VolcanicAshfall #TaalVolcano #MayonVolcano #DisasterPrepPH #EmergencyReadyPH #PinoyPrepper #FamilySafetyPH #KaligtasanMuna #GalingGear #ReadyPH #BicolStrong"
 ---
 
 ## The situation
