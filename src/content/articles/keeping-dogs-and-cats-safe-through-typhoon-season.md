@@ -1,13 +1,13 @@
 ---
-title: Keeping dogs and cats safe through typhoon season
+title: Typhoon safety for dogs and cats in the Philippines
 description: >-
-  A calm, practical guide to a pet-specific emergency kit, evacuation options
-  that actually take animals, and the one storm rule that saves lives: never tie
-  or cage a pet during a flood.
+  Typhoon pet safety guide for Filipino homes: build a pet emergency kit, find
+  pet-friendly evacuation spots, and the one rule that saves dogs and cats from
 scenario: pets
 publishedAt: '2026-09-21'
 featured: false
 status: active
+updatedAt: '2026-09-22'
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789898712668-k6392k.png'
 railItems:
