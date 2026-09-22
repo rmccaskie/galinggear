@@ -1,13 +1,13 @@
 ---
-title: 'Emergency ration packs for the Philippines: what to store and how to rotate it'
+title: Emergency food ration packs for Filipino households
 description: >-
-  A plain, budget-conscious guide to building a 72-hour food box from what's
-  already at the sari-sari store or grocery, plus a simple twice-a-year rotation
-  system so nothing expires quietly in the cabinet.
+  Build a 72-hour emergency food box from sari-sari and grocery staples, plus a
+  simple twice-a-year rotation system so nothing expires unnoticed.
 scenario: pantry-food
 publishedAt: '2026-09-21'
 featured: false
 status: active
+updatedAt: '2026-09-22'
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789904301617-v2znz4.png'
 shareImage: 'https://images.galinggear.com/articles/generated-1789904301617-v2znz4.png'
