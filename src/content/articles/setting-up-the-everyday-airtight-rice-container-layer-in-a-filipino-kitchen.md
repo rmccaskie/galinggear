@@ -1,13 +1,13 @@
 ---
-title: Setting up the everyday airtight rice container layer in a Filipino kitchen
+title: 'How to store rice daily: airtight container setup guide'
 description: >-
-  A practical, no-hype guide to the everyday airtight-container layer of rice
-  storage — container types, seal testing, pest treatment, shelf placement,
-  rotation, and realistic shelf-life ranges.
+  How to set up airtight rice containers for everyday use: seal types, pest
+  treatment, shelf placement, and realistic shelf life for Filipino kitchens.
 scenario: pantry-food
 publishedAt: '2026-09-21'
 featured: false
 status: active
+updatedAt: '2026-09-22'
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789969764198-ka369j.png'
 shareImage: 'https://images.galinggear.com/articles/generated-1789969764198-ka369j.png'
