@@ -1,13 +1,13 @@
 ---
-title: 'How to protect your IDs, land titles, cash, and medical records before a flood'
+title: 'Flood-proof your IDs, land titles, and cash: PH guide'
 description: >-
-  A practical, no-drama method for keeping your family's most important papers
-  dry, findable, and grab-and-go ready before the water rises — built from what
-  actually survives a real Philippine flood season.
+  Protect IDs, land titles, cash & medical records before flood hits. Simple dry
+  bag + document pouch system for Filipino households. Grab-and-go ready.
 scenario: flood-ready
 publishedAt: '2026-09-21'
 featured: false
 status: active
+updatedAt: '2026-09-22'
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789896069763-ylkp1z.png'
 shareImage: 'https://images.galinggear.com/articles/generated-1789896069763-ylkp1z.png'
