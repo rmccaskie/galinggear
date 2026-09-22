@@ -1,13 +1,13 @@
 ---
-title: 'Volcanic ashfall: what a family actually needs to do, before and after'
+title: 'Volcanic ashfall guide: what Filipino families must do'
 description: >-
-  A calm, practical guide to sealing your home, protecting your water, and
-  knowing when to leave during volcanic ashfall — built around what actually
-  happened in Taal 2020 and what Mayon keeps teaching Bicol.
+  Volcanic ashfall guide for Filipino families: seal your home, protect water,
+  pick the right mask, and know when to evacuate. Lessons from Taal and Mayon.
 scenario: ashfall-volcano
 publishedAt: '2026-09-20'
 featured: false
 status: active
+updatedAt: '2026-09-22'
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789899693491-smcr0z.png'
 shareImage: 'https://images.galinggear.com/articles/generated-1789899693491-smcr0z.png'
