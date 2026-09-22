@@ -12,6 +12,20 @@ featured: false
 status: active
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789903936699-n9p291.png'
+shareImage: 'https://images.galinggear.com/articles/generated-1789903936699-n9p291.png'
+social:
+  facebook: "If someone at home depends on insulin or other fridge-only medicine, a brownout isn't just inconvenient — it's a race against the clock. This guide walks you through a simple, always-ready system: a small cooler bag, a rotation of frozen gel packs, and clear signs for when it's time to stop improvising and get help. Set it up now, before the next outage catches you off guard. \U0001F489\n\nhttps://galinggear.com/en/articles/how-to-keep-insulin-and-other-temperature-sensitive-medicine-cold-during-a-brown/"
+  x: >-
+    Insulin needs the fridge. Brownouts don't care. Here's a simple,
+    always-ready cold chain system to protect temperature-sensitive medicine
+    when the power drops. #BrownoutReady #PrepPH
+
+
+    https://galinggear.com/en/articles/how-to-keep-insulin-and-other-temperature-sensitive-medicine-cold-during-a-brown/
+  instagram: "A brownout is stressful enough — it shouldn't put your insulin or other refrigerated medicine at risk too. This guide breaks down a calm, practical system: the right size cooler bag, a gel pack rotation you keep ready year-round, and how to know when home solutions aren't enough anymore. Small setup now, big peace of mind later. \U0001F9CA\U0001F48A\n\nLink in bio \U0001F517\n\n#BrownoutPH #EmergencyPrep #InsulinCare #DiabetesPH #PowerOutage #PhilippinesPrep #TyphoonSeason #HouseholdSafety #MedicineStorage #PrepareNow #GalingGear #FilipinoFamily"
+  facebookTl: "May insulin ba sa bahay niyo or ibang gamot na dapat laging nasa fridge? Sa brownout, may clock talaga tumatakbo, kaya dapat ready na ang cooler bag at gel packs bago pa man mag-brownout. Sa article na 'to, itinuro namin yung simpleng cold-chain setup — pati na rin kung kailan na dapat huminto sa DIY at tumawag na sa barangay health center o ospital. \U0001F50B\n\nhttps://galinggear.com/articles/how-to-keep-insulin-and-other-temperature-sensitive-medicine-cold-during-a-brown/"
+  xTl: "Brownout + insulin sa bahay = may oras na tumatakbo. Ready ba ang cooler bag at gel packs niyo? Simpleng system dito \U0001F447\nhttps://galinggear.com/articles/how-to-keep-insulin-and-other-temperature-sensitive-medicine-cold-during-a-brown/\n#BrownoutReady #PinoyPrepared"
+  instagramTl: "Kapag may kasambahay na umiinom ng insulin o gamot na dapat laging nasa fridge, ang brownout hindi lang abala — parang may clock na tumatakbo. Ang maganda, kaya naman itong i-prepare nang maaga: dedicated cooler bag, rotation ng frozen gel packs, at alam mo kung kailan na dapat huminto sa DIY at tumawag na ng tulong. Simple lang pero life-saving na setup para sa mga pamilyang may temperature-sensitive na gamot sa bahay.\n\nLink in bio \U0001F517\n\n#BrownoutPrep #InsulinCare #PinoyPrepared #EmergencyReady #PowerOutagePH #GalingGear #HouseholdPrep #DisasterReady #KalusuganMuna #PamilyangPinoy"
 ---
 
 ## What you'll be able to do — and why it matters
