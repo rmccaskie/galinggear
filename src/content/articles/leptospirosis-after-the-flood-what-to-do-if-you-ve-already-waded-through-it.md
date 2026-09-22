@@ -11,6 +11,26 @@ featured: false
 status: active
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789900197802-gujij4.png'
+shareImage: 'https://images.galinggear.com/articles/generated-1789900197802-gujij4.png'
+social:
+  facebook: "Waded through floodwater already? Don't wait for symptoms to \"confirm\" anything — leptospirosis can take 4 to 14 days to show up, and what you do in the first hour after wading matters more than any gear you own. We break down the exact wash-up steps, what counts as a real risk, and when a fever after a flood means a trip to the doctor. \U0001F327️\nhttps://galinggear.com/en/articles/leptospirosis-after-the-flood-what-to-do-if-you-ve-already-waded-through-it/"
+  x: >-
+    Every typhoon season, leptospirosis cases spike days after the floodwater is
+    gone. If you've already waded through it, here's what to do right now — and
+    what symptoms mean it's time to see a doctor.
+    https://galinggear.com/en/articles/leptospirosis-after-the-flood-what-to-do-if-you-ve-already-waded-through-it/
+    #Leptospirosis #FloodSafety
+  instagram: "Floodwater carries more than mud — rat urine and Leptospira bacteria hitch a ride every typhoon season. If you've already waded through it, the first hour after matters more than any gear you own. Symptoms can take up to 14 days to appear, so know what to watch for before it catches you off guard. Full guide has the wash-up steps, real risk factors, and when a fever means it's time to see a doctor.\n\nLink in bio \U0001F517\n\n#Leptospirosis #FloodSafety #TyphoonSeasonPH #EmergencyPrepPH #FloodPreparedness #StaySafePH #PhilippineWeather #DisasterReadyPH #HealthAfterTheFlood #GalingGear"
+  facebookTl: "Nakalusong ka na sa baha? Alam mo ba na 4-14 days pa lang lalabas ang symptoms ng leptospirosis, kaya madalas hindi na ma-connect sa pagbaha? May ginawa na kaming step-by-step guide kung ano talaga ang gagawin sa first hour after wading, at kung kailan na dapat pumunta sa doctor kapag may lagnat. Basahin bago pa sumapit ang susunod na bagyo \U0001F327️\nhttps://galinggear.com/articles/leptospirosis-after-the-flood-what-to-do-if-you-ve-already-waded-through-it/"
+  xTl: >-
+    Nalusong ka sa baha? Rat urine sa tubig-baha = leptospirosis risk, at
+    lumalabas lang symptoms after 4-14 days. Alamin what to do sa first hour
+    after wading para safe ka:
+
+    https://galinggear.com/articles/leptospirosis-after-the-flood-what-to-do-if-you-ve-already-waded-through-it/
+
+    #BahaPH #LeptoAlert
+  instagramTl: "Every taas ng baha, taas din ng leptospirosis cases sa mga ospital natin. Rat urine sa floodwater + open wound o waterlogged skin = pasukan ng bacteria, tapos biglaan na lang lalabas ang lagnat after several days — kaya madalas hindi na na-uugnay sa pagbaha.\n\nSa bagong article namin, sinama namin ang: \U0001F9E4 ano talaga ang gagawin bago at pagkatapos malusong sa baha, ⏱️ bakit crucial ang first hour after wading, at \U0001F321️ kailan dapat mag-alarma kapag may fever pagkatapos.\n\nPractical lang, walang drama — dahil alam naming taunang problema na ito for many Pinoy households.\n\nLink in bio \U0001F517\n\n#LeptospirosisPH #BahaPH #TyphoonPrepPH #DisasterPrepPH #FloodSafety #GalingGear #PinoyReady #EmergencyPrepPH #Bagyo #KalusuganPH #WalangPanic #HealthTipsPH"
 ---
 
 ## The situation
