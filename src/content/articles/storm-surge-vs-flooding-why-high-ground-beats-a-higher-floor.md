@@ -1,13 +1,13 @@
 ---
-title: 'Storm surge vs. flooding: why high ground beats a higher floor'
+title: 'Storm surge vs. flood: PAGASA advisory guide for PH homes'
 description: >-
-  Storm surge and ordinary flooding look alike from a distance, but they behave
-  very differently — here is how to tell them apart, read PAGASA's storm surge
-  advisories, and know when the right move is out, not up.
+  Storm surge vs. flood: know the difference before typhoon season hits. Learn
+  to read PAGASA advisories and why high ground beats a higher floor.
 scenario: typhoon-season
 publishedAt: '2026-09-21'
 featured: false
 status: active
+updatedAt: '2026-09-22'
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789992795148-icpck7.png'
 shareImage: 'https://images.galinggear.com/articles/generated-1789992795148-icpck7.png'
