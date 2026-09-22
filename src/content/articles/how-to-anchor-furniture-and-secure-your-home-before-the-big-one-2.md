@@ -1,13 +1,14 @@
 ---
-title: How to anchor furniture and secure your home before the Big One
+title: 'Earthquake-proof your home: anchor furniture room by room'
 description: >-
-  A room-by-room, budget-friendly guide to anchoring bookshelves, refrigerators,
-  TVs, and cabinets before the next big earthquake — with renter-friendly
-  options and realistic peso prices.
+  Room-by-room guide to earthquake-proofing your PH home: anchor shelves,
+  fridges, TVs and cabinets with budget hardware and peso prices.
+  Renter-friendly.
 scenario: earthquake-ready
 publishedAt: '2026-09-22'
 featured: false
 status: active
+updatedAt: '2026-09-22'
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1790049046073-fwc8yl.png'
 shareImage: 'https://images.galinggear.com/articles/generated-1790049046073-fwc8yl.png'
