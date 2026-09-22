@@ -31,6 +31,24 @@ railItems:
     caption: >-
       A pet go-bag packed and the carrier left open and unlatched, ready well
       before the wind picks up.
+shareImage: 'https://images.galinggear.com/articles/generated-1789898712668-k6392k.png'
+social:
+  facebook: "Typhoon season isn't just about your go bag — your pets need a plan too. This guide covers pet emergency kits, evacuation options that actually accept animals, and the one storm rule that saves lives: never tie or cage a pet during a flood. \U0001F43E\nhttps://galinggear.com/en/articles/keeping-dogs-and-cats-safe-through-typhoon-season/"
+  x: >-
+    Never tie or cage a pet during a flood — it's the #1 way Filipino pets drown
+    in typhoons, and it's preventable. Here's how to actually keep your dog or
+    cat safe this storm season.
+    https://galinggear.com/en/articles/keeping-dogs-and-cats-safe-through-typhoon-season/
+    #TyphoonPH #PetSafety
+  instagram: "Your go bag is ready. Is your pet's plan? \U0001F436\U0001F431\n\nFrom flood-ready evacuation spots to the one rule that saves lives — never tie or cage a pet during a flood — this guide walks Filipino pet owners through what actually matters when a typhoon hits. Practical, calm, no fluff.\n\nLink in bio \U0001F517\n\n#TyphoonPH #PetSafety #EmergencyPrep #DisasterReady #PinoyPetParents #FurbabySafety #WeatherPH #FloodSafety #PetEmergencyKit #GalingGear"
+  facebookTl: "Alam niyo ba na ang pagta-tie o pagkulong sa pet niyo \"para lang sa ilang minuto\" habang umaalis kayo ang pinaka-common na dahilan kung bakit namamatay ang mga alagang hayop sa baha? \U0001F622 Bago dumating ang susunod na bagyo, alamin ang 3 bagay na talagang mahalaga para safe ang aso o pusa niyo — kasama na kung saan kayo pupunta na tumatanggap ng pets. Basahin ang buong guide dito:\nhttps://galinggear.com/articles/keeping-dogs-and-cats-safe-through-typhoon-season/"
+  xTl: >-
+    "Para lang sa ilang minuto" — yan ang huling salita bago mamatay ang
+    maraming pets sa baha. Never tie or cage during a flood. Alamin ang tamang
+    gawin:
+    https://galinggear.com/articles/keeping-dogs-and-cats-safe-through-typhoon-season/
+    #TyphoonPH #PetSafety
+  instagramTl: "Bagyo season na naman, pero handa na ba ang buong pamilya niyo — kasama na ang aso at pusa? \U0001F43E Karamihan sa atin, tayo lang ang naiisip natin during typhoon prep — yung go bag, food, tubig — pero paano yung alagang natutulog sa ilalim ng mesa? Sa guide na ito, ibinreak down namin ang 3 essentials para safe sila: kaya silang gumalaw (huwag i-tie o i-cage!), kaya silang ma-identify kung mahiwalay kayo, at handa na kayo bago pa man tumaas ang signal. Simple pero life-saving info na dapat malaman ng bawat pet owner sa Pilipinas.\n\nLink in bio \U0001F517\n\n#TyphoonPrep #PetSafetyPH #GalingGear #DisasterPreparedness #AlagangHayop #BagyoSeason #PetParentsPH #EmergencyKit #PhilippinesTyphoon #PetFirstAid #FloodSafety #ParaSaAlaga"
 ---
 
 ## The situation
