@@ -11,6 +11,19 @@ status: active
 updatedAt: '2026-09-20'
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789945548939-6dxdqs.png'
+shareImage: 'https://images.galinggear.com/articles/generated-1789945548939-6dxdqs.png'
+social:
+  facebook: "Got a knife at home that has quietly gone dull over the years? That's actually the more dangerous one — a dull blade slips and drags, while a sharp one goes where you point it with less force. \U0001F52A We put together a simple, low-cost guide to sharpening kitchen and utility knives at home, using tools you probably already have.\nhttps://galinggear.com/en/articles/how-to-sharpen-a-kitchen-or-utility-knife-at-home-the-simple-way/"
+  x: "A dull knife is more dangerous than a sharp one — it slips instead of cuts. Here's the simple, low-cost way to sharpen yours at home. \U0001F52A\nhttps://galinggear.com/en/articles/how-to-sharpen-a-kitchen-or-utility-knife-at-home-the-simple-way/\n#EmergencyPrepPH #EDC"
+  instagram: "That dull knife sitting in your drawer? It's actually more dangerous than a sharp one. Dull blades don't cut — they squash, drag, and slip, which is exactly how kitchen cuts (and worse, blackout/go-bag accidents) happen.\n\nWhether it's your everyday kitchen knife or your utility EDC blade for rope, tape, and packaging, keeping an edge on it is a small habit that pays off big. We break down the simple, low-cost way to sharpen at home — no pro setup needed.\n\nLink in bio \U0001F517\n\n#GalingGear #EmergencyPrepPH #EDC #KnifeSharpening #KitchenSafety #GoBagEssentials #DisasterPrepPH #FilipinoHousehold #PracticalPrepping #EverydayCarry #StaySafePH"
+  facebookTl: "Yung kutsilyo niyo sa bahay, matalim pa ba o pang-hulog na lang sa gulong ng lupa? \U0001F52A Alam niyo ba na mas delikado pala ang mapurol na blade kasi kailangan mo pang pilitin — tapos dun na nga dumudulas at nasasaksak ang kamay. Sa new guide namin, itinuro namin yung simple at murang paraan para mapatalim ulit ang kutsilyo niyo gamit lang yung mga tools na malamang meron na kayo sa bahay. Basahin dito:\nhttps://galinggear.com/articles/how-to-sharpen-a-kitchen-or-utility-knife-at-home-the-simple-way/"
+  xTl: >-
+    Mapurol na kutsilyo = mas delikado, hindi mas safe. Itinuro namin yung
+    simple at murang way para patalasin ulit ang blade niyo gamit lang tools na
+    meron na sa bahay.
+    https://galinggear.com/articles/how-to-sharpen-a-kitchen-or-utility-knife-at-home-the-simple-way/
+    #EmergencyPrepPH #TipidTips
+  instagramTl: "Real talk: yung mapurol na kutsilyo sa drawer niyo, mas mapanganib pa sa matalim. Kasi kapag mapurol, pinipilit mo, tapos dun na dumudulas papunta sa daliri mo. \U0001F62C\n\nSa kitchen man o pang-emergency utility knife (para sa pagputol ng lubid, tape, o strapping pag walang kuryente), importante na laging matalas ang blade. In-outline namin sa bagong article yung simple, low-cost na paraan para mapatalim ulit ang kutsilyo niyo — kahit unang beses niyo lang gawin.\n\nLink in bio \U0001F517\n\n#GalingGear #EmergencyPrepPH #KnifeSharpening #KusinaHacks #PrepperPH #DIYPH #TipidTips #SafetyFirst #GoBagEssentials #TaglishTips #BahayTips #ReadyPH"
 ---
 
 ## Why this matters
