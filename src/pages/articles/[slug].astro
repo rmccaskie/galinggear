@@ -11,6 +11,7 @@ import { getTaglishMap, localiseArticleData, getTaglishEntry } from '../../lib/a
 import ShareBar from '../../components/ShareBar.astro'
 import SeriesStrip from '../../components/SeriesStrip.astro'
 import SeriesList from '../../components/SeriesList.astro'
+import DocumentDownloads from '../../components/DocumentDownloads.astro'
 import { seriesForArticle } from '../../lib/series'
 
 export async function getStaticPaths() {
@@ -313,6 +314,9 @@ function fmtDate(date: string) {
       </div>
     </div>
   </article>
+
+  {/* Downloadable branded documents (fetched at runtime; hides itself if none) */}
+  <DocumentDownloads slug={article.id} locale={locale} />
 
   {/* A2 — full series list(s) at the end of the article */}
   {articleSeries.length > 0 && (

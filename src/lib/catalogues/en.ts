@@ -177,4 +177,17 @@ export const enCatalogue = {
   'series.live_label': 'live',
   'series.explore': 'Explore the series',
   'series.section_title': 'Series',
+
+  // Downloadable branded documents (checklists, go-bag lists, plans, recipes,
+  // buying guides). Rendered by the DocumentDownloads section on article pages.
+  'documents.heading': 'Free downloads',
+  'documents.subheading': 'Printable, branded guides to go with this article — free to download and share.',
+  'documents.download': 'Download PDF',
+  'documents.loading': 'Loading downloads…',
+  'documents.type.checklist': 'Checklist',
+  'documents.type.packing-list': 'Packing list',
+  'documents.type.emergency-plan': 'Emergency plan',
+  'documents.type.summary': 'Summary',
+  'documents.type.recipe': 'Recipe',
+  'documents.type.buying-guide': 'Buying guide',
 } as const
