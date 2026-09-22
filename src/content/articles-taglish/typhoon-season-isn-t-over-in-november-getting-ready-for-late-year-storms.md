@@ -47,7 +47,7 @@ Kung magcelebrate ang household mo ng Noche Buena at home, mag-agree kayo out lo
 
 ## The gear that helps
 
-Hindi ito kailangang complicated. Isang [go bag](/go-bag/) na truly ready — checked, hindi lang assumed — ang sumasagot sa most nito: torch, power bank, first aid basics, konting cash sa small bills, copies ng ID. Kung nagsimula ka pa lang from scratch o nag-topping up ng go bag mo bago mag-holidays, tingnan ang guide naming sa [building a go bag for two](/articles/building-a-go-bag-for-two-couples-philippines/) — walked through kung ano talaga ang worth ng space para sa dalawang adults, hindi lang generic checklist.
+Hindi ito kailangang complicated. Isang [go bag](/go-bag/) na truly ready — checked, hindi lang assumed — ang sumasagot sa most nito: torch, power bank, first aid basics, konting cash sa small bills, copies ng ID. Kung nagsimula ka pa lang from scratch o nag-topping up ng go bag mo bago mag-holidays, tingnan ang guide naming sa [building a go bag for two](/articles/building-a-go-bag-for-two-a-practical-guide-for-couples-in-the-philippines/) — walked through kung ano talaga ang worth ng space para sa dalawang adults, hindi lang generic checklist.
 
 Kung nabahaan ang area mo — at after Tino, marami na ngayong pamilya sa Visayas na nalaman na nabahaan pala ang area nila kahit akala nila hindi — tingnan ang [flood ready](/flood-ready/) guide para sa kung ano dapat malapit sa'yo bago pa tumaas ang tubig, hindi pagkatapos.
 

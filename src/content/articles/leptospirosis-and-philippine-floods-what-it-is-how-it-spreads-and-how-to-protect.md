@@ -84,7 +84,7 @@ During and right after flood exposure:
 - Dry your feet properly and change out of wet socks and shoes rather than staying in them for hours — this is a small habit that meaningfully lowers risk.
 - Keep children out of floodwater play. It looks harmless and it is one of the more common ways kids get exposed.
 
-If you or someone in your household has already waded through floodwater and you want the specific step-by-step for the days that follow — what symptoms to watch for and when exactly to act — we've written that up separately in our [leptospirosis after the flood](/articles/leptospirosis-after-the-flood/) guide. This article is the broader picture; that one is the narrower "I already got wet, now what" companion piece.
+If you or someone in your household has already waded through floodwater and you want the specific step-by-step for the days that follow — what symptoms to watch for and when exactly to act — we've written that up separately in our [leptospirosis after the flood](/articles/leptospirosis-after-the-flood-what-to-do-if-you-ve-already-waded-through-it/) guide. This article is the broader picture; that one is the narrower "I already got wet, now what" companion piece.
 
 If anyone develops fever, body aches, headache, or feels unusually unwell in the days after wading through floodwater, the right move is a prompt visit to your barangay health center or a hospital — not waiting it out, and not self-medicating. Leptospirosis can look mild for the first day or two and then escalate, and it's genuinely not something to diagnose or treat yourself with whatever is left over in the medicine cabinet. Tell the health worker plainly that you were in floodwater — it changes what they check for.
 

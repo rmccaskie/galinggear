@@ -73,7 +73,7 @@ Habang at agad after ng flood exposure:
 - Patuyuin ang feet mo nang maayos at magpalit ng wet socks and shoes instead of staying in them for hours — isang small habit 'to na meaningfully nagpapababa ng risk.
 - Layuan ang mga bata sa floodwater play. Mukhang harmless 'to pero isa sa mas common ways na na-expose ang mga bata.
 
-Kung ikaw or someone sa household mo ay nasabak na sa floodwater at gusto mong malaman ang specific step-by-step para sa mga sunod na araw — anong symptoms bantayan at kailan exactly kumilos — nasulat na namin ito separately sa [leptospirosis after the flood](/articles/leptospirosis-after-the-flood/) guide. Ang article na ito ang broader picture; ang isa naman ang mas narrow na "nasabak na ako, ano na" companion piece.
+Kung ikaw or someone sa household mo ay nasabak na sa floodwater at gusto mong malaman ang specific step-by-step para sa mga sunod na araw — anong symptoms bantayan at kailan exactly kumilos — nasulat na namin ito separately sa [leptospirosis after the flood](/articles/leptospirosis-after-the-flood-what-to-do-if-you-ve-already-waded-through-it/) guide. Ang article na ito ang broader picture; ang isa naman ang mas narrow na "nasabak na ako, ano na" companion piece.
 
 Kung may fever, body aches, headache, o pakiramdam na unusually unwell ang sinuman sa mga araw after wading through floodwater, ang tamang gagawin ay agad na bisita sa barangay health center o hospital — hindi paghihintay, at hindi self-medicating. Ang leptospirosis ay puwedeng magmukhang mild sa first day o dalawa at then escalate, at genuinely hindi 'to dapat diagnose or treat mo sa sarili mo gamit kung ano lang natira sa medicine cabinet. Sabihin mo plainly sa health worker na nasabak ka sa floodwater — nag-iiba 'yon sa kanilang tinitingnan.
 

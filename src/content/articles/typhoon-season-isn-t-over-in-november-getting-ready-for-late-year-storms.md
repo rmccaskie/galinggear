@@ -57,7 +57,7 @@ If your household is doing Noche Buena at home, agree out loud that the go bag i
 
 ## The gear that helps
 
-None of this needs to be complicated. A [go bag](/go-bag/) that's genuinely ready — checked, not just assumed — covers most of it: torch, power bank, first aid basics, some cash in small bills, copies of ID. If you're setting one up from scratch or topping up a tired one before the holidays, our guide to [building a go bag for two](/articles/building-a-go-bag-for-two-couples-philippines/) walks through what actually earns its place for two adults, rather than a generic checklist.
+None of this needs to be complicated. A [go bag](/go-bag/) that's genuinely ready — checked, not just assumed — covers most of it: torch, power bank, first aid basics, some cash in small bills, copies of ID. If you're setting one up from scratch or topping up a tired one before the holidays, our guide to [building a go bag for two](/articles/building-a-go-bag-for-two-a-practical-guide-for-couples-in-the-philippines/) walks through what actually earns its place for two adults, rather than a generic checklist.
 
 If your area floods — and after Tino, a lot of families in the Visayas now know their area floods when they didn't think it did — our [flood ready](/flood-ready/) guide covers what to keep in reach when water starts rising rather than after.
 
