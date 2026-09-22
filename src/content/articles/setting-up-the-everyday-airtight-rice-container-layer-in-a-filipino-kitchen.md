@@ -10,6 +10,19 @@ featured: false
 status: active
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789969764198-ka369j.png'
+shareImage: 'https://images.galinggear.com/articles/generated-1789969764198-ka369j.png'
+social:
+  facebook: "Your rice canister on the counter needs different rules than the big drum in the bodega — it gets opened almost every day, so a loose lid or the wrong spot near the stove can ruin your rice without you noticing until it's on the plate. Our new guide covers container types, seal testing, pest treatment, shelf placement, and realistic shelf-life ranges for the everyday airtight layer. \U0001F35A\nhttps://galinggear.com/en/articles/setting-up-the-everyday-airtight-rice-container-layer-in-a-filipino-kitchen/"
+  x: >-
+    Loose lid + container next to the stove + topping up old rice with new =
+    trouble you won't notice till it's cooked. Here's how to set up the everyday
+    airtight rice layer right.
+    https://galinggear.com/en/articles/setting-up-the-everyday-airtight-rice-container-layer-in-a-filipino-kitchen/
+    #FoodPrep #PantryTips
+  instagram: "The rice container you open every morning has different rules than your bulk bodega stash. Glass, plastic, or steel? Which seal actually works? Where should it sit on your shelf? Our new guide breaks down container types, seal testing, pest treatment, and realistic shelf-life so your rice stays fresh — not just for now, but for months. \U0001F35A\n\nLink in bio \U0001F517\n\n#RiceStorage #PantryOrganization #FilipinoKitchen #FoodPrep #KitchenTips #EmergencyPrep #PantryGoals #FoodSafety #FilipinoHousehold #StorageHacks #GalingGear #PracticalPrepping"
+  facebookTl: "Yung bigas mo sa container sa counter, sigurado ka bang airtight talaga 'yan? \U0001F35A May guide kami sa Galing Gear about sa everyday rice container layer — from container types, paano i-test kung tight talaga ang seal, hanggang sa tamang paraan ng rotation para walang bukbok o amoy na sasagutin ka. Practical tips lang, walang gimmick.\nhttps://galinggear.com/articles/setting-up-the-everyday-airtight-rice-container-layer-in-a-filipino-kitchen/"
+  xTl: "Loose lid + rice near the stove = recipe for bukbok. Here's how to set up your everyday airtight rice container the right way \U0001F35A https://galinggear.com/articles/setting-up-the-everyday-airtight-rice-container-layer-in-a-filipino-kitchen/ #RicePrep #PantryGoals"
+  instagramTl: "Real talk: hindi lahat ng container na \"airtight\" ang tatak sa labas ay talagang airtight. \U0001F605 Kung parte ka ng maraming Pinoy households na umaasa sa daily rice scoop, dapat alam mo yung tamang setup — anong material ang bagay, paano i-check ang seal, tamang lagayan sa kusina, at kung kailan dapat mag-rotate ng bigas. Hindi ito yung malaking drum sa bodega — ito yung araw-araw mong ginagamit. Deserve niyang gawin ng tama para walang sayang na bigas o di-inaasahang bukbok sa susunod na luto mo.\n\nLink in bio \U0001F517\n\n#GalingGear #EmergencyPrep #PinoyPantry #RiceStorage #FoodStorage #PantryTips #FilipinoHousehold #DisasterPrepPH #KusinaTips #FoodSafety #PrepareNaTayo #PinoyDIY"
 ---
 
 ## What you'll be able to do — and why it matters
