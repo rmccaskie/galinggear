@@ -9,6 +9,30 @@ featured: false
 status: active
 updatedAt: '2026-09-22'
 heroImage: 'https://images.galinggear.com/articles/generated-1789896138120-1eqx1r.png'
+shareImage: 'https://images.galinggear.com/articles/generated-1789896138120-1eqx1r.png'
+social:
+  facebook: >-
+    Typhoon knocked out your power? The outage that follows a strong storm often
+    outlasts the storm itself — sometimes 2-5 days. Our new guide breaks down
+    how to size a power station, ration your phone charge, and light your home
+    safely for a full 72-hour blackout. ⚡
+
+
+    https://galinggear.com/en/articles/typhoon-outage-72-hour-plan/
+  x: >-
+    Typhoon outage lasting longer than the storm? Plan for 72 hours: right-size
+    your power station, ration phone charge, light your home safely. Full guide
+    here: https://galinggear.com/en/articles/typhoon-outage-72-hour-plan/
+    #TyphoonPH #PowerOutage
+  instagram: "When the wind dies down, the outage often isn't over yet. Linesmen can't climb poles until it's safe, and in badly hit areas that can mean days without grid power. We put together a practical 72-hour blackout plan: how to size a power station in watt-hours, how to ration phone charge so it actually lasts, and how to keep light sources going safely for every family member. Prep now, not when the signal starts dropping. Link in bio \U0001F517\n\n#TyphoonPH #PowerOutage #EmergencyPrep #DisasterPreparedness #PhilippinesTyphoon #Blackout #PowerStation #PAGASA #StaySafePH #PreppingPH #TyphoonSeason #FilipinoHousehold"
+  facebookTl: "Alam na natin: pag lumakas ang bagyo, hindi umaga lang ang brownout — pwedeng 2-3 days pa. Bago ka mahirapan sa dilim, alamin kung paano magsize ng power station, mag-ration ng phone charge, at gumamit ng lantern nang ligtas para sa 72-hour outage plan. ⚡\U0001F526\nhttps://galinggear.com/articles/typhoon-outage-72-hour-plan/"
+  xTl: >-
+    Blackout na aabot ng ilang araw pagkatapos ng bagyo? Alamin kung paano
+    mag-survive ng 72 hours — power station sizing, charge rationing, safe na
+    paggamit ng lantern.
+    https://galinggear.com/articles/typhoon-outage-72-hour-plan/ #TyphoonPH
+    #PrepUpPH
+  instagramTl: "Pag umalis ang linya sa panahon ng bagyo, hindi umaga lang 'yon — pwedeng araw-araw na blackout. Game plan ang kailangan mo: alamin kung gaano kalaking power station ang bagay sa inyo, paano i-ration ang phone charge para tumagal, at paano gumamit ng lantern nang hindi mapanganib. 72 hours ang target — ready kayo, hindi kayo nagpapanic. \U0001F4A1\U0001F50B\n\nLink in bio \U0001F517\n\n#TyphoonReady #PowerOutage #PrepPH #EmergencyPreparedness #BagyoSeason #BlackoutTips #GalingGear #SurvivalGuidePH #DisasterPrep #PinoyPrepper #PowerStationPH #StaySafePH"
 ---
 
 ## The situation
