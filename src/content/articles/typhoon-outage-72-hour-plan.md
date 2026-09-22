@@ -1,8 +1,8 @@
 ---
-title: 'Typhoon power outage: a 72-hour survival plan'
+title: 'Typhoon power outage: a 72-hour survival plan for PH homes'
 description: >-
-  Typhoon power outage lasting days? Here's how to size a power station, ration
-  phone charge, and use lanterns safely for a 72-hour blackout plan.
+  Typhoon power outage can last days. Size a power station, ration phone charge,
+  and use lanterns safely with this 72-hour blackout plan for PH homes.
 scenario: typhoon-season
 publishedAt: '2026-09-20'
 featured: false
