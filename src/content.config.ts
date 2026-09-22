@@ -30,11 +30,9 @@ const articles = defineCollection({
       .object({
         facebook: z.string().optional(),
         x: z.string().optional(),
-        linkedin: z.string().optional(),
         instagram: z.string().optional(),
         facebookTl: z.string().optional(),
         xTl: z.string().optional(),
-        linkedinTl: z.string().optional(),
         instagramTl: z.string().optional(),
       })
       .optional(),

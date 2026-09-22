@@ -8,11 +8,9 @@ import ShareBar from './ShareBar.astro'
 interface SocialCopy {
   facebook?: string
   x?: string
-  linkedin?: string
   instagram?: string
   facebookTl?: string
   xTl?: string
-  linkedinTl?: string
   instagramTl?: string
 }
 
@@ -72,11 +70,9 @@ const publishedLabel = Number.isNaN(published.valueOf())
     <time class="mono" datetime={publishedAt}>{publishedLabel}</time>
     <a class="read" href={lp(`/articles/${slug}/`)}>{readLabel}</a>
   </div>
-  {social && (
-    <div class="card-share">
-      <ShareBar url={shareUrl} social={social} locale={locale ?? DEFAULT_LOCALE} variant="compact" />
-    </div>
-  )}
+  <div class="card-share">
+    <ShareBar url={shareUrl} social={social} locale={locale ?? DEFAULT_LOCALE} variant="compact" />
+  </div>
 </article>
 
 <style>
