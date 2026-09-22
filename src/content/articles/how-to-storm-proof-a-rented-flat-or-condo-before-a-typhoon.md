@@ -1,14 +1,13 @@
 ---
-title: How to storm-proof a rented flat or condo before a typhoon
+title: How to storm-proof a rented condo or flat before a typhoon
 description: >-
-  A renter-friendly, step-by-step plan for the 24 hours before a typhoon —
-  balcony, drains, leaking sliding doors, water storage and the questions to ask
-  your building admin. No drilling, no boarding up, no new gear.
+  Renting a condo or flat? Step-by-step typhoon prep for the 24 hours before —
+  drains, sliding doors, water storage. No drilling, no new gear needed.
 scenario: typhoon-season
 publishedAt: '2026-09-19'
 featured: false
 status: active
-updatedAt: '2026-09-21'
+updatedAt: '2026-09-22'
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789821706265-lr5hg1.png'
 railItems:
