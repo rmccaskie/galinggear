@@ -1,14 +1,13 @@
 ---
-title: 'Nitecore NU25 review: the headlamp I stopped thinking about'
+title: 'Nitecore NU25 review: rechargeable headlamp for brownouts'
 description: >-
-  A 45-gram rechargeable headlamp that lives in my bag and does the quiet work
-  during brownouts and wet-season nights. Honest limits: the battery is sealed
-  in, and it is rain-proof rather than waterproof.
+  Nitecore NU25 review: a 45g rechargeable headlamp for brownouts and wet-season
+  EDC in the Philippines. Honest look at runtime, IP66 rating, and limits.
 scenario: edc
 publishedAt: '2026-09-18'
 featured: true
 status: active
-updatedAt: '2026-09-19'
+updatedAt: '2026-09-22'
 articleType: review
 heroImage: 'https://images.galinggear.com/articles/sourced-1789737595761-t0j1lc.jpg'
 editorNote: >-
