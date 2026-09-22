@@ -269,7 +269,7 @@ const loc = (a: typeof articles[number]) => localiseArticleData(a, locale, tlMap
     justify-content: center;
   }
 
-  .pager-num {
+  :global(.pager-num) {
     inline-size: 2.25rem;
     block-size: 2.25rem;
     border-radius: var(--radius-md);
@@ -281,7 +281,7 @@ const loc = (a: typeof articles[number]) => localiseArticleData(a, locale, tlMap
     cursor: pointer;
   }
 
-  .pager-num.is-active {
+  :global(.pager-num.is-active) {
     background: var(--teal-800);
     color: #fff;
     border-color: var(--teal-800);
@@ -299,7 +299,7 @@ const loc = (a: typeof articles[number]) => localiseArticleData(a, locale, tlMap
   }
 
   .pager-arrow:hover:not(:disabled),
-  .pager-num:hover {
+  :global(.pager-num:hover) {
     border-color: var(--teal-800);
   }
 
@@ -361,7 +361,7 @@ const loc = (a: typeof articles[number]) => localiseArticleData(a, locale, tlMap
     const pagerNext = root.querySelector('[data-pager-next]')
     const pagerNums = root.querySelector('[data-pager-nums]')
 
-    const PER = 10
+    const PER = 5
     const total = cards.length
     const pageCount = Math.max(1, Math.ceil(total / PER))
     const mq = window.matchMedia('(max-width: 48rem)')
