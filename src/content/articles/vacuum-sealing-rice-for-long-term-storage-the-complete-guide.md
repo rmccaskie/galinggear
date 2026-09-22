@@ -1,14 +1,13 @@
 ---
-title: 'Vacuum-sealing rice for long-term storage: the complete guide'
+title: Vacuum-sealing rice for long-term storage in the Philippines
 description: >-
-  A practical, step-by-step guide to vacuum-sealing rice into go-bag and
-  pantry-ready packs — what it protects against, what it doesn't, and how to do
-  it properly with gear you can buy locally.
+  Vacuum-sealing rice for go-bags and pantry storage: what it protects against,
+  what it doesn't, and how to do it right with gear sold in the Philippines.
 scenario: pantry-food
 publishedAt: '2026-09-21'
 featured: false
 status: active
-updatedAt: '2026-09-21'
+updatedAt: '2026-09-22'
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789968137516-vu5sdt.png'
 shareImage: 'https://images.galinggear.com/articles/generated-1789968137516-vu5sdt.png'
