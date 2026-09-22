@@ -10,6 +10,23 @@ featured: false
 status: active
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789898138916-iu12z6.png'
+shareImage: 'https://images.galinggear.com/articles/generated-1789898138916-iu12z6.png'
+social:
+  facebook: "\"The Big One\" talk can feel scary, but most earthquake injuries at home actually come from things falling ON people — not the building itself. \U0001F3E0 Our new guide breaks down what really matters: securing loose furniture, mastering Drop-Cover-Hold On, and knowing exactly what to do in the first 30 minutes after the shaking stops. Read it, then spend an hour this weekend bolting down that cabinet.\nhttps://galinggear.com/en/articles/earthquake-ready-what-actually-matters-before-during-and-after-the-shaking/"
+  x: >-
+    Earthquakes give zero warning. What matters: Drop-Cover-Hold On, what's
+    bolted down at home, and your first 30 minutes after shaking stops. No
+    fear-mongering, just what to actually do.
+    https://galinggear.com/en/articles/earthquake-ready-what-actually-matters-before-during-and-after-the-shaking/
+    #EarthquakeReady #WestValleyFault
+  instagram: "Most earthquake injuries in Filipino homes aren't from buildings collapsing — they're from cabinets, shelves, and TVs falling on people. That's a fix you can do this weekend, before you ever need it.\n\nOur latest guide covers what actually matters: Drop-Cover-Hold On done right, room-by-room hazards to check now, and the critical first 30 minutes after the shaking stops. Plus what to really pack in a 72-hour kit.\n\nNo sirens, no panic — just a calm, practical checklist for Metro Manila households.\n\nLink in bio \U0001F517\n\n#EarthquakeReady #TheBigOne #WestValleyFault #DropCoverHoldOn #EmergencyPreparedness #PhilippinesReady #MetroManila #DisasterPrep #FamilySafety #72HourKit #GalingGear #PHIVOLCS"
+  facebookTl: "\"The Big One\" usually gets talked about with sirens and scary numbers, pero ang totoo, hindi natin kontrolado kung kailan mayayanig — kontrolado natin kung ano ang bolted down at handa bago pa man mangyari 'yun. Alamin kung ano talaga ang importante bago, habang, at pagkatapos ng lindol — from Drop-Cover-Hold On hanggang sa unang 30 minuto pagkaraan ng yanig. \U0001F3E0⚡\nhttps://galinggear.com/articles/earthquake-ready-what-actually-matters-before-during-and-after-the-shaking/"
+  xTl: >-
+    Walang warning ang lindol, di tulad ng bagyo. Alamin ang totoong importante
+    — Drop-Cover-Hold On, room hazards, at first 30 mins pagkatapos ng yanig.
+    https://galinggear.com/articles/earthquake-ready-what-actually-matters-before-during-and-after-the-shaking/
+    #EarthquakeReady #BigOnePH
+  instagramTl: "Hindi porket concrete ang bahay mo, safe ka na agad. Kadalasan, 'yung mga bagay na nahuhulog — cabinet, TV, bookshelf — ang nagpapasugat sa tao, hindi 'yung building mismo. Kaya bago pa dumating ang tinatawag na \"Big One,\" alamin natin kung ano talaga dapat i-prioritize: paano gawin nang tama ang Drop-Cover-Hold On, anong dapat i-check sa bawat kwarto, at ano ang gagawin sa unang 30 minuto pagkatapos yumanig. Practical at walang drama — sundan lang. \U0001F3DA️\U0001F4E6\n\nLink in bio \U0001F517\n\n#EarthquakeReady #BigOnePH #WestValleyFault #DisasterPreparedness #PhilippinesSafety #ParaSaPamilya #EmergencyKit #ShakeDrillPH #PrepareNaHindiPanic #GalingGear #MetroManilaLife #SafetyFirst"
 ---
 
 ## The situation
