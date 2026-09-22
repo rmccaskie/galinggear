@@ -1,14 +1,13 @@
 ---
-title: 'Long-term rice storage: the complete guide for Filipino households'
+title: 'Rice storage for emergencies: the complete Filipino guide'
 description: >-
-  A calm, practical hub guide to storing rice long-term in a Filipino household
-  — why it matters for typhoon and earthquake readiness, how spoilage actually
-  happens, and how to choose between bulk containers, airtight shelf storage,
-  and vacuum sealing.
+  How to store rice long-term at home for typhoon or earthquake prep. Compare
+  containers, airtight storage, and vacuum sealing so your rice reserve lasts.
 scenario: pantry-food
 publishedAt: '2026-09-21'
 featured: false
 status: active
+updatedAt: '2026-09-22'
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789968535686-5lmfkq.png'
 railItems:
