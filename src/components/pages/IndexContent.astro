@@ -8,6 +8,8 @@ import articleOrder from '../../data/article-order.json'
 import { type Locale, DEFAULT_LOCALE, localisedPath } from '../../lib/i18n'
 import { resolvedCatalogue } from '../../lib/catalogue'
 import { getTaglishMap, localiseArticleData } from '../../lib/article-locale'
+import SeriesCard from '../SeriesCard.astro'
+import { resolveAllSeries } from '../../lib/series'
 
 const locale = (Astro.currentLocale ?? DEFAULT_LOCALE) as Locale
 const strings = resolvedCatalogue(locale)
@@ -40,6 +42,10 @@ const rest = articles
   })
 
 const loc = (a: typeof articles[number]) => localiseArticleData(a, locale, tlMap)
+
+// All series for the homepage discovery cards.
+const allArticlesRaw = await getCollection('articles')
+const allSeries = resolveAllSeries(allArticlesRaw)
 ---
 
 <BaseLayout
@@ -82,6 +88,17 @@ const loc = (a: typeof articles[number]) => localiseArticleData(a, locale, tlMap
       </section>
     )
   }
+
+  {allSeries.length > 0 && (
+    <section class="wrap section series-section">
+      <h2 class="section-title">{strings['series.section_title']}</h2>
+      <div class="series-grid">
+        {allSeries.map((s) => (
+          <SeriesCard series={s} locale={locale} />
+        ))}
+      </div>
+    </section>
+  )}
 
   <section class="wrap section latest" data-latest>
     <h2 class="section-title">{strings['home.latest']}</h2>
@@ -322,6 +339,12 @@ const loc = (a: typeof articles[number]) => localiseArticleData(a, locale, tlMap
 
   .empty {
     color: var(--muted-text);
+  }
+
+  .series-grid {
+    display: grid;
+    gap: var(--space-lg);
+    grid-template-columns: 1fr;
   }
 
   .callout {

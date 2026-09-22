@@ -1,0 +1,174 @@
+---
+/**
+ * Part C — compact series discovery card for the homepage / category pages.
+ * Links through to the series landing page.
+ */
+import type { ResolvedSeries } from '../lib/series'
+import { localisedPath, type Locale, DEFAULT_LOCALE } from '../lib/i18n'
+import { resolvedCatalogue, fmt } from '../lib/catalogue'
+
+interface Props {
+  series: ResolvedSeries
+  locale?: Locale
+}
+
+const { series, locale = DEFAULT_LOCALE } = Astro.props
+const strings = resolvedCatalogue(locale)
+const lp = (p: string) => localisedPath(locale, p)
+
+// Use the anchor article's hero image if available
+const anchorPart = series.parts.find((p) => p.isAnchor)
+const heroImage = anchorPart?.heroImage
+---
+
+<div class="sc-card">
+  <div class:list={['sc-pic', { 'sc-pic-has-img': heroImage }]}>
+    {heroImage && <img src={heroImage} alt="" loading="lazy" />}
+    <span class="sc-badge mono">{strings['series.badge']}</span>
+  </div>
+  <div class="sc-body">
+    <span class="sc-kicker mono">
+      {fmt(strings, 'series.n_part_series', { count: String(series.totalCount) })}
+    </span>
+    <h3 class="sc-title">
+      <a href={lp(`/series/${series.slug}/`)}>{series.title}</a>
+    </h3>
+    <p class="sc-blurb">{series.blurb}</p>
+    <div class="sc-prog">
+      <span class="sc-dots">
+        {series.parts.map((p) => (
+          <i class:list={[{ done: p.isLive }]} />
+        ))}
+      </span>
+      <span class="sc-count mono">{series.liveCount} / {series.totalCount} {strings['series.live_label']}</span>
+    </div>
+    <a class="sc-go" href={lp(`/series/${series.slug}/`)}>{strings['series.explore']} →</a>
+  </div>
+</div>
+
+<style>
+  .sc-card {
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    background: var(--surface);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+  }
+
+  .sc-pic {
+    background: linear-gradient(135deg, #0F5C63, #2F7A55);
+    min-block-size: 180px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .sc-pic.sc-pic-has-img img {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+  }
+
+  .sc-badge {
+    position: absolute;
+    inset-block-start: var(--space-md);
+    inset-inline-start: var(--space-md);
+    background: var(--accent-fill);
+    color: #fff;
+    font-size: .68rem;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    padding: .25rem .6rem;
+    border-radius: var(--radius-pill);
+  }
+
+  .sc-body {
+    padding: var(--space-lg);
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+  }
+
+  .sc-kicker {
+    font-size: .7rem;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: var(--accent-text);
+  }
+
+  .sc-title {
+    font-size: var(--text-h2);
+    line-height: 1.2;
+  }
+
+  .sc-title a {
+    color: var(--main-text);
+    text-decoration: none;
+  }
+
+  .sc-title a:hover {
+    color: var(--accent-text);
+  }
+
+  .sc-blurb {
+    color: var(--muted-text);
+    font-size: .9rem;
+    margin: 0;
+  }
+
+  .sc-prog {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    margin-block-start: var(--space-sm);
+  }
+
+  .sc-dots {
+    display: flex;
+    gap: .3rem;
+    align-items: center;
+  }
+
+  .sc-dots i {
+    inline-size: .5rem;
+    block-size: .5rem;
+    border-radius: 50%;
+    background: var(--hairline);
+    display: inline-block;
+  }
+
+  .sc-dots i.done {
+    background: var(--accent-text);
+  }
+
+  .sc-count {
+    font-size: .72rem;
+    color: var(--muted-text);
+  }
+
+  .sc-go {
+    display: inline-block;
+    margin-block-start: var(--space-sm);
+    background: var(--accent-fill);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: .5rem 1.1rem;
+    border-radius: var(--radius-pill);
+    font-size: .85rem;
+    align-self: flex-start;
+  }
+
+  .sc-go:hover {
+    filter: brightness(1.08);
+  }
+
+  @media (max-width: 600px) {
+    .sc-card {
+      grid-template-columns: 1fr;
+    }
+    .sc-pic {
+      min-block-size: 140px;
+    }
+  }
+</style>

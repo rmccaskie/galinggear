@@ -1,0 +1,164 @@
+---
+/**
+ * A1 — slim progress strip shown at the top of an article that belongs to a series.
+ * Shows: series name, “Part N of M”, progress dots, prev/next navigation.
+ */
+import type { ResolvedSeries } from '../lib/series'
+import { localisedPath, type Locale, DEFAULT_LOCALE } from '../lib/i18n'
+import { resolvedCatalogue } from '../lib/catalogue'
+
+interface Props {
+  series: ResolvedSeries
+  currentSlug: string
+  locale?: Locale
+}
+
+const { series, currentSlug, locale = DEFAULT_LOCALE } = Astro.props
+const strings = resolvedCatalogue(locale)
+const lp = (p: string) => localisedPath(locale, p)
+
+const idx = series.parts.findIndex((p) => p.slug === currentSlug)
+const partNum = idx >= 0 ? idx + 1 : 1
+const total = series.totalCount
+const prev = idx > 0 ? series.parts[idx - 1] : null
+const next = idx >= 0 && idx < series.parts.length - 1 ? series.parts[idx + 1] : null
+---
+
+<div class="series-strip">
+  <div class="strip-who">
+    <span class="strip-kicker mono">{strings['series.part_of']} · {strings['series.part']} {partNum} {strings['series.of']} {total}</span>
+    <a class="strip-title" href={lp(`/series/${series.slug}/`)}>{series.title}</a>
+  </div>
+  <div class="strip-prog">
+    <span class="strip-dots">
+      {series.parts.map((p, i) => (
+        <i class:list={[{ done: p.isLive && i < idx, now: i === idx }]} />
+      ))}
+    </span>
+    <span class="strip-count mono">{partNum} / {total}</span>
+    <span class="strip-nav">
+      {prev && prev.isLive ? (
+        <a href={lp(`/articles/${prev.slug}/`)}>← {strings['series.prev']}</a>
+      ) : (
+        <span class="disabled">← {strings['series.prev']}</span>
+      )}
+      {next && next.isLive ? (
+        <a href={lp(`/articles/${next.slug}/`)}>{strings['series.next']} →</a>
+      ) : (
+        <span class="disabled">{strings['series.next']} →</span>
+      )}
+    </span>
+  </div>
+</div>
+
+<style>
+  .series-strip {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-md);
+    background: var(--surface);
+    border: 1px solid var(--hairline);
+    border-inline-start: 4px solid var(--accent-fill);
+    border-radius: var(--radius-lg);
+    padding: var(--space-sm) var(--space-md);
+    box-shadow: var(--card-shadow);
+    margin-block-end: var(--space-lg);
+  }
+
+  .strip-who {
+    display: flex;
+    flex-direction: column;
+    gap: .15rem;
+  }
+
+  .strip-kicker {
+    font-size: .7rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--accent-text);
+  }
+
+  .strip-title {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--main-text);
+    text-decoration: none;
+  }
+
+  .strip-title:hover {
+    color: var(--accent-text);
+    text-decoration: underline;
+  }
+
+  .strip-prog {
+    margin-inline-start: auto;
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+  }
+
+  .strip-dots {
+    display: flex;
+    gap: .3rem;
+    align-items: center;
+  }
+
+  .strip-dots i {
+    inline-size: .5rem;
+    block-size: .5rem;
+    border-radius: 50%;
+    background: var(--hairline);
+    display: inline-block;
+  }
+
+  .strip-dots i.done {
+    background: var(--accent-text);
+  }
+
+  .strip-dots i.now {
+    background: var(--accent-fill);
+    transform: scale(1.35);
+  }
+
+  .strip-count {
+    font-size: .78rem;
+    color: var(--muted-text);
+  }
+
+  .strip-nav {
+    display: flex;
+    gap: var(--space-xs);
+  }
+
+  .strip-nav a,
+  .strip-nav .disabled {
+    text-decoration: none;
+    font-size: .8rem;
+    border: 1px solid var(--hairline);
+    border-radius: var(--radius-pill);
+    padding: .25rem .7rem;
+    background: var(--page-background);
+  }
+
+  .strip-nav a {
+    color: var(--accent-text);
+  }
+
+  .strip-nav a:hover {
+    border-color: var(--accent-text);
+  }
+
+  .strip-nav .disabled {
+    color: #A7B8B4;
+    cursor: default;
+  }
+
+  @media (max-width: 600px) {
+    .strip-prog {
+      margin-inline-start: 0;
+      flex-wrap: wrap;
+    }
+  }
+</style>

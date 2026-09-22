@@ -1,0 +1,243 @@
+---
+/**
+ * A2 — full “In this series” list, placed near the end of an article.
+ * Shows every part in order: current highlighted, live parts linked, coming-soon
+ * parts with a date pill.
+ */
+import type { ResolvedSeries } from '../lib/series'
+import { localisedPath, type Locale, DEFAULT_LOCALE } from '../lib/i18n'
+import { resolvedCatalogue, fmt } from '../lib/catalogue'
+
+interface Props {
+  series: ResolvedSeries
+  currentSlug: string
+  locale?: Locale
+}
+
+const { series, currentSlug, locale = DEFAULT_LOCALE } = Astro.props
+const strings = resolvedCatalogue(locale)
+const lp = (p: string) => localisedPath(locale, p)
+
+function fmtDate(iso: string | undefined): string {
+  if (!iso) return ''
+  const d = new Date(iso)
+  if (Number.isNaN(d.valueOf())) return iso
+  return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })
+}
+---
+
+<div class="series-list">
+  <div class="sl-hd">
+    <span class="sl-kicker mono">{strings['series.in_this_series']}</span>
+    <div class="sl-title">
+      <a href={lp(`/series/${series.slug}/`)}>{series.title}</a>
+    </div>
+    <p class="sl-blurb">{series.blurb}</p>
+  </div>
+  <ol class="sl-ol">
+    {series.parts.map((p) => {
+      const isCurrent = p.slug === currentSlug
+      const isSoon = !p.isLive
+      const subtitle = isCurrent
+        ? strings['series.you_are_reading']
+        : p.isAnchor && p.isLive
+          ? strings['series.anchor_start_here']
+          : p.isLive && p.publishedAt
+            ? strings['series.live_now']
+            : p.plannedDate
+              ? fmt(strings, 'series.coming_date', { date: fmtDate(p.plannedDate) })
+              : strings['series.coming_soon']
+      const pillClass = isCurrent ? 'now' : p.isLive ? 'live' : 'soon'
+      const pillLabel = isCurrent
+        ? strings['series.pill_reading']
+        : p.isLive
+          ? strings['series.pill_live']
+          : p.plannedDate
+            ? fmtDate(p.plannedDate)
+            : strings['series.pill_soon']
+      return (
+        <li class:list={[{ 'is-current': isCurrent, 'is-soon': isSoon }]}>
+          <span class="sl-num" />
+          {p.isLive && !isCurrent ? (
+            <a class="sl-lk" href={lp(`/articles/${p.slug}/`)}>
+              {p.title}
+              <small>{subtitle}</small>
+            </a>
+          ) : (
+            <span class:list={['sl-lk', { 'sl-lk-muted': isSoon }]}>
+              {p.title}
+              <small>{subtitle}</small>
+            </span>
+          )}
+          <span class:list={['sl-pill', 'mono', pillClass]}>{pillLabel}</span>
+        </li>
+      )
+    })}
+  </ol>
+  <div class="sl-ft">
+    <a href={lp(`/series/${series.slug}/`)}>{strings['series.see_full_overview']} →</a>
+  </div>
+</div>
+
+<style>
+  .series-list {
+    background: var(--surface);
+    border: 1px solid var(--hairline);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--card-shadow);
+    overflow: hidden;
+    margin-block: var(--space-2xl);
+  }
+
+  .sl-hd {
+    padding: var(--space-md) var(--space-lg);
+    background: var(--surface-sunken);
+    border-block-end: 1px solid var(--hairline);
+  }
+
+  .sl-kicker {
+    font-size: .7rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--accent-text);
+  }
+
+  .sl-title {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: var(--text-h3);
+    margin-block-start: .15rem;
+  }
+
+  .sl-title a {
+    color: var(--main-text);
+    text-decoration: none;
+  }
+
+  .sl-title a:hover {
+    color: var(--accent-text);
+    text-decoration: underline;
+  }
+
+  .sl-blurb {
+    color: var(--muted-text);
+    font-size: .85rem;
+    margin-block-start: .25rem;
+  }
+
+  .sl-ol {
+    list-style: none;
+    margin: 0;
+    padding: var(--space-xs) 0;
+    counter-reset: part;
+  }
+
+  .sl-ol li {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-sm) var(--space-lg);
+    border-block-end: 1px solid var(--hairline);
+  }
+
+  .sl-ol li:last-child {
+    border-block-end: none;
+  }
+
+  .sl-num {
+    counter-increment: part;
+    flex: 0 0 auto;
+    inline-size: 1.9rem;
+    block-size: 1.9rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-family: var(--font-mono);
+    font-size: .85rem;
+    background: var(--page-background);
+    color: var(--accent-text);
+    border: 1px solid var(--hairline);
+  }
+
+  .sl-num::before {
+    content: counter(part);
+  }
+
+  li.is-current {
+    background: #FFF6EC;
+  }
+
+  li.is-current .sl-num {
+    background: var(--accent-fill);
+    color: #fff;
+    border-color: var(--accent-fill);
+  }
+
+  li.is-soon .sl-lk {
+    color: var(--muted-text);
+  }
+
+  .sl-lk {
+    text-decoration: none;
+    color: var(--main-text);
+    font-weight: 500;
+    flex: 1 1 auto;
+  }
+
+  a.sl-lk:hover {
+    color: var(--accent-text);
+  }
+
+  .sl-lk-muted {
+    color: var(--muted-text);
+  }
+
+  .sl-lk small {
+    display: block;
+    color: var(--muted-text);
+    font-weight: 400;
+    font-size: .78rem;
+  }
+
+  .sl-pill {
+    font-size: .7rem;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    padding: .12rem .5rem;
+    border-radius: var(--radius-pill);
+    border: 1px solid currentColor;
+    line-height: 1.6;
+    white-space: nowrap;
+    flex: 0 0 auto;
+  }
+
+  .sl-pill.live {
+    color: var(--status-success);
+  }
+
+  .sl-pill.soon {
+    color: var(--status-caution);
+  }
+
+  .sl-pill.now {
+    color: var(--on-accent-fill);
+    background: var(--accent-fill);
+    border-color: var(--accent-fill);
+  }
+
+  .sl-ft {
+    padding: var(--space-sm) var(--space-lg);
+    text-align: center;
+  }
+
+  .sl-ft a {
+    text-decoration: none;
+    font-family: var(--font-display);
+    font-weight: 600;
+    color: var(--accent-text);
+  }
+
+  .sl-ft a:hover {
+    text-decoration: underline;
+  }
+</style>

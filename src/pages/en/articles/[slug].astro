@@ -9,6 +9,9 @@ import { type Locale, DEFAULT_LOCALE, localisedPath, URL_PREFIX } from '../../..
 import { resolvedCatalogue, fmt } from '../../../lib/catalogue'
 import { getTaglishMap, localiseArticleData, getTaglishEntry } from '../../../lib/article-locale'
 import ShareBar from '../../../components/ShareBar.astro'
+import SeriesStrip from '../../../components/SeriesStrip.astro'
+import SeriesList from '../../../components/SeriesList.astro'
+import { seriesForArticle } from '../../../lib/series'
 
 export async function getStaticPaths() {
   const articles = await getCollection('articles')
@@ -124,6 +127,9 @@ const RAIL_DEFAULT_LABEL: Record<RailItemData['type'], string> = {
 }
 const { title, description, scenario, publishedAt, updatedAt, editorNote, heroImage, heroGallery, status, shareImage, social } =
   locData
+// Series this article belongs to (may be more than one).
+const allArticles2 = await getCollection('articles')
+const articleSeries = seriesForArticle(article.id, allArticles2)
 // Absolute URL of this article (locale-aware) for share links.
 const shareUrl = `https://galinggear.com${localisedPath(locale, `/articles/${article.id}/`)}`
 // Nominated share image (baked at publish/nominate) drives the OG preview.
@@ -163,6 +169,15 @@ function fmtDate(date: string) {
       {editorNote && <p class="editor-note">{editorNote}</p>}
       <ShareBar url={shareUrl} social={social} locale={locale} variant="full" heading={strings['article.share']} />
     </header>
+
+    {/* A1 — series strip(s) at the top of the article */}
+    {articleSeries.length > 0 && (
+      <div class="wrap">
+        {articleSeries.map((s) => (
+          <SeriesStrip series={s} currentSlug={article.id} locale={locale} />
+        ))}
+      </div>
+    )}
 
     {
       hasHeroGallery ? (
@@ -249,6 +264,15 @@ function fmtDate(date: string) {
       </div>
     </div>
   </article>
+
+  {/* A2 — full series list(s) at the end of the article */}
+  {articleSeries.length > 0 && (
+    <div class="wrap">
+      {articleSeries.map((s) => (
+        <SeriesList series={s} currentSlug={article.id} locale={locale} />
+      ))}
+    </div>
+  )}
 
   {
     related.length > 0 && (

@@ -1,0 +1,413 @@
+---
+/**
+ * English locale twin of /series/[slug].
+ * Identical logic — locale is resolved from Astro.currentLocale.
+ */
+import { getCollection } from 'astro:content'
+import BaseLayout from '../../../layouts/BaseLayout.astro'
+import { allSeriesSlugs, resolveSeries } from '../../../lib/series'
+import { type Locale, DEFAULT_LOCALE, localisedPath } from '../../../lib/i18n'
+import { resolvedCatalogue, fmt } from '../../../lib/catalogue'
+import { getTaglishMap, localiseArticleData } from '../../../lib/article-locale'
+
+export async function getStaticPaths() {
+  const articles = await getCollection('articles')
+  return allSeriesSlugs().map((slug) => ({
+    params: { slug },
+    props: { seriesSlug: slug, articles },
+  }))
+}
+
+interface Props {
+  seriesSlug: string
+  articles: Awaited<ReturnType<typeof getCollection<'articles'>>>
+}
+
+const { seriesSlug, articles } = Astro.props
+const locale = (Astro.currentLocale ?? DEFAULT_LOCALE) as Locale
+const strings = resolvedCatalogue(locale)
+const lp = (p: string) => localisedPath(locale, p)
+const tlMap = await getTaglishMap()
+
+const series = resolveSeries(seriesSlug, articles)!
+
+const bySlug = new Map(articles.map((a) => [a.id, a]))
+const localisedParts = series.parts.map((p) => {
+  const article = bySlug.get(p.slug)
+  if (!article) return p
+  const d = localiseArticleData(article, locale, tlMap)
+  return { ...p, title: d.title, description: d.description }
+})
+
+const anchor = localisedParts.find((p) => p.isAnchor)
+
+function fmtDate(iso: string | undefined): string {
+  if (!iso) return ''
+  const d = new Date(iso)
+  if (Number.isNaN(d.valueOf())) return iso
+  return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })
+}
+
+const progressPct = series.totalCount > 0
+  ? Math.round((series.liveCount / series.totalCount) * 100)
+  : 0
+---
+
+<BaseLayout
+  title={`${series.title} — Series`}
+  description={series.blurb}
+  locale={locale}
+>
+  <section class="wrap sl-hero">
+    <div class="sl-hero-text">
+      <p class="eyebrow mono">{strings['series.eyebrow']}</p>
+      <h1>{series.title}</h1>
+      <p class="sl-hero-blurb">{series.blurb}</p>
+      <div class="sl-hero-stat">
+        <div>
+          <div class="n">{series.totalCount}</div>
+          <div class="l mono">{strings['series.stat_parts']}</div>
+        </div>
+        <div>
+          <div class="n">{series.liveCount}</div>
+          <div class="l mono">{strings['series.stat_live']}</div>
+        </div>
+      </div>
+    </div>
+    {anchor && (
+      <div class:list={['sl-hero-img', { 'has-hero': anchor.heroImage }]}>
+        {anchor.heroImage && <img src={anchor.heroImage} alt={anchor.title} loading="eager" />}
+        <span class="sl-hero-badge mono">{strings['series.anchor_label']}</span>
+        <div class="sl-hero-cap">
+          <span class="sl-hero-cap-k mono">{strings['series.part']} 1 · {strings['series.start_here']}</span>
+          <span class="sl-hero-cap-h">{anchor.title}</span>
+        </div>
+      </div>
+    )}
+  </section>
+
+  <div class="wrap">
+    <div class="sl-progress">
+      <span class="sl-progress-lab mono">{strings['series.progress']}</span>
+      <span class="sl-progress-track"><i style={`inline-size:${progressPct}%`} /></span>
+      <span class="sl-progress-lab mono">{fmt(strings, 'series.n_of_m_published', { n: String(series.liveCount), m: String(series.totalCount) })}</span>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="sl-timeline">
+      {localisedParts.map((p) => {
+        const isAnchorPart = p.isAnchor
+        const isSoon = !p.isLive
+        return (
+          <div class:list={['tl-item', { anchor: isAnchorPart, soon: isSoon }]}>
+            <span class="tl-dot">{p.order}</span>
+            <div class="tl-card">
+              <div class="tl-meta">
+                <div class="tl-kick mono">
+                  {isAnchorPart
+                    ? `${strings['series.anchor_label']} · ${strings['series.start_here']}`
+                    : `${strings['series.part']} ${p.order}`}
+                </div>
+                <h3 class="tl-title">
+                  {p.isLive ? (
+                    <a href={lp(`/articles/${p.slug}/`)}>{p.title}</a>
+                  ) : (
+                    <span>{p.title}</span>
+                  )}
+                </h3>
+                {p.description && <p class="tl-desc">{p.description}</p>}
+              </div>
+              <div class="tl-aside">
+                {p.isLive ? (
+                  <span class="tl-pill live mono">{strings['series.pill_live']}</span>
+                ) : p.plannedDate ? (
+                  <span class="tl-pill soon mono">{fmtDate(p.plannedDate)}</span>
+                ) : (
+                  <span class="tl-pill soon mono">{strings['series.pill_soon']}</span>
+                )}
+                {p.isLive && p.publishedAt && (
+                  <time class="mono tl-date">{fmtDate(p.publishedAt)}</time>
+                )}
+              </div>
+            </div>
+          </div>
+        )
+      })}
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .sl-hero {
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    gap: var(--space-xl);
+    align-items: center;
+    padding-block: var(--space-3xl) var(--space-md);
+  }
+
+  .eyebrow {
+    font-size: var(--text-label);
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: var(--accent-text);
+    margin-block-end: var(--space-sm);
+  }
+
+  .sl-hero h1 {
+    font-size: var(--text-display);
+  }
+
+  .sl-hero-blurb {
+    color: var(--muted-text);
+    font-size: var(--text-h3);
+    font-family: var(--font-display);
+    font-weight: 400;
+    margin-block-start: var(--space-md);
+    max-inline-size: 40ch;
+    line-height: 1.4;
+  }
+
+  .sl-hero-stat {
+    display: flex;
+    gap: var(--space-lg);
+    margin-block-start: var(--space-lg);
+  }
+
+  .sl-hero-stat .n {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: var(--accent-text);
+  }
+
+  .sl-hero-stat .l {
+    font-size: .7rem;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: var(--muted-text);
+  }
+
+  .sl-hero-img {
+    aspect-ratio: var(--hero-ratio);
+    background: linear-gradient(135deg, #0F5C63, #2F7A55);
+    border-radius: var(--radius-lg);
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+  }
+
+  .sl-hero-img.has-hero img {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+  }
+
+  .sl-hero-badge {
+    position: absolute;
+    inset-block-start: var(--space-md);
+    inset-inline-start: var(--space-md);
+    background: rgba(28,32,31,.7);
+    color: #fff;
+    font-size: .72rem;
+    padding: .25rem .6rem;
+    border-radius: var(--radius-pill);
+  }
+
+  .sl-hero-cap {
+    position: absolute;
+    inset-block-end: 0;
+    inset-inline: 0;
+    padding: var(--space-lg);
+    background: linear-gradient(transparent, rgba(15,50,52,.85));
+    color: #EAF6F3;
+  }
+
+  .sl-hero-cap-k {
+    font-size: .7rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: #BEE7DE;
+  }
+
+  .sl-hero-cap-h {
+    display: block;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-block-start: .2rem;
+  }
+
+  .sl-progress {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    margin-block: var(--space-xl);
+    padding: var(--space-md) var(--space-lg);
+    background: var(--surface);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--card-shadow);
+  }
+
+  .sl-progress-lab {
+    font-size: .75rem;
+    color: var(--muted-text);
+    white-space: nowrap;
+  }
+
+  .sl-progress-track {
+    flex: 1 1 auto;
+    block-size: .5rem;
+    background: var(--surface-sunken);
+    border-radius: var(--radius-pill);
+    overflow: hidden;
+  }
+
+  .sl-progress-track i {
+    display: block;
+    block-size: 100%;
+    background: var(--accent-fill);
+  }
+
+  .sl-timeline {
+    position: relative;
+    margin-block: var(--space-lg) var(--space-3xl);
+  }
+
+  .sl-timeline::before {
+    content: '';
+    position: absolute;
+    inset-block: 1.2rem;
+    inset-inline-start: 1.15rem;
+    inline-size: 2px;
+    background: var(--hairline);
+  }
+
+  .tl-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2.5rem 1fr;
+    gap: var(--space-md);
+    padding-block: var(--space-sm);
+  }
+
+  .tl-dot {
+    z-index: 1;
+    inline-size: 2.4rem;
+    block-size: 2.4rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-family: var(--font-mono);
+    font-weight: 500;
+    background: var(--surface);
+    border: 2px solid var(--accent-text);
+    color: var(--accent-text);
+  }
+
+  .tl-item.anchor .tl-dot {
+    background: var(--accent-text);
+    color: #fff;
+  }
+
+  .tl-item.anchor .tl-card {
+    border-inline-start: 4px solid var(--accent-fill);
+  }
+
+  .tl-item.soon .tl-dot {
+    border-color: var(--hairline);
+    color: #9FB4B0;
+    border-style: dashed;
+  }
+
+  .tl-card {
+    background: var(--surface);
+    border: 1px solid var(--hairline);
+    border-radius: var(--radius-lg);
+    padding: var(--space-md) var(--space-lg);
+    box-shadow: var(--card-shadow);
+    display: flex;
+    gap: var(--space-md);
+    align-items: flex-start;
+  }
+
+  .tl-item.soon .tl-card {
+    background: #F5FAF9;
+    border-style: dashed;
+  }
+
+  .tl-meta {
+    flex: 1 1 auto;
+  }
+
+  .tl-kick {
+    font-size: .68rem;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--accent-text);
+  }
+
+  .tl-title {
+    font-size: var(--text-h3);
+    margin-block-start: .15rem;
+  }
+
+  .tl-title a {
+    text-decoration: none;
+    color: var(--main-text);
+  }
+
+  .tl-title a:hover {
+    color: var(--accent-text);
+  }
+
+  .tl-title span {
+    color: var(--muted-text);
+  }
+
+  .tl-desc {
+    color: var(--muted-text);
+    font-size: .9rem;
+    margin: .35rem 0 0;
+  }
+
+  .tl-aside {
+    flex: 0 0 auto;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: .4rem;
+  }
+
+  .tl-pill {
+    font-size: .7rem;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    padding: .12rem .5rem;
+    border-radius: var(--radius-pill);
+    border: 1px solid currentColor;
+    line-height: 1.6;
+    white-space: nowrap;
+  }
+
+  .tl-pill.live {
+    color: var(--status-success);
+  }
+
+  .tl-pill.soon {
+    color: var(--status-caution);
+  }
+
+  .tl-date {
+    font-size: .72rem;
+    color: var(--muted-text);
+  }
+
+  @media (max-width: 760px) {
+    .sl-hero {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
