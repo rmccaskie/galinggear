@@ -1,12 +1,13 @@
 ---
-title: 'Powering through a multi-day typhoon outage: the 72-hour plan'
+title: 'Surviving a multi-day typhoon blackout: your 72-hour plan'
 description: >-
-  A practical guide to sizing a power station, rationing phone charge, and using
-  lanterns safely when a typhoon knocks out power for days, not hours.
+  Typhoon power outage lasting days? Here's how to size a power station, ration
+  phone charge, and use lanterns safely for a realistic 72-hour blackout plan.
 scenario: typhoon-season
 publishedAt: '2026-09-20'
 featured: false
 status: active
+updatedAt: '2026-09-22'
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789896138120-1eqx1r.png'
 shareImage: 'https://images.galinggear.com/articles/generated-1789896138120-1eqx1r.png'
