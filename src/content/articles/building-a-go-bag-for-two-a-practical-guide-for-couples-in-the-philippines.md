@@ -1,8 +1,8 @@
 ---
-title: 'Go bag guide for two: packing for couples, PH-style'
+title: How couples in the Philippines should pack a go bag
 description: >-
-  Go bag guide for Filipino couples: how to pack, split weight, and waterproof
-  two 72-hour bags for typhoons, floods, and earthquakes — no kids, no pets.
+  How Filipino couples should pack a 72-hour go bag: weight limits,
+  waterproofing, and splitting gear for typhoons, floods, and earthquakes.
 scenario: go-bag
 publishedAt: '2026-09-18'
 featured: true
