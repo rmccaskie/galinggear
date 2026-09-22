@@ -22,6 +22,22 @@ const articles = defineCollection({
     // review | guide — drives the type-aware card link ("Read the review/guide").
     articleType: z.enum(['review', 'guide']).optional(),
     heroImage: z.string().optional(),
+    // Nominated share image + baked social copy (written by the admin at
+    // publish / nominate time). Optional — older articles won't have them
+    // until they're re-published or a variation is nominated in the pool.
+    shareImage: z.string().optional(),
+    social: z
+      .object({
+        facebook: z.string().optional(),
+        x: z.string().optional(),
+        linkedin: z.string().optional(),
+        instagram: z.string().optional(),
+        facebookTl: z.string().optional(),
+        xTl: z.string().optional(),
+        linkedinTl: z.string().optional(),
+        instagramTl: z.string().optional(),
+      })
+      .optional(),
     heroGallery: z
       .array(
         z.object({

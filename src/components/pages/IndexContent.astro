@@ -72,6 +72,7 @@ const loc = (a: typeof articles[number]) => localiseArticleData(a, locale, tlMap
                 slug={a.id}
                 heroImage={d.heroImage ?? d.heroGallery?.[0]?.src}
                 articleType={d.articleType}
+                social={d.social}
                 featured
                 locale={locale}
               />
@@ -99,6 +100,7 @@ const loc = (a: typeof articles[number]) => localiseArticleData(a, locale, tlMap
                   slug={a.id}
                   heroImage={d.heroImage ?? d.heroGallery?.[0]?.src}
                   articleType={d.articleType}
+                  social={d.social}
                   locale={locale}
                 />
               )

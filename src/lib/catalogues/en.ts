@@ -69,6 +69,7 @@ export const enCatalogue = {
     'Archived — kept for reference, may be out of date.',
   'article.toc_label': 'On this page',
   'article.more_in': 'More in {scenario}',
+  'article.share': 'Share this',
 
   // ── article card ──────────────────────────────────────────────────────
   'card.read_review': 'Read the review →',

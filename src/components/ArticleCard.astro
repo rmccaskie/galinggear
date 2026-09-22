@@ -3,6 +3,18 @@ import { scenarioLabel } from '../lib/scenarios'
 import type { Scenario } from '../lib/scenarios'
 import type { CatalogueKey } from '../lib/catalogue'
 import { localisedPath, DEFAULT_LOCALE, type Locale } from '../lib/i18n'
+import ShareBar from './ShareBar.astro'
+
+interface SocialCopy {
+  facebook?: string
+  x?: string
+  linkedin?: string
+  instagram?: string
+  facebookTl?: string
+  xTl?: string
+  linkedinTl?: string
+  instagramTl?: string
+}
 
 interface Props {
   title: string
@@ -16,10 +28,12 @@ interface Props {
   articleType?: 'review' | 'guide'
   locale?: Locale
   strings?: Record<CatalogueKey, string>
+  social?: SocialCopy
 }
 
-const { title, description, scenario, publishedAt, slug, featured = false, heroImage, status, articleType, locale, strings } = Astro.props
+const { title, description, scenario, publishedAt, slug, featured = false, heroImage, status, articleType, locale, strings, social } = Astro.props
 const lp = (p: string) => localisedPath(locale ?? DEFAULT_LOCALE, p)
+const shareUrl = `https://galinggear.com${lp(`/articles/${slug}/`)}`
 
 const readLabel =
   articleType === 'review'
@@ -58,6 +72,11 @@ const publishedLabel = Number.isNaN(published.valueOf())
     <time class="mono" datetime={publishedAt}>{publishedLabel}</time>
     <a class="read" href={lp(`/articles/${slug}/`)}>{readLabel}</a>
   </div>
+  {social && (
+    <div class="card-share">
+      <ShareBar url={shareUrl} social={social} locale={locale ?? DEFAULT_LOCALE} variant="compact" />
+    </div>
+  )}
 </article>
 
 <style>
@@ -198,6 +217,12 @@ const publishedLabel = Number.isNaN(published.valueOf())
 
   .read:hover {
     text-decoration: underline;
+  }
+
+  .card-share {
+    margin-block-start: var(--space-sm);
+    padding-block-start: var(--space-sm);
+    border-block-start: 1px solid var(--hairline);
   }
 
   .featured {

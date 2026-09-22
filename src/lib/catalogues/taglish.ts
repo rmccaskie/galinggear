@@ -82,6 +82,7 @@ export const taglishCatalogue: Record<string, string> = {
     'Naka-archive — itinago para sa reference, pwedeng luma na.',
   'article.toc_label': 'Sa page na ito',
   'article.more_in': 'Iba pa sa {scenario}',
+  'article.share': 'I-share ito',
 
   // ── article card ──
   'card.read_review': 'Basahin ang review →',
