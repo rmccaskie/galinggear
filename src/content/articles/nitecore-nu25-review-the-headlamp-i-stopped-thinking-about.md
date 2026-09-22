@@ -5,11 +5,11 @@ description: >-
   during brownouts and wet-season nights. Honest limits: the battery is sealed
   in, and it is rain-proof rather than waterproof.
 scenario: edc
-articleType: review
 publishedAt: '2026-09-18'
 featured: true
 status: active
 updatedAt: '2026-09-19'
+articleType: review
 heroImage: 'https://images.galinggear.com/articles/sourced-1789737595761-t0j1lc.jpg'
 editorNote: >-
   I have 3 of these, purchased a few years ago. Easy to charge, easy to carry
@@ -20,6 +20,14 @@ railItems:
     anchor: overview
     label: Light when you need it.
     image: 'https://images.galinggear.com/staging/generated-1789819604956-huo9e9.png'
+shareImage: 'https://images.galinggear.com/articles/sourced-1789737595761-t0j1lc.jpg'
+social:
+  facebook: "Brownout at 9:30pm, kids already asleep, and you're the one walking down a pitch-dark stairwell — this is exactly when a headlamp beats a torch. We put the Nitecore NU25 through two wet seasons and several long outages, and it's become the one piece of kit we actually forget we're carrying. Read the honest review, including where it falls short (sealed battery, rain-proof not waterproof). \U0001F526\n\nhttps://galinggear.com/en/articles/nitecore-nu25-review-the-headlamp-i-stopped-thinking-about/"
+  x: "45g headlamp, 2 wet seasons, 3 brownouts, 1 sink emergency later — here's why the Nitecore NU25 earned a permanent spot in our bag. Honest review, honest limits. \U0001F526\n\nhttps://galinggear.com/en/articles/nitecore-nu25-review-the-headlamp-i-stopped-thinking-about/\n\n#PrepPH #BrownoutReady"
+  instagram: "Hands-free light when the power goes out and you're carrying a bag in one hand and a kid's hand in the other — that's the whole case for a headlamp over a torch.\n\nWe lived with the Nitecore NU25 through two wet seasons and several long brownouts. Here's the honest review: what it gets right, and where it has real limits (sealed-in battery, rain-proof but not waterproof).\n\nLink in bio \U0001F517\n\n#GalingGear #EmergencyPrepPH #BrownoutSurvival #TyphoonReady #GoBagPH #EDCph #PhilippinePreparedness #PowerOutageTips #WetSeasonPH #GearReview #FilipinoHousehold #DisasterPrep"
+  facebookTl: "Brownout na naman at dark ang buong building? Mas kailangan mo ng headlamp kaysa sa flashlight app ng phone mo, lalo na kung may hawak kang bata pababa sa stairwell. Na-review namin yung Nitecore NU25 — 45 grams lang, USB-C rechargeable, at buhay pa rin after two wet seasons sa bag namin. Basahin yung honest take namin dito, kasama yung limitations niya (sealed battery, rain-proof lang siya hindi waterproof) \U0001F526\nhttps://galinggear.com/articles/nitecore-nu25-review-the-headlamp-i-stopped-thinking-about/"
+  xTl: "Brownout tapos kailangan mong maglakad pababa ng dark stairwell na may hawak na bata? Wag phone torch, headlamp ang dapat. Review namin sa Nitecore NU25 dito \U0001F526 #EmergencyPH #GalingGear\nhttps://galinggear.com/articles/nitecore-nu25-review-the-headlamp-i-stopped-thinking-about/"
+  instagramTl: "Real talk: pag brownout at may kailangan kang buhatin o hawakan habang naglalakad sa dilim, mas magagamit mo pa yung dalawang kamay mo kaysa nakakapit sa isang flashlight. Kaya naman headlamp talaga ang laging nasa bag namin — yung Nitecore NU25, na 45 grams lang pero kaya na ng tatlong brownout at dalawang tag-ulan without complaints. Chinecheck din namin sa review yung mga limitations niya kasi walang perfect na gear — sealed battery siya at rain-proof lang, hindi waterproof, so dapat alam mo bago mo ito ilagay sa go-bag mo.\n\nLink in bio \U0001F517\n\n#GalingGear #EmergencyPreparedness #PHTyphoon #Brownout #GoBagPH #HeadlampReview #Nitecore #DisasterPrep #EDCgear #TyphoonSeason #FloodSafety #PinoyPrepper"
 ---
 
 ## Overview
