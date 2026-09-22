@@ -1,15 +1,13 @@
 ---
-title: >-
-  How to help your parents in the province prepare for a typhoon when you live
-  far away
+title: Helping parents in the province prepare for a typhoon
 description: >-
-  A calm, practical guide for anyone working in Metro Manila, Cebu or abroad
-  whose parents or grandparents live alone back home — what you can actually
-  arrange from a distance, and how to talk about evacuation without nagging.
+  Working abroad or in Metro Manila? Here's how to help elderly parents in the
+  province prepare for typhoon season—supplies, contacts, and evacuation plans
 scenario: typhoon-season
 publishedAt: '2026-09-19'
 featured: false
 status: active
+updatedAt: '2026-09-22'
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789824023661-hiq1ou.png'
 railItems:
