@@ -1,14 +1,13 @@
 ---
-title: Caring for a family member on maintenance medication during a typhoon or flood
+title: Typhoon prep for family members on maintenance medication
 description: >-
-  A calm, practical guide for Filipino families keeping a loved one's
-  maintenance medication uninterrupted through a typhoon or flood — what to
-  prepare, what to store where, and who to contact if supply runs short. Not
-  medical advice; always consult a doctor, pharmacist, or the DOH on dosage.
+  Keep a lolo, lola, or parent's maintenance medication safe and on schedule
+  during a typhoon or flood — what to prepare, store, and who to call if supply
 scenario: kids-lolas
 publishedAt: '2026-09-21'
 featured: false
 status: active
+updatedAt: '2026-09-22'
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789904164235-snup8e.png'
 shareImage: 'https://images.galinggear.com/articles/generated-1789904164235-snup8e.png'
