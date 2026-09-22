@@ -9,6 +9,18 @@ featured: true
 status: active
 updatedAt: '2026-09-22'
 heroImage: 'https://images.galinggear.com/articles/generated-1789788811708-m8i2pk.png'
+shareImage: 'https://images.galinggear.com/articles/generated-1789788811708-m8i2pk.png'
+social:
+  facebook: "Two kinds of \"prepared\" households look the same from the outside, but only one actually holds up when the power's out until the next afternoon and the water tank runs dry by lunch. Our latest article breaks down needs-first vs. gear-first prepping, and how to build a typhoon kit around your household's real situation instead of a wishlist. \U0001F526 Read it here:\nhttps://galinggear.com/en/articles/needs-first-vs-gear-first-prepping/"
+  x: >-
+    A shelf of nice gear isn't the same as being prepared. Here's why
+    needs-first beats gear-first when typhoon season hits your barangay.
+    https://galinggear.com/en/articles/needs-first-vs-gear-first-prepping/
+    #TyphoonPH #EmergencyPrep
+  instagram: "Nice gear doesn't equal being prepared. \U0001F300 When the power's out till the next afternoon and the water tank's empty by lunch, what matters is water, light, information, a charged phone, and a plan, not the fanciest kit on the shelf. Swipe into our latest article on needs-first vs. gear-first prepping and build a typhoon kit that actually fits your household.\n\nLink in bio \U0001F517\n\n#TyphoonPrep #EmergencyPreparedness #GalingGear #PhilippinesPrepping #TyphoonSeason #DisasterReady #FamilySafety #FloodSafety #PrepperPH #PracticalPrepping #PowerOutage #StaySafePH"
+  facebookTl: "May kilala ka bang OA sa gadgets pero konti lang alam sa totoong pangangailangan pag typhoon? \U0001F605 Sa bagong article namin, pinag-usapan namin ang difference ng \"needs-first\" vs \"gear-first\" prepping — kasi hindi porket may fancy flashlight ka, ready ka na sa brownout at baha. Alamin kung paano bumuo ng typhoon kit na based sa totoong sitwasyon ng bahay niyo, hindi lang sa mukhang cool sa shelf.\nhttps://galinggear.com/articles/needs-first-vs-gear-first-prepping/"
+  xTl: "Maraming gear pero walang plano pag brownout o baha? Alamin kung bakit \"needs-first\" na prepping ang mas gumagana kaysa sa puro shiny kit. \U0001F526\U0001F4A7\nhttps://galinggear.com/articles/needs-first-vs-gear-first-prepping/ #TyphoonReady #PrepTalk"
+  instagramTl: "Totoo bang \"ready\" ka na pag typhoon season kasi may cool gear ka? \U0001F440 Hindi laging ganun kasimple. Sa bagong article namin, pinag-usapan namin ang tunay na difference ng needs-first vs gear-first prepping — kasi pag nag-brownout at umapaw ang tubig sa poso, hindi yung machine-finished na flashlight ang magliligtas sa'yo, kundi yung tamang plano at essentials na alam mong gagana. Simple pero reliable — yun ang laban pag totoong sitwasyon na.\n\nLink in bio \U0001F517\n\n#GalingGear #TyphoonPrep #EmergencyKitPH #ParaSaPamilya #DisasterPreparedness #PinoyPrepper #BagyoReady #SurvivalTipsPH #FloodSafety #BrownoutSurvival #PhilippinesPrep #ReadyNaBa"
 ---
 
 ## The situation
