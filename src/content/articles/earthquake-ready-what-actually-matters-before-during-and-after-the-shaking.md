@@ -1,13 +1,13 @@
 ---
-title: 'Earthquake ready: what actually matters before, during, and after the shaking'
+title: 'Philippine earthquake preparedness: the Big One, made simple'
 description: >-
-  A calm, practical guide for Filipino households on the West Valley Fault 'Big
-  One' risk — Drop-Cover-Hold On, room-by-room hazards, the first 30 minutes
-  after shaking stops, and what to actually pack in a 72-hour kit.
+  Earthquake ready PH: Drop-Cover-Hold On, room-by-room hazard checks, the first
+  30 minutes after shaking, and what to pack in a 72-hour kit.
 scenario: earthquake-ready
 publishedAt: '2026-09-20'
 featured: false
 status: active
+updatedAt: '2026-09-22'
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789898138916-iu12z6.png'
 shareImage: 'https://images.galinggear.com/articles/generated-1789898138916-iu12z6.png'
