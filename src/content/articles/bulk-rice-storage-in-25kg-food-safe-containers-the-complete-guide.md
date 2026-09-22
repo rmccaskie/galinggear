@@ -1,13 +1,13 @@
 ---
-title: 'Bulk rice storage in 25kg food-safe containers: the complete guide'
+title: '25kg rice storage guide: bins, sealing & placement tips'
 description: >-
-  A practical, no-hype walkthrough for storing a full 25kg sack of rice in a
-  food-grade container — choosing the bin, prepping the rice, sealing it, and
-  where to keep it safe in a Philippine home.
+  How to store a 25kg sack of rice in a food-grade container: right size,
+  HDPE/PP codes, sealing tips, and safe storage spots for Filipino homes.
 scenario: pantry-food
 publishedAt: '2026-09-21'
 featured: false
 status: active
+updatedAt: '2026-09-22'
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789968395814-88fvfe.png'
 shareImage: 'https://images.galinggear.com/articles/generated-1789968395814-88fvfe.png'
