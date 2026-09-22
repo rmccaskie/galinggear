@@ -1,15 +1,13 @@
 ---
-title: >-
-  Fire safety at home: the two-exit plan, the smoke alarm, and the drill that
-  actually works
+title: 'Home fire safety plan: smoke alarm, exits, extinguisher'
 description: >-
-  Most home fires in the Philippines start at night while everyone is asleep.
-  Here is the plain, unhyped setup — floor plan, extinguisher, smoke alarm, LPG
-  hose check, and a family drill that includes the kids and the kasambahay.
+  Home fire safety for Pinoy families: smoke alarm, two-exit plan, right
+  extinguisher, and a real drill with kids and kasambahay included.
 scenario: fire-safety
 publishedAt: '2026-09-20'
 featured: false
 status: active
+updatedAt: '2026-09-22'
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789898445971-q7wmwf.png'
 shareImage: 'https://images.galinggear.com/articles/generated-1789898445971-q7wmwf.png'
