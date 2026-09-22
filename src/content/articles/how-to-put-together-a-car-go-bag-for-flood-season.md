@@ -38,6 +38,18 @@ railItems:
     description: >-
       A couple's tested go-bag split for the first 72 hours — what to share,
       what to duplicate, and what it actually weighs.
+shareImage: 'https://images.galinggear.com/articles/generated-1789781733133-eduj74.png'
+social:
+  facebook: "Stuck on a flooded road is more common than you think — no drama, just a long wait until it's safe to pass. This guide walks you through building a simple car go-bag: water, no-cook food, light, phone power, first aid, and small cash, enough to sit out a day or two in comfort. And the one rule that matters more than any item in the bag: never drive through floodwater. \U0001F697\U0001F4A7\nhttps://galinggear.com/en/articles/how-to-put-together-a-car-go-bag-for-flood-season/"
+  x: >-
+    Floodwater doesn't care how confident your driver is. Build a simple car
+    go-bag now so you can wait it out safely instead of chancing it. Full guide:
+    https://galinggear.com/en/articles/how-to-put-together-a-car-go-bag-for-flood-season/
+    #FloodReady #PHPrep
+  instagram: "Ever been stuck behind a line of cars staring down a flooded road with nowhere to go? That's exactly what a car go-bag is for — not rescue drama, just two days of ordinary comfort: water, ready-to-eat food, light, a way to charge your phone, basic first aid, and small cash, packed before you need it.\n\nAnd the rule that matters most: never drive, walk, or ride through floodwater. No exceptions. A well-packed car isn't a more capable car — it just buys you the patience to turn back and wait it out safely.\n\nLink in bio \U0001F517\n\n#FloodPreparedness #EmergencyKit #PHDisasterPrep #CarEmergencyKit #FloodSeason #FilipinoHousehold #StaySafePH #GalingGear #ReadyPH #TyphoonSeason #EmergencyPreparedness"
+  facebookTl: "Alam n'yo yung Friday na aalis ka papuntang probinsya tapos bigla na lang harang ang baha sa Bulacan? \U0001F605 Hindi na kailangan mag-panic bili ng tubig at pagkain sa presyong 3x mahal — puwede mo palang ihanda 'yan sa isang bag na naka-stay sa kotse. Basahin kung ano dapat laman ng car go-bag mo (at bakit \"para sa paghintay, hindi para sa pagtawid\" ang golden rule).\nhttps://galinggear.com/articles/how-to-put-together-a-car-go-bag-for-flood-season/"
+  xTl: "Stranded sa baha? 'Wag mag-drive through, mag-wait na lang — kung may prepared ka. Here's how to build a car go-bag na sapat pang 1-2 days. \U0001F697\U0001F30A\nhttps://galinggear.com/articles/how-to-put-together-a-car-go-bag-for-flood-season/ #FloodReady #TyphoonPH"
+  instagramTl: "Real talk: yung ordinary na \"harang ang baha, walang gaanong choice kundi maghintay\" na sitwasyon — mas common 'yan kaysa sa mga dramatic rescue na kwento. Kaya bago pa man dumating ang habagat season, siguraduhing may isang bag sa kotse mo na may tubig, pagkain na 'di kailangang lutuin, ilaw, powerbank, first aid, at konting cash. Dahil malinaw dapat sa'yo: ang bag na 'to ay para sa paghintay nang matiwasay — hindi para bigyan ka ng lakas ng loob na tawirin ang baha. Kasi kahit gaano ka-prepared ang sasakyan mo, hindi 'yan nagiging mas capable sa tubig. Basahin sa blog kung paano mo ito matipid at tama na maihahanda.\n\nLink in bio \U0001F517\n\n#GalingGear #FloodPH #TyphoonSeason #DisasterPreparedness #CarEmergencyKit #PinoyPrepared #FloodSafety #EmergencyKitPH #HabagatSeason #StaySafePH #PamilyangPinoy #ReadyNaBa"
 ---
 
 ## What you'll be able to do — and why it matters
