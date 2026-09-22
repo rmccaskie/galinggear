@@ -5,11 +5,19 @@ description: >-
   problem; the other is collecting a hobby. Here is how to tell which one you
   are, and how to shift the order without giving up the fun.
 scenario: typhoon-season
-articleType: guide
 publishedAt: '2026-09-19'
 featured: true
 status: active
+articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789788811708-m8i2pk.png'
+shareImage: 'https://images.galinggear.com/articles/generated-1789788811708-m8i2pk.png'
+social:
+  facebook: "Do you buy gear because you have a real problem to solve, or because the gear looks good on a shelf? Both instincts can build a prepared household, but only one of them actually gets tested when the brownout hits at 9pm and the water tank runs dry by lunch. This piece breaks down how to tell which one you're doing, and how to reorder your priorities without losing the fun of collecting kit. \U0001F526\nhttps://galinggear.com/en/articles/needs-first-preparedness-or-gear-first-prepping-which-one-are-you-doing/"
+  x: "Same torch, two different reasons for owning it. One person solved a problem. One collected a hobby. Which one are you? A practical breakdown for typhoon season \U0001F447\nhttps://galinggear.com/en/articles/needs-first-preparedness-or-gear-first-prepping-which-one-are-you-doing/\n#TyphoonPH #PreparednessPH"
+  instagram: "Two people can own the exact same torch for very different reasons. One started with a flooded barangay, a lift that dies with the power, and a household with kids and a lola to protect. The other started with a beautifully machined torch and worked backwards to justify it.\n\nLiking gear isn't the problem, it actually helps you maintain and know your kit. The problem is when buying starts to feel like preparing. This one breaks down the difference, and how a brownout or flood tests your kit in ways no catalogue ever will.\n\nLink in bio \U0001F517\n\n#EmergencyPreparedness #TyphoonSeason #PhilippinesPrepared #DisasterReady #FamilySafety #PinoyPrepper #FloodSafety #PowerOutage #BeReady #GalingGear #PracticalPrepping #StaySafePH"
+  facebookTl: "Totoo lang: may mga tao na nagsi-simula sa problema (baha sa barangay, walang ilaw, may lola at bata sa bahay), at may mga taong nagsi-simula sa gear kasi ang ganda lang tignan. Both okay naman, pero pag typhoon season na, dun lalabas kung alin talaga ang gumagana. Check out our latest article para malaman kung saan ka nabibilang — at paano i-balanse yung dalawa nang hindi mo kailangan tigilan yung \"gear hobby\" mo. \U0001F526\nhttps://galinggear.com/articles/needs-first-preparedness-or-gear-first-prepping-which-one-are-you-doing/"
+  xTl: "Needs-first ka ba o gear-first? Pareho pwede magmukhang cool na kit, pero pag brownout na sa alas-9 ng gabi, malalaman mo agad kung sino may plano. Basahin dito \U0001F447\nhttps://galinggear.com/articles/needs-first-preparedness-or-gear-first-prepping-which-one-are-you-doing/ #TyphoonPrep #GalingGear"
+  instagramTl: "Dalawang klaseng prepper: yung nag-start sa totoong problema (baha, walang kuryente, may lola't bata sa bahay), at yung na-fall in love muna sa gear bago pa man naisip kung kailangan ba talaga. Pareho pwede, pero pag totoong typhoon na — malalaman mo kung sino talagang naka-ready. Walang judgment dito, gusto lang namin i-share kung paano mo pagsasamahin yung practical na pag-iisip at yung passion mo sa gear. Basahin namin yung buong breakdown, kasama yung mga lessons mula sa search-and-rescue work — yung simpleng kagamitan na hindi bibitiw kahit alas-3 ng umaga at malakas ang ulan.\n\nLink in bio \U0001F517\n\n#GalingGear #TyphoonSeason #DisasterPrep #EmergencyKitPH #ParaSaPamilya #PinoyPrepared #BagyoPH #ReadyNaBa #PhilippinesPrep #SurvivalTips #BrownoutPrep #ManilaLife"
 ---
 
 ## The situation
