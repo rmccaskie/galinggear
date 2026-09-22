@@ -1,13 +1,13 @@
 ---
-title: How to shelter in place when floodwater has you trapped at home
+title: Sheltering in place when flood water traps you at home
 description: >-
-  A calm, room-by-room guide for Filipino families who cannot evacuate before
-  the water rises — when to cut the power, how to protect food and valuables,
-  and how to stay safe and informed until it is over.
+  Trapped by rising floodwater? A room-by-room guide for Filipino homes: when to
+  cut power, protect food and documents, and stay safe until water recedes.
 scenario: flood-ready
 publishedAt: '2026-09-20'
 featured: false
 status: active
+updatedAt: '2026-09-22'
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789901957181-ozqv8o.png'
 shareImage: 'https://images.galinggear.com/articles/generated-1789901957181-ozqv8o.png'
