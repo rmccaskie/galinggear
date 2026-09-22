@@ -1,14 +1,13 @@
 ---
-title: 'Leptospirosis after the flood: what to do if you''ve already waded through it'
+title: Waded through floodwater? Here's your leptospirosis action
 description: >-
-  Floodwater in the Philippines almost always carries rat urine, and
-  leptospirosis spikes every typhoon season. Here is what actually protects you,
-  what to do right after wading, and when a fever after a flood means a trip to
-  the doctor.
+  Waded through floodwater in the Philippines? Here's what to do in the first
+  hour to lower leptospirosis risk, plus symptoms and when to see a doctor.
 scenario: flood-ready
 publishedAt: '2026-09-20'
 featured: false
 status: active
+updatedAt: '2026-09-22'
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789900197802-gujij4.png'
 shareImage: 'https://images.galinggear.com/articles/generated-1789900197802-gujij4.png'
