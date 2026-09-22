@@ -1,13 +1,13 @@
 ---
-title: 'Typhoon season isn''t over in November: getting ready for late-year storms'
+title: 'Late-year typhoons: why Filipino families must stay prepared'
 description: >-
-  Two of the worst storms in recent memory hit in November. Here's why late-year
-  typhoons still matter, and what to keep ready through the Christmas rush.
+  Late-year typhoons like Tino and Uwan prove the season isn't over in November.
+  Here's how Filipino households should stay storm-ready through the
 scenario: typhoon-season
 publishedAt: '2026-09-20'
 featured: false
 status: active
-updatedAt: '2026-09-21'
+updatedAt: '2026-09-22'
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789878465798-wfvj1g.png'
 railItems:
