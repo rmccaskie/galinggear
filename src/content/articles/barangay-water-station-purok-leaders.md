@@ -10,6 +10,19 @@ status: active
 updatedAt: '2026-09-22'
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1790050251734-ui5zc7.png'
+shareImage: 'https://images.galinggear.com/articles/generated-1790050251734-ui5zc7.png'
+social:
+  facebook: "After a typhoon, the tap trickling back on doesn't mean it's safe to drink — that call belongs to the water district, not the weather. Our new guide walks purok leaders through setting up a barangay water station: safe boil times, correct chlorine doses, and how long to store treated water so it stays safe. \U0001F4A7 Bookmark this before the next signal goes up.\nhttps://galinggear.com/en/articles/barangay-water-station-purok-leaders/"
+  x: "Signal down ≠ tap safe. Here's how purok leaders can set up a barangay water station after a typhoon — boil times, chlorine doses, storage limits. \U0001F4A7\nhttps://galinggear.com/en/articles/barangay-water-station-purok-leaders/ #TyphoonPrep #CleanWaterPH"
+  instagram: "The storm passes, but the water district's all-clear can take days. In that gap, a purok-level water station can mean the difference between safe drinking water and a health crisis for your barangay.\n\nOur latest guide walks purok leaders through building a simple community water point: filtering out visible dirt, treating water to a known standard, and handing it out without recontaminating it on the way home. Practical, step-by-step, and built for the days right after a typhoon hits.\n\nLink in bio \U0001F517\n\n#TyphoonPH #DisasterPreparedness #CleanWaterPH #BarangayPrep #PurokLeaders #EmergencyPrep #WaterSafety #PhilippinesTyphoon #CommunityResilience #GalingGear"
+  facebookTl: "Pagkatapos ng bagyo, madalas may gap muna bago i-declare na safe na ulit ang tubig sa gripo — at yun ang pinaka-delikadong parte. Kaya gumawa kami ng step-by-step guide para sa mga purok leaders on how to set up a barangay water station: paano mag-boil nang tama, tamang chlorine dosage, at hanggang kailan safe i-store ang tubig. Malaking tulong ito habang hinihintay ang all-clear ng water district o local health office. \U0001F4A7\nhttps://galinggear.com/articles/barangay-water-station-purok-leaders/"
+  xTl: >-
+    "Signal down" ≠ "tap safe." Habang hinihintay ang all-clear ng water
+    district, panatilihing safe ang tubig ng inyong purok. Step-by-step guide
+    for purok leaders dito:
+    https://galinggear.com/articles/barangay-water-station-purok-leaders/
+    #TyphoonPH #WaterSafety
+  instagramTl: "Yung tipong tatlong araw na walang linaw sa tubig pagkatapos ng bagyo — nakatayo lang sa barangay hall, may timba, may soda bottle, walang malinaw na sagot kung safe na ba mag-igib. Alam namin, common scenario 'to sa maraming purok pagkatapos ng malakas na bagyo.\n\nKaya ginawan namin ng buong guide ang mga purok leaders: paano magtayo ng simpleng barangay water station gamit ang tela, buhangin, chlorine o pagpapakulo, at kung paano mag-imbak nang tama para hindi na-contaminate ulit sa daan pauwi. Practical, step-by-step, at made para sa totoong sitwasyon sa barangay.\n\nLink in bio \U0001F517\n\n#GalingGear #TyphoonPH #DisasterPrep #WaterSafety #BarangayLeaders #EmergencyPreparedness #TubigNaLinis #PurokLeader #FloodRecovery #PinoyPrepared #SafetyFirstPH #WalangPasok"
 ---
 
 Two days after the water went brown in our line, I stood in a barangay hall watching six households line up with whatever containers they had — a *timba*, a soda bottle, an old paint pail rinsed out with dish soap. Nobody had told them yet whether the tap was safe. Nobody could, honestly, because the water district hadn't given the all-clear either. That gap — between the storm passing and the official word coming down — is exactly when a purok-level water station earns its keep.
