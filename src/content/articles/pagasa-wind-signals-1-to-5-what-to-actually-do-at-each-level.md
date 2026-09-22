@@ -5,11 +5,11 @@ description: >-
   written for people who only half-follow the bulletins. Signals are about wind
   and lead time, not rain — here is what I actually do at each level.
 scenario: typhoon-season
-articleType: guide
 publishedAt: '2026-09-19'
 featured: true
 status: active
 updatedAt: '2026-09-19'
+articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789820419923-hox5ga.png'
 railItems:
   - type: image
@@ -23,6 +23,14 @@ railItems:
     label: Don't get caught out
     image: 'https://images.galinggear.com/staging/1789809668891-roxlfa.png'
     alt: Flooded highway
+shareImage: 'https://images.galinggear.com/articles/generated-1789820419923-hox5ga.png'
+social:
+  facebook: "Quick myth-check before typhoon season fully kicks in: PAGASA's wind signals (1 to 5) tell you about wind strength and how much lead time you have — not how bad the flooding will be. That's a separate set of warnings you also need to watch. We break down what to actually do at each signal level, so you're not just guessing from group chat screenshots. \U0001F300\nhttps://galinggear.com/en/articles/pagasa-wind-signals-1-to-5-what-to-actually-do-at-each-level/"
+  x: "Signal No. 2 ≠ \"how bad it'll flood.\" PAGASA wind signals are about wind + lead time only. Here's what to actually do at each level, 1 to 5. \U0001F300\nhttps://galinggear.com/en/articles/pagasa-wind-signals-1-to-5-what-to-actually-do-at-each-level/\n#TyphoonPH #PAGASA"
+  instagram: "New to Metro Manila or Cebu during your first typhoon season? Confused by \"Signal No. 2\" chatter in the group chat? Here's the thing most people don't explain early enough: PAGASA's wind signals measure wind strength and how much lead time you have left — they are not a flood warning. We walk through what each signal level (1 to 5) actually means for your prep, and why you also need to track rainfall advisories separately. Practical, no-drama guide for every Filipino household this typhoon season.\n\nLink in bio \U0001F517\n\n#TyphoonPH #PAGASA #WindSignal #TyphoonPrep #EmergencyPrepPH #DisasterReadyPH #FloodSafetyPH #TyphoonSeason #StaySafePH #GalingGear #PreparednessPH #WeatherPH"
+  facebookTl: "Bagong Metro Manila or Cebu resident? 'Yung Signal No. 2 na pinag-uusapan sa group chat, alam mo ba talaga ang ibig sabihin? \U0001F300 Spoiler: it's about wind and lead time lang — hindi flood warning yan. Kaya kailangan mo ring bantayan ang rainfall advisories at LGU announcements, lalo na kung baha-prone ang area mo. Buong breakdown per signal level dito:\nhttps://galinggear.com/articles/pagasa-wind-signals-1-to-5-what-to-actually-do-at-each-level/"
+  xTl: "Signal No. 3 na, pero bakit parang okay lang lahat? Wind signals ≠ flood warning. Alamin kung ano talaga dapat gawin sa bawat level \U0001F447\nhttps://galinggear.com/articles/pagasa-wind-signals-1-to-5-what-to-actually-do-at-each-level/ #TyphoonPH #PAGASA"
+  instagramTl: "\"Okay lang yan\" — sabi ng landlord mo. Pero ano ba talaga ang ibig sabihin ng Signal No. 2? \U0001F914 Hint: hindi ito flood warning. Wind lang 'yan at countdown ng oras mo bago dumating ang bagyo. Kailangan mo pa ring tignan ang rainfall advisories (yellow, orange, red) at ang sinasabi ng LGU niyo — lalo na kung baha-prone ang lugar niyo. Full breakdown per signal level, link in bio \U0001F517\n\n#PAGASA #TyphoonPH #BagyoPH #EmergencyPrepPH #DisasterPrep #TyphoonSeason #WalangPasok #FloodSafety #MetroManila #PinoyPrep #GalingGear #StaySafePH"
 ---
 
 ## The situation
