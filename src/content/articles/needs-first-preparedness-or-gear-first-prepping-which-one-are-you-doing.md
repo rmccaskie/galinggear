@@ -1,13 +1,13 @@
 ---
-title: 'Needs-first preparedness or gear-first prepping: which one are you doing?'
+title: 'Typhoon prep: needs-first vs gear-first, what matters'
 description: >-
-  Two people can own the same torch for very different reasons. One is solving a
-  problem; the other is collecting a hobby. Here is how to tell which one you
-  are, and how to shift the order without giving up the fun.
+  Needs-first prepping vs gear-first prepping: how Filipino households can build
+  typhoon-ready kits that solve real problems, not just collect gear.
 scenario: typhoon-season
 publishedAt: '2026-09-19'
 featured: true
 status: active
+updatedAt: '2026-09-22'
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789788811708-m8i2pk.png'
 shareImage: 'https://images.galinggear.com/articles/generated-1789788811708-m8i2pk.png'
