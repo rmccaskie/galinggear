@@ -10,6 +10,19 @@ featured: false
 status: active
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789904301617-v2znz4.png'
+shareImage: 'https://images.galinggear.com/articles/generated-1789904301617-v2znz4.png'
+social:
+  facebook: "The first 72 hours after a typhoon or earthquake are often the hardest — not because help isn't coming, but because it takes time to arrive. Our new guide shows how to build a simple ration pack from stuff already sold at your sari-sari store or grocery, plus an easy twice-a-year rotation habit so nothing quietly expires in your cabinet. \U0001F4E6 Read it here:\nhttps://galinggear.com/en/articles/emergency-ration-packs-for-the-philippines-what-to store-and-how-to-rotate-it-2/"
+  x: >-
+    Roads get cleared, power gets restored, stores reopen — but it all takes
+    time. Build a simple 72-hour ration pack from what's already at your
+    sari-sari store, and learn a rotation habit that actually sticks.
+    https://galinggear.com/en/articles/emergency-ration-packs-for-the-philippines-what-to-store-and-how-to-rotate-it-2/
+    #EmergencyPrep #TyphoonReady
+  instagram: "A ration pack isn't about surviving in the wilderness — it's food your family already eats, set aside so you're not the one standing in line at the only open store in the barangay. \U0001F96B\n\nOur latest guide breaks down what to store, how much, how to pack it against Philippine heat and humidity, and a simple twice-a-year rotation system so nothing expires quietly in the cabinet.\n\nLink in bio \U0001F517\n\n#EmergencyPreparedness #PhilippinesPrep #TyphoonSeason #DisasterReady #FoodStorage #FamilySafety #BeReady #SariSariStore #PantryPrep #PhilippineHouseholds #StaySafe #GalingGear"
+  facebookTl: "Alam mo yung tuloy-tuloy na \"mamaya na lang bibili\" tapos biglang typhoon signal? \U0001F605 Ayan ang unang 72 oras na mahirap — hindi dahil walang tulong, pero dahil matagal bago dumating. Dito papasok ang ration pack: mga pagkain na kilala at kinakain naman ng pamilya mo, tapos may tamang paraan para i-rotate para di masayang. Sari-sari store lang kailangan, promise.\nhttps://galinggear.com/articles/emergency-ration-packs-for-the-philippines-what-to store-and-how-to-rotate-it-2/"
+  xTl: "Yung 72 hours after bagyo/lindol na wala pang tindahan bukas — dapat ready na ang ration pack niyo. Simple guide, sari-sari store lang ang kailangan + rotation tips para di masayang. \U0001F4E6\nhttps://galinggear.com/articles/emergency-ration-packs-for-the-philippines-what-to-store-and-how-to-rotate-it-2/ #EmergencyPrep #TyphoonReady"
+  instagramTl: "Yung first 72 hours pagkatapos ng bagyo o lindol — dun talaga mahirap, kasi matagal bago mabuksan ulit ang mga tindahan. Hindi kailangan ng exotic na survival food dito — kilala at kinakain naman ng family mo yung mga ito on a normal Tuesday. Ang trick na lang ay yung tamang pag-pack at yung rotation habit na hindi nakakalimutan hanggang mag-expire quietly sa cabinet. Full guide na ready para sa Pinoy household — check natin!\n\nLink in bio \U0001F517\n\n#EmergencyPrep #TyphoonReady #PinoyPrepper #DisasterPreparedness #GalingGear #FoodStorage #BagyoReady #Handa #PinoyHousehold #72HourKit #PantryPrep #PhilippinesReady"
 ---
 
 ## What you'll be able to do — and why it matters
