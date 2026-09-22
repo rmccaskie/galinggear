@@ -1,15 +1,13 @@
 ---
-title: >-
-  How to keep insulin and other temperature-sensitive medicine cold during a
-  brownout
+title: How to keep insulin cold during a brownout (PH guide)
 description: >-
-  A calm, practical system for keeping insulin and other fridge-dependent
-  medicine cold when the power goes out — cooler bags, gel pack rotation, and
-  knowing when to stop improvising and get help.
+  Keep insulin cold during a brownout: a simple cooler bag and gel pack system
+  for Filipino homes, plus when to stop improvising and get medical help.
 scenario: power-outage
 publishedAt: '2026-09-20'
 featured: false
 status: active
+updatedAt: '2026-09-22'
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789903936699-n9p291.png'
 shareImage: 'https://images.galinggear.com/articles/generated-1789903936699-n9p291.png'
