@@ -1,14 +1,13 @@
 ---
-title: 'How to sharpen a kitchen or utility knife at home, the simple way'
+title: How to sharpen a kitchen knife at home (simple guide)
 description: >-
-  A dull knife is more dangerous than a sharp one, and sharpening one at home is
-  simpler than most people think. Here is the plain, low-cost way to do it with
-  tools you probably already have.
+  Learn how to sharpen a dull kitchen or utility knife at home using a stone or
+  pull-through sharpener. Simple, low-cost steps for every Filipino household.
 scenario: edc
 publishedAt: '2026-09-20'
 featured: false
 status: active
-updatedAt: '2026-09-20'
+updatedAt: '2026-09-22'
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789945548939-6dxdqs.png'
 shareImage: 'https://images.galinggear.com/articles/generated-1789945548939-6dxdqs.png'
