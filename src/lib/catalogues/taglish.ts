@@ -105,8 +105,12 @@ export const taglishCatalogue: Record<string, string> = {
   'home.lede':
     'Bagyo, baha, lindol, brownout — praktikal na gabay para maihanda ang pamilya mo, kasama ang gear, bag at gadget na talagang nakakatulong kapag kailangan. Lahat ng kailangan mo, wala nang labis.',
   'home.cta': 'Sali sa listahan',
-  'home.editors_pick': 'Pili ng editor',
+  'home.editors_pick': 'Mga pili ng editor',
   'home.also_featured': 'Iba pang featured',
+  'home.load_more': 'Magpakita pa',
+  'home.prev': 'Nakaraan',
+  'home.next': 'Susunod',
+  'home.pagination': 'Mga pahina ng artikulo',
   'home.latest': 'Pinakabagong gabay, gear at gadget',
   'home.empty': 'Wala pang bago. Bumalik ka mamaya.',
   'home.callout_h2': 'Ang tamang gear ang gumagawa ng pagkakaiba',

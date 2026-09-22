@@ -92,8 +92,12 @@ export const enCatalogue = {
   'home.lede':
     'Typhoons, floods, earthquakes, brownouts — practical guides to get your family ready, plus the gear, bags and gadgets that actually make the difference when it counts. Everything you need, nothing you don\'t.',
   'home.cta': 'Join the list',
-  'home.editors_pick': "Editor's pick",
+  'home.editors_pick': "Editor's choice",
   'home.also_featured': 'Also featured',
+  'home.load_more': 'Load more',
+  'home.prev': 'Previous',
+  'home.next': 'Next',
+  'home.pagination': 'Article pages',
   'home.latest': 'Latest guides, gear and gadgets',
   'home.empty': 'Nothing new yet. Check back soon.',
   'home.callout_h2': 'The right gear makes the difference',

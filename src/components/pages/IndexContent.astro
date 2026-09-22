@@ -24,19 +24,20 @@ const featuredArticles = (featuredOrder as string[])
   .map((slug) => bySlug.get(slug))
   .filter((a): a is NonNullable<typeof a> => a != null)
 
-const featured = featuredArticles[0] ?? articles[0]
-const alsoFeatured = featuredArticles.slice(1)
-const featuredIds = new Set(featuredArticles.map((a) => a.id))
+// Editor's choice: up to TWO starred articles, shown side by side. Everything
+// else (including any starred beyond the first two) flows into the paginated
+// Latest grid below — no cap.
+const editorsChoice = featuredArticles.slice(0, 2)
+const editorsChoiceIds = new Set(editorsChoice.map((a) => a.id))
 const orderRank = new Map((articleOrder as string[]).map((slug, i) => [slug, i]))
-const recent = articles
-  .filter((a) => a.id !== featured?.id && !featuredIds.has(a.id))
+const rest = articles
+  .filter((a) => !editorsChoiceIds.has(a.id))
   .sort((a, b) => {
     const ra = orderRank.has(a.id) ? orderRank.get(a.id)! : Infinity
     const rb = orderRank.has(b.id) ? orderRank.get(b.id)! : Infinity
     if (ra !== rb) return ra - rb
     return new Date(b.data.publishedAt).valueOf() - new Date(a.data.publishedAt).valueOf()
   })
-  .slice(0, 6)
 
 const loc = (a: typeof articles[number]) => localiseArticleData(a, locale, tlMap)
 ---
@@ -56,30 +57,11 @@ const loc = (a: typeof articles[number]) => localiseArticleData(a, locale, tlMap
   </section>
 
   {
-    featured && (
+    editorsChoice.length > 0 && (
       <section class="wrap section">
         <h2 class="section-title">{strings['home.editors_pick']}</h2>
-        <ArticleCard
-          title={loc(featured).title}
-          description={loc(featured).description}
-          scenario={loc(featured).scenario}
-          publishedAt={loc(featured).publishedAt}
-          slug={featured.id}
-          heroImage={loc(featured).heroImage ?? loc(featured).heroGallery?.[0]?.src}
-          articleType={loc(featured).articleType}
-          featured
-          locale={locale}
-        />
-      </section>
-    )
-  }
-
-  {
-    alsoFeatured.length > 0 && (
-      <section class="wrap section">
-        <h2 class="section-title">{strings['home.also_featured']}</h2>
-        <div class="grid">
-          {alsoFeatured.map((a) => {
+        <div class:list={['editors-grid', { solo: editorsChoice.length === 1 }]}>
+          {editorsChoice.map((a) => {
             const d = loc(a)
             return (
               <ArticleCard
@@ -90,6 +72,7 @@ const loc = (a: typeof articles[number]) => localiseArticleData(a, locale, tlMap
                 slug={a.id}
                 heroImage={d.heroImage ?? d.heroGallery?.[0]?.src}
                 articleType={d.articleType}
+                featured
                 locale={locale}
               />
             )
@@ -99,27 +82,45 @@ const loc = (a: typeof articles[number]) => localiseArticleData(a, locale, tlMap
     )
   }
 
-  <section class="wrap section">
+  <section class="wrap section latest" data-latest>
     <h2 class="section-title">{strings['home.latest']}</h2>
     {
-      recent.length > 0 ? (
-        <div class="grid">
-          {recent.map((a) => {
-            const d = loc(a)
-            return (
-              <ArticleCard
-                title={d.title}
-                description={d.description}
-                scenario={d.scenario}
-                publishedAt={d.publishedAt}
-                slug={a.id}
-                heroImage={d.heroImage ?? d.heroGallery?.[0]?.src}
-                articleType={d.articleType}
-                locale={locale}
-              />
-            )
-          })}
-        </div>
+      rest.length > 0 ? (
+        <>
+          <div class="grid latest-grid" data-latest-grid>
+            {rest.map((a) => {
+              const d = loc(a)
+              return (
+                <ArticleCard
+                  title={d.title}
+                  description={d.description}
+                  scenario={d.scenario}
+                  publishedAt={d.publishedAt}
+                  slug={a.id}
+                  heroImage={d.heroImage ?? d.heroGallery?.[0]?.src}
+                  articleType={d.articleType}
+                  locale={locale}
+                />
+              )
+            })}
+          </div>
+
+          <div class="latest-loadmore" data-loadmore hidden>
+            <button type="button" class="btn btn-ghost" data-loadmore-btn>
+              {strings['home.load_more']}
+            </button>
+          </div>
+
+          <nav class="latest-pager" data-pager aria-label={strings['home.pagination']} hidden>
+            <button type="button" class="pager-arrow" data-pager-prev>
+              {'\u2039 ' + strings['home.prev']}
+            </button>
+            <div class="pager-nums" data-pager-nums></div>
+            <button type="button" class="pager-arrow" data-pager-next>
+              {strings['home.next'] + ' \u203a'}
+            </button>
+          </nav>
+        </>
       ) : (
         <p class="empty">{strings['home.empty']}</p>
       )
@@ -178,6 +179,145 @@ const loc = (a: typeof articles[number]) => localiseArticleData(a, locale, tlMap
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
   }
 
+  /* ---- Editor's choice: up to two heroes side by side ---- */
+  .editors-grid {
+    display: grid;
+    gap: var(--space-lg);
+    grid-template-columns: repeat(2, 1fr);
+    align-items: stretch;
+  }
+
+  .editors-grid.solo {
+    grid-template-columns: minmax(0, 42rem);
+  }
+
+  /* In the two-up layout, scale the hero title down a touch so both cards stay
+     balanced in their half-width columns. */
+  .editors-grid:not(.solo) :global(.card.featured .title) {
+    font-size: var(--text-h2);
+  }
+
+  /* ---- Latest: dense 5-across grid with paging ---- */
+  .latest-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem 1.1rem;
+  }
+
+  .latest-grid :global(.card[hidden]) {
+    display: none;
+  }
+
+  .latest-grid :global(.card .title) {
+    font-size: 1.02rem;
+    line-height: 1.25;
+  }
+
+  .latest-grid :global(.card .description) {
+    font-size: 0.85rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  @media (max-width: 1100px) {
+    .latest-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (max-width: 760px) {
+    .latest-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 520px) {
+    .latest-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* Clear separation between Editor's choice and the Latest list on small
+     screens, where both collapse into vertical stacks. */
+  @media (max-width: 48rem) {
+    .latest {
+      border-block-start: 1px solid var(--hairline);
+      margin-block-start: var(--space-md);
+      padding-block-start: var(--space-xl);
+    }
+  }
+
+  /* ---- Paging controls ---- */
+  .latest-pager {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-block-start: var(--space-2xl);
+    flex-wrap: wrap;
+  }
+
+  .latest-pager[hidden] {
+    display: none;
+  }
+
+  .pager-nums {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .pager-num {
+    inline-size: 2.25rem;
+    block-size: 2.25rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--hairline);
+    background: var(--surface);
+    color: var(--main-text);
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+
+  .pager-num.is-active {
+    background: var(--teal-800);
+    color: #fff;
+    border-color: var(--teal-800);
+  }
+
+  .pager-arrow {
+    border: 1px solid var(--hairline);
+    background: var(--surface);
+    color: var(--main-text);
+    padding: 0.5rem 0.9rem;
+    border-radius: var(--radius-md);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
+
+  .pager-arrow:hover:not(:disabled),
+  .pager-num:hover {
+    border-color: var(--teal-800);
+  }
+
+  .pager-arrow:disabled {
+    opacity: 0.4;
+    cursor: default;
+  }
+
+  .latest-loadmore {
+    display: flex;
+    justify-content: center;
+    margin-block-start: var(--space-xl);
+  }
+
+  .latest-loadmore[hidden] {
+    display: none;
+  }
+
   .empty {
     color: var(--muted-text);
   }
@@ -205,3 +345,110 @@ const loc = (a: typeof articles[number]) => localiseArticleData(a, locale, tlMap
     max-inline-size: var(--measure);
   }
 </style>
+
+<script>
+  const root = document.querySelector('[data-latest]')
+  if (root) {
+    const grid = root.querySelector('[data-latest-grid]')
+    const cards = grid ? Array.from(grid.querySelectorAll(':scope > .card')) : []
+    const heading = root.querySelector('.section-title')
+
+    const loadmoreWrap = root.querySelector('[data-loadmore]')
+    const loadmoreBtn = root.querySelector('[data-loadmore-btn]')
+
+    const pager = root.querySelector('[data-pager]')
+    const pagerPrev = root.querySelector('[data-pager-prev]')
+    const pagerNext = root.querySelector('[data-pager-next]')
+    const pagerNums = root.querySelector('[data-pager-nums]')
+
+    const PER = 10
+    const total = cards.length
+    const pageCount = Math.max(1, Math.ceil(total / PER))
+    const mq = window.matchMedia('(max-width: 48rem)')
+
+    let currentPage = 1
+    let shown = Math.min(PER, total)
+
+    function showRange(start, end) {
+      cards.forEach((card, i) => {
+        card.hidden = i < start || i >= end
+      })
+    }
+
+    function renderPager() {
+      if (!pagerNums) return
+      pagerNums.innerHTML = ''
+      for (let p = 1; p <= pageCount; p += 1) {
+        const btn = document.createElement('button')
+        btn.type = 'button'
+        btn.className = 'pager-num' + (p === currentPage ? ' is-active' : '')
+        btn.textContent = String(p)
+        if (p === currentPage) btn.setAttribute('aria-current', 'page')
+        btn.addEventListener('click', () => {
+          currentPage = p
+          applyDesktop(true)
+        })
+        pagerNums.appendChild(btn)
+      }
+      if (pagerPrev) pagerPrev.disabled = currentPage <= 1
+      if (pagerNext) pagerNext.disabled = currentPage >= pageCount
+    }
+
+    function applyDesktop(scroll) {
+      const start = (currentPage - 1) * PER
+      showRange(start, start + PER)
+      renderPager()
+      if (scroll && heading) heading.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
+
+    function applyMobile() {
+      showRange(0, shown)
+      if (loadmoreBtn) loadmoreBtn.hidden = shown >= total
+    }
+
+    function apply() {
+      if (mq.matches) {
+        if (pager) pager.hidden = true
+        if (loadmoreWrap) loadmoreWrap.hidden = false
+        applyMobile()
+      } else {
+        if (loadmoreWrap) loadmoreWrap.hidden = true
+        if (pager) pager.hidden = pageCount <= 1
+        applyDesktop(false)
+      }
+    }
+
+    if (loadmoreBtn) {
+      loadmoreBtn.addEventListener('click', () => {
+        shown = Math.min(shown + PER, total)
+        applyMobile()
+      })
+    }
+    if (pagerPrev) {
+      pagerPrev.addEventListener('click', () => {
+        if (currentPage > 1) {
+          currentPage -= 1
+          applyDesktop(true)
+        }
+      })
+    }
+    if (pagerNext) {
+      pagerNext.addEventListener('click', () => {
+        if (currentPage < pageCount) {
+          currentPage += 1
+          applyDesktop(true)
+        }
+      })
+    }
+
+    const onChange = () => {
+      currentPage = 1
+      shown = Math.min(PER, total)
+      apply()
+    }
+    if (mq.addEventListener) mq.addEventListener('change', onChange)
+    else mq.addListener(onChange)
+
+    apply()
+  }
+</script>
