@@ -7,10 +7,10 @@ description: >-
   whose parents or grandparents live alone back home — what you can actually
   arrange from a distance, and how to talk about evacuation without nagging.
 scenario: typhoon-season
-articleType: guide
 publishedAt: '2026-09-19'
 featured: false
 status: active
+articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789824023661-hiq1ou.png'
 railItems:
   - type: article
@@ -23,6 +23,14 @@ railItems:
       By the time the signal is raised over your province, the queues at the
       hardware store have formed — here is what each level actually buys you in
       lead time.
+shareImage: 'https://images.galinggear.com/articles/generated-1789824023661-hiq1ou.png'
+social:
+  facebook: "Working abroad or in the city while your parents ride out typhoons alone in the province? You can't evacuate them by phone, but you can remove almost every other obstacle — saved numbers, a real supply list, refilled medicines, and a check-in plan that works even when signal drops. \U0001F300 Here's a calm, practical guide to help without nagging.\nhttps://galinggear.com/en/articles/how-to-help-your-parents-in-the-province-prepare-for-a-typhoon-when-you-live-far/"
+  x: "\"Okay lang kami\" is not a status report. A practical guide for OFWs and Metro Manila-based kids to help parents in the province prep for typhoons — from afar. \U0001F300\nhttps://galinggear.com/en/articles/how-to-help-your-parents-in-the-province-prepare-for-a-typhoon-when-you-live-far/\n#TyphoonPH #PamilyaPH"
+  instagram: "You can't evacuate your parents by phone from Dubai or Makati. But you can make the decision to leave a lot easier — saved emergency numbers, a real (not overkill) supply list, medicines refilled ahead of time, and a check-in rhythm that survives dropped signal.\n\nThis guide is for every anak working far from home who worries every typhoon season. It's calm, practical, and doesn't require you to fly home to make a real difference.\n\nLink in bio \U0001F517\n\n#TyphoonPrep #PhilippinesTyphoon #OFWLife #FilipinoFamily #EmergencyPreparedness #DisasterReadyPH #PAGASA #ProvinceLife #FamilyFirst #StaySafePH #TyphoonSeason #PrepareThePhilippines"
+  facebookTl: "OFW ka ba or nagtatrabaho sa Metro Manila habang nasa probinsya ang mga magulang mo? Alam namin yang feeling na kabado ka kapag typhoon season na pero malayo ka lang. Good news — may mga concrete steps ka pala na kaya mong gawin kahit hindi ka physically present, from saved emergency numbers to pre-arranged supplies at check-in schedules. Basahin dito \U0001F447"
+  xTl: "\"Okay lang kami\" is not a status report \U0001F605 Kung malayo ka sa magulang mo pero typhoon season na, ito ang totoong magagawa mo — kahit nasa abroad or Metro Manila ka lang. \U0001F300 https://galinggear.com/articles/how-to-help-your-parents-in-the-province-prepare-for-a-typhoon-when-you-live-far/ #TyphoonPrep #PinoyFamily"
+  instagramTl: "Malayo ka man sa magulang mo — sa Dubai, sa Cebu, sa Manila — hindi ibig sabihin wala kang magagawa pag typhoon season na. \U0001F300 Hindi mo sila kayang i-evacuate by phone, pero kaya mong tanggalin ang mga hadlang para gumaan ang desisyon nila. From saved emergency numbers, hanggang sa supplies at check-in schedule — step by step namin ito na-breakdown sa bagong article namin. Kasi \"okay lang kami\" ay hindi report, pagmamahal yan. \U0001F90D\n\nLink in bio \U0001F517\n\n#TyphoonPrep #DisasterReadyPH #OFWLife #FilipinoFamily #TyphoonSeason #EmergencyPrep #PagasaUpdates #PinoyHousehold #GalingGear #PrepareNaPH #BagyoAlert #KalingaSaMagulang"
 ---
 
 ## What you'll be able to do — and why it matters
