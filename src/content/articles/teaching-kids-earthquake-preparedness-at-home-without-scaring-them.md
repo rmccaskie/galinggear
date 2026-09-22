@@ -1,13 +1,13 @@
 ---
-title: 'Teaching kids earthquake preparedness at home, without scaring them'
+title: 'Earthquake drills for Filipino kids: a calm parent''s guide'
 description: >-
-  A calm, age-appropriate way to teach Filipino children what to do when the
-  ground shakes — safe spots, family drills as a game, and what goes in a
-  child's own go-bag.
+  A calm, age-appropriate earthquake guide for Filipino kids: safe spots, fun
+  family drills, and what to pack in their own go-bag.
 scenario: kids-lolas
 publishedAt: '2026-09-20'
 featured: false
 status: active
+updatedAt: '2026-09-22'
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789902069647-aumzs4.png'
 shareImage: 'https://images.galinggear.com/articles/generated-1789902069647-aumzs4.png'
