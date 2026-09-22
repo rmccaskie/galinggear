@@ -1,13 +1,13 @@
 ---
-title: Why a plain utility knife beats a tactical knife for everyday emergencies
+title: 'Utility knife vs tactical knife: best EDC for PH emergencies'
 description: >-
-  A tactical or combat-styled knife looks capable on Shopee, but in a real
-  Philippine calamity you are cutting rope and tarp, not fighting anyone. Here
-  is why a plain, boring utility knife earns its keep instead.
+  Utility knife vs tactical knife: why plain-edge, full-tang blades work better
+  for PH typhoon and flood emergencies than combat-styled knives.
 scenario: edc
 publishedAt: '2026-09-20'
 featured: false
 status: active
+updatedAt: '2026-09-22'
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789909757006-d1mbdh.png'
 shareImage: 'https://images.galinggear.com/articles/generated-1789909757006-d1mbdh.png'
