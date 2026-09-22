@@ -5,11 +5,11 @@ description: >-
   provided you have solved the power problem first. Honest notes from a
   Philippine wet season.
 scenario: stay-connected
-articleType: review
 publishedAt: '2026-09-18'
 featured: true
 status: active
 updatedAt: '2026-09-19'
+articleType: review
 heroImage: 'https://images.galinggear.com/library/sourced-1789817538199-3tlzjx.jpg'
 editorNote: We buy our own gear. Prices checked Sept 2026.
 railItems:
@@ -24,6 +24,19 @@ railItems:
     caption: >-
       Two bags, one shared plan: laying everything out on the floor before it
       goes back in.
+shareImage: 'https://images.galinggear.com/library/sourced-1789817538199-3tlzjx.jpg'
+social:
+  facebook: "When a typhoon hits, power usually goes first, then fixed broadband, then mobile data — often just when you need to tell family you're okay. We tested the Starlink Mini through a Philippine wet season to see if it really solves that last-mile problem. \U0001F4F6 Spoiler: it works well, but only if you've sorted out the power question first. Read the full honest review here:\nhttps://galinggear.com/en/articles/starlink-mini-review-internet-when-the-towers-and-the-power-go-down/"
+  x: >-
+    Cell towers die a few hours after the power goes. We tested the Starlink
+    Mini through a PH storm season to see if it actually keeps a household
+    online when everything local fails. Honest review, power math included:
+    https://galinggear.com/en/articles/starlink-mini-review-internet-when-the-towers-and-the-power-go-down/
+    #TyphoonPrep #StayConnected
+  instagram: "Mains power, fixed broadband, mobile data — in a bad typhoon, that's usually the order things fail in Philippine towns and cities. The Starlink Mini skips the local outage chain entirely, but it still needs two things from you: a clear view of the sky, and a plan for powering it. We put it through a real wet season to find out what that plan actually looks like — power bank runtimes, kickstand setup, the honest limits included.\n\nLink in bio \U0001F517\n\n#GalingGear #StarlinkMini #EmergencyPrep #TyphoonSeasonPH #PhilippinesPrepared #StayConnected #DisasterReadyPH #PowerOutage #InternetBackup #PAGASA #TyphoonPrep #PracticalGear"
+  facebookTl: "Sino pa rin naaalala 'yung feeling na wala kang signal kahit isang bar, tapos hintay ka nang hintay ng text galing sa pamilya after ng bagyo? Na-review namin ang Starlink Mini — 'yung maliit na dish na kumokonekta ka sa satellite kaya kahit patay ang tower o walang kuryente sa buong barangay, may paraan ka pa ring makausap ang mahal mo sa buhay. Malaking factor lang talaga ang power setup mo, kaya basahin muna bago bumili. \U0001F4E1\nhttps://galinggear.com/articles/starlink-mini-review-internet-when-the-towers-and-the-power-go-down/"
+  xTl: "Bagyo, patay ang tower, walang load — pero may paraan pa rin makausap ang family mo. Starlink Mini review namin, honest takes mula sa PH wet season. \U0001F327️ #TyphoonReady #PrepPH\nhttps://galinggear.com/articles/starlink-mini-review-internet-when-the-towers-and-the-power-go-down/"
+  instagramTl: "Kahit patay ang cell tower o walang kuryente sa buong lugar niyo, may paraan pa rin ba para makausap ang pamilya? Sinubukan namin ang Starlink Mini sa totoong bagyo season dito sa Pilipinas — honest review, hindi sponsored hype. Spoiler: hindi ito magic, may catch talaga sa power setup, pero game-changer kung maayos mo. Basahin ang buong review para malaman kung sulit ba talaga bago ka mag-invest. Link in bio \U0001F517\n\n#GalingGear #EmergencyPrepPH #TyphoonSeason #StarlinkMini #DisasterPreparedness #PHTyphoon #WalangSignal #PamilyangHanda #SatelliteInternet #ReadyPH"
 ---
 
 ## Overview
