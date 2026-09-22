@@ -1,13 +1,13 @@
 ---
-title: 'Building a go bag for two: a practical guide for couples in the Philippines'
+title: 'Go bag guide for two: packing for couples, PH-style'
 description: >-
-  How my wife and I pack for the first 72 hours — two bags, one shared plan, and
-  the honest weight of it all. No kids, no pets, no wishful thinking.
+  Go bag guide for Filipino couples: how to pack, split weight, and waterproof
+  two 72-hour bags for typhoons, floods, and earthquakes — no kids, no pets.
 scenario: go-bag
 publishedAt: '2026-09-18'
 featured: true
 status: active
-updatedAt: '2026-09-19'
+updatedAt: '2026-09-22'
 articleType: guide
 heroImage: 'https://images.galinggear.com/library/1789804308800-7solth.png'
 editorNote: We buy our own gear. Prices checked March 2026.
