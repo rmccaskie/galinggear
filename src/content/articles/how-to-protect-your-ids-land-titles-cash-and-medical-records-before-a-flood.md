@@ -10,6 +10,23 @@ featured: false
 status: active
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789896069763-ylkp1z.png'
+shareImage: 'https://images.galinggear.com/articles/generated-1789896069763-ylkp1z.png'
+social:
+  facebook: "After a flood, it's rarely the mud that takes longest to clean up — it's the paperwork. Land titles, IDs, and medical records can be gone for good if they're not protected before the water rises. Our new guide walks you through a simple, no-drama system to keep your family's most important documents dry, findable, and grab-and-go ready. \U0001F4C4\nhttps://galinggear.com/en/articles/how-to-protect-your-ids-land-titles-cash-and-medical-records-before-a-flood/"
+  x: >-
+    A soaked land title or missing birth certificate can turn a bad week into a
+    bad year. Here's how to protect your family's IDs, titles & medical records
+    before the water rises.
+    https://galinggear.com/en/articles/how-to-protect-your-ids-land-titles-cash-and-medical-records-before-a-flood/
+    #FloodReady #PHPrep
+  instagram: "The mud clears out eventually. The paperwork doesn't — not if your land title, IDs, or medical records got soaked in floodwater. This guide breaks down a simple, budget-friendly system: a grab-and-go pouch, a real dry bag, a fireproof box, and a cloud backup you control. Build it once, and your documents can survive a flood at home or leave with you in under a minute. Link in bio \U0001F517\n\n#FloodReady #EmergencyPreparedness #PhilippinesFloods #DisasterPrep #GoBag #TyphoonSeason #FamilySafety #DocumentSafety #PrepperPH #GalingGear #StaySafePH #FloodSeason"
+  facebookTl: "Minsan hindi yung baha ang pinakamalaking headache — kundi yung mga basang papeles pagkatapos. Land title, birth certificate, IDs, medical records — dapat may sistema ka na para dry at grab-and-go ready ang mga ito bago pa tumaas ang tubig. \U0001F4C4 Check out our practical guide para hindi ka mahirapan pag-uwi sa bahay na baha.\nhttps://galinggear.com/articles/how-to-protect-your-ids-land-titles-cash-and-medical-records-before-a-flood/"
+  xTl: >-
+    Baha na, tapos kailangan mo pa hanapin land title mo sa gitna ng putik?
+    Huwag na. Sistema para sa dry at grab-and-go documents, dito:
+    https://galinggear.com/articles/how-to-protect-your-ids-land-titles-cash-and-medical-records-before-a-flood/
+    #FloodReady #GalingGear
+  instagramTl: "Real talk: pagkatapos ng baha, yung pinaka-nakakastress minsan hindi yung lusak — kundi yung mga basang papeles. IDs, land title, medical records, birth certificate — kailangan mo silang makuha in under a minute kung sakaling umalis ka na agad.\n\nItong guide namin ay hindi tungkol sa isang product lang, kundi sa buong habit — paano gawing dry, findable, at grab-and-go ready ang mahahalagang papeles ng pamilya mo bago pa man dumating ang tubig-baha.\n\nLink in bio \U0001F517\n\n#FloodPrep #GalingGear #PhilippinesTyphoon #EmergencyPreparedness #GoBagPH #DisasterReady #BahaPrep #ImportantDocuments #FamilySafety #PinoyPrepper #TyphoonSeason #StaySafePH"
 ---
 
 ## What you'll be able to do — and why it matters
