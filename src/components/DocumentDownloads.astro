@@ -61,6 +61,17 @@ const clientStrings = {
     padding: 0;
   }
 
+  /* The section sits inside a .section-block.full, whose direct children are
+     capped at the reading measure (var(--measure)) by the article page's
+     scoped styles. The card grid needs the FULL content-column width so the
+     3-up layout — and each individual card — isn't squeezed into ~1/3 of the
+     reading measure (which made a single card render tall and narrow with the
+     title stacked). Opt back out of the measure cap; specificity (0,3,1)
+     beats the article rule's (0,3,0). */
+  .body .section-block.full > .gg-downloads {
+    max-inline-size: none;
+  }
+
   /* Heading inherits the font-display family, weight 600 and line-height 1.12
      from the global h2 rule. font-size and margin match the .body h2 override
      in the article page's scoped styles. The parent .section-block provides
