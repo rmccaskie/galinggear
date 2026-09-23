@@ -150,6 +150,7 @@ export const taglishCatalogue: Record<string, string> = {
   // ── scenario page ──
   'scenario.eyebrow': 'Sitwasyon',
   'scenario.empty': 'Wala pa dito. Bumalik ka mamaya.',
+  'scenario.more': 'Higit pa sa {label}',
   'scenario.archive_link': 'Tingnan ang mga naka-archive na artikulo sa {label}',
   'scenario.archive_note':
     '{count} mas lumang {countNoun} na inalis namin sa listahang ito, itinago para sa reference.',

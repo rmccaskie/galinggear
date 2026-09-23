@@ -137,6 +137,7 @@ export const enCatalogue = {
   // ── scenario page ──────────────────────────────────────────────────────
   'scenario.eyebrow': 'Scenario',
   'scenario.empty': 'Nothing here yet. Check back soon.',
+  'scenario.more': 'More in {label}',
   'scenario.archive_link': 'Browse archived {label} articles',
   'scenario.archive_note':
     '{count} older {countNoun} we\'ve retired from this list, kept for reference.',
