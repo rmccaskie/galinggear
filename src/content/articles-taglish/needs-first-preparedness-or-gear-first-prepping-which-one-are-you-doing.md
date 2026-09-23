@@ -1,89 +1,86 @@
 ---
-title: >-
-  Needs-first preparedness o gear-first prepping: alin ba talaga ang ginagawa
-  mo?
+title: 'Typhoon prep: needs-first vs gear-first, alin ang importante'
 description: >-
-  Puwedeng magkapareho ng torch ang dalawang tao pero magkaiba ang dahilan. Yung
-  isa, may sinasagot na problema; yung isa, nagko-collect lang ng hobby. Eto
-  kung paano malalaman kung alin ka, at paano ayusin ang order without giving up
-  the fun.
-sourceHash: f0002f10c19dc5a6
+  Needs-first prepping vs gear-first prepping: paano makakagawa ang Filipino
+  households ng typhoon-ready kits na sumosolve sa totoong problema, hindi lang
+  pang-collect ng gear.
+sourceHash: 2494d1bf0e2ebd2f
 ---
 
-## The situation
+## Ang sitwasyon
 
-May dalawang dahilan kung bakit napupuno ang shelf ng mga tao ng emergency gear, at sa labas, magkamukha sila.
+May dalawang dahilan kung bakit may mga tao na nagkakaroon ng buong shelf ng emergency gear, at sa labas, mukhang pareho lang sila.
 
-Yung una, nagsimula sa problema. Umaapaw ang tubig hanggang tuhod sa barangay nila kapag bumalik ang tubig-ilog, namamatay ang lift sa building nila kapag nawalan ng kuryente, at may dalawang bata at isang lola sa bahay. Kaya bumili sila ng water containers, torch para sa bawat isa, radio, at paraan para mag-charge ng phone. Boring na listahan. Pero galing 'yan sa sitwasyon nila.
+Ang unang tao, nagsimula sa problema. Umaabot hanggang tuhod ang baha sa barangay nila pag umapaw ang ilog, namamatay ang lift ng building nila pag walang kuryente, at may dalawang bata at isang lola sa bahay. Kaya bumili sila ng water containers, torch para sa bawat isa, radio, at paraan para maka-charge ng phone. Boring na list. Pero galing 'yan sa totoong sitwasyon nila.
 
-Yung pangalawa naman, nagsimula sa gear. Nakakita sila ng torch na ang ganda ng gawa, bag na mas maraming strap pa sa parachute, stove na naka-pack sa sarili niyang titanium cup. Interesting talaga ang gear, gawa ng mga taong may pagmamalasakit sa product nila, at maganda pa sa picture. Kaya binili nila, tapos saka pa lang nag-isip kung bakit nga ba kailangan nila 'yon.
+Ang pangalawang tao, nagsimula sa gear. Nakita nila 'yung magandang gawa na torch, bag na mas maraming strap pa sa parachute, stove na kasya sa sarili niyang titanium cup. Genuinely interesting talaga 'yung equipment, gawa ng mga taong seryoso sa ginagawa, at maganda talaga sa picture. Kaya binili nila, tapos saka na nila inisip kung bakit nga ba nila kailangan 'yun.
 
-Gusto ko maging maingat dito, kasi may version ng usapang ito na nagiging pang-iinsulto na lang, at hindi 'yon ang gusto ko. Okay lang naman na gustuhin ang gear. Gusto ko rin ng gear. Ang enthusiasm ang nagpahanda sa mas maraming pamilyang Pilipino kaysa sa kahit anong government advisory, at yung taong nasisiyahan sa kit niya, talagang mine-maintain 'yon, tine-test, at alam kung paano gumagana. Importante 'yon.
+Gusto kong mag-ingat dito, kasi may version ng usaping ito na nagiging sermon o panlalait, at ayaw ko doon. Okay lang na magustuhan ang gear — ako mismo, gusto ko rin ng gear. Mas maraming Filipino families ang na-prepare dahil sa enthusiasm kaysa sa kahit anong government advisory, at ang taong nasisiyahan sa kit niya ay talagang mag-maintain, mag-test, at magiging pamilyar dito. Importante 'yun.
 
-Mas specific ang problema kaysa sa "gustuhin ang gear." Ang problema ay kapag nagsimula nang maramdaman na parang preparation na ang pagbili. Hindi 'yon pareho, at ang typhoon season ang unang makakahanap ng puwang na 'yon.
+Mas specific ang problema kesa sa "pagkagusto sa gear." Ang problema ay pag ang pagbili na mismo ay parang pagpe-prepare na. Hindi sila pareho, at agad na lalabas ang gap na 'yan kapag typhoon season na.
 
-## What actually matters
+## Ano talaga ang importante
 
-Boring at nakakaabala ang tunay na sitwasyon sa mga paraang hindi kayang i-cover ng catalogue. Nawawalan ng kuryente alas-nuwebe ng gabi tapos babalik pa kinabukasan ng hapon. Bumababa ang water pressure at nauubos na ang tangke sa bubong bago mag-lunch. 40 percent na lang ang battery ng phone mo at gusto rin ng lahat sa bahay mag-charge. Puwede pa i-pasada ang daan pero walang tricycle na tumatakbo. Walang kailangang mag-abseil kahit saan. Walang kailangang magsindi ng apoy gamit ang ferro rod.
+Ang totoong event ay boring at nakakainis sa mga paraan na 'di kayang i-cover ng catalogue. Nawawalan ng kuryente ng alas-nuwebe ng gabi at bumabalik kinabukasan ng hapon. Bumababa ang water pressure at naubusan na ng tubig ang tangke sa bubong bago mag-lunch. 40 percent na lang ang battery ng phone mo at gusto ng lahat sa bahay mag-charge. Pwede pa naman daanan 'yung kalye pero walang tricycle na tumatakbo. Walang gustong mag-abseil kahit saan. Walang kailangang magpaningas gamit ang ferro rod.
 
-Ang kailangan ng household ay tubig, ilaw, impormasyon, na-charge na phone, tuyong damit, gamot, ilang pagkain na hindi na kailangang lutuin, at plano kung saan magtitipon ang lahat kung congested ang mobile network.
+Ang kailangan ng household ay tubig, ilaw, impormasyon, charged na phone, tuyong damit, gamot, food na hindi na kailangang lutuin, at plano kung saan magkikita ang lahat kung congested ang mobile network.
 
-Sa search-and-rescue work sa Australia, ang kit na talagang naging kapaki-pakinabang ay halos palaging yung unglamorous na kit. Sampung taon ng wilderness searches ang nagturo sa akin na ang item na dapat mong pagkatiwalaan ay 'yung may pinakakaunting paraan para mabigo. Kailanman ay hindi kami umasa sa kahit anong kailangan ng proprietary battery o mahirap na two-handed ignition, dahil kapag alas-tres ng umaga sa masamang panahon, na malamig ang mga kamay, mabibigo ang matalino habang ang simple, gumagana. Diretso 'yang instinct na 'yan sa brownout sa Quezon City. Pareho lang ang test, may mas magandang kape lang sa tabi.
+Sa search-and-rescue work sa Australia, karaniwang 'yung hindi glamorous na kit ang nagpapatunay ng sarili. Sampung taon ng wilderness searches ang nagturo sa akin na ang item na dapat mong asahan ay 'yung may pinakakaunting paraan para mag-fail. Kailanman hindi namin pinagkakatiwalaan ang kahit anong kailangan ng proprietary battery o mahirap na two-handed ignition, kasi sa alas-tres ng umaga sa masamang panahon, na malamig ang mga kamay, palaging nag-fa-fail ang matalinong gamit habang gumagana ang simple. Direktang applicable ang instinct na 'yan sa brownout sa Quezon City. Parehong test lang 'yan, may maganda lang na kape sa tabi.
 
-Kaya ang sukatan ng preparedness ay hindi kung ano'ng nasa shelf. Ito 'yon: kung magtaas ng signal si PAGASA bukas at mawalan ng kuryente ng tatlumpung oras, paano talaga makakayanan ng household mo? Nakakainom ba ang lahat? Nakakakita ba ang lahat? Alam ba ng lahat ang plano? 'Yan ang score, at walang binili na automatic na nagbibigay noon sa 'yo.
+Kaya ang sukatan ng preparedness ay hindi kung ano ang nasa shelf. Ito ang tanong: kung magtaas ng signal ang PAGASA bukas at mawalan ng kuryente ng tatlumpung oras, paano ba talaga ang household mo? May maiinom ba ang lahat? May makikita ba ang lahat? Alam ba ng lahat ang plano? 'Yun ang score, at walang kahit anong binili ang awtomatikong magbibigay sa 'yo nito.
 
-## What to do (and what not to)
+## Ano ang gagawin (at ano ang 'wag)
 
-Magsimula sa tatlong listahan bago ka magsimula sa cart.
+Magsimula sa tatlong lista bago ka magsimula sa cart.
 
-**Isa: ang totoong risks mo.** Hindi general disaster risk, kundi sa 'yo. Umaapaw ba ang kalye mo, at gaano kataas? Nasa mataas na palapag ka ba na nawawalan ng lift? Prone ba ang area mo sa mahabang outage o maikli lang? May slope ba na prone sa landslide sa itaas ninyo? Sampung minuto ng honest thinking tungkol sa address mo ang mas makakatulong sa 'yo kaysa sa sampung oras ng pag-browse.
+**Isa: ang totoong risks mo.** Hindi general disaster risk, kundi sa 'yo talaga. Bumabaha ba sa kalye n'yo, at gaano kataas? Nasa mataas ka bang palapag na mawawalan ng lift? Madalas ba matagalang outage sa area n'yo o maikli lang? May landslide-prone slope ba sa taas n'yo? Sampung minuto ng honest thinking tungkol sa address mo mismo ang gagawa ng mas malaki para sa 'yo kaysa sampung oras na pag-browse.
 
-**Dalawa: ang mga tao mo.** Bilangin nang maayos. Kailangan ng formula at nappies ng isang toddler. Kailangan ng maintenance medicine ng matandang magulang at malamang hindi kaya ng hagdan sa dilim. Kailangan ng may asthma ang inhaler nila na nasa abot-kamay, hindi nakapack sa ilalim ng bag. Kailangan din ng tubig ng aso. Para sa mga specific na taong ito ang kit mo, hindi para sa generic adult sa catalogue photo.
+**Dalawa: ang mga tao mo.** Bilangin nang maayos. Kailangan ng formula at diapers ng toddler. Kailangan ng maintenance medicine ng elderly parent at malamang hindi niya kaya ang hagdan sa dilim. Kailangan ng inhaler ng may asthma na nasa abot-kamay, hindi nakabaon sa ilalim ng bag. Kailangan din ng tubig ang aso. Para sa mga specific na tao na 'to ang kit mo, hindi para sa generic adult sa catalogue photo.
 
-**Tatlo: ang budget mo.** Isulat ang totoong number. Kung ₱3,000, 'yan ang number mo at sapat na 'yon para makagawa ng marami. Mas maganda ang preparedness na binibili nang unti-unti sa loob ng anim na buwan kaysa sa preparedness na ipinagpaliban hanggang kaya mo nang bilhin ang good version.
+**Tatlo: ang budget mo.** Isulat ang totoong number. Kung ₱3,000 lang, 'yun ang number mo at kaya na nito ang marami. Mas maganda ang preparedness na binili nang dahan-dahan sa loob ng anim na buwan kaysa sa preparedness na ipinagpaliban hanggang kayang bilhin ang mas magandang version.
 
-Tapos bumili ayon sa consequence. Tubig muna, dahil 'yon ang unang maubos at unang makakasakit. Ilaw pangalawa, dahil mas mahirap ang lahat sa dilim. Impormasyon pangatlo, radio na gumagana kahit walang network. Power para sa phones pang-apat. Tapos pagkain, gamot, documents, at dry storage.
+Pagkatapos, bumili base sa order ng consequence. Tubig muna, dahil una itong maubos at pinakamasakit kapag nawala. Ilaw pangalawa, dahil mas mahirap ang lahat sa dilim. Impormasyon pangatlo, isang radio na gumagana kahit walang network. Power para sa phones pang-apat. Tapos food, gamot, documents, at dry storage.
 
-Ang hindi dapat gawin: huwag munang bilhin ang interesting na bagay tapos ipangako sa sarili mong bibilhin mo na lang ang boring na bagay next month. Palagi namang ang water containers ang naiiwan. Nagawa ko rin 'to sa sarili ko, at tahimik na habit 'yon na dapat mahuli mo.
+Ano ang 'wag gawin: 'wag bilhin muna 'yung interesting na bagay at ipangako na lang sa sarili mo na bibilhin mo 'yung boring next month. Palaging 'yung water containers ang na-po-postpone. Nagawa ko rin ito, at isa itong tahimik na habit na dapat ma-catch.
 
-Saka, i-test ang binili mo bago mo pa kailanganin. Patakbuhin ang household mo gamit ang kit for one evening. Patayin ang mains ng alas-siyete, walang lulutuin, gamitin lang ang torches mo, tapos tingnan mo kung ano'ng makakayamot sa 'yo. Mahahanap mo ang problema sa loob ng isang oras na kung hindi, mahahanap mo pa sa gitna ng typhoon.
+Also, i-test ang binili mo bago mo pa kailanganin. Patakbuhin ang household mo sa kit sa loob ng isang gabi. Patayin ang mains ng alas-siyete, huwag magluto, gamitin lang ang mga torch mo, at tingnan kung ano ang nakakainis. Isang oras mo lang mahahanap ang problema na kung 'di ganito, matutuklasan mo pa lang sa gitna ng typhoon.
 
-## The gear that helps
+## Ang gear na nakakatulong
 
-Hindi 'to shopping list, at wala akong sino man na sino-score dito. Ito ang mga categories na paulit-ulit na nagpapatunay sa sarili nila.
+Hindi ito shopping list, at wala akong iniiskor dito. Ito lang ang mga category na patuloy na nagpapatunay ng sarili.
 
-**Water storage and treatment.** Rigid containers na kaya mong buhatin kapag puno, plus filter na hindi kailangan ng batteries. Mas malaki ang halaga ng dalawampung litro ng nakaimbak na tubig kaysa sa kahit anong single clever gadget.
+**Water storage and treatment.** Rigid containers na kaya mong buhatin kapag puno, plus filter na hindi kailangan ng batteries. Mas malaki ang halaga ng dalawampung litro ng nakaimbak na tubig kaysa sa kahit anong isang matalinong gadget.
 
-**Isang torch per person, plus lantern.** Headtorches para sa hands-free na gawain, maliit na lantern para sa kwarto para hindi nagtuturuan ng beam ang mga tao sa mukha ng isa't isa. Common battery types, ideally same type sa buong kit mo.
+**Isang torch bawat tao, plus isang lantern.** Headtorch para hands-free ang trabaho, maliit na lantern para sa kwarto para hindi nagtuturuan ng beam sa mukha ang mga tao. Common battery types, ideally pareho ang type sa buong kit mo.
 
-**Radio na naka-pick up ng AM at FM.** Kapag congested ang mobile network at mabagal ang data, ang local radio ang paraan mo para malaman kung aling mga daan ang putol. Hand-crank o solar bilang backup, batteries bilang primary.
+**Radio na may AM at FM.** Kapag congested ang mobile network at mabagal ang data, ang local radio ang paraan mo para malaman kung anong kalsada ang sarado. Hand-crank o solar bilang backup, batteries bilang primary.
 
-**Power bank na naka-size sa household mo.** Maging honest sa kung ano talaga 'yon: sapat lang para mabuhay ang phones sa loob ng isa o dalawang araw, hindi sapat para patakbuhin ang buong household. Iba nang purchase, iba nang presyo ang mas malaki pa dito.
+**Power bank na sapat sa household mo.** Maging honest kung ano talaga ito: sapat para mabuhay ang phones ng isa o dalawang araw, hindi sapat para patakbuhin ang buong household. Ang mas malaki ay ibang purchase na may ibang presyo.
 
-**Dry storage.** Dry bags, o honestly, magandang zip-lock bags at plastic crate na may takip na lang. Documents, extra na damit, gamot. Ito ang pinakamurang upgrade sa preparedness at ang pinaka-madalas na nakakalimutan.
+**Dry storage.** Dry bags, o kahit magandang zip-lock bags at plastic crate na may takip. Documents, extra na damit, gamot. Ito ang pinakamurang upgrade sa preparedness at ang madalas na na-skip.
 
 **Basic first aid kit na binuksan mo na talaga.** Plus dalawang linggong supply ng kahit anong maintenance medicine na iniinom ng household mo.
 
-Tungkol sa pagbili: sa Lazada at Shopee ang karamihan sa atin bumibili, at karaniwan ang mga counterfeit ng popular na torch at power bank brands. Kung imposible ang presyo, imposible talaga 'yon. Tingnan ang seller history, at maging skeptical sa capacity claims ng napakamurang power banks. Bumibili rin kami ng sarili naming gear dito, sa normal na presyo, mula sa parehong listings na nakikita mo.
+Tungkol sa pagbili: sa Lazada at Shopee kadalasan tayo bumibili, at karaniwan ang counterfeits ng mga popular na torch at power bank brands. Kung imposible ang presyo, imposible talaga. Tingnan ang seller history, at mag-ingat sa capacity claims ng napakamurang power banks. Kami mismo bumibili ng gear namin dito, sa normal na presyo, sa parehong listings na nakikita mo.
 
-## Common mistakes
+## Mga karaniwang pagkakamali
 
-**Bumili ng bag bago ang laman.** Ang bag ang huling desisyon, hindi ang una. I-pack muna ang tambak, tapos saka bilhin ang bag na kasya doon.
+**Pagbili ng bag bago ang laman.** Ang bag ang huling desisyon, hindi ang una. I-pack muna ang tambak, tapos bilhin ang bag na kasya rito.
 
-**Redundancy sa maling lugar.** Apat na torch pero walang tubig. Tatlong kutsilyo pero walang radio. Maganda ang redundancy, pero i-spread mo muna sa iba't ibang categories bago mo i-stack sa loob ng isa.
+**Redundancy sa maling lugar.** Apat na torch pero walang tubig. Tatlong kutsilyo pero walang radio. Maganda ang redundancy, pero ikalat muna sa iba't ibang category bago mo i-stack sa loob ng isa.
 
-**Kit na iisang tao lang ang marunong gumamit.** Kung ikaw lang ang nakakaalam kung paano magsindi ang stove o kung nasaan ang go-bag, mabibigo ang plano sa sandaling nasa trabaho ka pa nang tumama 'to.
+**Kit na isang tao lang ang marunong gumamit.** Kung ikaw lang ang nakakaalam kung paano magsindi ang stove o kung saan nakalagay ang go bag, mabibigo ang plano sa sandaling nasa trabaho ka pag tumama.
 
-**Naguguluhan sa pagitan ng capability at readiness.** Hindi pareho ang pagmamay-ari ng water filter sa pagkaalam kung nasaan 'yon alas-onse ng gabi.
+**Pagkalito sa capability at readiness.** Ang pagkakaroon ng water filter ay hindi pareho sa pagkakaalam kung nasaan ito sa alas-onse ng gabi.
 
-**Nilalaktawan ang plano dahil pakiramdam mo, progress na ang gear.** Saan kayo magtitipon. Sino ang tatawag kanino. Aling kapitbahay ang mag-che-check sa lola sa itaas. Kailan kayo aalis. Wala sa mga 'yon ang may bayad na piso, at pinapahamak ng lahat ng 'yan ang kahit anong nasa shelf. Walang bag na kayang palitan ang pag-alis nang maaga.
+**Pag-skip sa plano dahil parang progress na ang gear.** Saan kayo magkikita. Sino ang tatawag kanino. Aling kapitbahay ang magche-check sa lola sa itaas. Kailan kayo aalis. Wala sa mga 'yan ang may kahit isang piso, at lahat 'yan mas mataas ang ranggo kaysa sa kahit ano sa shelf. Walang bag ang kapalit ng maagang pag-alis.
 
-**Pananakot sa enthusiast, pati na rin sa sarili mo.** Kung magandang torch ang nagsimula sa 'yo, okay lang 'yon. Siguraduhin lang na ang susunod mong tatlong bilihin, yung mga boring na.
+**Pagkutya sa enthusiast, kasama na ikaw.** Kung magandang torch ang nagpasimula sa 'yo, mabuti 'yun. Siguraduhin lang na 'yung susunod na tatlong bibilhin mo ay 'yung mga boring na.
 
-## A calm closing
+## Isang calm na pagtatapos
 
-Tool lang ang gear. Hindi 'yon ang goal, at hindi rin 'yon ang proof.
+Ang gear ay isang tool. Hindi ito ang goal, at hindi ito ang patunay.
 
-Ang tanong na dapat mong dalhin papasok sa typhoon season na ito ay hindi "ano'ng bibilhin ko next?" Kundi, "kung mawalan ng kuryente ngayong gabi at hindi na bumalik hanggang bukas ng hapon, ano'ng unang mahihirapan ang household ko?" Sagutin 'yan nang honest, ayusin 'yong isang bagay na 'yon, tapos ulitin.
+Ang tanong na dapat mong dalhin papasok sa typhoon season na ito ay hindi "ano ang susunod kong bibilhin?" Ito ay "kung mawalan ng kuryente ngayong gabi at manatiling wala hanggang bukas ng hapon, ano ang unang mahihirapan ang household ko?" Sagutin nang honest, ayusin ang isang 'yun, at ulitin.
 
-Gawin mo 'yan ng apat o limang beses, magkakaroon ka ng kit na mukhang ordinaryo pero kumpletong gumagana. 'Yan ang version na worth having.
+Gawin mo 'yan ng apat o limang beses at magkakaroon ka ng kit na mukhang ordinary pero gumagana nang kumpleto. 'Yun ang version na worth having.
