@@ -1,13 +1,13 @@
 ---
 title: >-
-  Leptospirosis at baha sa Pilipinas: ano ito, paano kumakalat, at paano
+  Leptospirosis at baha sa Pilipinas: ano ito, paano ito kumakalat, at paano
   proteksyunan ang pamilya mo
 description: >-
-  Isang plain-language na paliwanag tungkol sa leptospirosis — ano talaga ang
-  bacteria, paano ito nakakapasok sa katawan mo through floodwater, at ano ang
-  kayang gawin ng ordinaryong household bago, habang, at after ng habagat season
-  para safe.
-sourceHash: be9db0e30e7109f4
+  Isang plain-language explainer tungkol sa leptospirosis — ano talaga ang
+  bacteria na 'to, paano ito nakakapasok sa katawan mo through floodwater, at
+  ano ang pwedeng gawin ng ordinaryong household bago, habang, at pagkatapos ng
+  habagat season para safe.
+sourceHash: 12fd16a37574e4b9
 railItems:
   - type: image
     assetId: 0a1ee05b-2a3e-4375-a763-a43f94de0879
@@ -15,83 +15,84 @@ railItems:
     label: Kailan dapat magpatingin
     image: 'https://images.galinggear.com/library/generated-1789901437581-2sglxx.png'
     alt: >-
-      Kamag-anak na tini-check ang temperatura ng isang batang babae na
+      Kamag-anak na sumusukat ng temperatura ng isang batang babae na
       nagpapahinga sa bahay ilang araw pagkatapos ng baha
     caption: >-
-      Kung may lagnat, sakit ng ulo, o sakit ng betis sa loob ng dalawang linggo
-      pagkatapos malubog sa baha, magpatingin sa doktor — huwag na hintayin pa.
+      Kung fever, sakit ng ulo, o sakit ng binti sa loob ng dalawang linggo
+      pagkatapos malusong sa baha, magpatingin sa doktor — huwag nang antayin
+      pa.
   - type: article
     assetId: 3606c02f-716d-47d0-8ca2-a6d146936c0f
     anchor: a-calm-closing
     label: Alamin Ang Mga Sintomas
-    title: '''Yung lagnat pagkatapos ng baha na hindi dapat i-hintay hanggang Monday'
+    title: Ang fever pagkatapos ng baha na 'di dapat ipagpaliban hanggang Lunes
     slug: >-
       leptospirosis-after-the-flood-what-to-do-if-you-ve-already-waded-through-it
     description: >-
-      Karamihan sa lagnat pagkatapos ng baha ay wala namang malaking problema,
-      pero may ilang pattern na kailangan mong puntahan agad sa clinic — alamin
-      ang pagkakaiba bago sumapit ang susunod na habagat.
+      Karamihan sa fever pagkatapos ng baha ay harmless lang, pero may ilang
+      pattern na kailangan mo nang magpatingin sa clinic same-day — alamin ang
+      pagkakaiba bago dumating ang susunod na habagat.
   - type: image
     assetId: f0691992-c490-442f-b27c-d71bc64cf9d3
     anchor: the-situation
-    label: Huwag hayaang maabutan ka
+    label: Huwag magpaabot
     image: 'https://images.galinggear.com/staging/1789809668891-roxlfa.png'
     alt: Baha sa highway
 railSourceHash: bc7535742dc26b0f
 ---
 
-## The situation
+## Ang sitwasyon
 
-Every habagat season, somewhere between the first flooded street at the last, may nasa neighborhood na nauuwi sa hospital dahil sa leptospirosis. Nangyayari ito quietly enough na madaming pamilya ang hindi talaga natututo kung ano ito — alam lang nila na "baha" at "lepto" ay sabay na binabanggit, at dapat maingat ka. Gusto kong bagalan 'to at talagang ipaliwanag, dahil kung naiintindihan mo ang bagay na iniiwasan mo, mas magaling ka sa pag-iwas dito.
+Every habagat season, somewhere between the first flooded street at ang last, may isang tao sa neighborhood na napupunta sa hospital dahil sa leptospirosis. Nangyayari 'to nang tahimik lang kaya maraming pamilya ang hindi talaga natututo kung ano ito — alam lang nila na magkasabay laging binabanggit ang "baha" at "lepto," at dapat daw mag-ingat. Gusto kong bagalan 'to at i-explain nang maayos, kasi kapag naiintindihan mo 'yung iniiwasan mo, mas magaling kang umiwas dito.
 
-Leptospirosis ay isang bacterial infection. Ang bacteria — tinatawag na *Leptospira* — ay nakatira sa kidneys ng mga infected animals, most commonly rats, pero pati mga aso, baka, at iba pang mammals. Ang mga hayop na 'to ay nag-shed ng bacteria through their urine, madalas hindi mo mahalata na may sakit sila. Sa normal, tuyong condisyon, ang urine na 'yon ay nabubulok sa lupa at hindi na malaking problema. Pero kapag tumaas ang floodwater, kinukuha nito lahat ng nakatambak sa gutters, canals, ditches, at yards — kasama ang lumang rat urine na naka-settle sa mud at soil — at dinadala 'yon sa tubig na tatawirin mo at ng mga anak mo.
+Leptospirosis ay isang bacterial infection. 'Yung bacteria — tinatawag na *Leptospira* — nabubuhay sa kidneys ng mga infected na hayop, kadalasan daga, pero pati aso, baka, at iba pang mammals. Ini-shed ng mga hayop na 'yon ang bacteria sa kanilang ihi, kadalasan hindi mo mapapansin na may sakit sila. Sa normal na tuyong panahon, nasisira 'yung ihi sa lupa at hindi na malaking problema. Pero kapag tumaas ang floodwater, nadadala nito ang lahat ng nasa gutters, canals, ditches, at bakuran — kasama na ang lumang ihi ng daga na nasa putik at lupa — at dinadala sa tubig na inaakyat mo at ng mga anak mo.
 
-Ito ang dahilan kung bakit lepto ay isang flood-season disease dito almost more than anywhere else in the world. Marami tayong rat population na malapit sa mga tao, marami ring low-lying, poorly drained barangays, at isang wet season na reliably nagpapadaloy ng ankle- to waist-deep na tubig sa kalye for hours or days at a time. Pagsamahin mo ang tatlong 'to at makukuha mo ang isang predictable, recurring risk every single year — hindi 'to freak event.
+Kaya't lepto ay isang flood-season disease dito na halos wala kahit saan sa mundo. Ang dami nating daga na malapit sa mga tao, maraming barangay na low-lying at mahinang drainage, at isang wet season na regular na nagdadala ng tubig na hanggang bukong-bukong o baywang sa kalye for hours or days. Pagsasamahin mo 'yang tatlo, at nakukuha mo ang isang predictable, paulit-ulit na risk kada taon — hindi isang freak event.
 
-## What actually matters
+## Ano talaga ang importante
 
-May ilang facts na nagpapaiba talaga kung gaano dapat seryosohin ito, at paano dapat kumilos.
+May ilang facts na talagang nagpapaiba kung gaano ka-seryoso dapat mo itong tratuhin, at paano kumilos dito.
 
-**Pumapasok ito through breaks sa skin mo, hindi dahil lang malapit ka sa dumi ng tubig.** Ang bacteria ay pumapasok through cuts, scrapes, blisters, insect bites — kahit 'yung hindi mo namamalayan — at through the soft membranes ng eyes, nose, at mouth mo. Ang prolonged soaking ng unbroken skin, especially sa mga feet na naka-wet shoes or socks for hours, ay puwede rin magpapasok nito, dahil ang skin na natigmak nang matagal ay lumalambot at nagiging mas madaling penetrateen. Ito ang dahilan kung bakit ang barefoot kid na pinapatakbo ang stalled tricycle through floodwater, at ang adult na sumabak with an unnoticed heel blister, ay pareho na may totoong risk, habang ang taong nakatayo lang malayo sa tubig ay hindi.
+**Pumapasok ito sa breaks ng skin mo, hindi dahil malapit ka lang sa dumihang tubig.** Pumapasok ang bacteria sa mga cuts, scrapes, blisters, insect bites — kahit hindi mo napapansin — at sa soft membranes ng mata, ilong, at bibig mo. Ang matagal na pagbabad ng skin na walang sugat, lalo na sa paa na naka-wet shoes o socks nang matagal, ay pwede rin nitong pagpasukan, kasi 'yung skin na basa nang matagal ay lumalambot at mas madaling mapasukan. Kaya't ang batang barefoot na nagtutulak ng nasirang tricycle sa floodwater, at ang adult na naka-wade na may 'di-napapansing blister sa sakong, ay pareho talagang nasa risk, habang 'yung nakatayo lang malayo sa tubig ay hindi.
 
-**Hindi 'to kumakalat from person to person.** Hindi ka makakahawa ng leptospirosis from a family member na may sakit nito — hindi through sharing a room, a meal, o pag-alaga sa kanila. Ang tanging source ay contact with contaminated water, mud, or soil, or in rarer cases, direct contact with an infected animal. Importante ito practically: kung may nagkasakit sa household mo, hindi mo na kailangan i-isolate sila from the rest of the family the way ginagawa mo sa contagious illness. Ang kailangan mo ay alamin kung saan nangyari ang exposure at panatilihin ang lahat away from that.
+**Hindi ito kumakalat mula sa tao papunta sa tao.** Hindi ka makakakuha ng leptospirosis mula sa isang kapamilya na may sakit nito — hindi sa pagshe-share ng kwarto, ng pagkain, o pag-aalaga sa kanila. Ang tanging source ay contact sa contaminated na tubig, putik, o lupa, o sa mas bihirang case, direktang contact sa isang infected na hayop. Importante ito practically: kung may nagkasakit sa household mo, hindi mo na kailangang i-isolate sila mula sa iba pang pamilya gaya ng gagawin mo sa isang contagious na sakit. Kailangan mo lang malaman kung saan nangyari ang exposure at layuan ang lahat mula doon.
 
-**Ang timing ang pinaka-importante para sa treatment.** Ang leptospirosis sa simula ay parang ibang common conditions — fever, headache, muscle aches, minsan chills — kaya madaling isipin na sipon lang 'to o pagod after days of flood cleanup. Kung na-catch early, treatable 'to. Kung pinabayaan, puwede itong lumala. Ang gap sa pagitan ng "sa tingin ko pagod lang ako" at "dapat magpatingin ako ng doktor" ay ang pinaka-importanteng decision point sa buong disease na 'to.
+**Ang timing ang pinakaimportante para sa treatment.** Ang leptospirosis sa umpisa ay kamukha ng maraming ibang sakit — fever, headache, muscle aches, minsan chills — kaya nga madaling i-brush off ng mga tao bilang sipon lang o pagod pagkatapos ng ilang araw na flood cleanup. Kapag naaagapan agad, gamot lang 'to. Kapag pinabayaan, pwede itong maging seryoso. Ang gap sa pagitan ng "sa tingin ko pagod lang ako" at "dapat magpatingin ako sa doktor" ang pinakaimportanteng decision point sa buong sakit na 'to.
 
-## What to do (and what not to)
+## Ano ang gagawin (at ano ang 'wag)
 
-Bago tumaas ang tubig, kung alam mong may typhoon o sustained heavy rain na paparating, worth gawin ang mga sumusunod:
+Bago tumaas ang tubig, kung alam mong may darating na typhoon o matagal na malakas na ulan, worth gawin ang mga sumusunod:
 
-- Panatilihin ang rubber boots para sa bawat member ng household, kasama ang mga bata, sa lugar na madaling maabot — hindi nakabaon sa storage box sa taas ng cabinet.
-- I-cover ang existing cuts, scrapes, o wounds with a fully waterproof dressing bago pumunta ang sinuman sa standing water. Kung nabasa na through-and-through ang dressing, hindi na ito gumagana.
-- Kausapin ang household mo tungkol sa pag-iwas sa wading kapag may ibang option. Alam kong obvious 'to, pero in practice, palagi talagang nag-wade ang mga tao sa flood — para tingnan ang tricycle, para ilipat ang kotse, para maglakad sa sari-sari store — kung meron namang drier route o dahilan na maghintay lang.
+- Mag-keep ng rubber boots para sa bawat miyembro ng household, kasama ang mga bata, sa lugar na madali mong maabot — hindi nakabaon sa isang storage box sa taas ng cabinet.
+- Takpan ang anumang existing na cuts, scrapes, o sugat gamit ang fully waterproof na dressing bago lumabas ang sinuman sa standing water. Kung nabasa nang husto ang dressing, hindi na 'to gumagana.
+- Kausapin ang household mo tungkol sa pag-iwas sa pag-wade kapag may ibang option. Alam kong obvious 'to, pero in practice, palaging nag-wa-wade ang mga tao during floods — para tingnan ang tricycle, ilipat ang kotse, o maglakad papunta sa sari-sari store — kahit may mas tuyong ruta o dapat lang maghintay.
 
-Habang at agad after ng flood exposure:
+Habang at kaagad pagkatapos ng flood exposure:
 
-- Hugasan ang exposed skin thoroughly with soap and clean water as soon as ka makakaya, focus sa feet, ankles, at hands.
-- Iwasan hawakan ang eyes, nose, o mouth mo with hands na nasabak sa floodwater until nahugasan na ang mga 'to.
-- Patuyuin ang feet mo nang maayos at magpalit ng wet socks and shoes instead of staying in them for hours — isang small habit 'to na meaningfully nagpapababa ng risk.
-- Layuan ang mga bata sa floodwater play. Mukhang harmless 'to pero isa sa mas common ways na na-expose ang mga bata.
+- Hugasan nang maigi ang exposed na skin gamit ang sabon at malinis na tubig sa lalong madaling panahon, bigyang pansin ang paa, bukong-bukong, at kamay.
+- 'Wag hawakan ang mata, ilong, o bibig gamit ang kamay na nasa floodwater bago mo ito hugasan.
+- Patuyuin nang maayos ang paa at magpalit ng basang socks at sapatos sa halip na patagalin ka rito nang oras-oras — isang maliit na habit na malaki ang epekto sa pagbaba ng risk.
+- Layuan ang mga bata sa paglalaro sa floodwater. Mukhang harmless ito pero isa 'to sa mga pinaka-common na paraan ng pagkaka-expose ng mga bata.
 
-Kung ikaw or someone sa household mo ay nasabak na sa floodwater at gusto mong malaman ang specific step-by-step para sa mga sunod na araw — anong symptoms bantayan at kailan exactly kumilos — nasulat na namin ito separately sa [leptospirosis after the flood](/articles/leptospirosis-after-the-flood-what-to-do-if-you-ve-already-waded-through-it/) guide. Ang article na ito ang broader picture; ang isa naman ang mas narrow na "nasabak na ako, ano na" companion piece.
+Kung ikaw o may isang miyembro ng household mo na naka-wade na sa floodwater at gusto mo ng specific na step-by-step para sa mga susunod na araw — kung anong symptoms bantayan at kailan exactly dapat kumilos — sinulat namin 'yun nang hiwalay sa aming [leptospirosis after the flood](/articles/leptospirosis-after-the-flood-what-to-do-if-you-ve-already-waded-through-it/) guide. Ang article na ito ay ang mas malawak na picture; 'yun naman ay ang mas specific na "nabasa na ako, ano na ngayon" companion piece.
 
-Kung may fever, body aches, headache, o pakiramdam na unusually unwell ang sinuman sa mga araw after wading through floodwater, ang tamang gagawin ay agad na bisita sa barangay health center o hospital — hindi paghihintay, at hindi self-medicating. Ang leptospirosis ay puwedeng magmukhang mild sa first day o dalawa at then escalate, at genuinely hindi 'to dapat diagnose or treat mo sa sarili mo gamit kung ano lang natira sa medicine cabinet. Sabihin mo plainly sa health worker na nasabak ka sa floodwater — nag-iiba 'yon sa kanilang tinitingnan.
+Kung may magkaroon ng fever, body aches, headache, o pakiramdam na hindi maganda ang katawan sa mga araw pagkatapos ng pag-wade sa floodwater, ang tamang gagawin ay agarang pagpunta sa barangay health center o hospital — hindi paghihintay lang, at hindi self-medication. Ang leptospirosis ay pwedeng mukhang mild sa unang isa o dalawang araw at biglang lumala, at hindi talaga ito bagay na dapat i-diagnose o gamutin mo mismo gamit ang natitira sa medicine cabinet. Sabihin nang tapat sa health worker na naka-floodwater ka — nagbabago ito sa kanilang chinecheck.
 
-## The gear that helps
+## Ang gear na tumutulong
 
-Wala nito ang need na complicated o mahal, at wala nito ang pumapalit sa good judgment tungkol sa kailan dapat lang manatili sa loob. Ilang categories na worth ihanda bago mag-start ang flood season:
+Wala sa mga ito ang kailangang maging complicated o mahal, at wala rin sa mga ito ang papalit sa magandang judgment kung kailan ka lang dapat manatili sa loob. Ilang categories na worth i-ready bago magsimula ang flood season:
 
-- **Rubber boots**, tall enough to matter, para sa bawat family member na maaaring lumabas habang may flood. Okay lang ang cheap ones from the palengke basta't talagang nagkeep out ng tubig.
-- **Isang basic first-aid kit** na may waterproof dressings, itago sa lugar na dry at madaling kunin — ang pag-cover ng cuts bago ang exposure ay isang small habit na real work talaga ang ginagawa. Ang [first aid](/first-aid/) guides namin ay nagdiscuss kung paano magbuild ng maayos.
-- **Isang stocked go bag** na may soap, alcohol, at pamalit na dry clothes and footwear, para hindi ka na naka-stuck sa wet shoes for hours after wading. Tingnan ang [go bag](/go-bag/) guide namin kung wala ka pang isa.
-- **Clean water for washing and drinking** na hiwalay sa kung ano man ang lumalabas sa gripo during a flood, dahil puwede ring ma-compromise ang municipal supply — ang [clean water](/clean-water/) guide namin ay nagcover ng storage at treatment.
+- **Rubber boots**, sapat na kataas para may saysay, para sa bawat kasapi ng pamilya na maaaring lumabas during flooding. Okay lang ang mura mula sa palengke basta't talagang hindi pumapasok ang tubig.
+- **Isang basic first-aid kit** na may waterproof dressings, itago sa lugar na tuyo at madaling kunin — ang pagtakip sa mga sugat bago mag-expose ay isang maliit na habit na malaki ang epekto. Ang mga [first aid](/first-aid/) guides namin ay tumatalakay sa tamang pagbuo nito.
+- **Isang stocked go bag** na may sabon, alcohol, at pamalit na tuyong damit at sapatos, para hindi ka matagalan sa basang sapatos matapos mag-wade. Tingnan ang aming [go bag](/go-bag/) guide kung wala ka pa nito.
+- **Malinis na tubig para sa paghuhugas at pag-inom** na hiwalay sa kung ano man ang lumalabas sa gripo during flood, dahil pwede ring ma-compromise ang municipal supply — ang aming [clean water](/clean-water/) guide ay tumatalakay sa storage at treatment.
 
-## Common mistakes
+## Mga karaniwang pagkakamali
 
-Ang pinakamalaking common mistake na nakikita ko ay ang paniniwala na "sandali lang naman ako nabasa" ay automatically safe. Hindi na kailangan ng matagal na exposure para makapasok ang bacteria sa cut na hindi mo alam na meron ka. Isa pang common mistake ay ang paghihintay na dramatic na ang symptoms bago maghanap ng care — by that time, karaniwang may head start na ang illness ng ilang araw. At ang ikatlo ay ang self-medicating with leftover antibiotics from a previous illness, na hindi same treatment, hindi rightdose para dito, at puwede itong magmask ng symptoms without addressing the actual infection — mas dahilan pa para hayaan mo na lang ang doktor o barangay health worker ang magdesisyon.
+Ang pinakamalaki na napapansin ko ay ang pagtrato sa "nabasa lang ako nang isang minuto" bilang automatic na safe na. Hindi kailangan ng matagal na exposure para makapasok ang bacteria sa isang sugat na 'di mo alam na meron ka. Isa pang common mistake ay ang paghihintay hanggang dramatic na ang symptoms bago magpatingin — sa oras na mangyari 'yun, kadalasan ay may ilang araw nang head start ang sakit. At ang pangatlo ay self-medication gamit ang mga natitirang antibiotics mula sa dating sakit, na hindi pareho ang treatment, mali ang dose para dito, at pwedeng magtago ng symptoms nang hindi nasosolusyunan ang aktwal na infection — dagdag na dahilan para hayaan na lang ang doktor o barangay health worker ang mag-decide.
 
-Para sa current advisories, local case activity, o specific guidance para sa area mo, ang <a href="https://doh.gov.ph/" target="_blank" rel="noopener noreferrer">Department of Health</a> at ang barangay health office mo ang tamang puntahan — nag-publish sila ng updated guidance habang umuunlad ang typhoon season, at alam ng barangay mo kung ano ang circulating locally sa paraan na hindi kayang gawin ng national bulletin.
+Para sa current na advisories, local case activity, o specific na guidance para sa area mo, ang <a href="https://doh.gov.ph/" target="_blank" rel="noopener noreferrer">Department of Health</a> at ang barangay health office mo ang tamang puntahan — nagpapalabas sila ng updated na guidance habang tumatagal ang typhoon season, at alam ng barangay mo kung ano ang kumakalat locally sa paraang hindi kayang gawin ng isang national bulletin.
 
-## A calm closing
+## Isang calm na pagtatapos
 
-Ang leptospirosis ay isa sa mas predictable na costs ng pamumuhay sa isang flood-prone na bansa — tumataas ang cases every year during typhoon season, hindi dahil may unusual na nangyayari, pero dahil ang same conditions na nagdadala ng ulan ay nagdadala rin ng waste ng mga daga papunta sa tubig sa kalye mo. Ang predictability na 'yon ay actually useful: ibig sabihin, ang same na handful of habits — boots on, cuts covered, wash thoroughly, don't wait to see a doctor kung pakiramdam mo may mali — ay genuinely gumagawa ng most of the work para panatilihing safe ang pamilya mo. Walang amount of gear na papalit sa good judgment tungkol sa kailan dapat lang lumayo sa tubig in the first place, pero para sa mga panahong hindi mo talaga maiiwasan, ang pagkaalam kung ano talaga ang kinakaharap mo ang magbibigay-daan para seryosohin mo ito without panicking about it.
+Ang leptospirosis ay isa sa mas predictable na costs ng pamumuhay sa isang bansang flood-prone — tumataas ang cases every year during typhoon season, hindi dahil may kakaibang nangyayari, kundi dahil ang parehong conditions na nagdadala ng ulan ay nagdadala rin ng waste ng mga daga sa tubig sa kalye mo. Ang predictability na 'yun ay actually useful: ibig sabihin, ang parehong ilang habits — naka-boots, natakpan ang sugat, hugasang maigi, huwag maghintay magpatingin sa doktor kapag pakiramdam mo hindi maganda — ay talagang gumagawa ng karamihan sa trabaho para maprotektahan ang pamilya mo. Walang halaga ng gear ang makakapalit sa magandang judgment tungkol sa kung kailan ka lang dapat manatiling malayo sa tubig sa umpisa pa lang, pero para sa mga panahong hindi mo talaga maiiwasan, ang pagkaalam kung ano talaga ang kinakaharap mo ang nagpapahintulot sa 'yong seryosohin ito nang hindi ka na-panic.
