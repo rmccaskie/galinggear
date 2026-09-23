@@ -9,6 +9,19 @@ featured: false
 status: active
 articleType: review
 heroImage: 'https://images.galinggear.com/articles/generated-1789999466980-x9j17l.png'
+shareImage: 'https://images.galinggear.com/articles/generated-1789999466980-x9j17l.png'
+social:
+  facebook: "When the power's out and cell signal is gone, an emergency radio can be the only thing telling you if the storm surge warning has been lifted or the signal number raised. Our guide breaks down hand-crank vs solar radios and the AM/FM specs that actually matter for catching PAGASA updates when everything else fails. \U0001F4FB\n\nhttps://galinggear.com/en/articles/emergency-radio-pagasa-updates/"
+  x: >-
+    Phones dead, cell towers down, storm still raging — this is when an
+    emergency radio earns its keep. We break down hand-crank vs solar and what
+    AM/FM specs actually matter for PAGASA updates.
+    https://galinggear.com/en/articles/emergency-radio-pagasa-updates/
+    #TyphoonPH #EmergencyPrep
+  instagram: "Power's out. Phone's dead. Cell towers overloaded. This is the exact moment an emergency radio matters most — pulling PAGASA's AM broadcast out of thin air when nothing else works.\n\nOur latest guide covers hand-crank vs solar radios, and the AM/FM specs worth checking before you buy, so your household isn't left guessing during the next typhoon.\n\nLink in bio \U0001F517\n\n#EmergencyPrep #TyphoonPH #PAGASA #DisasterPreparedness #StormReady #PhilippinesPrep #PrepperPH #WeatherSafety #HouseholdSafety #StaySafePH"
+  facebookTl: "Alam n'yo yung feeling na blackout na, walang signal pa, tapos hindi mo alam kung nag-lift na ang storm surge warning? Been there. Kaya naman we made a guide para malaman n'yo kung ano talaga ang dapat hanapin sa isang emergency radio — hand-crank ba o solar, at bakit importante yung AM reception para sa PAGASA updates. \U0001F4FB Check niyo na para ready kayo bago pa man dumating ang susunod na bagyo.\nhttps://galinggear.com/articles/emergency-radio-pagasa-updates/"
+  xTl: "Walang ilaw, walang signal, walang balita — the exact moment na kailangan mo ng emergency radio. Alamin ang dapat hanapin bago bumili \U0001F4FB #TyphoonReady #PAGASA\nhttps://galinggear.com/articles/emergency-radio-pagasa-updates/"
+  instagramTl: "Blackout na, patay na rin ang signal — pero paano malalaman kung nag-lift na ang storm surge warning? \U0001F300 Yan ang gap na sagot ng emergency radio: walang kailangang cell tower o WiFi, basta may AM band at kaunting crank o baterya, kuha mo agad ang PAGASA bulletin.\n\nSa bago naming guide, break down namin ang dapat tignan — AM/FM coverage, hand-crank vs solar, at bakit hindi pwedeng \"afterthought\" lang ang AM reception pag pumipili ka ng gear. Practical at walang paligoy-ligoy, para sa mga Pinoy household na gustong maging prepared.\n\nLink in bio \U0001F517\n\n#TyphoonPrep #PAGASA #EmergencyRadio #DisasterPreparedness #GalingGear #HandaAngPamilya #BagyoReady #PinoyPrepper #PowerOutage #StaySafe #ParaSaPamilya #EmergencyGear"
 ---
 
 ## Overview
