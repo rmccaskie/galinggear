@@ -9,6 +9,24 @@ featured: false
 status: active
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1790040168439-1nocrb.png'
+shareImage: 'https://images.galinggear.com/staging/generated-1790040168439-1nocrb.png'
+social:
+  facebook: "Most go-bag advice assumes everyone can grab a bag and walk out the door — but what if your lola can't walk unassisted, or a family member just had surgery? \U0001F392 This guide covers the caregiver's second bag, a written care summary, staging mobility aids by the exit, and lining up backup help before an emergency hits. If your household has a bedbound or mobility-limited member, this one's for you.\nhttps://galinggear.com/en/articles/go-bag-for-a-household-with-a-bedbound-or-mobility-limited-family-member/"
+  x: >-
+    Standard go-bag advice doesn't work if lolo or lola can't walk unassisted.
+    Here's how to build a real evacuation plan for bedbound or mobility-limited
+    family members.
+    https://galinggear.com/en/articles/go-bag-for-a-household-with-a-bedbound-or-mobility-limited-family-member/
+    #EmergencyPrep #Philippines
+  instagram: "\"Grab your bag and walk to the evacuation center\" doesn't work when the person you're planning for hasn't walked unassisted in years. \U0001F4AD\n\nIf your household includes a bedbound or mobility-limited lolo, lola, or family member, the standard checklist just doesn't apply — and that gap is often why families end up with no plan at all.\n\nThis guide walks through what actually matters: a caregiver bag separate from the patient's, a written care summary for emergencies, staging mobility aids right at the exit, and arranging backup help in advance — before the water's at the door.\n\nPractical, no-nonsense prep for the families the standard advice forgets.\n\nLink in bio \U0001F517\n\n#EmergencyPreparedness #DisasterPrep #PhilippinesPrep #Caregiving #PWD #ElderlyCare #GoBag #TyphoonPrep #FamilySafety #PinoyPrepper #EvacuationPlan #GalingGear"
+  facebookTl: "Yung standard go-bag checklist na \"grab and go\" advice? Hindi po siya applicable kung may lola kang hindi na makalakad nang sarili, o may kapatid na may disability. Different plan ang kailangan niyo — caregiver bag, written care summary, mobility aids na naka-stage sa exit, at backup helper na naka-arrange na bago pa man dumating ang bagyo. \U0001F64F Basahin niyo po ang buong gabay dito:\nhttps://galinggear.com/articles/go-bag-for-a-household-with-a-bedbound-or-mobility-limited-family-member/"
+  xTl: >-
+    Hindi lahat ng go-bag advice pang-lahat. Kung may bedbound o
+    mobility-limited sa bahay niyo, kailangan niyo ng caregiver bag, care
+    summary, at backup helper plan. Basahin dito:
+    https://galinggear.com/articles/go-bag-for-a-household-with-a-bedbound-or-mobility-limited-family-member/
+    #DisasterPrepPH #TeamPasaway
+  instagramTl: "\"Grab your bag, walk to the evacuation center\" — ganito karaniwang go-bag advice. Pero paano kung hindi na makalakad nang mag-isa si lola, o may kapatid kang may disability na may specific na routine at pangangailangan? Kailangan ng ibang klaseng plano — hindi one-bag-per-person, kundi caregiver bag, written care summary sa waterproof sleeve, mobility aids na naka-stage sa pintuan, at backup helper na committed na bago pa man dumating ang emergency. Kasi sa gabing bumabaha na o walang kuryente, wala nang oras maghanap ng wheelchair sa dilim.\n\nLink in bio \U0001F517\n\n#DisasterPrepPH #GoBagPH #CaregiverPH #PWDPH #TyphoonReadyPH #BarangayPrep #PamilyangPinoy #EmergencyPreparedness #LolaAtLoloCare #MobilityAids #BrownoutPrep #FamilyFirst"
 ---
 
 ## The situation
