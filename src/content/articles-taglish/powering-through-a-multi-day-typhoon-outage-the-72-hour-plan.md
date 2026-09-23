@@ -5,6 +5,27 @@ description: >-
   power station, mag-ration ng phone charge, at gumamit ng lanterns nang ligtas
   para sa realistic na 72-hour blackout plan.
 sourceHash: 4ae55d772a4d71bf
+railItems:
+  - type: article
+    assetId: 70536d12-c832-4fc1-bda0-bcd9d230d4dc
+    anchor: the-situation
+    label: Before The Bulletin
+    title: Signal No. 2 is already late to start prepping
+    slug: pagasa-wind-signals-1-to-5-what-to-actually-do-at-each-level
+    description: >-
+      By the time the signal is raised over your province, the queues at the
+      hardware store have formed — here is what each level actually buys you in
+      lead time.
+  - type: article
+    assetId: 0a495e91-1bc5-4335-85b1-3c085c21de09
+    anchor: common-mistakes
+    label: Read First
+    title: Stop buying gear. Start listing needs
+    slug: needs-first-vs-gear-first-prepping
+    description: >-
+      Before adding one more item to your typhoon kit, see why needs-first
+      prepping actually keeps Filipino households safer.
+railSourceHash: 0b6ec030901884cc
 ---
 
 ## The situation
