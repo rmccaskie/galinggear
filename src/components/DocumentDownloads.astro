@@ -58,15 +58,15 @@ const clientStrings = {
      description, no oversized button — keeps the end of the article tidy and
      scales cleanly when an article has several documents. */
   .gg-downloads {
-    padding-block-start: 0;
-    padding-block-end: var(--space-2xl);
+    padding: 0;
   }
 
+  /* Heading inherits the font-display family, weight 600 and line-height 1.12
+     from the global h2 rule. font-size and margin match the .body h2 override
+     in the article page's scoped styles. The parent .section-block provides
+     the inter-section top gap, so the heading needs no margin-top of its own. */
   .ggd-heading {
-    font-family: var(--font-display);
     font-size: var(--text-h1);
-    font-weight: 600;
-    line-height: 1.12;
     text-wrap: balance;
     margin-block: 0 var(--space-sm);
   }
@@ -233,6 +233,10 @@ const clientStrings = {
             })
             .join('')
           section.hidden = false
+          // Also unhide the parent section-block wrapper (hidden by default
+          // in the article template to avoid an empty gap when no docs exist).
+          const block = section.closest('[data-downloads-block]') as HTMLElement | null
+          if (block) block.hidden = false
 
           // Add a "Free downloads" entry to the article submenu ("On this
           // page") so readers can jump straight here. The submenu is built at

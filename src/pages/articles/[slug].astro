@@ -311,9 +311,11 @@ function fmtDate(date: string) {
             )
           })
         }
+        {/* Downloadable branded documents (fetched at runtime; hides itself if none) */}
+        <div class="section-block full" data-downloads-block hidden>
+          <DocumentDownloads slug={article.id} locale={locale} />
+        </div>
       </div>
-      {/* Downloadable branded documents (fetched at runtime; hides itself if none) */}
-      <DocumentDownloads slug={article.id} locale={locale} />
     </div>
   </article>
 
@@ -463,16 +465,6 @@ function fmtDate(date: string) {
     gap: var(--space-2xl);
   }
 
-  /* Downloads sit under the body, aligned to the content column (not flush to
-     the viewport). In the two-column layout the section drops into the content
-     column's second row; without a submenu it is a plain full-width block. */
-  .art-layout.has-toc > :global(.gg-downloads) {
-    grid-column: 2;
-  }
-
-  .art-layout > :global(.gg-downloads) {
-    padding-block-start: 0;
-  }
 
   .art-toc {
     position: sticky;
