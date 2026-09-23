@@ -43,9 +43,7 @@ const clientStrings = {
 
 {/* Hidden until the client script confirms there is at least one document. */}
 <section id="free-downloads" class="gg-downloads" data-gg-downloads hidden data-slug={slug}>
-  <div class="ggd-head">
-    <span class="ggd-kicker mono">{strings['documents.heading']}</span>
-  </div>
+  <h2 class="ggd-heading">{strings['documents.heading']}</h2>
   <ul class="ggd-list" data-downloads-list role="list"></ul>
   <script type="application/json" data-downloads-i18n set:html={JSON.stringify(clientStrings)} />
 </section>
@@ -60,19 +58,17 @@ const clientStrings = {
      description, no oversized button — keeps the end of the article tidy and
      scales cleanly when an article has several documents. */
   .gg-downloads {
-    padding-block: var(--space-2xl);
+    padding-block-start: 0;
+    padding-block-end: var(--space-2xl);
   }
 
-  .ggd-head {
-    margin-block-end: var(--space-md);
-  }
-
-  .ggd-kicker {
-    display: inline-block;
-    font-size: var(--text-label);
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--accent-text);
+  .ggd-heading {
+    font-family: var(--font-display);
+    font-size: var(--text-h1);
+    font-weight: 600;
+    line-height: 1.12;
+    text-wrap: balance;
+    margin-block: var(--space-2xl) var(--space-sm);
   }
 
   .ggd-list {
