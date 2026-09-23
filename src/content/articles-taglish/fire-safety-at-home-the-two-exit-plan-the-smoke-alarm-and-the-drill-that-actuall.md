@@ -1,82 +1,79 @@
 ---
-title: >-
-  Fire safety sa bahay: ang two-exit plan, ang smoke alarm, at ang drill na
-  talagang gumagana
+title: 'Home fire safety plan: smoke alarm, exits, extinguisher'
 description: >-
-  Karamihan sa mga fire sa Pilipinas nagsisimula sa gabi habang tulog ang lahat.
-  Eto ang simple, walang-kalat na setup — floor plan, extinguisher, smoke alarm,
-  LPG hose check, at family drill na kasama ang mga bata at ang kasambahay.
-sourceHash: 5ccf63858535d4da
+  Home fire safety para sa Pinoy families: smoke alarm, two-exit plan, tamang
+  extinguisher, at totoong drill na kasama ang mga bata at kasambahay.
+sourceHash: 749690deab74f488
 ---
 
-## The situation
+## Ang sitwasyon
 
-Karamihan sa mga fire sa Pilipinas nagsisimula sa pagitan ng hatinggabi at madaling-araw — habang tulog ang buong sambahayan, patay ang LPG stove, at walang nakakaamoy ng usok hanggang sa lumapot na ito. Ang isang katotohanang ito dapat magdikta sa halos lahat ng gagawin mo para sa fire safety sa bahay. Hindi ito tungkol sa extinguisher. Tungkol ito sa paggising on time para makalabas.
+Karamihan sa home fires sa Pilipinas ay nagsisimula sa pagitan ng hatinggabi at madaling-araw — habang tulog ang buong bahay, patay na ang LPG stove, at wala pang nakakaamoy ng usok hanggang makapal na 'to. Ang single fact na 'to dapat ang bumuo halos sa lahat ng gagawin mo tungkol sa fire safety sa bahay. Hindi talaga ito tungkol sa extinguisher. Ito ay tungkol sa paggising on time para makalabas.
 
-Tumataas ang fire incidents tuwing summer, kung kailan ang init at tagtuyot ay pinapabilis ang grass fires at electrical faults, at tuwing Christmas, kung kailan naka-loop ang mga Christmas lights sa overloaded outlets at malapit masyado ang candle sa kurtina at parol. Recorded ito taun-taon ng <a href="https://bfp.gov.ph/" target="_blank" rel="noopener noreferrer">Bureau of Fire Protection</a>, walang palya. Wala sa dalawa ang surprise. Both preventable kung maglalaan ka lang ng fifteen minutes para tingnan nang tapat ang sarili mong bahay.
+Tumataas ang fire incidents tuwing summer, kung saan ang init at tagtuyot ay ginagawang mabilis na problema ang grass fires at electrical faults, at muli tuwing Pasko, kung saan ang mga ilaw ay nakakabit sa overloaded outlets at ang mga kandila ay masyadong malapit sa kurtina at parol. Ang <a href="https://bfp.gov.ph/" target="_blank" rel="noopener noreferrer">Bureau of Fire Protection</a> ang nagre-record ng dalawang spike na 'to taun-taon, walang palya. Wala sa dalawa ang surprise. Pareho itong preventable sa pamamagitan ng fifteen minutes ng honest na pagtingin sa sarili mong bahay.
 
-Mas malaki ang risk sa apartments at high-rise condo units kumpara sa standalone house: shared corridors, iisang stairwell na inaasahan ng lahat sa floor, at elevator na nagiging death trap sa sandaling may usok sa shaft. Kung nakatira ka above the fifth floor, mas importante pa ang guide na ito.
+Ang mga apartment at high-rise condo unit ay may extra risk na wala sa standalone house: shared corridors, isang stairwell na inaasahan ng lahat sa floor, at isang elevator na nagiging death trap sa sandaling may usok sa shaft. Kung nakatira ka above the fifth floor, mas importante ang guide na ito sa 'yo kaysa sa karamihan.
 
-## What actually matters
+## Ano talaga ang importante
 
-Kung tanggalin mo ang mga products at checklists, apat na bagay ang gumagawa ng halos lahat ng trabaho:
+Kapag tinanggal mo ang mga products at checklists, apat na bagay ang gumagawa halos ng lahat ng trabaho:
 
-**Smoke alarm na actually installed at may gumaganang battery.** Ito ang single highest-return purchase sa buong guide na ito. Ang ₱500 to ₱1,500 na photoelectric smoke alarm ang bibili sa'yo ng tanging bagay na importante kapag nag-fire ng 3 a.m. — time. Lahat ng iba pa sa listahang ito gagana lang kung magigising ka muna.
+**Isang smoke alarm na actually naka-install at may gumaganang battery.** Ito ang pinakamataas ang return na bibilhin mo sa buong guide na ito. Ang ₱500 hanggang ₱1,500 na photoelectric smoke alarm ay bibili sa 'yo ng tanging bagay na importante kapag nag-start ang sunog ng 3 a.m. — oras. Lahat ng iba pa sa listahang ito ay gumagana lang kung magigising ka muna.
 
-**Dalawang paraan palabas sa bawat kwarto, at alam ito ng lahat sa bahay.** Ang isang exit lang ay plano na bibigo sa sandaling na-block ito ng usok o apoy. Ang dalawang exit ay plano na makakasurvive sa isang masamang gabi.
+**Dalawang paraan palabas sa bawat kwarto, at alam ito ng lahat sa bahay.** Ang isang exit lang ay isang plano na fail agad kapag na-block ito ng usok o apoy. Ang dalawang exit ay isang plano na kayang mabuhay kahit sa masamang gabi.
 
-**Extinguisher na rated para sa fire na talagang malamang mangyari sa'yo** — cooking oil at electrical, hindi campfire. Ilagay ito kung saan mo makukuha nang hindi dumadaan sa kitchen doorway na doon nga lumalabas ang apoy.
+**Isang extinguisher na rated para sa fire na talagang malamang mangyari sa 'yo** — cooking oil at electrical, hindi campfire. Ilagay kung saan mo maaabot nang hindi na kailangan dumaan sa kitchen doorway kung saan lumalabas ang apoy.
 
-**Drill na actually na-run, ng malakas, kasama ang mga bata at kasambahay**, hindi lang pinag-usapan minsan. Sa search-and-rescue, ang mga operations na maayos ang takbo ay hindi yung may pinaka-magandang gear — yung mga nag-rehearse na kung ano ang gagawin bago pa man ito nangyari. Same discipline ang fire drill, mas maliit lang at mas malapit sa bahay.
+**Isang drill na na-run na talaga, out loud, kasama ang mga bata at kasambahay**, hindi lang pinag-usapan minsan. Sa search-and-rescue, ang mga operations na maayos ang takbo ay hindi kailanman ang mga may pinakamagandang gear — sila iyong mga rehearsed na ng lahat kung ano ang gagawin bago pa man ito importante. Parehong discipline ang fire drill, mas maliit lang at mas malapit sa bahay.
 
-## What to do (and what not to)
+## Ano ang dapat gawin (at hindi)
 
-**I-draw muna ang two-exit floor plan bago bumili ng kahit ano.** I-sketch ang bahay mo sa papel — bawat kwarto, ang kusina, ang main door, at anumang bintana na sapat kalakihan para makadaan ang tao. Sa bawat kwarto, markahan ang dalawang paraan palabas: ang normal (through the hallway papunta sa main door) at ang backup (isang bintana, back door, o shared balcony ng kapitbahay). Kung ang isang kwarto ay talagang iisa lang ang labasan, ito ang unang solusyunan — minsan simple lang ang fix, katulad ng pag-clear sa mga nakatambak sa harap ng bintana.
+**I-draw muna ang two-exit floor plan, bago bumili ng kahit ano.** I-sketch ang bahay mo sa papel — bawat bedroom, ang kusina, ang front door, anumang window na bukas nang sapat para makalusot ang isang tao. Mula sa bawat bedroom, markahan ang dalawang paraan palabas: ang normal na daan (through the hallway papunta sa front door) at ang backup (isang window, back door, o shared balcony ng kapitbahay). Kung may isang room na talagang iisang labasan lang, iyon ang una mong ayusin — minsan ang solusyon ay kasingsimple ng pag-clear ng mga nakatambak sa harap ng window.
 
-**Mag-install ng smoke alarms sa mga lugar na sulit talaga.** Isa sa labas ng bawat sleeping area, isa sa bawat floor kung may hagdan ka, at isa malapit — pero hindi mismo sa ibabaw — ng stove, dahil ang usok mula sa pagluluto ay nagpapatunog ng alarm kapag masyadong malapit ang pagkaka-mount. I-test ang button monthly. Palitan ang battery kapag pinapalitan mo rin ang Christmas lights, para matandaan mong gawin pareho.
+**Mag-install ng smoke alarms kung saan sulit sila.** Isa outside ng bawat sleeping area, isa sa bawat floor kung may hagdan ka, at isa malapit sa — pero hindi direkta sa taas ng — stove, dahil ang steam mula sa kusina ay nagpapatunog ng alarms na masyadong malapit ang pagkakabit. I-test ang button monthly. Palitan ang battery kapag pinapalitan mo ang Christmas lights mo, para maalala mong gawin pareho.
 
-**Ilagay ang extinguisher sa kusina, malapit sa pinto, hindi nakatago sa likod ng stove.** Gusto mong makuha ito habang paatras ka palabas ng kwarto, hindi habang inaabot mo ito sa kabila ng grease fire. Alamin ang TPASS, ang method na ginagamit sa Philippine fire training: Twist the safety pin para masira ang seal, Pull the pin, Aim sa base ng apoy, Squeeze the handle, Sweep side to side. I-practice ang motion gamit ang isang empty extinguisher minsan para sanay ang kamay mo — ang first time mo dapat hindi na yung actual fire.
+**Ilagay ang extinguisher sa kusina, malapit sa pinto, hindi nakatago sa likod ng stove.** Gusto mo itong makuha habang paatras palabas ng kwarto, hindi umaabot pa sa grease fire para makuha ito. Alamin ang TPASS, ang method na ginagamit ng Philippine fire training: Twist ang safety pin para masira ang seal, Pull ang pin, Aim sa base ng apoy, Squeeze ang handle, Sweep pakaliwa't pakanan. I-practice ang motion gamit ang walang laman na extinguisher minsan para sanay ang kamay mo — hindi dapat first time ang totoong sunog.
 
-**I-check ang LPG hose at regulator every few months, hindi lang kapag nagsimula nang bumaho.** Ang soapy water na pinapahid sa hose at connections ay bubula sa lugar ng leak — gawin ang test na ito, huwag umasa lang sa amoy. Palitan ang anumang hose na sira, matigas, o lampas na sa expiration date na naka-stamp dito, at huwag bumili ng regulator o hose sa stall na hindi mo kilala; ang counterfeit fittings ay isang real at common cause ng kitchen fires dito.
+**I-check ang LPG hose at regulator every few months, hindi lang kapag nagsimula nang bumaho.** Ang soapy water na pinahid sa hose at connections ay bubula kapag may leak — gawin ang test na 'to, huwag umasa lang sa amoy. Palitan ang anumang hose na basag, matigas, o expired na ang date stamp, at huwag bumili ng regulator o hose sa stall na hindi mo kilala; ang counterfeit fittings ay tunay at common na dahilan ng kitchen fires dito.
 
-**Kung nasa apartment o high-rise ka, alamin ang stairwell ng buong building, hindi lang ang unit mo.** Lakarin ito once sa umaga para hindi ito bago sa'yo sa dilim. Huwag gumamit ng elevator sa panahon ng fire — kapag napuno ng usok ang shaft, ito na ang pinaka-mapanganib na lugar sa buong building. Kung may usok na pumapasok sa ilalim ng pinto mo at hindi maabot ang stairwell, manatili sa unit, i-seal ang gaps sa pinto gamit ang basang tuwalya o tela, at mag-signal mula sa bintana sa halip na buksan ang pinto papunta sa corridor na puno ng usok.
+**Kung nasa apartment ka o high-rise, kilalanin ang stairwell ng building, hindi lang ang unit mo.** Lakarin mo ito minsan sa umaga para hindi ito unfamiliar sa dilim. Huwag gamitin ang elevator kapag may sunog — kapag napuno ng usok ang shaft, ito ang pinaka-delikadong lugar sa building. Kung may usok na pumapasok sa ilalim ng pinto mo at hindi maabot ang stairwell, manatili sa unit, i-seal ang gaps ng pinto gamit ang basang tuwalya o tela, at mag-signal mula sa window sa halip na buksan ang pinto papunta sa corridor na puno ng usok.
 
-**I-run ang drill nang totoo, twice a year.** Once during summer, once before Christmas. Isama ang mga batang kayang lumakad na mag-isa, at isama rin ang kasambahay — madalas silang mag-isa sa bahay kasama ang mga bata kung araw, at kailangan nila ang parehong plano na alam ng lahat, hindi ang simplified version.
+**Gawin ang drill nang totoo, twice a year.** Isang beses tuwing summer, isang beses bago ang Pasko. Isama ang mga batang kayang lumakad na mag-isa, at isama ang kasambahay — madalas silang nag-iisa sa bahay tuwing araw at kailangan nila ang parehong plano ng lahat, hindi ang simplified version.
 
-Isang simpleng drill script na gumagana sa karamihan ng households:
+Isang simpleng drill script na gumagana para sa karamihan ng households:
 
-1. May isang taong sisigaw ng "Sunog!" nang malakas — i-practice ang actual na pagsigaw, hindi lang iisipin.
-2. Titigil ang lahat sa ginagawa at pupunta sa pinakamalapit na safe exit, mababa kung may usok.
-3. Magtatagpo ang lahat sa isang napagkasunduang lugar sa labas — ang gate, ang corner store, ang covered court — every single time, walang exception.
-4. May itatalagang tao, in advance, na kukuha sa pinakabatang anak o mag-check sa isang matandang miyembro ng sambahayan. I-assign ito bago ang drill, hindi habang totoong nagfire na.
-5. Kapag nakalabas na ang lahat, may isang tatawag sa <a href="https://bfp.gov.ph/" target="_blank" rel="noopener noreferrer">Bureau of Fire Protection</a> o sa barangay fire brigade. Walang babalik pa sa loob para sa kahit ano.
+1. May sisigaw ng "Sunog!" nang malakas — i-practice na talaga itong sabihin, hindi lang i-imagine.
+2. Titigil ang lahat sa ginagawa nila at pupunta sa pinakamalapit na safe exit, mababa kung may usok.
+3. Magtatagpo ang lahat sa isang napagkasunduang lugar sa labas — ang gate, ang sari-sari store sa kanto, ang covered court — every single time, walang exceptions.
+4. May itinalaga, in advance, na kukuha sa pinakamaliit na bata o mag-che-check sa matandang miyembro ng bahay. I-assign ito bago ang drill, hindi habang totoong sunog.
+5. Kapag nakalabas na lahat, may tatawag sa <a href="https://bfp.gov.ph/" target="_blank" rel="noopener noreferrer">Bureau of Fire Protection</a> o sa barangay fire brigade. Walang babalik pa sa loob para sa kahit ano.
 
-I-run ito nang mabagal sa first time, dahan-dahan sa bawat step. I-run ito sa normal pace sa second time. Sapat na iyon — hindi ka naman nag-tratrain para sa competition, gumagawa ka lang ng reflex.
+Gawin itong slow sa unang beses, dahan-dahang dadaan sa bawat step. Gawin ito sa normal na pace sa second time. Sapat na 'yon — hindi ka naman nagte-train para sa kompetisyon, gumagawa ka ng reflex.
 
-## The gear that helps
+## Ang gear na makakatulong
 
-Hindi mo kailangan ng marami, at hindi rin kailangan mahal ang lahat:
+Hindi mo kailangan ng dami, at hindi kailangang mahal ang lahat:
 
-- **Photoelectric smoke alarms**, isa per sleeping area — ang pinaka-mataas ang value sa buong listahang ito, full stop.
-- **Dry chemical o ABC-rated fire extinguisher**, sized para sa home kitchen, hindi para sa industrial — karamihan ng household units nagsisimula sa ₱800 to ₱2,500.
-- **Fire blanket** para sa kusina, useful para i-smother ang maliit na pan fire nang walang gulo at pressure ng extinguisher.
-- **Window o door escape ladder** kung nasa mataas na floor ka na may window exit — mga ₱3,000 to ₱5,000 ito at worth it kung talagang parte ng two-exit plan mo ang window na iyon.
-- **Basic flashlight o headlamp** na nakalagay sa tabi ng kama, dahil karamihan ng fires na importante ay nangyayari kapag patay na ang ilaw. Overlap ito sa everyday carry kit mo — tingnan ang [EDC](/edc/) guide namin kung wala ka pa nito.
+- **Photoelectric smoke alarms**, isa per sleeping area — ang pinaka-mahalagang item sa buong listahang ito, full stop.
+- **Isang dry chemical o ABC-rated fire extinguisher**, sized para sa home kitchen, hindi para sa industrial — karamihan sa household units ay ₱800 hanggang ₱2,500.
+- **Isang fire blanket** para sa kusina, useful para sa pag-smother ng maliit na pan fire nang walang gulo at pressure ng extinguisher.
+- **Isang window o door escape ladder** kung nasa mataas kang floor na may window exit — ito ay mga ₱3,000 hanggang ₱5,000 at sulit kung talagang parte ng two-exit plan mo ang window na iyon.
+- **Isang basic flashlight o headlamp na nakatago sa tabi ng kama**, dahil karamihan sa mga fires na importante ay nangyayari kapag patay na ang ilaw. Overlap ito sa everyday carry kit mo — tingnan ang [EDC](/edc/) guide namin kung wala ka pa nito.
 
 Para sa mas kumpletong emergency kit na konektado dito, ang [fire safety](/fire-safety/) scenario page namin ang may buong picture.
 
-## Common mistakes
+## Mga karaniwang pagkakamali
 
-Ang extinguisher na binili at hindi na na-check ulit — bumababa ang pressure gauge sa paglipas ng mga taon, at ang extinguisher na hindi na-discharge ay mas masama pa sa walang extinguisher, dahil oras na sana ginamit mo para tumakbo ang mauubos.
+Ang extinguisher na binili at hindi na na-check ulit — ang pressure gauge ay bumababa over the years, at ang extinguisher na hindi na madi-discharge ay mas masama pa sa wala, dahil aabutin ka pa nito ng mga segundong dapat ginamit sa pagtakbo.
 
-Ang smoke alarm na na-install, tapos na-mute pagkatapos ng isang false alarm mula sa pagluluto at hindi na na-turn back on. Ang naka-silence na alarm ay decoration lang.
+Ang smoke alarm na na-install, pagkatapos na-mute after ng isang false alarm mula sa pagluluto at hindi na muling binuksan. Ang naka-silence na alarm ay dekorasyon lang.
 
-Ang pagturing sa kasambahay bilang taong pinoprotektahan sa halip na kasama sa plano. Madalas sila ang mag-isa sa bahay kasama ang mga bata — kailangan nilang malaman ang plano gaya ng iba, mas maigi pa nga kung mas malalim pa.
+Ang paggamot sa kasambahay bilang isang protektahan sa halip na isama sa plano. Sila ang madalas na nag-iisa sa bahay kasama ang mga bata — kailangan nilang malaman ang plano nang kasing-husay ng kahit sino, ideally mas mahusay pa.
 
-Ang pag-aakalang malinis ang fire exit dahil malinis ito noong huling tingnan mo. Ang mga kahon, drying racks, at stored furniture ay unti-unting nakakarating sa hallways at sa harap ng bintana sa loob ng mga buwan nang walang napapansin.
+Ang pag-assume na malinis ang fire exit dahil malinis ito noong huling beses mong tiningnan. Ang mga kahon, drying racks, at stored furniture ay unti-unting gumagapang papunta sa hallways at sa harap ng windows sa loob ng buwan nang walang napapansin.
 
-Ang pag-asa sa elevator sa isang high-rise dahil ito ang exit na alam talaga ng lahat. Lakarin ang stairwell bago pa mo ito kailanganin.
+Ang pag-asa sa elevator sa isang high-rise dahil ito ang exit na alam talaga ng lahat. Lakarin ang stairwell bago mo pa ito kailanganin.
 
-## A calm closing
+## Isang calm na pagtatapos
 
-Ang smoke alarm na gumagana ay mas mahalaga kaysa sa lahat ng nasa guide na ito kung pagsasamahin, dahil ito ang bumibili ulit sa isang bagay na unang ninanakaw ng fire sa gabi — ang oras para mapansin. Ang lahat ng iba pa, mula sa extinguisher hanggang sa drill hanggang sa dalawang exit na naka-sketch sa papel, ay kung ano ang gagawin mo sa oras na iyon kapag nasa'yo na ito. Wala sa mga ito ang kailangang maging mahal, at wala ring kailangang maging komplikado. Kailangan lang nitong nasa lugar na bago pa dumating ang gabi na importante ito.
+Ang smoke alarm na gumagana ay mas mahalaga pa sa lahat ng iba sa guide na ito combined, dahil ibinabalik nito ang isang bagay na inuuna nawawala kapag may sunog sa gabi — oras para mapansin. Lahat ng iba pa, mula sa extinguisher hanggang sa drill hanggang sa two exits na naka-sketch sa papel, ay ang gagawin mo sa oras na 'yon kapag meron ka na nito. Wala sa mga ito ang kailangang mahal, at wala sa mga ito ang kailangang complicated. Kailangan lang nito nasa lugar na bago pa dumating ang gabing importante ito.
