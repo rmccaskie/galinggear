@@ -1,144 +1,144 @@
 ---
 title: Paano gumawa ng car go-bag para sa flood season
 description: >-
-  Isang simple at sensible na kit na iiwan mo sa kotse para sa mga araw na hindi
-  ka makadaan dahil sa baha — at malinaw na paalala kung bakit ang bag ay para
-  sa paghihintay, hindi para sa pagtawid sa baha.
+  Isang plain at sensible na kit na iiwan mo sa kotse para sa mga araw na may
+  floodwater na humaharang sa daan — at isang malinaw na rule kung bakit ang bag
+  ay para sa paghihintay, hindi para sa pagtawid sa baha.
 sourceHash: 4d06a6dcd3b128e3
 railItems:
   - type: image
     assetId: f0691992-c490-442f-b27c-d71bc64cf9d3
     anchor: the-rule-the-bag-does-not-change
-    label: Huwag ka pahuli
+    label: Don't get caught out
     image: 'https://images.galinggear.com/staging/1789809668891-roxlfa.png'
     alt: Flooded highway
   - type: image
     assetId: 78d637f8-a667-4b9f-bf47-d759cf879d62
     anchor: what-you-need
-    label: Naka-pack at nag-aabang
+    label: Packed and waiting
     image: 'https://images.galinggear.com/library/generated-1789813011557-ayr0ms.png'
     alt: >-
       Open car boot with a dry bag, water bottles, torch, first-aid pouch and
       poncho on a wet street.
     caption: >-
-      Isang car go-bag na naka-pack para maghintay lang na humupa ang
-      floodwater, hindi para magmaneho dumaan sa flood.
+      A car go-bag packed for waiting out floodwater, not for driving through
+      it.
   - type: article
     assetId: 1659c975-3f01-4692-aff3-7a1410a4d411
     anchor: variations-and-conditions
     label: Field Guide
-    title: 'Pag-pack para sa dalawa, hindi lang isa'
+    title: 'Packing for two, not just one'
     slug: building-a-go-bag-for-two-a-practical-guide-for-couples-in-the-philippines
     description: >-
-      Isang tested go-bag split ng mag-asawa para sa unang 72 hours — ano ang
-      i-share, ano ang i-duplicate, at magkano ba talaga ang bigat nito.
+      A couple's tested go-bag split for the first 72 hours — what to share,
+      what to duplicate, and what it actually weighs.
 railSourceHash: 58c76c9b9c050b1c
 ---
 
-## Ano'ng magagawa mo — at bakit importante 'to
+## Ano ang magagawa mo — at bakit importante ito
 
-Pagtapos nito, magkakaroon ka ng isang bag na laging nasa kotse mo, na magbibigay sa'yo ng sapat na supplies para sa isa hanggang dalawang araw na naka-stranded ka: sapat na tubig, food na 'di kailangang lutuin, ilaw, power para sa phone mo, basic first aid, konting cash, at 'yung mga simpleng bagay na magpapagaan sa'yo kung matulog ka sa parked car overnight.
+Sa dulo ng article na ito, may isang bag ka na sa kotse na pwede kang tumagal ng one to two days na naka-cut off: sapat na water, food na 'di na kailangang lutuin, ilaw, power para sa phone mo, basic first aid, konting cash, at 'yung mga bagay na 'di naman "cool" pero siyang gumagawa sa gabi sa parked car na bearable.
 
-Importante 'to kasi ang common problem sa Pilipinas ay hindi 'yung dramatic rescue. Mas boring pa sa akala mo. Aalis ka sa Quezon City papuntang Nueva Ecija isang Friday, dumapo ang habagat sa Central Luzon, at pagdating mo sa Bulacan, puno na ng brown water 'yung daan sa harap mo, may pila pang mga bus. Walang nalulunod. Simpleng hindi ka lang makakadaan, puno na ang mga gasolinahan, ubos na ang bottled water sa sari-sari store, at walang kuryente sa bayan kaya 'di gumagana ang mga card reader. Para sa ganitong sitwasyon 'yung bag na 'to.
+Importante ito dahil ang common na problema sa Pilipinas ay 'di 'yung dramatic rescue. Mas boring pa nga sa gano'n. Aalis ka ng Quezon City papuntang Nueva Ecija isang Friday, tapos naka-park ang habagat sa Central Luzon, at pag-abot mo sa Bulacan, brown water na ang daan sa harap mo na may pila ng mga bus. Walang nalulunod dito. Simpleng hindi ka lang makakadaan, puno ang mga gasolinahan, ubos na ang bottled water sa sari-sari store, at down ang power sa bayan kaya 'di gumagana ang mga card reader. 'Yun ang sitwasyon na para dito 'yung bag.
 
-Hindi 'to bug-out bag, at hindi rin 'to survival kit para sa wilderness. Dalawang araw lang 'tong ordinaryong comfort at safety, na pre-packed para 'di ka na bibili ng three times the price sa gitna ng krisis.
+Hindi ito bug-out bag, at hindi rin ito survival kit para sa wilderness. Dalawang araw lang ito ng ordinaryong comfort at safety, pinaghandaan nang maaga para hindi ka na bumibili ng tatlong beses ang mahal sa gitna ng problema.
 
 ## Ang rule na hindi babaguhin ng bag
 
-Huwag kailanman magmaneho, maglakad, sumakay, o lumangoy sa floodwater. Hindi kahit minsan, hindi kahit dahan-dahan, hindi kahit nakaraan na 'yung van sa harap mo.
+Huwag kailanman magmaneho, maglakad, sumakay, o lumangoy papunta sa floodwater. Kahit minsan, kahit dahan-dahan, kahit nakaraan na 'yung van sa harap mo.
 
-Itinatago ng tubig ang lahat: bukas na manhole, guho sa gilid ng daan, nahulog na wire, kanal na walang kerb para malaman mo kung saan natatapos ang kalsada. Gumagalaw pa rin 'to. Ayon sa commonly cited figures, mga 15 centimeters lang ng moving water ang kailangan para matumba ang isang adult, at mga 30 centimeters para lumutang na ang typical na sedan — at kapag lumutang na ang kotse, wala na 'yang steering, susundin na lang nito kung saan dala ng tubig. Karamihan sa mga sasakyan sa'ting mga daan ay hindi ginawa para mag-wade. Nasstall sila, pumapasok ang tubig sa intake, at biglang nakatayo ka na sa bubong ng isang mamahaling problema.
+Itinatago ng tubig ang lahat: bukas na manhole, nasirang shoulder ng daan, nalaglag na linya, kanal na walang kerb para malaman mo kung saan natatapos ang daan. Gumagalaw pa ito. Karaniwang sinasabi na mga 15 centimeters ng gumagalaw na tubig ang kaya nang tumumba sa isang adult, at mga 30 centimeters na para lumutang ang isang typical sedan — at kapag lumutang na ang sasakyan, wala nang steering 'yun, susunod na lang siya sa direksyon ng tubig. Karamihan sa mga sasakyan sa ating mga daan ay hindi ginawa para mag-wade. Nagsstall sila, pumapasok ang tubig sa intake, at bigla ka na lang nakatayo sa bubong ng isang mamahaling problema.
 
-Sa search-and-rescue, halos lahat ng cases na nagtapos ng masama ay hindi nagsimula sa isang taong pabaya. Nagsimula 'to sa isang taong nag-isip na mas mababaw pala ang tubig kaysa sa totoo, kadalasan dahil nakaraan lang 'yung ibang sasakyan. Ganito lang talaga 'yan. Mukhang kaya mo pa, hanggang sa 'di na pala.
+Sa search-and-rescue, halos lahat ng cases na naging masama ay hindi nagsimula dahil may nag-reckless. Nagsimula dahil may nagdesisyon na mukhang mas mababaw ang tubig kaysa sa totoo, dahil karaniwang may sasakyan lang na kararaan. 'Yun ang buong mekanismo. Mukhang kaya pa hanggang sa hindi na pala.
 
-Kaya linawin mo sa sarili mo kung ano talaga ang kit na 'to. Binibigyan ka nito ng pasensya na bumalik at maghintay sa isang sensible na lugar. Hindi ka nito binibigyan ng access na tumawid. Ang isang maayos na naka-pack na kotse ay 'di nangangahulugang mas capable na kotse.
+Kaya maging clear ka sa sarili mo kung ano ang kit na ito. Binibigyan ka nito ng patience para bumalik at maghintay sa isang sensible na lugar. Hindi ka nito binibigyan ng passage. Ang isang well-packed na kotse ay hindi mas capable na kotse.
 
 ## Ano ang kailangan mo
 
-Isang bag per car, hindi per person. Perfect na ang 30–40 liter duffel o lumang rucksack — ang punto ng isang bag kaysa sa mga gamit na nakakalat sa boot ay kung sakaling kailangan mong iwan ang sasakyan at maglakad papunta sa barangay hall o evacuation center, madadala mo lahat sa isang kilos lang.
+Isang bag per car, hindi isa per tao. Perfect ang 30–40 liter duffel o lumang rucksack — ang point ng isang bag kaysa sa mga loose items na gumugulong sa loob ng boot ay kapag kailangan mong iwan ang sasakyan at maglakad papunta sa barangay hall o evacuation center, madadala mo lahat sa isang kilos lang.
 
-**Tubig.** Dalawang litro per person per day, plus ilang 6-litre jugs sa boot bilang pool na kukunan mo. Mga ₱60–₱100 ang isang six-liter jug. Mabigat at boring ang tubig pero ito 'yung unang ipagpapasalamat mo.
+**Water.** Dalawang litro per tao per araw, plus konting 6-litro na jugs sa boot bilang pool na kukunan mo. Ang isang six-liter jug ay mga ₱60–₱100. Mabigat at boring ang tubig pero ito 'yung unang ikakatuwa mo.
 
-**Food na 'di kailangang lutuin.** Crackers, peanuts, dried mangoes, tuna at corned beef na may pull-tab lids, biscuits na kinakain talaga ng mga bata. Iwasan ang instant noodles — kulang ka nga sa mainit na tubig, 'di ba? Isang maliit na jar ng instant coffee at ilang sachet ang gagawa ng malaki para sa morale, mas malaki pa sa expectations mo.
+**Food na 'di na kailangang lutuin.** Crackers, peanuts, dried mangoes, tuna at corned beef na may pull-tab lids, biscuits na kinakain talaga ng mga bata. Iwasan ang instant noodles — hot water mismo ang wala ka doon. Isang maliit na jar ng instant coffee at ilang sachets ang gumagawa ng malaki para sa morale, kahit hindi mo inaasahan.
 
-**Ilaw.** Isang head torch per adult at isang hand torch, plus spare batteries. Mga ₱400–₱900 each para sa maaasahang klase. Ang phone torch mo ay hindi lighting; emergency lang 'yun at ubos-baterya, kailangan mo pa 'yun para sa information.
+**Light.** Isang head torch per adult at isang hand torch, plus spare batteries. Mga ₱400–₱900 each para sa isang maasahan. Ang phone torch mo ay hindi lighting; emergency lang 'yan at kinakain nito ang battery na kailangan mo para sa information.
 
-**Power.** Isang 20,000mAh power bank (₱1,200–₱2,000 mula sa brand na pamilyar ka) at isang maayos na car charger na may dalawang ports at mahabang cable. Mag-ingat dito — power banks at jump starters ang dalawang categories sa Lazada at Shopee na common ang counterfeits, at ang fake cell ay bigat lang na walang silbi. Bumili ng boring na brand.
+**Power.** Isang 20,000mAh power bank (₱1,200–₱2,000 mula sa brand na pamilyar sa 'yo) at isang decent car charger na may dalawang ports at mahabang cable. Mag-ingat dito — power banks at jump starters ang dalawang category sa Lazada at Shopee kung saan common ang counterfeits, at ang fake cell ay dead weight sa best case. Bilhin ang boring na brand.
 
-**Information.** Isang maliit na AM/FM radio na may spare batteries, kasi kapag congested ang local network, ang radyo pa rin ang magsasabi sa'yo kung ano ang ginagawa ng LGU. Mag-download ng offline maps para sa ruta mo bago ka umalis, at magtago ng printed sheet sa glovebox: alternate routes, mga bayan sa daan, at phone numbers ng pamilya, insurer mo, at roadside assistance.
+**Information.** Isang maliit na AM/FM radio na may spare batteries, dahil kapag congested na ang local network, sinasabi pa rin ng radio kung ano ang ginagawa ng LGU. Mag-download ng offline maps para sa route mo bago ka umalis, at magkaroon ng printed sheet sa glovebox: alternate routes, mga bayan sa daan, at phone numbers ng pamilya, insurer mo, at roadside assistance.
 
-**Kalusugan.** Tatlong araw na supply ng anumang prescription medicines, paracetamol, antihistamine, oral rehydration salts, plasters, gauze, povidone-iodine, at gamot para sa pagsakit ng tiyan. Motion-sickness tablets kung may kasamang bata. Mga ₱800 ang basic kit; ang prescriptions ang madalas nakakalimutan.
+**Health.** Tatlong araw na supply ng anumang prescription medicine, paracetamol, antihistamine, oral rehydration salts, plasters, gauze, povidone-iodine, at gamot para sa upset stomach. Motion-sickness tablets kung may kasamang bata sa biyahe. Mga ₱800 ang basic kit; ang mga prescription ang parte na madalas nakakalimutan.
 
-**Sanitation at comfort.** Toilet paper, wet wipes, hand gel, roll ng bin bags, at isang bucket. Oo, bucket — dalawang araw na ang tagal, 'di na 'to nakakatawa. Mosquito repellent, kasi standing water means lamok sa gabi. Tuwalya, extra damit per person, at closed shoes.
+**Sanitation at comfort.** Toilet paper, wet wipes, hand gel, roll ng bin bags, at isang bucket. Oo, isang bucket — sapat na ang dalawang araw para 'di na ito nakakatawa. Mosquito repellent, dahil ang standing water ay mosquitoes na by evening. Isang tuwalya, palitan ng damit para sa bawat isa, at closed shoes.
 
-**Pagtulog sa kotse.** Init ang problema natin, hindi lamig. Malong o light blanket, inflatable pillow, at sunshade para sa windshield. Kung may mesh kang mailagay sa dalawang bintana, pwede mong buksan ng konti para may hangin nang 'di pinapasok ang lamok.
+**Pagtulog sa kotse.** Ang problema natin ay init, hindi lamig. Isang malong o light blanket, inflatable pillow, at sunshade para sa windshield. Kung kaya mong mag-rig ng mesh sa dalawang bintana, makakatulog ka na naka-crack open ang mga ito nang hindi pinapakain ang mga lamok.
 
-**Cash sa maliliit na denomination.** ₱2,000–₱3,000 sa twenties, fifties at hundreds, plus coins. Kapag walang kuryente, hindi gumagana ang card terminals at walang sukli para sa ₱1,000 mo sa bayan na binaha.
+**Cash sa maliliit na denominations.** ₱2,000–₱3,000 sa twenties, fifties, at hundreds, plus coins. Sa panahon ng outage, down ang card terminals at wala namang barya ang sinuman sa isang binahang bayan para sa ₱1,000 mo.
 
-**Documents.** Litrato ng OR/CR, license, IDs at insurance sa phone mo, at paper copies sa isang zip-lock bag sa loob mismo ng bag.
+**Documents.** Mga litrato ng OR/CR, license, IDs, at insurance sa phone mo, at paper copies sa loob ng zip-lock bag na nasa mismong bag.
 
-**Car-specific items.** Jumper cables o jump starter, tyre gauge at maliit na inflator, basic tool roll, gaffer tape, spare fuses, early warning device mo, at hi-vis vest. Ang seatbelt cutter at window breaker ay dapat nasa cabin, malapit sa driver's seat — ang tool na nasa boot ay tool na wala ka.
+**Car-specific items.** Jumper cables o jump starter, tyre gauge at maliit na inflator, basic tool roll, gaffer tape, spare fuses, ang early warning device mo, at hi-vis vest. Ang seatbelt cutter at window breaker ay dapat nasa loob ng cabin, malapit sa driver's seat — ang tool na nasa boot ay tool na wala ka talaga.
 
 ## Ang method
 
-**1. Desisyunan ang biyahe bago mo pa i-pack.** I-check ang PAGASA forecast at anumang rainfall o flood advisory para sa mga probinsyang tatawirin mo, hindi lang 'yung tinitirhan mo. Kung "heavy rain warning over the whole route" ang sagot, ang tamang kit ay 'yung 'di na lang pumunta. Ang maagang pag-alis o pagpapaliban ay mas magaling pa sa lahat ng nasa listang 'to.
+**1. Idesisyon ang biyahe bago ka mag-pack para dito.** I-check ang PAGASA forecast at anumang rainfall o flood advisory para sa mga probinsyang tatawirin mo, hindi lang 'yung tinitirhan mo. Kung ang sagot ay "heavy rain warning sa buong route", ang tamang kit ay 'yung hindi na pagpunta. Ang maagang pag-alis o pagpo-postpone ay mas mabuti kaysa sa lahat ng laman ng listahang ito.
 
-**2. Mag-pack ayon sa function, hindi ayon sa produkto.** Limang pouches o bags-within-the-bag: tubig at pagkain; ilaw at power; kalusugan; papers at cash; car tools. Maghahanap ka ng mga bagay sa dilim, may mga pagod na bata sa likod. Nakakatulong ang labels.
+**2. Mag-pack by function, hindi by product.** Limang pouches o bags-within-the-bag: water at food; light at power; health; papers at cash; car tools. Maghahanap ka ng mga bagay sa dilim na may pagod na mga bata sa likod. Nakakatulong ang labels.
 
-**3. I-load nang maayos.** Water jugs at car tools sa boot. Ang main go-bag ay nasa likod ng isang seat na kayang abutin mo nang 'di kailangang bumaba. Window breaker at isang torch ay nasa cabin.
+**3. I-load nang maayos.** Water jugs at car tools sa boot. Ang main go-bag sa likod ng seat na maaabot mo nang hindi kailangang bumaba. Window breaker at isang torch sa loob ng cabin.
 
-**4. Sundin ang half-tank rule.** Sa mahabang biyahe, magpuno ng gasolina sa half tank, hindi kapag naka-warning light na. Ang gasolina ang magpapagana sa aircon nang paulit-ulit, magcha-charge ng phones, at — mas importante — makakabalik ka ng 40 kilometro papuntang bayan na tuyo pa ang lupa.
+**4. Sundin ang half-tank rule.** Sa mahabang biyahe, mag-refuel sa half tank, hindi sa warning light. Ang gasolina ang nagbibigay sa 'yo ng kakayahang patakbuhin ang aircon nang paulit-ulit, i-charge ang mga phone, at — mas importante — bumalik ng 40 kilometers papunta sa bayan na tuyo ang lupa.
 
-**5. Tandaan ang mga bail-out points habang nagmamaneho.** Gasolinahan, mall, town centers na mataas ang lupa. Gumagawa ka ng mental list ng mga lugar na pwede mong hintuan, para kapag kailangan mo na, hindi ka na mag-i-improvise.
+**5. I-note ang mga bail-out points mo habang nagmamaneho.** Gasolinahan, malls, town centers na nasa mas mataas na lupa. Gumagawa ka ng mental list ng mga lugar na pwede kang huminto, para kapag kailangan mo na 'yun, 'di ka na nag-iimprobisa.
 
-**6. Kapag nakasalubong mo ang tubig, huminto at bumalik.** Huwag sumali sa pila sa gilid para makita kung ano'ng mangyayari. I-reverse mo, bumalik ka sa huling tuyo, mataas, at maliwanag na lugar na nadaanan mo, at doon mag-park. Huwag sa ilalim ng malalaking puno, huwag sa tabi ng ilog o creek, huwag sa basement car park, huwag sa mababang bahagi ng car park.
+**6. Kapag nakaharap ka na sa tubig, huminto at bumalik.** Huwag sumali sa pila sa gilid para tingnan kung ano ang mangyayari. Mag-reverse ka, bumalik sa huling tuyo, mataas, at maliwanag na lugar na nadaanan mo, at magpark doon. Hindi sa ilalim ng malalaking puno, hindi sa tabi ng ilog o creek, hindi sa basement parking, hindi sa mababang parte ng car park.
 
-**7. Mag-settle nang deliberado.** Sabihan ang pamilya kung nasaan ka sa pamamagitan ng text — nakakapasok ang text kahit hindi na ang calls. I-ration ang tubig mula umpisa pa lang, hindi lang kapag kulang na. Panatilihing naka-off ang isang phone bilang reserve. Buksan ng konti ang bintana, patakbuhin ang makina sa maiikling saglit lang para sa aircon at pag-charge, at huwag kailanman matulog na tumatakbo ang engine sa isang enclosed space. Magpalitan sa pagtulog kung dalawa kayong adults.
+**7. Mag-settle in nang deliberado.** Ipaalam sa pamilya kung nasaan ka sa pamamagitan ng text — nakakarating ang text kahit hindi makatawag. I-ration ang tubig mula pa sa simula, hindi kapag kulang na. Panatilihing off ang isang phone bilang reserve. I-crack ang mga bintana, patakbuhin ang engine sa maiikling saglit lang para sa aircon at charging, at huwag kailanman matulog na naka-on ang engine sa isang enclosed space. Magpalitan sa pagtulog kung dalawang adults kayo.
 
-**8. Ang paglalakad palabas ay huling option na lang.** Sa araw, dala ang bag, sa isang rutang kitang-kita mo, papunta sa isang kilalang destinasyon — barangay hall, evacuation center, bahay ng kamag-anak. At walang wading pa rin. Kung tubig lang ang daan palabas, hindi ka tutuloy; maghihintay ka na lang na bumaba ang tubig o may dumating na may bangka.
+**8. Ang paglalakad palabas ay last resort.** Sa araw, dala ang bag, sa isang ruta na kitang-kita mo, papunta sa isang kilalang destinasyon — barangay hall, evacuation center, o bahay ng kamag-anak. At wala pa ring wading. Kung tubig lang ang daan palabas, hindi ka pupunta; naghihintay ka na bumaba ang tubig o may dumating na may bangka.
 
 ## Mga variations at conditions
 
-**Sa gabi.** Mas mahirap ang lahat at mas mababaw ang tingin mo sa tubig kaysa sa totoo. Karaniwang patay ang streetlights sa mismong mga lugar na binaha. Simple lang ang sarili kong rule: pagkalubog ng araw, wala akong sinusubukang tawirin, kahit 'yung nakita ko pang tuyo sa umaga. Huminto nang mas maaga sa gabi kaysa sa pakiramdam mong kailangan.
+**Sa gabi.** Mas mahirap ang lahat at mas mababaw ang hitsura ng tubig kaysa sa totoo. Karaniwang patay ang streetlights sa mismong mga lugar na binaha. Simple ang sarili kong rule: pagkalubog ng araw, hindi ako susubok ng anumang pagtawid, kahit 'yung nakita ko na sa araw. Huminto nang mas maaga sa gabi kaysa sa pakiramdam mong kailangan.
 
-**May kasamang bata o matatandang magulang.** I-doble ang comfort items at i-half ang tolerance mo sa paghihintay sa masamang lugar. Ang mga gamot, diaper, at pamilyar na meryenda ay mas importante kaysa sa kahit anong technical na gamit. Mas maganda ang car park na may gumaganang toilet at ilaw kaysa sa lay-by na may mas magandang view ng daan.
+**May kasamang bata o matatandang magulang.** I-doble ang comfort items at i-half ang tolerance mo sa paghihintay sa masamang lugar. Mas importante ang gamot, diapers, at pamilyar na meryenda kaysa sa kahit anong technical. Mas mabuti ang car park na may gumaganang toilet at ilaw kaysa sa lay-by na may mas magandang view ng daan.
 
-**Metro Manila kumpara sa provincial roads.** Sa siyudad, malapit ka lang sa mall, ospital, o barangay hall, kaya ang bag ay mas tungkol sa mga oras na hihintayin mo lang habang nakatigil. Sa provincial highway — Cagayan Valley, Bicol, ang Pampanga plains — totoo ang layo sa pagitan ng mga bayan, at totoo rin ang layo sa pagitan ng mga gasolinahan. Mag-pack ng mas maraming tubig para sa probinsya.
+**Metro Manila versus provincial roads.** Sa siyudad, bihira kang malayo sa mall, ospital, o barangay hall, kaya ang bag ay mostly para sa mga oras na naka-stationary ka. Sa isang provincial highway — Cagayan Valley, Bicol, ang Pampanga plains — totoo ang agwat sa pagitan ng mga bayan, at totoo rin ang agwat sa pagitan ng mga gasolinahan. Mag-pack ng mas maraming tubig para sa probinsya.
 
-**Habagat kumpara sa named typhoon.** Binibigyan ka ng abiso ng isang named storm, at kadalasan, ang tapat na sagot ay kanselahin na lang ang biyahe. Mas tuso ang southwest monsoon: walang bagyo sa mapa, tapos nabahaan na ang barangay by mid-afternoon. Sa mga naka-stranded ako, wala pang bagyo na pinangalanan sa karamihan nito.
+**Habagat versus named typhoon.** Nagbibigay ng warning ang isang named storm, at ang honest na sagot kadalasan ay i-cancel na lang ang biyahe. Mas mapanlinlang ang southwest monsoon: walang bagyo sa map, pero baha na ang isang barangay by mid-afternoon. Karamihan sa mga beses na naipit ako, walang pangalan ng bagyo na kasama.
 
-**Kung lumagpas nang dalawang araw.** Dito, hindi ka na naghihintay, nagre-relocate ka na. Pumunta sa evacuation center o bahay ng kamag-anak at ipaalam sa LGU kung nasaan ka. Ang bag ay hindi ginawa para sa isang linggo.
+**Kung lumampas sa dalawang araw.** Kung ganoon, hindi ka na naghihintay, nag-relocate ka na. Pumunta sa evacuation center o bahay ng kamag-anak at ipaalam sa LGU kung nasaan ka. Ang bag ay hindi kailanman ginawa para sa isang linggo.
 
-## Karaniwang mga pagkakamali
+## Mga karaniwang pagkakamali
 
-**Iniiwan lahat sa boot.** Kung hindi mo mabuksan ang boot — dahil nakaparada ka nose-in, o umuulan nang malakas, o nasa itaas na ng tubig ang sill — wala kang kit. I-split mo.
+**Pag-iwan ng lahat sa boot.** Kung hindi mo mabuksan ang boot — dahil naka-park ka nang nose-in, o umuulan nang pahilis, o tubig na sa sill — wala kang kit. Hatiin mo.
 
-**Isang power bank na patay na mula pa noong March.** I-charge kada buwan. Mag-set ng phone reminder. Ang patay na power bank ang pinaka-common na failure sa bawat kit na na-inspect ko, kasama na ang sarili ko.
+**Power bank na patay na simula pa noong March.** I-charge ito buwan-buwan. Mag-set ng phone reminder. Ang patay na power bank ang pinakakaraniwang failure sa bawat kit na na-inspect ko, kasama ang akin mismo.
 
-**Malalaking denomination lang.** Halos walang silbi ang ₱1,000 bills sa bayan na walang kuryente.
+**Malalaking bills lang.** Halos walang silbi ang ₱1,000 bills sa isang bayan na walang kuryente.
 
-**Sumusunod sa sasakyan sa harap.** Ang isang trak na may mataas na clearance at mabigat na chassis ay walang sinasabi sa kung ano'ng mangyayari sa sedan mo. Ganoon din ang traysikel — alam niya ang particular na kalyeng 'yun, hindi mo.
+**Pagsunod sa sasakyan sa harap.** Ang isang lorry na may mataas na clearance at mabigat na chassis ay walang sinasabi tungkol sa magiging takbo ng sedan mo. Ganon din ang tricycle — kilala niya ang particular na kalye na 'yun at hindi mo.
 
-**Pag-ikot sa barrier.** Kung sinara ng LGU o DPWH ang isang daan, sarado na 'yun. Nakakainis ang detour. Ang alternatibo ay isang recovery.
+**Pag-ikot sa isang barrier.** Kung sinara ng LGU o DPWH ang isang daan, sarado 'yun. Nakakainis ang detour. Ang alternative ay isang recovery.
 
-**Ginagawang light, map, at radyo ang phone.** Isang device, isang baterya, isang point of failure.
+**Pagtrato sa phone bilang light, map, at radio sabay-sabay.** Isang device, isang battery, isang point of failure.
 
-**Pagkain na hindi mo makakain nang cold.** I-check nang tapat ang kit mo: kung kailangan ng kumukulong tubig, decoration lang 'yun.
+**Food na hindi mo makakain nang malamig.** I-check nang honest ang kit mo: kung kailangan nito ng boiling water, decoration lang 'yun.
 
-**Tubig na naka-park sa boot for a year.** I-rotate mo. Hindi bumubuti ang plastic sa mainit na kotse habang tumatagal.
+**Tubig na naka-bake sa boot sa loob ng isang taon.** I-rotate ito. Ang plastic sa mainit na kotse ay hindi bumubuti sa paglipas ng panahon.
 
-**Iniisip na ang bag ang permission.** Ito ang isang nagre-resulta talaga ng saktan. Ang well-stocked na kotse ay nagpapadama sa'yo ng preparado, at ang pakiramdam na preparado ay nagpapamukhang reasonable sa pagtawid. Hindi 'yun totoo. Ang bag ay para sa pagbalik na walang gastos kundi oras lang.
+**Pag-iisip na permission ang bag.** Ito ang isang bagay na talagang nakakasakit ng tao. Ang isang well-stocked na kotse ay nagpaparamdam sa 'yong prepared ka, at ang pakiramdam na prepared ay nagpapamukhang reasonable ang pagtawid. Hindi 'yun. Ang bag ay para sa isang bagay lang: para walang gastos ang pagbalik maliban sa oras.
 
 ## Paano mag-practice nang ligtas
 
 Hindi mo kailangan ng drill ground para dito. Isang uncomfortable na gabi lang ang kailangan mo.
 
-Magpalipas ng isang gabi sa kotse sa sarili mong driveway o garahe, gamit lang ang laman ng bag. Malalaman mo sa loob ng dalawang oras kung saan ka kinukuryente ng cramp, kung maabot ang torch, at na nakalimutan mong maglagay ng phone cable na abot hanggang sa likod na seat. Iyon lang ang buong exercise, at mas mahalaga 'to kaysa sa kahit anong pagbabasa.
+Magpalipas ng isang gabi sa kotse sa sarili mong driveway o garahe, gamit lang ang laman ng bag. Matututunan mo sa loob ng dalawang oras kung saan ka na-cramps, kung maaabot ang torch, at na nakalimutan mong may kailangan pala kang phone cable na abot sa likod ng seat. 'Yun na ang buong exercise, at mas malaki ang halaga nito kaysa sa kahit anong pagbabasa.
 
-Mag-run ng brownout evening sa bahay gamit lang ang light at power ng kit. Tingnan kung gaano katagal talaga tumatagal ang power bank kapag dalawang phone at isang radyo ang naka-charge.
+Mag-practice ng isang brownout evening sa bahay gamit lang ang light at power ng kit. Tingnan kung gaano katagal talaga tumatagal ang power bank na may dalawang phone at isang radyo.
 
-Bago talaga magsimula ang tag-ulan, i-drive ang usual mong long route at consciously pangalanan ang tatlong bail-out points — ang gasolinahan na may canopy, ang mall car park sa mataas na side ng bayan, ang covered court malapit sa barangay hall. Sabihin nang malakas sa sinumang kasama mo sa kotse. Kapag kailangan na, gusto mong nagawa na ang desisyon.
+Bago talaga magsimula ang mga ulan, i-drive ang usual na long route mo at consciously na sabihin ang tatlong bail-out points — ang gasolinahan na may canopy, ang mall car park sa mataas na parte ng bayan, ang covered court malapit sa barangay hall. Sabihin ito nang malakas sa sinumang kasama mo sa kotse. Kapag importante na, gusto mong nagawa na ang desisyon.
 
-I-check at i-rotate ang bag dalawang beses sa isang taon: isang beses sa katapusan ng Mayo bago ang ulan, isa pa around December. Palitan ang tubig, i-check ang expiry ng gamot, subukan ang mga baterya, i-charge ang power bank, tingnan kung nandiyan pa ang cash.
+I-check at i-rotate ang bag dalawang beses sa isang taon: minsan sa late May bago ang ulan, minsan around December. Palitan ang tubig, i-check ang dates ng gamot, i-test ang batteries, i-charge ang power bank, tingnan kung nandoon pa ang cash.
 
-Walang matalino sa listang ito. Tubig, ilaw, power, gamot, cash, at pasensya, naka-pack kung saan mo maaabot. Ang katalinuhan, kung meron man, ay nasa isang desisyon na sinusuportahan nito: kapag baha ang daan sa harap mo, huminto ka, bumalik ka, at maghintay. Lahat ng iba pa sa boot ay para lang gawing kaya ang paghihintay.
+Wala namang matalino sa listahang ito. Tubig, ilaw, power, gamot, cash at patience, nakapack kung saan mo maaabot. Ang katalinuhan, kung meron man, ay nasa isang desisyon lang na sinusuportahan nito: kapag ang daan sa harap mo ay nasa ilalim ng tubig, huminto ka, bumalik ka, at maghintay. Lahat ng iba pa sa boot ay basta't nagpapagaan lang sa paghihintay.
