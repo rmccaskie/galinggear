@@ -9,6 +9,19 @@ featured: false
 status: active
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1790156521548-rou9cr.png'
+shareImage: 'https://images.galinggear.com/articles/generated-1790156521548-rou9cr.png'
+social:
+  facebook: "After a flood, what stalls most families isn't the water damage — it's not having a single ID or document to prove who they are when they line up at the barangay hall or SSS. Our latest guide walks you through building a free digital backup of your IDs, titles, and records: cloud storage, an offline phone folder, and a trusted person outside your household. Takes an afternoon to set up, and it could save you weeks of hassle later. \U0001F4C4\nhttps://galinggear.com/en/articles/your-digital-document-vault-how-to-back-up-ids-titles-and-records-before-a-calam/"
+  x: >-
+    Lost your IDs and titles in a flood? That's what really stalls families for
+    weeks after a calamity. Here's how to build a free digital backup — cloud,
+    offline folder, and a trusted person outside your home.
+    https://galinggear.com/en/articles/your-digital-document-vault-how-to-back-up-ids-titles-and-records-before-a-calam/
+    #DisasterPrepPH #TyphoonReady
+  instagram: "The paper can get soaked. Your proof of identity doesn't have to disappear with it. \U0001F4F1\n\nOur latest guide shows Filipino households how to build a free digital vault for IDs, land titles, and important records — using cloud storage, an offline phone folder, and a trusted family member as backup. No scanner needed, no cost, just an afternoon of prep that can save you weeks of hassle after a flood or typhoon.\n\nLink in bio \U0001F517\n\n#DisasterPreparedness #TyphoonPH #FloodSafety #EmergencyPrep #FilipinoFamily #DigitalBackup #GalingGear #StaySafePH #DisasterReadyPH #PrepareNow"
+  facebookTl: "Sabihin natin totoo: hindi lang basag na bintana o baha ang nakaka-stress after ng calamity — pati yung walang IDs, titles, o records para patunayan kung sino ka. Sa new guide namin, itinuro namin kung paano gumawa ng free digital backup ng mga important documents niyo — sa cloud, sa phone folder, at sa trusted family member — para kung masira man o mawala ang original, hindi ka mahihirapan mag-claim ng assistance o mag-ayos ng buhay ulit. \U0001F4F1✅\nhttps://galinggear.com/articles/your-digital-document-vault-how-to-back-up-ids-titles-and-records-before-a-calam/"
+  xTl: "Baha na, wala ka namang IDs? Huwag umabot sa ganon. Step-by-step guide sa paggawa ng FREE digital backup ng documents niyo — cloud + phone + trusted person. \U0001F4F2 https://galinggear.com/articles/your-digital-document-vault-how-to-back-up-ids-titles-and-records-before-a-calam/ #TyphoonPrep #GalingGear"
+  instagramTl: "Real talk: hindi lang basang gamit ang problema pagkatapos ng bagyo o baha — pati yung wala kang paraan para patunayan kung sino ka dahil nawala lahat ng IDs at documents mo. \U0001F629\n\nSa bagong guide namin, sinabi namin step-by-step paano gumawa ng FREE digital backup ng mga important papers niyo — IDs, titles, records — gamit lang ang phone, cloud storage, at isang trusted family member na may kopya rin. Simple lang pero life-saving pagdating ng oras.\n\nHindi mo na kailangang maghintay na mabasa muna yung isang folder na \"importante\" bago ka gumawa ng plano. Gawin na habang tuyo pa lahat.\n\nLink in bio \U0001F517\n\n#GalingGear #DisasterPrepPH #TyphoonReady #BahaPrep #EmergencyPrep #DigitalBackup #PinoyPrepper #FamilyPrep #WalangPanicMode #PhilSys #FloodSafety #ReadyNaAko"
 ---
 
 ## What you'll be able to do — and why it matters
