@@ -1,93 +1,92 @@
 ---
 title: 'Floodwater to drinking water: pre-filter, treat, store'
 description: >-
-  Paano gawing safe-to-drink ang floodwater after ng typhoon: pre-filter, treat
-  with Aquatabs or boiling, then store it right para matagal.
+  Paano gawing safe ang floodwater na iinumin after ng typhoon: pre-filter,
+  treat gamit ang Aquatabs o boiling, tapos i-store nang tama para tumagal.
 sourceHash: f39b9a3d4996e2de
 railItems:
   - type: article
     assetId: 1659c975-3f01-4692-aff3-7a1410a4d411
     anchor: what-you-need
     label: Field Guide
-    title: 'Packing for two, not just one'
+    title: 'Pag-pack para sa dalawa, hindi lang isa'
     slug: building-a-go-bag-for-two-a-practical-guide-for-couples-in-the-philippines
     description: >-
-      Ang tested na go-bag split ng isang couple para sa first 72 hours — kung
-      ano ang i-share, ano ang i-duplicate, at kung magkano talaga ang bigat
-      nito.
+      Isang tested go-bag split ng mag-partner para sa unang 72 hours — ano ang
+      i-share, ano ang i-duplicate, at magkano talaga ang timbang nito.
   - type: image
     assetId: 432cf5c5-5f0d-4e03-a9a6-012691d37cd9
     anchor: the-method
-    label: Keeping it safe
+    label: Panatilihing ligtas
     image: 'https://images.galinggear.com/library/generated-1789898898912-e6ktsa.png'
     alt: >-
-      Capped water containers and a steel jug stored in shade on a concrete
-      terrace
+      Mga capped water container at steel jug na naka-store sa lilim sa isang
+      concrete terrace
     caption: >-
-      I-store ang treated water na naka-cap, narrow-necked, at 'di tinatamaan ng
-      sunlight — pinapaikli ng heat at light ang shelf life nito.
+      I-store ang treated water na naka-cap, narrow-necked, at hindi tinatamaan
+      ng sikat ng araw — pinapaikli ng init at liwanag ang tagal nito.
   - type: article
     assetId: 3606c02f-716d-47d0-8ca2-a6d146936c0f
     anchor: variations--conditions
-    label: Know The Signs
-    title: The fever after a flood that should not wait until Monday
+    label: Kilalanin Ang Mga Palatandaan
+    title: Ang lagnat pagkatapos ng baha na hindi dapat ipagpaliban hanggang Monday
     slug: >-
       leptospirosis-after-the-flood-what-to-do-if-you-ve-already-waded-through-it
     description: >-
-      Karamihan sa post-flood fevers ay harmless lang, pero may ilang pattern na
-      dapat pagdalhan mo agad sa clinic same-day — alamin ang difference bago
-      dumating ang susunod na habagat.
+      Karamihan sa post-flood fevers ay walang malubhang epekto, pero may ilang
+      pattern na kailangan ng same-day na pagpunta sa clinic — alamin ang
+      pagkakaiba bago ang susunod na habagat.
 railSourceHash: 348319a38e6ec756
 ---
 
-## Ano ang matutunan mo — at bakit importante ito
+## Ano ang magagawa mo — at bakit importante ito
 
-After ng malakas na typhoon, madalas tuloy-tuloy pa rin ang tubig sa gripo. That's the trap. Ang tubig na lumalabas sa pipe puwedeng mukhang normal pero hindi pa rin safe, kasi nakakapasok ang floodwater sa distribution system through broken lines, low pressure, at submerged valves. Sasabihin sa'yo ng <a href="https://www.pagasa.dost.gov.ph/" target="_blank" rel="noopener noreferrer">PAGASA</a> na tapos na ang bagyo. Hindi nila sasabihin sa'yo na flushing pa rin ng water utility ang sediment at sewage sa mga pipes nila — puwedeng umabot ng days, hindi lang hours.
+After ng malakas na typhoon, madalas tuloy-tuloy pa rin ang tubig sa gripo. Doon ang bitag. Pwedeng mukhang normal ang tubig na lumalabas sa pipa pero 'di pa rin safe, dahil nakakapasok ang floodwater sa distribution system through broken lines, low pressure, at submerged valves. Sasabihin sa 'yo ng <a href="https://www.pagasa.dost.gov.ph/" target="_blank" rel="noopener noreferrer">PAGASA</a> na tapos na ang bagyo. Pero 'di nila sasabihin na patuloy pa ring nagfa-flush ang water utility ng sediment at sewage sa sarili nilang mga pipa — pwede 'yan umabot ng days, hindi lang hours.
 
-Itong guide na ito, dadaanin natin ang simpleng three-step sequence: pre-filter, treat, store. Ang order na 'to ang importante. Kung laktawan mo ang isang step, either sinasayang mo lang ang tablets sa putik, o iniimbak mo ang treated water sa paraang magpapasama ulit sa kalidad nito. Wala namang complicated dito, at wala ring kailangan ng kuryente. That's the point — kailangang gumana ito kapag hindi mapagkakatiwalaan ang power at water pressure.
+Ang guide na ito ay magpapakita sa 'yo ng simpleng three-step sequence: pre-filter, treat, store. Ang order ang importante dito. Kapag nilaktawan mo ang isang step, mauubos mo lang ang tablets sa putik, o ma-store mo ang treated water sa paraang magpapasama ulit dito. Wala namang komplikado dito, at wala ring kailangang koryente. Ganun talaga dapat — kailangan gumana ito kahit walang kuryente at unreliable ang water pressure.
 
 ## Ano ang kailangan mo
 
-Hindi masyadong marami ang kailangan mo, at wala ring mahal dito. Bilhin mo ito bago ang typhoon season, hindi habang nangyayari na.
+Hindi naman kailangan ng marami, at wala rin namang mahal dito. Bumili bago pa man ang typhoon season, hindi habang nangyayari na.
 
-- **A pre-filter.** Puwede itong simpleng clean cloth, coffee filter, o ilang layers ng fine mesh sa bukas ng container. Ang tanging trabaho nito ay tanggalin ang visible dirt, silt, at floating debris — hindi ito nagpupurify ng kung ano-ano.
-- **Purification tablets.** Aquatabs (chlorine-based) ang commonly available dito, binebenta sa strips o tubs mula ₱200–₱350 depende sa tablet count at strength. Pinapatay nila ang bacteria, viruses, at karamihan ng parasites na sanhi ng diarrhea at typhoid.
-- **Paraan para makapagboil ng tubig as backup.** Gas stove, camping stove, o butane burner. Kung sabay ang brownout at flood, ito na ang fallback mo kapag naubusan ka ng tablets.
-- **Food-grade storage containers.** Covered jerry cans o drums, ₱300–₱600 depende sa size, ideally yung talagang ibinebenta para sa tubig, hindi yung repurposed containers na dati may lamang chemicals o paint.
+- **Isang pre-filter.** Pwede itong kasing-simple ng malinis na tela, coffee filter, o ilang layer ng fine mesh sa bunganga ng container. Ang tanging trabaho nito ay tanggalin ang visible na dirt, silt, at floating debris — hindi nito pinupurify ang tubig.
+- **Purification tablets.** Aquatabs (chlorine-based) ang pinakakaraniwan dito, binebenta sa strips o tubs mula ₱200–₱350 depende sa bilang at strength ng tablet. Pinapatay nila ang bacteria, viruses, at karamihan ng parasites na nagdudulot ng diarrhea at typhoid.
+- **Paraan para maka-boil ng tubig bilang backup.** Gas stove, camping stove, o butane burner. Kung magkasabay ang brownout at flood, ito ang fallback mo kapag naubusan ka na ng tablets.
+- **Food-grade na storage containers.** Covered na jerry cans o drums, ₱300–₱600 depende sa laki, mas maganda kung 'yung talagang ibinebenta para sa tubig kesa sa containers na dati'y may laman na chemicals o paint.
 
-Lahat ng tatlong item na ito available sa Lazada at Shopee. Bumili sa mga seller na may totoong storefront at reviews, hindi sa pinakamurang listing na walang brand name — may mga counterfeit purification tablets na kumakalat na either underdose o hindi maayos matunaw. Kung walang expiration date na naka-print sa tablet strip sa photos ng listing, laktawan mo na.
+Available lahat ng tatlong item na ito sa Lazada at Shopee. Bumili sa mga seller na may totoong storefront at reviews, huwag 'yung pinakamura na listing na walang brand name — may umiikot na counterfeit purification tablets na alinman ay underdose o hindi maayos matunaw. Kung walang printed expiration date sa strip ng tablet sa photos, laktawan mo na 'yun.
 
 ## Ang method
 
 **Step 1 — Pre-filter muna, palagi.**
-Kung malabo, maputik, o may visible particles ang tubig, isalin mo ito through cloth o coffee filter papunta sa clean container bago mo gawin ang kahit ano pa. Hayaan mong tumira ito for 30 minutes to an hour para lumagpak ang mabibigat na sediment sa ilalim, then isalin ang mas malinaw na tubig sa itaas, iiwan ang sediment. Hindi ginagawang safe ng step na ito ang tubig — ginagawa nitong effective ang susunod mong step. Nahihirapan ang chlorine tablets sa turbid water kasi napupunta ang chlorine sa suspended particles imbes na patayin ang pathogens.
+Kung malabo, maputik, o may visible particles ang tubig, isalin mo ito sa tela o coffee filter papunta sa malinis na container bago ka gumawa ng iba pa. Hayaan itong tumira ng 30 minutes hanggang isang oras pagkatapos para lumubog ang mabibigat na sediment sa ibaba, tapos isalin mo ang mas malinaw na tubig sa itaas, iiwan ang sediment. Hindi safe agad ang tubig sa step na ito — ito ang bagay na magpapagana talaga sa susunod mong step. Nahihirapan ang chlorine tablets sa turbid na tubig dahil bumabagsak ang chlorine sa suspended particles imbes na patayin ang pathogens.
 
-**Step 2 — Treat ang na-pre-filter mo na.**
-Para sa Aquatabs, sundin ang dosage na naka-print sa packaging — usually isang tablet per liter for standard strength, pero nag-iiba ang strength depende sa brand, so 'di mo dapat hulaan lang. Ihulog mo, haluin, at hintayin ang buong contact time na nakasaad sa label, usually 30 minutes, bago inumin. Kung walang tablets, painitin ang pre-filtered water sa rolling boil for at least one minute (three minutes kung above 2,000 meters elevation ka, na hindi na concern para sa karamihan ng Philippine households). Palamigin ito sa covered container bago inumin.
+**Step 2 — I-treat ang pinre-pre-filter mo na.**
+Para sa Aquatabs, sundin ang dosage na naka-print sa packaging — kadalasan isang tablet per liter para sa standard strength, pero iba-iba ang strength depende sa brand, kaya huwag mag-guess. Ihulog mo ito, haluin, at hintayin ang buong contact time na nakasaad sa label, karaniwan ay 30 minutes, bago mo inumin. Kung wala kang tablets, pakuluan ang pre-filtered na tubig sa rolling boil ng at least isang minuto (tatlong minuto kung nasa taas ka ng 2,000 meters elevation, na hindi naman concern para sa karamihan ng Filipino households). Hayaan itong lumamig sa covered na container bago inumin.
 
-**Step 3 — I-store ito nang maayos.**
-Ilagay ang treated water sa food-grade, covered container. Panatilihing elevated ito, hindi nakadikit sa sahig — puwede pa ring may floodwater na natitira o umaagos sa ground level kahit tumigil na ang ulan, at ang container na nakapatong dito ay puwedeng ma-contaminate ulit through loose lid o hairline crack. Iwasan din ang direct sunlight, kasi pinapahina ng init at UV ang residual chlorine nang mas mabilis at nagpapalago ng algae sa mga clear containers. Lagyan ng label ang container na may date kung kailan ito na-treat. Ang chlorinated water ay generally okay for a few days; ang boiled water dapat gamitin within a day kung hindi ito sealed at refrigerated.
+**Step 3 — I-store nang tama.**
+Ilipat ang treated water sa food-grade, covered na container. Panatilihing nakataas mula sa sahig — pwede pa ring nakatira o nagse-seep ang floodwater sa ground level kahit tumigil na ang ulan, at ang container na nakatira dito ay pwedeng ma-contaminate ulit through sa loose lid o hairline crack. Ilayo sa direct sunlight, dahil pinapabilis ng init at UV ang pagbaba ng residual chlorine at nagpapalago ng algae sa clear containers. I-label ang container ng date na tina-treat ito. Ang chlorinated water ay generally maganda pa for a few days; ang boiled water naman ay dapat gamitin within a day kung 'di ito naka-seal at naka-refrigerate.
 
 ## Mga variation at kondisyon
 
-**Sobrang turbid o maputik na tubig.** Kadalasan, hindi sapat ang isang pass sa cloth after ng malaking flood. Filter mo ito twice, o hayaang tumira overnight sa covered container bago mo i-filter at i-treat. Huwag magmadali dito — ito ang step na madalas laktawan ng mga tao kapag pagod at uhaw na, at ito ang step na nagdedecide kung effective ba talaga ang tablets.
+**Sobrang turbid o maputik na tubig.** Isang beses na pag-filter through cloth ay madalas 'di sapat after ng malaking baha. Mag-filter ng dalawang beses, o hayaan itong tumira overnight sa covered na container bago mo i-filter at i-treat. Huwag magmadali dito — ito ang step na madalas nilalaktawan ng tao kapag pagod at uhaw na sila, at ito rin ang step na nagdedetermina kung gagana talaga ang tablets.
 
-**Walang stove, walang tablets.** Kung nahuli kang walang alinman sa dalawa, prayoridad na kumuha ng bottled water o pumunta sa relief distribution point kaysa uminom ng untreated floodwater — kahit boiled water lang na brief, mas safe pa rin ito kaysa wala, pero ang paglaktaw sa treatment nang tuluyan should be last resort, hindi plano.
+**Walang stove, walang tablets.** Kung nahuli ka na wala ka ni isa, unahin ang paghanap ng bottled water o relief distribution point kesa sa pag-inom ng untreated floodwater, kahit briefly boiled na tubig ay mas safe pa rin kaysa wala, pero ang pag-skip sa treatment nang tuluyan ay dapat last resort, hindi plano.
 
-**Suspected chemical or fuel contamination.** Ito ang hard limit ng tablets at boiling, kaya sasabihin natin nang malinaw: wala sa dalawa ang nagtatanggal ng heavy metals, fuel, pesticides, o industrial runoff. Kung ang floodwater ay may amoy gasolina, may oily sheen, o galing sa area na malapit sa nalubog na gas station, junk shop, o industrial site, huwag mo itong subukang i-treat para sa pag-inom. Maghanap ng ibang source ng drinking water hangga't hindi kinukumpirma ng local water district o ng <a href="https://doh.gov.ph/" target="_blank" rel="noopener noreferrer">Department of Health</a> na safe na ang supply.
+**Suspected na chemical o fuel contamination.** Ito ang hard limit ng parehong tablets at boiling, at dapat sabihin nang diretso: wala sa dalawa ang tumatanggal ng heavy metals, fuel, pesticides, o industrial runoff. Kung amoy gasolina ang floodwater, may oily sheen, o galing sa area malapit sa flooded gas station, junk shop, o industrial site, huwag mo itong subukang i-treat para inumin. Kumuha ng drinking water sa ibang source hanggang ma-confirm ng local water district o <a href="https://doh.gov.ph/" target="_blank" rel="noopener noreferrer">Department of Health</a> na safe na ang supply.
 
-**Matagalang outages.** Sa search-and-rescue, hindi kami umaasa sa isang method lang — ang water plan na gumana sa field ay ang may backup na hindi umaasa sa ingredients ng first method. Naubos ang tablets. Naubos din ang gas eventually, pero mas mabagal, at ang stove at lighter ay bagay na karamihan ng households ay meron na. Panatilihing live ang both options imbes na ibet mo ang buong household sa isang method.
+**Extended outages.** Sa search-and-rescue, hindi kami nagbubuo ng plano na nakasalalay sa iisang method lang — ang water plan na gumana talaga sa field ay 'yung may backup na hindi nakadepende sa pag-ubos ng ingredients ng unang method. Naubusan ang tablets. Naubusan din eventually ang gas, pero mas mabagal, at ang stove at lighter ay bagay na karaniwan nang meron ang mga household. Panatilihing live ang parehong options imbes na i-bet ang buong household sa isang paraan lang.
 
-## Mga common mistakes
+## Mga karaniwang pagkakamali
 
-- **Nag-treat nang walang pre-filter.** Naghuhulog ng tablet sa jug ng maputik na tubig at inaasahang gagana ito parang sa malinaw na tubig. Hindi ito gumagana — naubos ang chlorine sa dumi.
-- **Hindi hinihintay ang full contact time.** Mahaba ang thirty minutes kapag uhaw ka na. Kung uminom ka nang maaga, ibig sabihin hindi pa natatapos ang trabaho ng chlorine.
-- **Nag-iimbak ng treated water na uncovered o nakapatong sa basang sahig.** Nawawala nito ang lahat ng ginawa mo. Ang floodwater residue sa sahig ay puwedeng gumapang papasok sa isang loosely sealed container.
-- **Inaakalang safe na ang gripo pagtigil ng ulan.** Madalas nag-iisyu ng boil-water advisory ang water utilities sa mga flood-affected areas na tumatagal ng days matapos maglinaw ang bagyo. I-check ang local announcements mula sa barangay o water district mo bago mo isipin na normal na service ay safe na service na.
-- **Bumibili ng tablets habang nasa emergency imbes na bago pa mangyari.** Tumataas ang prices at mabilis na naubos ang stock sa Lazada at Shopee once nababalita na ang bagyo. Bilhin mo bago pa magsimulang pangalanan ng <a href="https://www.pagasa.dost.gov.ph/" target="_blank" rel="noopener noreferrer">PAGASA</a> ang isang system na patungo sa bansa, hindi pagkatapos.
+- **Pag-treat nang walang pre-filter.** Ang paghulog ng tablet sa maputik na tubig sa banga at umasa na gagana ito gaya ng sa malinaw na tubig. Hindi ganun ang mangyayari — nauubos ang chlorine sa dumi.
+- **Hindi paghihintay sa buong contact time.** Parang ang tagal ng 30 minutes kapag uhaw ka. Kapag maaga kang uminom, ibig sabihin 'di pa tapos ang trabaho ng chlorine.
+- **Pag-store ng treated water nang uncovered o sa basang sahig.** Sinisira nito lahat ng ginawa mo. Pwedeng ma-wick sa loosely sealed na container ang floodwater residue sa sahig.
+- **Pag-aakalang safe na ang gripo pagtigil ng ulan.** Madalas naglalabas ng boil-water advisory ang water utilities sa mga flood-affected areas na tumatagal ng days after malinis na ang bagyo. I-check ang local announcements mula sa barangay o water district mo bago mag-assume na safe na dahil normal na ang service.
+- **Pagbili ng tablets habang nasa gitna na ng emergency imbes na bago pa.** Tumataas ang presyo at mabilis maubos ang stock sa Lazada at Shopee once nasa balita na ang isang bagyo. Bumili bago pa mag-umpisa mag-bulletin ang <a href="https://www.pagasa.dost.gov.ph/" target="_blank" rel="noopener noreferrer">PAGASA</a> tungkol sa isang system na patungo sa bansa, hindi pagkatapos.
 
-## Paano practice nang safe
+## Paano mag-practice nang ligtas
 
-Gumawa ng dry run bago mo ito talagang kailanganin. Punuin ang container ng tap water, sadyang lasugin ang bahagi nito ng garden soil, at practice ang buong sequence — filter, settle, treat, store — para sanay ka sa mga steps under normal conditions imbes na habang brownout at may inaalalayan kang fussy toddler at mababa na ang baterya ng phone mo. Timingin kung gaano katagal talaga ang settling at contact steps sa sariling kitchen mo. I-check ang expiration date ng tablet strip mo every typhoon season at palitan kung nag-aage-out na — nawawalan ng potency ang chlorine tablets over time, especially sa humid storage. Wala sa mga ito ang pumapalit sa good judgment kung kailan simpleng hindi na worth the risk ang tubig — walang filter o tablet ang pumapalit sa pagkuha ng clean water kapag meron kang choice.
+Gumawa ng dry run bago mo talaga kailanganin ito. Punuin ng tap water ang isang container, sadyang paputikin ang isang bahagi gamit ang garden soil, at i-practice ang buong sequence — filter, settle, treat, store — para pamilyar ka sa mga steps sa normal na kondisyon imbes na sa gitna ng brownout na may inaalagaang toddler at mababa nang baterya ang phone mo. I-time kung gaano katagal talaga ang settling at contact steps sa sarili mong kusina. I-check ang expiration date ng tablet strip mo tuwing typhoon season at palitan kung matanda na ito, nawawalan ng potency ang chlorine tablets over time, lalo na sa humid na storage. Wala sa mga ito ang papalit sa mabuting judgment tungkol sa kung kailan talaga hindi na worth the risk ang tubig — walang filter o tablet na papalit sa paghahanap ng malinis na tubig kapag meron kang choice.
 
-Para sa mas malawak na picture kung paano dadalhin ang household mo sa outage mismo, tingnan ang mga guide namin sa [flood ready](/flood-ready/) at [typhoon season](/typhoon-season/) preparation, at ang main [clean water](/clean-water/) hub namin para sa related gear notes.
+Para sa mas malawak na larawan tungkol sa pagpapadaan ng household sa outage mismo, tingnan ang mga guide namin sa [flood ready](/flood-ready/) at [typhoon season](/typhoon-season/) preparation, at ang main [clean water](/clean-water/) hub namin para sa related gear notes.
