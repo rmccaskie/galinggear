@@ -41,6 +41,24 @@ railItems:
     description: >-
       A step-by-step plan for keeping Lolo or Lola's medication on schedule when
       roads and drugstores are out of reach.
+shareImage: 'https://images.galinggear.com/articles/generated-1789988869176-inmbrr.png'
+social:
+  facebook: "Most injuries during a typhoon or brownout aren't dramatic — they're the cut foot from floodwater, the scraped knee in a dark hallway, the dengue-season body ache. Our latest guide walks you through building your own household first aid kit, item by item, sized to your budget instead of buying an overpriced sealed box. \U0001FA79 Check it out here:\nhttps://galinggear.com/en/articles/household-first-aid-kit-philippines/"
+  x: >-
+    Skip the overpriced mall first aid kits. Build your own — sized to your
+    household and budget — for the small, real injuries that show up during
+    typhoons, brownouts, and dengue season. Full guide:
+    https://galinggear.com/en/articles/household-first-aid-kit-philippines/
+    #EmergencyPrep #FirstAidPH
+  instagram: "A sealed first aid kit from a mall kiosk sounds convenient — until you actually need it and realize it's padded with stuff you'll never use, and thin on what you will. Our new guide shows you how to build your own household first aid kit, item by item: wound care basics, OTC meds, and honest advice on when a small injury needs more than home care. Practical, budget-sized, and built for real Filipino household emergencies — flood cuts, brownout scrapes, dengue season aches, and more.\n\nLink in bio \U0001F517\n\n#EmergencyPrepPH #FirstAidKit #TyphoonReady #FloodSafety #DengueSeason #HouseholdSafety #DisasterPreparedness #PhilippinesPrep #StaySafePH #GalingGear #FirstAidTips #PrepperPH"
+  facebookTl: "Yung first aid kit niyo, DIY na natin, hindi na yung sealed box na hindi mo nga alam laman. Marami sa mga aksidente sa bahay — hiwa sa paa habang naglalakad sa baha, sugat ng bata dahil sa dilim ng brownout, sakit ng katawan pag dengue season — kayang-kaya ng tamang stock na gawa mo mismo, sized sa budget niyo. Check niyo full guide para malaman kung ano talaga dapat nasa kit niyo (at ano dapat wala) \U0001FA79\nhttps://galinggear.com/articles/household-first-aid-kit-philippines/"
+  xTl: >-
+    Wag nang bumili ng sealed first aid kit na 'di mo alam laman. Build your
+    own, sized sa pamilya at budget niyo — para sa baha, brownout, dengue season
+    atbp. Guide dito:
+    https://galinggear.com/articles/household-first-aid-kit-philippines/
+    #FirstAidPH #TyphoonPrep
+  instagramTl: "Real talk: yung mga sugat at sakit na kailangan ng first aid sa bahay natin — hindi naman usually malala. Hiwa sa paa sa baha, gasgas ng bata sa dilim, katawan na sumasakit pag dengue season, LBM dahil sa tubig na di sure kung safe. Ang kailangan lang ay tamang gamit, hindi yung sealed box na puno ng hindi mo nga magagamit.\n\nSa bagong guide namin, tinuruan namin kayo mag-DIY ng household first aid kit — item by item, sized sa budget niyo, para laging handa ang bahay sa typhoon, baha, brownout, at everyday scrapes. Alam niyo rin kung kailan dapat na sa ospital, hindi na sa kit.\n\nLink in bio \U0001F517\n\n#FirstAidPH #EmergencyPrepPH #GalingGear #TyphoonReady #BahayHandaSaBagyo #DengueSeason #DIYFirstAidKit #PinoyPrepper #KaligtasanMuna #BrownoutPrep #FloodSafetyPH #FamilyPrepPH"
 ---
 
 ## What you'll be able to do — and why it matters
