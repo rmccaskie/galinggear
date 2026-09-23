@@ -33,6 +33,7 @@ const typeLabels: Record<string, string> = {
 }
 const clientStrings = {
   download: strings['documents.download'],
+  navLabel: strings['documents.nav'],
   types: typeLabels,
   // Taglish is the default locale; when the reader is on it, prefer the Taglish
   // PDF and fall back to the English base when no Taglish variant exists.
@@ -41,7 +42,7 @@ const clientStrings = {
 ---
 
 {/* Hidden until the client script confirms there is at least one document. */}
-<section class="gg-downloads" data-gg-downloads hidden data-slug={slug}>
+<section id="free-downloads" class="gg-downloads" data-gg-downloads hidden data-slug={slug}>
   <div class="ggd-head">
     <span class="ggd-kicker mono">{strings['documents.heading']}</span>
   </div>
@@ -190,7 +191,7 @@ const clientStrings = {
     const slug = section.dataset.slug ?? ''
     const list = section.querySelector<HTMLElement>('[data-downloads-list]')
     const i18nEl = section.querySelector<HTMLElement>('[data-downloads-i18n]')
-    let i18n: { download: string; types: Record<string, string>; preferTaglish?: boolean } = { download: 'Download PDF', types: {} }
+    let i18n: { download: string; navLabel?: string; types: Record<string, string>; preferTaglish?: boolean } = { download: 'Download PDF', navLabel: 'Free downloads', types: {} }
     try {
       if (i18nEl?.textContent) i18n = JSON.parse(i18nEl.textContent)
     } catch {
@@ -208,12 +209,15 @@ const clientStrings = {
     if (slug && list) {
       fetch(`/api/documents/${encodeURIComponent(slug)}`, { headers: { accept: 'application/json' } })
         .then((r) => (r.ok ? r.json() : Promise.reject()))
-        .then((data: { ok?: boolean; documents?: Array<{ id: string; docType: string; title: string; description: string; pdfUrl: string; pdfUrlTl?: string | null }> }) => {
+        .then((data: { ok?: boolean; documents?: Array<{ id: string; docType: string; title: string; titleTl?: string | null; description: string; pdfUrl: string; pdfUrlTl?: string | null }> }) => {
           const docs = Array.isArray(data?.documents) ? data.documents : []
           if (docs.length === 0) return
           list.innerHTML = docs
             .map((d) => {
               const typeLabel = i18n.types[d.docType] ?? d.docType
+              // Prefer the Taglish title for Taglish readers; fall back to the
+              // English base title when no Taglish variant exists.
+              const title = i18n.preferTaglish && d.titleTl ? d.titleTl : d.title
               // Prefer the Taglish PDF for Taglish readers; fall back to English.
               // Route through the same-origin download proxy so the browser
               // saves the file (a cross-origin <a download> to images.* is
@@ -225,7 +229,7 @@ const clientStrings = {
                 `<span class="ggd-thumb" aria-hidden="true"><span class="tbar"></span><span class="tl"></span><span class="tl s"></span><span class="tl"></span></span>` +
                 `<span class="ggd-mid">` +
                 `<span class="ggd-type">${esc(typeLabel)}</span>` +
-                `<h3 class="ggd-title">${esc(d.title)}</h3>` +
+                `<h3 class="ggd-title">${esc(title)}</h3>` +
                 `<a class="ggd-dl" href="${esc(href)}" target="_blank" rel="noopener" download>${dlIcon}<span>${esc(i18n.download)}</span></a>` +
                 `</span>` +
                 `</li>`
@@ -233,6 +237,25 @@ const clientStrings = {
             })
             .join('')
           section.hidden = false
+
+          // Add a "Free downloads" entry to the article submenu ("On this
+          // page") so readers can jump straight here. The submenu is built at
+          // build time from headings; documents resolve at runtime, so the
+          // entry is injected now — only when there is at least one document
+          // and only when the article actually has a submenu.
+          const tocList = document.querySelector('.art-toc__list')
+          if (tocList && !tocList.querySelector('[data-toc-link="free-downloads"]')) {
+            const li = document.createElement('li')
+            const a = document.createElement('a')
+            a.className = 'art-toc__link'
+            a.href = '#free-downloads'
+            a.setAttribute('data-toc-link', 'free-downloads')
+            a.textContent = i18n.navLabel ?? 'Free downloads'
+            li.appendChild(a)
+            tocList.appendChild(li)
+            // Let the page's scroll-spy pick up the new entry + target.
+            window.dispatchEvent(new CustomEvent('gg:toc-updated'))
+          }
         })
         .catch(() => {
           /* leave hidden */

@@ -263,11 +263,10 @@ function fmtDate(date: string) {
           })
         }
       </div>
+      {/* Downloadable branded documents (fetched at runtime; hides itself if none) */}
+      <DocumentDownloads slug={article.id} locale={locale} />
     </div>
   </article>
-
-  {/* Downloadable branded documents (fetched at runtime; hides itself if none) */}
-  <DocumentDownloads slug={article.id} locale={locale} />
 
   {/* A2 — full series list(s) at the end of the article */}
   {articleSeries.length > 0 && (
@@ -413,6 +412,17 @@ function fmtDate(date: string) {
     display: grid;
     grid-template-columns: 250px minmax(0, 1fr);
     gap: var(--space-2xl);
+  }
+
+  /* Downloads sit under the body, aligned to the content column (not flush to
+     the viewport). In the two-column layout the section drops into the content
+     column's second row; without a submenu it is a plain full-width block. */
+  .art-layout.has-toc > :global(.gg-downloads) {
+    grid-column: 2;
+  }
+
+  .art-layout > :global(.gg-downloads) {
+    padding-block-start: 0;
   }
 
   .art-toc {
@@ -736,10 +746,15 @@ function fmtDate(date: string) {
 <script>
   // Progressive enhancement for the "On this page" submenu: highlight the entry
   // whose section is currently in view. Plain anchor links still work without JS.
-  const links = Array.from(
-    document.querySelectorAll<HTMLAnchorElement>('[data-toc-link]')
-  )
-  if (links.length > 0 && 'IntersectionObserver' in window) {
+  // Wrapped in a function so it can be rebuilt when the runtime-injected
+  // "Free downloads" entry is added (see DocumentDownloads.astro).
+  let tocObserver: IntersectionObserver | null = null
+  function initTocSpy() {
+    if (tocObserver) tocObserver.disconnect()
+    const links = Array.from(
+      document.querySelectorAll<HTMLAnchorElement>('[data-toc-link]')
+    )
+    if (links.length === 0 || !('IntersectionObserver' in window)) return
     const targets = links
       .map((l) => document.getElementById(l.dataset.tocLink ?? ''))
       .filter((el): el is HTMLElement => el !== null)
@@ -751,7 +766,7 @@ function fmtDate(date: string) {
         l.setAttribute('aria-current', l.dataset.tocLink === id ? 'true' : 'false')
       )
     }
-    const observer = new IntersectionObserver(
+    tocObserver = new IntersectionObserver(
       (entries) => {
         const visible = entries
           .filter((e) => e.isIntersecting)
@@ -760,6 +775,10 @@ function fmtDate(date: string) {
       },
       { rootMargin: '-20% 0px -70% 0px', threshold: 0 }
     )
-    targets.forEach((t) => observer.observe(t))
+    targets.forEach((t) => tocObserver!.observe(t))
   }
+  initTocSpy()
+  // The downloads section and its submenu entry are injected once the document
+  // list resolves at runtime; rebuild the scroll-spy so the new entry works.
+  window.addEventListener('gg:toc-updated', () => initTocSpy())
 </script>

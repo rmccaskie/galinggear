@@ -42,7 +42,7 @@ export const GET: APIRoute = async ({ params, url }) => {
     const supabase = createSupabaseClient()
     const { data, error } = await supabase
       .from('article_documents')
-      .select('id, title, pdf_url, pdf_url_tl, status')
+      .select('id, title, title_tl, pdf_url, pdf_url_tl, status')
       .eq('id', id)
       .eq('status', 'ready')
       .maybeSingle()
@@ -51,7 +51,8 @@ export const GET: APIRoute = async ({ params, url }) => {
 
     const enUrl = typeof data.pdf_url === 'string' && data.pdf_url ? data.pdf_url : ''
     const tlUrl = typeof data.pdf_url_tl === 'string' && data.pdf_url_tl ? data.pdf_url_tl : ''
-    const target = wantTl && tlUrl ? tlUrl : enUrl
+    const servingTl = wantTl && !!tlUrl
+    const target = servingTl ? tlUrl : enUrl
     if (!target) return new Response('Not found', { status: 404 })
 
     const upstream = await fetch(target)
@@ -61,7 +62,9 @@ export const GET: APIRoute = async ({ params, url }) => {
       return Response.redirect(target, 302)
     }
 
-    const name = filenameFor(String(data.title ?? 'document'))
+    // Name the file after the Taglish title when the Taglish PDF is served.
+    const titleTl = typeof data.title_tl === 'string' && data.title_tl ? data.title_tl : ''
+    const name = filenameFor(String((servingTl && titleTl ? titleTl : data.title) ?? 'document'))
     const headers = new Headers()
     headers.set('content-type', 'application/pdf')
     headers.set(

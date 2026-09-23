@@ -183,6 +183,7 @@ export const enCatalogue = {
   'documents.heading': 'Free downloads',
   'documents.subheading': 'Printable, branded guides to go with this article — free to download and share.',
   'documents.download': 'Download PDF',
+  'documents.nav': 'Free downloads',
   'documents.loading': 'Loading downloads…',
   'documents.type.checklist': 'Checklist',
   'documents.type.packing-list': 'Packing list',
