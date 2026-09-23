@@ -72,6 +72,32 @@ const clientStrings = {
     max-inline-size: none;
   }
 
+  /* The section now lives inside .prose.body, so the article page's global
+     element rules would otherwise clobber the card's own typography and reset:
+     .ggd-title is an <h3> that would inherit the huge --text-h2 display size
+     and 3rem margins from `.body h3` (which made the title render tall and
+     stacked); .ggd-list is a <ul> that would pick up `.body ul` list padding
+     and push the first card off the left edge; .ggd-heading (<h2>) and
+     .ggd-item (<li>) would gain unwanted margins. Re-assert the card styles
+     with a .body prefix so specificity (0,2,0) beats those (0,1,1) rules. */
+  .body .ggd-heading {
+    margin-block: 0 var(--space-sm);
+  }
+
+  .body .ggd-list {
+    margin: 0;
+    padding: 0;
+  }
+
+  .body .ggd-item {
+    margin: 0;
+  }
+
+  .body .ggd-title {
+    font-size: var(--text-body, 1rem);
+    margin: 0;
+  }
+
   /* Heading inherits the font-display family, weight 600 and line-height 1.12
      from the global h2 rule. font-size and margin match the .body h2 override
      in the article page's scoped styles. The parent .section-block provides
