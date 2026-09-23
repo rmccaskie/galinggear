@@ -49,7 +49,11 @@ const clientStrings = {
   <script type="application/json" data-downloads-i18n set:html={JSON.stringify(clientStrings)} />
 </section>
 
-<style>
+<!-- is:global is REQUIRED: the download list below is injected at runtime via
+     list.innerHTML, so Astro's scoped styles (which tag only build-time elements
+     with data-astro-cid-*) would never match it. All selectors are prefixed
+     .gg-downloads / .ggd-* so there is no leakage. -->
+<style is:global>
   /* Compact three-up download cards ("Treatment B"): a mini PDF-page thumbnail
      beside the doc type + title, with a "Download PDF" text link. No
      description, no oversized button — keeps the end of the article tidy and
