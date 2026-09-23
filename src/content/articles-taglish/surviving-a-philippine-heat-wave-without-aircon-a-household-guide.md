@@ -1,106 +1,103 @@
 ---
-title: >-
-  Paano Makakasurvive sa Philippine Heat Wave Kahit Walang Aircon: Household
-  Guide
+title: 'Guide sa heat wave sa Pilipinas: paano mag-stay safe kahit walang aircon'
 description: >-
-  Isang calm at practical guide para sa Filipino households sa pag-basa ng
-  PAGASA heat index, paglamig kahit walang aircon, pag-protect ng elderly at
-  young family members, at kung kailan na-considered medical emergency na ang
-  heat.
-sourceHash: 1817fca99e35d3c0
+  Walang aircon habang may heat wave? Alamin kung paano bigyang-kahulugan ang
+  heat index ng PAGASA at panatilihing safe ang pamilya mo sa heat exhaustion
+  ngayong tag-init.
+sourceHash: 1e2d67a89ac7f14b
 ---
 
-## Ang situation
+## Ang sitwasyon
 
-Mainit na talaga ang tag-init sa Pilipinas since forever. Ang nagbago ay kung gaano kadalas na tumatawid ito mula "nakakainis" papuntang "delikado." Ang El Niño years ay nagdadagdag ng dry heat sa ibabaw ng usual humidity natin, at 'yun ang combination na actually nasasaktan ang tao — hindi ang raw temperature sa thermometer, pero ang heat index, na factor-in ang humidity para ipakita kung ano ba talaga ang feel ng init sa katawan mo, at gaano kahirap magtrabaho ang katawan mo para palamigin ang sarili.
+Mainit na talaga ang summer sa Pilipinas since forever. Ang nagbago ay kung gaano na kadalas tumatawid ito mula "nakakainis" papuntang "delikado." Ang mga El Niño years ay nagsstack ng dry heat sa ibabaw ng usual humidity natin, at ang combination na 'yun ang talagang nakakasakit sa tao — hindi 'yung raw temperature sa thermometer, kundi ang heat index, na isinasaalang-alang ang humidity para ipakita kung ano talaga ang naramdaman ng katawan mo sa init, at kung gaano kahirap magtrabaho ang katawan mo para mag-cool down.
 
-Chek-check ko ang <a href="https://www.pagasa.dost.gov.ph/" target="_blank" rel="noopener noreferrer">PAGASA</a> heat index bulletin kung paanong nag-check ka ng weather bago mag-hike — hindi dahil sa worry, kundi habit na lang. Few seconds lang 'to, pero sasabihin sa'yo kung anong klaseng araw ang papasukan mo.
+Chine-check ko 'yung <a href="https://www.pagasa.dost.gov.ph/" target="_blank" rel="noopener noreferrer">PAGASA</a> heat index bulletin kagaya ng pagche-check ko ng weather bago mag-hike — hindi dahil sa kaba, kundi habit na lang talaga. Ilang segundo lang naman, at sasabihin nito sa 'yo kung anong klaseng araw talaga ang kakaharapin mo.
 
-Ganito ang classification ng <a href="https://www.pagasa.dost.gov.ph/" target="_blank" rel="noopener noreferrer">PAGASA</a> para sa heat index:
+Ganito i-classify ng <a href="https://www.pagasa.dost.gov.ph/" target="_blank" rel="noopener noreferrer">PAGASA</a> ang heat index:
 
-- **27–32°C — Caution.** Possible ang fatigue kung matagal ang activity.
-- **33–41°C — Extreme Caution.** Possible na ang heat cramps at heat exhaustion.
-- **42–51°C — Danger.** Likely na ang heat cramps at heat exhaustion; possible ang heat stroke kung tuluy-tuloy ang exposure o physical activity.
-- **52°C pataas — Extreme Danger.** Malapit na mangyari ang heat stroke.
+- **27–32°C — Caution.** Posible ang fatigue kung matagal ang activity.
+- **33–41°C — Extreme Caution.** Posible na ang heat cramps at heat exhaustion.
+- **42–51°C — Danger.** Malamang na ang heat cramps at heat exhaustion; posible ang heat stroke kung tuloy-tuloy pa ang exposure o physical activity.
+- **52°C pataas — Extreme Danger.** Malapit nang mangyari ang heat stroke.
 
-Karamihan sa parts ng bansa ay nasa Caution o Extreme Caution range sa halos lahat ng summer afternoons. Pero during strong El Niño, may mga barangay na naabot ang Danger bracket for days in a row — at 'yun na ang moment na ordinary households, especially 'yung walang aircon, start na ma-feel ang real strain.
+Karamihan sa mga parte ng bansa ay nasa Caution o Extreme Caution range halos araw-araw tuwing hapon sa summer. Pero sa panahon ng malakas na El Niño, may mga barangay tayong nakitang umabot sa Danger bracket nang ilang araw nang sunud-sunod — at doon talaga nagsisimulang mahirapan ang ordinaryong sambahayan, lalo na 'yung walang aircon.
 
-Hindi 'to typhoon. Walang magboard-up ng windows para sa init. That's exactly why nakaka-catch off guard ito ng mga pamilya.
+Hindi ito typhoon. Walang nagba-board up ng windows dahil sa init. Kaya nga ito ang madalas nakaka-catch off guard sa mga pamilya.
 
-## Ang mahalaga talaga
+## Ano talaga ang importante
 
-Kung tanggalin mo ang noise, tatlong bagay ang magde-decide kung ang isang mainit na araw mananatiling uncomfortable lang o magiging dangerous:
+Kung tanggalin mo ang lahat ng noise, tatlong bagay lang talaga ang nagde-decide kung ang isang mainit na araw ay mananatiling nakakainis lang o magiging delikado na:
 
-1. **Airflow.** Pag gumagalaw ang hangin, evaporate ang sweat, at ang evaporation ang actual way ng katawan mo para lumamig. Hindi binabawasan ng fan ang temperature ng room — pinapabilis lang niya ang evaporation. Malaking tulong pa rin 'to, pero nawawalan ng effect once sobrang taas na ng humidity at wala nang lugar na mapupuntahan ang moisture.
-2. **Hydration — steady at maaga.** Kung hihintayin mong mauhaw ka, huli ka na. Nauubos ang water at electrolytes ng katawan mo dahil sa init — kaya kung tubig lang ang iniinom mo, 'yun ang dahilan kung bakit maraming "pero umiinom naman ako ng tubig" na tao pa rin ang nahihilo.
-3. **Sino ang most at risk.** Hindi pareho ang epekto ng init sa lahat ng members ng household. Mas mabilis maubos ang margin for error ng infants, elderly, pregnant women, at kanino man may heart o kidney conditions kompara sa healthy adult.
+1. **Airflow.** Ang gumagalaw na hangin ay nag-e-evaporate ng pawis, at ang evaporation ang paraan ng katawan mo para talagang mag-cool down. Ang electric fan ay hindi bumababa ang temperatura ng kwarto — pinapabilis lang nito ang evaporation. Kapaki-pakinabang pa rin 'yun, pero tumitigil itong maging useful kapag sobrang taas na ng humidity at wala nang mapupuntahan ang moisture.
+2. **Hydration, steady at maaga.** Kung maghihintay ka hanggang sa mauhaw ka, huli ka na. Kinakain ng init ang tubig at electrolytes nang sabay — ang pagpapalit lang sa isa ang dahilan kung bakit ang mga "pero umiinom naman ako ng tubig" ay nauuwi pa rin sa pagkahilo.
+3. **Sino ang pinaka-at-risk.** Hindi pareho ang epekto ng init sa lahat ng nasa sambahayan. Mas mabilis mauubos ang margin for error ng mga sanggol, matatanda, buntis, at kahit sino na may heart o kidney conditions kumpara sa isang healthy adult.
 
-Ang lahat ng iba — cooling towels, timing ng chores, ano ang kakainin — tactics lang 'yun para masuporta ang tatlong bagay na 'to.
+Lahat ng iba pa — cooling towels, timing ng gawaing bahay, ano ang kakainin — mga taktika na lang para suportahan ang tatlong bagay na 'yun.
 
-## Ano ang gawin (at ano ang iwasan)
+## Ano ang dapat gawin (at ano ang hindi)
 
-**Basahin ang bulletin, gawing routine.** I-check ang heat index update ng <a href="https://www.pagasa.dost.gov.ph/" target="_blank" rel="noopener noreferrer">PAGASA</a> kung paanong ni-check mo ang storm signal. Kung Danger level ang forecast sa area mo, i-plan ang araw base dito: heavy chores sa madaling araw o after sunset, iwasan ang outdoor errands between 11 a.m. at 3 p.m.
+**Basahin ang bulletin, gawing routine.** I-check ang heat index update ng <a href="https://www.pagasa.dost.gov.ph/" target="_blank" rel="noopener noreferrer">PAGASA</a> kagaya ng pagche-check mo ng storm signal. Kung Danger level ang forecast sa area mo, i-plano ang araw base dito: mabibigat na gawaing bahay sa umaga o pagkalubog ng araw, iwasan ang outdoor errands sa pagitan ng 11 a.m. at 3 p.m.
 
-**Work with your house, hindi laban dito.** Buksan ang windows sa opposite sides ng bahay sa madaling araw at gabi para ma-flush out ang trapped heat, tapos isara ang curtains o blinds sa sun-facing side once tumaas na ang araw. Malaking tulong ang isang dark curtain na nag-block ng direct sun kaysa sa iniisip ng mga tao. Kung nasa high floor ka ng building at sira ang lift, tandaan mo — pataas umaakyat ang init. Ang top floor ng building na walang aircon ay pwedeng ma-several degrees hotter kaysa sa ground floor pag hapon na.
+**Makipagtulungan sa bahay mo, huwag kumontra.** Buksan ang windows sa magkabilang side ng bahay tuwing umaga at gabi para malabas ang naipong init, tapos isara ang curtains o blinds sa side na tinatamaan ng araw kapag tumaas na ang araw. Ang dark curtain na nagba-block ng direct sunlight ay mas malaking tulong sa isang kwarto kaysa sa inaasahan ng karamihan. Kung nasa high floor ka ng building at sira ang elevator, tandaan na umaakyat ang init — ang top floor ng un-airconditioned building ay puwedeng ilang degrees na mas mainit kaysa sa ground floor pagsapit ng hapon.
 
-**Palamigin ang tao, hindi lang ang room.** Ang damp towel sa likod ng leeg, wrists, o inside ng elbows ay pinapalamig ang dugo malapit sa skin faster kaysa akalain ng maraming tao. Ang lukewarm shower (hindi ice-cold — dahil nagagawa lang nitong mas mahirap para sa katawan mo) ang nagpapababa efficiently ng core temperature. Kung imposible ang shower, effective naman ang wet feet sa basin.
+**I-cool ang tao, hindi lang ang kwarto.** Ang basang tuwalya sa batok, wrists, o loob ng siko ay nagpapalamig ng dugo malapit sa balat nang mas mabilis kaysa sa iniisip ng karamihan. Ang lukewarm shower (hindi malamig na malamig — nagpapahirap lang 'yun sa katawan mo) ay epektibong nagpapababa ng core temperature. Puwede rin ang basang paa sa basin kapag hindi practical ang shower.
 
-**I-hydrate on a schedule, hindi on a feeling.** Konti-konti pero madalas, hindi 'yung isang malaking baso pag naalala mo lang. Idagdag ang isang pitik ng asin o oral rehydration mix kung sobra ang pagpawis mo buong araw — ang plain water lang during extreme heat ay pwede pang mag-dilute ng electrolytes mo.
+**Mag-hydrate base sa schedule, hindi sa pakiramdam.** Maliit na dami pero madalas, sa halip na isang malaking baso lang kapag naalala mo. Magdagdag ng kaunting asin o oral rehydration mix kung sobra ang pagpapawis mo buong araw — ang plain water lang habang extreme heat ay puwede pang mas ma-dilute ang electrolytes mo.
 
-**Kumain ng mas light, mas wet.** Ang fruits na high sa water content — watermelon, melon, cucumber — mas malaking tulong kaysa sa heavy rice meal sa tanghali. I-save ang mas heavy cooking para sa cooler hours; ang mainit na kusina ay nagdadagdag lang ng another heat source sa bahay.
+**Kumain ng mas magaan, mas may water content.** Mga prutas na mataas sa water content — watermelon, melon, cucumber — ay mas makakatulong kaysa sa mabigat na kanin tuwing tanghali. I-save ang mabibigat na pagluluto sa mas malamig na oras; ang mainit na kusina ay isa pang source ng init sa bahay.
 
-**Huwag mag-push through it.** Ang instinct na "tiyaga lang" sa housework o errands during Danger-level afternoon — 'yun mismo ang instinct na nagdudulot ng heat exhaustion. Walang task na worth gawin sa 2 p.m. na pwede namang gawin sa 6 a.m.
+**Huwag ipilit.** Ang instinct na "tiyaga lang" sa mga gawaing bahay o errands kapag Danger-level na ang hapon ay eksaktong instinct na nagdadala sa heat exhaustion. Walang task na sulit gawin nang 2 p.m. kung puwede naman itong gawin nang 6 a.m.
 
-## Ang double threat ng brownout during heatwave
+## Ang double threat ng brownout habang heat wave
 
-Ito ang scenario na actually pinaka-worried ako, dahil common 'to at underestimated: isang heat wave na nag-coincide sa [power outage](/power-outage/). Doon mismo tumataas ang demand ng grid — kapag lahat ng aircon at fans ay full blast — at 'yun mismo ang moment na dinadalaw ng brownouts. Bigla, ang isang cooling tool na actually inaandar ng maraming households — ang electric fan — mag-tahimik, exactly noong pinakamalala ang heat index.
+Ito ang scenario na talagang pinaka-nagpapaalala sa akin, dahil common ito at kadalasa'y na-uunderestimate: isang heat wave na sabay sa isang [power outage](/power-outage/). Pinakamataas ang demand sa grid eksaktong kapag lahat ng aircon at fan ay nakabukas nang full blast, at doon din talaga karaniwang nangyayari ang brownouts. Bigla na lang mawawala 'yung isang cooling tool na talagang inaasahan ng karamihan — ang electric fan — sa mismong oras na pinakamasama ang heat index.
 
-I-plan mo 'to specifically, hindi generically:
+I-plano ito nang specific, hindi general lang:
 
-- Magpanatili ng battery o hand-crank fan bilang backup — hindi luxury item 'to, plan B lang para sa hours na down ang grid.
-- Magpanatili ng stock ng frozen water bottles o ice packs sa freezer buong summer, hindi lang pag na-announce ang brownout. Double duty sila as instant cooling packs at as slow-melting drinking water.
-- Alamin mo ang pinakalamig na room sa bahay mo kapag walang power — usually ito ang ground-floor room na malayo sa direct sun, may tile floor kaysa carpet — at ilipat muna dito ang vulnerable family members.
-- Kung tagal ang outage, ang battery pack na kayang paandar ng small USB fan for a few hours ay mas worth it during heat wave kaysa sa parehong battery na ginagamit para mag-charge ng phones.
+- Magkaroon ng battery o hand-crank fan bilang backup — hindi ito luxury item, plano B lang para sa mga oras na walang kuryente.
+- Magkaroon ng stock ng frozen water bottles o ice packs sa freezer buong summer, hindi lang kapag may na-announce na brownout. Puwede itong gamitin bilang instant cooling packs at bilang unti-unting natutunaw na inuming tubig.
+- Alamin ang pinakamalamig na kwarto sa bahay mo kahit walang kuryente — kadalasan ay isang ground-floor room na hindi tinatamaan ng direct sun, may tiles at hindi carpet ang sahig — at doon muna dalhin ang mga vulnerable na miyembro ng pamilya.
+- Kung matagal ang outage, mas malaking tulong ang power bank na kayang magpatakbo ng maliit na USB fan nang ilang oras kaysa sa parehong battery na ginagamit lang para mag-charge ng phone.
 
-Isang inconvenience ang power outage during typhoon season. Isang health risk ang power outage during Danger-level heat day, especially para sa infants at elderly. Trato dito nang ganon.
+Ang power outage habang typhoon season ay isang abala lang. Ang power outage habang Danger-level na ang init ay health risk na, lalo na para sa mga sanggol at matatanda. Trato ito nang naaayon.
 
 ## Ang gear na makakatulong
 
-Wala namang kumplikado o mahal dito. Ilang categories na genuinely worth it during summer:
+Wala namang kailangang maging complicated o mahal dito. May ilang categories na talagang worth it sa summer:
 
-- **Battery o rechargeable fans** para sa hours na down ang grid — check ang [power outage](/power-outage/) guide namin para sa iba pang dapat kasama sa parehong kit.
-- **Reliable oral rehydration supply** — matatagalan ang sachets ng years at hindi masyadong nag-take up ng space, worth having bago pa magsimula ang summer.
-- **Basic digital thermometer** para sa pag-check sa kanino man na may signs ng overheating, particularly children at elderly.
-- **Cooling towels o stack ng plain hand towels** na laging ready, plus spray bottle para sa quick mist kung hindi practical ang full towel soak.
-- **Window fan o cross-ventilation setup** na na-plan bago dumating ang init, hindi improvised habang nangyayari na.
+- **Battery o rechargeable fans** para sa mga oras na walang kuryente — tingnan ang aming [power outage](/power-outage/) guide para sa iba pang dapat kasama sa parehong kit.
+- **Isang reliable na oral rehydration supply** — matagal magtagal ang mga sachet at halos walang kinukuhang space, worth it na ihanda bago pa man magsimula ang summer.
+- **Isang basic digital thermometer** para i-check ang kahit sino na nagpapakita ng sintomas ng overheating, lalo na ang mga bata at matatanda.
+- **Cooling towels o stack ng plain hand towels** na laging ready, plus spray bottle para sa mabilis na mist kapag hindi practical ang full towel soak.
+- **Window fan o cross-ventilation setup** na naplano bago pa dumating ang init, hindi improvised habang nangyayari na ito.
 
-Hindi namin ginagawang priority ang mga gimmicky "cooling gadgets." Karamihan sa gumagana talaga sa Filipino home during heat wave ay unglamorous: tubig, airflow, lilim, at timing.
+Hindi kami naghahabol ng gimmicky na "cooling gadgets." Karamihan sa gumagana sa tahanang Pilipino habang heat wave ay simple lang: tubig, airflow, lilim, at timing.
 
-## Common mistakes
+## Mga karaniwang pagkakamali
 
-**Tratuhin ang init bilang background condition instead of forecastable event.** Ang heat index bulletin ng <a href="https://www.pagasa.dost.gov.ph/" target="_blank" rel="noopener noreferrer">PAGASA</a> ay exists precisely para hindi ka na mag-guess. I-check mo.
+**Pagtingin sa init bilang background condition sa halip na isang bagay na na-fo-forecast.** Ang heat index bulletin ng <a href="https://www.pagasa.dost.gov.ph/" target="_blank" rel="noopener noreferrer">PAGASA</a> ay eksaktong para dito, para hindi ka na mag-guess. I-check mo.
 
-**Umaasa lang sa isang electric fan without backup plan.** Okay lang sa normal day, pero real gap ito the moment na dumating ang brownout sa isang Danger-level afternoon.
+**Pag-asa lang sa isang electric fan nang walang backup plan.** Okay lang 'yun sa normal na araw, pero malaking gap 'yun sa mismong sandaling tumama ang brownout sa isang Danger-level na hapon.
 
-**Nagbibigay lang ng plain water during heavy sweating.** Parang responsible choice ito, pero importante ang electrolytes kasing kahalaga ng volume once na-oras-oras ka nang pinagpapawisan.
+**Pagbibigay ng plain water lang habang sobra ang pagpapawis.** Parang tama ang ginagawa mo, pero mahalaga rin ang electrolytes kasing importante ng volume kapag ilang oras ka nang pinagpapawisan.
 
-**Underestimating ang pregnant women at elderly.** Both groups ay less efficient sa pag-regulate ng body temperature, at pwedeng mas mabilis mag-escalate ang symptoms kaysa sa healthy adult. I-check sila specifically, huwag mag-assume na magsasalita sila.
+**Pag-underestimate sa buntis at matatanda.** Parehong grupo na mas mababa ang efficiency sa pag-regulate ng body temperature, at puwedeng mas mabilis lumala ang sintomas kaysa sa healthy adult. I-check sila specifically, huwag ipagpalagay na sasabihin nila kung may problema.
 
-**Paghintay kung "gumaganda ba on its own."** Ang confusion, hot dry skin, sobrang taas na body temperature, o taong tumigil sa pagpawis kahit mainit ay hindi signs na dapat i-wait out.
+**Paghihintay kung "gagaling naman siya nang mag-isa."** Ang pagkalito, mainit at tuyong balat, sobrang taas na body temperature, o taong tumigil sa pagpapawis kahit mainit ay hindi mga sintomas na dapat hintaying lumipas.
 
-## Kung may nagpakita ng heat stroke symptoms
+## Kung may nagpapakita ng sintomas ng heat stroke
 
-Ito ang isang point sa guide na 'to na gusto kong sabihin plainly, without hedging: **medical emergency ang heat stroke.** Hindi 'to pareho sa ordinary heat exhaustion, at hindi ito nawawala sa tubig at rest lang.
+Ito 'yung isang punto sa guide na ito na gusto kong sabihin nang diretso, walang paligoy-ligoy: **ang heat stroke ay isang medical emergency.** Hindi ito kaparehas ng ordinaryong heat exhaustion, at hindi ito nawawala sa tubig at pahinga lang.
 
-Bantayan ang confusion, slurred speech, hot and dry (o unexpectedly clammy) skin, sobrang taas na body temperature, rapid pulse, o loss of consciousness. Kung makita mo 'to:
+Bantayan ang pagkalito, hindi malinaw na pagsasalita, mainit at tuyong balat (o kaya biglang naging malamig ang pawis), sobrang taas na body temperature, mabilis na pulso, o pagkawala ng malay. Kung makita mo ito:
 
 1. Tumawag agad sa 911.
-2. Ilipat ang tao sa lilim o indoors, at simulan agad ang pagpapalamig — huwag hintayin ang tulong bago simulan. Damp cloths sa neck, armpits, groin; lukewarm shower kung conscious siya at kaya tumayo.
-3. Huwag magbigay ng fluids kung confused o unconscious ang tao — risk ng choking.
-4. Panatilihing binabantayan hanggang dumating ang tulong. Bilis lumala ng heat stroke.
+2. Ilipat ang tao sa lilim o sa loob ng bahay, at simulan agad ang pag-cool down — huwag maghintay na dumating ang tulong bago simulan ito. Basang tela sa leeg, kilikili, at singit; lukewarm shower kung malay siya at kayang tumayo.
+3. Huwag magbigay ng fluids kung malito o walang malay ang tao — risk ng pagkabulunan.
+4. Ipagpatuloy ang pag-monitor hanggang dumating ang tulong. Puwedeng mabilis lumala ang heat stroke.
 
-Walang gear na papalit sa pagdala ng tao sa proper medical care agad. Ang towels at fans sa guide na ito ay para lang sa mga minuto bago at habang dumadating ang tulong — hindi substitute dito.
+Walang gear na makakapalit sa pagdadala ng tao sa tamang medical care agad. Ang mga tuwalya at fan sa guide na ito ay para lang sa mga minutong bago at habang papunta ang tulong — hindi ito kapalit nito.
 
 ## Isang calm na pagtatapos
 
-Hindi nag-aanounce ang heat waves the way ginagawa ng typhoon — walang signal number, walang warning na magboard-up ng windows. That's exactly why kailangan nila ng kanilang sariling quiet discipline: i-check ang bulletin, i-plan ang mainit na oras around sa malamig, panatilihing nauna ang tubig at airflow sa pangangailangan instead of hahabulin pagkatapos. Wala namang kumplikado dito. Kailangan lang ito maging habit bago dumating ang Danger days, hindi habang nangyayari na.
+Hindi nagpapaalam ang heat wave kagaya ng typhoon — walang signal number, walang warning para mag-board up ng windows. Kaya nga kailangan nito ng sarili nitong tahimik na disiplina: i-check ang bulletin, i-plano ang mainit na oras sa paligid ng malamig na oras, panatilihing nauuna ang tubig at airflow kaysa hanapin ito pagkatapos. Wala namang complicated dito. Kailangan lang itong maging habit bago pa dumating ang Danger days, hindi habang nangyayari na ito.
