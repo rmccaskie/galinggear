@@ -251,6 +251,23 @@ const clientStrings = {
             a.href = '#free-downloads'
             a.setAttribute('data-toc-link', 'free-downloads')
             a.textContent = i18n.navLabel ?? 'Free downloads'
+            // Astro scoped styles only match elements with the build-time
+            // data-astro-cid-* attribute. Copy it from a sibling so the
+            // counter-increment + ::before number + link styling all apply
+            // to the runtime-injected entry (same class of fix as the
+            // gg-downloads is:global switch).
+            const sibLi = tocList.querySelector('li')
+            const sibA = sibLi?.querySelector('a')
+            if (sibLi) {
+              for (const attr of Array.from(sibLi.attributes)) {
+                if (attr.name.startsWith('data-astro-cid-')) li.setAttribute(attr.name, attr.value)
+              }
+            }
+            if (sibA) {
+              for (const attr of Array.from(sibA.attributes)) {
+                if (attr.name.startsWith('data-astro-cid-')) a.setAttribute(attr.name, attr.value)
+              }
+            }
             li.appendChild(a)
             tocList.appendChild(li)
             // Let the page's scroll-spy pick up the new entry + target.
