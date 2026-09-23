@@ -13,6 +13,9 @@ interface PublicDocument {
   title: string
   description: string
   pdfUrl: string
+  /** Taglish PDF URL when a Taglish variant exists; null otherwise (reader
+   *  falls back to the English pdfUrl). */
+  pdfUrlTl: string | null
   sort: number
   createdAt: string
 }
@@ -37,7 +40,7 @@ export const GET: APIRoute = async ({ params }) => {
     const supabase = createSupabaseClient()
     const { data, error } = await supabase
       .from('article_documents')
-      .select('id, doc_type, title, description, pdf_url, sort, created_at')
+      .select('id, doc_type, title, description, pdf_url, pdf_url_tl, sort, created_at')
       .eq('article_slug', slug)
       .eq('status', 'ready')
       .not('pdf_url', 'is', null)
@@ -57,6 +60,7 @@ export const GET: APIRoute = async ({ params }) => {
         title: String(r.title ?? 'Download'),
         description: String(r.description ?? ''),
         pdfUrl: String(r.pdf_url),
+        pdfUrlTl: typeof r.pdf_url_tl === 'string' && r.pdf_url_tl ? r.pdf_url_tl : null,
         sort: typeof r.sort === 'number' ? r.sort : 0,
         createdAt: String(r.created_at ?? ''),
       }))
