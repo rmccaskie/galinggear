@@ -9,6 +9,18 @@ featured: false
 status: active
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1790160852090-l76ked.png'
+shareImage: 'https://images.galinggear.com/articles/generated-1790160852090-l76ked.png'
+social:
+  facebook: "When the power's out and the signal's down, GCash and Maya won't help you buy rice, water, or medicine. \U0001F4B5 Our latest guide walks you through how much emergency cash to keep at home, why small bills matter more than big ones, and how to store it safely until you actually need it. Read it before the next brownout or storm catches you cashless.\nhttps://galinggear.com/en/articles/emergency-cash-at-home-how-much-to-keep-how-to-store-it-and-when-to-use-it/"
+  x: >-
+    No power, no signal, no GCash. Does your household have backup cash for that
+    night? Here's how much to keep, in what bills, and how to store it safely.
+    https://galinggear.com/en/articles/emergency-cash-at-home-how-much-to-keep-how-to-store-it-and-when-to-use-it/
+    #TyphoonReady #EmergencyPrep
+  instagram: "Palit is Maya, groceries are GCash, load is auto-debit — until the brownout hits and none of that works. \U0001F4A1➡️\U0001F56F️\n\nA small cash envelope at home is one of the simplest, most overlooked parts of disaster prep. Our new guide breaks down how much to set aside, why small bills beat big ones when the sari-sari store can't break a ₱500, and how to store your cash safely with the rest of your go-bag essentials.\n\nNo guesswork, no hype — just a practical system your household can actually stick to.\n\nLink in bio \U0001F517\n\n#EmergencyPrep #GoBagPH #TyphoonSeason #DisasterReady #PinoyPrepper #FloodReady #HouseholdSafety #PrepperPH #StaySafePH #PracticalPrepping"
+  facebookTl: "Tapat na tanong: kung mag-brownout ngayon at down ang GCash mo, may pera ka ba para sa kanto store? \U0001F605 Hindi ito about pagbabago ng habit mo — dagdag lang na safety net na small bills, ready sa go-bag, para hindi ka mahirapan bumili ng bigas, tubig, o gamot kapag walang signal o kuryente. Basahin kung magkano ang itabi, paano i-store nang tama, at kailan lang talaga dapat galawin.\nhttps://galinggear.com/articles/emergency-cash-at-home-how-much-to-keep-how-to-store-it-and-when-to-use-it/"
+  xTl: "Brownout + walang GCash signal = walang paraang bumili ng bigas? May fix: emergency cash envelope sa bahay. Small bills, tamang amount, tamang storage. \U0001F4B8\nhttps://galinggear.com/articles/emergency-cash-at-home-how-much-to-keep-how-to-store-it-and-when-to-use-it/ #TyphoonReady #GalingGear"
+  instagramTl: "Real talk: paano ka babayad kapag walang kuryente, walang signal, at closed ang ATM? Hindi lahat ng sari-sari store may GCash QR pag brownout, at wala talaga silang sukli sa ₱1,000 mo. Kaya bago pa dumating ang bagyo, i-set up mo na yung simpleng cash envelope sa bahay — tamang amount, tamang bills, tamang lagayan. Simple lang pero laking tulong pag talagang kailangan.\n\nLink in bio \U0001F517\n\n#GalingGear #EmergencyPrep #TyphoonSeason #DisasterPreparedness #PinoyPrepared #FloodReady #GoBag #EmergencyCash #TaglishTips #PamilyangHanda #BagyoReady #PhilippinesPrep"
 ---
 
 ## What you'll be able to do — and why it matters
