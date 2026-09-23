@@ -7,28 +7,9 @@ scenario: typhoon-season
 publishedAt: '2026-09-20'
 featured: false
 status: active
-updatedAt: '2026-09-22'
+updatedAt: '2026-09-23'
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789896138120-1eqx1r.png'
-shareImage: 'https://images.galinggear.com/articles/generated-1789896138120-1eqx1r.png'
-social:
-  facebook: >-
-    When a typhoon knocks out power, the outage almost always outlasts the storm
-    itself — think days, not hours. Our new guide breaks down how to size a
-    power station in watt-hours, ration phone charge properly, and keep a light
-    source going for every family member through a full 72-hour stretch. ⚡ Worth
-    a read before the next signal goes up.
-
-    https://galinggear.com/en/articles/powering-through-a-multi-day-typhoon-outage-the-72-hour-plan/
-  x: >-
-    A typhoon outage often outlasts the storm itself. Here's how to plan for 72
-    hours: power station sizing, phone charge rationing, and safe lighting.
-    https://galinggear.com/en/articles/powering-through-a-multi-day-typhoon-outage-the-72-hour-plan/
-    #TyphoonPrep #PowerOutage
-  instagram: "Power out for days, not hours? That's the real typhoon scenario many Filipino households face once a strong system passes through. Our latest guide walks you through the 72-hour plan: how to size a power station using watt-hours, how to ration phone charge so it actually lasts, and how to keep a light source working for everyone at home. Practical, no-nonsense prep — because waiting it out should feel like a plan, not a scramble. Link in bio \U0001F517\n\n#TyphoonPrep #PowerOutage #EmergencyPreparedness #PhilippinesTyphoon #DisasterReady #PowerStation #PrepperPH #StaySafePH #GalingGear #72HourPlan"
-  facebookTl: "Alam mo ba na mas matagal pa rin yung outage kaysa sa bagyo mismo? Minsan 2-5 days pa 'yan bago mabalik ang linya, kaya ang planning ay dapat 72 hours, hindi lang isang gabi. May tips kami dito on sizing your power station at paano i-ration ang phone charge para hindi ka mapikon by day two. \U0001F50B\nhttps://galinggear.com/articles/powering-through-a-multi-day-typhoon-outage-the-72-hour-plan/"
-  xTl: "Brownout na 3 days? Kaya mo 'yan kung ready ka. Panuorin ang 72-hour power plan para sa typhoon season \U0001F447 https://galinggear.com/articles/powering-through-a-multi-day-typhoon-outage-the-72-hour-plan/ #TyphoonReady #PrepareNaTayo"
-  instagramTl: "Pag tumagal ang bagyo, tumagal din ang outage — minsan 2 to 5 days walang linya. Hindi na sapat ang \"kaya naman 'to isang gabi\" na mindset. Dito namin binreak down kung gaano dapat lakas ng power station mo, paano i-ration nang tama ang phone charge, at paano gamitin nang ligtas ang lanterns kung 72 hours ang laban. Practical lang, walang gimmick, para hindi ka madale sa dilim. Link in bio \U0001F517\n\n#TyphoonPH #PowerOutage #EmergencyPrep #GalingGear #BagyoPH #PrepareNaTayo #PhilippinesTyphoon #PowerStation #EmergencyReady #PinoyPrep #DisasterReady #TyphoonSeason"
 ---
 
 ## The situation
