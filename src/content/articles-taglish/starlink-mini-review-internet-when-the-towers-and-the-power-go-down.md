@@ -1,110 +1,110 @@
 ---
-title: 'Starlink Mini review: internet kapag namatay pareho ang tower at kuryente'
+title: 'Starlink Mini review: internet kahit walang kuryente ang mga tower'
 description: >-
-  Isang maliit na dish na nag-keep online ng buong household kapag putol na ang
-  local lines — basta solved mo na muna ang power problem. Honest notes mula sa
-  isang Philippine wet season.
-sourceHash: f547adb621e8750b
+  Starlink Mini review: pinapanatiling online ang mga Pinoy household kahit
+  tinamaan ng brownout ang typhoon at cell towers. Honest specs, power needs, at
+  setup notes para sa tag-ulan.
+sourceHash: 9b9d031073925f2e
 railItems:
   - type: image
     assetId: ef436491-564b-4f31-b78f-e590e2b14c34
     anchor: overview
-    label: Sabay na nag-iimpake
+    label: Pag-pack nang magkasama
     image: 'https://images.galinggear.com/library/generated-1789813245184-t6qxbl.png'
     alt: >-
-      Isang Pilipinong mag-asawa na nakaluhod sa sahig ng apartment katabi ang
-      dalawang bukas na go bag na may nakalatag na damit, mga bote ng tubig,
-      torch at first-aid pouch.
+      Isang Pilipinong mag-asawa na nakaluhod sa sahig ng apartment sa tabi ng
+      dalawang bukas na go bag na may lamang damit, tubig, torch, at first-aid
+      pouch.
     caption: >-
-      Dalawang bag, isang shared na plano: inilalatag muna ang lahat sa sahig
-      bago ibalik sa loob.
+      Dalawang bag, iisang plano: inilatag muna lahat sa sahig bago ibalik sa
+      loob.
 railSourceHash: a797e8767d57d84d
 ---
 
 ## Overview
 
-Ang Starlink Mini ay isang flat satellite dish, kasing-laki ng laptop, na may built-in router na. One cable in, Wi-Fi out. Binili namin ito bago ang 2024 storm season kasi sobra na ang gabi namin after ng typhoon na tinitingnan lang ang phone na one bar of nothing, hinihintay ang text ng family na hindi naman darating.
+Ang Starlink Mini ay isang flat satellite dish na kasing-laki ng laptop, may built-in router na. Isang cable papasok, Wi-Fi palabas. Binili namin ito bago dumating ang 2024 storm season kasi sobra na 'yung ilang gabi after ng typhoon na iisang bar lang ang signal ng phone, naghihintay ng text mula sa pamilya na hindi naman dumadating.
 
-Ang dahilan kung bakit nasa site na ito: simple lang — ito lang ang gear na meron ako na hindi nagmamalasakit kung may kuryente ang barangay, kung nakadapa sa kalsada ang fibre line sa kanto, o kung on its last hour of battery na ang pinakamalapit na cell tower. Ang pinapansin lang nito, kung nakikita niya ang sky at kung may pakain kang kuryente.
+Ang dahilan kung bakit nandito ito sa site na ito ay simple: ito lang ang gear ko na hindi nagpapaapekto kung may kuryente ba ang barangay, kung nakalatag ba sa daan ang fibre line sa kanto, o kung nasa huling oras na ng battery ang pinakamalapit na cell tower. Ang tanging concern lang nito ay kung nakikita ba nito ang langit at kung mapapakain mo ba ito ng kuryente.
 
-Yung second condition, doon na po-pocus ang buong review na ito. Lahat sa baba, about doon.
+Ang second condition na 'yun ang buong review, actually. Lahat ng nasa baba ay tungkol doon.
 
 ## Bakit importante ito sa Philippine conditions
 
-Kapag itinaas ni PAGASA ang signal number three at dumating na talaga ang hangin, tatlong bagay ang usually nauna mag-fail. Una, mawawalan ng mains power. Sunod, mawawalan ng fixed broadband, kasi same poles din ang carrier ng dalawa. Tapos, mobile data — usually few hours later, kapag naubos na ang backup batteries ng tower at hindi na maabot ang generator para ma-refuel.
+Kapag itinaas ng PAGASA ang signal number three at dumating na talaga ang hangin, tatlong bagay ang karaniwang mag-fa-fail, in order. Una, mawawalan ng kuryente. Susunod, ang fixed broadband, kasi parehong poste ang dinadaanan ng dalawa. Tapos ang mobile data, karaniwang ilang oras pa ang lilipas, kapag naubos na ang backup battery ng tower at hindi na-refuel ang generator.
 
-Ang third failure na 'yan, 'yun ang hindi handa ang mga tao. Assumption ng maraming families, kapag nawalan ng ilaw, may load at signal pa rin. Sometimes, oo. Pero after ng worst part, sa mga low-lying areas at towns na malapit sa track, madalas hindi na — at malalaman mo lang 'yun sa exact moment na kailangan mong sabihin sa nanay mo na buhay ka pa.
+'Yung third failure na 'yun ang hindi inaasahan ng mga tao. Karamihan ng pamilya, akala nila kapag namatay ang ilaw, may load pa rin sila at may signal. Minsan, oo nga. Pero pagkatapos ng pinakamasama, sa mga low-lying area at mga bayan na pinakamalapit sa track, kadalasan wala na — at doon mo malalaman, sa eksaktong sandaling kailangan mong sabihin sa nanay mo na buhay ka pa.
 
-Ang Starlink Mini, na-sidestep niya ang local part ng chain na 'yan. Kumokontak siya sa satellites, at ang mga satellites na 'yun, kumokontak sa ground stations sa ibang lugar talaga. Kung dark ang Metro Manila, hindi 'yun makakaapekto sa dish na nasa balcony mo sa Quezon City. Kung ikaw ay nasa sixteenth floor na walang lift at walang tubig, may paraan ka pa rin para maabot ang labas.
+Ang Starlink Mini, na-bybypass nito 'yung local na bahagi ng chain na 'yun. Nakikipag-usap ito sa mga satellite, at ang mga satellite na 'yun ay nakikipag-usap sa ground stations sa ibang lugar. Kung madilim ang Metro Manila, hindi nito pinipigilan ang dish sa balcony mo sa Quezon City na gumana. Kung nasa ika-16 na palapag ka, walang lift at walang tubig, may paraan ka pa rin para maabot ang labas.
 
-Hindi ito magic, at hindi ko ito pagkukunwarian. Kailangan niya ng kuryente, at kailangan niya ng clear view ng sky. Pero solvable mo 'yun in advance, habang naka-upo ka sa kitchen table mo — mas maganda pa 'yun kompara sa downed cell tower.
+Hindi ito magic, at hindi ko ito ipapakita bilang ganoon. Kailangan nito ng kuryente, at kailangan nito ng malinaw na view ng langit. Pero mga problemang 'yun ay masosolusyunan mo in advance, habang nakaupo sa dining table mo, na mas malaki kaysa sa masasabi mo sa isang bagsak na cell tower.
 
 ## Key specs: ano ang makukuha mo
 
-Ang kit ay ang dish mismo, isang built-in kickstand sa likod, mains power supply, at cable. That's it. Wala nang separate router box na kailangan mong hanapan ng shelf — ang Wi-Fi, andun na sa loob ng dish.
+Ang kit ay ang dish mismo, isang built-in kickstand sa likod, isang mains power supply, at isang cable. 'Yun na. Walang hiwalay na router box na kailangan mong hanapan ng shelf — nasa loob ng dish na ang Wi-Fi.
 
 Ang mga important numbers, na-translate:
 
-**Power draw, mga 25 to 40 watts.** Sa simpleng usapan, isang 20,000 mAh power bank (mga 74 watt-hours ng real usable energy) ang mag-run nito for around two hours. Isang 300 watt-hour portable power station, makukuha mo ang seven to nine hours. Kung buong araw mong patatakbuhin nonstop, kailangan mo ng proper battery, at ideally, solar panel. I-plano mo ito bago ka bumili, hindi after.
+**Power draw, mga 25 hanggang 40 watts.** Sa madaling salita, isang 20,000 mAh power bank (mga 74 watt-hours ng usable energy) ay tatakbo nito nang mga dalawang oras. Ang 300 watt-hour portable power station ay magbibigay sa'yo ng pito hanggang siyam na oras. Kung gusto mong patakbuhin ito continuously buong araw, kailangan mo ng proper battery at ideally isang solar panel. I-plano mo ito bago ka bumili, hindi pagkatapos.
 
-**Tumatakbo sa 12 to 48 volts DC.** Ito ang quietly useful part. Direktang tumatakbo ito off ng car battery gamit ang tamang cable, off ng DC output ng portable power station, o off ng 100 W USB-C power bank na may suitable adapter. Hindi ka nakatali sa mains at inverter.
+**Tumatakbo sa 12 hanggang 48 volts DC.** Ito 'yung quietly useful na part. Tatakbo ito diretso sa car battery gamit ang tamang cable, sa DC output ng portable power station, o sa 100 W USB-C power bank na may angkop na adapter. Hindi ka nakatali sa mains at inverter.
 
-**IP67 rated.** Sealed against dust, survives na maisawsaw briefly. Hindi problema ang ulan para sa hardware. Problema ang ulan para sa signal, na ibang usapan — see below.
+**IP67 rated.** Sealed laban sa alikabok, kaya nitong ma-submerge nang saglit. Hindi problema ang ulan para sa hardware. Ang problema ng ulan ay sa signal, na iba na 'yun — tingnan sa baba.
 
-**Mga 1.1 kg ang dish, konting higit sa 1.5 kg ang whole kit.** Kasya flat sa rucksack. Importante 'yun kung ever mong plano na umalis kasama ito, hindi lang mag-shelter kasama ito.
+**Mga 1.1 kg ang dish, mahigit 1.5 kg ang buong kit.** Kasya ito nang patag sa rucksack. Importante 'yun kung ang plano ay umalis kasama ito, hindi lang mag-shelter kasama ito.
 
-**Typical speeds dito: 50 to 150 Mbps down, 10 to 20 Mbps up, latency sa 30 to 60 ms range.** Sobra na para sa video calls, maps, news, at pag-upload ng photos ng ginawa ng flood. Bababa ang speeds kapag busy ang network.
+**Typical speeds dito: 50 hanggang 150 Mbps download, 10 hanggang 20 Mbps upload, latency sa 30 hanggang 60 ms range.** Sapat na sapat para sa video calls, maps, news, at pag-upload ng mga litrato ng ginawa ng baha. Bumababa ang speed kapag busy ang network.
 
-**Kailangan mo ng active plan.** Ang hardware lang, walang gagawin. Ang Roam plans, na 'yung mga pinaka-hangad ng mga preparedness-minded na tao kasi gumagana anywhere, ay mga ₱1,600 kada buwan for a 50 GB allowance at mga ₱4,000 kada buwan for unlimited noong last ko itong na-check. Puwede mong i-pause at i-unpause ang Roam month to month — 'yun ang honest way para mag-own ka nito kung pang-wet season lang naman ang gusto mo.
+**Kailangan mo ng active plan.** Walang magagawa ang hardware mag-isa. Ang Roam plans, na siyang gusto ng karamihan ng mga preparedness-minded dahil gumagana ito kahit saan, ay mga ₱1,600 kada buwan para sa 50 GB allowance at mga ₱4,000 kada buwan para sa unlimited noong huli kong tiningnan. Puwede mong i-pause at i-unpause ang Roam kada buwan, na siyang honest na paraan para magkaroon nito kung para lang ito sa tag-ulan.
 
-## Paano ang performance nito
+## Paano ito mag-perform
 
-Ang first-time setup, mga ten minutes — most of which, updating ang app. After that, ang deployment, under two minutes na lang: itayo mo, i-point roughly sa open sky, i-plug in, hintayin niyang mahanap ang sarili niya. May obstruction checker ang app na gumagamit ng phone camera para sabihin sayo kung gagana ang chosen spot mo. Gamitin mo 'to. Ang trees at building overhangs, ang totoong kalaban — hindi ang distance.
+Ang first setup ko ay umabot ng mga sampung minuto, karamihan doon ay 'yung app na nag-a-update ng sarili. Pagkatapos nito, ang pag-deploy ay wala pang dalawang minuto: itayo mo, i-point sa open sky, i-plug in, hintayin na mahanap ang sarili nito. May obstruction checker ang app na gumagamit ng phone camera para sabihin sa'yo kung gagana ang napili mong spot. Gamitin mo ito. Mga puno at building overhangs ang totoong kaaway, hindi ang distansya.
 
-Sa balcony namin, na about two-thirds visible ang sky, may brief dropouts kami of a few seconds every hour or so kapag lumipas ang satellites sa likod ng building. Nakakainis sa video call, invisible kapag nagmemensahe. Kapag lumabas sa open ground, rock solid na.
+Sa balcony namin, na mga two-thirds na visible ang langit, may brief dropouts kami na ilang segundo kada oras habang dumadaan ang mga satellite sa likod ng building. Nakakainis sa video call, hindi mo mapapansin sa messaging. Kapag lumipat sa open ground, rock solid ito.
 
-Ang heavy rain, ang honest limitation. Sa thickest rain bands ng passing storm — 'yung uri na hindi mo makita ang next building — bumababa ang throughput at magkaka-dropouts ka ng one to two minutes. Babalik naman. Sa experience ko, hindi ito nag-down for an entire storm, pero hindi ko ipapangako ang stable video call sa height nito. Nakakalusot ang text messages. Usually, 'yun ang importante.
+Ang malakas na ulan ang honest na limitation. Sa pinakamakapal na rain bands ng pumapasok na bagyo — 'yung tipo na hindi mo na makita ang kasunod na building — bumababa ang throughput at magkakaroon ka ng dropouts na isa hanggang dalawang minuto. Babalik naman ito. Sa experience ko, hindi pa ito naka-total down sa buong bagyo, pero hindi ko ma-promise sa'yo ang stable video call sa pinakamasama nitong bahagi. Nakakapasa ang mga text message. Karaniwan, 'yun naman ang importante.
 
-Ang wind, hardware problem, hindi signal problem. Magaan ang kickstand at ang dish ay flat panel — sabi mo na, layag. Weighted down namin ang amin gamit ang sandbag at strap sa kickstand. Kapag genuinely destructive na ang wind, dalhin mo sa loob at ibalik na lang pagkatapos ng worst part. Walang makukuha kung idonate mo sa neighborhood.
+Ang hangin ay hardware problem, hindi signal problem. Magaan ang kickstand at flat panel ang dish, ibig sabihin, parang layag ito. Ang amin, nakalagay na may sandbag na pabigat at may strap sa kickstand. Kung genuinely destructive ang hangin, ilagay mo ito sa loob at ibalik mo lang pagkatapos ng pinakamasama. Walang makukuha kung ipapamigay mo na lang ito sa neighborhood.
 
-Ang power side, dito madalas nadedepensa ang mga tao. Kami, tumatakbo kami off ng 500 Wh power station, na comfortably nagbibigay ng over a day ng on-and-off use kung hindi mo iiwan ng gabi na tumatakbo. May folding solar panel na nag-top-up nito during the breaks in the cloud. Kung wala ang chain na 'yun, ang Mini, isang 40-watt hole sa battery mo, at ma-offline ka na by the second evening.
+Sa side ng power, doon karamihan na-stuck. Kami, pinapatakbo namin ang sa amin gamit ang 500 Wh power station, na nagbibigay ng comfortably mahigit isang araw ng on-and-off use kung hindi mo ito iiwang tumatakbo buong gabi. May folding solar panel na nagcha-charge nito sa mga break sa ulap. Kung wala 'yung chain na 'yun, ang Mini ay isang 40-watt na butas sa battery mo at ma-o-offline ka na by the second evening.
 
-Sa search-and-rescue, hindi kami nagbubuo ng comms plan around a single path — may radyo ka, may phone ka, at may agreed time and place kung sakaling parehong mabigo. Same logic dito. Ang Mini, excellent primary path. Hindi dapat ito ang only path mo. Panatilihin ang isang charged phone na may SIM ng second network, at usapan na ninyo ngayon na ng family kung saan magkikita at kailan magcheck-in, para walang safety na naka-depende sa isang dish na naghahanap ng satellite.
+Sa search-and-rescue, hindi kami nagbase ng comms plan sa isang path lang — may dala kang radio, dala mong phone, at may napagkasunduan kayong oras at lugar kung sakaling parehong mabigo. Ganito rin ang logic dito. Ang Mini ay isang excellent primary path. Hindi dapat ito ang tanging path mo. Magdala ng charged phone na may SIM ng ibang network, at pagkasunduan na ng pamilya kung saan kayo magkikita at kailan kayo mag-check-in, para 'di nakadepende ang safety ng sinuman sa isang dish na naghahanap ng satellite.
 
 ## Pros and cons
 
-Nasa product card sa baba ang short version ng dalawa. Ang longer version: gumagana ang bagay na ito, gumagana ito kapag hindi gumagana ang local infrastructure, at maliit lang siya kaya hindi lifestyle decision ang pag-own nito. Sa kabilang side, mahal bilhin, may cost every month na active mo ito, at nagconvert ang power problem mo into a bigger power problem.
+Ang short version ng dalawa ay nasa product card sa baba. Ang mas mahabang version: gumagana ang bagay na ito, gumagana ito kapag hindi gumagana ang local infrastructure, at maliit lang na hindi na lifestyle decision ang pagmamay-ari nito. Laban dito, mahal itong bilhin, may bayad ito buwan-buwan habang active mo ito, at kina-convert nito ang power problem mo sa mas malaking power problem.
 
 ## Para kanino ito
 
-Para sa mga family na na-sort na ang tubig, ilaw, at battery, at natuklasan na ang missing piece ay information — kung passable ang daan, kung safe ang mga kamag-anak sa probinsya, kung inaasahan ka bukas sa office. Para sa mga taong remote work at hindi afford na mawalan ng connection for three days after every storm. Sinuman na nakatira sa lugar na madalas mawalan ng connectivity kaysa bihira — na sa bansang ito, marami namang barangay ang ganyan.
+Para sa mga pamilyang naayos na ang tubig, ilaw, at battery, at nadiskubre nilang ang kulang ay information — kung dadaanan pa ba ang daan, kung ligtas ba ang mga kamag-anak sa probinsya, kung inaasahan ka ba bukas sa opisina. Para sa mga taong remote ang trabaho at hindi kayang mag-offline nang tatlong araw kada bagyo. Kahit sino na nakatira sa lugar na regular nawawalan ng connectivity kaysa bihira, na sa bansang ito ay maraming barangay.
 
-Bagay din ito sa mga taong pumupunta sa probinsya, kung saan wala man lang fixed line na mawala in the first place.
+Bagay din ito sa mga taong pumupunta sa probinsya, kung saan wala ngang fixed line na mawawala sa una.
 
-## Para kanino hindi ito bagay
+## Para kanino ito hindi
 
-Kung wala ka pang decent power station o malaking power bank, bilhin mo muna 'yun. Ang Starlink Mini na walang pagpapatakbuhan, mahal na paperweight lang — at nakita ko na 'yun mismong nangyari sa neighbor namin.
+Kung wala ka pang magandang power station o malaking power bank, bilhin mo muna 'yun. Ang Starlink Mini na walang pagpapatakbuhan ay isang mahal na paperweight, at nakita ko na 'yun mismo mangyari sa isang kapitbahay.
 
-Kung short lang ang outages mo — few hours ng brownout, intact ang network — hindi mo kailangan ito. Kaya na ng phone mo ang trabaho.
+Kung maikli lang ang outages mo — ilang oras na brownout, buo pa rin ang network — hindi mo kailangan nito. Kaya na ng phone mo ang trabaho.
 
-Kung nakatira ka sa ilalim ng mature mango tree o sa unit na may narrow slot ng sky, i-check mo muna sa app bago gumastos ng piso. Wala talagang good intent na makakapasa ng signal sa concrete overhang.
+Kung nakatira ka sa ilalim ng matandang puno ng mangga o sa unit na makitid ang tanaw sa langit, i-check muna gamit ang app bago ka gumastos ng isang piso. Walang halaga ng magandang intensyon kung hindi makapasok ang signal sa concrete overhang.
 
-At kung tight ang budget, hindi dito dapat mapunta ang first ₱20,000 ng preparedness money mo. Tubig, ilaw, stocked cupboard, at way to leave early — mas mataas 'yung ranking kaysa dito.
+At kung mahigpit ang budget, hindi dito dapat mapunta ang unang ₱20,000 ng pondo mo para sa preparedness. Tubig, ilaw, may laman na cabinet, at paraan para makaalis nang maaga — mas mataas silang lahat kaysa dito.
 
 ## Budget alternative
 
-Sapat na ang dual-network approach para sa most real outages, at fraction lang ng cost: phone o pocket Wi-Fi na may Globe at Smart SIM, plus isang 20,000 mAh power bank, mga ₱2,500 to ₱3,500 all in. Kapag down ang tower ng isang network, madalas up pa rin ang isa. Nagfail lang ito sa same storms kung saan lahat nagfail — pero hawak nito nang maayos ang ordinaryong week-long brownout.
+Ang dual-network approach ay kayang mag-cover ng karamihan sa totoong outages sa mas mababang halaga: isang phone o pocket Wi-Fi na may parehong Globe at Smart SIM, kasama ang 20,000 mAh power bank, para sa mga ₱2,500 hanggang ₱3,500 all in. Kapag bumagsak ang tower ng isang network, kadalasan buhay pa ang isa. Nabigo din ito sa parehong bagyo kung saan nabibigo ang lahat — pero handled nito nang maayos ang ordinaryong isang linggong brownout.
 
 ## Ang verdict
 
-Ang Starlink Mini, ginagawa niya ang isang bagay na wala sa ibang gear ko: ibinabalik niya ang connection na hindi na kayang ibigay ng local grid. Well made, sensibly small, quick to deploy, at honest sa need niyang clear sky. Pero mahal din ito, hungry sa power, at magstutter sa pinakamalakas na ulan.
+Ang Starlink Mini ang gumagawa ng isang bagay na wala nang ibang gear ko: ibinabalik nito ang connection na hindi na kayang ibigay ng local grid. Well made ito, sensibly maliit, mabilis i-deploy, at honest tungkol sa pangangailangan nito ng malinaw na langit. Mahal din ito, gutom sa kuryente, at magsti-stutter ito sa pinakamalakas na ulan.
 
-Bilhin mo ito na eyes open at may battery na sa bahay, at isa ito sa few pieces of gear na genuinely nag-babago ng hitsura ng masamang linggo. Bilhin mo ito bilang first sa list mo, at bibigo ito sayo.
+Bilhin mo ito nang alam mo ang risk at may battery na sa bahay, at isa ito sa iilang gear na genuinely nagbabago sa itsura ng masamang linggo. Bilhin mo ito bilang unang item sa listahan mo at bibigo ito sa'yo.
 
-**4.5 out of 5.** Half a mark off para sa power appetite at sa rain-fade honesty, hindi dahil sa anumang binabalewala nito.
+**4.5 out of 5.** Half a mark ang bawas dahil sa power appetite at sa honesty tungkol sa rain-fade, hindi dahil sa anumang ginagawa nito nang masama.
 
 ## Saan bibili
 
-Indicative price para sa Mini kit, mga ₱19,999, at minsan malakas ang discount ng hardware during promotions — as low as ₱9,999 na noong past sales, kaya worth it maghintay kung hindi ka nagmamadali. Separate ang monthly plan, at ito ang real long-term cost.
+Ang indicative price para sa Mini kit ay mga ₱19,999, may pagkakataong malaking discount ang hardware sa mga promotion — naabot ito ng mababa gaya ng ₱9,999 sa mga nakaraang sale, kaya sulit maghintay kung hindi ka nagmamadali. Hiwalay ang monthly plan at ito talaga ang totoong long-term cost.
 
-Isang caution: bilhin mo ang hardware direkta sa Starlink o sa genuinely authorised seller. May grey-market kits sa Lazada at Shopee, at ang dish na naka-tie sa ibang account o ibang region, isang very expensive lesson.
+Isang babala: bilhin ang hardware direkta sa Starlink o sa genuinely authorised seller. May mga grey-market kits sa Lazada at Shopee, at ang dish na naka-tie sa ibang account o ibang region ay isang napakamahal na lesson.
