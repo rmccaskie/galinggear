@@ -1,59 +1,58 @@
 ---
-title: 'Leptospirosis pagkatapos ng baha: ano ang gagawin kung nalusong ka na'
+title: Nalusong sa baha? Ito ang gagawin mo para sa leptospirosis
 description: >-
-  Ang floodwater sa Pilipinas ay laging may dalang rat urine, at tumataas ang
-  leptospirosis cases every typhoon season. Ito ang totoong proteksyon, ang
-  gagawin mo kaagad after malusong, at kung kailan dapat ka na magpatingin sa
-  doktor after ng lagnat post-flood.
-sourceHash: c614d2e225acfca5
+  Nalusong ka sa baha sa Pilipinas? Ito ang dapat mong gawin sa unang oras para
+  bawasan ang risk ng leptospirosis, plus ang mga sintomas at kailan dapat
+  pumunta sa doktor.
+sourceHash: 963955ac27b5eb41
 ---
 
 ## Ang sitwasyon
 
-Every typhoon season, paulit-ulit lang ang nangyayari. Uulan, mag-o-overflow ang mga estero, magiging brown river ang kalye sa labas, at somewhere sa water na 'yun ay may rat urine na may dalang *Leptospira* bacteria. Nakakapasok ito sa tubig galing sa rat droppings at urine na hinugasan mula sa drains, gutters, at basura, at makakapasok ito sa katawan mo through a cut, scrape, o kahit soft, waterlogged skin lang, or through your eyes, nose, at mouth kung malunok o mapasplash mo ang tubig.
+Every typhoon season, paulit-ulit ang parehong pattern. Dumadating ang ulan, umaapaw ang mga estero, nagiging brown river ang kalye sa labas, at somewhere doon sa tubig ay may rat urine na may dalang *Leptospira* bacteria. Nakakapasok ito sa tubig galing sa rat droppings at urine na hinugasan mula sa mga drums, gutters, at basura, at nakakapasok ito sa 'yo through a cut, a scrape, o kahit soft, waterlogged skin lang, o through your eyes, nose, and mouth kapag nalunok o nasplash mo ang tubig.
 
-Kaya predictable talaga na tataas ang leptospirosis cases sa mga hospital across Metro Manila at sa mga probinsya every year after major flooding — after Ondoy, after Ulysses, after every named storm na nag-iwan ng underwater streets for more than a day. Hindi ito rare, at hindi ito exotic. Ito ay known, seasonal risk na kasama sa pagtira sa flood-prone barangay, at manageable ito kung alam mo ang gagawin.
+Ito ang dahilan kung bakit predictable ang pagtaas ng leptospirosis cases sa mga ospital sa buong Metro Manila at probinsya every year after major flooding — after Ondoy, after Ulysses, after every named storm na nag-iwan ng streets underwater for more than a day. Hindi ito rare, at hindi ito exotic. Isa itong known, seasonal risk na kasama sa pamumuhay sa isang flood-prone barangay, at manageable ito kung alam mo ang gagawin.
 
-Ang guide na ito ay about sa specific risk na 'yun — ang biological risk na nasa tubig mismo, hindi 'yung tanong kung safe ba ang tubig na inumin. Kung hinahanap mo kung paano magpurify ng tubig para inumin after ng flood, ibang topic 'yun at worth basahin on its own: [clean water](/clean-water/) after a disaster ay ibang problema na may ibang steps.
+Tungkol ang guide na ito sa specific risk na 'yon — ang biological risk sa tubig mismo, hindi ang tanong kung safe bang inumin ang tubig. Kung hinahanap mo kung paano mag-purify ng tubig para inumin after a flood, iba 'yong topic at worth basahin nang mag-isa: iba ang problema ng [clean water](/clean-water/) after a disaster, may iba itong steps.
 
-## Ano talaga ang mahalaga
+## Ano talaga ang importante
 
-May ilang bagay na gumagawa ng almost all ng difference, at wala sa mga ito ang complicated:
+Ilang bagay lang ang gumagawa ng halos lahat ng difference, at wala sa mga ito ang complicated:
 
-- **Ang sugat ang pangunahing daanan.** Fresh cut, healing wound, kahit maliit na blister — anumang break sa skin mo ay open invitation kapag nakaharap sa contaminated water.
-- **Mahalaga ang time na nasa tubig ka.** Iba ang ilang segundong tawid sa flooded street kumpara sa dalawampung minutong pag-wade para tingnan ang kapitbahay o maglipat ng furniture.
-- **Ang gagawin mo sa first hour after malusong mas importante pa kaysa anumang gear na bibilhin mo.** Ang prompt na paghugas ay mas nakababawas ng risk mo kaysa kanino mang gear.
-- **Lalabas ang symptoms after several days, hindi agad-agad.** Dito napapahamak ang mga tao — okay sila sa araw mismo, tapos may sakit pagkalipas ng four to fourteen days, at 'di na nakokonekta pabalik sa baha.
+- **Ang broken skin ang main door in.** Ang isang fresh cut, isang healing wound, kahit isang maliit na blister — anumang break sa skin ay parang open invitation kapag nag-meet ito ng contaminated water.
+- **Importante ang time in the water.** Iba ang exposure ng ilang segundong pagtawid sa flooded na kalye kumpara sa pagwada nang twenty minutes para tingnan ang neighbor o maglipat ng furniture.
+- **Ang ginagawa mo sa unang oras after wading ang mas importante kaysa sa kahit anong gear na mabibili mo.** Ang prompt na paghugas ay mas nagbabawas ng risk mo kaysa sa kahit anong piraso ng gear.
+- **Lumalabas ang symptoms days later, hindi immediately.** Ito ang nag-ca-catch off guard sa mga tao — okay sila sa araw na 'yon, pagkatapos magkakasakit after four to fourteen days, at hindi na nila ikinokonekta pabalik sa baha.
 
-Wala rito ang kailangan mo ng panic. Kailangan mo lang ng short list of habits, na consistent gagawin, tuwing nakakadikit sa skin mo ang floodwater.
+Wala sa mga ito ang nangangailangan ng panic. Isang short list lang ito ng habits, na ginagawa consistently, every time may floodwater na humipo sa skin mo.
 
-## Ano ang gagawin (at ano ang 'di dapat gawin)
+## Ano ang gagawin (at ano ang hindi dapat gawin)
 
-**Before ka mag-wade, kung may choice ka:**
-Takpan muna ang open cut o sugat gamit ang waterproof plaster o dressing. Mag-wear ng closed, waterproof footwear — rubber boots, hindi sandals o barefoot. Kung kaya mong iwasan ang pag-wade altogether, mas maganda 'yun palagi; walang boots o bandage na kapalit ng pag-stay out sa tubig in the first place.
+**Bago ka lumusong, kung may choice ka pa:**
+Takpan muna ang anumang open cut o wound gamit ang waterproof plaster o dressing. Magsuot ng closed, waterproof footwear — rubber boots, hindi sandals o barefoot. Kung maiiwasan mong lumusong nang tuluyan, palagi 'yon ang mas magandang option; walang boot o bandage na papalit sa hindi paglusong sa tubig sa simula pa lang.
 
-**Kung nalusong ka na sa floodwater:**
-Hugasan ang legs, arms, at anumang exposed skin gamit ang sabon at malinis na tubig as soon as you reasonably can. Hindi na kailangan pa elaborate ito — sapat na ang bucket bath na may sabon. Bigyang particular attention ang cuts, scrapes, at ang skin around ang iyong toenails, kung saan pinakamatagal nananatili ang tubig. Kung nasugatan ka ng tubig sa mata, banlawan ng malinis na tubig. Palitan ang basang damit; huwag hayaang manatili sa skin mo ang mud-caked na damit for hours dahil lang 'yun ang pinakatuyo na available.
+**Kung nakalusong ka na sa floodwater:**
+Hugasan ang legs, arms, at anumang exposed skin gamit ang soap at clean water sa lalong madaling panahon. Hindi kailangang elaborate ito — sapat na ang bucket bath na may sabon. Bigyang-pansin lalo na ang mga cuts, scrapes, at ang skin sa paligid ng toenails, kung saan matagal na nananatili ang tubig. Kung may napasok na tubig sa eyes mo, banlawan ito ng clean water. Magpalit ng wet clothes; huwag hayaang manatili ang mud-caked clothing sa skin mo for hours dahil lang siya ang tanging medyo-tuyo sa paligid.
 
-Kung may sugat kang na-submerge, linisin ito properly — sabon at tubig, tapos antiseptic kung meron ka, tapos malinis at tuyong dressing. Bantayan ito sa susunod na mga araw para sa signs of infection, at bantayan ang sarili mo para sa mga symptoms sa baba over the next two weeks.
+Kung may wound kang na-submerge sa tubig, linisin ito nang maayos — soap at water, tapos antiseptic kung meron ka, tapos clean dry dressing. Bantayan ito sa susunod na ilang araw para sa signs of infection, at bantayan din ang sarili mo para sa mga sintomas sa baba sa loob ng susunod na two weeks.
 
-**Ang 'di dapat gawin:** Huwag maghintay lang na hopeful na 'di darating ang symptoms. Huwag mag-self-medicate gamit ang leftover antibiotics mula sa previous illness — importante ang dosage at klase ng gamot, at maaari kang masaktan pa nang mas malala kung mali ang gagawin. At huwag mag-assume na dahil maikli at maliit lang ang pagwade mo, automatic okay ka na; i-assume mong nag-expose ka, gawin ang wash-down, at bantayan ang sarili mo.
+**Ano ang hindi dapat gawin:** Huwag maghintay lang na sana hindi dumating ang symptoms. Huwag mag-self-medicate gamit ang leftover na antibiotics mula sa dating sakit — importante ang dosage at drug, at kung mali ang gagawin mo, mas makakasama pa ito kaysa makatulong. At huwag ipagpalagay na dahil maikli lang ang paglusong mo ay automatic na okay ka na; ipagpalagay mong may exposure na nangyari, maghugas, at bantayan lang ang sarili.
 
-**Mga symptoms na babantayan, days 4 to 14 after exposure:**
-Biglaang lagnat, chills, headache, at muscle pain — especially sa calves, na fairly distinctive sign. Pulang, irritated na mata na walang discharge. Minsan may nausea, vomiting, o rashes. Ang early leptospirosis ay parang flu o dengue, at 'yun mismo ang dahilan kung bakit importante ang flood history — sabihin mo kung sino man ang mag-treat sa'yo na nalusong ka sa floodwater sa nakaraang two weeks. Isang sentence na 'yun na nagbabago kung paano babasahin ng doktor ang symptoms mo.
+**Mga sintomas na babantayan, days 4 to 14 after exposure:**
+Biglaang fever, chills, headache, at muscle pain — lalo na sa calves, na isang fairly distinctive na sign. Red, irritated eyes na walang discharge. Minsan may nausea, vomiting, o rash. Ang early leptospirosis ay pwedeng magmukhang parang flu o dengue, kaya nga importante ang flood history — sabihin mo sa sinumang mag-a-attend sa 'yo na nakalusong ka sa floodwater in the past two weeks. Ang isang sentence na 'yon ang nagbabago kung paano babasahin ng doktor ang symptoms mo.
 
-Kung lalabas ang lagnat at muscle pain after flood exposure, magpatingin agad sa doktor kaysa maghintay kung mawawala lang ito on its own. Ang leptospirosis ay maayos na tumutugon sa antibiotics kapag na-start ito early; mas mahirap itong i-manage once na progress na ito. Minsan bigyan ng preventive antibiotics after ng known heavy exposure, pero only under a doctor's judgment — hindi ito bagay na iaayos mo lang sa pharmacy mismo. Kung 'di ka sure saan pupunta, ang barangay health center mo ang first stop, at ang <a href="https://doh.gov.ph/" target="_blank" rel="noopener noreferrer">Department of Health</a> ay nag-publish ng current advisories at contact information para sa regional offices nito during typhoon season — worth checking bago pa man tumaas ang tubig, para hindi ka na maghahanap nito habang may sakit ka na.
+Kung lumabas ang fever at muscle pain after flood exposure, magpatingin agad sa doktor sa halip na maghintay kung mawawala na lang ito nang mag-isa. Maganda ang response ng leptospirosis sa antibiotics na sinimulan nang maaga; mas mahirap itong i-manage once na progress na siya. Minsan binibigay ang preventive antibiotics after a known heavy exposure, pero doctor's judgment lang ito — hindi ito bagay na dapat mong i-arrange mismo sa pharmacy. Kung hindi ka sure kung saan pupunta, ang barangay health center mo ang first stop, at nag-publish ang <a href="https://doh.gov.ph/" target="_blank" rel="noopener noreferrer">Department of Health</a> ng current advisories at contact information para sa mga regional offices nito during typhoon season — worth i-check kahit hindi pa tumataas ang tubig, para hindi ka na maghahanap nito habang may sakit ka.
 
-## Ang gear na tumutulong
+## Ang gear na makakatulong
 
-Wala rito ang kailangan mabili ng mahal, at wala rito kapalit ng judgment. Isang pares ng rubber wading boots (roughly ₱300–₱500) ay mas worth kaysa almost anything else sa listahang ito — kinaka-keep off nila ang floodwater sa skin entirely para sa most common exposure, na ang paglakad sa ankle- o knee-deep na tubig. Ang waterproof plasters at maliit na tube ng antiseptic (₱50–₱150 combined) ay nangangahulugang hindi na kailangang maging open door ang isang cut. Isang bar ng sabon o maliit na bote ng liquid soap na laging kasama sa go bag mo ay walang halagang bilhin at ito ang single most useful item sa entire listahang ito.
+Wala sa mga ito ang kailangang mahal, at wala sa mga ito ang papalit sa judgment. Ang isang pares ng rubber wading boots (mga ₱300–₱500) ay mas worth it dito kaysa sa halos kahit ano sa list na ito — pinapanatili nilang wala talagang floodwater sa skin para sa most common exposure, na paglalakad sa ankle- o knee-deep na tubig. Ang waterproof plasters at isang maliit na tubo ng antiseptic (₱50–₱150 combined) ay nangangahulugang ang isang cut ay hindi na kailangang maging open door. Isang bar ng soap o maliit na bote ng liquid soap na nakalagay sa go bag mo ay halos walang gastos at siyang single most useful item sa buong list na ito.
 
-Dapat nasa proper [go bag](/go-bag/) mo lahat ng ito at sa [flood ready](/flood-ready/) kit ng household mo, kasama ng [first aid](/first-aid/) basics na dapat mo namang laging inaandar — dressings, antiseptic, working thermometer para ma-catch agad ang early fever. Wala sa mga ito ang dramatic gear. Ito ang unglamorous na bagay na tahimik lang gumagawa ng trabaho.
+Lahat ito ay dapat nasa isang proper [go bag](/go-bag/) at nasa [flood ready](/flood-ready/) kit ng household mo, kasama ang mga [first aid](/first-aid/) basics na gusto mo namang naka-ready kahit ano pa mangyari — dressings, antiseptic, isang gumaganang thermometer para ma-catch ang early fever. Wala sa mga ito ang dramatic na gear. Ito ang unglamorous na stuff na tahimik lang na ginagawa ang trabaho niya.
 
-## Common mistakes
+## Mga karaniwang pagkakamali
 
-Ang pinakamalaking mistake ay ituring na wala lang ang maliit na pag-wade — walang wash-down, walang wound check, at wala na sa memory pagkalipas ng two weeks kapag dumating na ang lagnat. Ang pangalawa ay ang paghintay ng matagal once lumabas na ang symptoms, umaasang pagod lang from storm cleanup. Ang pangatlo ay ang over-relying sa boots at nakakalimutan ang sugat sa ilalim ng sock, o ang cut sa kamay galing sa paglinis ng debris — hindi lang sa paa nakakapasok ang leptospirosis.
+Ang pinakamalaking mistake ay ang pagturing sa isang maliit na paglusong na parang wala lang — walang wash-down, walang wound check, hindi na naaalala after two weeks kapag dumating na ang fever. Ang second ay ang paghihintay nang matagal once lumabas na ang symptoms, umaasang pagod lang ito galing sa storm cleanup. Ang third ay ang labis na pag-asa sa boots at nakakalimutan ang wound sa ilalim ng medyas, o ang cut sa kamay galing sa paglilinis ng debris — hindi lang through the feet pumapasok ang leptospirosis.
 
 ## Ang isang bagay na dapat tandaan
 
-Ituring mong contaminated ang floodwater sa Pilipinas, full stop, every single time. Maghugas after mag-wade, takpan ang mga sugat before at after, at kung sumunod ang lagnat at muscle pain after ng baha within two weeks, sabihin sa doktor mo ang tungkol sa tubig — ang isang detalye na 'yun ay madalas ang nagliligtas at nagpapa-treat agad.
+Ang floodwater sa Pilipinas ay dapat ituring na contaminated, full stop, every single time. Maghugas after ka lumusong, takpan ang mga cuts bago at after, at kung sinundan ng fever at muscle pain ang isang baha within two weeks, sabihin mo sa doktor mo ang tungkol sa tubig — ang isang detalyeng 'yon ang madalas na dahilan kung bakit na-cacatch at natrato ito nang maaga.
