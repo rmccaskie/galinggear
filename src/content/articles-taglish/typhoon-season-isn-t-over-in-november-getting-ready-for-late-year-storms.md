@@ -1,12 +1,10 @@
 ---
-title: >-
-  Hindi pa tapos ang typhoon season sa November: paghahanda para sa late-year
-  storms
+title: 'Late-year typhoons: bakit dapat laging ready ang pamilyang Pinoy'
 description: >-
-  Two of the worst storms in recent memory hit in November. Ito ang dahilan kung
-  bakit importante pa rin ang late-year typhoons, at ano ang dapat panatilihing
-  ready kahit Christmas rush na.
-sourceHash: c4aaaf57c0d72c8c
+  Pinatunayan ng mga late-year typhoons tulad nina Tino at Uwan na 'di pa tapos
+  ang season kahit November na. Ito ang dapat gawin ng mga Filipino household
+  para laging storm-ready.
+sourceHash: 08d434e7dce78a4a
 railItems:
   - type: article
     assetId: 70536d12-c832-4fc1-bda0-bcd9d230d4dc
@@ -21,40 +19,40 @@ railItems:
 railSourceHash: c11ba8ff58d02b71
 ---
 
-## The situation
+## Ang sitwasyon
 
-Marami sa atin ang naging relaxed once nag-uumpisa na ang 'ber' months. Nagsisimula na mag-ilaw, nag-uumpisa na ang Noche Buena planning, at parang tapos na ang typhoon season — something na nangyari nung August, nung pinakamalakas ang ulan. Understandable 'yung feeling na 'yon. Pero mali, at ang 2025 ay isang matinding paalala.
+Marami sa atin ang medyo nagre-relax pag dumadating na ang 'ber' months. Nagsisimula nang ilagay ang mga ilaw, nagpe-plano na ng Noche Buena, at parang naramdaman na lang na tapos na ang typhoon season noong August pa, nung pinakamalakas ang ulan. Understandable naman itong feeling. Pero mali ito, at pinatunayan ito ng 2025 sa mahirap na paraan.
 
-Tumama ang Typhoon Tino (Kalmaegi) noong early November, at ang flooding na dala niya sa Cebu ay grabe — may mga tao na na-trap sa sariling bubong habang naghihintay ng rescue. Lumagpas nang husto sa isang daan ang reported deaths nationwide. Pagkalipas ng ilang araw, sumunod ang Typhoon Uwan (Fung-wong), at ayon sa <a href="http://www.ndrrmc.gov.ph/" target="_blank" rel="noopener noreferrer">NDRRMC</a>, humigit-kumulang 1.5 million ang na-displace. Dalawang major, damaging storms, back-to-back, sa buwan na inaakala ng maraming pamilya na parang winding down na ang season.
+Tumama si Typhoon Tino (Kalmaegi) noong unang linggo ng November, at grabe ang baha na dinala nito sa Cebu — sapat para ma-trap ang mga tao sa sarili nilang bubong habang naghihintay ng rescue. Umabot sa mahigit isang daan ang reported deaths nationwide. Ilang araw lang after, sumunod naman si Typhoon Uwan (Fung-wong), at ayon sa <a href="http://www.ndrrmc.gov.ph/" target="_blank" rel="noopener noreferrer">NDRRMC</a>, halos 1.5 million tao ang na-displace. Dalawang major at destructive na bagyo, sunod-sunod, sa mismong buwan na akala ng maraming pamilya ay papatapos na ang season.
 
-Hindi ito fluke. Ang mga late-year storms ay madalas dumadaan sa Visayas at southern Luzon — mga area na mas kaunti ang attention kumpara sa Northern Luzon at Metro Manila kung early rainy season, pero eksaktong nasa daanan ng mga storm na nagfoform later in the year. Naflag din ng <a href="https://www.pagasa.dost.gov.ph/" target="_blank" rel="noopener noreferrer">PAGASA</a> ang isang strong El Niño pattern na malamang mag-persist until early 2027. Sa El Niño years, mas kaunti ang tropical cyclones overall — pero 'yung "kaunti" hindi automatic na "mas mahina." Ilan sa pinaka-damaging na storms sa Philippine records ay nangyari during El Niño years, dahil ang mga storm na nagfoform ay mabilis mag-intensify sa warm seas na walang masyadong kakumpetensya.
+Hindi ito coincidence. Madalas dumadaan ang late-year storms sa Visayas at southern Luzon — mga area na hindi masyadong binibigyan ng atensyon kumpara sa Northern Luzon at Metro Manila kapag early rainy season pa, pero direktang tinatamaan ng mga bagyong nabubuo later in the year. Binanggit din ng <a href="https://www.pagasa.dost.gov.ph/" target="_blank" rel="noopener noreferrer">PAGASA</a> ang isang malakas na El Niño pattern na posibleng magpatuloy hanggang early 2027. Sa El Niño years, mas kaunti ang bilang ng tropical cyclones overall — pero hindi ibig sabihin nito na mas mahina ang mga ito. Ilan sa pinakadestructive na bagyo sa records ng Pilipinas ay nangyari mismo sa El Niño years, dahil ang mga bagyong nabubuo ay mabilis mag-intensify sa mainit na dagat, walang masyadong kakumpitensya.
 
-## What actually matters
+## Ano talaga ang importante
 
-Ang core problem sa late-year storms ay hindi ang hangin o ulan — ito ang complacency. By November, madalas nasagap na ang go bags para sa spare batteries, gumala na ang phone chargers sa ibang rooms, at ang emergency cash envelope ay naging "ninong money" envelope. Meanwhile, lumipat na ang atensyon ng family sa travel: bus at ferry bookings pauwi sa probinsya, provincial addresses na maaaring eksaktong nasa path ng storm, mga bahay na magiging empty during the holidays na walang nagbabantay sa water level sa labas.
+Ang core problem sa late-year storms ay hindi ang hangin o ulan — ito ay ang complacency. Pagdating ng November, madalas na-raid na ang go bag para sa spare batteries, nawala na ang phone chargers sa ibang parte ng bahay, at naging 'ninong money' na envelope ang dating emergency cash envelope. Samantala, lumilipat na ang atensyon ng pamilya sa pagbiyahe — pag-book ng bus at ferry pauwi sa probinsya, mga address sa probinsya na maaaring nasa mismong daan ng bagyo, mga bahay na mag-iiwan bakante sa buong holidays na walang nagbabantay sa water level sa labas.
 
-Ang mga bagay na pinaka-importante this time of year ay pareho lang sa ibang typhoon — mas madali lang makalimutan: working weather information habit, supplies na talagang nasa lugar na akala mo, at plano para sa specific na gulo na dala ng Christmas — outdoor lights at decorations na nagiging debris sa malakas na hangin, bag na dapat naka-pack pero laging binubuksan para lang kunan ng tape at fairy lights.
+Ang mga bagay na pinakaimportante ngayong panahong ito ay pareho pa rin sa kahit anong typhoon — mas madali lang makalimutan: isang gumaganang habit ng pag-check ng weather info, mga supplies na nasa tamang lugar talaga (hindi lang akala mo), at isang plano para sa specific na gulo na dala ng Pasko — outdoor lights at decorations na nagiging debris pag malakas ang hangin, isang bag na dapat naka-pack lang pero laging binubuksan para lang sa tape at fairy lights.
 
-## What to do (and what not to)
+## Ano ang dapat gawin (at ang 'di dapat)
 
-Mag-check sa updates ng PAGASA through December, hindi lang during the wet season proper — five-minute habit lang, walang mawawala. Kung pupunta ka sa probinsya for the holidays, i-check ang forecast ng destination mo kasing maingat sa forecast ng bahay mo — isang storm track sa Visayas ay pwedeng gawing stranded 'yung dapat masayang homecoming.
+Mag-check sa updates ng PAGASA hanggang December, hindi lang habang wet season proper — limang minuto lang naman ang habit na ito, wala namang mawawala. Kung magbibiyahe ka pa-probinsya para sa holidays, i-check mo rin nang maigi ang forecast sa destination mo gaya ng sa bahay — isang storm track sa Visayas ay pwedeng gumawa ng masayang homecoming na naging stranded pala.
 
-Bago mag-set up ng outdoor Christmas lights at decorations, isipin muna kung saan sila mapupunta sa gale-force wind. Kung anumang naka-string sa fence, roofline, o gutter na hindi properly secured ay nagiging projectile, at ang pagbaba ulit nito once maitaas ang signal ay isang trabaho na walang gustong gawin sa ulan. I-set up ang mga bagay with the storm in mind, hindi lang para sa photo.
+Bago mag-set up ng outdoor Christmas lights at decorations, isipin mo muna kung saan mapupunta ang mga ito kapag gale-force wind na. Kahit ano na naka-string sa bakod, roofline, o gutter na hindi maayos na naka-secure ay pwedeng maging projectile, at ang pagbaba ulit nito once may signal na, ayaw talagang gawin ninuman sa gitna ng ulan. I-set up mo ang decorations na naiisip mo ang bagyo, hindi lang ang picture.
 
-Gumawa ng proper five-minute check sa emergency supplies mo bago pa magsimula ang Christmas spending, hindi after. Tingnan mo talaga ang laman ng bag kumpara sa naaalala mong pack noong July. Sa search-and-rescue, natutunan namin na huwag magtiwala sa kit na 'di mo personal na na-check recently — ang mga kit na nagpabigo sa tao ay hindi naman sira ang gawa, dahan-dahan lang na-tanggal ang laman, isang "just this once" nang isang "just this once." Ang go bag na kulang na torch dahil naka-blackout ito during family gathering, o kulang na rechargeable batteries dahil napunta sa karaoke mic — hindi na go bag 'yon. Kahon na lang 'yon.
+Gawin mo ang isang proper five-minute check ng emergency supplies mo bago pa mag-umpisa ang Christmas spending, hindi pagkatapos na. Tingnan mo talaga kung ano ang laman ng bag versus kung ano ang tanda mo na na-pack mo noong July. Sa search-and-rescue, natutunan namin na huwag magtiwala sa isang kit na hindi mo personal na na-check kamakailan — ang mga nagpabigla sa mga tao ay hindi dahil sa masamang pagkakagawa, kundi dahil dahan-dahang na-tanggalan ng laman, isang 'just this once' sa isang pagkakataon. Ang go bag na kulang sa torch dahil ginamit ito nung brownout habang may family gathering, o kulang sa rechargeable batteries dahil napunta sa karaoke mic — hindi na iyon go bag. Kahon na lang iyon.
 
-Kung magcelebrate ang household mo ng Noche Buena at home, mag-agree kayo out loud na off-limits ang go bag para sa celebration. Parang maliit lang, pero malaki ang pagkaiba nito — sa may torch na gumagana sa December 25, kumpara sa pag-improvise ng phone flashlight sa 40 percent battery habang brownout.
+Kung gagawa ka ng Noche Buena sa bahay, sabihin mong malinaw sa pamilya na off-limits ang go bag para sa celebration. Parang maliit lang, pero malaking difference ito — sa pagitan ng may gumaganang torch ka on 25 December versus pag-improvise gamit ang phone flashlight na 40 percent na lang ang baterya habang brownout.
 
-## The gear that helps
+## Ang gear na makakatulong
 
-Hindi ito kailangang complicated. Isang [go bag](/go-bag/) na truly ready — checked, hindi lang assumed — ang sumasagot sa most nito: torch, power bank, first aid basics, konting cash sa small bills, copies ng ID. Kung nagsimula ka pa lang from scratch o nag-topping up ng go bag mo bago mag-holidays, tingnan ang guide naming sa [building a go bag for two](/articles/building-a-go-bag-for-two-a-practical-guide-for-couples-in-the-philippines/) — walked through kung ano talaga ang worth ng space para sa dalawang adults, hindi lang generic checklist.
+Wala namang kailangang gawing complicated dito. Ang isang [go bag](/go-bag/) na talagang ready — na-check, hindi lang inaakala — ay sumasaklaw na sa karamihan: torch, power bank, first aid basics, konting cash sa maliliit na denominasyon, kopya ng ID. Kung nagse-set up ka pa lang from scratch o nagre-restock ng lumang go bag bago ang holidays, ang aming guide sa [pagbuo ng go bag para sa dalawa](/articles/building-a-go-bag-for-two-a-practical-guide-for-couples-in-the-philippines/) ay nagwawalk-through kung ano talaga ang dapat kasama para sa dalawang adults, hindi lang generic na checklist.
 
-Kung nabahaan ang area mo — at after Tino, marami na ngayong pamilya sa Visayas na nalaman na nabahaan pala ang area nila kahit akala nila hindi — tingnan ang [flood ready](/flood-ready/) guide para sa kung ano dapat malapit sa'yo bago pa tumaas ang tubig, hindi pagkatapos.
+Kung baha-prone ang area mo — at pagkatapos ni Tino, marami nang pamilya sa Visayas ang natutunan na baha pala talaga ang area nila kahit hindi nila akala noon — ang aming [flood ready](/flood-ready/) guide ay sumasaklaw kung ano ang dapat nasa reach mo bago pa tumaas ang tubig, hindi pagkatapos na.
 
-## Common mistakes
+## Mga karaniwang pagkakamali
 
-Ang pinakamalaking mistake ay ang pag-treat ng 'ber months' bilang finish line, kesa description lang ng calendar. Ang second ay pinapayagan ang holiday spending na i-crowd out ang small, unglamorous na restocking — batteries, drinking water, full tank of gas o load ng fuel — dahil mas less urgent 'to compared sa gifts at travel bookings. Ang third ay ang pag-iwan ng provincial house na empty during the holidays na walang nagcheck sa bahay o sa local flood risk, sa assumption na walang mangyayari sa December.
+Ang pinakamalaking mistake ay ang pagturing sa 'ber months' bilang isang finish line, kesa isang simpleng description ng calendar. Pangalawa, ang pagpapabaya sa maliliit pero importanteng restocking — batteries, drinking water, full tank ng gas o load ng fuel — dahil sa Christmas spending, dahil parang mas urgent ang gifts at travel bookings. Pangatlo, ang pag-iwan ng bahay sa probinsya na bakante sa buong holidays na walang nagbabantay dito o sa local flood risk, dahil sa akala na walang mangyayari sa December.
 
-## A calm closing
+## Isang calm na pagtatapos
 
-Hindi nangyari ang Tino at Uwan dahil nasira ang usual pattern ng season — nangyari sila dahil kasama ang November sa pattern, every year, kahit binigyan natin ito ng atensyon o hindi. Wala talagang preparation na pipigil sa isang storm. Ang ginagawa nito ay tinitiyak na hindi malalaman ng pamilya mo na walang baterya ang torch mo sa exact na moment na kailangan mo ito. Panatilihin naka-pack ang bag, bantayan ang forecast, at hayaan mong mangyari ang Christmas around sa preparedness mo, hindi kapalit nito.
+Hindi nangyari sina Tino at Uwan dahil sumira ang usual pattern ng season — nangyari ito dahil kasama talaga ang November sa pattern, every year, kahit pinapansin natin o hindi. Walang halaga ng preparation ang makakapigil ng bagyo. Ang ginagawa nito ay tinitiyak na hindi mo malalaman na walang baterya ang torch mo sa mismong sandaling kailangan mo ito. Panatilihing naka-pack ang bag, bantayan ang forecast, at hayaan mong mangyari ang Pasko around sa preparedness mo — hindi kapalit nito.
