@@ -29,6 +29,18 @@ railItems:
     description: >-
       A budget-conscious ration plan using sari-sari and grocery staples, plus a
       rotation system so nothing expires unnoticed.
+shareImage: 'https://images.galinggear.com/articles/generated-1790086420004-efcf69.png'
+social:
+  facebook: "Typhoon season doesn't have to mean scrambling at the supermarket every time PAGASA raises a signal. We break down 20 long-term storage foods every Filipino household should keep on hand, plus 3 practical storage tips each to fight off heat, humidity, pests, and flood risk. \U0001F6D2 Build your pantry a little at a time — no panic-buying required.\nhttps://galinggear.com/en/articles/long-term-storage-foods-philippines/"
+  x: "Heat, humidity, ants, weevils, floods — Philippine pantries face it all. Here are 20 long-term storage foods + 3 storage tips each to keep your household ready this typhoon season. \U0001F33E\nhttps://galinggear.com/en/articles/long-term-storage-foods-philippines/ #TyphoonPrep #FoodStorage"
+  instagram: "Two to three weeks of shelf-stable food on hand means you skip the pre-typhoon grocery rush and don't lose anything if your barangay floods for a few days. \U0001F327️\n\nOur latest guide covers 20 everyday foods every Filipino household should stock, with 3 practical storage tips each — built for real Philippine pantry conditions: heat, humidity, pests, and power outages included.\n\nNo need to buy everything at once. Start with what's already in your kitchen.\n\nLink in bio \U0001F517\n\n#EmergencyPrep #TyphoonSeason #FoodStorage #PantryEssentials #FilipinoHousehold #DisasterPreparedness #PAGASA #FloodPrep #FoodSafety #PinoyPrepper"
+  facebookTl: "Ready na ba ang pantry niyo pag-abot ng bagyo season? \U0001F327️ Dito sa article namin, may 20 long-term storage foods na kailangan ng bahay-Pilipino, plus 3 storage tips each para hindi masira sa init, humidity, peste, o pag-apaw ng baha. Peso-conscious approach lang, hindi panic-buying — build mo lang paunti-unti tuwing payday.\nhttps://galinggear.com/articles/long-term-storage-foods-philippines/"
+  xTl: >-
+    Hindi na kailangan mag-panic buy pag may bagyo. 20 long-term storage foods +
+    3 storage tips each para di masira sa init, humidity, peste, at baha. Check
+    mo: https://galinggear.com/articles/long-term-storage-foods-philippines/
+    #TyphoonPrepPH #PantryPH
+  instagramTl: "May bagyo man o wala, dapat laging ready ang pantry mo \U0001F35A Nag-list kami ng 20 long-term storage foods na kilala natin lahat — pero may tamang paraan pala para hindi masira agad sa init, humidity, at peste dito sa Pinas. May 3 storage tips each pa, kaya sure ka na alam mo yung container, lagayan, at rotation schedule per item. Hindi ito panic-buying guide — practical lang, konti-konti pero sigurado. Link in bio \U0001F517\n\n#TyphoonPrepPH #FoodStoragePH #EmergencyPrepPH #PantryEssentials #DisasterReadyPH #PinoyHousehold #BagyoSeason #FoodPrepPH #GalingGear #SurvivalTipsPH #HouseholdHacks #ReadyNaBa"
 ---
 
 ## What you'll be able to do — and why it matters
