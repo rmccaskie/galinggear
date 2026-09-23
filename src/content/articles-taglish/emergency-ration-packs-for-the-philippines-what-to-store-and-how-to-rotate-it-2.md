@@ -1,104 +1,104 @@
 ---
-title: 'Emergency ration packs para sa Pilipinas: ano ilalagay at paano i-rotate'
+title: Emergency food ration packs para sa Pilipinong pamilya
 description: >-
-  Isang simple, budget-friendly guide sa pag-build ng 72-hour food box gamit ang
-  mabibili mo sa sari-sari store o grocery, plus isang simpleng twice-a-year
-  rotation system para wala nang mag-expire nang tahimik sa cabinet.
-sourceHash: 33efe9e8fe8c0169
+  Mag-build ng 72-hour emergency food box gamit ang sari-sari at grocery
+  staples, plus simpleng twice-a-year rotation system para walang ma-expire nang
+  hindi mo namamalayan.
+sourceHash: 6f076bd0453c9810
 ---
 
-## Ano magagawa mo — at bakit importante ito
+## Ano ang magagawa mo — at bakit importante ito
 
-Pagkatapos ng typhoon o pag-yanig ng lupa, karaniwang ang unang 72 hours ang pinakamahirap — hindi dahil walang darating na tulong, pero dahil oras talaga ang kailangan para makarating ito. Kailangan pang linisin ang roads, i-restore ang lines, at mag-reopen ang sari-sari stores kapag pakiramdam ng mga owner nila na safe na. Samantala, ang ATM na walang power ay parang locked metal box lang, at ang delivery app ay kasing-galing lang ng daan na dadaanan nito.
+Pagkatapos dumaan ang typhoon o tumigil sa pag-alog ang lupa, karaniwang ang unang 72 hours ang pinakamahirap — hindi dahil walang darating na tulong, kundi dahil may proseso bago 'yon makarating. Kailangan pang linisin ang mga daan, ibalik ang linya ng kuryente, at magbukas ulit ang mga sari-sari store kapag pakiramdam ng may-ari ay ligtas nang mag-angat ng shutters. Samantala, ang ATM na walang kuryente ay isa lang kahong metal na naka-lock, at ang delivery app ay kasing-galing lang ng daanan na kailangan nitong dumaan.
 
-Ang ration pack ay hindi tungkol sa survival sa gubat. Ito ay isa o dalawang kahon ng food na kilala na ng pamilya mo at kakainin nila sa normal na Tuesday, na nilagay sa tabi para hindi ka na kabilang sa mga pumipila sa isang open store kasama ang buong barangay. Kung tama ang gawin, katumbas lang ito ng gastos sa slightly bigger grocery run, at tahimik itong nakatago sa cabinet hanggang sa araw na kailangan mo ito — o hanggang oras na kainin mo na lang ito bago pa mag-expire.
+Ang ration pack ay hindi tungkol sa pag-survive sa gubat. Isa o dalawang kahon lang ito ng pagkain na kilala na ng pamilya mo at kakainin naman ninyo kahit normal na Tuesday, na inilaan para hindi ikaw ang kasama sa pila sa iisang bukas na store kasama ang buong barangay. Kung tama ang pagkakagawa, katumbas lang ito ng gastos sa medyo mas malaking grocery run, at tahimik lang itong nakaupo sa cabinet hanggang sa araw na kailanganin mo ito — o hanggang sa panahon na kailangan mo na itong kainin bago ito mag-expire.
 
-Saklaw ng guide na ito kung ano ang itatabi, gaano karami, paano ito i-pack para hindi masira agad ng Philippine heat and humidity, at isang rotation habit na talagang gagana. Hindi kasama dito ang water treatment — check ang [clean water](/articles/) coverage namin para sa'yon — o ang cooking during an outage, o pet food, na may [sariling article](/go-bag/) sa pets go-bag guide.
+Tatalakayin ng guide na ito kung ano ang i-store, gaano karami, paano ito i-pack para hindi masira ng init at humidity ng Pilipinas nang maaga, at isang rotation habit na talagang gumagana. Hindi kasama dito ang water treatment — tingnan ang aming [clean water](/articles/) na coverage para diyan — o ang pagluluto habang walang kuryente, o ang pagkain ng alagang hayop, na may [sarili nitong artikulo](/go-bag/) sa pets go-bag guide.
 
-## Ano kailangan mo
+## Ano ang kailangan mo
 
-Wala kang kailangan na exotic. Almost lahat ng nasa baba ay available sa grocery o sa sari-sari store mo na:
+Wala kang kailangang exotic. Halos lahat ng nasa baba ay available na sa grocery o sa sari-sari store mo:
 
-- **Canned goods** — corned beef, sardines sa tomato sauce, tuna flakes, Vienna sausage, canned pork and beans. Piliin ang ring-pull cans kung kaya; isang can opener pa ang isang bagay na madaling mawala, kaya't sulit i-tape ang isa sa box para sure ka.
-- **Biscuits and crackers** — Skyflakes, Fita, Marie biscuits, o kahalintulad. Dense, filling, at matagal na sealed pa lang.
-- **Instant noodles na cold-soak-able** — mayroong cup noodles at even pouch noodles na lumalambot sa cool o lukewarm water kung walang paraan para pakuluan. Hindi ito magkakalasa parang sa packet photo, pero real food pa rin. Sulit i-test ito once sa bahay during calm weekend para malaman mo kung anong brands talaga gumagana ganito para sa pamilya mo.
-- **Powdered juice o oral rehydration-style drink mixes** — tumutulong para mas mainom ng mga bata ang plain water, at nagbibigay ng small sugar lift kapag stressed at tired ang lahat.
-- **Ready-to-eat rice sa pouches, o crackers with peanut butter o cheese spread** — mukhang small comfort items lang pero mas importante ito sa day two kaysa sa maiisip mo.
-- **Ilang sweet items** — biscuits, candies, o small chocolate bar. Hindi luxury ang morale kapag walang ilaw at nagtatanong ang toddler kung bakit.
+- **Canned goods** — corned beef, sardines sa tomato sauce, tuna flakes, Vienna sausage, canned pork and beans. Piliin ang ring-pull cans kung pwede; ang can opener ay isa pang bagay na madaling maiwala, pero sulit pa ring mag-tape ng isa sa kahon para sure.
+- **Biscuits at crackers** — Skyflakes, Fita, Marie biscuits, o kahalintulad. Filling ito at tumatagal nang matagal kung sealed.
+- **Instant noodles na pwedeng cold-soak** — may mga cup noodles at kahit pouch noodles na lumalambot sa cool o lukewarm water kung wala kang paraan para mag-boil ng tubig. Hindi ito magkakalasa gaya ng nasa larawan ng packet, pero totoong pagkain pa rin ito. Sulit itong subukan minsan sa bahay habang mahinahon ang weekend para malaman mo kung aling brands talaga ang gumagana nang ganito para sa pamilya mo.
+- **Powdered juice o oral rehydration-style drink mixes** — nakakatulong para mas madaling ma-inom ng mga bata ang plain water, at nagbibigay ng konting sugar lift kapag stressed at pagod ang lahat.
+- **Ready-to-eat rice sa pouches, o crackers na may peanut butter o cheese spread** — mas importante ang mga maliliit na comfort item kaysa sa tunog nito sa second day.
+- **Ilang matamis na item** — biscuits, candies, o maliit na chocolate bar. Hindi luho ang morale kapag walang ilaw at may batang nagtatanong kung bakit.
 
-Wala sa mga ito ang kailangang "survival food" na binili sa specialty supplier. Sa totoo lang, iniiwasan ko talaga ang dehydrated camping meals dito — priced para sa hikers, kailangan ng boiling water na maybe wala ka, at wala itong idinadagdag na hindi na ginagawa ng can ng corned beef at sleeve ng crackers nang mas maganda at mas mura.
+Wala sa mga ito ang kailangang "survival food" na binili sa specialty supplier. Sa totoo lang, iiwasan ko talaga ang dehydrated camping meals dito — presyo ito para sa mga hiker, kailangan ng boiling water na baka wala ka, at wala itong idinagdag na hindi na nagagawa ng lata ng corned beef at sleeve ng crackers nang mas mura.
 
 ## Ang method — step by step
 
-**1. Ayusin muna ang numbers mo.**
-Isang simple rule na talagang gumagana: sapat na canned goods, biscuits, at shelf-stable food para sa **three days, per person, sa household**. Para sa family of four, mga 12 person-days of food ito. Sa practice, mukhang mga 8–10 cans, dalawa o tatlong sleeves ng crackers o biscuits, ilang packs ng soak-able noodles, at isang small stash ng powdered juice — i-size base sa talagang kinakain ng pamilya mo, hindi sa chart. Kung may baby, elderly parent, o may specific diet, hiwalay ang food nila at may sariling check ito, dahil hindi medical guidance ang lahat ng ito.
+**1. Kalkulahin muna ang bilang mo.**
+Simpleng rule na gumagana sa totoong buhay: sapat na canned goods, biscuits, at shelf-stable food para sa **tatlong araw, bawat tao, sa household**. Para sa pamilyang apat, mga 12 person-days ng pagkain 'yon. Sa praktis, mukhang ganito ito: mga 8–10 lata, dalawa hanggang tatlong sleeve ng crackers o biscuits, ilang pack ng soak-able noodles, at maliit na stock ng powdered juice — naka-size sa talagang kinakain ng pamilya mo, hindi sa chart. Kung may sanggol ka, may senior na magulang, o may kasama na may specific diet, hiwalay ang pagkain nila at kailangan ng sarili nitong check, dahil hindi ito medical guidance.
 
-**2. Budget-in ito parang slightly bigger grocery trip.**
-Para sa family of four, isang reasonable starting ration box ay nasa ₱1,200–₱1,800 range kung ordinary supermarket o sari-sari brands ang bibilhin mo at hindi hahabulin ang imported. I-spread mo sa ilang pay cycles, at hindi ito feel na malaking bagsak — bumili ng dalawang extra cans at sleeve ng crackers sa regular grocery run mo for a month or two at ma-build mo ito bago talaga magsimula ang typhoon season.
+**2. I-budget ito parang medyo mas malaking grocery trip.**
+Para sa pamilyang apat, ang reasonable na starting ration box ay nasa ₱1,200–₱1,800 range kung ordinary supermarket o sari-sari brands lang ang bibilhin mo at hindi ka naghahanap ng imported. Kung ikakalat mo sa ilang pay cycle, hindi mo talaga mararamdaman — bumili ng dalawang extra na lata at sleeve ng crackers sa regular grocery run mo sa loob ng isa o dalawang buwan at matatapos mo na ito bago pa talaga magsimula ang typhoon season.
 
-**3. I-pack ito para makasurvive sa init at humidity, hindi lang para maupo sa isang sulok.**
-Mainit sa Philippine homes, at marami sa atin ang nag-iimbak ng gamit sa garage, top shelf, o malapit sa window. Ang humidity ang totoong kalaban ng biscuits at crackers — kaunti lang kasi kailangan para lumambot at bahaw sila months bago pa sa printed expiry. Kaya:
-- Gamitin ang sealed plastic bin na may locking lid, hindi lang cardboard box, kung malapit ito sa garage, laundry area, o ground floor na binabaha.
-- Itago itong off the floor — even isang low shelf o ilang wooden pallets sa ilalim ay nagbibigay proteksyon kung may tumagos na tubig.
-- I-repack ang crackers at biscuits sa zip-lock o vacuum bag kung manipis ang original packaging na foil — isang opened box na naiwan sa mainit na cabinet ay bilis masira kahit hindi pa binuksan.
-- Itago sa layo sa direct sun at anumang bagay na nagpapainit, gaya ng top ng refrigerator.
+**3. I-pack ito para makaligtas sa init at humidity, hindi lang para maupo sa sulok.**
+Mainit ang mga bahay sa Pilipinas, at marami sa atin ang nag-iimbak ng gamit sa garahe, sa taas na shelf, o malapit sa bintana. Ang humidity ang tunay na kaaway ng biscuits at crackers — konti lang na kalembutan at pagiging stale nito bago pa man dumating ang printed expiry. Kaya:
+- Gumamit ng sealed plastic bin na may locking lid, hindi lang cardboard box, kung malapit ito sa garahe, laundry area, o ground floor na binabaha.
+- Ilayo sa sahig — kahit mababang shelf o ilang wooden pallet sa ilalim ay nagbibigay na ng proteksyon kung may tubig na pumasok.
+- I-repack ang crackers at biscuits sa zip-lock o vacuum bag kung manipis ang original packaging na foil — mabilis masira ang bukas na kahon sa mainit na cabinet kahit hindi pa talaga ito nabuksan.
+- I-store nang malayo sa direktang sikat ng araw at malayo sa kahit anong pinagmumulan ng init, tulad ng ibabaw ng refrigerator.
 
-**4. I-label lahat ng may date na binili mo, hindi lang ang printed expiry.**
-Isulat ang purchase date sa labas ng bawat can o pack gamit ang permanent marker, o mag-keep ng simple list na tape sa loob ng lid. Minsan maliit ang printed expiry dates, minsan nakalagay sa ilalim ng can, at madaling ma-miss kapag nagmamadali. Mas mabilis mong ma-check sa isang tingin ang sariling sulat mo.
+**4. I-label ang lahat ng date na binili mo, hindi lang ang printed expiry.**
+Isulat ang purchase date sa labas ng bawat lata o pack gamit ang permanent marker, o mag-tape ng simpleng listahan sa loob ng lid. Minsan maliit ang printed expiry dates, minsan nasa ilalim ng lata, at madaling mamiss kapag nagmamadali. Mas mabilis mo makita agad ang sarili mong sulat.
 
-**5. I-rotate twice a year, tied sa dates na kabisado mo na.**
-Ang habit na talagang nananatili ay yung sumasabay sa date na naaalala mo na. Dalawang magandang anchor para sa Pilipinas:
-- **Start of typhoon season** (May–June, bago ang June–November peak na sinusubaybayan ng <a href="https://www.pagasa.dost.gov.ph/" target="_blank" rel="noopener noreferrer">PAGASA</a> every year) — check at restock.
-- **New Year** — kapag marami sa mga household ay nag-clean out na ng pantry anyway.
+**5. I-rotate ito dalawang beses sa isang taon, naka-tie sa mga date na natatandaan mo na.**
+Ang habit na talagang nananatili ay 'yung sumasama sa date na naka-mark na sa isip mo. Dalawang magandang anchor para sa Pilipinas:
+- **Simula ng typhoon season** (May–June, bago ang June–November peak na sinusubaybayan ng <a href="https://www.pagasa.dost.gov.ph/" target="_blank" rel="noopener noreferrer">PAGASA</a> taun-taon) — mag-check at mag-restock.
+- **New Year** — kapag marami nang household ang gumagawa ng pantry clean-out.
 
-Sa bawat rotation date: hugutin lahat, check ang dates, lutuin at kainin kung anumang malapit na mag-expire sa loob ng ilang months bilang normal na meals, at palitan ng fresh stock. Walang masasayang — dinner na lang ito nang mas maaga kaysa sa plano.
+Sa bawat rotation date: ilabas lahat, i-check ang dates, lutuin at kainin ang kahit ano na malapit nang mag-expire sa loob ng ilang buwan bilang parte ng normal na meals, at palitan ng bagong stock. Wala dapat mapunta sa basura — dinner lang ito na mas maaga sa plano.
 
-## Variations & conditions
+## Mga variation at kondisyon
 
-**Apartment o condo households sa high floor.** Kung down ang lift, dadalhin mo ang box na ito pababa sa stairs, maybe sa dilim pa. Panatilihing light enough para kayanin ng isang tao, o hatiin sa dalawang smaller bins kaysa isang heavy na box.
+**Apartment o condo households sa mataas na palapag.** Kung mawawalan ng lift, ikaw ang magbababa ng kahon na ito, posibleng sa dilim. Panatilihing magaan para kayang buhatin ng isang tao lang, o hatiin sa dalawang mas maliit na bin sa halip na isang mabigat.
 
-**Households sa low-lying o flood-prone barangays.** Itago ang ration box sa shelf, hindi sa floor, at i-check ang flood risk ng area mo sa <a href="https://hazardhunter.georisk.gov.ph/" target="_blank" rel="noopener noreferrer">HazardHunterPH</a> kung hindi ka sure kung gaano exposed ang street mo. Ibang usapan ang box na kayang mag-survive sa ankle-deep flood kumpara sa isa na kailangang mag-survive sa knee-deep water.
+**Households sa mababang lugar o flood-prone na barangay.** I-store ang ration box sa shelf, hindi sa sahig, at i-check ang flood risk ng lugar mo sa <a href="https://hazardhunter.georisk.gov.ph/" target="_blank" rel="noopener noreferrer">HazardHunterPH</a> kung hindi ka sure kung gaano ka-exposed ang kalye niyo. Ibang-iba ang kahon na kayang lumangoy sa baha na hanggang bukong-bukong lang kumpara sa kailangang makaligtas sa baha na hanggang tuhod.
 
-**Extended family o shared households.** Multiply nang tapat ang per-person quantities kaysa mag-assume na "may extra naman usually." Nasasagasaan lang minsan ang ration packs kapag inaraw as everyday snacking kung hindi somewhat hiwalay sa regular pantry — makakatulong ang labeled bin para makilala ng lahat na emergency stock ito, hindi fair game sa random Tuesday.
+**Extended family o shared households.** I-multiply nang tapat ang per-person quantities sa halip na ipagpalagay na "usually may extra naman." Madalas na natatago o naubos ang laman ng ration packs kung hindi ito medyo hiwalay sa regular pantry — nakakatulong ang labeled bin para makilala ng lahat na emergency stock ito, hindi bara-bara na kainin sa kahit anong Tuesday.
 
-**No-cook versus minimal-cook.** Kung sigurado kang may gas stove at matches ka even without electricity, mas flexible ka — pero plano mo pa rin para sa scenario na wala, dahil mas mahirap 'yon. Lahat sa list sa taas dapat kainin cold o after cool-water soak kung absolutely kailangan.
+**No-cook versus minimal-cook.** Kung sigurado kang may gas stove at posporo ka kahit walang kuryente, mas may flexibility ka — pero mag-plano pa rin para sa scenario na wala, dahil 'yon ang mas mahirap na kaso. Ang lahat ng nasa listahan sa itaas ay dapat kainin kahit malamig o pagkatapos i-soak sa cool water kung talagang kinakailangan.
 
-## Common mistakes
+## Mga karaniwang pagkakamali
 
-- **Bumili ng "survival food" instead ng food na kinakain ng pamilya mo.** Ang freeze-dried meals at specialty bars ay mukhang impressive pero mas mahal, kailangan ng water o boiling, at madalas hindi nagagalaw dahil walang gustong kumain nito. Manatili sa brands na gusto na ng household mo.
-- **Iimbak at kalimutan nang buo.** Ang ration box na walang rotation date ay nagiging box of expired cans within two years. Ang twice-a-year check ang buong system — laktawan mo ito at nagbuo ka na lang ng slow-motion waste pile.
-- **Puro canned goods lang na wala opener, wala crackers, wala easy wins.** Mas importante ang variety sa day two kaysa sa akala mo sa day one.
-- **Iiwan ito kung saan mabababa o maiinitan.** Isang ground-floor garage sa flood-prone barangay, o mainit na attic, ay nagpapawalang-saysay sa lahat ng careful shopping.
-- **Mag-assume na bukas lang naman ang store.** Nagsasara talaga ang sari-sari stores at small groceries para sa totoong reasons pagkatapos ng malakas na typhoon — walang power para sa ref, walang stock truck pa, kailangang bigyang atensyon muna ng owner ang sariling bahay. Para sa gap na 'yon talaga nakatayo ang ration pack.
+- **Pagbili ng "survival food" sa halip na pagkain na talagang kinakain ng pamilya mo.** Ang freeze-dried meals at specialty bars ay mukhang impressive pero mas mahal, kailangan ng tubig o pagpapakulo, at madalas na hindi ginagalaw dahil walang gustong kumain nito. Manatili sa mga brand na gusto na ng household mo.
+- **Pag-iimbak at kalimutan na lang nang tuluyan.** Ang ration box na walang rotation date ay magiging kahon ng expired cans sa loob lang ng dalawang taon. Ang twice-a-year check ang buong sistema mismo — kung lalaktawan mo ito, nakagawa ka lang ng dahan-dahang tambak ng basura.
+- **Pagpack ng mga canned goods lang na walang opener, walang crackers, walang easy wins.** Mas importante ang variety sa second day kaysa sa tingin mo sa first day.
+- **Pag-iwan nito sa lugar na pwedeng bahain o mainitan.** Ang ground-floor garage sa flood-prone na barangay, o mainit na attic, ay sisira sa lahat ng maingat mong pamimili.
+- **Pag-aakalang bukas lang naman ang store.** Nagsasara ang mga sari-sari store at maliliit na groceries dahil sa totoong dahilan pagkatapos ng malaking typhoon — walang kuryente para sa fridge, wala pang stock truck, kailangan munang asikasuhin ng may-ari ang sariling bahay. Ang ration pack ay para talaga diyan sa gap na 'yon.
 
-## Paano magpractice nang ligtas
+## Paano safely mag-practise
 
-Ang best test ng ration pack ay tahimik at undramatic: once o twice a year, pumili ng random na gabi at kainin ang dinner nang buo mula sa box — walang stove, walang extra ingredients, kung ano lang ang nasa loob as-is. Mabilis mo malalaman kung talagang lumambot ang noodles gaya ng inaasahan mo, kung kakainin ng mga bata ang crackers nang walang reklamo, at kung talagang feel na three days ng food kapag nasa harap na mo na ito. I-adjust ang list base sa naiwan na hindi nagalaw at sa naubos na muna.
+Ang pinakamagandang test ng ration pack ay tahimik at hindi dramatic: minsan o dalawang beses sa isang taon, pumili ng random na gabi at kumain ng dinner buong-buo mula sa kahon — walang stove, walang extra na ingredients, kung ano ang laman ay 'yon ang kainin. Mabilis kang malalaman kung talagang lumalambot ang noodles gaya ng inaasahan mo, kung kakainin ng mga bata ang crackers nang walang reklamo, at kung talagang parang tatlong araw ang tatlong araw na pagkain kapag nandiyan na ito sa harap mo. I-adjust ang listahan base sa kung ano ang hindi ginalaw at kung ano ang unang naubos.
 
-I-pair ito sa [go bag](/go-bag/) check ng pamilya mo at sa clean water plan ng household mo para ang tatlong habits — food, water, grab-and-go bag — ay sabay-sabay sa parehong twice-a-year schedule. Hindi na ito kailangang dramatic. Mas malapit ito sa pag-check ng fire extinguisher kaysa sa paghanda para sa katapusan ng mundo — routine, mabilis, at madaling makalimutan precisely kasi usually hindi ito kailangan.
+I-pair mo ito sa [go bag](/go-bag/) check ng pamilya mo at sa clean water plan ng household niyo para lahat ng tatlong habit — pagkain, tubig, grab-and-go bag — ay gumagalaw sa parehong twice-a-year schedule. Hindi kailangang maging dramatic ito. Mas malapit ito sa pag-check ng fire extinguisher kaysa sa paghahanda para sa katapusan ng mundo — routine, mabilis, at madaling makalimutan mismo dahil karaniwang hindi ito kailangan.
 
 ## Screenshot-ready checklist
 
-**Per person, para sa 3 days:**
+**Bawat tao, para sa 3 araw:**
 - [ ] 3–4 canned goods (corned beef, sardines, tuna, Vienna sausage)
 - [ ] 1 sleeve biscuits o crackers
-- [ ] 1–2 packs soak-able instant noodles
-- [ ] 2–3 sachets powdered juice o rehydration mix
-- [ ] Small comfort item (candy, chocolate, peanut butter)
+- [ ] 1–2 pack ng soak-able instant noodles
+- [ ] 2–3 sachet ng powdered juice o rehydration mix
+- [ ] Maliit na comfort item (candy, chocolate, peanut butter)
 
 **Packing:**
 - [ ] Sealed plastic bin na may locking lid
-- [ ] Itinago off the floor, layo sa init at direct sun
-- [ ] Crackers na repack sa zip-lock kung thin ang original packaging
-- [ ] Can opener na tape sa loob ng lid
+- [ ] Naka-store nang malayo sa sahig, malayo sa init at direktang araw
+- [ ] Naka-repack ang crackers sa zip-lock kung manipis ang original packaging
+- [ ] Naka-tape na can opener sa loob ng lid
 
 **Labelling:**
-- [ ] Purchase date na sulat sa bawat item o nakalista sa loob ng lid
-- [ ] Master list na tape sa labas ng bin
+- [ ] Nakasulat na purchase date sa bawat item o naka-list sa loob ng lid
+- [ ] Master list na naka-tape sa labas ng bin
 
 **Rotation:**
-- [ ] Check sa start ng typhoon season (May–June)
-- [ ] Check ulit sa New Year
-- [ ] Kainin ang malapit na mag-expire bilang normal meals; palitan ng fresh stock
+- [ ] Mag-check sa simula ng typhoon season (May–June)
+- [ ] Mag-check ulit sa New Year
+- [ ] Kainin ang malapit nang mag-expire bilang normal na meals; palitan ng bagong stock
 
-Hindi mukhang malaking bagay ang ration pack na ganito sa shelf — isang plastic bin ng parehong canned goods na nasa kitchen mo na. 'Yun mismo ang point. Hindi ito gear, groceries ito na may date lang, at ang tanging skill na involved ay ang matandaan mo lang na i-check twice a year.
+Hindi mukhang malaki ang ganitong ration pack sa shelf — plastic bin lang ng parehong canned goods na nasa kusina mo na. 'Yon nga ang punto. Hindi ito gear, groseries ito na may petsa, at ang tanging kailangang skill ay ang matandaan lang na mag-check dalawang beses sa isang taon.
