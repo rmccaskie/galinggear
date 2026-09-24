@@ -3,7 +3,7 @@
  * A1 — slim progress strip shown at the top of an article that belongs to a series.
  * Shows: series name, “Part N of M”, progress dots, prev/next navigation.
  */
-import type { ResolvedSeries } from '../lib/series'
+import { type ResolvedSeries, localiseSeriesMeta } from '../lib/series'
 import { localisedPath, type Locale, DEFAULT_LOCALE } from '../lib/i18n'
 import { resolvedCatalogue } from '../lib/catalogue'
 
@@ -22,12 +22,15 @@ const partNum = idx >= 0 ? idx + 1 : 1
 const total = series.totalCount
 const prev = idx > 0 ? series.parts[idx - 1] : null
 const next = idx >= 0 && idx < series.parts.length - 1 ? series.parts[idx + 1] : null
+
+// Localise the series title (Taglish on the default locale).
+const { title: seriesTitle } = localiseSeriesMeta(series, locale)
 ---
 
 <div class="series-strip">
   <div class="strip-who">
     <span class="strip-kicker mono">{strings['series.part_of']} · {strings['series.part']} {partNum} {strings['series.of']} {total}</span>
-    <a class="strip-title" href={lp(`/series/${series.slug}/`)}>{series.title}</a>
+    <a class="strip-title" href={lp(`/series/${series.slug}/`)}>{seriesTitle}</a>
   </div>
   <div class="strip-prog">
     <span class="strip-dots">

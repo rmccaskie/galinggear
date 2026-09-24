@@ -10,6 +10,7 @@
 
 import seriesData from '../data/series.json'
 import type { CollectionEntry } from 'astro:content'
+import { DEFAULT_LOCALE, type Locale } from './i18n'
 
 // ---------------------------------------------------------------------------
 // Types
@@ -25,6 +26,10 @@ export interface SeriesDef {
   title: string
   /** Short blurb shown on the landing page. */
   blurb: string
+  /** Taglish title for the default (Tagalog) locale. Falls back to `title`. */
+  titleTl?: string
+  /** Taglish blurb for the default (Tagalog) locale. Falls back to `blurb`. */
+  blurbTl?: string
   /** The slug of the anchor article (must also appear in `parts`). */
   anchorSlug: string
   parts: SeriesPartDef[]
@@ -47,6 +52,10 @@ export interface ResolvedSeries {
   slug: string
   title: string
   blurb: string
+  /** Taglish title for the default (Tagalog) locale. Falls back to `title`. */
+  titleTl?: string
+  /** Taglish blurb for the default (Tagalog) locale. Falls back to `blurb`. */
+  blurbTl?: string
   anchorSlug: string
   parts: ResolvedPart[]
   liveCount: number
@@ -113,11 +122,32 @@ export function resolveSeries(
     slug: seriesSlug,
     title: def.title,
     blurb: def.blurb,
+    titleTl: def.titleTl,
+    blurbTl: def.blurbTl,
     anchorSlug: def.anchorSlug,
     parts,
     liveCount: parts.filter((p) => p.isLive).length,
     totalCount: parts.length,
   }
+}
+
+/**
+ * Pick the locale-appropriate series title + blurb. The site defaults to
+ * Tagalog, so for the default locale we prefer the Taglish fields and fall back
+ * to English when they are absent; English (`/en`) always shows the English
+ * fields.
+ */
+export function localiseSeriesMeta(
+  series: Pick<ResolvedSeries, 'title' | 'blurb' | 'titleTl' | 'blurbTl'>,
+  locale: Locale,
+): { title: string; blurb: string } {
+  if (locale === DEFAULT_LOCALE) {
+    return {
+      title: series.titleTl?.trim() || series.title,
+      blurb: series.blurbTl?.trim() || series.blurb,
+    }
+  }
+  return { title: series.title, blurb: series.blurb }
 }
 
 /**

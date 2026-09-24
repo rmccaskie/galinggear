@@ -4,7 +4,7 @@
  * Shows every part in order: current highlighted, live parts linked, coming-soon
  * parts with a date pill.
  */
-import type { ResolvedSeries } from '../lib/series'
+import { type ResolvedSeries, localiseSeriesMeta } from '../lib/series'
 import { localisedPath, type Locale, DEFAULT_LOCALE } from '../lib/i18n'
 import { resolvedCatalogue, fmt } from '../lib/catalogue'
 
@@ -18,6 +18,9 @@ const { series, currentSlug, locale = DEFAULT_LOCALE } = Astro.props
 const strings = resolvedCatalogue(locale)
 const lp = (p: string) => localisedPath(locale, p)
 
+// Localise the series title + blurb (Taglish on the default locale).
+const { title: seriesTitle, blurb: seriesBlurb } = localiseSeriesMeta(series, locale)
+
 function fmtDate(iso: string | undefined): string {
   if (!iso) return ''
   const d = new Date(iso)
@@ -30,9 +33,9 @@ function fmtDate(iso: string | undefined): string {
   <div class="sl-hd">
     <span class="sl-kicker mono">{strings['series.in_this_series']}</span>
     <div class="sl-title">
-      <a href={lp(`/series/${series.slug}/`)}>{series.title}</a>
+      <a href={lp(`/series/${series.slug}/`)}>{seriesTitle}</a>
     </div>
-    <p class="sl-blurb">{series.blurb}</p>
+    <p class="sl-blurb">{seriesBlurb}</p>
   </div>
   <ol class="sl-ol">
     {series.parts.map((p) => {

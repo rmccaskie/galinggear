@@ -3,7 +3,7 @@
  * Part C — compact series discovery card for the homepage / category pages.
  * Links through to the series landing page.
  */
-import type { ResolvedSeries } from '../lib/series'
+import { type ResolvedSeries, localiseSeriesMeta } from '../lib/series'
 import { localisedPath, type Locale, DEFAULT_LOCALE } from '../lib/i18n'
 import { resolvedCatalogue, fmt } from '../lib/catalogue'
 
@@ -19,6 +19,9 @@ const lp = (p: string) => localisedPath(locale, p)
 // Use the anchor article's hero image if available
 const anchorPart = series.parts.find((p) => p.isAnchor)
 const heroImage = anchorPart?.heroImage
+
+// Localise the series title + blurb (Taglish on the default locale).
+const { title, blurb } = localiseSeriesMeta(series, locale)
 ---
 
 <div class="sc-card">
@@ -31,9 +34,9 @@ const heroImage = anchorPart?.heroImage
       {fmt(strings, 'series.n_part_series', { count: String(series.totalCount) })}
     </span>
     <h3 class="sc-title">
-      <a href={lp(`/series/${series.slug}/`)}>{series.title}</a>
+      <a href={lp(`/series/${series.slug}/`)}>{title}</a>
     </h3>
-    <p class="sc-blurb">{series.blurb}</p>
+    <p class="sc-blurb">{blurb}</p>
     <div class="sc-prog">
       <span class="sc-dots">
         {series.parts.map((p) => (

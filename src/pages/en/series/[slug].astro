@@ -5,7 +5,7 @@
  */
 import { getCollection } from 'astro:content'
 import BaseLayout from '../../../layouts/BaseLayout.astro'
-import { allSeriesSlugs, resolveSeries } from '../../../lib/series'
+import { allSeriesSlugs, resolveSeries, localiseSeriesMeta } from '../../../lib/series'
 import { type Locale, DEFAULT_LOCALE, localisedPath } from '../../../lib/i18n'
 import { resolvedCatalogue, fmt } from '../../../lib/catalogue'
 import { getTaglishMap, localiseArticleData } from '../../../lib/article-locale'
@@ -41,6 +41,9 @@ const localisedParts = series.parts.map((p) => {
 
 const anchor = localisedParts.find((p) => p.isAnchor)
 
+// Localise the series title + blurb (English on this locale).
+const { title: seriesTitle, blurb: seriesBlurb } = localiseSeriesMeta(series, locale)
+
 function fmtDate(iso: string | undefined): string {
   if (!iso) return ''
   const d = new Date(iso)
@@ -54,15 +57,16 @@ const progressPct = series.totalCount > 0
 ---
 
 <BaseLayout
-  title={`${series.title} — Series`}
-  description={series.blurb}
+  title={`${seriesTitle} — Series`}
+  description={seriesBlurb}
+  image={anchor?.heroImage}
   locale={locale}
 >
   <section class="wrap sl-hero">
     <div class="sl-hero-text">
       <p class="eyebrow mono">{strings['series.eyebrow']}</p>
-      <h1>{series.title}</h1>
-      <p class="sl-hero-blurb">{series.blurb}</p>
+      <h1>{seriesTitle}</h1>
+      <p class="sl-hero-blurb">{seriesBlurb}</p>
       <div class="sl-hero-stat">
         <div>
           <div class="n">{series.totalCount}</div>
@@ -111,7 +115,7 @@ const progressPct = series.totalCount > 0
                 </div>
                 <h3 class="tl-title">
                   {p.isLive ? (
-                    <a href={lp(`/articles/${p.slug}/`)}>{p.title}</a>
+                    <a class="tl-stretch" href={lp(`/articles/${p.slug}/`)}>{p.title}</a>
                   ) : (
                     <span>{p.title}</span>
                   )}
@@ -322,6 +326,7 @@ const progressPct = series.totalCount > 0
   }
 
   .tl-card {
+    position: relative;
     background: var(--surface);
     border: 1px solid var(--hairline);
     border-radius: var(--radius-lg);
@@ -330,6 +335,18 @@ const progressPct = series.totalCount > 0
     display: flex;
     gap: var(--space-md);
     align-items: flex-start;
+  }
+
+  /* B5: make the whole live part card clickable via a stretched title link. */
+  .tl-title a.tl-stretch::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
+
+  .tl-card:has(a.tl-stretch:hover) {
+    border-color: var(--accent-text);
   }
 
   .tl-item.soon .tl-card {
