@@ -9,6 +9,19 @@ featured: false
 status: active
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1790234606343-nfljr0.png'
+shareImage: 'https://images.galinggear.com/articles/generated-1790234606343-nfljr0.png'
+social:
+  facebook: "Canned, frozen, or dehydrated — which one actually survives a real Philippine wet season? \U0001F327️ We break down shelf life without power, weight in your go-bag, and cost per actual meal, so you can build an emergency food reserve that won't fail you when the brownout runs past 48 hours. If you're stocking up before the next typhoon, read this first.\nhttps://galinggear.com/en/articles/why-dehydrate-the-case-for-dried-food-over-canned-and-frozen-in-a-philippine-eme/"
+  x: >-
+    Canned, frozen, or dehydrated? When the brownout hits 48 hours, only one
+    doesn't care if the grid is down. Here's the real comparison for Filipino
+    households. #TyphoonPrep #EmergencyFood
+
+    https://galinggear.com/en/articles/why-dehydrate-the-case-for-dried-food-over-canned-and-frozen-in-a-philippine-eme/
+  instagram: "Every household ends up building some kind of food stash \"just in case\" — a shelf of canned goods, a freezer stocked before a typhoon. But when the power stays out past 48 hours, does your system actually hold up?\n\nWe compare canned, frozen, plain pantry staples, and dehydrated food on the things that really matter: shelf life without power, weight if you have to move, and true cost per meal — not just the price sticker.\n\nIf you're building (or rethinking) your family's emergency food reserve, this one's for you.\n\nLink in bio \U0001F517\n\n#EmergencyPrep #PhilippinePrepper #TyphoonReady #DisasterPreparedness #FoodStorage #DehydratedFood #FilipinoHousehold #BrownoutSurvival #GoBagEssentials #WetSeasonPH #GalingGear #PrepperPH"
+  facebookTl: "Canned, frozen, or dehydrated — ano ba talaga ang best pang-emergency food stash ng pamilyang Pinoy? \U0001F914 Sa article namin, pinag-compare namin ang shelf life, bigat, at cost per meal ng bawat option lalo na pag matagal na brownout ang kalaban. Kung galit ka sa lumang chest freezer mo tuwing walang kuryente, dapat mo 'to basahin.\nhttps://galinggear.com/articles/why-dehydrate-the-case-for-dried-food-over-canned-and-frozen-in-a-philippine-eme/"
+  xTl: "Brownout na naman? \U0001F629 Alamin kung bakit dehydrated food ang mas matalinong laban vs canned at frozen pag matagal na blackout o baha. Basahin dito: https://galinggear.com/articles/why-dehydrate-the-case-for-dried-food-over-canned-and-frozen-in-a-philippine-eme/ #TyphoonReady #PinoyPrepared"
+  instagramTl: "Real talk: pag matagal ang brownout, hindi lahat ng laman ng pantry mo makakatulong. \U0001F96B\U0001F9CA vs \U0001F372 dehydrated food — alin ba talaga ang panalo pag typhoon season? Inalam namin ang shelf life, bigat sa go-bag, at cost per meal para makapag-decide ka nang maayos para sa emergency stash ng pamilya niyo.\n\nLink in bio \U0001F517\n\n#GalingGear #EmergencyPrep #PinoyPrepared #TyphoonSeason #DisasterReady #FoodStorage #DehydratedFood #BrownoutSurvival #PamilyangPinoy #ReadyNaBa #EmergencyFood #PhilippinesDisasterPrep"
 ---
 
 ## The situation
