@@ -9,6 +9,26 @@ featured: false
 status: active
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1790234877133-pb0bdo.png'
+shareImage: 'https://images.galinggear.com/articles/generated-1790234877133-pb0bdo.png'
+social:
+  facebook: "Spent a whole weekend drying mangoes, fish, or tapa — only to have it go soft or moldy weeks later? The problem usually isn't the drying, it's the packaging. Our new guide breaks down mylar bags, oxygen absorbers, vacuum sealing, and airtight containers so your dried food actually survives our humidity. \U0001F96D\nhttps://galinggear.com/en/articles/packaging-and-storing-dried-food-so-it-lasts-bags-jars-and-oxygen-absorbers/"
+  x: >-
+    Dried your own mangoes, fish, or tapa? Don't let bad packaging waste all
+    that work. Here's how to seal dried food against PH humidity with mylar
+    bags, oxygen absorbers & vacuum sealing.
+
+    https://galinggear.com/en/articles/packaging-and-storing-dried-food-so-it-lasts-bags-jars-and-oxygen-absorbers/
+
+    #EmergencyPrep #FoodStorage
+  instagram: "You did the hard part — drying the mangoes, malunggay, fish, or tapa. Don't let it go to waste with the wrong storage. \U0001F629\n\nOur new guide walks through mylar bags, oxygen absorbers, vacuum sealing, and airtight containers — plus how to spot when a batch has quietly gone bad. Practical, no-hype tips built for our humid climate.\n\nLink in bio \U0001F517\n\n#EmergencyPrepPH #FoodStorage #DriedFood #PantryPrep #PinoyPrepper #FoodPreservation #PhilippineHomes #PrepperPH #HomeFoodDrying #DisasterReady"
+  facebookTl: "Pag-effort mo sa pag-dry ng mangga, malunggay, o tapa, sayang lang kung mali naman ang pagpapack — nabubulok o nalalagyan ng surot kapag hindi tama ang container. Alamin ang tamang gamit ng mylar bags, oxygen absorbers, at airtight jars para tumagal ang dried food mo ng months, hindi weeks lang, kahit sa humid na panahon natin. \U0001F96D Kasama rin dito kung paano malamang bago pa masira ang batch mo.\nhttps://galinggear.com/articles/packaging-and-storing-dried-food-so-it-lasts-bags-jars-and-oxygen-absorbers/"
+  xTl: >-
+    Tapos ka nang mag-dry ng fish o tapa pero pinack mo lang sa lumang ice cream
+    container? Baka sayang lahat ng effort mo. Alamin ang tamang paraan gamit
+    ang mylar, oxygen absorbers, at jars:
+    https://galinggear.com/articles/packaging-and-storing-dried-food-so-it-lasts-bags-jars-and-oxygen-absorbers/
+    #FoodPrep #TropicalTips
+  instagramTl: "Isang weekend mong ginugol sa pag-dry ng mangga, malunggay, o tapa — huwag mong sirain sa maling packaging. Sa humid na climate natin, kailangan mo ng tamang combo ng mylar bags, oxygen absorbers, at airtight containers para hindi mabulok o mapuno ng bugs ang dried food mo. May extra guide pa kami kung paano makikilala kapag may batch na sira na pala. \U0001F33E\n\nLink in bio \U0001F517\n\n#GalingGear #FoodStorage #EmergencyPrep #PantryGoals #TaglishTips #PinoyHousehold #DisasterReady #DriedFood #PamilyangPinoy #FoodSafety #WalangPasok #PrepareNaMuna"
 ---
 
 ## What you'll be able to do — and why it matters
