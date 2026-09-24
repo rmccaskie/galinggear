@@ -6,6 +6,7 @@ import { SCENARIOS, scenarioLabel, scenarioBlurb } from '../lib/scenarios'
 import { type Locale, DEFAULT_LOCALE, localisedPath } from '../lib/i18n'
 import { resolvedCatalogue, fmt, plural } from '../lib/catalogue'
 import { getTaglishMap, localiseArticleData } from '../lib/article-locale'
+import { siteProfile } from '../lib/site-profile'
 
 const locale = (Astro.currentLocale ?? DEFAULT_LOCALE) as Locale
 const strings = resolvedCatalogue(locale)
@@ -66,7 +67,7 @@ const defaultScenario = (withArchived[0] ?? categories[0]).scenario
 
 <BaseLayout
   title={strings['archive.h1']}
-  description="Older Galing Gear articles we've retired from the main listings, kept here so you can always browse back through them — pick a category, then a month."
+  description={`Older ${siteProfile.brand.name} articles we've retired from the main listings, kept here so you can always browse back through them — pick a category, then a month.`}
   locale={locale}
 >
   <section class="wrap head">

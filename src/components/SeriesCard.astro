@@ -7,6 +7,7 @@ import { type ResolvedSeries, localiseSeriesMeta } from '../lib/series'
 import { localisedPath, type Locale, DEFAULT_LOCALE } from '../lib/i18n'
 import { resolvedCatalogue, fmt } from '../lib/catalogue'
 import ShareBar from './ShareBar.astro'
+import { siteProfile } from '../lib/site-profile'
 
 interface Props {
   series: ResolvedSeries
@@ -24,7 +25,7 @@ const heroImage = anchorPart?.heroImage
 // Localise the series title + blurb (Taglish on the default locale).
 const { title, blurb } = localiseSeriesMeta(series, locale)
 
-const seriesUrl = `https://galinggear.com${lp(`/series/${series.slug}/`)}`
+const seriesUrl = `${siteProfile.brand.siteUrl}${lp(`/series/${series.slug}/`)}`
 ---
 
 <div class="sc-card">

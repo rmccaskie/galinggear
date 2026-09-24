@@ -1,6 +1,15 @@
 import { defineConfig } from 'astro/config'
 import cloudflare from '@astrojs/cloudflare'
 import sitemap from '@astrojs/sitemap'
+import { readFileSync } from 'node:fs'
+
+// Single source of truth for the canonical site URL: the site profile.
+// Read as JSON here (rather than imported) to avoid import-attribute
+// friction in the .mjs config. Astro.site flows from this into every
+// canonical/og:url tag via SEO.astro.
+const siteProfile = JSON.parse(
+  readFileSync(new URL('./src/data/site-profile.json', import.meta.url), 'utf8'),
+)
 
 // Build-time shim: some build-only deps (fdir, via the content-layer glob
 // loader) call `createRequire(import.meta.url)` at module top level. In the
@@ -30,7 +39,7 @@ export default defineConfig({
   // time). Avoids a workerd/miniflare prerender crash; see docs/DECISIONS.md.
   adapter: cloudflare({ platformProxy: { enabled: true }, prerenderEnvironment: 'node' }),
   integrations: [sitemap()],
-  site: 'https://galinggear.com',
+  site: siteProfile.brand.siteUrl,
   server: { allowedHosts: true },
   vite: { plugins: [shimCreateRequire()] },
 

@@ -7,16 +7,21 @@
  *
  * British spelling throughout (ADR-007).
  */
+import { siteProfile } from '../site-profile'
+
+const BRAND = siteProfile.brand.name
+const TAGLINE = siteProfile.brand.tagline
+
 export const enCatalogue = {
   // ── brand ──────────────────────────────────────────────────────────────
-  'brand.name': 'Galing Gear',
-  'brand.tagline': 'For the storms, the quakes, and the gear that beats them.',
+  'brand.name': BRAND,
+  'brand.tagline': TAGLINE,
   'brand.mission':
-    'For the storms, the quakes, and the gear that beats them. We help Filipino families get ready — for everyone under the roof.',
-  'brand.legal': '© 2026 Galing Gear. No affiliation with any supplier.',
+    `${TAGLINE} We help Filipino families get ready — for everyone under the roof.`,
+  'brand.legal': `© 2026 ${BRAND}. No affiliation with any supplier.`,
 
   // ── nav / header ──────────────────────────────────────────────────────
-  'nav.home_aria': 'Galing Gear — home',
+  'nav.home_aria': `${BRAND} — home`,
   'nav.scenarios': 'Scenarios',
   'nav.more': 'More',
   'nav.open_menu': 'Open menu',
@@ -27,13 +32,13 @@ export const enCatalogue = {
 
   // ── footer ────────────────────────────────────────────────────────────
   'footer.scenarios_heading': 'Scenarios',
-  'footer.subscribe_heading': 'Subscribe to Galing Gear',
+  'footer.subscribe_heading': `Subscribe to ${BRAND}`,
   'footer.about_heading': 'About',
   'footer.about_body':
-    'Galing Gear is an independent preparedness project helping Filipino families get ready for typhoons, floods, quakes and brownouts — with clear, practical guides and honest gear picks.',
+    `${BRAND} is an independent preparedness project helping Filipino families get ready for typhoons, floods, quakes and brownouts — with clear, practical guides and honest gear picks.`,
   'footer.contact_heading': 'Contact',
   'footer.contact_label': 'Email us',
-  'footer.contact_email': 'hello@galinggear.com',
+  'footer.contact_email': `hello@${siteProfile.brand.domain}`,
 
   // ── theme ─────────────────────────────────────────────────────────────
   'theme.to_dark': 'Switch to dark theme',
@@ -166,7 +171,7 @@ export const enCatalogue = {
   'series.pill_live': 'Live',
   'series.pill_soon': 'Soon',
   'series.see_full_overview': 'See the full series overview',
-  'series.eyebrow': 'A Galing Gear Series',
+  'series.eyebrow': `A ${BRAND} Series`,
   'series.anchor_label': 'Anchor',
   'series.start_here': 'start here',
   'series.stat_parts': 'parts',

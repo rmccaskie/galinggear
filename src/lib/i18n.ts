@@ -1,8 +1,8 @@
 /**
- * Locale definitions, fallback chain, and resolution for Galing Gear i18n.
+ * Locale definitions, fallback chain, and resolution for the site i18n.
  *
  * ONE module — every consumer imports from here. No locale constants anywhere
- * else. Built to the spec in /home/ubuntu/output/galinggear-i18n-plan.md
+ * else. Built to the i18n plan spec (see docs/).
  * and governed by /home/ubuntu/Uploads/internationalization.md §7.
  *
  * ⚠ SERVER ONLY — the catalogue statically imports every locale, so importing
