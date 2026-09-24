@@ -1,1 +1,29 @@
-{}
+{
+  "rice-storage-face-off-three-methods-one-winner-for-your-household": {
+    "title": "Rice Storage Face-Off: Three Methods, One Winner for Your Household",
+    "blurb": "A hands-on comparison series that walks Filipino households through three real ways to store rice long-term, then helps them pick the right one for their space, budget, and family size.",
+    "anchorSlug": "rice-storage-101-why-how-you-store-rice-matters-more-than-what-rice-you-buy",
+    "parts": [
+      {
+        "slug": "rice-storage-101-why-how-you-store-rice-matters-more-than-what-rice-you-buy",
+        "plannedDate": "2026-09-25"
+      },
+      {
+        "slug": "method-1-everyday-airtight-containers-for-rice-you-use-daily",
+        "plannedDate": "2026-09-28"
+      },
+      {
+        "slug": "method-2-vacuum-sealing-rice-for-a-true-emergency-stash",
+        "plannedDate": "2026-10-01"
+      },
+      {
+        "slug": "method-3-food-grade-bins-and-desiccants-for-25kg-bulk-rice",
+        "plannedDate": "2026-10-04"
+      },
+      {
+        "slug": "which-rice-storage-method-fits-your-household-a-decision-guide",
+        "plannedDate": "2026-10-07"
+      }
+    ]
+  }
+}
