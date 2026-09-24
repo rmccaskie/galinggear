@@ -25,5 +25,27 @@
         "plannedDate": "2026-10-07"
       }
     ]
+  },
+  "dehydrating-at-home-a-filipino-family-s-guide-to-long-term-food-storage": {
+    "title": "Dehydrating at Home: A Filipino Family's Guide to Long-Term Food Storage",
+    "blurb": "A practical, budget-focused series for households who want to turn market produce into shelf-stable emergency food using nothing more exotic than a sun, an oven, or an entry-level dehydrator.",
+    "anchorSlug": "why-dehydrate-the-case-for-dried-food-over-canned-and-frozen-in-a-philippine-eme",
+    "parts": [
+      {
+        "slug": "why-dehydrate-the-case-for-dried-food-over-canned-and-frozen-in-a-philippine-eme"
+      },
+      {
+        "slug": "sun-drying-and-oven-drying-fruits-and-vegetables-the-no-equipment-method"
+      },
+      {
+        "slug": "drying-meat-and-fish-the-safe-way-tapa-tuyo-and-jerky-for-emergency-stores"
+      },
+      {
+        "slug": "packaging-and-storing-dried-food-so-it-lasts-bags-jars-and-oxygen-absorbers"
+      },
+      {
+        "slug": "rotating-your-dried-food-stash-a-simple-first-in-first-out-system-for-small-fili"
+      }
+    ]
   }
 }
