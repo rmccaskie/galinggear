@@ -44,24 +44,5 @@
         "plannedDate": "2026-09-28"
       }
     ]
-  },
-  "beyond-rice-building-a-real-emergency-pantry-for-filipino-families": {
-    "title": "Beyond Rice: Building a Real Emergency Pantry for Filipino Families",
-    "blurb": "Rice storage is already well covered on Galing Gear — this series zooms out to the rest of the pantry a Filipino household actually needs when floods or typhoons cut off the sari-sari store for days, covering protein, cooking without power, and rotation habits.",
-    "anchorSlug": "what-to-stock-besides-rice-a-filipino-emergency-pantry-checklist",
-    "parts": [
-      {
-        "slug": "what-to-stock-besides-rice-a-filipino-emergency-pantry-checklist"
-      },
-      {
-        "slug": "cooking-a-full-meal-for-your-family-with-no-gas-and-no-electricity"
-      },
-      {
-        "slug": "rotating-your-emergency-food-stock-so-nothing-goes-to-waste"
-      },
-      {
-        "slug": "feeding-a-baby-or-elderly-parent-when-the-pantry-is-your-only-option"
-      }
-    ]
   }
 }
