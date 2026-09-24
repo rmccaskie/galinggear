@@ -9,6 +9,19 @@ featured: false
 status: active
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1790166937306-im871y.png'
+shareImage: 'https://images.galinggear.com/articles/generated-1790166937306-im871y.png'
+social:
+  facebook: "Choking can happen in seconds, right at the dinner table — and the person beside the child or lolo is the only \"first responder\" who matters in that moment. Our new guide walks you through recognizing true choking versus a hard cough, and exactly what to do for infants, children, and adults before help arrives. No gear needed, just knowledge worth having before you ever need it. \U0001F37D️\nhttps://galinggear.com/en/articles/choking-first-aid-for-filipino-families-what-to-do-when-a-child-or-adult-cannot/"
+  x: >-
+    Choking is an emergency where YOU are the only rescuer that matters — not
+    the ambulance, not the hospital. Learn the correct response for infants,
+    kids & adults before you need it.
+    https://galinggear.com/en/articles/choking-first-aid-for-filipino-families-what-to-do-when-a-child-or-adult-cannot/
+    #FirstAid #EmergencyPrep
+  instagram: "At the dinner table, choking can turn serious in under a minute — and the only rescuer who matters is whoever is sitting right there. This guide breaks down how to tell a hard cough from true choking, and the correct step-by-step response for infants, children, and adults. No gadgets required, just a sequence worth rehearsing before it's ever needed. Read the full guide — Link in bio \U0001F517\n\n#ChokingFirstAid #EmergencyPreparedness #FilipinoFamily #FirstAidPH #FamilySafety #ParentingPH #PhilippineRedCross #PrepareThePhilippines #SafetyFirst #HouseholdSafety #GalingGear"
+  facebookTl: "Alam niyo ba kung ano ang unang gagawin kapag nabulunan ang isang bata o matanda sa mesa? Sa choking emergency, ikaw na nasa tabi ang buhay-buhay na rescuer — hindi pa aabot ang barangay health worker o ambulансе. Basahin 'to bago mo pa kailanganin, kasi walang time para mag-Google mid-emergency. \U0001F35A\nhttps://galinggear.com/articles/choking-first-aid-for-filipino-families-what-to-do-when-a-child-or-adult-cannot/"
+  xTl: "Nabulunan sa hapag-kainan? Ikaw lang ang rescuer sa unang 30 segundo. Alamin ang tamang response para sa baby, bata, at adult — bago pa man mangyari. \U0001F37D️\nhttps://galinggear.com/articles/choking-first-aid-for-filipino-families-what-to-do-when-a-child-or-adult-cannot/ #ChokingFirstAid #FamilySafetyPH"
+  instagramTl: "Real talk: hindi laht ng ubo sa dinner table ay simpleng gag lang. May moment kung kailan dapat ka nang kumilos — at ikaw lang, wala nang iba, ang makakatulong sa unang segundo ng totoong choking emergency.\n\nSa bagong guide namin, i-walk through namin step by step kung paano i-differentiate ang normal na coughing sa true choking, at paano tumugon nang tama para sa infant, bata, at matanda — batay sa itinuturo ng Philippine Red Cross at DOH. Walang kailangang gadget dito, skill lang na dapat nasa isip (at kamay) mo bago pa man kailanganin.\n\nKasi sa emergency na 'to, ikaw ang unang linya ng tulong. Alamin mo na ngayon. \U0001FA7A\n\nLink in bio \U0001F517\n\n#ChokingFirstAid #EmergencyPreparednessPH #FirstAidTips #FamilySafety #LigtasNaPamilya #PinoyParenting #ParentingPH #DisasterReadyPH #HealthAndSafety #PhilippineRedCross #SafetyFirst #GalingGear"
 ---
 
 ## What you'll be able to do — and why it matters
