@@ -9,6 +9,37 @@ featured: false
 status: active
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1790166655631-dggwdv.png'
+shareImage: 'https://images.galinggear.com/articles/generated-1790166655631-dggwdv.png'
+social:
+  facebook: >-
+    Brownout after a typhoon signal, and your phone's at 15% while the fan just
+    died? Solar can help, but "solar" means two very different things here — a
+    plug-and-play power kit, or a full rooftop system with permits. Before you
+    spend a peso, read this plain-language breakdown of what each one can
+    actually run and who should get which. ☀️
+
+    https://galinggear.com/en/articles/solar-panels-for-brownout-resilience-what-a-filipino-household-actually-needs-to/
+  x: >-
+    Solar kit or rooftop system? Renters and homeowners need very different
+    answers when the grid goes down. A no-nonsense guide to brownout-ready solar
+    for Filipino households. ☀️
+
+    https://galinggear.com/en/articles/solar-panels-for-brownout-resilience-what-a-filipino-household-actually-needs-to/
+
+    #TyphoonPrep #SolarPH
+  instagram: "Lights out, phone dying, fan silent, fridge slowly warming up — every Filipino household knows this drill during brownouts and typhoon outages. Solar sounds like the fix, but a plug-and-play power kit and a rooftop system are not the same purchase, and mixing them up is where budgets go sideways. We break down peak sun hours, what a \"kit\" actually includes, and why renters and homeowners face completely different choices. Practical, no-hype guide — link in bio \U0001F517\n\n#EmergencyPrepPH #SolarPowerPH #TyphoonReady #BrownoutSurvival #OffGridPH #DisasterPreparedness #PinoyHomeowner #SolarEnergyPH #PowerOutageTips #PhilippinesWeather #FloodSafetyPH #GalingGear"
+  facebookTl: >-
+    Brownout tapos ang phone mo nasa 15% na, tapos wala pang aircon o fan na
+    gumagalaw ng hangin? Classic Pinoy typhoon-season struggle 'yan. Bago ka
+    bumili ng solar panel, alamin muna ang difference ng portable solar kit vs
+    rooftop system — kasi hindi pareho ang kailangan ng renter at ng may-ari ng
+    bahay. Practical breakdown namin dito, walang sales talk, puro totoong dapat
+    mong malaman ⚡
+
+
+    https://galinggear.com/articles/solar-panels-for-brownout-resilience-what-a-filipino-household-actually-needs-to/
+  xTl: "Solar kit ba o rooftop system? Depende sa 'yo kung renter o may-ari. Alamin muna bago gumastos — practical guide para sa brownout at bagyo season \U0001F526 https://galinggear.com/articles/solar-panels-for-brownout-resilience-what-a-filipino-household-actually-needs-to/ #BrownoutReady #SolarPH"
+  instagramTl: "Bawat brownout, pareho lagi ang lesson: unang una pag namatay ilaw, tapos second round pag lumabas na yung 15% battery warning sa phone mo. Sa panahon ng bagyo, pwede pang tumagal ng days 'yan.\n\nSolar ang unang naiisip ng marami, pero hindi lahat ng \"solar\" ay pareho. May portable kits na plug-and-play lang, may rooftop systems naman na kailangan ng permit at pangalan mo sa titulo. Alamin kung alin ang bagay sa setup mo — renter ka ba o may-ari, at ano talaga ang kaya ng bawat option pagdating sa router, fan, o ref mo sa susunod na brownout.\n\nLink in bio \U0001F517\n\n#SolarPH #BrownoutReady #TyphoonPrep #EmergencyPreparedness #PinoyHousehold #OffGridPH #DisasterReadyPH #GalingGear #PowerOutage #SolarPanelsPH #WalangKuryente #PamilyangPinoy"
 ---
 
 ## The situation
