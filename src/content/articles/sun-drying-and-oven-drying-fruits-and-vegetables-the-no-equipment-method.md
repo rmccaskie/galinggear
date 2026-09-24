@@ -9,6 +9,19 @@ featured: false
 status: active
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1790234713088-31xdym.png'
+shareImage: 'https://images.galinggear.com/articles/generated-1790234713088-31xdym.png'
+social:
+  facebook: "Got ripe mangoes, overripe saba, or a bundle of malunggay you can't finish in time? You can turn them into shelf-stable food that lasts weeks to months — no dehydrator, no electricity, just sun (or your oven), some basic prep, and the right storage. \U0001F96D Our latest guide walks through slicing, safe drying times and temps, and how to avoid mold and spoilage.\nhttps://galinggear.com/en/articles/sun-drying-and-oven-drying-fruits-and-vegetables-the-no-equipment-method/"
+  x: "No dehydrator? No power? No problem. Here's how to sun-dry or oven-dry mango, banana, malunggay, kamote tops & chili so they last for weeks — no equipment needed. \U0001F31E\nhttps://galinggear.com/en/articles/sun-drying-and-oven-drying-fruits-and-vegetables-the-no-equipment-method/\n#EmergencyPrep #PantryFood"
+  instagram: "Ripe mangoes turning soft? Malunggay wilting faster than you can cook it? Don't let it go to waste. This guide shows you how to sun-dry or oven-dry fruits and veggies using stuff you likely already have at home — no dehydrator, no electricity required. We cover slicing, safe drying times and temps, plus how to store your dried goods so they actually last weeks to months without spoiling. Perfect for building up a pantry that can survive a bad wet season stretch or a long brownout. \U0001F96D\U0001F33F\n\nLink in bio \U0001F517\n\n#EmergencyPrep #PantryFood #FoodPreservation #PhilippinesPrep #Malunggay #DriedFruit #NoWasteKitchen #TyphoonReady #FilipinoHousehold #SelfSufficiency #FoodStorage #PinoyPrepper"
+  facebookTl: "Sayang kung mabulok lang lahat ng sobrang mangga o malunggay sa bakuran, diba? Turns out kaya mo palang i-dry ang prutas at gulay gamit lang ang araw o oven mo — walang dehydrator na kailangan bilhin. Perfect din ito pag brownout dahil di kailangan ng kuryente ang paraang ito. Check niyo ang buong guide dito \U0001F447\nhttps://galinggear.com/articles/sun-drying-and-oven-drying-fruits-and-vegetables-the-no-equipment-method/"
+  xTl: >-
+    Walang dehydrator? Walang kuryente? Walang problema. Turuan ka namin mag-dry
+    ng mangga, saba, malunggay at chili gamit lang araw or oven mo. Tara, tipid
+    at handa:
+    https://galinggear.com/articles/sun-drying-and-oven-drying-fruits-and-vegetables-the-no-equipment-method/
+    #PantryPrep #TaglishPrepper
+  instagramTl: "Kilo ng sobrang mangga? Bundle ng malunggay na malapit na matuyo sa ref? Instead na sayang, i-dry mo na para tumagal ng weeks to months — no dehydrator, no kuryente needed. Bilao at oven mo lang, kasya na. Perfect na skill ito especially pag typhoon season o may brownout, kasi shelf-stable ang result mo without relying sa grid. Alamin ang proper slicing, timing, at storage para di masayang ang effort mo.\n\nLink in bio \U0001F517\n\n#PantryPrep #FoodPreservation #TyphoonReady #PinoyPrepper #EmergencyPrep #NoElectricityNeeded #DriedFruits #MalunggayDried #PhilippinesPrep #HandaPH #WalangSayangSayang #GalingGear"
 ---
 
 ## What you'll be able to do — and why it matters
