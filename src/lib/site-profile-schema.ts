@@ -43,6 +43,14 @@ export const siteProfileSchema = z.object({
     mediaDomain: z.string().min(1),
     logo: logoSchema,
     theme: z.object({ stylesheet: z.string() }),
+    // Brand's own social-account handles (identity, not per-article share text).
+    social: z.object({
+      handles: z.object({
+        x: z.string(),
+        instagram: z.string(),
+        facebook: z.string(),
+      }),
+    }),
   }),
   audience: z.object({
     country: z.string().min(1),

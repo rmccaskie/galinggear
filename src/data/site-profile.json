@@ -12,20 +12,42 @@
       "mark": "/brand/mark.svg",
       "favicon": "/favicon.svg"
     },
-    "theme": { "stylesheet": "src/styles/brand.css" }
+    "theme": {
+      "stylesheet": "src/styles/brand.css"
+    },
+    "social": {
+      "handles": {
+        "x": "galinggear",
+        "instagram": "galinggear",
+        "facebook": "galinggear"
+      }
+    }
   },
   "audience": {
     "country": "PH",
     "regionNotes": "Philippine hazard context: the typhoon belt and habagat rains, floods in low-lying and metro areas, earthquakes and volcanic ashfall, brownouts and grid yellow/red alerts, and dry-season heat.",
     "readerPersona": "A Filipino parent or renter preparing a household on a budget — for everyone under the roof, including children, lolos and lolas, PWDs, anyone on maintenance medication, and pets.",
-    "currency": { "code": "PHP", "symbol": "₱" },
+    "currency": {
+      "code": "PHP",
+      "symbol": "₱"
+    },
     "units": "metric",
-    "retailers": ["Lazada", "Shopee", "local hardware stores"]
+    "retailers": [
+      "Lazada",
+      "Shopee",
+      "local hardware stores"
+    ]
   },
   "locales": {
     "default": "fil-x-taglish",
-    "available": ["fil-x-taglish", "en"],
-    "prefixes": { "fil-x-taglish": "", "en": "/en" },
+    "available": [
+      "fil-x-taglish",
+      "en"
+    ],
+    "prefixes": {
+      "fil-x-taglish": "",
+      "en": "/en"
+    },
     "languages": {
       "fil-x-taglish": {
         "label": "Taglish",
@@ -53,18 +75,66 @@
   "research": {
     "criteria": "src/data/profile/research-criteria.md",
     "seasonalCalendar": [
-      { "months": [6, 7, 8, 9, 10, 11], "hook": "Typhoon season — habagat rains, floods, landslides, leptospirosis after wading, power outages" },
-      { "months": [12, 1, 2], "hook": "Amihan and the holidays — fire and burns window (Christmas lights, cooking, firecrackers), holiday travel and stranded commuters" },
-      { "months": [3], "hook": "Fire Prevention Month; the hot, dry season begins" },
-      { "months": [3, 4, 5], "hook": "Dry-season heat — heat-index warnings, water interruptions, grid yellow and red alerts, brownouts" }
+      {
+        "months": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "hook": "Typhoon season — habagat rains, floods, landslides, leptospirosis after wading, power outages"
+      },
+      {
+        "months": [
+          12,
+          1,
+          2
+        ],
+        "hook": "Amihan and the holidays — fire and burns window (Christmas lights, cooking, firecrackers), holiday travel and stranded commuters"
+      },
+      {
+        "months": [
+          3
+        ],
+        "hook": "Fire Prevention Month; the hot, dry season begins"
+      },
+      {
+        "months": [
+          3,
+          4,
+          5
+        ],
+        "hook": "Dry-season heat — heat-index warnings, water interruptions, grid yellow and red alerts, brownouts"
+      }
     ],
     "exclusions": []
   },
-  "authorities": { "source": "src/data/authorities.json" },
-  "images": { "heroStyle": "src/data/profile/image-style.md", "avoid": [] },
-  "monetisation": {
-    "affiliate": { "enabled": false, "disclosure": "" },
-    "store": { "type": "dropship", "live": false, "noExternalRetailerLinks": true }
+  "authorities": {
+    "source": "src/data/authorities.json"
   },
-  "social": { "platforms": ["facebook", "instagram", "x"], "hashtags": [] }
+  "images": {
+    "heroStyle": "src/data/profile/image-style.md",
+    "avoid": []
+  },
+  "monetisation": {
+    "affiliate": {
+      "enabled": false,
+      "disclosure": ""
+    },
+    "store": {
+      "type": "dropship",
+      "live": false,
+      "noExternalRetailerLinks": true
+    }
+  },
+  "social": {
+    "platforms": [
+      "facebook",
+      "instagram",
+      "x"
+    ],
+    "hashtags": []
+  }
 }
