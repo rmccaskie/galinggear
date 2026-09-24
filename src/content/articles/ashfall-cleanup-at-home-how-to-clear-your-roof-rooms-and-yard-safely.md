@@ -9,6 +9,19 @@ featured: false
 status: active
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1790161006461-2g18ja.png'
+shareImage: 'https://images.galinggear.com/articles/generated-1790161006461-2g18ja.png'
+social:
+  facebook: "The ashfall may have stopped, but the danger isn't over yet — most injuries actually happen during cleanup, not the eruption itself. Our new guide walks you through clearing your roof safely, wet-cleaning your rooms without spreading ash everywhere, protecting your water and food, and disposing of ash the right way. \U0001F30B\nhttps://galinggear.com/en/articles/ashfall-cleanup-at-home-how-to-clear-your-roof-rooms-and-yard-safely/"
+  x: >-
+    Ashfall stopped? Cleanup is when most injuries actually happen. Here's how
+    to clear your roof, rooms, and yard safely — without falling off a ladder or
+    wrecking your drains.
+    https://galinggear.com/en/articles/ashfall-cleanup-at-home-how-to-clear-your-roof-rooms-and-yard-safely/
+    #AshfallPH #DisasterPrep
+  instagram: "PHIVOLCS gave the all-clear — now comes the part that hurts more people than the ashfall itself: cleanup. \U0001F30B\n\nVolcanic ash isn't just dust. It's abrasive, it's heavier than it looks once wet, and it can turn a stable roof into a structural risk. Our new guide covers exactly what to do once it's safe to go back outside — clearing your roof without falling off it, wet-cleaning your rooms the right way, protecting your water and food, and disposing of ash so it doesn't clog your drains.\n\nPractical, step-by-step, made for Filipino households.\n\nLink in bio \U0001F517\n\n#AshfallPH #VolcanoSafety #DisasterPreparedness #TaalVolcano #MayonVolcano #EmergencyPrep #FilipinoHousehold #StaySafePH #GalingGear #CleanupGuide"
+  facebookTl: "Tapos na ang ashfall pero hindi pa tapos ang trabaho — cleanup phase pa 'yan, at dito pala mas maraming nasasaktan kasi akala nila okay na. From clearing ash sa roof nang hindi nahuhulog, hanggang sa proteksyon ng tubig at pagkain, meron kaming step-by-step guide para sa mga pamilyang apektado ng Taal, Mayon, o Bulusan. Basahin bago kayo umakyat sa bubong o magwalis ng ash sa loob ng bahay. \U0001F30B\nhttps://galinggear.com/articles/ashfall-cleanup-at-home-how-to-clear-your-roof-rooms-and-yard-safely/"
+  xTl: "Ashfall cleanup 101: paano linisin ang roof, rooms, at yard nang hindi ka nasasaktan (at nang hindi na-clog ang drains). Step-by-step guide \U0001F447\nhttps://galinggear.com/articles/ashfall-cleanup-at-home-how-to-clear-your-roof-rooms-and-yard-safely/\n#AshfallPH #DisasterPrepPH"
+  instagramTl: "Safe na daw pumunta sa labas after ashfall — pero surprisingly, dito pa nga karamihan nasasaktan, hindi during ashfall mismo. Bakit? Kasi feeling ligtas na, tapos biglang aakyat sa basang bubong o magwawalis ng ash nang walang mask.\n\nSa bagong guide namin, kasama dito paano:\n\U0001F3E0 Linisin ang roof nang hindi ka nahuhulog\n\U0001F9F9 Mag-clean ng rooms nang hindi kumakalat ang ash sa buong bahay\n\U0001F4A7 Protektahan ang tubig at pagkain\n\U0001F5D1️ Itapon ang ash nang hindi masisira ang drains\n\nPara sa mga pamilyang apektado ng Taal, Mayon, o Bulusan ashfall — dapat basahin bago mag-cleanup.\n\nLink in bio \U0001F517\n\n#AshfallPH #VolcanoPH #DisasterPrepPH #EmergencyPrepPH #TaalVolcano #MayonVolcano #BulusanVolcano #PinoyPrepper #HomeSafetyPH #GalingGear #Ashfall #PhilippinesDisasterPrep"
 ---
 
 ## What you'll be able to do — and why it matters
