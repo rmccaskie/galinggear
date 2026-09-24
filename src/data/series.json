@@ -21,5 +21,28 @@
         "plannedDate": "2026-09-28"
       }
     ]
+  },
+  "the-baofeng-dm-32uv-honestly-assessed-is-a-dmr-radio-worth-it-for-a-filipino-fam-2": {
+    "title": "The Baofeng DM-32UV, honestly assessed: is a DMR radio worth it for a Filipino family?",
+    "blurb": "A grounded, non-tactical look at whether a DMR handheld like the DM-32UV actually earns a place in a Philippine household's emergency kit, or whether it's overkill for most families.",
+    "anchorSlug": "two-way-radios-for-filipino-families-analog-vs-dmr-and-where-the-dm-32uv-fits",
+    "parts": [
+      {
+        "slug": "two-way-radios-for-filipino-families-analog-vs-dmr-and-where-the-dm-32uv-fits",
+        "plannedDate": "2026-09-25"
+      },
+      {
+        "slug": "radio-licensing-in-the-philippines-what-you-can-legally-do-with-a-baofeng-style",
+        "plannedDate": "2026-09-26"
+      },
+      {
+        "slug": "setting-up-a-dmr-radio-like-the-dm-32uv-for-emergency-use-codeplugs-channels-and",
+        "plannedDate": "2026-09-27"
+      },
+      {
+        "slug": "building-a-two-radio-family-communication-plan-for-typhoon-season",
+        "plannedDate": "2026-09-28"
+      }
+    ]
   }
 }
