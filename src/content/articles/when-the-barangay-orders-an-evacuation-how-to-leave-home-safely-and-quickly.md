@@ -9,6 +9,24 @@ featured: false
 status: active
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1790167017025-70akgt.png'
+shareImage: 'https://images.galinggear.com/articles/generated-1790167017025-70akgt.png'
+social:
+  facebook: "When the barangay says \"evacuate,\" the ten minutes after that order matter more than anything in your go-bag. Know the difference between a preemptive and a forced evacuation, and why waiting to \"see if the water really rises\" is the biggest risk of all. \U0001F30A Read the full guide here:\nhttps://galinggear.com/en/articles/when-the-barangay-orders-an-evacuation-how-to-leave-home-safely-and-quickly/"
+  x: >-
+    The barangay just ordered an evacuation. What you do in the next 10 minutes
+    matters more than what's in your go-bag. Here's how to leave safely and
+    fast:
+    https://galinggear.com/en/articles/when-the-barangay-orders-an-evacuation-how-to-leave-home-safely-and-quickly/
+    #FloodSafetyPH #DisasterPrep
+  instagram: "The barangay tanod is outside with a megaphone. Your phone just buzzed with an LGU advisory. Do you go now, or wait to see if the water really rises?\n\nHesitation — not the flood itself — is usually what puts families at risk. This guide breaks down the difference between a preemptive and a forced evacuation, why the first order usually comes while roads are still passable, and what actually matters in the ten minutes after the order comes.\n\nThis isn't about your go-bag. It's about the leaving itself.\n\nLink in bio \U0001F517\n\n#FloodPreparedness #PhilippinesEmergencyPrep #BarangayReady #TyphoonSeasonPH #EvacuationPlan #DisasterReadyPH #FloodSafety #PrepareThePhilippines #NDRRMC #StaySafePH #EmergencyPreparedness #GalingGear"
+  facebookTl: "\"Pag sinabi ng barangay na \"evacuate na,\" 'wag nang maghintay ng \"sigurado ba yan?\" moment. \U0001F30A Yung pagaatubili, hindi yung baha, ang kadalasang dahilan bakit napapahamak ang mga pamilya. Alamin kung ano talaga ang dapat gawin sa unang 10 minuto pagkatapos ng utos — from decision-making hanggang sa pagpunta sa tamang evacuation center.\nhttps://galinggear.com/articles/when-the-barangay-orders-an-evacuation-how-to-leave-home-safely-and-quickly/"
+  xTl: >-
+    Sinabi na ng barangay: evacuate na. Aatubili ka pa ba? Ang oras na 'yan ang
+    laman ng buhay, hindi yung bag. Alamin kung paano umalis nang mabilis at
+    ligtas:
+    https://galinggear.com/articles/when-the-barangay-orders-an-evacuation-how-to-leave-home-safely-and-quickly/
+    #FloodPH #DisasterPrep
+  instagramTl: "\"Wait lang, baka hindi pa naman talaga tumaas 'yung tubig...\" — ito mismo ang isipan na nagpapahuli sa maraming pamilya. \U0001F633 Pag sinabi ng barangay na evacuate, dapat ready ka nang umalis in the next 10 minutes — hindi mag-de-debate, hindi maghihintay makita muna kung aalis ba ang kapitbahay. Sa bagong article namin, pinag-usapan namin ang difference ng preemptive vs forced evacuation, at bakit mas maganda umalis nang maaga habang pasable pa ang daan. Practical tips para sa totoong sitwasyon ng mga Pinoy families lalo na sa mga flood-prone areas. \U0001F327️\n\nLink in bio \U0001F517\n\n#GalingGear #DisasterPrepPH #FloodSafety #BarangayAlert #EvacuationPlan #TyphoonReadyPH #PinoyPrepper #EmergencyPreparedness #FloodPH #StaySafePH #ReadyNaBa #Preparedness101"
 ---
 
 ## The situation
