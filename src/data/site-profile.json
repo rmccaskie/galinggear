@@ -3,6 +3,7 @@
   "brand": {
     "name": "Galing Gear",
     "tagline": "For the storms, the quakes, and the gear that beats them.",
+    "description": "a Philippine emergency-preparedness and outdoor-gear site",
     "domain": "galinggear.com",
     "siteUrl": "https://galinggear.com",
     "mediaDomain": "images.galinggear.com",
@@ -25,6 +26,7 @@
   },
   "audience": {
     "country": "PH",
+    "demonym": "Filipino",
     "regionNotes": "Philippine hazard context: the typhoon belt and habagat rains, floods in low-lying and metro areas, earthquakes and volcanic ashfall, brownouts and grid yellow/red alerts, and dry-season heat.",
     "readerPersona": "A Filipino parent or renter preparing a household on a budget — for everyone under the roof, including children, lolos and lolas, PWDs, anyone on maintenance medication, and pets.",
     "currency": {

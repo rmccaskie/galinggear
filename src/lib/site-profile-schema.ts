@@ -38,6 +38,7 @@ export const siteProfileSchema = z.object({
   brand: z.object({
     name: z.string().min(1),
     tagline: z.string(),
+    description: z.string(),
     domain: z.string().min(1),
     siteUrl: z.string().url(),
     mediaDomain: z.string().min(1),
@@ -54,6 +55,7 @@ export const siteProfileSchema = z.object({
   }),
   audience: z.object({
     country: z.string().min(1),
+    demonym: z.string(),
     regionNotes: z.string(),
     readerPersona: z.string(),
     currency: z.object({ code: z.string().min(1), symbol: z.string().min(1) }),
