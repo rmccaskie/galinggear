@@ -9,6 +9,19 @@ featured: false
 status: active
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1790166908494-zxmkr1.png'
+shareImage: 'https://images.galinggear.com/articles/generated-1790166908494-zxmkr1.png'
+social:
+  facebook: "The quake has stopped, but the danger might not be over yet. Aftershocks can rattle a household for days, and what you do in that window matters just as much as how you survived the first big shake. Our latest guide covers Drop-Cover-Hold On for every aftershock, how to judge building safety without guessing, and how to keep the kids and lolas and lolos calm while supplies run low. \U0001F3E0\nhttps://galinggear.com/en/articles/managing-aftershocks-what-to-do-in-the-hours-and-days-after-a-major-earthquake/"
+  x: >-
+    The first quake stopped. The aftershocks haven't. Here's how to keep your
+    household safe in the hours and days after a major earthquake — building
+    safety, rationing, and managing fear.
+    https://galinggear.com/en/articles/managing-aftershocks-what-to-do-in-the-hours-and-days-after-a-major-earthquake/
+    #EarthquakeReady #PHIVOLCS
+  instagram: "The ground has stopped moving, but the danger window is just starting. Aftershocks can keep coming for days, and it's often in this stretch — not the main quake — that people get hurt from collapsing debris, panic, or bad calls made on no sleep.\n\nOur new guide walks Filipino households through what actually matters after a major earthquake: reacting the same way to every aftershock, not guessing about building safety, keeping kids and elders calm, and stretching water, power, and signal until PHIVOLCS and local authorities give the all-clear.\n\nLink in bio \U0001F517\n\n#EarthquakeReady #AftershockSafety #DisasterPreparedness #PHIVOLCS #NDRRMC #FilipinoFamily #EmergencyPrep #StaySafePH #HouseholdSafety #ReadyPH"
+  facebookTl: "Tapos na ang lakas ng lupa, pero hindi pa tapos ang panganib. Ang aftershocks pala ang madalas na dahilan kung bakit may nasasaktan pagkatapos ng malaking lindol — kaya kailangan din ‘yong plano pag-alis mo sa doorway. Alamin kung paano i-check ang building safety, i-ration ang tubig at power, at paano kalmahin ang mga bata at lola/lolo sa mga sunod na araw. \U0001F3E0\n\nhttps://galinggear.com/articles/managing-aftershocks-what-to-do-in-the-hours-and-days-after-a-major-earthquake/"
+  xTl: "Tapos na yung lindol... pero hindi pa tapos ang delikado. Aftershocks pa lang darating. Alamin ang dapat gawin sa susunod na oras at araw \U0001F447\nhttps://galinggear.com/articles/managing-aftershocks-what-to-do-in-the-hours-and-days-after-a-major-earthquake/ #EarthquakePH #LindolReady"
+  instagramTl: "Huminga muna. Pero wag maging kampante — ang aftershocks ang totoong panganib pagkatapos ng malaking lindol. Marami ang nasasaktan dito, hindi sa unang yanig, kaya importante malaman: paano mag-Drop, Cover, Hold On sa bawat pagyanig, paano i-check kung safe pa ang building niyo, paano i-ration ang tubig at kuryente, at paano kalmahin ang pamilya — lalo na ang mga bata at lolo/lola — habang naghihintay ng all-clear mula sa PHIVOLCS at local authorities. Practical guide ito para sa bawat Pinoy household, saan ka man — condo sa QC, subdivision sa Cebu, o evacuation center sa Davao.\n\nLink in bio \U0001F517\n\n#EarthquakePH #LindolReady #DisasterPreparedness #PHIVOLCS #EmergencyPrep #GalingGear #FamilySafety #AlertNotAlarmed #ReadyPH #SafetyFirst #TaglishTips #EarthquakeSafety"
 ---
 
 ## The situation
