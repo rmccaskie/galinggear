@@ -62,6 +62,9 @@
   },
   "authorities": { "source": "src/data/authorities.json" },
   "images": { "heroStyle": "src/data/profile/image-style.md", "avoid": [] },
-  "monetisation": { "affiliate": { "enabled": false, "disclosure": "" } },
+  "monetisation": {
+    "affiliate": { "enabled": false, "disclosure": "" },
+    "store": { "type": "dropship", "live": false, "noExternalRetailerLinks": true }
+  },
   "social": { "platforms": ["facebook", "instagram", "x"], "hashtags": [] }
 }

@@ -79,6 +79,14 @@ export const siteProfileSchema = z.object({
   images: z.object({ heroStyle: z.string(), avoid: z.array(z.string()) }),
   monetisation: z.object({
     affiliate: z.object({ enabled: z.boolean(), disclosure: z.string() }),
+    // Business-specific selling model. Prompt wording ("where to buy") reads
+    // these in Step 6: today the site sends readers to its own dropship store
+    // (buyUrl empty until live) and forbids external retailer links.
+    store: z.object({
+      type: z.string(),
+      live: z.boolean(),
+      noExternalRetailerLinks: z.boolean(),
+    }),
   }),
   social: z.object({
     platforms: z.array(z.string()),
