@@ -9,6 +9,19 @@ featured: false
 status: active
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1790234715428-scqj1i.png'
+shareImage: 'https://images.galinggear.com/articles/generated-1790234715428-scqj1i.png'
+social:
+  facebook: "When the power's been out for a day and the freezer starts to sweat, dried meat and fish can save your household's food supply — no fridge, no power needed. But drying tapa, tuyo, or jerky safely takes more than just salt and sunshine; get it wrong and you risk making your family sick during the exact week you can't easily get to a hospital. Our new guide walks through the exact salt ratios and safety steps you need to know. \U0001F356\nhttps://galinggear.com/en/articles/drying-meat-and-fish-the-safe-way-tapa-tuyo-and-jerky-for-emergency-stores/"
+  x: >-
+    Brownout dragging on and your freezer's sweating? Dried tapa, tuyo, and
+    jerky store without power — but get the salt or heat wrong and it's a health
+    risk, not emergency food. Exact ratios & safety rules here:
+    https://galinggear.com/en/articles/drying-meat-and-fish-the-safe-way-tapa-tuyo-and-jerky-for-emergency-stores/
+    #EmergencyPrep #FoodSafety
+  instagram: "Freezer sweating during a long brownout? Tapa, tuyo, and jerky can carry your household through several meals with zero power and zero fridge space needed — but drying meat and fish safely is a different skill from drying fruit or veggies. Skip a step and you risk more than spoiled food.\n\nOur latest guide breaks down exact salt ratios, internal temperature targets, and the honest risks of open-air drying in Philippine humidity — so your emergency stores are actually safe to eat, not just ready to eat.\n\nLink in bio \U0001F517\n\n#EmergencyPrep #FoodSafety #PantryPrep #FilipinoHousehold #Tapa #Tuyo #JerkyRecipe #DisasterReady #PhilippinesPrep #FoodPreservation #GoBagEssentials #GalingGear"
+  facebookTl: "Brownout na naman at nag-iinit na yung freezer? Bago mo i-dry yung tira-tirang karne o isda, alamin muna kung paano gawin ang tapa, tuyo, o jerky nang tama at safe — kasi mali sa salt or heat, sakit sa tiyan agad ang kalabasan. May exact salt ratios at temperature targets kami dito, plus bakit mas risky ang open-air drying sa humidity natin. \U0001F9C2\U0001F969\nhttps://galinggear.com/articles/drying-meat-and-fish-the-safe-way-tapa-tuyo-and-jerky-for-emergency-stores/"
+  xTl: "Gusto mo ba ng tapa/tuyo/jerky na pang-emergency stock pero safe talaga? Andito yung exact salt ratio at temp targets, walang bawal na \"tantiya lang.\" \U0001F9C2\nhttps://galinggear.com/articles/drying-meat-and-fish-the-safe-way-tapa-tuyo-and-jerky-for-emergency-stores/\n#EmergencyPrep #Tapa"
+  instagramTl: "Pag tumagal ang brownout at nagsimula nang mag-init ang pagkain sa freezer, ang dried protein — tapa, tuyo, danggit, o jerky — ang pwedeng magligtas. Pero heads up: hindi pareho ang skill na kailangan sa pag-dry ng karne/isda kumpara sa mangga o malunggay. Mali lang sa salt, acid, o heat, puwedeng maging sanhi ng food poisoning sa mismong panahon na hirap kang pumunta sa ospital.\n\nSa bagong guide namin, may exact salt ratios, internal temp targets, at malinaw na paalala kung bakit mas risky ang open-air drying dito sa humidity ng Pilipinas. Practical, walang paligoy-ligoy.\n\nLink in bio \U0001F517\n\n#EmergencyPrep #FoodSafety #Tapa #Tuyo #Danggit #Jerky #PantryStock #PinoyPrepper #GoBagEssentials #PhilippineHouseholds #DisasterReady #FoodPreservation"
 ---
 
 ## What you'll be able to do — and why it matters
