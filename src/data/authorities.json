@@ -1,0 +1,25 @@
+{
+  "_note": "Curated registry of official reference sites. Article body text that mentions any of an entry's `terms` gets the FIRST clean mention auto-linked to `url` at publish time (opens in a new tab). Edit this file to add/remove/adjust references. Keep terms specific; short acronyms may occasionally match unintended words. LGU / city DRRMO pages are locality-specific and have no single canonical URL, so add them here individually once you have the exact official URL for each city (e.g. { id, label, url, terms }).",
+  "entries": [
+    { "id": "pagasa", "label": "PAGASA", "url": "https://www.pagasa.dost.gov.ph/", "terms": ["PAGASA"] },
+    { "id": "phivolcs", "label": "PHIVOLCS", "url": "https://www.phivolcs.dost.gov.ph/", "terms": ["PHIVOLCS"] },
+    { "id": "hazardhunter", "label": "HazardHunterPH", "url": "https://hazardhunter.georisk.gov.ph/", "terms": ["HazardHunterPH", "Hazard Hunter"] },
+    { "id": "georisk", "label": "GeoRisk Philippines", "url": "https://georisk.gov.ph/", "terms": ["GeoRisk Philippines", "GeoRiskPH", "GeoRisk"] },
+    { "id": "project-noah", "label": "Project NOAH", "url": "https://noah.up.edu.ph/", "terms": ["Project NOAH", "NOAH"] },
+    { "id": "mgb", "label": "Mines and Geosciences Bureau", "url": "https://mgb.gov.ph/", "terms": ["Mines and Geosciences Bureau", "MGB"] },
+    { "id": "namria", "label": "NAMRIA", "url": "https://www.namria.gov.ph/", "terms": ["National Mapping and Resource Information Authority", "NAMRIA"] },
+    { "id": "dost-asti", "label": "DOST-ASTI", "url": "https://asti.dost.gov.ph/", "terms": ["DOST-ASTI", "Advanced Science and Technology Institute", "ASTI"] },
+    { "id": "ndrrmc", "label": "NDRRMC", "url": "http://www.ndrrmc.gov.ph/", "terms": ["NDRRMC"] },
+    { "id": "ocd", "label": "Office of Civil Defense", "url": "https://ocd.gov.ph/", "terms": ["Office of Civil Defense", "OCD"] },
+    { "id": "red-cross", "label": "Philippine Red Cross", "url": "https://redcross.org.ph/", "terms": ["Philippine Red Cross", "Red Cross"] },
+    { "id": "bfp", "label": "Bureau of Fire Protection", "url": "https://bfp.gov.ph/", "terms": ["Bureau of Fire Protection", "BFP"] },
+    { "id": "coast-guard", "label": "Philippine Coast Guard", "url": "https://coastguard.gov.ph/", "terms": ["Philippine Coast Guard", "PCG"] },
+    { "id": "pnp", "label": "Philippine National Police", "url": "https://pnp.gov.ph/", "terms": ["Philippine National Police", "PNP"] },
+    { "id": "doh", "label": "Department of Health", "url": "https://doh.gov.ph/", "terms": ["Department of Health", "DOH"] },
+    { "id": "dswd", "label": "DSWD", "url": "https://www.dswd.gov.ph/", "terms": ["Department of Social Welfare and Development", "DSWD"] },
+    { "id": "dilg", "label": "DILG", "url": "https://www.dilg.gov.ph/", "terms": ["Department of the Interior and Local Government", "DILG"] },
+    { "id": "dost", "label": "Department of Science and Technology", "url": "https://www.dost.gov.ph/", "terms": ["Department of Science and Technology", "DOST"] },
+    { "id": "mmda", "label": "MMDA", "url": "https://mmda.gov.ph/", "terms": ["Metropolitan Manila Development Authority", "MMDA"] },
+    { "id": "philhealth", "label": "PhilHealth", "url": "https://www.philhealth.gov.ph/", "terms": ["Philippine Health Insurance Corporation", "PhilHealth"] }
+  ]
+}
