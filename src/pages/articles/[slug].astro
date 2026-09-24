@@ -180,6 +180,18 @@ const { title, description, scenario, publishedAt, updatedAt, editorNote, heroIm
 // Series this article belongs to (may be more than one).
 const allArticles2 = await getCollection('articles')
 const articleSeries = seriesForArticle(article.id, allArticles2)
+// Localise each series' part titles (Taglish on the default locale) so the
+// "in this series" list matches the localised series overview page.
+const bySlugForSeries = new Map(allArticles2.map((a) => [a.id, a]))
+const localisedArticleSeries = articleSeries.map((s) => ({
+  ...s,
+  parts: s.parts.map((p) => {
+    const art = bySlugForSeries.get(p.slug)
+    if (!art) return p
+    const d = localiseArticleData(art, locale, tlMap)
+    return { ...p, title: d.title, description: d.description }
+  }),
+}))
 // Absolute URL of this article (locale-aware) for share links.
 const shareUrl = `https://galinggear.com${localisedPath(locale, `/articles/${article.id}/`)}`
 // Nominated share image (baked at publish/nominate) drives the OG preview.
@@ -223,7 +235,7 @@ function fmtDate(date: string) {
     {/* A1 — series strip(s) at the top of the article */}
     {articleSeries.length > 0 && (
       <div class="wrap">
-        {articleSeries.map((s) => (
+        {localisedArticleSeries.map((s) => (
           <SeriesStrip series={s} currentSlug={article.id} locale={locale} />
         ))}
       </div>
@@ -322,7 +334,7 @@ function fmtDate(date: string) {
   {/* A2 — full series list(s) at the end of the article */}
   {articleSeries.length > 0 && (
     <div class="wrap">
-      {articleSeries.map((s) => (
+      {localisedArticleSeries.map((s) => (
         <SeriesList series={s} currentSlug={article.id} locale={locale} />
       ))}
     </div>
