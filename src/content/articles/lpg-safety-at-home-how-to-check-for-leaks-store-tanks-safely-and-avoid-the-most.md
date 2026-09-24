@@ -9,6 +9,19 @@ featured: false
 status: active
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1790166800504-895vso.png'
+shareImage: 'https://images.galinggear.com/articles/generated-1790166800504-895vso.png'
+social:
+  facebook: "That LPG tank under your sink deserves five minutes of your time. Learn how to check for leaks with just soapy water, store your tank safely away from heat, connect the regulator the right way, and know exactly what to do if you ever smell gas at home. Simple habits, zero cost, real protection for your household. \U0001F525\n\nhttps://galinggear.com/en/articles/lpg-safety-at-home-how-to-check-for-leaks-store-tanks-safely-and-avoid-the-most/"
+  x: >-
+    Most LPG accidents trace back to the same 3 things: an unchecked hose, badly
+    stored tank, or reaching for a light switch after smelling gas. 5 min, zero
+    cost to fix all three. Here's how:
+    https://galinggear.com/en/articles/lpg-safety-at-home-how-to-check-for-leaks-store-tanks-safely-and-avoid-the-most/
+    #FireSafety #LPGSafety
+  instagram: "Your LPG tank works hard every day cooking your meals — but is it actually set up safely? \U0001F373\n\nIn our latest guide, we walk through the basics every Filipino household should know: how to check your tank and hose for leaks using just dish soap and water, how to store your tank away from heat sources, how to connect and disconnect the regulator properly, and exactly what to do (and not do) if you smell gas in the house.\n\nNone of it takes long. None of it costs much. All of it matters.\n\nLink in bio \U0001F517\n\n#LPGSafety #FireSafetyPH #HomeSafetyPH #EmergencyPrepPH #DisasterPreparedness #PinoyHomeTips #FireSafety #SafetyFirst #KitchenSafety #GalingGear #PhilippineHomes #StaySafe"
+  facebookTl: "Ilang minuto lang ang kailangan mo para malaman kung may leak ang LPG tank mo — soapy water lang at kaunting observasyon, wala kang gagastusin. Kasama rito ang tamang pag-store ng tank, tamang pag-connect ng regulator, at ang dapat mong gawin agad kapag naamoy mo ang gas sa bahay. Huwag hintaying malaman mo pa ito after ng aksidente, basahin na ngayon \U0001F447\nhttps://galinggear.com/articles/lpg-safety-at-home-how-to-check-for-leaks-store-tanks-safely-and-avoid-the-most/"
+  xTl: "Amoy gas sa bahay? Alamin kung ano talaga gagawin — plus paano mag-check ng leak sa LPG tank gamit lang soapy water. 5 minutes, walang gastos. \U0001F525 #LPGSafety #FireSafetyPH\nhttps://galinggear.com/articles/lpg-safety-at-home-how-to-check-for-leaks-store-tanks-safely-and-avoid-the-most/"
+  instagramTl: "LPG tank sa kusina niyo, checked na ba? \U0001F525 Marami sa house fires at small explosions dito sa Pilipinas ay galing sa parehong mga simpleng bagay: hose na hindi na-check, tank na nakaimbak sa maling lugar, o taong pinindot ang switch instead of umalis agad noong naamoy niya ang gas. Sa bagong guide namin, ituturo namin sa inyo kung paano mag-check ng leak gamit lang soapy water, paano mag-store ng tank nang tama, paano i-connect ang regulator, at ang eksaktong gagawin kapag naamoy niyo ang gas sa bahay. Simple lang, mabilis, at libre — pero life-saving.\n\nLink in bio \U0001F517\n\n#LPGSafetyPH #FireSafetyTips #EmergencyPrepPH #GalingGear #HouseholdSafety #GasLeakSafety #ParaSaPamilya #DisasterPreparedness #PinoyHomeSafety #SafetyFirst #BahayNatin #LPGTank"
 ---
 
 ## What you'll be able to do — and why it matters
