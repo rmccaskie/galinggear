@@ -6,6 +6,7 @@
 import { type ResolvedSeries, localiseSeriesMeta } from '../lib/series'
 import { localisedPath, type Locale, DEFAULT_LOCALE } from '../lib/i18n'
 import { resolvedCatalogue, fmt } from '../lib/catalogue'
+import ShareBar from './ShareBar.astro'
 
 interface Props {
   series: ResolvedSeries
@@ -22,6 +23,8 @@ const heroImage = anchorPart?.heroImage
 
 // Localise the series title + blurb (Taglish on the default locale).
 const { title, blurb } = localiseSeriesMeta(series, locale)
+
+const seriesUrl = `https://galinggear.com${lp(`/series/${series.slug}/`)}`
 ---
 
 <div class="sc-card">
@@ -46,6 +49,9 @@ const { title, blurb } = localiseSeriesMeta(series, locale)
       <span class="sc-count mono">{series.liveCount} / {series.totalCount} {strings['series.live_label']}</span>
     </div>
     <a class="sc-go" href={lp(`/series/${series.slug}/`)}>{strings['series.explore']} →</a>
+    <div class="sc-share">
+      <ShareBar url={seriesUrl} social={series.social} locale={locale} variant="compact" />
+    </div>
   </div>
 </div>
 
@@ -164,6 +170,10 @@ const { title, blurb } = localiseSeriesMeta(series, locale)
 
   .sc-go:hover {
     filter: brightness(1.08);
+  }
+
+  .sc-share {
+    margin-block-start: var(--space-xs);
   }
 
   @media (max-width: 600px) {

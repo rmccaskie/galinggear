@@ -22,6 +22,15 @@ export interface SeriesPartDef {
   plannedDate?: string
 }
 
+export interface SocialCopy {
+  facebook?: string
+  x?: string
+  instagram?: string
+  facebookTl?: string
+  xTl?: string
+  instagramTl?: string
+}
+
 export interface SeriesDef {
   title: string
   /** Short blurb shown on the landing page. */
@@ -33,6 +42,8 @@ export interface SeriesDef {
   /** The slug of the anchor article (must also appear in `parts`). */
   anchorSlug: string
   parts: SeriesPartDef[]
+  /** Baked social copy for public-site share buttons (EN + Taglish). */
+  social?: SocialCopy
 }
 
 export interface ResolvedPart {
@@ -60,6 +71,8 @@ export interface ResolvedSeries {
   parts: ResolvedPart[]
   liveCount: number
   totalCount: number
+  /** Baked social copy for public-site share buttons (EN + Taglish). */
+  social?: SocialCopy
 }
 
 // ---------------------------------------------------------------------------
@@ -128,6 +141,7 @@ export function resolveSeries(
     parts,
     liveCount: parts.filter((p) => p.isLive).length,
     totalCount: parts.length,
+    social: def.social,
   }
 }
 
