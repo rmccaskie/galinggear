@@ -28,7 +28,7 @@ Do not include an image prompt. The admin writes hero-image prompts itself from 
 
 ## Valid scenario slugs
 
-typhoon-season, flood-ready, earthquake-ready, power-outage, clean-water, go-bag, ashfall-volcano, pantry-food, fire-safety, stay-connected, stranded-kit, heat-wave, first-aid, off-grid, edc, kids-lolas, pets, documents-cash
+{{SCENARIO_SLUGS}}
 
 Use these exact strings. Anything else is flagged as an unknown scenario.
 
