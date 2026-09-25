@@ -82,6 +82,7 @@ export const siteProfileSchema = z.object({
   }),
   research: z.object({
     criteria: z.string(),
+    proposalExample: z.string(),
     seasonalCalendar: z.array(seasonalHookSchema),
     exclusions: z.array(z.string()),
     contentPillars: z.string(),

@@ -1,0 +1,35 @@
+{
+  "batch": { "source": "manual-paste" },
+  "proposals": [
+    {
+      "workingTitle": "Typhoon Power Cuts: Keeping Phones and Lights Going for 72 Hours",
+      "contentType": "situation-guide",
+      "primaryScenario": "typhoon-season",
+      "scenarios": ["typhoon-season", "power-outage"],
+      "brief": "A practical guide for Filipino households on staying powered through a multi-day typhoon outage — sizing a power station, rationing phone charge, safe lantern use, and what to buy before the storm.",
+      "writerNotes": "Lead with the 72-hour framing.",
+      "priceRange": "₱3,000–₱15,000",
+      "summary": "How to keep essential devices and lights running for three days without grid power.",
+      "targetKeyword": "typhoon power outage preparation"
+    },
+    {
+      "workingTitle": "Best Portable Power Stations for Brownouts (2026)",
+      "contentType": "product-review",
+      "articleType": "roundup",
+      "primaryScenario": "power-outage",
+      "scenarios": ["power-outage", "typhoon-season"],
+      "brief": "Roundup review of portable power stations suited to Philippine brownouts: capacity vs price, recharge options, and which model fits a small household.",
+      "priceRange": "₱8,000–₱40,000",
+      "targetKeyword": "best portable power station philippines"
+    },
+    {
+      "workingTitle": "Flood-Ready Documents: Waterproofing IDs, Cash and Papers",
+      "contentType": "how-to-guide",
+      "primaryScenario": "flood-ready",
+      "scenarios": ["flood-ready", "go-bag"],
+      "brief": "How to protect IDs, land titles, cash and medical records before a flood — dry bags, lamin­ation, cloud backups and a grab-and-go document pouch.",
+      "targetKeyword": "waterproof documents flood",
+      "heroImageBrief": "A clean flat illustration (not a photo) of a waterproof document pouch with IDs and papers sealed inside, water beading off it — calm, simple, no text or labels."
+    }
+  ]
+}

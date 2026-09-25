@@ -76,6 +76,7 @@
   },
   "research": {
     "criteria": "src/data/profile/research-criteria.md",
+    "proposalExample": "src/data/profile/proposal-example.json",
     "seasonalCalendar": [
       {
         "months": [
