@@ -48,8 +48,6 @@ export const taglishCatalogue: Record<string, string> = {
   'footer.scenarios_heading': 'Mga Sitwasyon',
   'footer.subscribe_heading': `Mag-subscribe sa ${BRAND}`,
   'footer.about_heading': 'Tungkol sa Amin',
-  'footer.about_body':
-    `Ang ${BRAND} ay isang independent na preparedness project na tumutulong sa mga pamilyang Pilipino na maging handa sa bagyo, baha, lindol at brownout — may malinaw at praktikal na mga gabay at tapat na gear picks.`,
   'footer.contact_label': 'I-email kami',
 
   // ── theme ──
@@ -107,8 +105,6 @@ export const taglishCatalogue: Record<string, string> = {
   // ── home page ──
   'home.eyebrow': 'Preparedness at gear para sa mga pamilyang Pilipino',
   'home.h1': 'Talunin ang bagyo gamit ang tamang gear at kaalaman.',
-  'home.lede':
-    'Bagyo, baha, lindol, brownout — praktikal na gabay para maihanda ang pamilya mo, kasama ang gear, bag at gadget na talagang nakakatulong kapag kailangan. Lahat ng kailangan mo, wala nang labis.',
   'home.cta': 'Sali sa listahan',
   'home.editors_pick': 'Mga pili ng editor',
   'home.also_featured': 'Iba pang featured',
@@ -138,8 +134,6 @@ export const taglishCatalogue: Record<string, string> = {
   // ── subscribe page ──
   'subscribe.eyebrow': 'Sali sa listahan',
   'subscribe.h1': 'Mga gabay, gear at gadget',
-  'subscribe.lede':
-    'Bagyo, baha, lindol at brownout — isinusulat namin kung paano ihanda ang pamilya mo, at ang gear, bag at gadget na nakakatulong. Walang spam, pwedeng mag-unsubscribe an(y)time.',
 
   // ── 404 page ──
   '404.eyebrow': 'Error 404',

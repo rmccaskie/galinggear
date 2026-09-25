@@ -11,13 +11,15 @@ import { siteProfile } from '../site-profile'
 
 const BRAND = siteProfile.brand.name
 const TAGLINE = siteProfile.brand.tagline
+const DEMONYM = siteProfile.audience.demonym
+const COUNTRY_ADJ = siteProfile.audience.countryAdjective ?? 'local'
 
 export const enCatalogue = {
   // ── brand ──────────────────────────────────────────────────────────────
   'brand.name': BRAND,
   'brand.tagline': TAGLINE,
   'brand.mission':
-    `${TAGLINE} We help Filipino families get ready — for everyone under the roof.`,
+    `${TAGLINE} We help ${DEMONYM} families get ready — for everyone under the roof.`,
   'brand.legal': `© 2026 ${BRAND}. No affiliation with any supplier.`,
 
   // ── nav / header ──────────────────────────────────────────────────────
@@ -35,7 +37,7 @@ export const enCatalogue = {
   'footer.subscribe_heading': `Subscribe to ${BRAND}`,
   'footer.about_heading': 'About',
   'footer.about_body':
-    `${BRAND} is an independent preparedness project helping Filipino families get ready for typhoons, floods, quakes and brownouts — with clear, practical guides and honest gear picks.`,
+    `${BRAND} is an independent preparedness project helping households get ready — with clear, practical guides and honest gear picks.`,
   'footer.contact_heading': 'Contact',
   'footer.contact_label': 'Email us',
   'footer.contact_email': `hello@${siteProfile.brand.domain}`,
@@ -93,10 +95,10 @@ export const enCatalogue = {
   'rail.ad_flag': 'Advertisement',
 
   // ── home page ─────────────────────────────────────────────────────────
-  'home.eyebrow': 'Preparedness and gear for Filipino families',
+  'home.eyebrow': `Preparedness and gear for ${DEMONYM} families`,
   'home.h1': 'Beat the storm with the right gear and know-how.',
   'home.lede':
-    'Typhoons, floods, earthquakes, brownouts — practical guides to get your family ready, plus the gear, bags and gadgets that actually make the difference when it counts. Everything you need, nothing you don\'t.',
+    'Practical guides to get your family ready, plus the gear, bags and gadgets that actually make the difference when it counts. Everything you need, nothing you don\'t.',
   'home.cta': 'Join the list',
   'home.editors_pick': "Editor's choice",
   'home.also_featured': 'Also featured',
@@ -108,7 +110,7 @@ export const enCatalogue = {
   'home.empty': 'Nothing new yet. Check back soon.',
   'home.callout_h2': 'The right gear makes the difference',
   'home.callout_body':
-    'When the storm hits, good gear is what keeps your family safe, dry and powered — so we test it in real Philippine conditions and tell you honestly what earns its place. Join the list for the guides and the gear worth owning.',
+    `When the storm hits, good gear is what keeps your family safe, dry and powered — so we test it in real ${COUNTRY_ADJ} conditions and tell you honestly what earns its place. Join the list for the guides and the gear worth owning.`,
 
   // ── archive page ──────────────────────────────────────────────────────
   'archive.eyebrow': 'The archive',
@@ -127,7 +129,7 @@ export const enCatalogue = {
   'subscribe.eyebrow': 'Join the list',
   'subscribe.h1': 'Guides, gear and gadgets',
   'subscribe.lede':
-    'Typhoons, floods, earthquakes and brownouts — we write up how to get your family ready, and the gear, bags and gadgets that make the difference. No spam, unsubscribe any time.',
+    'We write up how to get your family ready, and the gear, bags and gadgets that make the difference. No spam, unsubscribe any time.',
 
   // ── 404 page ──────────────────────────────────────────────────────────
   '404.eyebrow': 'Error 404',
