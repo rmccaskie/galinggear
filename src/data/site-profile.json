@@ -116,6 +116,9 @@
   "authorities": {
     "source": "src/data/authorities.json"
   },
+  "review": {
+    "safetyBrief": "src/data/profile/safety-review.md"
+  },
   "images": {
     "heroStyle": "src/data/profile/image-style.md",
     "avoid": []

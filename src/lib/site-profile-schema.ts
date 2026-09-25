@@ -86,6 +86,7 @@ export const siteProfileSchema = z.object({
     exclusions: z.array(z.string()),
   }),
   authorities: z.object({ source: z.string() }),
+  review: z.object({ safetyBrief: z.string() }),
   images: z.object({ heroStyle: z.string(), avoid: z.array(z.string()) }),
   monetisation: z.object({
     affiliate: z.object({ enabled: z.boolean(), disclosure: z.string() }),
