@@ -95,6 +95,9 @@
         "uiCatalogue": "en",
         "htmlLang": "en-PH",
         "ogLocale": "en_PH",
+        "acceptLanguage": [
+          "en"
+        ],
         "copyOverride": "src/data/profile/copy.en.json"
       }
     }
