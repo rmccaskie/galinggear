@@ -30,3 +30,7 @@ pnpm-debug.log*
 # Auto-generated preview artifacts for content .md files — never commit
 src/content/**/*.docx
 src/content/**/*.pdf
+
+# Abacus auto-generated companions for profile .md sidecars — not source
+src/data/profile/*.docx
+src/data/profile/*.pdf

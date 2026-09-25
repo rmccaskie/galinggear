@@ -1,0 +1,6 @@
+# Keep line endings deterministic so the profile snapshot stays reproducible
+# across machines (Windows checkouts with core.autocrlf=true included).
+* text=auto eol=lf
+
+# Site profile and its sidecar data — the source of the Stage-1 snapshot.
+src/data/** text eol=lf

@@ -1,5 +1,6 @@
 ---
 import { type Locale, DEFAULT_LOCALE, LOCALES, OG_LOCALE, URL_PREFIX } from '../lib/i18n'
+import { siteProfile } from '../lib/site-profile'
 
 interface Props {
   title: string
@@ -12,12 +13,12 @@ interface Props {
 const { title, description, image, type = 'website' } = Astro.props
 const locale: Locale = (Astro.props.locale ?? Astro.currentLocale ?? DEFAULT_LOCALE) as Locale
 
-const siteName = 'Galing Gear'
+const siteName = siteProfile.brand.name
 const fullTitle = title === siteName ? title : `${title} · ${siteName}`
 const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString()
 const ogImage = image
   ? new URL(image, Astro.site ?? Astro.url).toString()
-  : 'https://images.galinggear.com/brand/og-image.png?v=1'
+  : `https://${siteProfile.brand.mediaDomain}/brand/og-image.png?v=1`
 
 // Build the bare path (without locale prefix) for hreflang alternates
 const prefix = URL_PREFIX[locale]

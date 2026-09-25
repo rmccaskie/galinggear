@@ -4,6 +4,7 @@ import type { Scenario } from '../lib/scenarios'
 import type { CatalogueKey } from '../lib/catalogue'
 import { localisedPath, DEFAULT_LOCALE, type Locale } from '../lib/i18n'
 import ShareBar from './ShareBar.astro'
+import { siteProfile } from '../lib/site-profile'
 
 interface SocialCopy {
   facebook?: string
@@ -31,7 +32,7 @@ interface Props {
 
 const { title, description, scenario, publishedAt, slug, featured = false, heroImage, status, articleType, locale, strings, social } = Astro.props
 const lp = (p: string) => localisedPath(locale ?? DEFAULT_LOCALE, p)
-const shareUrl = `https://galinggear.com${lp(`/articles/${slug}/`)}`
+const shareUrl = `${siteProfile.brand.siteUrl}${lp(`/articles/${slug}/`)}`
 
 const readLabel =
   articleType === 'review'

@@ -10,6 +10,7 @@ import { resolvedCatalogue } from '../../lib/catalogue'
 import { getTaglishMap, localiseArticleData } from '../../lib/article-locale'
 import SeriesCard from '../SeriesCard.astro'
 import { resolveAllSeries } from '../../lib/series'
+import { siteProfile } from '../../lib/site-profile'
 
 const locale = (Astro.currentLocale ?? DEFAULT_LOCALE) as Locale
 const strings = resolvedCatalogue(locale)
@@ -50,7 +51,7 @@ const allSeries = resolveAllSeries(allArticlesRaw)
 
 <BaseLayout
   title={strings['brand.name']}
-  description="Preparedness and gear for Filipino families. Practical guides for typhoons, floods, earthquakes and brownouts — plus the gear, bags and gadgets that make the difference."
+  description={siteProfile.brand.homeDescription}
   locale={locale}
 >
   <section class="hero">

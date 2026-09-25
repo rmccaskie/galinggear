@@ -4,6 +4,7 @@ import SubscribeForm from '../../components/SubscribeForm.astro'
 import { messageForCode } from '../../lib/strings'
 import { type Locale, DEFAULT_LOCALE } from '../../lib/i18n'
 import { resolvedCatalogue } from '../../lib/catalogue'
+import { siteProfile } from '../../lib/site-profile'
 
 // Server-rendered so the no-JS redirect from /api/subscribe can show its
 // confirmation or error message without any client script. See docs/DECISIONS.md.
@@ -25,7 +26,7 @@ if (status === 'success') {
 
 <BaseLayout
   title={strings['nav.subscribe']}
-  description="Join the Galing Gear list: preparedness guides and the gear that makes the difference for Filipino families — often and regular."
+  description={`Join the ${siteProfile.brand.name} list: preparedness guides and the gear that makes the difference for ${siteProfile.audience.demonym} families — often and regular.`}
   locale={locale}
 >
   <section class="wrap subscribe-page">

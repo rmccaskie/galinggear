@@ -1,8 +1,8 @@
 /**
- * Locale definitions, fallback chain, and resolution for Galing Gear i18n.
+ * Locale definitions, fallback chain, and resolution for the site i18n.
  *
  * ONE module — every consumer imports from here. No locale constants anywhere
- * else. Built to the spec in /home/ubuntu/output/galinggear-i18n-plan.md
+ * else. Built to the i18n plan spec (see docs/).
  * and governed by /home/ubuntu/Uploads/internationalization.md §7.
  *
  * ⚠ SERVER ONLY — the catalogue statically imports every locale, so importing
@@ -10,6 +10,8 @@
  *   bundle weight on the slowest devices). Resolve on the server; pass
  *   translated strings to client components as props. (§7.5)
  */
+
+import { siteProfile } from './site-profile'
 
 // ---------------------------------------------------------------------------
 // Locale set
@@ -23,11 +25,36 @@
 export const LOCALES = ['taglish', 'en'] as const
 export type Locale = (typeof LOCALES)[number]
 
+// ---------------------------------------------------------------------------
+// Profile bridge — map profile language ids (e.g. 'fil-x-taglish', 'en') to the
+// internal locale ids above via each language's `uiCatalogue`. The internal id
+// set stays a literal union (LOCALES) so the type contract is unchanged; only
+// the VALUES below are read from the site profile.
+// ---------------------------------------------------------------------------
+
+const profileLangs = siteProfile.locales.languages
+
+/** Profile language id -> internal Locale id (via uiCatalogue). */
+function internalIdFor(profileId: string): Locale {
+  return (profileLangs[profileId]?.uiCatalogue ?? profileId) as Locale
+}
+
+/** Build a Record keyed by internal Locale from each profile language. */
+function byLocale<T>(
+  pick: (lang: (typeof profileLangs)[string], profileId: string) => T
+): Record<Locale, T> {
+  const out = {} as Record<Locale, T>
+  for (const [pid, lang] of Object.entries(profileLangs)) {
+    out[internalIdFor(pid)] = pick(lang, pid)
+  }
+  return out
+}
+
 /** The locale content is authored in. Every item exists in English first. */
-export const BASE_LOCALE: Locale = 'en'
+export const BASE_LOCALE: Locale = internalIdFor(siteProfile.locales.base)
 
 /** The locale served when no signal is available (bare tree). */
-export const DEFAULT_LOCALE: Locale = 'taglish'
+export const DEFAULT_LOCALE: Locale = internalIdFor(siteProfile.locales.default)
 
 // ---------------------------------------------------------------------------
 // Fallback chain
@@ -64,16 +91,14 @@ export function fallbackOrder(locale: Locale): Locale[] {
 // ---------------------------------------------------------------------------
 
 /** Maps internal locale id → the nearest real `<html lang>` tag. */
-export const HTML_LANG: Record<Locale, string> = {
-  en: 'en-PH',
-  taglish: 'fil-PH',
-}
+export const HTML_LANG: Record<Locale, string> = byLocale(
+  (l, pid) => l.htmlLang ?? pid
+)
 
 /** Maps internal locale id → the `og:locale` value (underscore form). */
-export const OG_LOCALE: Record<Locale, string> = {
-  en: 'en_PH',
-  taglish: 'fil_PH',
-}
+export const OG_LOCALE: Record<Locale, string> = byLocale(
+  (l, pid) => l.ogLocale ?? pid
+)
 
 // ---------------------------------------------------------------------------
 // Language switcher endonyms (§7.4)
@@ -85,20 +110,18 @@ export const OG_LOCALE: Record<Locale, string> = {
  * still find the switch. Each carries its own `lang` attribute for screen
  * readers (§7.4).
  */
-export const SWITCHER_LABELS: Record<Locale, { label: string; lang: string }> = {
-  taglish: { label: 'Taglish', lang: 'fil-PH' },
-  en: { label: 'English', lang: 'en-PH' },
-}
+export const SWITCHER_LABELS: Record<Locale, { label: string; lang: string }> = byLocale(
+  (l, pid) => ({ label: l.label, lang: l.htmlLang ?? pid })
+)
 
 // ---------------------------------------------------------------------------
 // URL prefix mapping
 // ---------------------------------------------------------------------------
 
 /** Path prefix for each locale. DEFAULT_LOCALE is bare (empty string). */
-export const URL_PREFIX: Record<Locale, string> = {
-  taglish: '',
-  en: '/en',
-}
+export const URL_PREFIX: Record<Locale, string> = byLocale(
+  (_l, pid) => siteProfile.locales.prefixes[pid] ?? ''
+)
 
 /**
  * Given a URL pathname, extract the locale from the leading prefix.
@@ -128,7 +151,7 @@ export function localeFromPath(pathname: string): { locale: Locale; rest: string
  * - One year unless data-retention policy says otherwise.
  */
 export const LOCALE_COOKIE = {
-  name: '__Host-gg-locale',
+  name: siteProfile.locales.cookieName ?? '__Host-locale',
   maxAge: 365 * 24 * 60 * 60, // 1 year in seconds
   sameSite: 'Lax' as const,
   secure: true,
@@ -145,7 +168,15 @@ export const LOCALE_COOKIE = {
  * PH is the primary target; expand if the Philippine diaspora in a specific
  * country is large enough to warrant it.
  */
-const TAGLISH_COUNTRIES = new Set(['PH'])
+const COUNTRY_LOCALE_MAP: Record<string, Locale> = (() => {
+  const map: Record<string, Locale> = {}
+  for (const [pid, lang] of Object.entries(profileLangs)) {
+    for (const cc of lang.geoCountries ?? []) {
+      map[cc.toUpperCase()] = internalIdFor(pid)
+    }
+  }
+  return map
+})()
 
 /**
  * Given a country code (ISO 3166-1 alpha-2, as provided by Cloudflare's
@@ -156,7 +187,7 @@ const TAGLISH_COUNTRIES = new Set(['PH'])
  */
 export function localeForCountry(country: string | null | undefined): Locale | null {
   if (!country || country === 'XX') return null // unknown → fall through
-  return TAGLISH_COUNTRIES.has(country.toUpperCase()) ? 'taglish' : 'en'
+  return COUNTRY_LOCALE_MAP[country.toUpperCase()] ?? BASE_LOCALE
 }
 
 // ---------------------------------------------------------------------------
@@ -174,6 +205,17 @@ export function localeForCountry(country: string | null | undefined): Locale | n
  *
  * Quality weights are respected: highest-quality match wins.
  */
+/** Accept-Language primary subtag (lowercased) -> internal Locale. */
+const ACCEPT_LANGUAGE_MAP: Record<string, Locale> = (() => {
+  const map: Record<string, Locale> = {}
+  for (const [pid, lang] of Object.entries(profileLangs)) {
+    for (const subtag of lang.acceptLanguage ?? []) {
+      map[subtag.toLowerCase()] = internalIdFor(pid)
+    }
+  }
+  return map
+})()
+
 export function localeFromAcceptLanguage(header: string | null | undefined): Locale | null {
   if (!header) return null
 
@@ -190,8 +232,8 @@ export function localeFromAcceptLanguage(header: string | null | undefined): Loc
 
   for (const { tag } of entries) {
     const primary = tag.split('-')[0]
-    if (primary === 'fil' || primary === 'tl') return 'taglish'
-    if (primary === 'en') return 'en'
+    const matched = ACCEPT_LANGUAGE_MAP[primary]
+    if (matched) return matched
   }
   return null
 }

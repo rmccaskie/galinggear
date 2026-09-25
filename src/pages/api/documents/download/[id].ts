@@ -3,7 +3,7 @@ import { createSupabaseClient } from '../../../../lib/supabase'
 
 // Same-origin download proxy for document PDFs.
 //
-// The rendered PDFs live on a different host (images.galinggear.com / R2), so a
+// The rendered PDFs live on a different host (the media domain / R2), so a
 // cross-origin `<a download>` is IGNORED by browsers and the file just opens
 // inline. This route runs on the site origin, fetches the PDF server-side and
 // re-streams it with `Content-Disposition: attachment`, so the browser saves it

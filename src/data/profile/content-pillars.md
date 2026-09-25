@@ -1,0 +1,1 @@
+Content pillars: calamity preparedness (typhoons, floods, earthquakes, volcanic ashfall, fire), family resilience (go-bags, power outages, staying connected, first aid, stranded kits, kids/lolas/PWDs), supporting gear (affordable kit available in the Philippines), food & water (lowest priority).

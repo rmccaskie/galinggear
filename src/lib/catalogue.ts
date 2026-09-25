@@ -18,7 +18,42 @@
 
 import { type Locale, BASE_LOCALE, fallbackOrder } from './i18n'
 import { enCatalogue } from './catalogues/en'
-import { taglishCatalogue, TAGLISH_REVIEW } from './catalogues/taglish'
+import { taglishCatalogue } from './catalogues/taglish'
+import { siteProfile } from './site-profile'
+
+// ---------------------------------------------------------------------------
+// Profile-supplied copy overrides
+// ---------------------------------------------------------------------------
+// Niche reader-facing copy (hazard prose, geography) lives in the site
+// profile's copyOverride JSON files, not baked into the engine catalogues.
+// The catalogues ship generic defaults; the active profile's override wins.
+const copyOverrideModules = import.meta.glob('../data/profile/copy.*.json', {
+  eager: true,
+  import: 'default',
+}) as Record<string, Record<string, string>>
+
+function copyOverrideFor(internalLocale: Locale): Record<string, string> {
+  const entry = Object.values(siteProfile.locales.languages).find(
+    (l) => l.uiCatalogue === internalLocale,
+  )
+  const path = entry?.copyOverride
+  if (!path) return {}
+  const base = path.split('/').pop()!
+  const key = Object.keys(copyOverrideModules).find((k) => k.endsWith('/' + base))
+  return key ? copyOverrideModules[key] : {}
+}
+
+// The non-base review gate (§10.4) is declared per language in the site
+// profile, not hard-coded in the engine. Map the internal locale id to its
+// profile language via uiCatalogue and read that language's reviewGate.
+function reviewGateFor(
+  internalLocale: Locale,
+): { reviewer: string; date: string } | undefined {
+  const entry = Object.values(siteProfile.locales.languages).find(
+    (l) => l.uiCatalogue === internalLocale,
+  )
+  return entry?.reviewGate
+}
 
 // ---------------------------------------------------------------------------
 // Types
@@ -35,8 +70,8 @@ export type Catalogue = Partial<Record<CatalogueKey, string>>
 // ---------------------------------------------------------------------------
 
 const catalogues: Record<Locale, Catalogue> = {
-  en: enCatalogue,
-  taglish: taglishCatalogue,
+  en: { ...enCatalogue, ...copyOverrideFor('en') } as Catalogue,
+  taglish: { ...taglishCatalogue, ...copyOverrideFor('taglish') } as Catalogue,
 }
 
 // ---------------------------------------------------------------------------
@@ -55,10 +90,8 @@ export interface ReviewMarker {
  */
 export function isReviewed(locale: Locale): boolean {
   if (locale === BASE_LOCALE) return true
-  if (locale === 'taglish') {
-    return !!(TAGLISH_REVIEW.reviewer && TAGLISH_REVIEW.date)
-  }
-  return false
+  const gate = reviewGateFor(locale)
+  return !!(gate && gate.reviewer && gate.date)
 }
 
 // ---------------------------------------------------------------------------

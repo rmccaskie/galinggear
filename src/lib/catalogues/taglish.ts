@@ -10,6 +10,10 @@
  * The review must be done by someone fluent in English, Tagalog and Taglish
  * (D-review-chrome).
  */
+import { siteProfile } from '../site-profile'
+
+const BRAND = siteProfile.brand.name
+
 export const TAGLISH_REVIEW = {
   reviewer: 'Robert McCaskie' as string | null,
   date: '2026-09-21' as string | null,
@@ -29,7 +33,7 @@ export const taglishCatalogue: Record<string, string> = {
   'brand.tagline': 'Para sa bagyo, sa lindol, at sa gear na panalo sa lahat.',
   'brand.mission':
     'Para sa bagyo, sa lindol, at sa gear na panalo sa lahat. Tinutulungan namin ang mga pamilyang Pilipino na maging handa — para sa lahat ng nasa bahay.',
-  'brand.legal': '© 2026 Galing Gear. Walang kaugnayan sa kahit anong supplier.',
+  'brand.legal': `© 2026 ${BRAND}. Walang kaugnayan sa kahit anong supplier.`,
 
   // ── nav / header ──
   'nav.scenarios': 'Mga Sitwasyon',
@@ -42,10 +46,8 @@ export const taglishCatalogue: Record<string, string> = {
 
   // ── footer ──
   'footer.scenarios_heading': 'Mga Sitwasyon',
-  'footer.subscribe_heading': 'Mag-subscribe sa Galing Gear',
+  'footer.subscribe_heading': `Mag-subscribe sa ${BRAND}`,
   'footer.about_heading': 'Tungkol sa Amin',
-  'footer.about_body':
-    'Ang Galing Gear ay isang independent na preparedness project na tumutulong sa mga pamilyang Pilipino na maging handa sa bagyo, baha, lindol at brownout — may malinaw at praktikal na mga gabay at tapat na gear picks.',
   'footer.contact_label': 'I-email kami',
 
   // ── theme ──
@@ -103,8 +105,6 @@ export const taglishCatalogue: Record<string, string> = {
   // ── home page ──
   'home.eyebrow': 'Preparedness at gear para sa mga pamilyang Pilipino',
   'home.h1': 'Talunin ang bagyo gamit ang tamang gear at kaalaman.',
-  'home.lede':
-    'Bagyo, baha, lindol, brownout — praktikal na gabay para maihanda ang pamilya mo, kasama ang gear, bag at gadget na talagang nakakatulong kapag kailangan. Lahat ng kailangan mo, wala nang labis.',
   'home.cta': 'Sali sa listahan',
   'home.editors_pick': 'Mga pili ng editor',
   'home.also_featured': 'Iba pang featured',
@@ -134,8 +134,6 @@ export const taglishCatalogue: Record<string, string> = {
   // ── subscribe page ──
   'subscribe.eyebrow': 'Sali sa listahan',
   'subscribe.h1': 'Mga gabay, gear at gadget',
-  'subscribe.lede':
-    'Bagyo, baha, lindol at brownout — isinusulat namin kung paano ihanda ang pamilya mo, at ang gear, bag at gadget na nakakatulong. Walang spam, pwedeng mag-unsubscribe an(y)time.',
 
   // ── 404 page ──
   '404.eyebrow': 'Error 404',
@@ -171,7 +169,7 @@ export const taglishCatalogue: Record<string, string> = {
   'series.pill_live': 'Live',
   'series.pill_soon': 'Malapit',
   'series.see_full_overview': 'Tingnan ang buong serye',
-  'series.eyebrow': 'Isang Serye ng Galing Gear',
+  'series.eyebrow': `Isang Serye ng ${BRAND}`,
   'series.anchor_label': 'Anchor',
   'series.start_here': 'dito magsimula',
   'series.stat_parts': 'bahagi',
