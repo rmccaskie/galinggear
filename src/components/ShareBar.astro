@@ -248,6 +248,7 @@ const compact = variant === 'compact'
   /* Brand colour accents on hover for the share links. */
   .sb-fb:hover { color: #1877f2; }
   .sb-x:hover { color: #000; }
+  :global([data-theme='dark']) .sb-x:hover { color: var(--main-text); }
   .sb-ig:hover { color: #c13584; }
 
   /* Compact variant (article card): icon-only, tighter, one line. */
