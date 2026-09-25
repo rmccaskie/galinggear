@@ -57,9 +57,10 @@ const publishedLabel = Number.isNaN(published.valueOf())
   }
   <div class="meta-row">
     <a class="scenario mono" href={lp(`/${scenario}/`)}>{scenarioLabel(scenario, locale)}</a>
-    {status && (
-      <span class:list={['status-pill', 'mono', status === 'archived' ? 'is-archived' : 'is-active']}>
-        {status === 'archived' ? (strings?.['card.status_archived'] ?? 'Archived') : (strings?.['card.status_current'] ?? 'Current')}
+    {/* Only archived pieces carry a pill; current is the default and needs no label. */}
+    {status === 'archived' && (
+      <span class="status-pill mono is-archived">
+        {strings?.['card.status_archived'] ?? 'Archived'}
       </span>
     )}
   </div>
@@ -152,6 +153,8 @@ const publishedLabel = Number.isNaN(published.valueOf())
     line-height: 1.6;
   }
 
+  /* No longer rendered (the "Current" pill was removed). Kept so the
+     shared card stylesheet, and every page that links it, stays unchanged. */
   .status-pill.is-active {
     color: var(--status-success);
   }
