@@ -74,6 +74,8 @@ export const enCatalogue = {
   'article.status_current': 'Current',
   'article.status_archived':
     'Archived — kept for reference, may be out of date.',
+  'article.archived_notice':
+    'This article is archived: some details may be out of date.',
   'article.toc_label': 'On this page',
   'article.more_in': 'More in {scenario}',
   'article.share': 'Share this',

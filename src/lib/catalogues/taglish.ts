@@ -82,6 +82,8 @@ export const taglishCatalogue: Record<string, string> = {
   'article.status_current': 'Kasalukuyan',
   'article.status_archived':
     'Naka-archive — itinago para sa reference, pwedeng luma na.',
+  'article.archived_notice':
+    'Naka-archive na ang article na ito: pwedeng luma na ang ilang detalye.',
   'article.toc_label': 'Sa page na ito',
   'article.more_in': 'Iba pa sa {scenario}',
   'article.share': 'I-share ito',

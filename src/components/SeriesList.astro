@@ -170,6 +170,11 @@ function fmtDate(iso: string | undefined): string {
     background: #FFF6EC;
   }
 
+  /* Dark theme: a tint of the accent instead of the light cream above. */
+  :global([data-theme='dark']) li.is-current {
+    background: color-mix(in srgb, var(--accent-fill) 18%, var(--surface));
+  }
+
   li.is-current .sl-num {
     background: var(--accent-fill);
     color: #fff;

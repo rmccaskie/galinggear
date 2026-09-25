@@ -319,6 +319,11 @@ const progressPct = series.totalCount > 0
     color: #fff;
   }
 
+  /* Dark theme: --accent-text is light there, so the number takes the page colour. */
+  :global([data-theme='dark']) .tl-item.anchor .tl-dot {
+    color: var(--page-background);
+  }
+
   /* B1 enhanced: give the anchor card extra prominence */
   .tl-item.anchor .tl-card {
     border-inline-start: 4px solid var(--accent-fill);
@@ -357,6 +362,10 @@ const progressPct = series.totalCount > 0
   .tl-item.soon .tl-card {
     background: #F5FAF9;
     border-style: dashed;
+  }
+
+  :global([data-theme='dark']) .tl-item.soon .tl-card {
+    background: var(--surface-sunken);
   }
 
   .tl-meta {

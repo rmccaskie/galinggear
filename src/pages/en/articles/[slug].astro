@@ -84,6 +84,7 @@ const { headings } = await render(renderTarget)
 // Section submenu ("On this page"): derived from the article's own ## headings.
 // Astro auto-assigns each heading a slug id, so the anchors already exist.
 const toc = headings.filter((h) => h.depth === 2)
+const hasToc = toc.length > 1
 
 // Per-section layout: split the rendered body HTML at each top-level <h2 id>.
 // Content before the first heading is an intro (full width). Each section then
@@ -127,7 +128,7 @@ const RAIL_DEFAULT_LABEL: Record<RailItemData['type'], string> = {
   article: 'Suggested reading',
   ad: 'Sponsored',
 }
-const { title, description, scenario, publishedAt, updatedAt, editorNote, heroImage, heroGallery, status, shareImage, social } =
+const { title, description, scenario, publishedAt, editorNote, heroImage, heroGallery, status, shareImage, social } =
   locData
 // Series this article belongs to (may be more than one).
 const allArticles2 = await getCollection('articles')
@@ -153,23 +154,12 @@ function fmtDate(date: string) {
       <a class="scenario mono" href={localisedPath(locale, `/${scenario}/`)}>{scenarioLabel(scenario, locale)}</a>
       <h1>{title}</h1>
       <p class="description">{description}</p>
-      <div class="dates mono">
-        <time datetime={publishedAt}>{strings['article.published']} {fmtDate(publishedAt)}</time>
-        {updatedAt && <time datetime={updatedAt}>{strings['article.updated']} {fmtDate(updatedAt)}</time>}
-      </div>
-      {
-        isArchived ? (
-          <p class="art-status is-archived">
-            <span class="dot" /> {strings['article.status_archived']}
-          </p>
-        ) : (
-          <p class="art-status is-active">
-            <span class="dot" /> {strings['article.status_current']}
-          </p>
-        )
-      }
       {editorNote && <p class="editor-note">{editorNote}</p>}
-      <ShareBar url={shareUrl} social={social} locale={locale} variant="full" heading={strings['article.share']} />
+      {/* Desktop: the share bar sits in the header. On mobile it moves to the
+          end of the article (see .share-end below) so content comes first. */}
+      <div class="share-top">
+        <ShareBar url={shareUrl} social={social} locale={locale} variant="full" heading={strings['article.share']} />
+      </div>
     </header>
 
     {/* A1 — series strip(s) at the top of the article */}
@@ -202,10 +192,21 @@ function fmtDate(date: string) {
       ) : null
     }
 
-    <div class:list={['wrap', 'art-layout', { 'has-toc': toc.length > 1 }]}>
+    {/* Published date: inside the "On this page" box when there is one,
+        otherwise a small line directly under the hero image. */}
+    {
+      !hasToc && (
+        <div class="wrap">
+          <p class="art-date mono"><time datetime={publishedAt}>{strings['article.published']} {fmtDate(publishedAt)}</time></p>
+        </div>
+      )
+    }
+
+    <div class:list={['wrap', 'art-layout', { 'has-toc': hasToc }]}>
       {
-        toc.length > 1 && (
+        hasToc && (
           <nav class="art-toc" aria-label={strings['article.toc_label']}>
+            <p class="art-toc__date mono"><time datetime={publishedAt}>{strings['article.published']} {fmtDate(publishedAt)}</time></p>
             <details class="art-toc__box" open>
               <summary class="art-toc__label mono">
                 <span>{strings['article.toc_label']}</span>
@@ -225,6 +226,7 @@ function fmtDate(date: string) {
         )
       }
       <div class="prose body">
+        {isArchived && <p class="art-archived" role="note">{strings['article.archived_notice']}</p>}
         {intro && <div class="section-block full" set:html={intro} />}
         {
           sections.map((section) => {
@@ -268,6 +270,13 @@ function fmtDate(date: string) {
           <DocumentDownloads slug={article.id} locale={locale} />
         </div>
       </div>
+    </div>
+
+    {/* Mobile only: the share bar at the end of the article (the header copy
+        is hidden there). ShareBar has no element ids and one delegated click
+        listener, so both copies work. */}
+    <div class="wrap share-end">
+      <ShareBar url={shareUrl} social={social} locale={locale} variant="full" heading={strings['article.share']} />
     </div>
   </article>
 
@@ -347,50 +356,62 @@ function fmtDate(date: string) {
     line-height: 1.4;
   }
 
-  .dates {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-md) var(--space-lg);
-    margin-block-start: var(--space-lg);
+  /* Published date: a small line at the top of the "On this page" box, or
+     directly under the hero image when the article has no box. */
+  .art-date,
+  .art-toc__date {
     font-size: var(--text-label);
     color: var(--muted-text);
+    margin: 0;
   }
 
-  .art-status {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--space-2xs);
-    margin-block-start: var(--space-md);
-    padding: var(--space-3xs) var(--space-sm);
-    border-radius: var(--radius-pill);
-    border: 1px solid var(--hairline);
-    font-size: var(--text-label);
-    letter-spacing: 0.02em;
+  .art-date {
+    margin-block-start: var(--space-sm);
   }
 
-  .art-status .dot {
-    inline-size: 0.5rem;
-    block-size: 0.5rem;
-    border-radius: var(--radius-pill);
-    flex-shrink: 0;
+  .art-toc__date {
+    padding-block-end: var(--space-sm);
+    margin-block-end: var(--space-sm);
+    border-block-end: 1px solid var(--hairline);
   }
 
-  .art-status.is-active {
-    color: var(--status-success);
-  }
-
-  .art-status.is-active .dot {
-    background-color: var(--status-success);
-  }
-
-  .art-status.is-archived {
-    color: var(--status-caution);
+  /* Archived articles: a one-line notice just above the article text. */
+  .art-archived {
+    margin: 0 0 var(--space-xl);
+    padding: var(--space-sm) var(--space-md);
+    max-inline-size: var(--measure);
+    border: 1px solid var(--status-caution);
+    border-inline-start-width: 4px;
+    border-radius: var(--radius-md);
     background-color: var(--surface-sunken);
-    border-color: var(--status-caution);
+    color: var(--main-text);
+    font-size: var(--text-label);
+    line-height: 1.5;
   }
 
-  .art-status.is-archived .dot {
-    background-color: var(--status-caution);
+  .art-archived + .section-block {
+    margin-block-start: 0;
+  }
+
+  /* Share bar: in the header on desktop, at the end of the article on mobile
+     (the same 900px breakpoint where the "On this page" rail collapses). */
+  .share-top {
+    margin-block-start: var(--space-lg);
+  }
+
+  .share-end {
+    display: none;
+  }
+
+  @media (max-width: 900px) {
+    .share-top {
+      display: none;
+    }
+
+    .share-end {
+      display: block;
+      padding-block-end: var(--space-xl);
+    }
   }
 
   .editor-note {
@@ -503,17 +524,20 @@ function fmtDate(date: string) {
       display: block;
     }
 
+    /* The card wraps the published date and the collapsible tap-to-open
+       list (starts open), so the date stays visible when the list is shut. */
     .art-toc {
       position: static;
       margin-block-end: var(--space-xl);
-    }
-
-    /* Collapsible tap-to-open card (starts open). */
-    .art-toc__box {
       border: 1px solid var(--hairline);
       border-radius: var(--radius-md);
       background-color: var(--surface);
       overflow: hidden;
+    }
+
+    .art-toc__date {
+      margin: 0;
+      padding: var(--space-md) var(--space-lg) var(--space-sm);
     }
 
     .art-toc__box summary.art-toc__label {
