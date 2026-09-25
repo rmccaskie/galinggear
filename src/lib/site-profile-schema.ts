@@ -26,6 +26,21 @@ const languageSchema = z.object({
   label: z.string(),
   styleGuide: z.string().optional(),
   uiCatalogue: z.string(),
+  // i18n metadata (SITE): the <html lang> and og:locale tags for this language.
+  htmlLang: z.string().optional(),
+  ogLocale: z.string().optional(),
+  // Generation-side style guide sidecar for a non-base (translated) language —
+  // the copywriter rules the admin's translation prompts read.
+  genStyleGuide: z.string().optional(),
+  // Per-language UI copy override file merged over the catalogue defaults (SITE).
+  copyOverride: z.string().optional(),
+  // Countries (ISO 3166-1 alpha-2) where this language is the geo default (SITE).
+  geoCountries: z.array(z.string()).optional(),
+  // Accept-Language primary subtags that map to this language (SITE).
+  acceptLanguage: z.array(z.string()).optional(),
+  // Human-review gate for a non-base catalogue: reviewer name + date. Until both
+  // are set the translated catalogue is not served (SITE catalogue.ts).
+  reviewGate: z.object({ reviewer: z.string(), date: z.string() }).optional(),
 })
 
 const seasonalHookSchema = z.object({
@@ -64,8 +79,13 @@ export const siteProfileSchema = z.object({
   }),
   locales: z.object({
     default: z.string().min(1),
+    // The authoring/content base locale. Every item exists in this locale first;
+    // a "secondary language" is any available locale other than the base.
+    base: z.string().min(1),
     available: z.array(z.string()).min(1),
     prefixes: z.record(z.string(), z.string()),
+    // The __Host- cookie that remembers the reader's locale preference (SITE).
+    cookieName: z.string().optional(),
     languages: z.record(z.string(), languageSchema),
   }),
   voice: z.object({

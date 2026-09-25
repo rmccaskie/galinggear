@@ -42,6 +42,7 @@
   },
   "locales": {
     "default": "fil-x-taglish",
+    "base": "en",
     "available": [
       "fil-x-taglish",
       "en"
@@ -50,15 +51,34 @@
       "fil-x-taglish": "",
       "en": "/en"
     },
+    "cookieName": "__Host-gg-locale",
     "languages": {
       "fil-x-taglish": {
         "label": "Taglish",
         "styleGuide": "src/data/profile/language-fil-x-taglish.md",
-        "uiCatalogue": "taglish"
+        "uiCatalogue": "taglish",
+        "htmlLang": "fil-PH",
+        "ogLocale": "fil_PH",
+        "genStyleGuide": "src/data/profile/taglish-generation-style.md",
+        "copyOverride": "src/data/profile/copy.taglish.json",
+        "geoCountries": [
+          "PH"
+        ],
+        "acceptLanguage": [
+          "fil",
+          "tl"
+        ],
+        "reviewGate": {
+          "reviewer": "Robert McCaskie",
+          "date": "2026-09-21"
+        }
       },
       "en": {
         "label": "English",
-        "uiCatalogue": "en"
+        "uiCatalogue": "en",
+        "htmlLang": "en-PH",
+        "ogLocale": "en_PH",
+        "copyOverride": "src/data/profile/copy.en.json"
       }
     }
   },
