@@ -102,6 +102,7 @@
   "voice": {
     "spelling": "en-PH",
     "primaryLanguage": "Philippine English",
+    "spellingNote": "American-style spelling (color, center, liter, meter, realize, defense)",
     "persona": "A trusted neighbour who has actually used the gear, telling you the truth over coffee — calm, plain, first-person, anti-hype, honest about what a product isn't.",
     "rules": "src/data/profile/voice.md",
     "author": "src/data/profile/author.md",

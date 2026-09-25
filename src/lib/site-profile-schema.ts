@@ -111,6 +111,10 @@ export const siteProfileSchema = z.object({
     // Human-readable name of the writing language/register
     // (e.g. "Philippine English").
     primaryLanguage: z.string().optional(),
+    // House-style spelling note naming the spelling convention reviewers must
+    // treat as correct (e.g. "American-style spelling (color, center, liter,
+    // meter, realize, defense)"). Dropped from prompts when absent.
+    spellingNote: z.string().optional(),
     persona: z.string(),
     rules: z.string(),
     author: z.string(),
