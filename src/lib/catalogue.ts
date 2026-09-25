@@ -18,7 +18,7 @@
 
 import { type Locale, BASE_LOCALE, fallbackOrder } from './i18n'
 import { enCatalogue } from './catalogues/en'
-import { taglishCatalogue, TAGLISH_REVIEW } from './catalogues/taglish'
+import { taglishCatalogue } from './catalogues/taglish'
 import { siteProfile } from './site-profile'
 
 // ---------------------------------------------------------------------------
@@ -41,6 +41,18 @@ function copyOverrideFor(internalLocale: Locale): Record<string, string> {
   const base = path.split('/').pop()!
   const key = Object.keys(copyOverrideModules).find((k) => k.endsWith('/' + base))
   return key ? copyOverrideModules[key] : {}
+}
+
+// The non-base review gate (§10.4) is declared per language in the site
+// profile, not hard-coded in the engine. Map the internal locale id to its
+// profile language via uiCatalogue and read that language's reviewGate.
+function reviewGateFor(
+  internalLocale: Locale,
+): { reviewer: string; date: string } | undefined {
+  const entry = Object.values(siteProfile.locales.languages).find(
+    (l) => l.uiCatalogue === internalLocale,
+  )
+  return entry?.reviewGate
 }
 
 // ---------------------------------------------------------------------------
@@ -78,10 +90,8 @@ export interface ReviewMarker {
  */
 export function isReviewed(locale: Locale): boolean {
   if (locale === BASE_LOCALE) return true
-  if (locale === 'taglish') {
-    return !!(TAGLISH_REVIEW.reviewer && TAGLISH_REVIEW.date)
-  }
-  return false
+  const gate = reviewGateFor(locale)
+  return !!(gate && gate.reviewer && gate.date)
 }
 
 // ---------------------------------------------------------------------------
