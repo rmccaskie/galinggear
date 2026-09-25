@@ -84,6 +84,7 @@ export const siteProfileSchema = z.object({
     criteria: z.string(),
     seasonalCalendar: z.array(seasonalHookSchema),
     exclusions: z.array(z.string()),
+    contentPillars: z.string(),
   }),
   authorities: z.object({ source: z.string() }),
   review: z.object({ safetyBrief: z.string() }),

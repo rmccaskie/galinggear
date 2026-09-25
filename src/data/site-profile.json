@@ -111,7 +111,8 @@
         "hook": "Dry-season heat — heat-index warnings, water interruptions, grid yellow and red alerts, brownouts"
       }
     ],
-    "exclusions": []
+    "exclusions": [],
+    "contentPillars": "src/data/profile/content-pillars.md"
   },
   "authorities": {
     "source": "src/data/authorities.json"
