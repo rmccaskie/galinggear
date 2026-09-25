@@ -10,7 +10,7 @@ status: active
 updatedAt: '2026-09-23'
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789994455449-fnj7bv.png'
-shareImage: 'https://images.galinggear.com/staging/generated-1789994455449-fnj7bv.png'
+shareImage: 'https://images.galinggear.com/articles/generated-1789994455449-fnj7bv.png'
 social:
   facebook: "Not all fire extinguishers are created equal — and grabbing the cheapest one at checkout could leave you unprepared when it matters most. Our latest guide breaks down the ABC dry chemical type, the right kg size for your kitchen or living room, where to mount it, and how long it actually stays good before it's dead weight under the sink. \U0001F525 Read it here:\nhttps://galinggear.com/en/articles/choosing-a-home-fire-extinguisher-in-the-philippines/"
   x: "Most home fires start small. The right extinguisher in that first 30 seconds makes all the difference. Here's how to choose the correct type and size for your PH home \U0001F525 https://galinggear.com/en/articles/choosing-a-home-fire-extinguisher-in-the-philippines/ #FireSafety #EmergencyPrepPH"

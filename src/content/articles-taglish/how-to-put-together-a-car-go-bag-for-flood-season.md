@@ -10,7 +10,7 @@ railItems:
     assetId: f0691992-c490-442f-b27c-d71bc64cf9d3
     anchor: the-rule-the-bag-does-not-change
     label: Don't get caught out
-    image: 'https://images.galinggear.com/staging/1789809668891-roxlfa.png'
+    image: 'https://images.galinggear.com/library/1789809668891-roxlfa.png'
     alt: Flooded highway
   - type: image
     assetId: 78d637f8-a667-4b9f-bf47-d759cf879d62

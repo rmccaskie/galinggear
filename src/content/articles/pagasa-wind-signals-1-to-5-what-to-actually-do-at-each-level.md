@@ -15,12 +15,12 @@ railItems:
     assetId: 12aa7a33-a16a-4e19-81af-aee597f80894
     anchor: the-gear-that-helps
     label: Light when you need it.
-    image: 'https://images.galinggear.com/staging/generated-1789819604956-huo9e9.png'
+    image: 'https://images.galinggear.com/library/generated-1789819604956-huo9e9.png'
   - type: image
     assetId: f0691992-c490-442f-b27c-d71bc64cf9d3
     anchor: the-situation
     label: Don't get caught out
-    image: 'https://images.galinggear.com/staging/1789809668891-roxlfa.png'
+    image: 'https://images.galinggear.com/library/1789809668891-roxlfa.png'
     alt: Flooded highway
 shareImage: 'https://images.galinggear.com/articles/generated-1789820419923-hox5ga.png'
 social:

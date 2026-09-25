@@ -18,7 +18,7 @@ railItems:
     assetId: 12aa7a33-a16a-4e19-81af-aee597f80894
     anchor: overview
     label: Light when you need it.
-    image: 'https://images.galinggear.com/staging/generated-1789819604956-huo9e9.png'
+    image: 'https://images.galinggear.com/library/generated-1789819604956-huo9e9.png'
 shareImage: 'https://images.galinggear.com/articles/sourced-1789737595761-t0j1lc.jpg'
 social:
   facebook: "Brownout at 9:30pm, kids already asleep, and you're the one walking down a pitch-dark stairwell — this is exactly when a headlamp beats a torch. We put the Nitecore NU25 through two wet seasons and several long outages, and it's become the one piece of kit we actually forget we're carrying. Read the honest review, including where it falls short (sealed battery, rain-proof not waterproof). \U0001F526\n\nhttps://galinggear.com/en/articles/nitecore-nu25-review-the-headlamp-i-stopped-thinking-about/"

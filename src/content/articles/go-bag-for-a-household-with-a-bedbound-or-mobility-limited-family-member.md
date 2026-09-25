@@ -9,7 +9,7 @@ featured: false
 status: active
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1790040168439-1nocrb.png'
-shareImage: 'https://images.galinggear.com/staging/generated-1790040168439-1nocrb.png'
+shareImage: 'https://images.galinggear.com/articles/generated-1790040168439-1nocrb.png'
 social:
   facebook: "Most go-bag advice assumes everyone can grab a bag and walk out the door — but what if your lola can't walk unassisted, or a family member just had surgery? \U0001F392 This guide covers the caregiver's second bag, a written care summary, staging mobility aids by the exit, and lining up backup help before an emergency hits. If your household has a bedbound or mobility-limited member, this one's for you.\nhttps://galinggear.com/en/articles/go-bag-for-a-household-with-a-bedbound-or-mobility-limited-family-member/"
   x: >-

@@ -10,7 +10,7 @@ railItems:
     assetId: 12aa7a33-a16a-4e19-81af-aee597f80894
     anchor: overview
     label: 'May ilaw ka, exactly noong kailangan mo.'
-    image: 'https://images.galinggear.com/staging/generated-1789819604956-huo9e9.png'
+    image: 'https://images.galinggear.com/library/generated-1789819604956-huo9e9.png'
 railSourceHash: ada0ae5b96df0f11
 ---
 

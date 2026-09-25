@@ -10,12 +10,12 @@ railItems:
     assetId: 12aa7a33-a16a-4e19-81af-aee597f80894
     anchor: the-gear-that-helps
     label: Ilaw kapag kailangan mo.
-    image: 'https://images.galinggear.com/staging/generated-1789819604956-huo9e9.png'
+    image: 'https://images.galinggear.com/library/generated-1789819604956-huo9e9.png'
   - type: image
     assetId: f0691992-c490-442f-b27c-d71bc64cf9d3
     anchor: the-situation
     label: Wag ka hahabulin ng pangyayari
-    image: 'https://images.galinggear.com/staging/1789809668891-roxlfa.png'
+    image: 'https://images.galinggear.com/library/1789809668891-roxlfa.png'
     alt: Baha sa highway
 railSourceHash: d4f563db3ed22f80
 ---

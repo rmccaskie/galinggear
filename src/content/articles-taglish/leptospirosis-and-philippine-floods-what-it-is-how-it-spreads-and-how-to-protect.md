@@ -36,7 +36,7 @@ railItems:
     assetId: f0691992-c490-442f-b27c-d71bc64cf9d3
     anchor: the-situation
     label: Huwag magpaabot
-    image: 'https://images.galinggear.com/staging/1789809668891-roxlfa.png'
+    image: 'https://images.galinggear.com/library/1789809668891-roxlfa.png'
     alt: Baha sa highway
 railSourceHash: bc7535742dc26b0f
 ---
