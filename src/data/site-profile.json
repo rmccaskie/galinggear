@@ -2,6 +2,7 @@
   "id": "galinggear",
   "brand": {
     "name": "Galing Gear",
+    "shortName": "Galing Gear",
     "tagline": "For the storms, the quakes, and the gear that beats them.",
     "description": "a Philippine emergency-preparedness and outdoor-gear site",
     "topic": {
@@ -18,7 +19,9 @@
       "favicon": "/favicon.svg"
     },
     "theme": {
-      "stylesheet": "src/styles/brand.css"
+      "stylesheet": "src/styles/brand.css",
+      "themeColor": "#0F5C63",
+      "backgroundColor": "#F4F1EA"
     },
     "social": {
       "handles": {

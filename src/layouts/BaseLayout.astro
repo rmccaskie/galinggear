@@ -7,6 +7,7 @@ import Lightbox from '../components/Lightbox.astro'
 import VideoLightbox from '../components/VideoLightbox.astro'
 import { type Locale, DEFAULT_LOCALE, HTML_LANG, URL_PREFIX } from '../lib/i18n'
 import { resolvedCatalogue, type CatalogueKey } from '../lib/catalogue'
+import { siteProfile } from '../lib/site-profile'
 
 interface Props {
   title: string
@@ -39,7 +40,7 @@ const barePath = prefix && rawPath.startsWith(prefix) ? rawPath.slice(prefix.len
     <link rel="icon" href="/favicon.ico?v=2" sizes="any" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2" />
     <link rel="manifest" href="/site.webmanifest" />
-    <meta name="theme-color" content="#0F5C63" />
+    <meta name="theme-color" content={siteProfile.brand.theme.themeColor} />
     <meta name="generator" content={Astro.generator} />
     <!-- Stop Chrome/Google offering to auto-translate the site (Taglish is intentional copy, not "untranslated" English). -->
     <meta name="google" content="notranslate" />

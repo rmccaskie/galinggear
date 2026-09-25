@@ -63,6 +63,8 @@ export const siteProfileSchema = z.object({
   id: z.string().min(1),
   brand: z.object({
     name: z.string().min(1),
+    // Short name for the web-app manifest (falls back to name when unset).
+    shortName: z.string().optional(),
     tagline: z.string(),
     description: z.string(),
     // Site topic/domain names (niche) — full adjectival form
@@ -72,7 +74,13 @@ export const siteProfileSchema = z.object({
     siteUrl: z.string().url(),
     mediaDomain: z.string().min(1),
     logo: logoSchema,
-    theme: z.object({ stylesheet: z.string() }),
+    // Theme: the brand stylesheet plus the two theme colours emitted into
+    // HTML/manifest (site.webmanifest endpoint + <meta name="theme-color">).
+    theme: z.object({
+      stylesheet: z.string(),
+      themeColor: z.string(),
+      backgroundColor: z.string(),
+    }),
     // Brand's own social-account handles (identity, not per-article share text).
     social: z.object({
       handles: z.object({
