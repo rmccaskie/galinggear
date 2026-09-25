@@ -26,7 +26,8 @@
         "instagram": "galinggear",
         "facebook": "galinggear"
       }
-    }
+    },
+    "documentFooter": "Practical emergency preparedness for the Philippines"
   },
   "audience": {
     "country": "PH",
@@ -185,5 +186,16 @@
       "x"
     ],
     "hashtags": []
+  },
+  "adminExamples": {
+    "articleTitle": "Best typhoon go-bag under ₱3,000",
+    "articleSlug": "best-typhoon-go-bag-under-3000",
+    "heroImageQuery": "e.g. typhoon flooding Manila street",
+    "imagePrompt": "Describe the image — e.g. a wide documentary photo of a flooded Manila street during a typhoon, people wading with emergency supplies",
+    "reviewBrief": "e.g. Review the Sawyer Squeeze water filter as an emergency water solution for the Philippine wet season.",
+    "guideBrief": "e.g. A practical guide to preparing your household for a 48-hour brownout.",
+    "agentRequest": "3 typhoon-season topics for condo dwellers",
+    "agentRequestAlt": "2 product roundups under ₱3,000 for go-bag gear",
+    "shareImageQuery": "emergency preparedness Philippines"
   }
 }

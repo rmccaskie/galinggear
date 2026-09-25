@@ -81,6 +81,8 @@ export const siteProfileSchema = z.object({
         facebook: z.string(),
       }),
     }),
+    // Footer tagline on generated PDF documents (admin document-pdf.ts).
+    documentFooter: z.string(),
   }),
   audience: z.object({
     country: z.string().min(1),
@@ -149,6 +151,19 @@ export const siteProfileSchema = z.object({
   social: z.object({
     platforms: z.array(z.string()),
     hashtags: z.array(z.string()),
+  }),
+  // Editor-only example/placeholder copy (ADMIN UI). Kept in the profile so a
+  // different publication shows its own examples instead of typhoon/Manila ones.
+  adminExamples: z.object({
+    articleTitle: z.string(),
+    articleSlug: z.string(),
+    heroImageQuery: z.string(),
+    imagePrompt: z.string(),
+    reviewBrief: z.string(),
+    guideBrief: z.string(),
+    agentRequest: z.string(),
+    agentRequestAlt: z.string(),
+    shareImageQuery: z.string(),
   }),
 })
 
