@@ -83,6 +83,8 @@ export const siteProfileSchema = z.object({
     }),
     // Footer tagline on generated PDF documents (admin document-pdf.ts).
     documentFooter: z.string(),
+    // Homepage <meta description> — one fixed string rendered on all locales.
+    homeDescription: z.string(),
   }),
   audience: z.object({
     country: z.string().min(1),
