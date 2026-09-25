@@ -41,6 +41,17 @@ const languageSchema = z.object({
   // Human-review gate for a non-base catalogue: reviewer name + date. Until both
   // are set the translated catalogue is not served (SITE catalogue.ts).
   reviewGate: z.object({ reviewer: z.string(), date: z.string() }).optional(),
+  // Secondary-language social-post generation descriptors (ADMIN): how to
+  // write social posts in this language — code-switch style, language-mix
+  // hint, hashtag hint, and what to exclude from the base-language variant.
+  social: z
+    .object({
+      codeSwitch: z.string(),
+      mixHint: z.string(),
+      hashtagHint: z.string(),
+      excludeHint: z.string(),
+    })
+    .optional(),
 })
 
 const seasonalHookSchema = z.object({
@@ -54,6 +65,9 @@ export const siteProfileSchema = z.object({
     name: z.string().min(1),
     tagline: z.string(),
     description: z.string(),
+    // Site topic/domain names (niche) — full adjectival form
+    // ("emergency-preparedness") and the short compound ("emergency-prep").
+    topic: z.object({ full: z.string(), short: z.string() }).optional(),
     domain: z.string().min(1),
     siteUrl: z.string().url(),
     mediaDomain: z.string().min(1),
@@ -70,8 +84,12 @@ export const siteProfileSchema = z.object({
   }),
   audience: z.object({
     country: z.string().min(1),
+    // Country adjective used in prompt copy (e.g. "Philippine").
+    countryAdjective: z.string().optional(),
     demonym: z.string(),
     regionNotes: z.string(),
+    // Short hazard list surfaced in the editor voice (e.g. typhoons, floods).
+    hazards: z.array(z.string()).optional(),
     readerPersona: z.string(),
     currency: z.object({ code: z.string().min(1), symbol: z.string().min(1) }),
     units: z.string(),
@@ -90,6 +108,9 @@ export const siteProfileSchema = z.object({
   }),
   voice: z.object({
     spelling: z.string(),
+    // Human-readable name of the writing language/register
+    // (e.g. "Philippine English").
+    primaryLanguage: z.string().optional(),
     persona: z.string(),
     rules: z.string(),
     author: z.string(),

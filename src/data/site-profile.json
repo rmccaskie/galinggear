@@ -4,6 +4,10 @@
     "name": "Galing Gear",
     "tagline": "For the storms, the quakes, and the gear that beats them.",
     "description": "a Philippine emergency-preparedness and outdoor-gear site",
+    "topic": {
+      "full": "emergency-preparedness",
+      "short": "emergency-prep"
+    },
     "domain": "galinggear.com",
     "siteUrl": "https://galinggear.com",
     "mediaDomain": "images.galinggear.com",
@@ -26,8 +30,15 @@
   },
   "audience": {
     "country": "PH",
+    "countryAdjective": "Philippine",
     "demonym": "Filipino",
     "regionNotes": "Philippine hazard context: the typhoon belt and habagat rains, floods in low-lying and metro areas, earthquakes and volcanic ashfall, brownouts and grid yellow/red alerts, and dry-season heat.",
+    "hazards": [
+      "typhoons",
+      "floods",
+      "brownouts",
+      "earthquakes"
+    ],
     "readerPersona": "A Filipino parent or renter preparing a household on a budget — for everyone under the roof, including children, lolos and lolas, PWDs, anyone on maintenance medication, and pets.",
     "currency": {
       "code": "PHP",
@@ -71,6 +82,12 @@
         "reviewGate": {
           "reviewer": "Robert McCaskie",
           "date": "2026-09-21"
+        },
+        "social": {
+          "codeSwitch": "Filipino–English code-switching as used naturally in Metro Manila social media",
+          "mixHint": "mix Filipino and English naturally as a Filipino social-media-savvy person would",
+          "hashtagHint": "mix of English and Filipino",
+          "excludeHint": "no Filipino/Tagalog"
         }
       },
       "en": {
@@ -84,6 +101,7 @@
   },
   "voice": {
     "spelling": "en-PH",
+    "primaryLanguage": "Philippine English",
     "persona": "A trusted neighbour who has actually used the gear, telling you the truth over coffee — calm, plain, first-person, anti-hype, honest about what a product isn't.",
     "rules": "src/data/profile/voice.md",
     "author": "src/data/profile/author.md",
