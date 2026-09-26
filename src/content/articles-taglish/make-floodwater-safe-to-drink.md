@@ -9,34 +9,23 @@ railItems:
     assetId: 1659c975-3f01-4692-aff3-7a1410a4d411
     anchor: what-you-need
     label: Field Guide
-    title: 'Pag-pack para sa dalawa, hindi lang isa'
+    title: 'Pag-impake para sa dalawa, hindi lang isa'
     slug: building-a-go-bag-for-two-a-practical-guide-for-couples-in-the-philippines
     description: >-
-      Isang tested go-bag split ng mag-partner para sa unang 72 hours — ano ang
-      i-share, ano ang i-duplicate, at magkano talaga ang timbang nito.
+      Tested go-bag split ng isang couple para sa unang 72 hours — ano ang
+      ishe-share, ano ang idu-duplicate, at magkano talaga ang timbang nito.
   - type: image
     assetId: 432cf5c5-5f0d-4e03-a9a6-012691d37cd9
     anchor: the-method
-    label: Panatilihing ligtas
+    label: Pag-iingat dito
     image: 'https://images.galinggear.com/library/generated-1789898898912-e6ktsa.png'
     alt: >-
-      Mga capped water container at steel jug na naka-store sa lilim sa isang
+      Mga naka-cap na water container at steel jug na nakatago sa lilim sa isang
       concrete terrace
     caption: >-
       I-store ang treated water na naka-cap, narrow-necked, at hindi tinatamaan
-      ng sikat ng araw — pinapaikli ng init at liwanag ang tagal nito.
-  - type: article
-    assetId: 3606c02f-716d-47d0-8ca2-a6d146936c0f
-    anchor: variations--conditions
-    label: Kilalanin Ang Mga Palatandaan
-    title: Ang lagnat pagkatapos ng baha na hindi dapat ipagpaliban hanggang Monday
-    slug: >-
-      leptospirosis-after-the-flood-what-to-do-if-you-ve-already-waded-through-it
-    description: >-
-      Karamihan sa post-flood fevers ay walang malubhang epekto, pero may ilang
-      pattern na kailangan ng same-day na pagpunta sa clinic — alamin ang
-      pagkakaiba bago ang susunod na habagat.
-railSourceHash: 348319a38e6ec756
+      ng sikat ng araw — pinapaikli ng init at liwanag ang shelf life nito.
+railSourceHash: 2f76d6b91e424a75
 ---
 
 ## Ano ang magagawa mo — at bakit importante ito
