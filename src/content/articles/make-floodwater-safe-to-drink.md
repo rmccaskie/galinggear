@@ -7,7 +7,7 @@ scenario: clean-water
 publishedAt: '2026-09-20'
 featured: false
 status: active
-updatedAt: '2026-09-22'
+updatedAt: '2026-09-26'
 heroImage: 'https://images.galinggear.com/articles/generated-1789898259348-8pf7ur.png'
 railItems:
   - type: article
@@ -30,17 +30,6 @@ railItems:
     caption: >-
       Store treated water capped, narrow-necked and out of sunlight — heat and
       light shorten its life.
-  - type: article
-    assetId: 3606c02f-716d-47d0-8ca2-a6d146936c0f
-    anchor: variations--conditions
-    label: Know The Signs
-    title: The fever after a flood that should not wait until Monday
-    slug: >-
-      leptospirosis-after-the-flood-what-to-do-if-you-ve-already-waded-through-it
-    description: >-
-      Most post-flood fevers are harmless, but a few patterns warrant the
-      same-day trip to the clinic — learn to tell the difference before the next
-      habagat.
 shareImage: 'https://images.galinggear.com/library/generated-1790079626161-gn6l4j.png'
 social:
   facebook: "After a typhoon, the tap running again doesn't mean the water is safe — floodwater can seep into pipes through broken lines and low pressure. Our new guide breaks down the right order to make floodwater drinkable: pre-filter, treat with Aquatabs or boiling, then store it properly so it lasts. \U0001F4A7 No electricity needed, just the right steps in the right order.\nhttps://galinggear.com/en/articles/make-floodwater-safe-to-drink/"
