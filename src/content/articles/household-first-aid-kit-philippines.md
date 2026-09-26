@@ -7,20 +7,10 @@ scenario: first-aid
 publishedAt: '2026-09-23'
 featured: false
 status: active
+updatedAt: '2026-09-26'
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789988869176-inmbrr.png'
 railItems:
-  - type: article
-    assetId: 3606c02f-716d-47d0-8ca2-a6d146936c0f
-    anchor: what-youll-be-able-to-do--and-why-it-matters
-    label: Know The Signs
-    title: The fever after a flood that should not wait until Monday
-    slug: >-
-      leptospirosis-after-the-flood-what-to-do-if-you-ve-already-waded-through-it
-    description: >-
-      Most post-flood fevers are harmless, but a few patterns warrant the
-      same-day trip to the clinic — learn to tell the difference before the next
-      habagat.
   - type: article
     assetId: 3df1a04c-7cd9-435e-b344-e359bf0bd24f
     anchor: what-you-need
