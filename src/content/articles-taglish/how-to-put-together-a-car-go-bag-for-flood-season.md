@@ -9,30 +9,31 @@ railItems:
   - type: image
     assetId: f0691992-c490-442f-b27c-d71bc64cf9d3
     anchor: the-rule-the-bag-does-not-change
-    label: Don't get caught out
+    label: '''Wag hayaang maabutan ka'
     image: 'https://images.galinggear.com/library/1789809668891-roxlfa.png'
-    alt: Flooded highway
+    alt: Baha sa highway
   - type: image
     assetId: 78d637f8-a667-4b9f-bf47-d759cf879d62
     anchor: what-you-need
-    label: Packed and waiting
+    label: Nakapack na at naghihintay
     image: 'https://images.galinggear.com/library/generated-1789813011557-ayr0ms.png'
     alt: >-
-      Open car boot with a dry bag, water bottles, torch, first-aid pouch and
-      poncho on a wet street.
+      Bukas na car boot na may dry bag, mga bote ng tubig, torch, first-aid
+      pouch at poncho sa basang kalye.
     caption: >-
-      A car go-bag packed for waiting out floodwater, not for driving through
-      it.
+      Isang car go-bag na nakapack para maghintay lang na bumaba ang baha, hindi
+      para magmaneho dumaan dito.
   - type: article
     assetId: 1659c975-3f01-4692-aff3-7a1410a4d411
     anchor: variations-and-conditions
     label: Field Guide
-    title: 'Packing for two, not just one'
+    title: 'Pag-pack para sa dalawa, hindi lang isa'
     slug: building-a-go-bag-for-two-a-practical-guide-for-couples-in-the-philippines
     description: >-
-      A couple's tested go-bag split for the first 72 hours — what to share,
-      what to duplicate, and what it actually weighs.
-railSourceHash: 58c76c9b9c050b1c
+      Isang tested go-bag split ng mag-partner para sa unang 72 hours — kung ano
+      ang pwedeng ishare, ano ang kailangan i-duplicate, at kung ano talaga ang
+      timbang nito.
+railSourceHash: 1c5c293653b36819
 ---
 
 ## Ano ang magagawa mo — at bakit importante ito
