@@ -15,30 +15,19 @@ railItems:
     label: Kailan dapat magpatingin
     image: 'https://images.galinggear.com/library/generated-1789901437581-2sglxx.png'
     alt: >-
-      Kamag-anak na sumusukat ng temperatura ng isang batang babae na
+      Kamag-anak na sinusukat ang temperatura ng isang batang babae na
       nagpapahinga sa bahay ilang araw pagkatapos ng baha
     caption: >-
-      Kung fever, sakit ng ulo, o sakit ng binti sa loob ng dalawang linggo
-      pagkatapos malusong sa baha, magpatingin sa doktor — huwag nang antayin
-      pa.
-  - type: article
-    assetId: 3606c02f-716d-47d0-8ca2-a6d146936c0f
-    anchor: a-calm-closing
-    label: Alamin Ang Mga Sintomas
-    title: Ang fever pagkatapos ng baha na 'di dapat ipagpaliban hanggang Lunes
-    slug: >-
-      leptospirosis-after-the-flood-what-to-do-if-you-ve-already-waded-through-it
-    description: >-
-      Karamihan sa fever pagkatapos ng baha ay harmless lang, pero may ilang
-      pattern na kailangan mo nang magpatingin sa clinic same-day — alamin ang
-      pagkakaiba bago dumating ang susunod na habagat.
+      Fever, sakit ng ulo, o sakit ng binti within two weeks ng pagtapak sa baha
+      ay dapat ipatingin sa doktor agad, huwag nang antayin pang gumaling
+      mag-isa.
   - type: image
     assetId: f0691992-c490-442f-b27c-d71bc64cf9d3
     anchor: the-situation
-    label: Huwag magpaabot
+    label: '''Wag hayaang maabutan ka'
     image: 'https://images.galinggear.com/library/1789809668891-roxlfa.png'
     alt: Baha sa highway
-railSourceHash: bc7535742dc26b0f
+railSourceHash: 0a90ffa42143517b
 ---
 
 ## Ang sitwasyon
