@@ -7,38 +7,27 @@ description: >-
 sourceHash: a351e0a4d182ea4c
 railItems:
   - type: article
-    assetId: 3606c02f-716d-47d0-8ca2-a6d146936c0f
-    anchor: what-youll-be-able-to-do--and-why-it-matters
-    label: Know The Signs
-    title: Ang lagnat pagkatapos ng flood na 'di dapat i-antay hanggang Monday
-    slug: >-
-      leptospirosis-after-the-flood-what-to-do-if-you-ve-already-waded-through-it
-    description: >-
-      Karamihan sa fever pagkatapos ng flood ay harmless lang, pero may mga
-      pattern na dapat pag-ipunan ng same-day trip sa clinic — alamin ang
-      difference bago pa man dumating ang susunod na habagat.
-  - type: article
     assetId: 3df1a04c-7cd9-435e-b344-e359bf0bd24f
     anchor: what-you-need
     label: Outage Planning
-    title: Apat na oras lang ang buhay ng insulin mo once tumigil ang fridge
+    title: Apat na oras na lang ang insulin mo pag nag-stop na 'yung fridge
     slug: >-
       how-to-keep-insulin-and-other-temperature-sensitive-medicine-cold-during-a-brown
     description: >-
-      Isang calm na sistema para sa cooler bags, gel pack rotation, at ang punto
-      kung saan dapat tumigil na ang pag-improvise at tawagan mo na ang pharmacy
-      o clinic.
+      Isang calm na sistema para sa cooler bags, pag-rotate ng gel pack, at
+      'yung point kung saan tumitigil ang pag-improvise at tatawag ka na sa
+      parmasya o clinic.
   - type: article
     assetId: 7e832957-f9e3-4a92-acce-6eda6865b24c
     anchor: what-you-need
     label: Field Guide
-    title: Kapag naputol ng floodwaters ang byahe pa-pharmacy
+    title: Kapag nputol ang biyahe papuntang parmasya dahil sa baha
     slug: >-
       caring-for-a-family-member-on-maintenance-medication-during-a-typhoon-or-flood
     description: >-
-      Isang step-by-step plan para mapanatili sa schedule ang gamot ni Lolo o
-      Lola kapag hindi na maaabot ang mga daan at drugstore.
-railSourceHash: 4feb869c0bc70d03
+      Isang step-by-step na plano para hindi maantala ang gamot ni Lolo o Lola
+      kahit hindi maabot ang mga kalsada at drugstore.
+railSourceHash: 653521a96b3d7f42
 ---
 
 ## Ano ang magagawa mo — at bakit importante ito
