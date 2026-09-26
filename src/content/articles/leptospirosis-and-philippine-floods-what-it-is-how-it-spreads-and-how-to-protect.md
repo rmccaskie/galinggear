@@ -10,6 +10,7 @@ scenario: flood-ready
 publishedAt: '2026-09-20'
 featured: false
 status: archived
+updatedAt: '2026-09-26'
 articleType: guide
 heroImage: 'https://images.galinggear.com/articles/generated-1789906024954-jwkf9f.png'
 railItems:
@@ -24,17 +25,6 @@ railItems:
     caption: >-
       Fever, headache or calf pain within two weeks of wading means see a
       doctor, not wait it out.
-  - type: article
-    assetId: 3606c02f-716d-47d0-8ca2-a6d146936c0f
-    anchor: a-calm-closing
-    label: Know The Signs
-    title: The fever after a flood that should not wait until Monday
-    slug: >-
-      leptospirosis-after-the-flood-what-to-do-if-you-ve-already-waded-through-it
-    description: >-
-      Most post-flood fevers are harmless, but a few patterns warrant the
-      same-day trip to the clinic — learn to tell the difference before the next
-      habagat.
   - type: image
     assetId: f0691992-c490-442f-b27c-d71bc64cf9d3
     anchor: the-situation
